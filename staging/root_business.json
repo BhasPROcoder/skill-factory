@@ -1,0 +1,257 @@
+[
+  {
+    "code": "BST",
+    "index": 1,
+    "domain": "Business Strategy",
+    "data": [
+      "strategic-decision-brief",
+      "turn a broad business challenge into a bounded decision",
+      "the problem statement, decision owner, constraints, alternatives, and supplied evidence",
+      "Rewrite the challenge as a choice with a named decision owner and an observable consequence. ~ Separate symptoms, suspected causes, and constraints; record what evidence could distinguish competing explanations. ~ Compare the smallest meaningful set of options including continuation of the current approach, and identify what would change the recommendation.",
+      "the problem statement contains a preferred solution but no demonstrated cause",
+      "reframe the brief around the unresolved cause before endorsing that solution",
+      "Fictional Cedar Studio wants to hire more reviewers because projects are late. Its notes show approvals wait on client responses, but no capacity data is supplied.",
+      "Decision: determine whether review capacity or client-response delay is the actionable constraint. Options: add reviewer capacity, improve client response handling, or collect evidence before changing staffing. Known evidence: approval waiting is reported. Missing evidence: queue time split between internal review and client response. Proposed next decision depends on that split.",
+      "The operations owner should classify recent waiting periods by cause before recommending staffing changes.",
+      "Treating the stakeholder's proposed solution as proof of the underlying problem."
+    ]
+  },
+  {
+    "code": "BST",
+    "index": 2,
+    "domain": "Business Strategy",
+    "data": [
+      "market-entry-options-assessment",
+      "compare market-entry options against explicit constraints",
+      "candidate markets, customer evidence, delivery requirements, access options, and decision criteria",
+      "Define each entry option as a combination of target customer, route to access, delivery model, and commitment required. ~ Compare options using the same evidence categories and separate verified demand from assumptions or competitor presence. ~ Identify reversibility, dependencies, and a bounded learning step for each option before recommending a commitment.",
+      "one option has stronger evidence only because it has been researched more",
+      "flag the evidence imbalance rather than treating missing research as poor market potential",
+      "Fictional Cedar Studio has interviewed buyers in the North market but has only desk notes about the South market. It wants to choose one without spending heavily on entry.",
+      "Comparison: North has direct buyer evidence but unresolved delivery fit; South has an evidence gap rather than demonstrated lack of demand. Proposed action: test the same buyer questions in South and check delivery constraints in both. Keep entry commitment limited until the comparison uses comparable evidence.",
+      "The market owner should collect comparable buyer and delivery evidence and update the option table.",
+      "Ranking an under-researched market as unattractive solely because fewer facts are available."
+    ]
+  },
+  {
+    "code": "BST",
+    "index": 3,
+    "domain": "Business Strategy",
+    "data": [
+      "competitor-evidence-comparison",
+      "compare competitors using decision-relevant evidence",
+      "competitor materials, source dates, target buyer needs, and comparison dimensions",
+      "Select comparison dimensions from the user's buying or positioning decision rather than from whatever data is easiest to collect. ~ Record each competitor claim with source, observation date, and whether it is a published promise or independently observed behavior. ~ Compare like-for-like offers and mark unavailable information as unknown rather than scoring it as absent.",
+      "a competitor feature is not mentioned in the available source",
+      "mark the feature unknown rather than asserting that the competitor lacks it",
+      "Fictional Cedar Studio compares its service with fictional Harbor Works. Harbor's supplied brochure describes design delivery but says nothing about revisions. Cedar wants to claim Harbor offers no revisions. Cedar supplies its own internal offer, which describes a review cycle.",
+      "Comparison row: revision support. Cedar: supplied internal offer describes a review cycle. Harbor: brochure silent, support unknown. Proposed positioning: describe Cedar's own documented review process without claiming Harbor lacks one. Verification task: inspect Harbor's current official offer or obtain an attributable response.",
+      "The analyst should verify the competitor's revision terms before publishing a comparative claim.",
+      "Converting silence in a brochure into evidence that a competing capability does not exist."
+    ]
+  },
+  {
+    "code": "BST",
+    "index": 4,
+    "domain": "Business Strategy",
+    "data": [
+      "strategic-options-scorecard",
+      "build a weighted strategic options scorecard with sensitivity checks",
+      "options, criteria definitions, stakeholder priorities, evidence, and scoring anchors",
+      "Define criteria so they do not double-count the same benefit and write observable anchors before assigning scores. ~ Separate constraints that eliminate an option from preferences that can be traded off; score only supported distinctions. ~ Recompute rankings under plausible weight or score changes and show whether the preferred option depends on disputed assumptions.",
+      "the top-ranked option changes under a plausible priority change",
+      "present a conditional recommendation and the deciding tradeoff rather than a robust winner",
+      "Fictional Cedar Studio compares Option A and Option B on speed and control using an illustrative common scale. A scores 4 for speed and 2 for control; B scores 2 and 4. Initial weights are 3 for speed and 1 for control.",
+      "Initial weighted sums: A = 4 × 3 + 2 × 1 = 14; B = 2 × 3 + 4 × 1 = 10. Reversing the weights gives A = 10 and B = 14. Recommendation is conditional: A fits the stated speed priority; B fits a control priority. The scorecard does not establish objective superiority.",
+      "The decision owner should confirm the priority tradeoff before selecting an option.",
+      "Presenting a ranking as objective when arbitrary weights determine the winner."
+    ]
+  },
+  {
+    "code": "BST",
+    "index": 5,
+    "domain": "Business Strategy",
+    "data": [
+      "strategy-assumption-test-plan",
+      "design tests for assumptions that determine a strategy choice",
+      "the proposed strategy, dependency assumptions, existing evidence, and decision constraints",
+      "Express each assumption as an observable proposition whose failure would change a decision. ~ Prioritize assumptions by decision consequence and uncertainty, keeping cheap-to-test but irrelevant questions out of the critical path. ~ Define the evidence collection method, disconfirming result, interpretation limits, and next decision before collecting data.",
+      "the proposed test measures interest but the strategy depends on adoption behavior",
+      "redesign the test around the relevant behavior or label the evidence as insufficient",
+      "Fictional Cedar Studio plans a self-service design intake. Its strategy depends on clients completing intake without assistance, but the proposed survey only asks whether they like the idea.",
+      "Critical assumption: clients can complete a realistic intake independently. Test: give consenting representative users the proposed intake and observe completion barriers without coaching. Evidence: completed fields, requests for help, and misunderstood instructions. Decision rule: revise or narrow the workflow when observed barriers prevent the intended independent completion; do not equate liking with adoption.",
+      "The strategy owner should approve observable completion criteria before running the intake exercise.",
+      "Using favorable opinions as proof of the behavior required for the strategy."
+    ]
+  },
+  {
+    "code": "BMD",
+    "index": 1,
+    "domain": "Business Model Design",
+    "data": [
+      "customer-segment-prioritization",
+      "prioritize customer segments using need and access evidence",
+      "candidate segments, actual customer problems, access routes, delivery fit, and evidence quality",
+      "Describe segments by shared problem and buying context rather than demographic labels alone. ~ Compare urgency, ability to reach decision-makers, delivery feasibility, and evidence quality using explicitly defined categories. ~ Select a provisional segment and name the evidence that would overturn the choice; avoid treating a large population as accessible demand.",
+      "a segment looks large but the buyer and access route are unclear",
+      "treat reachability as unresolved rather than assuming market size implies an actionable opportunity",
+      "Fictional Cedar Studio compares all small businesses with local event organizers. It has no broad access route but has direct conversations with organizers who need reusable event artwork.",
+      "Provisional segment: local event organizers with recurring artwork needs. Evidence: supplied direct conversations and a defined problem. Broader segment: too imprecise to establish buyer access or a common need. Open questions: whether organizers can approve purchases and whether recurring delivery fits Cedar's capacity.",
+      "The founder should verify purchasing responsibility and repeat need with the accessible organizer segment.",
+      "Choosing a segment because its headline population is large without identifying a reachable buyer."
+    ]
+  },
+  {
+    "code": "BMD",
+    "index": 2,
+    "domain": "Business Model Design",
+    "data": [
+      "value-proposition-evidence-map",
+      "connect a value proposition to customer problems and supporting evidence",
+      "customer statements, proposed benefits, alternatives, and observed outcomes",
+      "Separate the customer's task, obstacle, and desired result from the product features being proposed. ~ Link each benefit claim to a specific obstacle and evidence that the customer values removing it. ~ Rewrite unsupported superiority or outcome claims as hypotheses and identify a test that can distinguish benefit from feature preference.",
+      "the proposed benefit is supported only by an internal feature description",
+      "label the customer value as a hypothesis and seek customer evidence",
+      "Fictional Cedar Studio advertises a colorful intake dashboard as a time-saver. The only supplied evidence is an internal design description; customers have not used it.",
+      "Feature: colorful intake dashboard. Proposed customer problem: difficulty knowing what information is missing. Value hypothesis: clearer status may reduce clarification effort. Unsupported claim removed: guaranteed time savings. Evidence needed: observe customers locating missing information and compare clarification needs against their current process.",
+      "The product owner should test whether the dashboard resolves the stated information problem before making time-saving claims.",
+      "Presenting an attractive feature as a proven customer outcome."
+    ]
+  },
+  {
+    "code": "BMD",
+    "index": 3,
+    "domain": "Business Model Design",
+    "data": [
+      "revenue-model-options-comparison",
+      "compare charging models against buying and delivery behavior",
+      "customer buying pattern, delivery workload, usage variability, and commercial constraints",
+      "Describe what triggers payment under each model and what the customer believes they are buying. ~ Map delivery effort, demand variability, purchasing friction, and incentive conflicts without inventing prices or margins. ~ Compare the models on operational fit and identify the data needed before any financial recommendation.",
+      "delivery effort varies substantially but the proposed fixed scope is undefined",
+      "define the included work and change process before recommending a fixed package",
+      "Fictional Cedar Studio considers a fixed design package or payment per accepted deliverable. Client revision needs vary, and the package currently has no stated boundaries.",
+      "Fixed package: may simplify the purchase decision if buyers understand the included work; this benefit is untested and the scope boundary is unresolved. Deliverable model: ties payment to agreed outputs but needs clear acceptance definitions. Recommendation for design work: define deliverables, revisions, and changes before comparing financial performance. No price or profitability claim is inferred from the summary.",
+      "The owner should document sample workload patterns and package boundaries for a qualified financial review if needed.",
+      "Selecting a charging model from a headline price without defining the work it covers."
+    ]
+  },
+  {
+    "code": "BMD",
+    "index": 4,
+    "domain": "Business Model Design",
+    "data": [
+      "business-model-assumption-map",
+      "map dependencies across a proposed business model",
+      "the proposed customer, offer, access route, delivery method, revenue logic, and evidence",
+      "Represent each model component as a claim with its supporting evidence or explicit uncertainty. ~ Draw dependencies showing which assumptions must hold for later claims to matter; distinguish independent uncertainties from shared causes. ~ Identify the assumption whose failure would invalidate the most immediate commitment and prepare an evidence request for it.",
+      "several attractive outcomes depend on the same untested operational capability",
+      "surface that shared dependency before treating the outcomes as independent strengths",
+      "Fictional Cedar Studio proposes fast delivery, low support effort, and scalable onboarding. All three depend on clients submitting complete briefs without assistance, which has not been tested.",
+      "Shared dependency: complete self-service briefs. Dependent claims: fast delivery, low support effort, scalable onboarding. Evidence status: untested. Priority: evaluate brief completeness and assistance needs before treating the dependent claims as strengths. The map retains the possibility that an assisted model may be needed.",
+      "The owner should run a realistic intake observation and update every claim that depends on the result.",
+      "Counting several claims as independent evidence when they share the same unsupported premise."
+    ]
+  },
+  {
+    "code": "BMD",
+    "index": 5,
+    "domain": "Business Model Design",
+    "data": [
+      "business-model-experiment-design",
+      "design a bounded experiment for a business model assumption",
+      "the target assumption, participants, observable behavior, resource limit, and decision owner",
+      "State the assumption and the alternative explanation the experiment should distinguish. ~ Specify the participant context, intervention, observation method, and stopping conditions before running the test. ~ Define how outcomes will change the model and what the test cannot establish; separate test execution from a plan to execute.",
+      "the proposed experiment changes both the offer and the audience at once",
+      "separate the changes or state that the result cannot identify which change mattered",
+      "Fictional Cedar Studio wants to test whether simpler intake improves completion. Its draft experiment also changes the audience from experienced buyers to first-time buyers.",
+      "Experiment revision: compare intake variants within a defined comparable audience, or run sequential learning rounds and retain the attribution limitation. Observation: successful submission, assistance requests, and misunderstood fields. Model decision: simplify intake when evidence supports that mechanism; do not attribute an audience-driven difference to the form alone.",
+      "The experiment owner should approve the audience definition and comparison approach before recruiting participants.",
+      "Attributing a result to one design change when several conditions changed together."
+    ]
+  },
+  {
+    "code": "BPL",
+    "index": 1,
+    "domain": "Business Planning",
+    "data": [
+      "business-priority-to-initiative-plan",
+      "turn business priorities into scoped initiatives",
+      "business priorities, intended outcomes, existing commitments, owners, and constraints",
+      "Translate each priority into an observable outcome before naming activities. ~ Define an initiative boundary with deliverable, acceptance evidence, owner, dependencies, and explicitly excluded work. ~ Remove or defer activities that have no demonstrated link to the outcome and identify the decision needed to start.",
+      "a proposed activity lacks a link to the stated business outcome",
+      "ask for the causal link or remove it from the committed initiative",
+      "Fictional Cedar Studio wants clearer client handoffs. Its proposed initiative includes a new logo, although the documented problem is missing source files at delivery.",
+      "Initiative: complete client handoff package. Deliverable: agreed file inventory and delivery checklist. Acceptance evidence: a recipient can locate the promised files and usage notes. Excluded: logo redesign unless evidence links it to handoff clarity. Owner: delivery coordinator. Dependency: agreement on what files clients should receive.",
+      "The coordinator should approve the handoff inventory with the delivery owner before piloting it.",
+      "Converting every attractive activity into a priority without linking it to the intended outcome."
+    ]
+  },
+  {
+    "code": "BPL",
+    "index": 2,
+    "domain": "Business Planning",
+    "data": [
+      "initiative-dependency-map",
+      "map initiative dependencies before choosing a sequence",
+      "initiative scopes, prerequisite deliverables, owner commitments, and resource constraints",
+      "Express each dependency as a specific output required by a named downstream activity. ~ Distinguish hard prerequisites from preferences, shared-resource conflicts, and assumptions about timing. ~ Check for circular dependencies and propose a staged deliverable or explicit decision that breaks each cycle without hiding the constraint.",
+      "two initiatives each claim the other's finished output is a prerequisite",
+      "identify a minimum intermediate artifact or resolve the scope conflict before scheduling",
+      "Fictional Cedar Studio says the intake form needs the final service catalog, while the catalog team says it needs completed intake feedback before defining services.",
+      "Cycle: final catalog enables intake, and intake feedback enables final catalog. Proposed break: a provisional catalog with clearly labeled assumptions supports a limited intake pilot. Pilot findings inform the final catalog; the final form follows that decision. The provisional artifact is not presented as an approved final offer.",
+      "The initiative owners should approve the provisional catalog scope and pilot feedback needed to break the cycle.",
+      "Drawing a calendar over a circular dependency without changing the underlying prerequisite."
+    ]
+  },
+  {
+    "code": "BPL",
+    "index": 3,
+    "domain": "Business Planning",
+    "data": [
+      "business-capacity-tradeoff-review",
+      "compare planned work with supplied capacity and explicit tradeoffs",
+      "work estimates, available capacity, skills, existing obligations, and uncertainty ranges",
+      "Use the same unit and planning window for demand and capacity, excluding unavailable time from the usable total. ~ Separate skill-specific bottlenecks from aggregate capacity and identify work that cannot be reassigned. ~ Show feasible combinations and the resulting deferrals without implying that overtime or hiring is already authorized.",
+      "planned effort exceeds available capacity",
+      "show the gap and require an explicit scope, sequencing, or resource choice",
+      "Fictional Cedar Studio has 12 available review hours. Proposed work requires 7 hours for handoff cleanup and 8 hours for intake redesign; both require the same reviewer.",
+      "Demand: 7 + 8 = 15 review hours. Available capacity: 12 hours. Gap: 3 hours. Feasible choice: complete handoff cleanup and allocate 5 hours to intake work if its scope can be staged; otherwise defer one complete task. No overtime or additional reviewer is assumed.",
+      "The owner should approve a feasible scope split or deferral and confirm the acceptance boundary for partial work.",
+      "Treating total team availability as usable capacity when the work needs one constrained specialist."
+    ]
+  },
+  {
+    "code": "BPL",
+    "index": 4,
+    "domain": "Business Planning",
+    "data": [
+      "business-operating-review-design",
+      "design an operating review that leads to owned decisions",
+      "review purpose, existing measures, data owners, recurring decisions, and participant authority",
+      "Map each proposed measure to a decision it could change and remove measures with no review action. ~ Define the measure's source, interpretation limits, owner, and the conditions that require investigation rather than immediate action. ~ Structure the meeting around exceptions, decisions, assigned actions, and follow-up evidence instead of a sequence of status presentations.",
+      "a measure changes but its definition or data source also changed",
+      "resolve comparability before interpreting the movement as a business change",
+      "Fictional Cedar Studio reports fewer late projects after changing how project completion is recorded. The operating review agenda currently celebrates the improvement without checking comparability.",
+      "Review item: late-project measure, definition changed. Decision needed: can the periods be compared? Owner: data steward. Investigation: document old and new completion rules and identify whether a comparable series can be reconstructed. Business improvement remains unconfirmed until the definition effect is separated.",
+      "The review chair should assign the comparability check and revisit the conclusion with documented evidence.",
+      "Treating a measurement-definition change as proof that operational performance improved."
+    ]
+  },
+  {
+    "code": "BPL",
+    "index": 5,
+    "domain": "Business Planning",
+    "data": [
+      "business-contingency-action-plan",
+      "define observable scenario signals and owned contingency actions",
+      "critical dependencies, plausible disruptions, response options, owners, and reversibility limits",
+      "Describe each scenario in operational terms and separate early signals from confirmation that the scenario has occurred. ~ Pair signals with staged actions, decision authority, resource needs, and a rollback or review condition. ~ Test the plan against a false alarm and a delayed response so the escalation path does not depend on perfect prediction.",
+      "an early signal is ambiguous and the proposed response is difficult to reverse",
+      "use a reversible preparation step and seek stronger confirmation before committing",
+      "Fictional Cedar Studio hears that its regular print supplier may pause service. The rumor is unconfirmed, and the proposed response is to cancel all pending work immediately.",
+      "Signal: unconfirmed supplier interruption report. Reversible preparation: identify authorized alternatives and check current order exposure. Confirmation task: obtain an attributable supplier update. Escalation: the operations owner decides on rerouting affected work after checking delivery needs and switching consequences. Immediate blanket cancellation is not assumed necessary.",
+      "The operations owner should confirm supplier status and document which orders, if any, need rerouting.",
+      "Triggering an irreversible response from an ambiguous early-warning signal."
+    ]
+  }
+]

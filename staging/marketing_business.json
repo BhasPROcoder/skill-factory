@@ -1,0 +1,1910 @@
+{
+  "domains": [
+    {
+      "code": "MSE",
+      "name": "Search Content Decisions",
+      "macro": "Sales & Marketing",
+      "scope": "Plan and improve search-oriented content using intent, page purpose, evidence gaps, and editorial constraints.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MAR",
+      "name": "Search Site Architecture",
+      "macro": "Sales & Marketing",
+      "scope": "Plan search-oriented navigation, page relationships, and site-change reviews using supplied inventories and implementation constraints.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MSL",
+      "name": "Local Search Operations",
+      "macro": "Sales & Marketing",
+      "scope": "Prepare accurate local business information, location content, and review-response workflows without assuming platform eligibility or ranking outcomes.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MME",
+      "name": "Marketing Measurement Decisions",
+      "macro": "Sales & Marketing",
+      "scope": "Define and interpret marketing measures using explicit denominators, attribution limits, comparison conditions, and decision-linked reporting.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MRE",
+      "name": "Customer and Market Research",
+      "macro": "Sales & Marketing",
+      "scope": "Design and synthesize customer research using explicit recruitment, question design, evidence coding, and decision boundaries.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MCA",
+      "name": "Campaign Planning and Review",
+      "macro": "Sales & Marketing",
+      "scope": "Prepare campaign briefs, channel coordination, creative tests, and launch reviews around defined audiences and measurable objectives.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MEM",
+      "name": "Lifecycle Email Planning",
+      "macro": "Sales & Marketing",
+      "scope": "Design and review email journeys using explicit audience eligibility, message purpose, consent evidence, and operational checks.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MBR",
+      "name": "Commercial Brand and Editorial",
+      "macro": "Sales & Marketing",
+      "scope": "Develop and review commercial messaging, editorial briefs, and reusable brand language using supported claims and observable style choices.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MSA",
+      "name": "Sales Process Enablement",
+      "macro": "Sales & Marketing",
+      "scope": "Prepare sales discovery, qualification, demonstrations, follow-up drafts, and handoffs using verified customer context and bounded commitments.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MEC",
+      "name": "E-commerce Customer Experience",
+      "macro": "E-commerce",
+      "scope": "Review catalog, product, cart, checkout, and post-purchase experiences using verified offer and fulfillment facts.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MPU",
+      "name": "Product Experience Review",
+      "macro": "Product & Design",
+      "scope": "Review product flows, interface content, prototypes, and feedback using user tasks and observable acceptance criteria.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MSV",
+      "name": "Startup Customer Validation",
+      "macro": "Startups & Fundraising",
+      "scope": "Plan customer validation experiments and evidence reviews without treating interest, prototypes, or founder enthusiasm as proven demand.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MOP",
+      "name": "Startup Operating Workflows",
+      "macro": "Operations & Supply Chain",
+      "scope": "Define lightweight service delivery, support, vendor, and internal handoff workflows for small organizations.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MSC",
+      "name": "Fiction Scene Craft",
+      "macro": "Creative Writing",
+      "scope": "Draft and revise individual fictional scenes through viewpoint, action, dialogue, sensory selection, and meaningful changes in character circumstances.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MSS",
+      "name": "Fiction Story Structure",
+      "macro": "Creative Writing",
+      "scope": "Develop and revise story-level causal sequences, character decisions, reveals, subplots, and endings through concrete beat outlines.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MPH",
+      "name": "Photography Planning and Critique",
+      "macro": "Visual Arts, Photo & Video",
+      "scope": "Plan and critique photographs through subject intention, framing, light, visual sequence, and shoot logistics without fixed equipment recipes.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    },
+    {
+      "code": "MVA",
+      "name": "Visual Composition and Art Direction",
+      "macro": "Visual Arts, Photo & Video",
+      "scope": "Develop and critique visual compositions through hierarchy, grouping, contrast, typography, image relationships, and concrete art-direction briefs.",
+      "subdomains": [
+        "Diagnosis",
+        "Design",
+        "Review",
+        "Handoff"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "MSE-001",
+      "name": "search-intent-evidence-map",
+      "domain_code": "MSE",
+      "subdomain": "Design",
+      "description": "Search intent evidence mapping using supplied evidence and explicit acceptance checks; use when preparing a search intent evidence mapping deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSE-002",
+      "name": "search-query-page-assignment",
+      "domain_code": "MSE",
+      "subdomain": "Design",
+      "description": "Search query to page assignment using supplied evidence and explicit acceptance checks; use when preparing a search query to page assignment deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSE-003",
+      "name": "search-content-brief-design",
+      "domain_code": "MSE",
+      "subdomain": "Design",
+      "description": "Search content brief design using supplied evidence and explicit acceptance checks; use when preparing a search content brief design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSE-004",
+      "name": "search-content-gap-comparison",
+      "domain_code": "MSE",
+      "subdomain": "Design",
+      "description": "Search content gap comparison using supplied evidence and explicit acceptance checks; use when preparing a search content gap comparison deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSE-005",
+      "name": "search-article-refresh-triage",
+      "domain_code": "MSE",
+      "subdomain": "Design",
+      "description": "Search article refresh triage using supplied evidence and explicit acceptance checks; use when preparing a search article refresh triage deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSE-006",
+      "name": "search-content-cannibalization-review",
+      "domain_code": "MSE",
+      "subdomain": "Design",
+      "description": "Search content overlap review using supplied evidence and explicit acceptance checks; use when preparing a search content overlap review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSE-007",
+      "name": "search-heading-outline-repair",
+      "domain_code": "MSE",
+      "subdomain": "Design",
+      "description": "Search heading outline repair using supplied evidence and explicit acceptance checks; use when preparing a search heading outline repair deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSE-008",
+      "name": "search-faq-evidence-selection",
+      "domain_code": "MSE",
+      "subdomain": "Design",
+      "description": "Search question section selection using supplied evidence and explicit acceptance checks; use when preparing a search question section selection deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSE-009",
+      "name": "search-content-consolidation-plan",
+      "domain_code": "MSE",
+      "subdomain": "Design",
+      "description": "Search content consolidation planning using supplied evidence and explicit acceptance checks; use when preparing a search content consolidation planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSE-010",
+      "name": "search-editorial-claim-audit",
+      "domain_code": "MSE",
+      "subdomain": "Design",
+      "description": "Search editorial claim auditing using supplied evidence and explicit acceptance checks; use when preparing a search editorial claim auditing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MAR-001",
+      "name": "search-navigation-task-map",
+      "domain_code": "MAR",
+      "subdomain": "Design",
+      "description": "Search navigation task mapping using supplied evidence and explicit acceptance checks; use when preparing a search navigation task mapping deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MAR-002",
+      "name": "search-internal-link-opportunity-map",
+      "domain_code": "MAR",
+      "subdomain": "Design",
+      "description": "Search internal link opportunity mapping using supplied evidence and explicit acceptance checks; use when preparing a search internal link opportunity mapping deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MAR-003",
+      "name": "search-orphan-page-review",
+      "domain_code": "MAR",
+      "subdomain": "Design",
+      "description": "Search isolated page review using supplied evidence and explicit acceptance checks; use when preparing a search isolated page review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MAR-004",
+      "name": "search-page-template-purpose-review",
+      "domain_code": "MAR",
+      "subdomain": "Design",
+      "description": "Search page template purpose review using supplied evidence and explicit acceptance checks; use when preparing a search page template purpose review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MAR-005",
+      "name": "search-breadcrumb-plan",
+      "domain_code": "MAR",
+      "subdomain": "Design",
+      "description": "Search breadcrumb planning using supplied evidence and explicit acceptance checks; use when preparing a search breadcrumb planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MAR-006",
+      "name": "search-category-page-boundary-plan",
+      "domain_code": "MAR",
+      "subdomain": "Design",
+      "description": "Search category page boundary planning using supplied evidence and explicit acceptance checks; use when preparing a search category page boundary planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MAR-007",
+      "name": "search-faceted-navigation-review-brief",
+      "domain_code": "MAR",
+      "subdomain": "Design",
+      "description": "Search filter navigation review brief using supplied evidence and explicit acceptance checks; use when preparing a search filter navigation review brief deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MAR-008",
+      "name": "search-migration-content-inventory",
+      "domain_code": "MAR",
+      "subdomain": "Design",
+      "description": "Search migration content inventory using supplied evidence and explicit acceptance checks; use when preparing a search migration content inventory deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MAR-009",
+      "name": "search-url-label-governance",
+      "domain_code": "MAR",
+      "subdomain": "Design",
+      "description": "Search page address naming governance using supplied evidence and explicit acceptance checks; use when preparing a search page address naming governance deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MAR-010",
+      "name": "search-site-section-launch-review",
+      "domain_code": "MAR",
+      "subdomain": "Design",
+      "description": "Search site section launch review using supplied evidence and explicit acceptance checks; use when preparing a search site section launch review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSL-001",
+      "name": "local-business-fact-sheet",
+      "domain_code": "MSL",
+      "subdomain": "Design",
+      "description": "Local business fact sheet preparation using supplied evidence and explicit acceptance checks; use when preparing a local business fact sheet preparation deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSL-002",
+      "name": "local-profile-eligibility-checklist",
+      "domain_code": "MSL",
+      "subdomain": "Design",
+      "description": "Local profile eligibility review planning using supplied evidence and explicit acceptance checks; use when preparing a local profile eligibility review planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSL-003",
+      "name": "local-hours-consistency-review",
+      "domain_code": "MSL",
+      "subdomain": "Design",
+      "description": "Local opening-hours consistency review using supplied evidence and explicit acceptance checks; use when preparing a local opening-hours consistency review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSL-004",
+      "name": "local-location-page-brief",
+      "domain_code": "MSL",
+      "subdomain": "Design",
+      "description": "Local location page briefing using supplied evidence and explicit acceptance checks; use when preparing a local location page briefing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSL-005",
+      "name": "local-service-area-description",
+      "domain_code": "MSL",
+      "subdomain": "Design",
+      "description": "Local service-area description planning using supplied evidence and explicit acceptance checks; use when preparing a local service-area description planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSL-006",
+      "name": "local-review-response-drafting",
+      "domain_code": "MSL",
+      "subdomain": "Design",
+      "description": "Local review response drafting using supplied evidence and explicit acceptance checks; use when preparing a local review response drafting deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSL-007",
+      "name": "local-review-theme-analysis",
+      "domain_code": "MSL",
+      "subdomain": "Design",
+      "description": "Local review theme analysis using supplied evidence and explicit acceptance checks; use when preparing a local review theme analysis deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSL-008",
+      "name": "local-listing-duplicate-triage",
+      "domain_code": "MSL",
+      "subdomain": "Design",
+      "description": "Local listing duplicate triage using supplied evidence and explicit acceptance checks; use when preparing a local listing duplicate triage deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSL-009",
+      "name": "local-profile-change-control",
+      "domain_code": "MSL",
+      "subdomain": "Design",
+      "description": "Local profile change control planning using supplied evidence and explicit acceptance checks; use when preparing a local profile change control planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSL-010",
+      "name": "local-customer-access-audit",
+      "domain_code": "MSL",
+      "subdomain": "Design",
+      "description": "Local customer access information audit using supplied evidence and explicit acceptance checks; use when preparing a local customer access information audit deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MME-001",
+      "name": "marketing-metric-definition-sheet",
+      "domain_code": "MME",
+      "subdomain": "Design",
+      "description": "Marketing metric definition design using supplied evidence and explicit acceptance checks; use when preparing a marketing metric definition design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MME-002",
+      "name": "marketing-funnel-leakage-review",
+      "domain_code": "MME",
+      "subdomain": "Design",
+      "description": "Marketing funnel transition review using supplied evidence and explicit acceptance checks; use when preparing a marketing funnel transition review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MME-003",
+      "name": "campaign-tracking-brief",
+      "domain_code": "MME",
+      "subdomain": "Design",
+      "description": "Campaign tracking brief design using supplied evidence and explicit acceptance checks; use when preparing a campaign tracking brief design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MME-004",
+      "name": "marketing-dashboard-decision-map",
+      "domain_code": "MME",
+      "subdomain": "Design",
+      "description": "Marketing dashboard decision mapping using supplied evidence and explicit acceptance checks; use when preparing a marketing dashboard decision mapping deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MME-005",
+      "name": "campaign-performance-comparison",
+      "domain_code": "MME",
+      "subdomain": "Design",
+      "description": "Campaign performance comparison using supplied evidence and explicit acceptance checks; use when preparing a campaign performance comparison deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MME-006",
+      "name": "marketing-attribution-caveat-review",
+      "domain_code": "MME",
+      "subdomain": "Design",
+      "description": "Marketing attribution interpretation review using supplied evidence and explicit acceptance checks; use when preparing a marketing attribution interpretation review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MME-007",
+      "name": "marketing-experiment-readout",
+      "domain_code": "MME",
+      "subdomain": "Design",
+      "description": "Marketing experiment readout preparation using supplied evidence and explicit acceptance checks; use when preparing a marketing experiment readout preparation deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MME-008",
+      "name": "marketing-data-discrepancy-triage",
+      "domain_code": "MME",
+      "subdomain": "Design",
+      "description": "Marketing data discrepancy triage using supplied evidence and explicit acceptance checks; use when preparing a marketing data discrepancy triage deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MME-009",
+      "name": "marketing-cohort-retention-brief",
+      "domain_code": "MME",
+      "subdomain": "Design",
+      "description": "Marketing cohort retention analysis brief using supplied evidence and explicit acceptance checks; use when preparing a marketing cohort retention analysis brief deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MME-010",
+      "name": "marketing-report-action-summary",
+      "domain_code": "MME",
+      "subdomain": "Design",
+      "description": "Marketing report action summarization using supplied evidence and explicit acceptance checks; use when preparing a marketing report action summarization deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MRE-001",
+      "name": "customer-interview-guide-design",
+      "domain_code": "MRE",
+      "subdomain": "Design",
+      "description": "Customer interview guide design using supplied evidence and explicit acceptance checks; use when preparing a customer interview guide design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MRE-002",
+      "name": "research-participant-screening",
+      "domain_code": "MRE",
+      "subdomain": "Design",
+      "description": "Research participant screening design using supplied evidence and explicit acceptance checks; use when preparing a research participant screening design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MRE-003",
+      "name": "customer-interview-note-synthesis",
+      "domain_code": "MRE",
+      "subdomain": "Design",
+      "description": "Customer interview note synthesis using supplied evidence and explicit acceptance checks; use when preparing a customer interview note synthesis deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MRE-004",
+      "name": "survey-question-repair",
+      "domain_code": "MRE",
+      "subdomain": "Design",
+      "description": "Survey question repair using supplied evidence and explicit acceptance checks; use when preparing a survey question repair deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MRE-005",
+      "name": "research-plan-method-selection",
+      "domain_code": "MRE",
+      "subdomain": "Design",
+      "description": "Research method selection brief using supplied evidence and explicit acceptance checks; use when preparing a research method selection brief deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MRE-006",
+      "name": "customer-problem-statement-review",
+      "domain_code": "MRE",
+      "subdomain": "Design",
+      "description": "Customer problem statement review using supplied evidence and explicit acceptance checks; use when preparing a customer problem statement review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MRE-007",
+      "name": "research-evidence-confidence-review",
+      "domain_code": "MRE",
+      "subdomain": "Design",
+      "description": "Research evidence confidence review using supplied evidence and explicit acceptance checks; use when preparing a research evidence confidence review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MRE-008",
+      "name": "customer-observation-protocol",
+      "domain_code": "MRE",
+      "subdomain": "Design",
+      "description": "Customer task observation protocol using supplied evidence and explicit acceptance checks; use when preparing a customer task observation protocol deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MRE-009",
+      "name": "market-research-source-triage",
+      "domain_code": "MRE",
+      "subdomain": "Design",
+      "description": "Market research source triage using supplied evidence and explicit acceptance checks; use when preparing a market research source triage deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MRE-010",
+      "name": "research-to-opportunity-handoff",
+      "domain_code": "MRE",
+      "subdomain": "Design",
+      "description": "Research opportunity handoff using supplied evidence and explicit acceptance checks; use when preparing a research opportunity handoff deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MCA-001",
+      "name": "campaign-objective-brief",
+      "domain_code": "MCA",
+      "subdomain": "Design",
+      "description": "Campaign objective briefing using supplied evidence and explicit acceptance checks; use when preparing a campaign objective briefing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MCA-002",
+      "name": "campaign-audience-message-matrix",
+      "domain_code": "MCA",
+      "subdomain": "Design",
+      "description": "Campaign audience message mapping using supplied evidence and explicit acceptance checks; use when preparing a campaign audience message mapping deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MCA-003",
+      "name": "campaign-channel-role-plan",
+      "domain_code": "MCA",
+      "subdomain": "Design",
+      "description": "Campaign channel role planning using supplied evidence and explicit acceptance checks; use when preparing a campaign channel role planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MCA-004",
+      "name": "campaign-creative-test-matrix",
+      "domain_code": "MCA",
+      "subdomain": "Design",
+      "description": "Campaign creative test matrix design using supplied evidence and explicit acceptance checks; use when preparing a campaign creative test matrix design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MCA-005",
+      "name": "campaign-offer-consistency-audit",
+      "domain_code": "MCA",
+      "subdomain": "Design",
+      "description": "Campaign offer consistency auditing using supplied evidence and explicit acceptance checks; use when preparing a campaign offer consistency auditing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MCA-006",
+      "name": "campaign-launch-readiness-review",
+      "domain_code": "MCA",
+      "subdomain": "Design",
+      "description": "Campaign launch readiness review using supplied evidence and explicit acceptance checks; use when preparing a campaign launch readiness review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MCA-007",
+      "name": "campaign-calendar-dependency-plan",
+      "domain_code": "MCA",
+      "subdomain": "Design",
+      "description": "Campaign calendar dependency planning using supplied evidence and explicit acceptance checks; use when preparing a campaign calendar dependency planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MCA-008",
+      "name": "campaign-landing-message-match",
+      "domain_code": "MCA",
+      "subdomain": "Design",
+      "description": "Campaign landing message match review using supplied evidence and explicit acceptance checks; use when preparing a campaign landing message match review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MCA-009",
+      "name": "campaign-postmortem-facilitation",
+      "domain_code": "MCA",
+      "subdomain": "Design",
+      "description": "Campaign postmortem preparation using supplied evidence and explicit acceptance checks; use when preparing a campaign postmortem preparation deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MCA-010",
+      "name": "campaign-contingency-message-plan",
+      "domain_code": "MCA",
+      "subdomain": "Design",
+      "description": "Campaign contingency message planning using supplied evidence and explicit acceptance checks; use when preparing a campaign contingency message planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEM-001",
+      "name": "email-welcome-sequence-plan",
+      "domain_code": "MEM",
+      "subdomain": "Design",
+      "description": "Email welcome sequence planning using supplied evidence and explicit acceptance checks; use when preparing a email welcome sequence planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEM-002",
+      "name": "email-segmentation-rule-review",
+      "domain_code": "MEM",
+      "subdomain": "Design",
+      "description": "Email segmentation rule review using supplied evidence and explicit acceptance checks; use when preparing a email segmentation rule review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEM-003",
+      "name": "email-subject-preheader-review",
+      "domain_code": "MEM",
+      "subdomain": "Design",
+      "description": "Email subject and preheader review using supplied evidence and explicit acceptance checks; use when preparing a email subject and preheader review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEM-004",
+      "name": "email-single-action-edit",
+      "domain_code": "MEM",
+      "subdomain": "Design",
+      "description": "Email primary-action editing using supplied evidence and explicit acceptance checks; use when preparing a email primary-action editing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEM-005",
+      "name": "email-reactivation-brief",
+      "domain_code": "MEM",
+      "subdomain": "Design",
+      "description": "Email reactivation briefing using supplied evidence and explicit acceptance checks; use when preparing a email reactivation briefing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEM-006",
+      "name": "email-transactional-content-review",
+      "domain_code": "MEM",
+      "subdomain": "Design",
+      "description": "Transactional email content review using supplied evidence and explicit acceptance checks; use when preparing a transactional email content review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEM-007",
+      "name": "email-send-readiness-check",
+      "domain_code": "MEM",
+      "subdomain": "Design",
+      "description": "Email send readiness review using supplied evidence and explicit acceptance checks; use when preparing a email send readiness review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEM-008",
+      "name": "email-journey-collision-review",
+      "domain_code": "MEM",
+      "subdomain": "Design",
+      "description": "Email journey collision review using supplied evidence and explicit acceptance checks; use when preparing a email journey collision review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEM-009",
+      "name": "email-feedback-theme-review",
+      "domain_code": "MEM",
+      "subdomain": "Design",
+      "description": "Email feedback theme review using supplied evidence and explicit acceptance checks; use when preparing a email feedback theme review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEM-010",
+      "name": "email-preference-center-content",
+      "domain_code": "MEM",
+      "subdomain": "Design",
+      "description": "Email preference center content design using supplied evidence and explicit acceptance checks; use when preparing a email preference center content design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MBR-001",
+      "name": "brand-voice-operational-guide",
+      "domain_code": "MBR",
+      "subdomain": "Design",
+      "description": "Brand voice operational guide design using supplied evidence and explicit acceptance checks; use when preparing a brand voice operational guide design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MBR-002",
+      "name": "brand-message-hierarchy",
+      "domain_code": "MBR",
+      "subdomain": "Design",
+      "description": "Brand message hierarchy design using supplied evidence and explicit acceptance checks; use when preparing a brand message hierarchy design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MBR-003",
+      "name": "commercial-copy-claim-substantiation",
+      "domain_code": "MBR",
+      "subdomain": "Design",
+      "description": "Commercial copy claim substantiation review using supplied evidence and explicit acceptance checks; use when preparing a commercial copy claim substantiation review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MBR-004",
+      "name": "commercial-case-study-outline",
+      "domain_code": "MBR",
+      "subdomain": "Design",
+      "description": "Commercial case study outline design using supplied evidence and explicit acceptance checks; use when preparing a commercial case study outline design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MBR-005",
+      "name": "commercial-editorial-calendar",
+      "domain_code": "MBR",
+      "subdomain": "Design",
+      "description": "Commercial editorial calendar planning using supplied evidence and explicit acceptance checks; use when preparing a commercial editorial calendar planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MBR-006",
+      "name": "commercial-content-repurposing-plan",
+      "domain_code": "MBR",
+      "subdomain": "Design",
+      "description": "Commercial content repurposing planning using supplied evidence and explicit acceptance checks; use when preparing a commercial content repurposing planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MBR-007",
+      "name": "commercial-headline-alternatives",
+      "domain_code": "MBR",
+      "subdomain": "Design",
+      "description": "Commercial headline alternative drafting using supplied evidence and explicit acceptance checks; use when preparing a commercial headline alternative drafting deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MBR-008",
+      "name": "commercial-style-consistency-review",
+      "domain_code": "MBR",
+      "subdomain": "Design",
+      "description": "Commercial style consistency review using supplied evidence and explicit acceptance checks; use when preparing a commercial style consistency review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MBR-009",
+      "name": "commercial-asset-reuse-inventory",
+      "domain_code": "MBR",
+      "subdomain": "Design",
+      "description": "Commercial asset reuse inventory using supplied evidence and explicit acceptance checks; use when preparing a commercial asset reuse inventory deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MBR-010",
+      "name": "commercial-brief-to-review-rubric",
+      "domain_code": "MBR",
+      "subdomain": "Design",
+      "description": "Commercial creative review rubric design using supplied evidence and explicit acceptance checks; use when preparing a commercial creative review rubric design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSA-001",
+      "name": "sales-discovery-question-plan",
+      "domain_code": "MSA",
+      "subdomain": "Design",
+      "description": "Sales discovery question planning using supplied evidence and explicit acceptance checks; use when preparing a sales discovery question planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSA-002",
+      "name": "sales-qualification-evidence-review",
+      "domain_code": "MSA",
+      "subdomain": "Design",
+      "description": "Sales qualification evidence review using supplied evidence and explicit acceptance checks; use when preparing a sales qualification evidence review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSA-003",
+      "name": "sales-demo-storyboard",
+      "domain_code": "MSA",
+      "subdomain": "Design",
+      "description": "Sales demonstration storyboard design using supplied evidence and explicit acceptance checks; use when preparing a sales demonstration storyboard design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSA-004",
+      "name": "sales-objection-response-map",
+      "domain_code": "MSA",
+      "subdomain": "Design",
+      "description": "Sales objection response mapping using supplied evidence and explicit acceptance checks; use when preparing a sales objection response mapping deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSA-005",
+      "name": "sales-follow-up-draft",
+      "domain_code": "MSA",
+      "subdomain": "Design",
+      "description": "Sales follow-up draft preparation using supplied evidence and explicit acceptance checks; use when preparing a sales follow-up draft preparation deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSA-006",
+      "name": "sales-proposal-scope-outline",
+      "domain_code": "MSA",
+      "subdomain": "Design",
+      "description": "Sales proposal scope outlining using supplied evidence and explicit acceptance checks; use when preparing a sales proposal scope outlining deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSA-007",
+      "name": "sales-mutual-action-plan",
+      "domain_code": "MSA",
+      "subdomain": "Design",
+      "description": "Sales mutual action plan drafting using supplied evidence and explicit acceptance checks; use when preparing a sales mutual action plan drafting deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSA-008",
+      "name": "sales-handoff-to-delivery",
+      "domain_code": "MSA",
+      "subdomain": "Design",
+      "description": "Sales to delivery handoff preparation using supplied evidence and explicit acceptance checks; use when preparing a sales to delivery handoff preparation deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSA-009",
+      "name": "sales-loss-reason-analysis",
+      "domain_code": "MSA",
+      "subdomain": "Design",
+      "description": "Sales loss reason analysis using supplied evidence and explicit acceptance checks; use when preparing a sales loss reason analysis deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSA-010",
+      "name": "sales-collateral-gap-review",
+      "domain_code": "MSA",
+      "subdomain": "Design",
+      "description": "Sales collateral gap review using supplied evidence and explicit acceptance checks; use when preparing a sales collateral gap review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEC-001",
+      "name": "ecommerce-product-page-information-audit",
+      "domain_code": "MEC",
+      "subdomain": "Design",
+      "description": "Product page information auditing using supplied evidence and explicit acceptance checks; use when preparing a product page information auditing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEC-002",
+      "name": "ecommerce-variant-selection-review",
+      "domain_code": "MEC",
+      "subdomain": "Design",
+      "description": "Product variant selection review using supplied evidence and explicit acceptance checks; use when preparing a product variant selection review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEC-003",
+      "name": "ecommerce-size-guide-brief",
+      "domain_code": "MEC",
+      "subdomain": "Design",
+      "description": "Product sizing guide briefing using supplied evidence and explicit acceptance checks; use when preparing a product sizing guide briefing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEC-004",
+      "name": "ecommerce-cart-transparency-review",
+      "domain_code": "MEC",
+      "subdomain": "Design",
+      "description": "Cart information transparency review using supplied evidence and explicit acceptance checks; use when preparing a cart information transparency review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEC-005",
+      "name": "ecommerce-checkout-friction-review",
+      "domain_code": "MEC",
+      "subdomain": "Design",
+      "description": "Checkout friction review planning using supplied evidence and explicit acceptance checks; use when preparing a checkout friction review planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEC-006",
+      "name": "ecommerce-product-comparison-table",
+      "domain_code": "MEC",
+      "subdomain": "Design",
+      "description": "Product comparison table design using supplied evidence and explicit acceptance checks; use when preparing a product comparison table design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEC-007",
+      "name": "ecommerce-return-policy-content-review",
+      "domain_code": "MEC",
+      "subdomain": "Design",
+      "description": "Return process content clarity review using supplied evidence and explicit acceptance checks; use when preparing a return process content clarity review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEC-008",
+      "name": "ecommerce-postpurchase-message-plan",
+      "domain_code": "MEC",
+      "subdomain": "Design",
+      "description": "Post-purchase message planning using supplied evidence and explicit acceptance checks; use when preparing a post-purchase message planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEC-009",
+      "name": "ecommerce-out-of-stock-experience",
+      "domain_code": "MEC",
+      "subdomain": "Design",
+      "description": "Out-of-stock experience planning using supplied evidence and explicit acceptance checks; use when preparing a out-of-stock experience planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MEC-010",
+      "name": "ecommerce-catalog-attribute-cleanup",
+      "domain_code": "MEC",
+      "subdomain": "Design",
+      "description": "Catalog attribute cleanup planning using supplied evidence and explicit acceptance checks; use when preparing a catalog attribute cleanup planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPU-001",
+      "name": "product-task-flow-review",
+      "domain_code": "MPU",
+      "subdomain": "Design",
+      "description": "Product task flow review using supplied evidence and explicit acceptance checks; use when preparing a product task flow review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPU-002",
+      "name": "product-empty-state-copy",
+      "domain_code": "MPU",
+      "subdomain": "Design",
+      "description": "Product empty-state content design using supplied evidence and explicit acceptance checks; use when preparing a product empty-state content design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPU-003",
+      "name": "product-error-message-review",
+      "domain_code": "MPU",
+      "subdomain": "Design",
+      "description": "Product error message review using supplied evidence and explicit acceptance checks; use when preparing a product error message review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPU-004",
+      "name": "product-form-question-audit",
+      "domain_code": "MPU",
+      "subdomain": "Design",
+      "description": "Product form question audit using supplied evidence and explicit acceptance checks; use when preparing a product form question audit deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPU-005",
+      "name": "product-onboarding-friction-review",
+      "domain_code": "MPU",
+      "subdomain": "Design",
+      "description": "Product onboarding friction review using supplied evidence and explicit acceptance checks; use when preparing a product onboarding friction review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPU-006",
+      "name": "product-prototype-test-scenario",
+      "domain_code": "MPU",
+      "subdomain": "Design",
+      "description": "Product prototype test scenario design using supplied evidence and explicit acceptance checks; use when preparing a product prototype test scenario design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPU-007",
+      "name": "product-feedback-deduplication",
+      "domain_code": "MPU",
+      "subdomain": "Design",
+      "description": "Product feedback deduplication review using supplied evidence and explicit acceptance checks; use when preparing a product feedback deduplication review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPU-008",
+      "name": "product-feature-request-reframing",
+      "domain_code": "MPU",
+      "subdomain": "Design",
+      "description": "Product feature request reframing using supplied evidence and explicit acceptance checks; use when preparing a product feature request reframing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPU-009",
+      "name": "product-release-note-drafting",
+      "domain_code": "MPU",
+      "subdomain": "Design",
+      "description": "Product release note drafting using supplied evidence and explicit acceptance checks; use when preparing a product release note drafting deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPU-010",
+      "name": "product-design-handoff-checklist",
+      "domain_code": "MPU",
+      "subdomain": "Design",
+      "description": "Product design handoff preparation using supplied evidence and explicit acceptance checks; use when preparing a product design handoff preparation deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSV-001",
+      "name": "startup-problem-hypothesis-card",
+      "domain_code": "MSV",
+      "subdomain": "Design",
+      "description": "Startup problem hypothesis design using supplied evidence and explicit acceptance checks; use when preparing a startup problem hypothesis design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSV-002",
+      "name": "startup-assumption-risk-order",
+      "domain_code": "MSV",
+      "subdomain": "Design",
+      "description": "Startup assumption risk ordering using supplied evidence and explicit acceptance checks; use when preparing a startup assumption risk ordering deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSV-003",
+      "name": "startup-customer-commitment-ladder",
+      "domain_code": "MSV",
+      "subdomain": "Design",
+      "description": "Startup customer commitment evidence mapping using supplied evidence and explicit acceptance checks; use when preparing a startup customer commitment evidence mapping deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSV-004",
+      "name": "startup-concierge-test-plan",
+      "domain_code": "MSV",
+      "subdomain": "Design",
+      "description": "Startup concierge test planning using supplied evidence and explicit acceptance checks; use when preparing a startup concierge test planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSV-005",
+      "name": "startup-landing-page-test-brief",
+      "domain_code": "MSV",
+      "subdomain": "Design",
+      "description": "Startup landing-page test briefing using supplied evidence and explicit acceptance checks; use when preparing a startup landing-page test briefing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSV-006",
+      "name": "startup-pilot-scope-design",
+      "domain_code": "MSV",
+      "subdomain": "Design",
+      "description": "Startup pilot scope design using supplied evidence and explicit acceptance checks; use when preparing a startup pilot scope design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSV-007",
+      "name": "startup-validation-result-review",
+      "domain_code": "MSV",
+      "subdomain": "Design",
+      "description": "Startup validation result review using supplied evidence and explicit acceptance checks; use when preparing a startup validation result review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSV-008",
+      "name": "startup-founder-sales-learning-log",
+      "domain_code": "MSV",
+      "subdomain": "Design",
+      "description": "Startup founder-sales learning log using supplied evidence and explicit acceptance checks; use when preparing a startup founder-sales learning log deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSV-009",
+      "name": "startup-early-adopter-screen",
+      "domain_code": "MSV",
+      "subdomain": "Design",
+      "description": "Startup early-adopter recruitment screen using supplied evidence and explicit acceptance checks; use when preparing a startup early-adopter recruitment screen deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSV-010",
+      "name": "startup-pivot-evidence-brief",
+      "domain_code": "MSV",
+      "subdomain": "Design",
+      "description": "Startup pivot evidence brief preparation using supplied evidence and explicit acceptance checks; use when preparing a startup pivot evidence brief preparation deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MOP-001",
+      "name": "startup-service-intake-form",
+      "domain_code": "MOP",
+      "subdomain": "Design",
+      "description": "Startup service intake design using supplied evidence and explicit acceptance checks; use when preparing a startup service intake design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MOP-002",
+      "name": "startup-support-triage-rules",
+      "domain_code": "MOP",
+      "subdomain": "Design",
+      "description": "Startup support triage rule design using supplied evidence and explicit acceptance checks; use when preparing a startup support triage rule design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MOP-003",
+      "name": "startup-service-delivery-checklist",
+      "domain_code": "MOP",
+      "subdomain": "Design",
+      "description": "Startup service delivery checklist design using supplied evidence and explicit acceptance checks; use when preparing a startup service delivery checklist design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MOP-004",
+      "name": "startup-vendor-comparison-brief",
+      "domain_code": "MOP",
+      "subdomain": "Design",
+      "description": "Startup vendor comparison briefing using supplied evidence and explicit acceptance checks; use when preparing a startup vendor comparison briefing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MOP-005",
+      "name": "startup-vendor-onboarding-checklist",
+      "domain_code": "MOP",
+      "subdomain": "Design",
+      "description": "Startup vendor onboarding planning using supplied evidence and explicit acceptance checks; use when preparing a startup vendor onboarding planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MOP-006",
+      "name": "startup-customer-handoff-map",
+      "domain_code": "MOP",
+      "subdomain": "Design",
+      "description": "Startup customer handoff mapping using supplied evidence and explicit acceptance checks; use when preparing a startup customer handoff mapping deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MOP-007",
+      "name": "startup-process-exception-log",
+      "domain_code": "MOP",
+      "subdomain": "Design",
+      "description": "Startup process exception log design using supplied evidence and explicit acceptance checks; use when preparing a startup process exception log design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MOP-008",
+      "name": "startup-service-capacity-plan",
+      "domain_code": "MOP",
+      "subdomain": "Design",
+      "description": "Startup service capacity planning using supplied evidence and explicit acceptance checks; use when preparing a startup service capacity planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MOP-009",
+      "name": "startup-operating-procedure-draft",
+      "domain_code": "MOP",
+      "subdomain": "Design",
+      "description": "Startup operating procedure drafting using supplied evidence and explicit acceptance checks; use when preparing a startup operating procedure drafting deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MOP-010",
+      "name": "startup-workflow-retrospective",
+      "domain_code": "MOP",
+      "subdomain": "Design",
+      "description": "Startup workflow retrospective preparation using supplied evidence and explicit acceptance checks; use when preparing a startup workflow retrospective preparation deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSC-001",
+      "name": "fiction-scene-goal-pressure",
+      "domain_code": "MSC",
+      "subdomain": "Design",
+      "description": "Fiction scene goal and pressure revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene goal and pressure revision deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSC-002",
+      "name": "fiction-scene-viewpoint-consistency",
+      "domain_code": "MSC",
+      "subdomain": "Design",
+      "description": "Fiction scene viewpoint consistency repair using supplied evidence and explicit acceptance checks; use when preparing a fiction scene viewpoint consistency repair deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSC-003",
+      "name": "fiction-dialogue-subtext-revision",
+      "domain_code": "MSC",
+      "subdomain": "Design",
+      "description": "Fiction dialogue subtext revision using supplied evidence and explicit acceptance checks; use when preparing a fiction dialogue subtext revision deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSC-004",
+      "name": "fiction-action-blocking-repair",
+      "domain_code": "MSC",
+      "subdomain": "Design",
+      "description": "Fiction action blocking repair using supplied evidence and explicit acceptance checks; use when preparing a fiction action blocking repair deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSC-005",
+      "name": "fiction-sensory-detail-selection",
+      "domain_code": "MSC",
+      "subdomain": "Design",
+      "description": "Fiction sensory detail selection using supplied evidence and explicit acceptance checks; use when preparing a fiction sensory detail selection deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSC-006",
+      "name": "fiction-exposition-in-scene",
+      "domain_code": "MSC",
+      "subdomain": "Design",
+      "description": "Fiction exposition integration using supplied evidence and explicit acceptance checks; use when preparing a fiction exposition integration deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSC-007",
+      "name": "fiction-scene-opening-revision",
+      "domain_code": "MSC",
+      "subdomain": "Design",
+      "description": "Fiction scene opening revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene opening revision deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSC-008",
+      "name": "fiction-scene-ending-turn",
+      "domain_code": "MSC",
+      "subdomain": "Design",
+      "description": "Fiction scene ending revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene ending revision deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSC-009",
+      "name": "fiction-emotional-beat-grounding",
+      "domain_code": "MSC",
+      "subdomain": "Design",
+      "description": "Fiction emotional beat grounding using supplied evidence and explicit acceptance checks; use when preparing a fiction emotional beat grounding deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSC-010",
+      "name": "fiction-scene-compression",
+      "domain_code": "MSC",
+      "subdomain": "Design",
+      "description": "Fiction scene compression revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene compression revision deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSS-001",
+      "name": "fiction-premise-conflict-test",
+      "domain_code": "MSS",
+      "subdomain": "Design",
+      "description": "Fiction premise conflict testing using supplied evidence and explicit acceptance checks; use when preparing a fiction premise conflict testing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSS-002",
+      "name": "fiction-causal-outline-repair",
+      "domain_code": "MSS",
+      "subdomain": "Design",
+      "description": "Fiction causal outline repair using supplied evidence and explicit acceptance checks; use when preparing a fiction causal outline repair deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSS-003",
+      "name": "fiction-character-arc-map",
+      "domain_code": "MSS",
+      "subdomain": "Design",
+      "description": "Fiction character arc mapping using supplied evidence and explicit acceptance checks; use when preparing a fiction character arc mapping deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSS-004",
+      "name": "fiction-subplot-integration",
+      "domain_code": "MSS",
+      "subdomain": "Design",
+      "description": "Fiction subplot integration planning using supplied evidence and explicit acceptance checks; use when preparing a fiction subplot integration planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSS-005",
+      "name": "fiction-reveal-setup-payoff",
+      "domain_code": "MSS",
+      "subdomain": "Design",
+      "description": "Fiction reveal setup and payoff planning using supplied evidence and explicit acceptance checks; use when preparing a fiction reveal setup and payoff planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSS-006",
+      "name": "fiction-stakes-escalation-map",
+      "domain_code": "MSS",
+      "subdomain": "Design",
+      "description": "Fiction stakes escalation mapping using supplied evidence and explicit acceptance checks; use when preparing a fiction stakes escalation mapping deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSS-007",
+      "name": "fiction-antagonist-action-plan",
+      "domain_code": "MSS",
+      "subdomain": "Design",
+      "description": "Fiction antagonist action planning using supplied evidence and explicit acceptance checks; use when preparing a fiction antagonist action planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSS-008",
+      "name": "fiction-timeline-continuity-review",
+      "domain_code": "MSS",
+      "subdomain": "Design",
+      "description": "Fiction timeline continuity review using supplied evidence and explicit acceptance checks; use when preparing a fiction timeline continuity review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSS-009",
+      "name": "fiction-ending-choice-design",
+      "domain_code": "MSS",
+      "subdomain": "Design",
+      "description": "Fiction ending choice design using supplied evidence and explicit acceptance checks; use when preparing a fiction ending choice design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MSS-010",
+      "name": "fiction-outline-pacing-review",
+      "domain_code": "MSS",
+      "subdomain": "Design",
+      "description": "Fiction outline pacing review using supplied evidence and explicit acceptance checks; use when preparing a fiction outline pacing review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPH-001",
+      "name": "photo-subject-intention-brief",
+      "domain_code": "MPH",
+      "subdomain": "Design",
+      "description": "Photographic subject intention briefing using supplied evidence and explicit acceptance checks; use when preparing a photographic subject intention briefing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPH-002",
+      "name": "photo-background-distraction-review",
+      "domain_code": "MPH",
+      "subdomain": "Design",
+      "description": "Photographic background distraction review using supplied evidence and explicit acceptance checks; use when preparing a photographic background distraction review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPH-003",
+      "name": "photo-light-direction-study",
+      "domain_code": "MPH",
+      "subdomain": "Design",
+      "description": "Photographic light direction study planning using supplied evidence and explicit acceptance checks; use when preparing a photographic light direction study planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPH-004",
+      "name": "photo-crop-comparison",
+      "domain_code": "MPH",
+      "subdomain": "Design",
+      "description": "Photographic crop comparison review using supplied evidence and explicit acceptance checks; use when preparing a photographic crop comparison review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPH-005",
+      "name": "photo-shot-list-sequencing",
+      "domain_code": "MPH",
+      "subdomain": "Design",
+      "description": "Photographic shot list sequencing using supplied evidence and explicit acceptance checks; use when preparing a photographic shot list sequencing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPH-006",
+      "name": "photo-contact-sheet-selection",
+      "domain_code": "MPH",
+      "subdomain": "Design",
+      "description": "Photographic contact sheet selection using supplied evidence and explicit acceptance checks; use when preparing a photographic contact sheet selection deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPH-007",
+      "name": "photo-portrait-session-plan",
+      "domain_code": "MPH",
+      "subdomain": "Design",
+      "description": "Portrait session planning using supplied evidence and explicit acceptance checks; use when preparing a portrait session planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPH-008",
+      "name": "photo-product-shot-consistency",
+      "domain_code": "MPH",
+      "subdomain": "Design",
+      "description": "Product photograph consistency planning using supplied evidence and explicit acceptance checks; use when preparing a product photograph consistency planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPH-009",
+      "name": "photo-visual-story-edit",
+      "domain_code": "MPH",
+      "subdomain": "Design",
+      "description": "Photographic visual story editing using supplied evidence and explicit acceptance checks; use when preparing a photographic visual story editing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MPH-010",
+      "name": "photo-reshoot-decision-brief",
+      "domain_code": "MPH",
+      "subdomain": "Design",
+      "description": "Photographic reshoot decision briefing using supplied evidence and explicit acceptance checks; use when preparing a photographic reshoot decision briefing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MVA-001",
+      "name": "visual-hierarchy-critique",
+      "domain_code": "MVA",
+      "subdomain": "Design",
+      "description": "Visual hierarchy critique using supplied evidence and explicit acceptance checks; use when preparing a visual hierarchy critique deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MVA-002",
+      "name": "visual-spacing-grouping-review",
+      "domain_code": "MVA",
+      "subdomain": "Design",
+      "description": "Visual spacing and grouping review using supplied evidence and explicit acceptance checks; use when preparing a visual spacing and grouping review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MVA-003",
+      "name": "visual-color-role-plan",
+      "domain_code": "MVA",
+      "subdomain": "Design",
+      "description": "Visual color role planning using supplied evidence and explicit acceptance checks; use when preparing a visual color role planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MVA-004",
+      "name": "visual-type-pairing-brief",
+      "domain_code": "MVA",
+      "subdomain": "Design",
+      "description": "Visual typography pairing brief using supplied evidence and explicit acceptance checks; use when preparing a visual typography pairing brief deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MVA-005",
+      "name": "visual-reference-board-brief",
+      "domain_code": "MVA",
+      "subdomain": "Design",
+      "description": "Visual reference board briefing using supplied evidence and explicit acceptance checks; use when preparing a visual reference board briefing deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MVA-006",
+      "name": "visual-poster-composition-plan",
+      "domain_code": "MVA",
+      "subdomain": "Design",
+      "description": "Visual poster composition planning using supplied evidence and explicit acceptance checks; use when preparing a visual poster composition planning deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MVA-007",
+      "name": "visual-image-text-relationship",
+      "domain_code": "MVA",
+      "subdomain": "Design",
+      "description": "Visual image and text relationship review using supplied evidence and explicit acceptance checks; use when preparing a visual image and text relationship review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MVA-008",
+      "name": "visual-layout-variation-study",
+      "domain_code": "MVA",
+      "subdomain": "Design",
+      "description": "Visual layout variation study design using supplied evidence and explicit acceptance checks; use when preparing a visual layout variation study design deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MVA-009",
+      "name": "visual-art-direction-handoff",
+      "domain_code": "MVA",
+      "subdomain": "Design",
+      "description": "Visual art-direction handoff preparation using supplied evidence and explicit acceptance checks; use when preparing a visual art-direction handoff preparation deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "MVA-010",
+      "name": "visual-composition-iteration-review",
+      "domain_code": "MVA",
+      "subdomain": "Design",
+      "description": "Visual composition iteration review using supplied evidence and explicit acceptance checks; use when preparing a visual composition iteration review deliverable.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

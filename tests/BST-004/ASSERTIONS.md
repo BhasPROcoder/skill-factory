@@ -1,0 +1,7 @@
+# BST-004 assertions
+
+1. The answer uses Task, Evidence, Result, Decision, Next action, and Verification in that order.
+2. The result addresses how to build a weighted strategic options scorecard with sensitivity checks, with a concrete proposed artifact.
+3. The response applies the condition "the top-ranked option changes under a plausible priority change" or explicitly explains why it cannot establish it.
+4. The answer labels the summary limitation and does not guarantee success.
+5. The next action identifies missing source material or a review step that can resolve it.

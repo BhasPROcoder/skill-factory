@@ -1,0 +1,1686 @@
+{
+  "domains": [
+    {
+      "code": "TRP",
+      "name": "Computational Reproducibility",
+      "macro": "Software Engineering",
+      "scope": "Make computational artifacts traceable, rerunnable, and comparable without hidden environmental or data dependencies.",
+      "subdomains": [
+        "Artifact identity",
+        "Environment",
+        "Reruns",
+        "Handoffs"
+      ]
+    },
+    {
+      "code": "TAM",
+      "name": "Audio and Music Production Planning",
+      "macro": "Music & Audio Production",
+      "scope": "Plan recording, editing, arrangement, review, and delivery decisions from supplied audio evidence and creative constraints.",
+      "subdomains": [
+        "Recording",
+        "Arrangement",
+        "Editing",
+        "Delivery"
+      ]
+    },
+    {
+      "code": "TVE",
+      "name": "Video Editing Decisions",
+      "macro": "Visual Arts, Photo & Video",
+      "scope": "Plan and review video structure, continuity, sound-image relationships, accessibility, and delivery from supplied footage and briefs.",
+      "subdomains": [
+        "Story structure",
+        "Continuity",
+        "Sound and captions",
+        "Delivery"
+      ]
+    },
+    {
+      "code": "TDV",
+      "name": "Deployment and Operations Planning",
+      "macro": "DevOps & Cloud",
+      "scope": "Prepare deployments, recovery, capacity checks, and operational handoffs with explicit evidence and rollback boundaries.",
+      "subdomains": [
+        "Deployment",
+        "Recovery",
+        "Capacity",
+        "Service operations"
+      ]
+    },
+    {
+      "code": "TSC",
+      "name": "Defensive Security Review",
+      "macro": "Cybersecurity",
+      "scope": "Review authorized system evidence, access boundaries, exposure, and recovery preparation without performing intrusive security actions.",
+      "subdomains": [
+        "Authorization",
+        "Access review",
+        "Exposure",
+        "Response preparation"
+      ]
+    },
+    {
+      "code": "TAP",
+      "name": "API Contract Engineering",
+      "macro": "Software Engineering",
+      "scope": "Define and test request, response, retry, pagination, and compatibility contracts for application interfaces.",
+      "subdomains": [
+        "Requests",
+        "Responses",
+        "Compatibility",
+        "Reliability"
+      ]
+    },
+    {
+      "code": "TST",
+      "name": "Software Verification Design",
+      "macro": "Software Engineering",
+      "scope": "Design focused tests for behavior, boundaries, state transitions, regressions, and reproducible failures.",
+      "subdomains": [
+        "Test selection",
+        "State transitions",
+        "Failure diagnosis",
+        "Regression prevention"
+      ]
+    },
+    {
+      "code": "TKG",
+      "name": "Kaggle Competition Workflows",
+      "macro": "AI/ML & Data Science",
+      "scope": "Prepare competition experiments, submissions, collaboration records, and reproducible handoffs under verified current competition rules.",
+      "subdomains": [
+        "Competition setup",
+        "Experiments",
+        "Submissions",
+        "Finalization"
+      ]
+    },
+    {
+      "code": "THK",
+      "name": "Hackathon Delivery",
+      "macro": "Software Engineering",
+      "scope": "Scope, organize, demonstrate, and hand off time-bounded hackathon projects under supplied event requirements.",
+      "subdomains": [
+        "Scoping",
+        "Team execution",
+        "Demonstration",
+        "Submission"
+      ]
+    },
+    {
+      "code": "TML",
+      "name": "Model Evaluation Design",
+      "macro": "AI/ML & Data Science",
+      "scope": "Design and interpret model evaluations that reflect deployment conditions and explicit decision costs.",
+      "subdomains": [
+        "Validation",
+        "Metrics",
+        "Error analysis",
+        "Deployment comparison"
+      ]
+    },
+    {
+      "code": "TFE",
+      "name": "Feature and Label Pipelines",
+      "macro": "AI/ML & Data Science",
+      "scope": "Design feature transformations and label construction with prediction-time availability and reproducible fitting boundaries.",
+      "subdomains": [
+        "Availability",
+        "Encoding",
+        "Aggregation",
+        "Training-serving consistency"
+      ]
+    },
+    {
+      "code": "TDE",
+      "name": "Data Pipeline Design",
+      "macro": "AI/ML & Data Science",
+      "scope": "Specify reliable ingestion, transformation, recovery, and data-contract behavior for bounded pipelines.",
+      "subdomains": [
+        "Ingestion",
+        "State management",
+        "Recovery",
+        "Contracts"
+      ]
+    },
+    {
+      "code": "TAN",
+      "name": "Analytical Reasoning and Metrics",
+      "macro": "AI/ML & Data Science",
+      "scope": "Define and diagnose analytical measures, comparisons, uncertainty, and interpretation using supplied data.",
+      "subdomains": [
+        "Metric definitions",
+        "Comparisons",
+        "Diagnostics",
+        "Interpretation"
+      ]
+    },
+    {
+      "code": "TDS",
+      "name": "Dataset Intake and Documentation",
+      "macro": "AI/ML & Data Science",
+      "scope": "Assess dataset suitability, provenance, documentation, and release readiness before downstream use.",
+      "subdomains": [
+        "Discovery",
+        "Provenance",
+        "Documentation",
+        "Release readiness"
+      ]
+    },
+    {
+      "code": "TDQ",
+      "name": "Dataset Quality Diagnostics",
+      "macro": "AI/ML & Data Science",
+      "scope": "Diagnose concrete dataset integrity failures and define evidence-based repair checks.",
+      "subdomains": [
+        "Schema",
+        "Missingness",
+        "Integrity",
+        "Reconciliation"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "TRP-001",
+      "name": "reproducibility-run-manifest",
+      "domain_code": "TRP",
+      "subdomain": "Artifact identity",
+      "description": "Produce a computational run manifest; use when the task is to reproducibility run manifest.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TRP-002",
+      "name": "reproducibility-clean-environment-plan",
+      "domain_code": "TRP",
+      "subdomain": "Environment",
+      "description": "Produce a clean-environment reproduction plan; use when the task is to reproducibility clean environment plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TRP-003",
+      "name": "reproducibility-randomness-control-plan",
+      "domain_code": "TRP",
+      "subdomain": "Reruns",
+      "description": "Produce a stochastic run comparison plan; use when the task is to reproducibility randomness control plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TRP-004",
+      "name": "reproducibility-notebook-state-audit",
+      "domain_code": "TRP",
+      "subdomain": "Handoffs",
+      "description": "Produce a notebook execution-state audit; use when the task is to reproducibility notebook state audit.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TRP-005",
+      "name": "reproducibility-artifact-hash-plan",
+      "domain_code": "TRP",
+      "subdomain": "Artifact identity",
+      "description": "Produce an artifact integrity manifest; use when the task is to reproducibility artifact hash plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TRP-006",
+      "name": "reproducibility-configuration-capture",
+      "domain_code": "TRP",
+      "subdomain": "Environment",
+      "description": "Produce an effective configuration record; use when the task is to reproducibility configuration capture.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TRP-007",
+      "name": "reproducibility-result-tolerance-spec",
+      "domain_code": "TRP",
+      "subdomain": "Reruns",
+      "description": "Produce a result comparison specification; use when the task is to reproducibility result tolerance spec.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TRP-008",
+      "name": "reproducibility-data-snapshot-policy",
+      "domain_code": "TRP",
+      "subdomain": "Handoffs",
+      "description": "Produce a data snapshot policy; use when the task is to reproducibility data snapshot policy.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TRP-009",
+      "name": "reproducibility-experiment-diff",
+      "domain_code": "TRP",
+      "subdomain": "Artifact identity",
+      "description": "Produce an experiment difference report; use when the task is to reproducibility experiment diff.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TRP-010",
+      "name": "reproducibility-handoff-acceptance-test",
+      "domain_code": "TRP",
+      "subdomain": "Environment",
+      "description": "Produce a reproduction handoff acceptance plan; use when the task is to reproducibility handoff acceptance test.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAM-001",
+      "name": "audio-recording-session-plan",
+      "domain_code": "TAM",
+      "subdomain": "Recording",
+      "description": "Produce a recording session plan; use when the task is to audio recording session plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAM-002",
+      "name": "audio-reference-listening-brief",
+      "domain_code": "TAM",
+      "subdomain": "Arrangement",
+      "description": "Produce a reference listening brief; use when the task is to audio reference listening brief.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAM-003",
+      "name": "audio-vocal-comp-selection-plan",
+      "domain_code": "TAM",
+      "subdomain": "Editing",
+      "description": "Produce a vocal comp selection plan; use when the task is to audio vocal comp selection plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAM-004",
+      "name": "audio-dialogue-edit-plan",
+      "domain_code": "TAM",
+      "subdomain": "Delivery",
+      "description": "Produce a dialogue editing plan; use when the task is to audio dialogue edit plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAM-005",
+      "name": "audio-noise-reduction-test-plan",
+      "domain_code": "TAM",
+      "subdomain": "Recording",
+      "description": "Produce a noise-reduction audition plan; use when the task is to audio noise reduction test plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAM-006",
+      "name": "music-arrangement-density-map",
+      "domain_code": "TAM",
+      "subdomain": "Arrangement",
+      "description": "Produce an arrangement density map; use when the task is to music arrangement density map.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAM-007",
+      "name": "music-transition-arrangement-plan",
+      "domain_code": "TAM",
+      "subdomain": "Editing",
+      "description": "Produce a musical transition plan; use when the task is to music transition arrangement plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAM-008",
+      "name": "audio-mix-feedback-translation",
+      "domain_code": "TAM",
+      "subdomain": "Delivery",
+      "description": "Produce an actionable mix feedback sheet; use when the task is to audio mix feedback translation.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAM-009",
+      "name": "audio-stem-handoff-checklist",
+      "domain_code": "TAM",
+      "subdomain": "Recording",
+      "description": "Produce an audio stem handoff checklist; use when the task is to audio stem handoff checklist.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAM-010",
+      "name": "audio-delivery-requirement-review",
+      "domain_code": "TAM",
+      "subdomain": "Arrangement",
+      "description": "Produce an audio delivery specification sheet; use when the task is to audio delivery requirement review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TVE-001",
+      "name": "video-footage-logging-plan",
+      "domain_code": "TVE",
+      "subdomain": "Story structure",
+      "description": "Produce a footage logging sheet; use when the task is to video footage logging plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TVE-002",
+      "name": "video-paper-edit-outline",
+      "domain_code": "TVE",
+      "subdomain": "Continuity",
+      "description": "Produce a paper edit outline; use when the task is to video paper edit outline.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TVE-003",
+      "name": "video-interview-selects-review",
+      "domain_code": "TVE",
+      "subdomain": "Sound and captions",
+      "description": "Produce an interview selects sheet; use when the task is to video interview selects review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TVE-004",
+      "name": "video-continuity-cut-review",
+      "domain_code": "TVE",
+      "subdomain": "Delivery",
+      "description": "Produce a continuity edit review; use when the task is to video continuity cut review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TVE-005",
+      "name": "video-broll-coverage-plan",
+      "domain_code": "TVE",
+      "subdomain": "Story structure",
+      "description": "Produce a supporting-footage coverage plan; use when the task is to video broll coverage plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TVE-006",
+      "name": "video-pacing-revision-plan",
+      "domain_code": "TVE",
+      "subdomain": "Continuity",
+      "description": "Produce a pacing revision plan; use when the task is to video pacing revision plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TVE-007",
+      "name": "video-sound-picture-transition-plan",
+      "domain_code": "TVE",
+      "subdomain": "Sound and captions",
+      "description": "Produce a sound-picture transition plan; use when the task is to video sound picture transition plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TVE-008",
+      "name": "video-caption-readability-review",
+      "domain_code": "TVE",
+      "subdomain": "Delivery",
+      "description": "Produce a caption readability review; use when the task is to video caption readability review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TVE-009",
+      "name": "video-version-feedback-reconciliation",
+      "domain_code": "TVE",
+      "subdomain": "Story structure",
+      "description": "Produce a video revision decision log; use when the task is to video version feedback reconciliation.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TVE-010",
+      "name": "video-export-quality-check-plan",
+      "domain_code": "TVE",
+      "subdomain": "Continuity",
+      "description": "Produce a video export quality check plan; use when the task is to video export quality check plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDV-001",
+      "name": "deployment-rollback-readiness",
+      "domain_code": "TDV",
+      "subdomain": "Deployment",
+      "description": "Produce a deployment rollback readiness review; use when the task is to deployment rollback readiness.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDV-002",
+      "name": "deployment-canary-evidence-plan",
+      "domain_code": "TDV",
+      "subdomain": "Recovery",
+      "description": "Produce a canary evaluation plan; use when the task is to deployment canary evidence plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDV-003",
+      "name": "deployment-configuration-diff-review",
+      "domain_code": "TDV",
+      "subdomain": "Capacity",
+      "description": "Produce a deployment configuration impact review; use when the task is to deployment configuration diff review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDV-004",
+      "name": "operations-backup-restore-rehearsal",
+      "domain_code": "TDV",
+      "subdomain": "Service operations",
+      "description": "Produce a backup restoration rehearsal plan; use when the task is to operations backup restore rehearsal.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDV-005",
+      "name": "operations-alert-actionability-review",
+      "domain_code": "TDV",
+      "subdomain": "Deployment",
+      "description": "Produce an actionable alert specification; use when the task is to operations alert actionability review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDV-006",
+      "name": "operations-capacity-test-plan",
+      "domain_code": "TDV",
+      "subdomain": "Recovery",
+      "description": "Produce a workload-based capacity test plan; use when the task is to operations capacity test plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDV-007",
+      "name": "operations-incident-timeline-build",
+      "domain_code": "TDV",
+      "subdomain": "Capacity",
+      "description": "Produce an evidence-linked incident timeline; use when the task is to operations incident timeline build.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDV-008",
+      "name": "operations-runbook-gap-review",
+      "domain_code": "TDV",
+      "subdomain": "Service operations",
+      "description": "Produce an operational runbook gap report; use when the task is to operations runbook gap review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDV-009",
+      "name": "deployment-environment-parity-review",
+      "domain_code": "TDV",
+      "subdomain": "Deployment",
+      "description": "Produce an environment parity assessment; use when the task is to deployment environment parity review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDV-010",
+      "name": "operations-postincident-action-review",
+      "domain_code": "TDV",
+      "subdomain": "Recovery",
+      "description": "Produce a post-incident action plan; use when the task is to operations postincident action review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TSC-001",
+      "name": "security-review-scope-charter",
+      "domain_code": "TSC",
+      "subdomain": "Authorization",
+      "description": "Produce an authorized security review charter; use when the task is to security review scope charter.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TSC-002",
+      "name": "security-permission-review-matrix",
+      "domain_code": "TSC",
+      "subdomain": "Access review",
+      "description": "Produce a permission review matrix; use when the task is to security permission review matrix.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TSC-003",
+      "name": "security-secret-exposure-triage",
+      "domain_code": "TSC",
+      "subdomain": "Exposure",
+      "description": "Produce a secret exposure response brief; use when the task is to security secret exposure triage.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TSC-004",
+      "name": "security-dependency-advisory-triage",
+      "domain_code": "TSC",
+      "subdomain": "Response preparation",
+      "description": "Produce a dependency advisory triage report; use when the task is to security dependency advisory triage.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TSC-005",
+      "name": "security-logging-sensitive-data-review",
+      "domain_code": "TSC",
+      "subdomain": "Authorization",
+      "description": "Produce a sensitive logging review; use when the task is to security logging sensitive data review.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TSC-006",
+      "name": "security-trust-boundary-map",
+      "domain_code": "TSC",
+      "subdomain": "Access review",
+      "description": "Produce a trust boundary map; use when the task is to security trust boundary map.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TSC-007",
+      "name": "security-access-recertification-plan",
+      "domain_code": "TSC",
+      "subdomain": "Exposure",
+      "description": "Produce an access recertification workflow; use when the task is to security access recertification plan.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TSC-008",
+      "name": "security-incident-evidence-preservation-plan",
+      "domain_code": "TSC",
+      "subdomain": "Response preparation",
+      "description": "Produce an incident evidence preservation plan; use when the task is to security incident evidence preservation plan.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TSC-009",
+      "name": "security-backup-access-separation-review",
+      "domain_code": "TSC",
+      "subdomain": "Authorization",
+      "description": "Produce a backup access separation review; use when the task is to security backup access separation review.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TSC-010",
+      "name": "security-finding-evidence-writeup",
+      "domain_code": "TSC",
+      "subdomain": "Access review",
+      "description": "Produce a defensive finding writeup; use when the task is to security finding evidence writeup.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAP-001",
+      "name": "api-request-schema-review",
+      "domain_code": "TAP",
+      "subdomain": "Requests",
+      "description": "Produce a request schema review; use when the task is to api request schema review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAP-002",
+      "name": "api-error-response-contract",
+      "domain_code": "TAP",
+      "subdomain": "Responses",
+      "description": "Produce an error response contract; use when the task is to api error response contract.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAP-003",
+      "name": "api-pagination-consistency-plan",
+      "domain_code": "TAP",
+      "subdomain": "Compatibility",
+      "description": "Produce a pagination consistency specification; use when the task is to api pagination consistency plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAP-004",
+      "name": "api-retry-budget-design",
+      "domain_code": "TAP",
+      "subdomain": "Reliability",
+      "description": "Produce a retry behavior specification; use when the task is to api retry budget design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAP-005",
+      "name": "api-idempotency-key-contract",
+      "domain_code": "TAP",
+      "subdomain": "Requests",
+      "description": "Produce an idempotency key contract; use when the task is to api idempotency key contract.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAP-006",
+      "name": "api-version-compatibility-review",
+      "domain_code": "TAP",
+      "subdomain": "Responses",
+      "description": "Produce an API compatibility impact review; use when the task is to api version compatibility review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAP-007",
+      "name": "api-webhook-consumer-design",
+      "domain_code": "TAP",
+      "subdomain": "Compatibility",
+      "description": "Produce a webhook consumer reliability plan; use when the task is to api webhook consumer design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAP-008",
+      "name": "api-partial-update-semantics",
+      "domain_code": "TAP",
+      "subdomain": "Reliability",
+      "description": "Produce a partial update contract; use when the task is to api partial update semantics.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAP-009",
+      "name": "api-client-timeout-allocation",
+      "domain_code": "TAP",
+      "subdomain": "Requests",
+      "description": "Produce a client timeout allocation plan; use when the task is to api client timeout allocation.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAP-010",
+      "name": "api-contract-test-fixture-design",
+      "domain_code": "TAP",
+      "subdomain": "Responses",
+      "description": "Produce an API contract fixture set; use when the task is to api contract test fixture design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TST-001",
+      "name": "test-boundary-value-design",
+      "domain_code": "TST",
+      "subdomain": "Test selection",
+      "description": "Produce a boundary test matrix; use when the task is to test boundary value design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TST-002",
+      "name": "test-equivalence-partition-plan",
+      "domain_code": "TST",
+      "subdomain": "State transitions",
+      "description": "Produce an equivalence partition test plan; use when the task is to test equivalence partition plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TST-003",
+      "name": "test-state-transition-matrix",
+      "domain_code": "TST",
+      "subdomain": "Failure diagnosis",
+      "description": "Produce a state transition test matrix; use when the task is to test state transition matrix.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TST-004",
+      "name": "test-regression-case-minimization",
+      "domain_code": "TST",
+      "subdomain": "Regression prevention",
+      "description": "Produce a minimal regression fixture; use when the task is to test regression case minimization.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TST-005",
+      "name": "test-property-invariant-design",
+      "domain_code": "TST",
+      "subdomain": "Test selection",
+      "description": "Produce a property-based test specification; use when the task is to test property invariant design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TST-006",
+      "name": "test-metamorphic-relation-design",
+      "domain_code": "TST",
+      "subdomain": "State transitions",
+      "description": "Produce a metamorphic test relation; use when the task is to test metamorphic relation design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TST-007",
+      "name": "test-flaky-failure-triage",
+      "domain_code": "TST",
+      "subdomain": "Failure diagnosis",
+      "description": "Produce a flaky test investigation plan; use when the task is to test flaky failure triage.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TST-008",
+      "name": "test-mock-boundary-review",
+      "domain_code": "TST",
+      "subdomain": "Regression prevention",
+      "description": "Produce a test-double boundary review; use when the task is to test mock boundary review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TST-009",
+      "name": "test-concurrency-interleaving-plan",
+      "domain_code": "TST",
+      "subdomain": "Test selection",
+      "description": "Produce a concurrency test plan; use when the task is to test concurrency interleaving plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TST-010",
+      "name": "test-failure-injection-plan",
+      "domain_code": "TST",
+      "subdomain": "State transitions",
+      "description": "Produce a bounded failure-injection plan; use when the task is to test failure injection plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TKG-001",
+      "name": "kaggle-competition-rules-brief",
+      "domain_code": "TKG",
+      "subdomain": "Competition setup",
+      "description": "Produce a competition rules brief; use when the task is to kaggle competition rules brief.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TKG-002",
+      "name": "kaggle-evaluation-metric-translation",
+      "domain_code": "TKG",
+      "subdomain": "Experiments",
+      "description": "Produce an evaluation metric implementation brief; use when the task is to kaggle evaluation metric translation.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TKG-003",
+      "name": "kaggle-submission-schema-check",
+      "domain_code": "TKG",
+      "subdomain": "Submissions",
+      "description": "Produce a submission schema validation report; use when the task is to kaggle submission schema check.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TKG-004",
+      "name": "kaggle-experiment-ledger",
+      "domain_code": "TKG",
+      "subdomain": "Finalization",
+      "description": "Produce a competition experiment ledger; use when the task is to kaggle experiment ledger.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TKG-005",
+      "name": "kaggle-leaderboard-feedback-review",
+      "domain_code": "TKG",
+      "subdomain": "Competition setup",
+      "description": "Produce a leaderboard feedback interpretation; use when the task is to kaggle leaderboard feedback review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TKG-006",
+      "name": "kaggle-out-of-fold-prediction-assembly",
+      "domain_code": "TKG",
+      "subdomain": "Experiments",
+      "description": "Produce an out-of-fold prediction assembly plan; use when the task is to kaggle out of fold prediction assembly.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TKG-007",
+      "name": "kaggle-ensemble-eligibility-review",
+      "domain_code": "TKG",
+      "subdomain": "Submissions",
+      "description": "Produce an ensemble candidate review; use when the task is to kaggle ensemble eligibility review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TKG-008",
+      "name": "kaggle-notebook-rerun-readiness",
+      "domain_code": "TKG",
+      "subdomain": "Finalization",
+      "description": "Produce a notebook rerun readiness checklist; use when the task is to kaggle notebook rerun readiness.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TKG-009",
+      "name": "kaggle-final-submission-selection",
+      "domain_code": "TKG",
+      "subdomain": "Competition setup",
+      "description": "Produce a final submission selection brief; use when the task is to kaggle final submission selection.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TKG-010",
+      "name": "kaggle-post-competition-solution-handoff",
+      "domain_code": "TKG",
+      "subdomain": "Experiments",
+      "description": "Produce a competition solution handoff; use when the task is to kaggle post competition solution handoff.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "THK-001",
+      "name": "hackathon-problem-selection",
+      "domain_code": "THK",
+      "subdomain": "Scoping",
+      "description": "Produce a hackathon problem selection brief; use when the task is to hackathon problem selection.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "THK-002",
+      "name": "hackathon-minimum-demo-scope",
+      "domain_code": "THK",
+      "subdomain": "Team execution",
+      "description": "Produce a minimum demonstrable scope; use when the task is to hackathon minimum demo scope.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "THK-003",
+      "name": "hackathon-team-interface-contract",
+      "domain_code": "THK",
+      "subdomain": "Demonstration",
+      "description": "Produce a team integration contract; use when the task is to hackathon team interface contract.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "THK-004",
+      "name": "hackathon-risk-first-build-order",
+      "domain_code": "THK",
+      "subdomain": "Submission",
+      "description": "Produce a risk-first build sequence; use when the task is to hackathon risk first build order.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "THK-005",
+      "name": "hackathon-demo-script",
+      "domain_code": "THK",
+      "subdomain": "Scoping",
+      "description": "Produce a timed demo script; use when the task is to hackathon demo script.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "THK-006",
+      "name": "hackathon-fallback-demo-plan",
+      "domain_code": "THK",
+      "subdomain": "Team execution",
+      "description": "Produce a live-demo fallback plan; use when the task is to hackathon fallback demo plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "THK-007",
+      "name": "hackathon-judging-evidence-map",
+      "domain_code": "THK",
+      "subdomain": "Demonstration",
+      "description": "Produce a judging criterion evidence map; use when the task is to hackathon judging evidence map.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "THK-008",
+      "name": "hackathon-submission-package-check",
+      "domain_code": "THK",
+      "subdomain": "Submission",
+      "description": "Produce a submission package checklist; use when the task is to hackathon submission package check.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "THK-009",
+      "name": "hackathon-last-hour-triage",
+      "domain_code": "THK",
+      "subdomain": "Scoping",
+      "description": "Produce a final-stage stabilization plan; use when the task is to hackathon last hour triage.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "THK-010",
+      "name": "hackathon-post-event-handoff",
+      "domain_code": "THK",
+      "subdomain": "Team execution",
+      "description": "Produce a post-event continuation handoff; use when the task is to hackathon post event handoff.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TML-001",
+      "name": "model-validation-split-selection",
+      "domain_code": "TML",
+      "subdomain": "Validation",
+      "description": "Produce a validation split design; use when the task is to model validation split selection.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TML-002",
+      "name": "model-baseline-comparison-plan",
+      "domain_code": "TML",
+      "subdomain": "Metrics",
+      "description": "Produce a baseline comparison plan; use when the task is to model baseline comparison plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TML-003",
+      "name": "model-confusion-cost-review",
+      "domain_code": "TML",
+      "subdomain": "Error analysis",
+      "description": "Produce a classification error cost review; use when the task is to model confusion cost review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TML-004",
+      "name": "model-threshold-selection-plan",
+      "domain_code": "TML",
+      "subdomain": "Deployment comparison",
+      "description": "Produce a threshold selection worksheet; use when the task is to model threshold selection plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TML-005",
+      "name": "model-probability-calibration-review",
+      "domain_code": "TML",
+      "subdomain": "Validation",
+      "description": "Produce a probability calibration review; use when the task is to model probability calibration review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TML-006",
+      "name": "model-error-slice-investigation",
+      "domain_code": "TML",
+      "subdomain": "Metrics",
+      "description": "Produce an error slice investigation; use when the task is to model error slice investigation.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TML-007",
+      "name": "model-learning-curve-diagnosis",
+      "domain_code": "TML",
+      "subdomain": "Error analysis",
+      "description": "Produce a learning-curve diagnostic plan; use when the task is to model learning curve diagnosis.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TML-008",
+      "name": "model-ablation-experiment-design",
+      "domain_code": "TML",
+      "subdomain": "Deployment comparison",
+      "description": "Produce an ablation experiment plan; use when the task is to model ablation experiment design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TML-009",
+      "name": "model-distribution-shift-review",
+      "domain_code": "TML",
+      "subdomain": "Validation",
+      "description": "Produce a distribution shift review; use when the task is to model distribution shift review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TML-010",
+      "name": "model-promotion-evidence-check",
+      "domain_code": "TML",
+      "subdomain": "Metrics",
+      "description": "Produce a model promotion evidence checklist; use when the task is to model promotion evidence check.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TFE-001",
+      "name": "feature-availability-time-audit",
+      "domain_code": "TFE",
+      "subdomain": "Availability",
+      "description": "Produce a feature availability audit; use when the task is to feature availability time audit.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TFE-002",
+      "name": "feature-training-only-fit-check",
+      "domain_code": "TFE",
+      "subdomain": "Encoding",
+      "description": "Produce a transformation fitting-boundary audit; use when the task is to feature training only fit check.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TFE-003",
+      "name": "feature-category-unknown-policy",
+      "domain_code": "TFE",
+      "subdomain": "Aggregation",
+      "description": "Produce an unseen-category handling design; use when the task is to feature category unknown policy.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TFE-004",
+      "name": "feature-window-aggregation-design",
+      "domain_code": "TFE",
+      "subdomain": "Training-serving consistency",
+      "description": "Produce a historical-window feature specification; use when the task is to feature window aggregation design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TFE-005",
+      "name": "feature-target-encoding-leakage-check",
+      "domain_code": "TFE",
+      "subdomain": "Availability",
+      "description": "Produce a target encoding leakage review; use when the task is to feature target encoding leakage check.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TFE-006",
+      "name": "feature-identifier-shortcut-review",
+      "domain_code": "TFE",
+      "subdomain": "Encoding",
+      "description": "Produce an identifier shortcut assessment; use when the task is to feature identifier shortcut review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TFE-007",
+      "name": "feature-scaling-consistency-check",
+      "domain_code": "TFE",
+      "subdomain": "Aggregation",
+      "description": "Produce a feature scaling consistency report; use when the task is to feature scaling consistency check.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TFE-008",
+      "name": "label-horizon-censoring-design",
+      "domain_code": "TFE",
+      "subdomain": "Training-serving consistency",
+      "description": "Produce a label observation-horizon policy; use when the task is to label horizon censoring design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TFE-009",
+      "name": "feature-cross-fold-cache-review",
+      "domain_code": "TFE",
+      "subdomain": "Availability",
+      "description": "Produce a fold-aware feature cache design; use when the task is to feature cross fold cache review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TFE-010",
+      "name": "feature-training-serving-parity-plan",
+      "domain_code": "TFE",
+      "subdomain": "Encoding",
+      "description": "Produce a training-serving parity test plan; use when the task is to feature training serving parity plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDE-001",
+      "name": "pipeline-idempotency-design",
+      "domain_code": "TDE",
+      "subdomain": "Ingestion",
+      "description": "Produce an idempotent-write design; use when the task is to pipeline idempotency design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDE-002",
+      "name": "pipeline-watermark-policy",
+      "domain_code": "TDE",
+      "subdomain": "State management",
+      "description": "Produce a late-arrival handling policy; use when the task is to pipeline watermark policy.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDE-003",
+      "name": "pipeline-backfill-runbook",
+      "domain_code": "TDE",
+      "subdomain": "Recovery",
+      "description": "Produce a backfill execution plan; use when the task is to pipeline backfill runbook.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDE-004",
+      "name": "pipeline-schema-evolution-plan",
+      "domain_code": "TDE",
+      "subdomain": "Contracts",
+      "description": "Produce a schema evolution compatibility plan; use when the task is to pipeline schema evolution plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDE-005",
+      "name": "pipeline-checkpoint-recovery-review",
+      "domain_code": "TDE",
+      "subdomain": "Ingestion",
+      "description": "Produce a checkpoint recovery review; use when the task is to pipeline checkpoint recovery review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDE-006",
+      "name": "pipeline-data-contract-draft",
+      "domain_code": "TDE",
+      "subdomain": "State management",
+      "description": "Produce a producer-consumer data contract; use when the task is to pipeline data contract draft.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDE-007",
+      "name": "pipeline-quarantine-workflow",
+      "domain_code": "TDE",
+      "subdomain": "Recovery",
+      "description": "Produce a rejected-record quarantine workflow; use when the task is to pipeline quarantine workflow.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDE-008",
+      "name": "pipeline-dependency-readiness-gate",
+      "domain_code": "TDE",
+      "subdomain": "Contracts",
+      "description": "Produce an upstream readiness gate; use when the task is to pipeline dependency readiness gate.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDE-009",
+      "name": "pipeline-incremental-refresh-design",
+      "domain_code": "TDE",
+      "subdomain": "Ingestion",
+      "description": "Produce an incremental refresh specification; use when the task is to pipeline incremental refresh design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDE-010",
+      "name": "pipeline-observability-signal-map",
+      "domain_code": "TDE",
+      "subdomain": "State management",
+      "description": "Produce a pipeline observability signal map; use when the task is to pipeline observability signal map.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAN-001",
+      "name": "metric-denominator-definition",
+      "domain_code": "TAN",
+      "subdomain": "Metric definitions",
+      "description": "Produce a metric definition card; use when the task is to metric denominator definition.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAN-002",
+      "name": "cohort-retention-table-design",
+      "domain_code": "TAN",
+      "subdomain": "Comparisons",
+      "description": "Produce a cohort retention specification; use when the task is to cohort retention table design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAN-003",
+      "name": "funnel-dropoff-diagnosis",
+      "domain_code": "TAN",
+      "subdomain": "Diagnostics",
+      "description": "Produce a funnel dropoff assessment; use when the task is to funnel dropoff diagnosis.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAN-004",
+      "name": "weighted-average-reconciliation",
+      "domain_code": "TAN",
+      "subdomain": "Interpretation",
+      "description": "Produce a weighted-average explanation; use when the task is to weighted average reconciliation.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAN-005",
+      "name": "metric-change-decomposition",
+      "domain_code": "TAN",
+      "subdomain": "Metric definitions",
+      "description": "Produce a metric change decomposition; use when the task is to metric change decomposition.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAN-006",
+      "name": "before-after-comparison-caveat",
+      "domain_code": "TAN",
+      "subdomain": "Comparisons",
+      "description": "Produce a before-and-after interpretation brief; use when the task is to before after comparison caveat.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAN-007",
+      "name": "analysis-segment-reversal-check",
+      "domain_code": "TAN",
+      "subdomain": "Diagnostics",
+      "description": "Produce a segment comparison consistency check; use when the task is to analysis segment reversal check.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAN-008",
+      "name": "analysis-sensitivity-scenario-table",
+      "domain_code": "TAN",
+      "subdomain": "Interpretation",
+      "description": "Produce a sensitivity scenario table; use when the task is to analysis sensitivity scenario table.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAN-009",
+      "name": "analysis-chart-claim-audit",
+      "domain_code": "TAN",
+      "subdomain": "Metric definitions",
+      "description": "Produce a chart-to-claim audit; use when the task is to analysis chart claim audit.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TAN-010",
+      "name": "analysis-reproducible-question-brief",
+      "domain_code": "TAN",
+      "subdomain": "Comparisons",
+      "description": "Produce an analysis execution brief; use when the task is to analysis reproducible question brief.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDS-001",
+      "name": "dataset-source-shortlist",
+      "domain_code": "TDS",
+      "subdomain": "Discovery",
+      "description": "Produce a dataset candidate shortlist; use when the task is to dataset source shortlist.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDS-002",
+      "name": "dataset-provenance-chain-map",
+      "domain_code": "TDS",
+      "subdomain": "Provenance",
+      "description": "Produce a dataset provenance chain; use when the task is to dataset provenance chain map.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDS-003",
+      "name": "dataset-license-evidence-inventory",
+      "domain_code": "TDS",
+      "subdomain": "Documentation",
+      "description": "Produce a dataset permission evidence inventory; use when the task is to dataset license evidence inventory.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDS-004",
+      "name": "dataset-data-dictionary-build",
+      "domain_code": "TDS",
+      "subdomain": "Release readiness",
+      "description": "Produce a field-level data dictionary; use when the task is to dataset data dictionary build.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDS-005",
+      "name": "dataset-population-coverage-review",
+      "domain_code": "TDS",
+      "subdomain": "Discovery",
+      "description": "Produce a population coverage assessment; use when the task is to dataset population coverage review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDS-006",
+      "name": "dataset-label-definition-audit",
+      "domain_code": "TDS",
+      "subdomain": "Provenance",
+      "description": "Produce a label definition audit; use when the task is to dataset label definition audit.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDS-007",
+      "name": "dataset-split-release-manifest",
+      "domain_code": "TDS",
+      "subdomain": "Documentation",
+      "description": "Produce a dataset split manifest; use when the task is to dataset split release manifest.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDS-008",
+      "name": "dataset-sensitive-field-minimization",
+      "domain_code": "TDS",
+      "subdomain": "Release readiness",
+      "description": "Produce a sensitive-field minimization plan; use when the task is to dataset sensitive field minimization.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDS-009",
+      "name": "dataset-release-note-draft",
+      "domain_code": "TDS",
+      "subdomain": "Discovery",
+      "description": "Produce dataset release notes; use when the task is to dataset release note draft.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDS-010",
+      "name": "dataset-acquisition-checklist",
+      "domain_code": "TDS",
+      "subdomain": "Provenance",
+      "description": "Produce a reproducible acquisition checklist; use when the task is to dataset acquisition checklist.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDQ-001",
+      "name": "dataset-key-uniqueness-check",
+      "domain_code": "TDQ",
+      "subdomain": "Schema",
+      "description": "Produce a key uniqueness report; use when the task is to dataset key uniqueness check.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDQ-002",
+      "name": "dataset-missingness-pattern-review",
+      "domain_code": "TDQ",
+      "subdomain": "Missingness",
+      "description": "Produce a missingness pattern review; use when the task is to dataset missingness pattern review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDQ-003",
+      "name": "dataset-category-normalization-map",
+      "domain_code": "TDQ",
+      "subdomain": "Integrity",
+      "description": "Produce a category normalization map; use when the task is to dataset category normalization map.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDQ-004",
+      "name": "dataset-range-rule-audit",
+      "domain_code": "TDQ",
+      "subdomain": "Reconciliation",
+      "description": "Produce a range validation report; use when the task is to dataset range rule audit.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDQ-005",
+      "name": "dataset-date-time-consistency-check",
+      "domain_code": "TDQ",
+      "subdomain": "Schema",
+      "description": "Produce a timestamp consistency report; use when the task is to dataset date time consistency check.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDQ-006",
+      "name": "dataset-referential-integrity-review",
+      "domain_code": "TDQ",
+      "subdomain": "Missingness",
+      "description": "Produce a referential integrity report; use when the task is to dataset referential integrity review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDQ-007",
+      "name": "dataset-unit-conversion-review",
+      "domain_code": "TDQ",
+      "subdomain": "Integrity",
+      "description": "Produce a unit harmonization plan; use when the task is to dataset unit conversion review.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDQ-008",
+      "name": "dataset-join-multiplication-diagnosis",
+      "domain_code": "TDQ",
+      "subdomain": "Reconciliation",
+      "description": "Produce a join cardinality diagnosis; use when the task is to dataset join multiplication diagnosis.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDQ-009",
+      "name": "dataset-outlier-triage",
+      "domain_code": "TDQ",
+      "subdomain": "Schema",
+      "description": "Produce an outlier investigation brief; use when the task is to dataset outlier triage.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TDQ-010",
+      "name": "dataset-control-total-reconciliation",
+      "domain_code": "TDQ",
+      "subdomain": "Missingness",
+      "description": "Produce a control-total reconciliation; use when the task is to dataset control total reconciliation.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

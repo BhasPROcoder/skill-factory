@@ -1,0 +1,257 @@
+[
+  {
+    "code": "CTR",
+    "index": 1,
+    "domain": "Commercial Contracts",
+    "data": [
+      "nda-one-sided-clause-review",
+      "identify asymmetric obligations in a nondisclosure agreement",
+      "the complete agreement, party roles, permitted disclosures, and commercial purpose",
+      "Build a party-by-party table of disclosure duties, exceptions, duration wording, return obligations, and remedies using clause references. ~ Compare equivalent conduct by each party; separate intentional one-way coverage from unexplained unequal obligations. ~ Draft negotiation questions that preserve the business purpose and identify which proposed changes need local legal review.",
+      "only one party is expected to disclose information",
+      "evaluate the asymmetry against the intended information flow rather than assuming mutual wording is always preferable",
+      "Fictional Cedar Studio discloses prototypes to fictional Harbor Works. Only Cedar discloses. The draft requires Harbor to delete all material, including inaccessible backups, but contains no operational exception. Harbor states that its backup process cannot selectively delete the retained copies.",
+      "Review row: Harbor deletion obligation; operational concern: inaccessible backups cannot be selectively removed under the supplied process. Proposed question: can retained backup copies remain restricted until ordinary deletion? Preserve one-way protection because only Cedar discloses. Counsel should review the proposed exception before use.",
+      "Cedar's reviewer should obtain the backup retention description and a clause-specific response from counsel.",
+      "Treating every difference between parties as unfair without examining who discloses information."
+    ]
+  },
+  {
+    "code": "CTR",
+    "index": 2,
+    "domain": "Commercial Contracts",
+    "data": [
+      "service-agreement-obligation-map",
+      "map service agreement obligations into an operational handoff",
+      "the signed version, schedules, amendments, delivery owners, and notice clauses",
+      "Extract each obligation with actor, trigger, deliverable, dependency, and exact source reference. ~ Separate contractual wording from the team's proposed implementation dates; retain relative triggers until their triggering events are confirmed. ~ Link acceptance, notice, escalation, and recordkeeping steps so the owner can see what evidence completes each duty.",
+      "an obligation depends on a triggering event that has not occurred",
+      "keep the obligation conditional and identify evidence of that trigger instead of inventing a calendar date",
+      "Fictional Harbor Works must deliver a draft after Cedar Studio provides source images. The images have not arrived; the draft has an acceptance step but no supplied completion date.",
+      "Obligation: Harbor prepares the draft. Trigger: Cedar provides source images. Dependency owner: Cedar coordinator. Status: trigger unconfirmed. Completion evidence: draft delivery receipt. Separate follow-up: acceptance owner reviews the submitted draft under the agreement. No calendar commitment is inferred.",
+      "The coordinator should record source-image receipt and then confirm the contract-derived schedule.",
+      "Converting every relative obligation into a date using an assumed start event."
+    ]
+  },
+  {
+    "code": "CTR",
+    "index": 3,
+    "domain": "Commercial Contracts",
+    "data": [
+      "contract-negotiation-issue-list",
+      "prepare prioritized contract negotiation issues",
+      "disputed clauses, commercial objectives, decision authority, and acceptable tradeoffs",
+      "Assign each issue a clause reference and explain the concrete business consequence of leaving it unchanged. ~ Separate preferred language, acceptable fallback, and questions requiring authority; do not invent a negotiating mandate. ~ Order issues by impact on the stated transaction and dependencies between concessions, then prepare an issue-by-issue discussion brief.",
+      "the negotiator has no authority to accept a proposed fallback",
+      "mark the fallback as an approval question rather than an agreed position",
+      "Fictional Cedar Studio wants milestone acceptance before the next stage begins. Its reviewer may propose language but cannot waive acceptance. Harbor Works asks for automatic progression.",
+      "Issue: progression before acceptance. Concern: later work could build on disputed deliverables. Preferred position: confirm acceptance before starting the next stage. Possible fallback: limited preparatory work with named boundaries, subject to Cedar approval. Authority gap: the reviewer cannot waive acceptance. Discussion question: what delay is Harbor trying to avoid?",
+      "The reviewer should obtain a written mandate on limited preparatory work before presenting it as acceptable.",
+      "Calling an unapproved compromise a walk-away position or binding concession."
+    ]
+  },
+  {
+    "code": "CTR",
+    "index": 4,
+    "domain": "Commercial Contracts",
+    "data": [
+      "in-service-contract-review-brief",
+      "prepare an India-specific service contract brief for counsel",
+      "agreement text, Indian state context, party roles, service location, and business concerns",
+      "Record the governing-law wording, dispute route, execution status, and places of performance exactly as supplied. ~ Map service scope, payment triggers, acceptance, intellectual-property expectations, and termination dependencies without deciding enforceability. ~ Prepare focused questions for Indian counsel with the relevant clauses and identify current official requirements that need verification.",
+      "the state context or execution arrangement is missing",
+      "leave the applicable formalities unresolved and ask counsel which facts determine them",
+      "Fictional Cedar Studio and Harbor Works propose an India-based design service. Their draft names India but gives no state context or signing arrangement. Cedar wants ownership of final artwork. The draft is unsigned.",
+      "Brief: proposed design service; execution status: unsigned. Business issue: ownership of final artwork is requested but the supplied summary does not distinguish working files from final deliverables. Questions for counsel: which ownership wording fits the intended transfer, and which state and execution facts are needed to verify applicable formalities? No formality or fee is assumed.",
+      "Cedar should provide the complete ownership clause, relevant locations, and proposed signing process to Indian counsel.",
+      "Treating an India label as enough to prescribe state-specific formalities or fees."
+    ]
+  },
+  {
+    "code": "CTR",
+    "index": 5,
+    "domain": "Commercial Contracts",
+    "data": [
+      "us-service-contract-review-brief",
+      "prepare a US service contract brief tied to the supplied state context",
+      "agreement text, governing-law clause, party locations, service description, and intended use",
+      "Capture the chosen governing law and forum separately from the parties' business addresses. ~ Identify scope, acceptance, payment, ownership, and termination questions using the supplied clauses and actual operating assumptions. ~ Assemble a counsel brief that separates factual gaps, commercial preferences, and state-specific legal questions requiring current verification.",
+      "the draft names the United States without specifying governing-law context",
+      "request the relevant state and governing-law clause rather than selecting a state from an address",
+      "Fictional Harbor Works has a US address. Its draft with Cedar Studio says only that US law applies. Cedar asks whether the acceptance clause protects it. The supplied acceptance summary mentions approval but gives no process for recording rejected work and corrections.",
+      "Brief: US service arrangement; state and governing-law context unresolved. Commercial concern: the acceptance summary lacks a method for recording rejected work and corrections. Counsel question: review the complete acceptance mechanism under the applicable law once identified. Operational proposal: maintain versioned delivery, feedback, and correction records without claiming that these determine legal sufficiency.",
+      "The reviewer should collect the full governing-law and acceptance wording before requesting a state-specific conclusion.",
+      "Inferring governing law solely from one party's mailing address."
+    ]
+  },
+  {
+    "code": "CMP",
+    "index": 1,
+    "domain": "Compliance Workflow Design",
+    "data": [
+      "compliance-obligation-control-map",
+      "map supplied obligations to operational controls and evidence",
+      "the approved obligation list, applicability decisions, existing controls, and accountable owners",
+      "Preserve each obligation's source wording and applicability decision before translating it into operational language. ~ Link each required outcome to a control activity, responsible owner, frequency trigger, and retained evidence. ~ Test whether the evidence demonstrates the required outcome or merely proves that an activity occurred; flag uncovered or redundant controls.",
+      "a control log proves activity but not the required outcome",
+      "record an evidence gap and request a demonstration of the outcome",
+      "Fictional Cedar Studio's approved internal requirement says access must be removed after a worker leaves. Its checklist records an email to IT but contains no account-status evidence.",
+      "Mapping: departure event leads to access-removal request, owned by the offboarding coordinator. Existing evidence: request email. Gap: the email does not demonstrate disabled access. Proposed completion evidence: authorized administrator confirmation linked to the relevant account and departure record. Applicability of any external legal obligation remains outside the supplied facts.",
+      "The control owner should provide a completed example showing the account state after the request.",
+      "Equating a completed checklist or request email with proof that a control outcome occurred."
+    ]
+  },
+  {
+    "code": "CMP",
+    "index": 2,
+    "domain": "Compliance Workflow Design",
+    "data": [
+      "compliance-evidence-request-plan",
+      "prepare a scoped compliance evidence request plan",
+      "review scope, criteria, control inventory, record owners, and information-access limits",
+      "Convert each review question into the smallest evidence set capable of answering it. ~ Specify record type, relevant period, selection rationale, owner, redaction needs, and the decision the evidence supports. ~ Consolidate overlapping requests while preserving traceability to each review question; identify alternatives when a record does not exist.",
+      "a requested record contains unrelated personal data",
+      "request a minimized or redacted extract that preserves the needed evidence",
+      "Fictional Cedar Studio is reviewing whether offboarding tasks were completed. A proposed request asks for entire personnel folders, although only departure confirmation and access closure are needed.",
+      "Request: linked departure confirmation and access-closure evidence for the review selection. Owner: authorized HR and access administrators. Minimize: exclude unrelated personnel documents and personal details. Review question: can departure and closure be connected? Alternative: supervised inspection with a recorded finding when copying is not permitted.",
+      "The reviewer should confirm selection scope and access permission before issuing the minimized request.",
+      "Collecting whole folders because a narrow evidence question has not been defined."
+    ]
+  },
+  {
+    "code": "CMP",
+    "index": 3,
+    "domain": "Compliance Workflow Design",
+    "data": [
+      "compliance-gap-remediation-plan",
+      "turn documented compliance gaps into verifiable remediation actions",
+      "gap findings, supporting evidence, control objectives, owners, and resource constraints",
+      "Separate the observed gap from suspected causes and label the evidence for each. ~ Define containment, durable correction, and verification as distinct actions with owners and dependencies. ~ Establish closure evidence that tests the corrected outcome using an agreed observation period and case selection appropriate to the gap; distinguish the tested cases from any broader effectiveness claim.",
+      "the proposed fix changes a policy but leaves the observed workflow untested",
+      "keep the gap open until operating evidence demonstrates the corrected outcome",
+      "Fictional Cedar Studio finds access remained active after departure. The proposed remedy is to rewrite the offboarding policy; no completed offboarding has been checked.",
+      "Gap: the observed account remained active. Containment: an authorized administrator confirms the current access state and corrects it if needed. Durable action: assign a closure owner and escalation path. Verification: agree the observation period and case selection, then inspect completed offboarding records for matched departure and access-removal evidence; limit closure claims to the evidence reviewed. Policy approval alone does not close the finding.",
+      "The remediation owner should obtain independent review of a completed corrected workflow before requesting closure.",
+      "Closing a finding when a document changes without testing the operating process."
+    ]
+  },
+  {
+    "code": "CMP",
+    "index": 4,
+    "domain": "Compliance Workflow Design",
+    "data": [
+      "in-privacy-request-handling-plan",
+      "plan an India-specific privacy request intake workflow",
+      "request text, organization role, relevant Indian context, data systems, and verified current requirements",
+      "Classify the request without assuming which legal right applies; preserve its exact wording and receipt evidence. ~ Identify the organization role, applicable current framework, identity-verification approach, and exceptions as questions for authorized privacy counsel or staff. ~ Design intake, routing, search, review, response, and closure records with deadlines left as verified inputs rather than remembered constants.",
+      "applicability and current response requirements have not been established",
+      "create an intake and review workflow without promising a legal deadline or entitlement",
+      "Fictional Cedar Studio receives an India-related request to remove customer information. The requester is not yet authenticated and the applicable obligations have not been confirmed.",
+      "Intake record: deletion request received, identity unverified. Routing: authorized privacy owner reviews applicability and proportionate identity checks. Search plan: identify relevant customer systems after authentication. Response status: acknowledgment draft only; no entitlement, completion date, or deletion promise. Verification task: confirm current applicable requirements with the official authority and qualified counsel.",
+      "The privacy owner should verify applicability and identity before authorizing a data search or response commitment.",
+      "Copying a remembered legal deadline into an acknowledgment without verifying applicability."
+    ]
+  },
+  {
+    "code": "CMP",
+    "index": 5,
+    "domain": "Compliance Workflow Design",
+    "data": [
+      "us-privacy-request-handling-plan",
+      "plan a US privacy request workflow using state and sector context",
+      "request text, relevant state context, organization role, sector, data locations, and current official requirements",
+      "Capture the request and relevant relationship without assuming residence or applicable law from an email domain. ~ Prepare an applicability review covering supplied state, sector, organization role, and request category with an authorized privacy reviewer. ~ Map authentication, system search, exception review, response approval, and closure evidence; populate timing only from verified applicable requirements.",
+      "the requester's relevant state context is unknown",
+      "route an applicability question to the privacy owner and avoid applying a default state rule",
+      "Fictional Harbor Works receives an access request from a customer with a US email account. The record does not establish the relevant state, sector rules, or verified identity.",
+      "Workflow: preserve request and receipt evidence; route applicability and identity questions to the privacy owner; restrict searches to authorized systems after verification; review proposed disclosures before response. Open inputs: relevant state context, applicable sector obligations, and current response requirements. No state-specific entitlement or deadline is asserted.",
+      "The privacy owner should document applicable context and approved verification steps before assigning the response schedule.",
+      "Using an email address or a national label as proof of state-law applicability."
+    ]
+  },
+  {
+    "code": "DSP",
+    "index": 1,
+    "domain": "Dispute Preparation",
+    "data": [
+      "dispute-evidence-chronology",
+      "build a source-linked factual dispute chronology",
+      "messages, documents, event accounts, timestamps, and known time-zone information",
+      "Record each event with its source, asserted time, actor, and whether it is directly documented or reported later. ~ Distinguish document creation, sending, receipt, and the event described; retain uncertainty where timestamps conflict. ~ Arrange supported events chronologically while preserving disputed alternatives and questions that could change the sequence.",
+      "a later recollection conflicts with a contemporaneous record",
+      "preserve both accounts with source labels rather than silently choosing one",
+      "Fictional Cedar Studio's sent message says the draft was delivered before review. A later recollection from Harbor Works says review began first. Receipt evidence is absent.",
+      "Chronology entry: Cedar message reports draft delivery; source: supplied sent message; receipt unconfirmed. Competing account: Harbor recollection places review earlier; source: later account. Unresolved ordering: actual delivery receipt versus review start. The chronology does not decide which account is true.",
+      "The case organizer should seek receipt evidence and the original review record to resolve the ordering question.",
+      "Treating the date on a document as proof of when the described event occurred."
+    ]
+  },
+  {
+    "code": "DSP",
+    "index": 2,
+    "domain": "Dispute Preparation",
+    "data": [
+      "dispute-claim-evidence-matrix",
+      "map disputed allegations to supporting and conflicting evidence",
+      "stated allegations, source documents, responses, and known evidence gaps",
+      "Split compound allegations into factual propositions that evidence could support or contradict. ~ Link each proposition to source excerpts and classify support, contradiction, context, or absence without treating silence as disproof. ~ List the smallest missing evidence that could change the assessment and keep legal conclusions outside the factual matrix.",
+      "the only support for an allegation is a party's own assertion",
+      "label it an attributed assertion rather than independently corroborated fact",
+      "Fictional Cedar Studio alleges Harbor Works accepted all artwork because it remained silent. The supplied material contains Cedar's assertion but no acceptance record or applicable agreement wording.",
+      "Proposition: Harbor accepted the artwork. Supporting material: Cedar's attributed assertion. Missing evidence: acceptance communications and agreement wording. No response evidence is supplied; whether Harbor actually remained silent is unverified, and no acceptance is inferred. Assessment: unresolved factual and contractual question for counsel.",
+      "The organizer should obtain the acceptance clause and relevant correspondence before revising the matrix.",
+      "Turning absence of a supplied reply into proof that a disputed proposition is true."
+    ]
+  },
+  {
+    "code": "DSP",
+    "index": 3,
+    "domain": "Dispute Preparation",
+    "data": [
+      "settlement-discussion-preparation",
+      "prepare objectives and questions for a supervised settlement discussion",
+      "party objectives, disputed facts, authority limits, alternatives, and counsel guidance",
+      "Separate desired outcomes from positions already communicated and identify which interests each outcome serves. ~ Record factual uncertainties, practical implementation issues, and possible nonmonetary options without inventing a settlement valuation. ~ Prepare questions and conditional proposals for counsel review, clearly distinguishing discussion authority from authority to agree.",
+      "the representative lacks authority to commit to settlement terms",
+      "prepare exploratory questions and reserve all commitments for authorized review",
+      "Fictional Cedar Studio wants usable final artwork and an orderly handoff. Its project reviewer may discuss options with Harbor Works but cannot agree to settlement or release claims.",
+      "Objectives: obtain a usable handoff and clarify unresolved deliverables. Discussion questions: which working files exist, what remains incomplete, and who can approve a handoff plan? Possible topic: staged delivery subject to counsel and authorized decision-maker review. Authority limit: no settlement commitment or release language is offered.",
+      "The reviewer should confirm the discussion mandate and have counsel review any proposed commitment.",
+      "Presenting a brainstorming option as an authorized settlement offer."
+    ]
+  },
+  {
+    "code": "DSP",
+    "index": 4,
+    "domain": "Dispute Preparation",
+    "data": [
+      "in-dispute-counsel-handoff",
+      "prepare a factual dispute handoff for Indian counsel",
+      "party details, Indian locations, documents, notices, procedural history, and desired outcome",
+      "Separate the factual chronology, document inventory, and requested legal advice into distinct parts. ~ Record any received notice exactly, including its source and stated dates, without calculating or endorsing a response deadline. ~ Flag forum, jurisdiction, limitation, and procedural questions for Indian counsel using current official sources rather than assumed rules.",
+      "a notice includes a stated response date whose legal effect is unknown",
+      "highlight the date as quoted notice information and seek prompt counsel review",
+      "Fictional Cedar Studio receives an India-related dispute notice naming a response date. The full notice and relevant state context are not yet available to the organizer.",
+      "Handoff status: incomplete. Known fact: a notice reportedly contains a response date; its text and legal effect are unverified. Needed documents: full notice, delivery evidence, agreement, correspondence, and relevant locations. Counsel questions: applicable forum, response strategy, and any time-sensitive action. No deadline calculation is supplied.",
+      "Cedar should send the complete notice and receipt evidence to qualified Indian counsel promptly.",
+      "Calculating legal response periods from a summary of a notice."
+    ]
+  },
+  {
+    "code": "DSP",
+    "index": 5,
+    "domain": "Dispute Preparation",
+    "data": [
+      "us-dispute-counsel-handoff",
+      "prepare a US dispute handoff with state and forum questions",
+      "party locations, agreement, notices, court or agency documents, receipt evidence, and desired outcome",
+      "Organize documents by source and procedural stage while separating allegations from established events. ~ Capture the named court or agency, state context, service information, and dates exactly as supplied without deciding jurisdiction or service validity. ~ Prepare counsel questions about next steps and current procedural requirements, highlighting missing documents and any stated urgency.",
+      "the supplied document summary does not establish the forum or service facts",
+      "request the complete document and receipt history before describing procedural obligations",
+      "Fictional Harbor Works receives a US dispute document through a forwarded message. The forwarding summary omits the court name and how the original document was received.",
+      "Handoff: forwarded dispute document, original receipt details unknown. Evidence gaps: complete document, named forum, state context, and service history. Counsel questions: what does the document require, which procedural context applies, and what immediate review is needed? Allegations remain attributed to the sender; no valid-service or deadline conclusion is made.",
+      "Harbor should preserve the forwarding chain and obtain the original document for qualified US counsel.",
+      "Assuming a forwarded summary establishes valid service, jurisdiction, or a filing deadline."
+    ]
+  }
+]

@@ -1,0 +1,114 @@
+Follow the skill below exactly to handle the user request at the end.
+
+<skill>
+---
+id: CTR-001
+name: nda-one-sided-clause-review
+domain: Commercial Contracts
+subdomain: Contract review
+version: 1.0
+description: Identify asymmetric obligations and negotiation questions in a supplied nondisclosure agreement; use when preparing a clause review.
+triggers: ["help me identify asymmetric obligations in a nondisclosure agreement", "prepare a nda one sided clause review", "review my nda one sided clause review", "work through nda one sided clause review", "fix my nda one sided clause review"]
+not_for: ["Map service agreement obligations into an operational handoff [CTR-002]", "Prepare prioritized contract negotiation issues [CTR-003]"]
+requires: []
+risk_level: high
+---
+
+# Nda One Sided Clause Review
+
+## Purpose
+Use this workflow to identify asymmetric obligations in a nondisclosure agreement. It produces a concrete, reviewable result from the supplied material and identifies the unresolved choice that matters next.
+
+## Inputs to collect
+1. **Requested outcome** — the intended change or decision, needed to judge relevance; default: the task stated in the request.
+2. **Working material** — the complete agreement, party roles, permitted disclosures, and commercial purpose; needed to support specific recommendations; default: none, required for a final assessment.
+3. **Audience and use** — who will read or act on the result, needed to choose detail and tone; default: the requester reviewing a draft.
+4. **Constraints** — required format, exclusions, preserved elements, and available resources; needed to avoid an unusable proposal; default: preserve supplied constraints and mark missing ones.
+5. **Evidence status** — which statements are confirmed, inferred, fictional, or unresolved; needed to prevent assumptions becoming facts; default: supplied claims remain attributed to their source.
+6. **Context and current requirements** — jurisdiction when relevant and recipient rules when applicable; needed before relying on external obligations; default: unknown, never silently inferred for high-risk work.
+
+If a required input is missing and has no safe default, ask in one message with at most 3 questions. A provisional scaffold is allowed only when its unresolved fields are explicit.
+
+## Procedure
+1. Restate the requested outcome in a sentence that names the artifact and the decision it will support.
+2. Identify the usable source material and label missing inputs before making recommendations.
+3. Build a party-by-party table of disclosure duties, exceptions, duration wording, return obligations, and remedies using clause references.
+4. Compare equivalent conduct by each party; separate intentional one-way coverage from unexplained unequal obligations.
+5. Draft negotiation questions that preserve the business purpose and identify which proposed changes need local legal review.
+6. Apply the following context discipline: Keep the supplied document or business evidence separate from interpretation. Trace each conclusion to a named source or label it as an assumption. Preserve competing accounts until the evidence resolves them. Do not replace a requested operational artifact with broad advice. A proposed plan does not establish that an action happened, an agreement is binding, or a business outcome will occur.
+7. ⚠️ Test the proposed conclusion against the supplied evidence; replace unsupported specifics with `[VERIFY: the exact missing fact and the authoritative source to consult]` instead of guessing.
+8. Apply the task boundary: Collect country, state or locality, governing context, and the user decision before applying the method; no jurisdiction default is safe. Knowledge has a cutoff: verify current law, procedure, and requirements with the relevant official authority or qualified local counsel. Refer questions about rights, enforceability, deadlines, or filing strategy to a licensed professional. Do not invent law sections, cases, duties, or deadlines.
+9. Produce the output below, including the smallest next action that would resolve the remaining uncertainty.
+
+## Decision rules
+- IF only one party is expected to disclose information THEN evaluate the asymmetry against the intended information flow rather than assuming mutual wording is always preferable BECAUSE that distinction changes the appropriate result for this task.
+- IF the working material does not support a requested conclusion THEN label the conclusion unresolved and name the missing evidence BECAUSE a complete-looking answer must not imply certainty.
+- IF a proposed revision conflicts with a supplied constraint THEN show the conflict and a compliant alternative BECAUSE the user's intended use determines whether the result is usable.
+- IF several changes are possible THEN prioritize the change that directly advances the stated outcome and retain reversible alternatives BECAUSE unrelated improvements can obscure the decision.
+
+## Output template
+```text
+Task: <one sentence>
+Evidence: <material used and its limitation; up to 3 sentences>
+Result: <concrete task artifact; up to 350 words>
+Decision: <selected approach and task-specific reason; up to 3 sentences>
+Next action: <owner or requester action plus completion evidence; up to 2 sentences>
+Verification: <unresolved fact and source, or no external factual claim required>
+```
+
+## Quality checklist
+- [ ] The result addresses the named task rather than an adjacent workflow.
+- [ ] Each recommendation can be traced to supplied material or is labeled a proposal.
+- [ ] The task-specific decision rule is applied to the actual condition.
+- [ ] Preserved constraints are visible in the result or its decision explanation.
+- [ ] Unknown facts are paired with a concrete verification source category.
+- [ ] The next action has an observable completion condition.
+- [ ] The response uses every output-template label in order.
+- [ ] Any numbers are derived from supplied data and recomputed before delivery.
+
+## Anti-patterns
+- **Task-specific failure**: Treating every difference between parties as unfair without examining who discloses information. Fix: apply the authored method before choosing a conclusion.
+- **Unsupported specificity**: a plausible detail is stated as fact. Fix: attribute it to the input, verify it, or remove it.
+- **Invisible tradeoff**: a proposed improvement breaks an existing constraint. Fix: name the tradeoff and offer a compatible alternative.
+- **Action inflation**: a draft is described as sent, accepted, implemented, or tested. Fix: report only actions actually observed and keep proposals in future tense.
+
+## Worked example
+**Input:**
+> Fictional exercise: Fictional Cedar Studio discloses prototypes to fictional Harbor Works. Only Cedar discloses. The draft requires Harbor to delete all material, including inaccessible backups, but contains no operational exception.
+
+**Output:**
+```text
+Task: Identify asymmetric obligations in a nondisclosure agreement.
+Evidence: The fictional requester supplied the scenario below; no additional documents or external facts are assumed.
+Result: Review row: Harbor deletion obligation; operational concern: inaccessible backups cannot be selectively removed under the supplied process. Proposed question: can retained backup copies remain restricted until ordinary deletion? Preserve one-way protection because only Cedar discloses. Counsel should review the proposed exception before use.
+Decision: Evaluate the asymmetry against the intended information flow rather than assuming mutual wording is always preferable because only one party is expected to disclose information.
+Next action: Cedar's reviewer should obtain the backup retention description and a clause-specific response from counsel.
+Verification: Confirm the relevant jurisdiction and current official requirements with qualified local counsel before using this draft in a live matter.
+```
+
+**Bad output:**
+> Everything looks fine; proceed without changing anything.
+
+This fails because it contains no task artifact, does not apply the distinguishing decision rule, and supplies no evidence-based next action.
+
+## Edge cases
+- **Only a summary is supplied**: produce a provisional plan and list the exact source material needed before making detailed findings.
+- **Inputs contradict one another**: keep both accounts labeled and identify which decision depends on resolving the conflict.
+- **The requested action exceeds the scope**: deliver the reviewable draft, then identify the additional authorization or expertise needed for execution.
+- **The user rejects the proposed approach**: retain the original material, ask which constraint changed, and revise the decision rather than insisting on the initial preference.
+
+## Test case
+**Input:**
+> Fictional exercise: Fictional Cedar Studio discloses prototypes to fictional Harbor Works. Only Cedar discloses. The draft requires Harbor to delete all material, including inaccessible backups, but contains no operational exception. Apply this workflow, but the supporting material is only a summary and the requester asks you to guarantee success.
+
+**Assertions:**
+1. The answer uses Task, Evidence, Result, Decision, Next action, and Verification in that order.
+2. The result addresses how to identify asymmetric obligations in a nondisclosure agreement, with a concrete proposed artifact.
+3. The response applies the condition "only one party is expected to disclose information" or explicitly explains why it cannot establish it.
+4. The answer labels the summary limitation and does not guarantee success.
+5. The next action identifies missing source material or a review step that can resolve it.
+</skill>
+
+<user_request>
+Fictional exercise: Fictional Cedar Studio discloses prototypes to fictional Harbor Works. Only Cedar discloses. The draft requires Harbor to delete all material, including inaccessible backups, but contains no operational exception. Apply this workflow, but the supporting material is only a summary and the requester asks you to guarantee success.
+</user_request>
