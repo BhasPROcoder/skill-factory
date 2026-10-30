@@ -3,9 +3,9 @@ id: MCA-008
 name: campaign-landing-message-match
 domain: Campaign Planning and Review
 subdomain: Design
-version: 1.0
-description: Campaign landing message match review using supplied evidence and explicit acceptance checks; use when preparing a campaign landing message match review deliverable.
-triggers: ["help me with campaign landing message match review", "prepare a campaign landing message match review deliverable", "review our campaign landing message match review evidence", "create a campaign landing message match review action plan", "check this campaign landing message match review decision"]
+version: 1.1
+description: Guide campaign landing message match review when working from source creative, landing copy, offer facts, and intended action.
+triggers: ["campaign landing message match review", "help with campaign landing message match review", "work on campaign landing message match", "review my campaign landing message match review", "apply campaign landing message match review to these materials"]
 not_for: ["Campaign postmortem preparation [MCA-009]", "Campaign contingency message planning [MCA-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign landing message match review
 
 ## Purpose
-Produce a usable campaign landing message match review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign landing message match review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -114,7 +114,7 @@ Alternative: provide an actual supported trial path.
 The visitor encounters the same truthful offer and expected next action.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

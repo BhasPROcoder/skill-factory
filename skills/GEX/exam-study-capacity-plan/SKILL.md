@@ -3,34 +3,34 @@ id: GEX-002
 name: exam-study-capacity-plan
 domain: Exam Preparation Methods
 subdomain: Analysis
-version: 1.0
-description: Prepare exam study capacity plan from supplied evidence; use when the request concerns exam date and requirements.
-triggers: ["exam study capacity plan", "prepare exam study capacity plan", "review my exam study capacity plan", "help me with exam study capacity plan", "turn exam date and requirements into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+version: 1.1
+description: Prepare mastery-dependent study sequence from supplied evidence; use when the request concerns diagnostic attempts.
+triggers: ["mastery-dependent study sequence", "prepare mastery-dependent study sequence", "review my mastery-dependent study sequence", "help me with mastery-dependent study sequence", "turn diagnostic attempts into an actionable plan"]
+not_for: ["Exam practice error log [GEX-003]", "Mock exam review [GEX-004]"]
 requires: []
 risk_level: low
 ---
 
-# Exam study capacity plan
+# Mastery-dependent study sequence
 
 ## Purpose
-Produce exam study capacity plan that another person can use without guessing which evidence supports each action. Keep the request bounded to this task and distinguish an observed fact, a working interpretation, and an unresolved question.
+Produce mastery-dependent study sequence that another person can use without guessing which evidence supports each action. Keep the request bounded to this task and distinguish an observed fact, a working interpretation, and an unresolved question.
 
 ## Inputs to collect
-1. **Exam date and requirements** — supply the relevant original material or describe what is unavailable; it determines the scope of the analysis. Default: unknown, never invented.
-2. **Available study blocks** — supply the relevant original material or describe what is unavailable; it determines the scope of the analysis. Default: unknown, never invented.
-3. **Priority weaknesses** — supply the relevant original material or describe what is unavailable; it determines the scope of the analysis. Default: unknown, never invented.
+1. **Diagnostic attempts** — supply the relevant original material or describe what is unavailable; it determines the scope of the analysis. Default: unknown, never invented.
+2. **Topic prerequisites** — supply the relevant original material or describe what is unavailable; it determines the scope of the analysis. Default: unknown, never invented.
+3. **Available study blocks** — supply the relevant original material or describe what is unavailable; it determines the scope of the analysis. Default: unknown, never invented.
 4. **Intended use and constraints** — identify the reader, available effort, and decision this output supports. Default: a private working draft using only supplied information.
 
 If a required input is missing and has no safe default, ask in one message with at most 3 questions. Continue only the parts that do not depend on the missing answer; label any provisional work as provisional.
 
 ## Procedure
 1. Restate the requested outcome in one sentence and identify the smallest useful deliverable; do not expand into adjacent advice merely because the input mentions it.
-2. Calculate genuinely available blocks after fixed obligations.
-3. Assign high-priority tasks to blocks with suitable concentration demands.
-4. Include practice, review and recovery from missed work.
-5. Make tradeoffs visible when demand exceeds capacity.
-6. Define a weekly adjustment rule based on completed evidence rather than planned hours.
+2. Identify which prerequisite errors block the target exam task from the supplied diagnostic work.
+3. Group tasks by prerequisite rather than by chapter order alone.
+4. Place a short diagnostic and repair opportunity before dependent practice.
+5. Define an observable transfer attempt that permits advancing to the next task.
+6. Reallocate remaining blocks when evidence shows a prerequisite is still unstable instead of copying the original timetable.
 7. ⚠️ Trace every proposed action back to an input or an explicitly stated condition; when support is missing, replace the conclusion with a verification question instead of filling the gap from memory.
 8. Populate the output table with the task-specific findings, retaining disagreements or missing information as visible rows rather than silently dropping them.
 9. Check the completed worked logic against an alternative explanation or a changed input; state what would have to change for the recommended next action to change.
@@ -41,8 +41,8 @@ Use the official current syllabus, format and permitted materials as inputs rath
 
 
 ## Decision rules
-- IF required work exceeds available blocks THEN reduce scope or renegotiate priorities BECAUSE a crowded timetable does not create time.
-- IF blocks are repeatedly missed THEN revise the capacity assumption BECAUSE the plan should reflect observed availability.
+- IF a prerequisite error persists THEN repair it before increasing dependent complexity BECAUSE more advanced attempts may repeat the same obstacle.
+- IF a familiar item is correct but a changed item fails THEN retain transfer practice BECAUSE recognition is not yet flexible mastery.
 - IF source material conflicts THEN preserve both versions and identify the fact needed to resolve the conflict BECAUSE silently choosing a convenient version hides uncertainty.
 - IF a requested conclusion depends on unavailable evidence THEN give a conditional next step and name the missing evidence BECAUSE an actionable question is preferable to an unsupported answer.
 
@@ -50,8 +50,10 @@ Use the official current syllabus, format and permitted materials as inputs rath
 ```text
 Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
-Study demand | Available capacity | Allocation | Adjustment trigger
+Learning dependency | Diagnostic evidence | Study sequence | Advance condition
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -69,23 +71,28 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Anti-patterns
 - **Unsupported certainty**: treating a plausible interpretation as an observed fact. Fix: attach the supporting input or mark the statement provisional.
-- **Task-specific shortcut**: scheduling the same time for multiple subjects. Fix: apply the relevant procedural check before selecting a next action.
+- **Task-specific shortcut**: assigning equal time to every topic without checking prerequisite bottlenecks. Fix: apply the relevant procedural check before selecting a next action.
 - **Missing decision owner**: giving advice that nobody can carry out. Fix: name the role responsible and the artifact that confirms completion.
 - **Unbounded expansion**: solving every adjacent problem mentioned in the inputs. Fix: finish the declared scope and list a separate follow-up only when needed.
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional candidate Nia has evening blocks but consistently loses one to a fixed family duty.
+> Fictional scenario: Fictional candidate Nia can recall definitions but misidentifies claims in unfamiliar paragraphs. She has study blocks available; no durations or exam weighting are supplied.
 
 **Output:**
 ```text
-Scope: Prepare exam study capacity plan for the fictional case, limited to the supplied facts.
+Scope: Prepare mastery-dependent study sequence for the fictional case, limited to the supplied facts.
 Basis: The fictional scenario above; missing supporting material remains unverified.
-Study demand | Available capacity | Allocation | Adjustment trigger
-Core practice | Remaining reliable evenings | Schedule first | Review completion evidence
-Optional review | Unreliable block | Move or reduce | Do not double-book
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+Learning dependency | Diagnostic evidence | Study sequence | Advance condition
+Claim identification | Unfamiliar paragraph error | Contrast claim with supporting example | Correctly explain distinction in a new paragraph
+Argument comparison | Requires claim identification | Practice after prerequisite check | Compare claims using explicit common criterion
+
+Artifact: Proposed sequencing rule: check the prerequisite skill before assigning dependent exam practice. If the diagnostic shows a missing prerequisite, place a focused repair task in a reliable study block, followed by a fresh check; release the dependent task only when that check supports readiness.
+Nia's first repair: distinguish the recommendation from a supporting example in a short paragraph. Use a new paragraph for the advance check; require both a correct label and an explanation.
+If a prerequisite is already demonstrated: move directly to the next dependent task rather than filling time with comfortable repetition.
+Next dependent task: compare arguments only after the claim-identification check supports readiness. Available block durations and exam weighting remain unknown.
+Next action: The requester or assigned reviewer will complete this task-specific check: Reallocate remaining blocks when evidence shows a prerequisite is still unstable instead of copying the original timetable. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Correctly explain distinction in a new paragraph.
 ```
 
 **Bad output:**
@@ -101,7 +108,7 @@ This fails because it suppresses the task-specific distinction visible in the ta
 
 ## Test case
 **Input:**
-> Fictional test request: Fictional candidate Leo wants a complete plan that ignores known work commitments.
+> Fictional test request: Fictional candidate memorizes definitions but fails unfamiliar applications and wants to progress to advanced tasks because the calendar says so.
 
 **Assertions:**
 1. The answer uses Scope, Basis, the specified table columns, Next action, and Unresolved in that order.

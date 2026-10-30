@@ -3,9 +3,9 @@ id: MSL-005
 name: local-service-area-description
 domain: Local Search Operations
 subdomain: Design
-version: 1.0
-description: Local service-area description planning using supplied evidence and explicit acceptance checks; use when preparing a local service-area description planning deliverable.
-triggers: ["help me with local service-area description planning", "prepare a local service-area description planning deliverable", "review our local service-area description planning evidence", "create a local service-area description planning action plan", "check this local service-area description planning decision"]
+version: 1.1
+description: Guide local service-area description planning when working from actual service coverage, travel constraints, and customer booking process.
+triggers: ["local service-area description planning", "help with local service-area description planning", "work on local service area description", "review my local service-area description planning", "apply local service-area description planning to these materials"]
 not_for: ["Local review response drafting [MSL-006]", "Local review theme analysis [MSL-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Local service-area description planning
 
 ## Purpose
-Produce a usable local service-area description planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this local service-area description planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -111,7 +111,7 @@ Boundary: the description does not imply routine coverage outside the confirmed 
 The description does not promise routine service beyond the verified coverage area.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

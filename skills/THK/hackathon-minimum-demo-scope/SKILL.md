@@ -2,10 +2,10 @@
 id: THK-002
 name: hackathon-minimum-demo-scope
 domain: Hackathon Delivery
-subdomain: Team execution
-version: 1.0
-description: Produce a minimum demonstrable scope; use when the task is to hackathon minimum demo scope.
-triggers: ["hackathon minimum demo scope", "help with a minimum demonstrable scope", "review my a minimum demonstrable scope", "prepare a minimum demonstrable scope", "check hackathon minimum demo scope evidence"]
+subdomain: Scoping
+version: 1.1
+description: Create a minimum demonstrable scope from supplied evidence; use when preparing or reviewing minimum demonstrable scope decisions.
+triggers: ["hackathon minimum demo scope", "help with a minimum demonstrable scope", "review my minimum demonstrable scope", "prepare a minimum demonstrable scope", "check the evidence for this minimum demonstrable scope"]
 not_for: ["hackathon team interface contract [THK-003]", "hackathon risk first build order [THK-004]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a minimum demonstrable scope and name the source artifacts used; retain a version or observation date where available.
 2. Write the beginning and successful end of one user journey
 3. List only capabilities needed to connect those endpoints
-4. ⚠️ Classify optional features by whether they support the core claim Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Classify optional features by whether they support the core claim. Do not silently replace missing evidence with an assumed successful outcome.
 5. Cut features until integration and rehearsal remain feasible
 6. Apply the domain check: Connect each commitment to the available team, schedule, permitted resources, and a fallback demonstration path.
 7. Verify the proposed result with this task-specific check: Rehearse the full journey from a clean start using the scoped feature list. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A hackathon prototype needs a coherent user journey and demonstrable evidence of its central claim. Distinguish simulated components from implemented behavior, and read the current event rules instead of assuming submission or judging conventions. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a minimum demonstrable scope
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Badges and sharing do not complete the stated core journey.
 Decision: Prioritize upload, processing, and summary display.
+Artifact: Core demo path: upload permitted fixture → process it → display useful summary. Later-work list: badges; social sharing. Acceptance: the primary journey works end to end and leaves time for integration and rehearsal under the actual schedule.
 Action: Team owner — Cut features until integration and rehearsal remain feasible Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Rehearse the full journey from a clean start using the scoped feature list.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a minimum demonstrable scope. The core journey is uploading a fixture and receiving a useful summary; the team also proposes badges and social sharing. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Badges and sharing do not complete the stated core journey.
 3. It preserves this task-specific conclusion: Prioritize upload, processing, and summary display.
 4. It includes the verification check or explicitly marks it pending: Rehearse the full journey from a clean start using the scoped feature list.

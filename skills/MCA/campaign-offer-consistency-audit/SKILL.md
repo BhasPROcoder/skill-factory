@@ -3,9 +3,9 @@ id: MCA-005
 name: campaign-offer-consistency-audit
 domain: Campaign Planning and Review
 subdomain: Design
-version: 1.0
-description: Campaign offer consistency auditing using supplied evidence and explicit acceptance checks; use when preparing a campaign offer consistency auditing deliverable.
-triggers: ["help me with campaign offer consistency auditing", "prepare a campaign offer consistency auditing deliverable", "review our campaign offer consistency auditing evidence", "create a campaign offer consistency auditing action plan", "check this campaign offer consistency auditing decision"]
+version: 1.1
+description: Guide campaign offer consistency auditing when working from ads, landing page, offer terms, and fulfillment facts.
+triggers: ["campaign offer consistency auditing", "help with campaign offer consistency auditing", "work on campaign offer consistency audit", "review my campaign offer consistency auditing", "apply campaign offer consistency auditing to these materials"]
 not_for: ["Campaign launch readiness review [MCA-006]", "Campaign calendar dependency planning [MCA-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign offer consistency auditing
 
 ## Purpose
-Produce a usable campaign offer consistency auditing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign offer consistency auditing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Resolution: correct the advertisement or obtain an approved offer change before 
 All touchpoints describe the same verified inclusions and conditions.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

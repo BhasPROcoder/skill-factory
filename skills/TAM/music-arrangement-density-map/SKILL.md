@@ -3,9 +3,9 @@ id: TAM-006
 name: music-arrangement-density-map
 domain: Audio and Music Production Planning
 subdomain: Arrangement
-version: 1.0
-description: Produce an arrangement density map; use when the task is to music arrangement density map.
-triggers: ["music arrangement density map", "help with an arrangement density map", "review my an arrangement density map", "prepare an arrangement density map", "check music arrangement density map evidence"]
+version: 1.1
+description: Create an arrangement density map from supplied evidence; use when preparing or reviewing arrangement density map decisions.
+triggers: ["music arrangement density map", "help with an arrangement density map", "review my arrangement density map", "prepare an arrangement density map", "check the evidence for this arrangement density map"]
 not_for: ["music transition arrangement plan [TAM-007]", "audio mix feedback translation [TAM-008]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of an arrangement density map and name the source artifacts used; retain a version or observation date where available.
 2. List active parts and their roles in each section
 3. Identify sections where several parts compete for the same foreground role
-4. ⚠️ Create contrast through entrances, rests, register, or texture Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Create contrast through entrances, rests, register, or texture. Do not silently replace missing evidence with an assumed successful outcome.
 5. Review whether the main melodic or lyrical idea remains clear
 6. Apply the domain check: Keep source recordings and reversible edits; verify current delivery requirements with the recipient instead of inventing loudness, format, or platform targets.
 7. Verify the proposed result with this task-specific check: Listen to transitions and verify that the foreground idea remains intelligible. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Describe sound choices through observable features such as entry timing, instrument density, foreground level, phrase spacing, and audible transitions. If audio is unavailable, offer a listening plan rather than claiming to hear clipping, noise, pitch problems, or balance defects. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: an arrangement density map
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The current plan has no instrument-density contrast between sections.
 Decision: Keep voice and piano in the opening verse, introduce guitar later, and reserve fuller percussion for the chorus.
+Artifact: Proposed contrast map: restrained earlier section with selected parts resting → chorus with the fuller voice, piano, guitar, and percussion texture. Exact rests remain an arrangement proposal to audition. Keep the vocal or principal melodic idea intelligible at the fuller entrance.
 Action: Team owner — Review whether the main melodic or lyrical idea remains clear Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Listen to transitions and verify that the foreground idea remains intelligible.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for an arrangement density map. The fictional song has voice, piano, guitar, and percussion active in every section; the chorus should feel more expansive. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The current plan has no instrument-density contrast between sections.
 3. It preserves this task-specific conclusion: Keep voice and piano in the opening verse, introduce guitar later, and reserve fuller percussion for the chorus.
 4. It includes the verification check or explicitly marks it pending: Listen to transitions and verify that the foreground idea remains intelligible.

@@ -3,10 +3,10 @@ id: GAD-005
 name: application-rejection-error-triage
 domain: Administrative Casework
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare application rejection error triage from supplied evidence; use when the request concerns rejection message.
 triggers: ["application rejection error triage", "prepare application rejection error triage", "review my application rejection error triage", "help me with application rejection error triage", "turn rejection message into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Administrative case timeline [GAD-006]", "Administrative status tracker [GAD-007]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Error | Observed input | Diagnosis status | Safe next step
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Error | Observed input | Diagnosis status | Safe next step
 Upload error | Blurred scan | Likely file-quality issue | Prepare a readable copy
 Decision status | No decision shown | Unknown | Check acknowledgment after retry
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a retry checklist that records the new acknowledgment without claiming approval. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Prepare a readable copy.
 ```
 
 **Bad output:**

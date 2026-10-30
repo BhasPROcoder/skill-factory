@@ -3,10 +3,10 @@ id: MME-008
 name: marketing-data-discrepancy-triage
 domain: Marketing Measurement Decisions
 subdomain: Design
-version: 1.0
-description: Marketing data discrepancy triage using supplied evidence and explicit acceptance checks; use when preparing a marketing data discrepancy triage deliverable.
-triggers: ["help me with marketing data discrepancy triage", "prepare a marketing data discrepancy triage deliverable", "review our marketing data discrepancy triage evidence", "create a marketing data discrepancy triage action plan", "check this marketing data discrepancy triage decision"]
-not_for: ["Marketing cohort retention analysis brief [MME-009]", "Marketing report action summarization [MME-010]", "Legal or regulated financial conclusions"]
+version: 1.1
+description: Guide marketing data discrepancy triage when working from conflicting reports, definitions, extraction times, and filters.
+triggers: ["marketing data discrepancy triage", "help with marketing data discrepancy triage", "work on marketing data discrepancy triage", "review my marketing data discrepancy triage", "apply marketing data discrepancy triage to these materials"]
+not_for: ["Acquisition campaign retention decision brief [MME-009]", "Marketing report action summarization [MME-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
 ---
@@ -14,7 +14,7 @@ risk_level: medium
 # Marketing data discrepancy triage
 
 ## Purpose
-Produce a usable marketing data discrepancy triage deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this marketing data discrepancy triage task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Do not infer missing events before this reconciliation.
 The discrepancy is reproduced under matched definitions before a cause is asserted.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

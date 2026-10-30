@@ -3,10 +3,10 @@ id: GAD-009
 name: administrative-cover-note-draft
 domain: Administrative Casework
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare administrative cover note from supplied evidence; use when the request concerns submission purpose.
 triggers: ["administrative cover note", "prepare administrative cover note", "review my administrative cover note", "help me with administrative cover note", "turn submission purpose into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Administrative handoff packet [GAD-010]", "Form field evidence map [GAD-001]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Note section | Content basis | Draft direction | Check
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional requester Imran submits a missing attachment after an office query and wants a short cover note.
+> Fictional scenario: Fictional requester Imran submits a missing attachment after an office query and wants a short cover note. The office query and a labeled attachment are supplied for drafting, but transmission has not occurred.
 
 **Output:**
 ```text
@@ -84,8 +86,10 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Note section | Content basis | Draft direction | Check
 Opening | Office query supplied | State attachment response | Reference correct case
 Evidence | Labeled attachment | Identify enclosed material | Confirm legibility
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Draft cover note: I am responding to your query concerning the missing attachment. The enclosed labeled attachment is supplied for your review. Please associate it with the case reference provided in the submission header and let me know if anything remains unclear. Before sending, the requester must insert the exact reference and attachment title, confirm legibility, and verify the receiving channel. This draft is not evidence that the office received the material.
+Next action: The requester or assigned reviewer will complete this task-specific check: Draft a neutral note ending with a precise request and a contact route supplied by the applicant. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Reference correct case.
 ```
 
 **Bad output:**

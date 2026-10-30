@@ -3,9 +3,9 @@ id: MPH-001
 name: photo-subject-intention-brief
 domain: Photography Planning and Critique
 subdomain: Design
-version: 1.0
-description: Photographic subject intention briefing using supplied evidence and explicit acceptance checks; use when preparing a photographic subject intention briefing deliverable.
-triggers: ["help me with photographic subject intention briefing", "prepare a photographic subject intention briefing deliverable", "review our photographic subject intention briefing evidence", "create a photographic subject intention briefing action plan", "check this photographic subject intention briefing decision"]
+version: 1.1
+description: Guide photographic subject intention briefing when working from subject, intended audience, use, and reference observations.
+triggers: ["photographic subject intention briefing", "help with photographic subject intention briefing", "work on photo subject intention brief", "review my photographic subject intention briefing", "apply photographic subject intention briefing to these materials"]
 not_for: ["Photographic background distraction review [MPH-002]", "Photographic light direction study planning [MPH-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Photographic subject intention briefing
 
 ## Purpose
-Produce a usable photographic subject intention briefing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this photographic subject intention briefing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Propose direct gaze, stable posture, and uncluttered framing as options to test with the subject. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Proposed portrait direction: direct gaze; stable comfortable posture; uncluttered background; framing that makes the face the primary point of attention.
 Review with subject: does this portrayal match the intended confidence without forcing an uncomfortable pose?
 
@@ -111,7 +112,7 @@ Review with subject: does this portrayal match the intended confidence without f
 The brief specifies visible choices and leaves room for subject comfort and artistic alternatives.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

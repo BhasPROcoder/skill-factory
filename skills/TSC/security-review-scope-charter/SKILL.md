@@ -3,9 +3,9 @@ id: TSC-001
 name: security-review-scope-charter
 domain: Defensive Security Review
 subdomain: Authorization
-version: 1.0
-description: Produce an authorized security review charter; use when the task is to security review scope charter.
-triggers: ["security review scope charter", "help with an authorized security review charter", "review my an authorized security review charter", "prepare an authorized security review charter", "check security review scope charter evidence"]
+version: 1.1
+description: Create an authorized security review charter from supplied evidence; use when preparing or reviewing authorized security review charter decisions.
+triggers: ["security review scope charter", "help with an authorized security review charter", "review my authorized security review charter", "prepare an authorized security review charter", "check the evidence for this authorized security review charter"]
 not_for: ["security permission review matrix [TSC-002]", "security secret exposure triage [TSC-003]"]
 requires: []
 risk_level: high
@@ -30,11 +30,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of an authorized security review charter and name the source artifacts used; retain a version or observation date where available.
 2. Identify the owner who can authorize review of each asset
 3. Separate evidence inspection from active testing
-4. ⚠️ Record permitted actions and explicit exclusions Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Record permitted actions and explicit exclusions. Do not silently replace missing evidence with an assumed successful outcome.
 5. Define the stop condition for unexpected access or exposure
 6. Apply the domain check: Use current official vendor advisories and organizational policy when requirements matter; do not claim a vulnerability is exploitable from a scanner label alone.
 7. Verify the proposed result with this task-specific check: Confirm each proposed action maps to an authorized asset and technique. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Security findings need an asset boundary, evidence of the condition, a plausible impact, and an authorized owner. These skills organize defensive review and do not authorize scanning, exploitation, credential access, or changes outside the stated scope. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -58,6 +59,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -90,6 +92,7 @@ Deliverable: an authorized security review charter
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: A and the third-party endpoint have different authorization status.
 Decision: Scope the review to authorized evidence and exclude active testing of the third party.
+Artifact: Scope matrix: application A—owned, authorized supplied-evidence review; third-party payment endpoint—authorization absent, active testing excluded. Stop condition: unexpected access or exposure beyond the approved scope. Legal jurisdiction and actual owner identity remain required before live work.
 Action: Team owner — Define the stop condition for unexpected access or exposure Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Confirm each proposed action maps to an authorized asset and technique.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -111,7 +114,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for an authorized security review charter. The team owns application A but supplies a third-party payment endpoint with no testing authorization. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: A and the third-party endpoint have different authorization status.
 3. It preserves this task-specific conclusion: Scope the review to authorized evidence and exclude active testing of the third party.
 4. It includes the verification check or explicitly marks it pending: Confirm each proposed action maps to an authorized asset and technique.

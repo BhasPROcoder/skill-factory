@@ -3,10 +3,10 @@ id: GIS-002
 name: in-identity-record-correction-map
 domain: India Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare identity record correction map from supplied evidence; use when the request concerns incorrect identity fields.
 triggers: ["identity record correction map", "prepare identity record correction map", "review my identity record correction map", "help me with identity record correction map", "turn incorrect identity fields into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Birth record request preparation [GIS-003]", "Driving licence transaction triage [GIS-004]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Record | Observed field | Requested correction | Dependency
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +86,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Record | Observed field | Requested correction | Dependency
 School record | Nalin | No change requested | Confirm acceptable supporting role
 Identity record | Naleen | Nalin requested | Verify correction evidence with issuer
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a correction log containing the requested value, supporting evidence, submission reference and unresolved dependencies. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Confirm acceptable supporting role.
 ```
 
 **Bad output:**

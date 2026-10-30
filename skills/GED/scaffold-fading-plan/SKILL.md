@@ -3,10 +3,10 @@ id: GED-006
 name: scaffold-fading-plan
 domain: Lesson and Learning Design
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare scaffold fading plan from supplied evidence; use when the request concerns independent target task.
 triggers: ["scaffold fading plan", "prepare scaffold fading plan", "review my scaffold fading plan", "help me with scaffold fading plan", "turn independent target task into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Lesson question sequence [GED-007]", "Accessible learning material review [GED-008]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Support | Decision it supplies | Fading trial | Observation
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,15 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Support | Decision it supplies | Fading trial | Observation
 Outline | Idea order | Remove outline first | Check sequence remains coherent
 Sentence starters | Sentence opening | Retain temporarily | Check later independent phrasing
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Trial task: organize a new paragraph using the learner's own sequence, while retaining the existing sentence starters.
+Removed support: supplied outline.
+Retained support: sentence starters only.
+Observe: whether the ideas form a coherent sequence without an outline.
+If sequence breaks down: ask the learner to explain the intended order, then restore an outline prompt only for that difficulty.
+Next trial: consider reducing sentence starters after independent organization remains evident. No trial result is assumed.
+Next action: The requester or assigned reviewer will complete this task-specific check: Restore targeted support or continue fading based on the observed difficulty. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Check sequence remains coherent.
 ```
 
 **Bad output:**

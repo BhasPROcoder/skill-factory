@@ -3,9 +3,9 @@ id: MAR-010
 name: search-site-section-launch-review
 domain: Search Site Architecture
 subdomain: Design
-version: 1.0
-description: Search site section launch review using supplied evidence and explicit acceptance checks; use when preparing a search site section launch review deliverable.
-triggers: ["help me with search site section launch review", "prepare a search site section launch review deliverable", "review our search site section launch review evidence", "create a search site section launch review action plan", "check this search site section launch review decision"]
+version: 1.1
+description: Guide search site section launch review when working from new section inventory, navigation plan, content readiness, and owner sign-offs.
+triggers: ["search site section launch review", "help with search site section launch review", "work on search site section launch review", "review my search site section launch review", "apply search site section launch review to these materials"]
 not_for: ["Search navigation task mapping [MAR-001]", "Search internal link opportunity mapping [MAR-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search site section launch review
 
 ## Purpose
-Produce a usable search site section launch review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search site section launch review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Resolution options: complete the guide for the release or revise the hub to remo
 All referenced destinations are available in the intended release and unresolved checks remain visible.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

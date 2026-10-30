@@ -3,10 +3,10 @@ id: GRV-010
 name: review-update-watchlist
 domain: Evidence Review and Synthesis
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare evidence review update watchlist from supplied evidence; use when the request concerns existing review scope.
 triggers: ["evidence review update watchlist", "prepare evidence review update watchlist", "review my evidence review update watchlist", "help me with evidence review update watchlist", "turn existing review scope into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Literature search concept map [GRV-001]", "Review inclusion criteria [GRV-002]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Claim to revisit | Source channel | Trigger | Affected conclusion
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Claim to revisit | Source channel | Trigger | Affected conclusion
 Administrative route | Responsible agency publication | Updated guidance | Revise process description
 Empirical finding | Relevant primary studies | Comparable new evidence | Reassess synthesis
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare an update log that records changed evidence and affected conclusions. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Revise process description.
 ```
 
 **Bad output:**

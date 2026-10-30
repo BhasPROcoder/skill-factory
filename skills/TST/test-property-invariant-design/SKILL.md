@@ -3,9 +3,9 @@ id: TST-005
 name: test-property-invariant-design
 domain: Software Verification Design
 subdomain: Test selection
-version: 1.0
-description: Produce a property-based test specification; use when the task is to test property invariant design.
-triggers: ["test property invariant design", "help with a property-based test specification", "review my a property-based test specification", "prepare a property-based test specification", "check test property invariant design evidence"]
+version: 1.1
+description: Create a property-based test specification from supplied evidence; use when preparing or reviewing property-based test specification decisions.
+triggers: ["test property invariant design", "help with a property-based test specification", "review my property-based test specification", "prepare a property-based test specification", "check the evidence for this property-based test specification"]
 not_for: ["test metamorphic relation design [TST-006]", "test flaky failure triage [TST-007]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a property-based test specification and name the source artifacts used; retain a version or observation date where available.
 2. Choose an invariant that follows from the contract
 3. Generate only inputs within the declared preconditions
-4. ⚠️ Check the invariant across varied shapes and boundary values Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Check the invariant across varied shapes and boundary values. Do not silently replace missing evidence with an assumed successful outcome.
 5. Shrink failures while preserving preconditions
 6. Apply the domain check: Keep fixtures small enough to inspect, preserve the failure signal, and report what the test does not establish.
 7. Verify the proposed result with this task-specific check: Compare sorted output with input counts and adjacent ordering. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A test should distinguish correct behavior from a plausible defect. Derive expected results from a contract or independent example rather than copying the implementation under test. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a property-based test specification
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Both order and element preservation are required for this fixture.
 Decision: Test the two properties independently.
+Artifact: Input: [3,1,3,2]. Required properties: output is nondecreasing and preserves every input element's multiplicity. Example valid result: [1,2,3,3]. Check order and multiset independently so a sorted but truncated output fails.
 Action: Team owner — Shrink failures while preserving preconditions Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare sorted output with input counts and adjacent ordering.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a property-based test specification. Sorting a list should preserve its multiset while returning nondecreasing order. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Both order and element preservation are required for this fixture.
 3. It preserves this task-specific conclusion: Test the two properties independently.
 4. It includes the verification check or explicitly marks it pending: Compare sorted output with input counts and adjacent ordering.

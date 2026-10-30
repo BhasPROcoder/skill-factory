@@ -3,9 +3,9 @@ id: MPH-007
 name: photo-portrait-session-plan
 domain: Photography Planning and Critique
 subdomain: Design
-version: 1.0
-description: Portrait session planning using supplied evidence and explicit acceptance checks; use when preparing a portrait session planning deliverable.
-triggers: ["help me with portrait session planning", "prepare a portrait session planning deliverable", "review our portrait session planning evidence", "create a portrait session planning action plan", "check this portrait session planning decision"]
+version: 1.1
+description: Guide portrait session planning when working from subject preferences, intended portrayal, location, and use permissions.
+triggers: ["portrait session planning", "help with portrait session planning", "work on photo portrait session plan", "review my portrait session planning", "apply portrait session planning to these materials"]
 not_for: ["Product photograph consistency planning [MPH-008]", "Photographic visual story editing [MPH-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Portrait session planning
 
 ## Purpose
-Produce a usable portrait session planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this portrait session planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Use a seated or supported pose that preserves the intended direct presence. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Setup: seated or supported posture agreed with the subject.
 Visual intention: direct presence through gaze and framing.
 Check during session: comfort and willingness to continue.
@@ -113,7 +114,7 @@ Excluded: the uncomfortable standing pose.
 The plan respects the subject's boundaries and still specifies observable visual goals.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

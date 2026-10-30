@@ -3,9 +3,9 @@ id: TDS-005
 name: dataset-population-coverage-review
 domain: Dataset Intake and Documentation
 subdomain: Discovery
-version: 1.0
-description: Produce a population coverage assessment; use when the task is to dataset population coverage review.
-triggers: ["dataset population coverage review", "help with a population coverage assessment", "review my a population coverage assessment", "prepare a population coverage assessment", "check dataset population coverage review evidence"]
+version: 1.1
+description: Create a population coverage assessment from supplied evidence; use when preparing or reviewing population coverage assessment decisions.
+triggers: ["dataset population coverage review", "help with a population coverage assessment", "review my population coverage assessment", "prepare a population coverage assessment", "check the evidence for this population coverage assessment"]
 not_for: ["dataset label definition audit [TDS-006]", "dataset split release manifest [TDS-007]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a population coverage assessment and name the source artifacts used; retain a version or observation date where available.
 2. Specify the target population independently of available records
 3. Compare observed and intended strata without inventing population weights
-4. ⚠️ Identify collection channels that exclude relevant groups Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Identify collection channels that exclude relevant groups. Do not silently replace missing evidence with an assumed successful outcome.
 5. Report unsupported generalizations and collection gaps
 6. Apply the domain check: Separate permission to access from permission to redistribute; retain acquisition and transformation provenance.
 7. Verify the proposed result with this task-specific check: Compare observed group labels with the declared target group list. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Dataset suitability is specific to a population, intended prediction or analysis, and collection process. A convenient download is not evidence of representative coverage. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a population coverage assessment
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Rural outlets have no observed coverage.
 Decision: Limit the current assessment to urban outlets and request rural coverage evidence.
+Artifact: Target population: urban and rural outlets. Observed coverage: urban only. Supported inference scope: supplied urban records. Gap: rural outlets. Do not invent population weights or generalize the observed pattern to rural outlets.
 Action: Team owner — Report unsupported generalizations and collection gaps Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare observed group labels with the declared target group list.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a population coverage assessment. The intended population includes urban and rural outlets; all supplied records are urban. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Rural outlets have no observed coverage.
 3. It preserves this task-specific conclusion: Limit the current assessment to urban outlets and request rural coverage evidence.
 4. It includes the verification check or explicitly marks it pending: Compare observed group labels with the declared target group list.

@@ -3,9 +3,9 @@ id: MSE-006
 name: search-content-cannibalization-review
 domain: Search Content Decisions
 subdomain: Design
-version: 1.0
-description: Search content overlap review using supplied evidence and explicit acceptance checks; use when preparing a search content overlap review deliverable.
-triggers: ["help me with search content overlap review", "prepare a search content overlap review deliverable", "review our search content overlap review evidence", "create a search content overlap review action plan", "check this search content overlap review decision"]
+version: 1.1
+description: Guide search content overlap review when working from page purposes, query associations, and supplied performance observations.
+triggers: ["search content overlap review", "help with search content overlap review", "work on search content cannibalization review", "review my search content overlap review", "apply search content overlap review to these materials"]
 not_for: ["Search heading outline repair [MSE-007]", "Search question section selection [MSE-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search content overlap review
 
 ## Purpose
-Produce a usable search content overlap review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search content overlap review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ No merge justified by shared terminology alone.
 The decision states page purpose and avoids treating lexical overlap as proof of harmful competition.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

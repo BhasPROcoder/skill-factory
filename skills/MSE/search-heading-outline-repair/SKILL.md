@@ -3,9 +3,9 @@ id: MSE-007
 name: search-heading-outline-repair
 domain: Search Content Decisions
 subdomain: Design
-version: 1.0
-description: Search heading outline repair using supplied evidence and explicit acceptance checks; use when preparing a search heading outline repair deliverable.
-triggers: ["help me with search heading outline repair", "prepare a search heading outline repair deliverable", "review our search heading outline repair evidence", "create a search heading outline repair action plan", "check this search heading outline repair decision"]
+version: 1.1
+description: Guide search heading outline repair when working from page text, current headings, and intended reader sequence.
+triggers: ["search heading outline repair", "help with search heading outline repair", "work on search heading outline repair", "review my search heading outline repair", "apply search heading outline repair to these materials"]
 not_for: ["Search question section selection [MSE-008]", "Search content consolidation planning [MSE-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search heading outline repair
 
 ## Purpose
-Produce a usable search heading outline repair deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search heading outline repair task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Alternative pending evidence: Installation steps, only after verified instructio
 Each heading accurately describes its section and the sequence supports the reader's task.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

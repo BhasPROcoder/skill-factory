@@ -2,10 +2,10 @@
 id: TAN-004
 name: weighted-average-reconciliation
 domain: Analytical Reasoning and Metrics
-subdomain: Interpretation
-version: 1.0
-description: Produce a weighted-average explanation; use when the task is to weighted average reconciliation.
-triggers: ["weighted average reconciliation", "help with a weighted-average explanation", "review my a weighted-average explanation", "prepare a weighted-average explanation", "check weighted average reconciliation evidence"]
+subdomain: Comparisons
+version: 1.1
+description: Create a weighted-average explanation from supplied evidence; use when preparing or reviewing weighted-average explanation decisions.
+triggers: ["weighted average reconciliation", "help with a weighted-average explanation", "review my weighted-average explanation", "prepare a weighted-average explanation", "check the evidence for this weighted-average explanation"]
 not_for: ["metric change decomposition [TAN-005]", "before after comparison caveat [TAN-006]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a weighted-average explanation and name the source artifacts used; retain a version or observation date where available.
 2. Verify each group mean uses the same measure
 3. Identify the appropriate group weights
-4. ⚠️ Calculate weighted contributions before aggregating Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Calculate weighted contributions before aggregating. Do not silently replace missing evidence with an assumed successful outcome.
 5. Compare the result with an unweighted average and explain the difference
 6. Apply the domain check: State what a calculation can establish and what would require a different design; do not turn association into causal attribution.
 7. Verify the proposed result with this task-specific check: Recompute total weighted contribution divided by total observations. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A metric is defined by its population, unit, denominator, and time window. Comparisons need compatible definitions before arithmetic is meaningful. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a weighted-average explanation
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The pooled mean is 18; the mean of group means is 15.
 Decision: Report 18 for the pooled observation-level mean.
+Artifact: Weighted contribution: A=2×10=20; B=8×20=160. Total=180 across 10 observations; pooled mean=18. Mean of group means=(10+20)/2=15, which weights groups equally rather than observations.
 Action: Team owner — Compare the result with an unweighted average and explain the difference Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Recompute total weighted contribution divided by total observations.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a weighted-average explanation. Group A has 2 observations averaging 10; group B has 8 observations averaging 20. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The pooled mean is 18; the mean of group means is 15.
 3. It preserves this task-specific conclusion: Report 18 for the pooled observation-level mean.
 4. It includes the verification check or explicitly marks it pending: Recompute total weighted contribution divided by total observations.

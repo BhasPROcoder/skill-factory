@@ -3,9 +3,9 @@ id: MSA-007
 name: sales-mutual-action-plan
 domain: Sales Process Enablement
 subdomain: Design
-version: 1.0
-description: Sales mutual action plan drafting using supplied evidence and explicit acceptance checks; use when preparing a sales mutual action plan drafting deliverable.
-triggers: ["help me with sales mutual action plan drafting", "prepare a sales mutual action plan drafting deliverable", "review our sales mutual action plan drafting evidence", "create a sales mutual action plan drafting action plan", "check this sales mutual action plan drafting decision"]
+version: 1.1
+description: Guide sales mutual action plan drafting when working from agreed buyer and seller steps, decision milestones, and dependencies.
+triggers: ["sales mutual action plan drafting", "help with sales mutual action plan drafting", "work on sales mutual action plan", "review my sales mutual action plan drafting", "apply sales mutual action plan drafting to these materials"]
 not_for: ["Sales to delivery handoff preparation [MSA-008]", "Sales loss reason analysis [MSA-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Sales mutual action plan drafting
 
 ## Purpose
-Produce a usable sales mutual action plan drafting deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this sales mutual action plan drafting task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Do not label approval confirmed.
 The plan makes agreement status and ownership visible for each milestone.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

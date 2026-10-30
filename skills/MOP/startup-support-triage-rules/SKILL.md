@@ -3,9 +3,9 @@ id: MOP-002
 name: startup-support-triage-rules
 domain: Startup Operating Workflows
 subdomain: Design
-version: 1.0
-description: Startup support triage rule design using supplied evidence and explicit acceptance checks; use when preparing a startup support triage rule design deliverable.
-triggers: ["help me with startup support triage rule design", "prepare a startup support triage rule design deliverable", "review our startup support triage rule design evidence", "create a startup support triage rule design action plan", "check this startup support triage rule design decision"]
+version: 1.1
+description: Guide startup support triage rule design when working from support categories, customer impact, available owners, and existing commitments.
+triggers: ["startup support triage rule design", "help with startup support triage rule design", "work on startup support triage rules", "review my startup support triage rule design", "apply startup support triage rule design to these materials"]
 not_for: ["Startup service delivery checklist design [MOP-003]", "Startup vendor comparison briefing [MOP-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup support triage rule design
 
 ## Purpose
-Produce a usable startup support triage rule design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup support triage rule design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Ownership rule: the review role retains responsibility until a receiving owner a
 Every request category including unknown cases has an accountable route.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

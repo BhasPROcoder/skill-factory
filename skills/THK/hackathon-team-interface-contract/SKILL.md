@@ -2,10 +2,10 @@
 id: THK-003
 name: hackathon-team-interface-contract
 domain: Hackathon Delivery
-subdomain: Demonstration
-version: 1.0
-description: Produce a team integration contract; use when the task is to hackathon team interface contract.
-triggers: ["hackathon team interface contract", "help with a team integration contract", "review my a team integration contract", "prepare a team integration contract", "check hackathon team interface contract evidence"]
+subdomain: Team execution
+version: 1.1
+description: Create a team integration contract from supplied evidence; use when preparing or reviewing team integration contract decisions.
+triggers: ["hackathon team interface contract", "help with a team integration contract", "review my team integration contract", "prepare a team integration contract", "check the evidence for this team integration contract"]
 not_for: ["hackathon risk first build order [THK-004]", "hackathon demo script [THK-005]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a team integration contract and name the source artifacts used; retain a version or observation date where available.
 2. Define each component's input and output with a concrete fixture
 3. Assign one accountable owner to each interface
-4. ⚠️ Agree how failures and partial results are represented Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Agree how failures and partial results are represented. Do not silently replace missing evidence with an assumed successful outcome.
 5. Schedule early integration using the shared fixture
 6. Apply the domain check: Connect each commitment to the available team, schedule, permitted resources, and a fallback demonstration path.
 7. Verify the proposed result with this task-specific check: Pass the same fixture through both component boundaries. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A hackathon prototype needs a coherent user journey and demonstrable evidence of its central claim. Distinguish simulated components from implemented behavior, and read the current event rules instead of assuming submission or judging conventions. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a team integration contract
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The interface names disagree.
 Decision: Agree the payload contract and update both sides before further integration work.
+Artifact: Proposed contract: success payload {"summary_text":"Example summary"}; backend produces this field and frontend renders it. Failure payload proposal: {"error":"processing_failed"}; frontend shows a failure state, not a blank success. Owners: backend lead and frontend lead must accept the proposal and run the shared fixture.
 Action: Team owner — Schedule early integration using the shared fixture Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Pass the same fixture through both component boundaries.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a team integration contract. The frontend expects summary_text while the backend returns summary; both teams assume their shape is agreed. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The interface names disagree.
 3. It preserves this task-specific conclusion: Agree the payload contract and update both sides before further integration work.
 4. It includes the verification check or explicitly marks it pending: Pass the same fixture through both component boundaries.

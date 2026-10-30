@@ -3,9 +3,9 @@ id: MSV-002
 name: startup-assumption-risk-order
 domain: Startup Customer Validation
 subdomain: Design
-version: 1.0
-description: Startup assumption risk ordering using supplied evidence and explicit acceptance checks; use when preparing a startup assumption risk ordering deliverable.
-triggers: ["help me with startup assumption risk ordering", "prepare a startup assumption risk ordering deliverable", "review our startup assumption risk ordering evidence", "create a startup assumption risk ordering action plan", "check this startup assumption risk ordering decision"]
+version: 1.1
+description: Guide startup assumption risk ordering when working from venture assumptions, dependency relationships, and current evidence.
+triggers: ["startup assumption risk ordering", "help with startup assumption risk ordering", "work on startup assumption risk order", "review my startup assumption risk ordering", "apply startup assumption risk ordering to these materials"]
 not_for: ["Startup customer commitment evidence mapping [MSV-003]", "Startup concierge test planning [MSV-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup assumption risk ordering
 
 ## Purpose
-Produce a usable startup assumption risk ordering deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup assumption risk ordering task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Do not treat the foundational assumption as resolved because downstream work is 
 The test order follows decisive dependencies rather than presentation convenience.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

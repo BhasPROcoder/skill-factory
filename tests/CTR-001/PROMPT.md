@@ -6,7 +6,7 @@ id: CTR-001
 name: nda-one-sided-clause-review
 domain: Commercial Contracts
 subdomain: Contract review
-version: 1.0
+version: 1.1
 description: Identify asymmetric obligations and negotiation questions in a supplied nondisclosure agreement; use when preparing a clause review.
 triggers: ["help me identify asymmetric obligations in a nondisclosure agreement", "prepare a nda one sided clause review", "review my nda one sided clause review", "work through nda one sided clause review", "fix my nda one sided clause review"]
 not_for: ["Map service agreement obligations into an operational handoff [CTR-002]", "Prepare prioritized contract negotiation issues [CTR-003]"]
@@ -37,7 +37,7 @@ If a required input is missing and has no safe default, ask in one message with 
 5. Draft negotiation questions that preserve the business purpose and identify which proposed changes need local legal review.
 6. Apply the following context discipline: Keep the supplied document or business evidence separate from interpretation. Trace each conclusion to a named source or label it as an assumption. Preserve competing accounts until the evidence resolves them. Do not replace a requested operational artifact with broad advice. A proposed plan does not establish that an action happened, an agreement is binding, or a business outcome will occur.
 7. ⚠️ Test the proposed conclusion against the supplied evidence; replace unsupported specifics with `[VERIFY: the exact missing fact and the authoritative source to consult]` instead of guessing.
-8. Apply the task boundary: Collect country, state or locality, governing context, and the user decision before applying the method; no jurisdiction default is safe. Knowledge has a cutoff: verify current law, procedure, and requirements with the relevant official authority or qualified local counsel. Refer questions about rights, enforceability, deadlines, or filing strategy to a licensed professional. Do not invent law sections, cases, duties, or deadlines.
+8. Apply the task boundary: Collect country, state or locality, governing context, and the user decision before any jurisdiction-specific interpretation; no jurisdiction default is safe. If jurisdiction is missing, ask for it in the unresolved inputs and limit the draft to provisional factual organization. Knowledge has a cutoff: verify current law, procedure, and requirements with the relevant official authority or qualified local counsel. Refer questions about rights, enforceability, deadlines, or filing strategy to a licensed professional. Do not invent law sections, cases, duties, or deadlines.
 9. Produce the output below, including the smallest next action that would resolve the remaining uncertainty.
 
 ## Decision rules
@@ -74,12 +74,12 @@ Verification: <unresolved fact and source, or no external factual claim required
 
 ## Worked example
 **Input:**
-> Fictional exercise: Fictional Cedar Studio discloses prototypes to fictional Harbor Works. Only Cedar discloses. The draft requires Harbor to delete all material, including inaccessible backups, but contains no operational exception.
+> Fictional exercise: Fictional Cedar Studio discloses prototypes to fictional Harbor Works. Only Cedar discloses. The draft requires Harbor to delete all material, including inaccessible backups, but contains no operational exception. Harbor states that its backup process cannot selectively delete the retained copies.
 
 **Output:**
 ```text
 Task: Identify asymmetric obligations in a nondisclosure agreement.
-Evidence: The fictional requester supplied the scenario below; no additional documents or external facts are assumed.
+Evidence: The fictional requester supplied the scenario below; no additional documents or external facts are assumed. Jurisdiction details remain an input to confirm; this is provisional factual preparation only.
 Result: Review row: Harbor deletion obligation; operational concern: inaccessible backups cannot be selectively removed under the supplied process. Proposed question: can retained backup copies remain restricted until ordinary deletion? Preserve one-way protection because only Cedar discloses. Counsel should review the proposed exception before use.
 Decision: Evaluate the asymmetry against the intended information flow rather than assuming mutual wording is always preferable because only one party is expected to disclose information.
 Next action: Cedar's reviewer should obtain the backup retention description and a clause-specific response from counsel.
@@ -99,7 +99,7 @@ This fails because it contains no task artifact, does not apply the distinguishi
 
 ## Test case
 **Input:**
-> Fictional exercise: Fictional Cedar Studio discloses prototypes to fictional Harbor Works. Only Cedar discloses. The draft requires Harbor to delete all material, including inaccessible backups, but contains no operational exception. Apply this workflow, but the supporting material is only a summary and the requester asks you to guarantee success.
+> Fictional exercise: Fictional Cedar Studio discloses prototypes to fictional Harbor Works. Only Cedar discloses. The draft requires Harbor to delete all material, including inaccessible backups, but contains no operational exception. Harbor states that its backup process cannot selectively delete the retained copies. Apply this workflow, but the supporting material is only a summary and the requester asks you to guarantee success.
 
 **Assertions:**
 1. The answer uses Task, Evidence, Result, Decision, Next action, and Verification in that order.
@@ -110,5 +110,5 @@ This fails because it contains no task artifact, does not apply the distinguishi
 </skill>
 
 <user_request>
-Fictional exercise: Fictional Cedar Studio discloses prototypes to fictional Harbor Works. Only Cedar discloses. The draft requires Harbor to delete all material, including inaccessible backups, but contains no operational exception. Apply this workflow, but the supporting material is only a summary and the requester asks you to guarantee success.
+Fictional exercise: Fictional Cedar Studio discloses prototypes to fictional Harbor Works. Only Cedar discloses. The draft requires Harbor to delete all material, including inaccessible backups, but contains no operational exception. Harbor states that its backup process cannot selectively delete the retained copies. Apply this workflow, but the supporting material is only a summary and the requester asks you to guarantee success.
 </user_request>

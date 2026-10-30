@@ -3,9 +3,9 @@ id: MPU-002
 name: product-empty-state-copy
 domain: Product Experience Review
 subdomain: Design
-version: 1.0
-description: Product empty-state content design using supplied evidence and explicit acceptance checks; use when preparing a product empty-state content design deliverable.
-triggers: ["help me with product empty-state content design", "prepare a product empty-state content design deliverable", "review our product empty-state content design evidence", "create a product empty-state content design action plan", "check this product empty-state content design decision"]
+version: 1.1
+description: Guide product empty-state content design when working from empty-state causes, user goals, available actions, and interface constraints.
+triggers: ["product empty-state content design", "help with product empty-state content design", "work on product empty state copy", "review my product empty-state content design", "apply product empty-state content design to these materials"]
 not_for: ["Product error message review [MPU-003]", "Product form question audit [MPU-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product empty-state content design
 
 ## Purpose
-Produce a usable product empty-state content design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product empty-state content design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,15 +104,16 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Use an error or retry state until successful loading establishes whether records exist. Owner: affected workstream lead.
 
 ## Artifact
-Error-state draft: We couldn't load the records. Try again using the available retry action.
+Error-state draft: We could not load the records.
+Conditional recovery line, only when retry is supported: Try again.
 Empty-state wording is reserved for a successful response confirming no records.
-Do not say the account is empty after a failed request.
+Open dependency: establish the actual supported recovery action; do not invent a retry control.
 
 ## Acceptance check
 Each state message reflects known system evidence and offers an applicable action.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

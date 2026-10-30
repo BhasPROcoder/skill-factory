@@ -3,9 +3,9 @@ id: MSE-001
 name: search-intent-evidence-map
 domain: Search Content Decisions
 subdomain: Design
-version: 1.0
-description: Search intent evidence mapping using supplied evidence and explicit acceptance checks; use when preparing a search intent evidence mapping deliverable.
-triggers: ["help me with search intent evidence mapping", "prepare a search intent evidence mapping deliverable", "review our search intent evidence mapping evidence", "create a search intent evidence mapping action plan", "check this search intent evidence mapping decision"]
+version: 1.1
+description: Guide search intent evidence mapping when working from query list and representative search-result observations.
+triggers: ["search intent evidence mapping", "help with search intent evidence mapping", "work on search intent evidence map", "review my search intent evidence mapping", "apply search intent evidence mapping to these materials"]
 not_for: ["Search query to page assignment [MSE-002]", "Search content brief design [MSE-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search intent evidence mapping
 
 ## Purpose
-Produce a usable search intent evidence mapping deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search intent evidence mapping task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Unresolved: queries that do not reveal which need applies.
 Each query has a stated need; ambiguous queries retain alternative interpretations.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

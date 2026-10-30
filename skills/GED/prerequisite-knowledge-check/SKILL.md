@@ -3,10 +3,10 @@ id: GED-002
 name: prerequisite-knowledge-check
 domain: Lesson and Learning Design
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare prerequisite knowledge check from supplied evidence; use when the request concerns target learning task.
 triggers: ["prerequisite knowledge check", "prepare prerequisite knowledge check", "review my prerequisite knowledge check", "help me with prerequisite knowledge check", "turn target learning task into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Worked example lesson sequence [GED-003]", "Misconception contrast activity [GED-004]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Prerequisite | Check task | Observed pattern | Instructional response
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,13 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Prerequisite | Check task | Observed pattern | Instructional response
 Fact location | Point to stated detail | Successful | Retain as available prerequisite
 Claim distinction | Label claim and example | Confused | Practice contrast before synthesis
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Proposed prerequisite probe: The club should move its meeting because the present room cannot seat everyone. For example, some members stood during the last meeting.
+Prompt: Identify the main claim, its reason, and the example. Explain your labels.
+Interpretation: a learner who finds the details but treats the standing example as the main recommendation needs claim/example contrast before paragraph synthesis.
+Follow-up: use a new short paragraph without labels. These are proposed checks, not observed new learner results.
+Next action: The requester or assigned reviewer will complete this task-specific check: Choose a brief prerequisite activity or advance decision for each pattern. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Retain as available prerequisite.
 ```
 
 **Bad output:**

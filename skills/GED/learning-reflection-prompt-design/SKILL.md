@@ -3,10 +3,10 @@ id: GED-010
 name: learning-reflection-prompt-design
 domain: Lesson and Learning Design
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare learning reflection prompt design from supplied evidence; use when the request concerns completed learner work.
 triggers: ["learning reflection prompt design", "prepare learning reflection prompt design", "review my learning reflection prompt design", "help me with learning reflection prompt design", "turn completed learner work into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Observable learning objective rewrite [GED-001]", "Prerequisite knowledge check [GED-002]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Reflection focus | Evidence prompt | Revision prompt | Check
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,14 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Reflection focus | Evidence prompt | Revision prompt | Check
 Decision evidence | Which claim lacked support? | Add relevant evidence | Check claim-source link
 Process change | Where did drafting stall? | Try outline before drafting | Compare next attempt
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Prompt: Choose one passage from your essay that you think needs work. What exactly is it trying to establish?
+Evidence prompt: Point to the wording or missing support that caused your concern; do not use bad as the entire explanation.
+Revision prompt: What single change would address that concern, and how would a reader notice the difference?
+Process prompt: If drafting stalled, describe where; propose an outline only if it addresses that obstacle.
+Check: compare the revision with the identified issue.
+Next action: The requester or assigned reviewer will complete this task-specific check: Check whether the proposed change addresses the observed issue. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Check claim-source link.
 ```
 
 **Bad output:**

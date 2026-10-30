@@ -3,9 +3,9 @@ id: TAM-001
 name: audio-recording-session-plan
 domain: Audio and Music Production Planning
 subdomain: Recording
-version: 1.0
-description: Produce a recording session plan; use when the task is to audio recording session plan.
-triggers: ["audio recording session plan", "help with a recording session plan", "review my a recording session plan", "prepare a recording session plan", "check audio recording session plan evidence"]
+version: 1.1
+description: Create a recording session plan from supplied evidence; use when preparing or reviewing recording session plan decisions.
+triggers: ["audio recording session plan", "help with a recording session plan", "review my recording session plan", "prepare a recording session plan", "check the evidence for this recording session plan"]
 not_for: ["audio reference listening brief [TAM-002]", "audio vocal comp selection plan [TAM-003]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a recording session plan and name the source artifacts used; retain a version or observation date where available.
 2. List the performances and takes required for the intended arrangement
 3. Sequence setup changes to reduce avoidable disruption
-4. ⚠️ Plan short test recordings for placement and monitoring decisions Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Plan short test recordings for placement and monitoring decisions. Do not silently replace missing evidence with an assumed successful outcome.
 5. Create a take-labeling and backup procedure before the session
 6. Apply the domain check: Keep source recordings and reversible edits; verify current delivery requirements with the recipient instead of inventing loudness, format, or platform targets.
 7. Verify the proposed result with this task-specific check: Review test recordings with the performers before committing to full takes. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Describe sound choices through observable features such as entry timing, instrument density, foreground level, phrase spacing, and audible transitions. If audio is unavailable, offer a listening plan rather than claiming to hear clipping, noise, pitch problems, or balance defects. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a recording session plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Separate recording is feasible under the supplied room constraint.
 Decision: Plan guitar first, then vocal with the approved guitar guide, and label each take by part and take identity.
+Artifact: Session order proposal: room/equipment test → guitar takes → vocal takes → playback review → labeled backup. Separate performances are feasible under the supplied duo's constraints. Open decisions: sound preference and actual test-take results; no recorded quality is assumed.
 Action: Team owner — Create a take-labeling and backup procedure before the session Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Review test recordings with the performers before committing to full takes.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a recording session plan. A fictional duo needs lead vocal and acoustic guitar; only one quiet room is available; they can record separately. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Separate recording is feasible under the supplied room constraint.
 3. It preserves this task-specific conclusion: Plan guitar first, then vocal with the approved guitar guide, and label each take by part and take identity.
 4. It includes the verification check or explicitly marks it pending: Review test recordings with the performers before committing to full takes.

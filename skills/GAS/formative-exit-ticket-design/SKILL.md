@@ -3,10 +3,10 @@ id: GAS-005
 name: formative-exit-ticket-design
 domain: Learning Assessment
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare formative exit ticket design from supplied evidence; use when the request concerns lesson objective.
 triggers: ["formative exit ticket design", "prepare formative exit ticket design", "review my formative exit ticket design", "help me with formative exit ticket design", "turn lesson objective into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Learner error pattern analysis [GAS-006]", "Actionable feedback rewrite [GAS-007]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Response pattern | Evidence task | Interpretation | Next teaching action
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,14 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Response pattern | Evidence task | Interpretation | Next teaching action
 Correct distinction | Label claim and support | Ready for comparison | Use new argument
 Reversed labels | Same task | Concept distinction unclear | Use contrast example
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Proposed exit ticket: Our reading group should choose a quieter room because members could not hear the last discussion. Underline the claim, circle the reason, and explain the link.
+Response branch: correct labels and explanation -> attempt comparison using a new argument.
+Response branch: reversed labels -> compare a recommendation with a supporting observation before retrying.
+Response branch: unclear explanation -> ask a short follow-up before assigning a concept difficulty.
+These are planned teaching responses, not collected results.
+Next action: The requester or assigned reviewer will complete this task-specific check: Check that the task can be completed under the actual classroom conditions. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Use new argument.
 ```
 
 **Bad output:**

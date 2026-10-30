@@ -3,9 +3,9 @@ id: MBR-003
 name: commercial-copy-claim-substantiation
 domain: Commercial Brand and Editorial
 subdomain: Design
-version: 1.0
-description: Commercial copy claim substantiation review using supplied evidence and explicit acceptance checks; use when preparing a commercial copy claim substantiation review deliverable.
-triggers: ["help me with commercial copy claim substantiation review", "prepare a commercial copy claim substantiation review deliverable", "review our commercial copy claim substantiation review evidence", "create a commercial copy claim substantiation review action plan", "check this commercial copy claim substantiation review decision"]
+version: 1.1
+description: Guide commercial copy claim substantiation review when working from draft copy, claim evidence, audience, and approved comparison scope.
+triggers: ["commercial copy claim substantiation review", "help with commercial copy claim substantiation review", "work on commercial copy claim substantiation", "review my commercial copy claim substantiation review", "apply commercial copy claim substantiation review to these materials"]
 not_for: ["Commercial case study outline design [MBR-004]", "Commercial editorial calendar planning [MBR-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Commercial copy claim substantiation review
 
 ## Purpose
-Produce a usable commercial copy claim substantiation review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this commercial copy claim substantiation review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Permitted direction: describe the specific internal comparison with its actual c
 Every retained comparison states a supportable scope and avoids an invented market-wide conclusion.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

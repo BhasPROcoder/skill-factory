@@ -3,9 +3,9 @@ id: TDS-010
 name: dataset-acquisition-checklist
 domain: Dataset Intake and Documentation
 subdomain: Provenance
-version: 1.0
-description: Produce a reproducible acquisition checklist; use when the task is to dataset acquisition checklist.
-triggers: ["dataset acquisition checklist", "help with a reproducible acquisition checklist", "review my a reproducible acquisition checklist", "prepare a reproducible acquisition checklist", "check dataset acquisition checklist evidence"]
+version: 1.1
+description: Create a reproducible acquisition checklist from supplied evidence; use when preparing or reviewing reproducible acquisition checklist decisions.
+triggers: ["dataset acquisition checklist", "help with a reproducible acquisition checklist", "review my reproducible acquisition checklist", "prepare a reproducible acquisition checklist", "check the evidence for this reproducible acquisition checklist"]
 not_for: ["dataset source shortlist [TDS-001]", "dataset provenance chain map [TDS-002]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a reproducible acquisition checklist and name the source artifacts used; retain a version or observation date where available.
 2. Record the permitted acquisition route and source version
 3. List expected artifacts and their documented integrity evidence
-4. ⚠️ Separate incomplete downloads from valid but unexpected content Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate incomplete downloads from valid but unexpected content. Do not silently replace missing evidence with an assumed successful outcome.
 5. Specify a rerun procedure that preserves the original acquisition record
 6. Apply the domain check: Separate permission to access from permission to redistribute; retain acquisition and transformation provenance.
 7. Verify the proposed result with this task-specific check: Compare acquired artifact names with the expected manifest and verify supplied integrity values. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Dataset suitability is specific to a population, intended prediction or analysis, and collection process. A convenient download is not evidence of representative coverage. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a reproducible acquisition checklist
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The acquisition is incomplete because B is missing.
 Decision: Request the missing artifact before declaring the dataset ready.
+Artifact: Expected artifacts: A,B. Acquired: A only. Missing: B. Acquisition status: incomplete. Preserve the first acquisition record; retrieve through the permitted route and verify the complete intended set before downstream use.
 Action: Team owner — Specify a rerun procedure that preserves the original acquisition record Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare acquired artifact names with the expected manifest and verify supplied integrity values.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a reproducible acquisition checklist. The source inventory expects files A and B; the acquired folder contains only A. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The acquisition is incomplete because B is missing.
 3. It preserves this task-specific conclusion: Request the missing artifact before declaring the dataset ready.
 4. It includes the verification check or explicitly marks it pending: Compare acquired artifact names with the expected manifest and verify supplied integrity values.

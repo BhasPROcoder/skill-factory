@@ -3,9 +3,9 @@ id: MRE-009
 name: market-research-source-triage
 domain: Customer and Market Research
 subdomain: Design
-version: 1.0
-description: Market research source triage using supplied evidence and explicit acceptance checks; use when preparing a market research source triage deliverable.
-triggers: ["help me with market research source triage", "prepare a market research source triage deliverable", "review our market research source triage evidence", "create a market research source triage action plan", "check this market research source triage decision"]
+version: 1.1
+description: Guide market research source triage when working from candidate sources, decision questions, and required market definitions.
+triggers: ["market research source triage", "help with market research source triage", "work on market research source triage", "review my market research source triage", "apply market research source triage to these materials"]
 not_for: ["Research opportunity handoff [MRE-010]", "Customer interview guide design [MRE-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Market research source triage
 
 ## Purpose
-Produce a usable market research source triage deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this market research source triage task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Blocked operation: combining totals until overlap and coverage are reconciled.
 Every used source has a visible definition and a bounded claim it supports.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MBR-006
 name: commercial-content-repurposing-plan
 domain: Commercial Brand and Editorial
 subdomain: Design
-version: 1.0
-description: Commercial content repurposing planning using supplied evidence and explicit acceptance checks; use when preparing a commercial content repurposing planning deliverable.
-triggers: ["help me with commercial content repurposing planning", "prepare a commercial content repurposing planning deliverable", "review our commercial content repurposing planning evidence", "create a commercial content repurposing planning action plan", "check this commercial content repurposing planning decision"]
+version: 1.1
+description: Guide commercial content repurposing planning when working from source asset, verified claims, target channels, and audience needs.
+triggers: ["commercial content repurposing planning", "help with commercial content repurposing planning", "work on commercial content repurposing plan", "review my commercial content repurposing planning", "apply commercial content repurposing planning to these materials"]
 not_for: ["Commercial headline alternative drafting [MBR-007]", "Commercial style consistency review [MBR-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Commercial content repurposing planning
 
 ## Purpose
-Produce a usable commercial content repurposing planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this commercial content repurposing planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Reuse rule: retain that condition in every shortened version that mentions compa
 Every derivative preserves the original claim's essential conditions.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

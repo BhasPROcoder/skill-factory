@@ -3,9 +3,9 @@ id: MBR-009
 name: commercial-asset-reuse-inventory
 domain: Commercial Brand and Editorial
 subdomain: Design
-version: 1.0
-description: Commercial asset reuse inventory using supplied evidence and explicit acceptance checks; use when preparing a commercial asset reuse inventory deliverable.
-triggers: ["help me with commercial asset reuse inventory", "prepare a commercial asset reuse inventory deliverable", "review our commercial asset reuse inventory evidence", "create a commercial asset reuse inventory action plan", "check this commercial asset reuse inventory decision"]
+version: 1.1
+description: Guide commercial asset reuse inventory when working from existing assets, permissions, claim dates, and upcoming needs.
+triggers: ["commercial asset reuse inventory", "help with commercial asset reuse inventory", "work on commercial asset reuse inventory", "review my commercial asset reuse inventory", "apply commercial asset reuse inventory to these materials"]
 not_for: ["Commercial creative review rubric design [MBR-010]", "Brand voice operational guide design [MBR-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Commercial asset reuse inventory
 
 ## Purpose
-Produce a usable commercial asset reuse inventory deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this commercial asset reuse inventory task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Required record: permitted channels and other applicable usage conditions before
 Each proposed reuse has verified permission and current factual applicability.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

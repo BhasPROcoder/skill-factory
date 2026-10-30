@@ -3,9 +3,9 @@ id: MBR-002
 name: brand-message-hierarchy
 domain: Commercial Brand and Editorial
 subdomain: Design
-version: 1.0
-description: Brand message hierarchy design using supplied evidence and explicit acceptance checks; use when preparing a brand message hierarchy design deliverable.
-triggers: ["help me with brand message hierarchy design", "prepare a brand message hierarchy design deliverable", "review our brand message hierarchy design evidence", "create a brand message hierarchy design action plan", "check this brand message hierarchy design decision"]
+version: 1.1
+description: Guide brand message hierarchy design when working from audience need, supported benefits, proof assets, and offer facts.
+triggers: ["brand message hierarchy design", "help with brand message hierarchy design", "work on brand message hierarchy", "review my brand message hierarchy design", "apply brand message hierarchy design to these materials"]
 not_for: ["Commercial copy claim substantiation review [MBR-003]", "Commercial case study outline design [MBR-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Brand message hierarchy design
 
 ## Purpose
-Produce a usable brand message hierarchy design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this brand message hierarchy design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -101,19 +101,19 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
 ## Findings
 - Evidence: A — The draft promises effortless setup, but the supplied process includes required customer configuration.
   Assessment: The promise should acknowledge the actual setup effort.
-  Action: Replace the unsupported effort claim with the verified setup assistance benefit. Owner: affected workstream lead.
+  Action: Replace the unsupported effort claim with wording that acknowledges the verified configuration requirement. Owner: affected workstream lead.
 
 ## Artifact
 Unsupported headline: Effortless setup.
-Supported direction: Setup assistance for your configuration process.
-Supporting fact: customer configuration remains required.
-Proof dependency: use only verified details of the assistance actually offered.
+Draft factual message: Customer configuration is required during setup.
+Benefit headline: pending a verified benefit from the offer owner.
+Do not claim setup assistance is included unless that capability is supplied and verified.
 
 ## Acceptance check
 The headline promise and supporting messages remain within verified offer facts.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**
@@ -134,6 +134,6 @@ This fails because it does not address the specific evidence in A, identify a co
 **Assertions:**
 1. Output uses Decision, Scope, Findings, Artifact, Acceptance check, and Unresolved in that order.
 2. The recommendation is consistent with this case-specific conclusion: The promise should acknowledge the actual setup effort.
-3. The action includes this concrete response: Replace the unsupported effort claim with the verified setup assistance benefit.
+3. The action includes this concrete response: Replace the unsupported effort claim with wording that acknowledges the verified configuration requirement.
 4. The acceptance check addresses this observable outcome: The headline promise and supporting messages remain within verified offer facts.
 5. No unsupported performance guarantee, current platform limit, or invented source is introduced.

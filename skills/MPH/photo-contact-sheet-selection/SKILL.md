@@ -3,9 +3,9 @@ id: MPH-006
 name: photo-contact-sheet-selection
 domain: Photography Planning and Critique
 subdomain: Design
-version: 1.0
-description: Photographic contact sheet selection using supplied evidence and explicit acceptance checks; use when preparing a photographic contact sheet selection deliverable.
-triggers: ["help me with photographic contact sheet selection", "prepare a photographic contact sheet selection deliverable", "review our photographic contact sheet selection evidence", "create a photographic contact sheet selection action plan", "check this photographic contact sheet selection decision"]
+version: 1.1
+description: Guide photographic contact sheet selection when working from candidate images, intended use, selection criteria, and technical constraints.
+triggers: ["photographic contact sheet selection", "help with photographic contact sheet selection", "work on photo contact sheet selection", "review my photographic contact sheet selection", "apply photographic contact sheet selection to these materials"]
 not_for: ["Portrait session planning [MPH-007]", "Product photograph consistency planning [MPH-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Photographic contact sheet selection
 
 ## Purpose
-Produce a usable photographic contact sheet selection deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this photographic contact sheet selection task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Compare the frame's usable quality against its unique narrative contribution. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Candidate with shared glance: retain for comparison because it uniquely carries the intended moment.
 Technical check: assess the imperfection at actual delivery size.
 Decision boundary: reject only if the defect blocks the required use, not merely because another frame is cleaner.
@@ -112,7 +113,7 @@ Decision boundary: reject only if the defect blocks the required use, not merely
 The selection rationale reflects both intended meaning and actual output requirements.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

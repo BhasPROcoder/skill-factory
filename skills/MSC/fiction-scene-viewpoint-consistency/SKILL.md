@@ -3,9 +3,9 @@ id: MSC-002
 name: fiction-scene-viewpoint-consistency
 domain: Fiction Scene Craft
 subdomain: Design
-version: 1.0
-description: Fiction scene viewpoint consistency repair using supplied evidence and explicit acceptance checks; use when preparing a fiction scene viewpoint consistency repair deliverable.
-triggers: ["help me with fiction scene viewpoint consistency repair", "prepare a fiction scene viewpoint consistency repair deliverable", "review our fiction scene viewpoint consistency repair evidence", "create a fiction scene viewpoint consistency repair action plan", "check this fiction scene viewpoint consistency repair decision"]
+version: 1.1
+description: Guide fiction scene viewpoint consistency repair when working from scene text, selected viewpoint, and allowed narrative distance.
+triggers: ["fiction scene viewpoint consistency repair", "help with fiction scene viewpoint consistency repair", "work on fiction scene viewpoint consistency", "review my fiction scene viewpoint consistency repair", "apply fiction scene viewpoint consistency repair to these materials"]
 not_for: ["Fiction dialogue subtext revision [MSC-003]", "Fiction action blocking repair [MSC-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction scene viewpoint consistency repair
 
 ## Purpose
-Produce a usable fiction scene viewpoint consistency repair deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction scene viewpoint consistency repair task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Describe the guard's observable behavior and keep Mara's interpretation uncertain. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 The guard glanced toward the supervisor's empty chair and flattened a crease in his sleeve. Mara had asked only for the key. Why did he keep checking the door?
 Revision principle: the behavior is visible; Mara's interpretation remains a question.
 
@@ -111,7 +112,7 @@ Revision principle: the behavior is visible; Mara's interpretation remains a que
 The revision contains no unexplained access to another character's private mental state.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

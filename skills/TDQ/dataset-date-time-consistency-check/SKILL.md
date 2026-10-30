@@ -2,10 +2,10 @@
 id: TDQ-005
 name: dataset-date-time-consistency-check
 domain: Dataset Quality Diagnostics
-subdomain: Schema
-version: 1.0
-description: Produce a timestamp consistency report; use when the task is to dataset date time consistency check.
-triggers: ["dataset date time consistency check", "help with a timestamp consistency report", "review my a timestamp consistency report", "prepare a timestamp consistency report", "check dataset date time consistency check evidence"]
+subdomain: Integrity
+version: 1.1
+description: Create a timestamp consistency report from supplied evidence; use when preparing or reviewing timestamp consistency report decisions.
+triggers: ["dataset date time consistency check", "help with a timestamp consistency report", "review my timestamp consistency report", "prepare a timestamp consistency report", "check the evidence for this timestamp consistency report"]
 not_for: ["dataset referential integrity review [TDQ-006]", "dataset unit conversion review [TDQ-007]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a timestamp consistency report and name the source artifacts used; retain a version or observation date where available.
 2. Identify whether timestamps describe local time or an absolute instant
 3. Normalize only after the source time zone is known
-4. ⚠️ Compare event order under the documented lifecycle Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Compare event order under the documented lifecycle. Do not silently replace missing evidence with an assumed successful outcome.
 5. Flag ambiguous offsets and impossible orderings separately
 6. Apply the domain check: Report counts with denominators and compare values under explicit normalization rules; never silently drop inconvenient records.
 7. Verify the proposed result with this task-specific check: Compare timestamps after confirming common date and offset semantics. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Quality checks must reflect the intended observation unit and business meaning. A repair can change the estimand or hide a collection defect, so retain the unmodified input and explain consequences. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a timestamp consistency report
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Completion precedes creation under the supplied common-offset assumption.
 Decision: Investigate the lifecycle timestamps before calculating duration.
+Artifact: Fixture context: same date and same offset. Creation=09:00; completion=08:00. Ordering check: completion precedes creation, inconsistent with the declared lifecycle. Investigate source context; do not silently swap values or assume a timezone correction.
 Action: Team owner — Flag ambiguous offsets and impossible orderings separately Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare timestamps after confirming common date and offset semantics.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a timestamp consistency report. A fixture states all times use the same offset; creation is 09:00 and completion is 08:00 on the same date. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Completion precedes creation under the supplied common-offset assumption.
 3. It preserves this task-specific conclusion: Investigate the lifecycle timestamps before calculating duration.
 4. It includes the verification check or explicitly marks it pending: Compare timestamps after confirming common date and offset semantics.

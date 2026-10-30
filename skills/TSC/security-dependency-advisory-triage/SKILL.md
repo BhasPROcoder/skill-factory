@@ -2,10 +2,10 @@
 id: TSC-004
 name: security-dependency-advisory-triage
 domain: Defensive Security Review
-subdomain: Response preparation
-version: 1.0
-description: Produce a dependency advisory triage report; use when the task is to security dependency advisory triage.
-triggers: ["security dependency advisory triage", "help with a dependency advisory triage report", "review my a dependency advisory triage report", "prepare a dependency advisory triage report", "check security dependency advisory triage evidence"]
+subdomain: Exposure
+version: 1.1
+description: Create a dependency advisory triage report from supplied evidence; use when preparing or reviewing dependency advisory triage report decisions.
+triggers: ["security dependency advisory triage", "help with a dependency advisory triage report", "review my dependency advisory triage report", "prepare a dependency advisory triage report", "check the evidence for this dependency advisory triage report"]
 not_for: ["security logging sensitive data review [TSC-005]", "security trust boundary map [TSC-006]"]
 requires: []
 risk_level: high
@@ -30,11 +30,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a dependency advisory triage report and name the source artifacts used; retain a version or observation date where available.
 2. Match the installed component to the official advisory's affected conditions
 3. Determine whether the relevant functionality is used
-4. ⚠️ Separate confirmed applicability from unresolved reachability Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate confirmed applicability from unresolved reachability. Do not silently replace missing evidence with an assumed successful outcome.
 5. Prepare mitigation and verification questions for the owner
 6. Apply the domain check: Use current official vendor advisories and organizational policy when requirements matter; do not claim a vulnerability is exploitable from a scanner label alone.
 7. Verify the proposed result with this task-specific check: Check the current official advisory against the resolved dependency version and usage conditions. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Security findings need an asset boundary, evidence of the condition, a plausible impact, and an authorized owner. These skills organize defensive review and do not authorize scanning, exploitation, credential access, or changes outside the stated scope. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -58,6 +59,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -90,6 +92,7 @@ Deliverable: a dependency advisory triage report
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Installed-version evidence is missing.
 Decision: Identify the actual installed artifact before asserting applicability.
+Artifact: Component: Cedar. Installed version: unknown. Advisory applicability: unresolved. Required evidence: actual installed artifact and official advisory's affected conditions. No assertion of vulnerability or exploitability is supported by the package name alone.
 Action: Team owner — Prepare mitigation and verification questions for the owner Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Check the current official advisory against the resolved dependency version and usage conditions.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -111,7 +114,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a dependency advisory triage report. The inventory names library Cedar but omits its version; an advisory affects a specified version range. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Installed-version evidence is missing.
 3. It preserves this task-specific conclusion: Identify the actual installed artifact before asserting applicability.
 4. It includes the verification check or explicitly marks it pending: Check the current official advisory against the resolved dependency version and usage conditions.

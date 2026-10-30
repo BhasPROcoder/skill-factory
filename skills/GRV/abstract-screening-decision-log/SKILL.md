@@ -3,10 +3,10 @@ id: GRV-003
 name: abstract-screening-decision-log
 domain: Evidence Review and Synthesis
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare abstract screening decision log from supplied evidence; use when the request concerns search results.
 triggers: ["abstract screening decision log", "prepare abstract screening decision log", "review my abstract screening decision log", "help me with abstract screening decision log", "turn search results into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Study evidence extraction sheet [GRV-004]", "Publication version and correction-status check [GRV-005]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Record | Screening decision | Criterion basis | Next action
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +76,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional reviewer Ada sees an abstract with the right population but no stated outcome.
+> Fictional scenario: Fictional reviewer Ada sees an abstract with the right population but no stated outcome. A second abstract explicitly describes a different, excluded population.
 
 **Output:**
 ```text
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Record | Screening decision | Criterion basis | Next action
 Record A | Unclear | Outcome not described | Retrieve full text
 Record B | Exclude | Different population explicitly stated | Record exclusion reason
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare full-text retrieval questions for unclear records. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Retrieve full text.
 ```
 
 **Bad output:**

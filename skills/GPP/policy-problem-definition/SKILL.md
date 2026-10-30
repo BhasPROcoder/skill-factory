@@ -3,10 +3,10 @@ id: GPP-001
 name: policy-problem-definition
 domain: Public Policy Analysis
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare policy problem definition from supplied evidence; use when the request concerns reported public problem.
 triggers: ["policy problem definition", "prepare policy problem definition", "review my policy problem definition", "help me with policy problem definition", "turn reported public problem into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Policy option comparison [GPP-002]", "Policy theory of change map [GPP-003]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Problem element | Evidence | Interpretation limit | Question
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Problem element | Evidence | Interpretation limit | Question
 Reported condition | Evening complaints | Not a prevalence estimate | Who lacks evening access?
 Baseline | Daytime data | Different service period | Obtain relevant evening evidence
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Write a bounded problem statement with a question that additional evidence could answer. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Who lacks evening access?.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MVA-008
 name: visual-layout-variation-study
 domain: Visual Composition and Art Direction
 subdomain: Design
-version: 1.0
-description: Visual layout variation study design using supplied evidence and explicit acceptance checks; use when preparing a visual layout variation study design deliverable.
-triggers: ["help me with visual layout variation study design", "prepare a visual layout variation study design deliverable", "review our visual layout variation study design evidence", "create a visual layout variation study design action plan", "check this visual layout variation study design decision"]
+version: 1.1
+description: Guide visual layout variation study design when working from fixed content, visual objective, medium, and constraints.
+triggers: ["visual layout variation study design", "help with visual layout variation study design", "work on visual layout variation study", "review my visual layout variation study design", "apply visual layout variation study design to these materials"]
 not_for: ["Visual art-direction handoff preparation [MVA-009]", "Visual composition iteration review [MVA-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Visual layout variation study design
 
 ## Purpose
-Produce a usable visual layout variation study design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this visual layout variation study design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Restore the same required content before comparing composition. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Fixed content: same title, image, details, and call to action.
 Variation A: image-led composition.
 Variation B: text-led composition.
@@ -113,7 +114,7 @@ Comparison: which better supports the stated communication objective without omi
 Each variant tests a stated visual hypothesis under consistent content requirements.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

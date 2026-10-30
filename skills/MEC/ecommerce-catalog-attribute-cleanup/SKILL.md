@@ -3,9 +3,9 @@ id: MEC-010
 name: ecommerce-catalog-attribute-cleanup
 domain: E-commerce Customer Experience
 subdomain: Design
-version: 1.0
-description: Catalog attribute cleanup planning using supplied evidence and explicit acceptance checks; use when preparing a catalog attribute cleanup planning deliverable.
-triggers: ["help me with catalog attribute cleanup planning", "prepare a catalog attribute cleanup planning deliverable", "review our catalog attribute cleanup planning evidence", "create a catalog attribute cleanup planning action plan", "check this catalog attribute cleanup planning decision"]
+version: 1.1
+description: Guide catalog attribute cleanup planning when working from product attribute export, definitions, category rules, and known inconsistencies.
+triggers: ["catalog attribute cleanup planning", "help with catalog attribute cleanup planning", "work on ecommerce catalog attribute cleanup", "review my catalog attribute cleanup planning", "apply catalog attribute cleanup planning to these materials"]
 not_for: ["Product page information auditing [MEC-001]", "Product variant selection review [MEC-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Catalog attribute cleanup planning
 
 ## Purpose
-Produce a usable catalog attribute cleanup planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this catalog attribute cleanup planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Do not merge the two quantities under a single weight label.
 Every normalized value retains the correct quantity, unit, and source meaning.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -2,10 +2,10 @@
 id: TST-003
 name: test-state-transition-matrix
 domain: Software Verification Design
-subdomain: Failure diagnosis
-version: 1.0
-description: Produce a state transition test matrix; use when the task is to test state transition matrix.
-triggers: ["test state transition matrix", "help with a state transition test matrix", "review my a state transition test matrix", "prepare a state transition test matrix", "check test state transition matrix evidence"]
+subdomain: State transitions
+version: 1.1
+description: Create a state transition test matrix from supplied evidence; use when preparing or reviewing state transition test matrix decisions.
+triggers: ["test state transition matrix", "help with a state transition test matrix", "review my state transition test matrix", "prepare a state transition test matrix", "check the evidence for this state transition test matrix"]
 not_for: ["test regression case minimization [TST-004]", "test property invariant design [TST-005]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a state transition test matrix and name the source artifacts used; retain a version or observation date where available.
 2. Enumerate allowed transitions from each reachable state
 3. Specify behavior for disallowed events
-4. ⚠️ Include repeated and interrupted transition attempts Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Include repeated and interrupted transition attempts. Do not silently replace missing evidence with an assumed successful outcome.
 5. Verify state and side effects together
 6. Apply the domain check: Keep fixtures small enough to inspect, preserve the failure signal, and report what the test does not establish.
 7. Verify the proposed result with this task-specific check: Compare state after rejection with state before the invalid event. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A test should distinguish correct behavior from a plausible defect. Derive expected results from a contract or independent example rather than copying the implementation under test. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a state transition test matrix
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The closed-to-open transition must be rejected.
 Decision: Test both the allowed close and the disallowed reopen behavior.
+Artifact: Transition matrix: open + close → closed; closed + reopen → rejected under supplied policy. Check both resulting state and absence of prohibited side effects. Repeated close handling remains a contract question unless specified.
 Action: Team owner — Verify state and side effects together Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare state after rejection with state before the invalid event.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a state transition test matrix. A ticket can move open to closed; reopening is disallowed by the supplied contract. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The closed-to-open transition must be rejected.
 3. It preserves this task-specific conclusion: Test both the allowed close and the disallowed reopen behavior.
 4. It includes the verification check or explicitly marks it pending: Compare state after rejection with state before the invalid event.

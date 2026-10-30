@@ -3,9 +3,9 @@ id: MCA-001
 name: campaign-objective-brief
 domain: Campaign Planning and Review
 subdomain: Design
-version: 1.0
-description: Campaign objective briefing using supplied evidence and explicit acceptance checks; use when preparing a campaign objective briefing deliverable.
-triggers: ["help me with campaign objective briefing", "prepare a campaign objective briefing deliverable", "review our campaign objective briefing evidence", "create a campaign objective briefing action plan", "check this campaign objective briefing decision"]
+version: 1.1
+description: Guide campaign objective briefing when working from business objective, audience, offer, and desired customer action.
+triggers: ["campaign objective briefing", "help with campaign objective briefing", "work on campaign objective brief", "review my campaign objective briefing", "apply campaign objective briefing to these materials"]
 not_for: ["Campaign audience message mapping [MCA-002]", "Campaign channel role planning [MCA-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign objective briefing
 
 ## Purpose
-Produce a usable campaign objective briefing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign objective briefing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Separate the unrelated offer unless its relationship to that journey is demonstr
 The audience, obstacle, offer, action, and primary measure form a consistent chain.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

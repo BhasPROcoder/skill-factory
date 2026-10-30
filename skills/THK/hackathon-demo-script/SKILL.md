@@ -2,10 +2,10 @@
 id: THK-005
 name: hackathon-demo-script
 domain: Hackathon Delivery
-subdomain: Scoping
-version: 1.0
-description: Produce a timed demo script; use when the task is to hackathon demo script.
-triggers: ["hackathon demo script", "help with a timed demo script", "review my a timed demo script", "prepare a timed demo script", "check hackathon demo script evidence"]
+subdomain: Demonstration
+version: 1.1
+description: Create a timed demo script from supplied evidence; use when preparing or reviewing timed demo script decisions.
+triggers: ["hackathon demo script", "help with a timed demo script", "review my timed demo script", "prepare a timed demo script", "check the evidence for this timed demo script"]
 not_for: ["hackathon fallback demo plan [THK-006]", "hackathon judging evidence map [THK-007]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a timed demo script and name the source artifacts used; retain a version or observation date where available.
 2. Open with the user's problem and the observable outcome
 3. Sequence actions through the working primary journey
-4. ⚠️ Attach each spoken claim to an on-screen result Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Attach each spoken claim to an on-screen result. Do not silently replace missing evidence with an assumed successful outcome.
 5. Include a concise fallback cue for each fragile live step
 6. Apply the domain check: Connect each commitment to the available team, schedule, permitted resources, and a fallback demonstration path.
 7. Verify the proposed result with this task-specific check: Rehearse the script against the actual prototype and remove unsupported claims. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A hackathon prototype needs a coherent user journey and demonstrable evidence of its central claim. Distinguish simulated components from implemented behavior, and read the current event rules instead of assuming submission or judging conventions. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a timed demo script
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Spoken opening: "Cedar Lantern helps a user turn an uploaded fixture into a useful summary." Demo cue: upload the permitted fixture and show the generated summary. Spoken boundary: "This notification is simulated; the upload and summary steps are implemented." Closing line: "The next test is connecting an authorized notification service."
 Decision: Use the quoted lines as the draft script; rehearse them against the actual implemented path and the event's supplied time limit.
+Artifact: Opening: “Cedar Lantern turns an uploaded fixture into a useful summary.” Cue: upload permitted fixture and display summary. Boundary line: “The notification is simulated; upload and summary are implemented.” Close: “Next we will test an authorized notification integration.” Rehearsal uses the actual event time limit.
 Action: Team owner — Include a concise fallback cue for each fragile live step Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Rehearse the script against the actual prototype and remove unsupported claims.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a timed demo script. A prototype uses a simulated notification service while its upload and summary steps work. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The notification step is simulated; the earlier steps are implemented.
 3. It provides actual spoken lines and demo cues that disclose the simulated notification while showing the implemented path.
 4. It includes the verification check or explicitly marks it pending: Rehearse the script against the actual prototype and remove unsupported claims.

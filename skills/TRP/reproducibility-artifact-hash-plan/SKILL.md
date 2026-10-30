@@ -3,9 +3,9 @@ id: TRP-005
 name: reproducibility-artifact-hash-plan
 domain: Computational Reproducibility
 subdomain: Artifact identity
-version: 1.0
-description: Produce an artifact integrity manifest; use when the task is to reproducibility artifact hash plan.
-triggers: ["reproducibility artifact hash plan", "help with an artifact integrity manifest", "review my an artifact integrity manifest", "prepare an artifact integrity manifest", "check reproducibility artifact hash plan evidence"]
+version: 1.1
+description: Create an artifact integrity manifest from supplied evidence; use when preparing or reviewing artifact integrity manifest decisions.
+triggers: ["reproducibility artifact hash plan", "help with an artifact integrity manifest", "review my artifact integrity manifest", "prepare an artifact integrity manifest", "check the evidence for this artifact integrity manifest"]
 not_for: ["reproducibility configuration capture [TRP-006]", "reproducibility result tolerance spec [TRP-007]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of an artifact integrity manifest and name the source artifacts used; retain a version or observation date where available.
 2. Choose a documented content-digest procedure appropriate to the environment
 3. Record the digest with the artifact name and acquisition context
-4. ⚠️ Recompute after transfer or packaging Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Recompute after transfer or packaging. Do not silently replace missing evidence with an assumed successful outcome.
 5. Treat a mismatch as an identity failure requiring investigation
 6. Apply the domain check: Distinguish reproducing a computation from independently validating its scientific or business claim; preserve raw evidence of both successful and failed runs.
 7. Verify the proposed result with this task-specific check: Recompute the digest using the same documented method on both artifacts. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Reproduction requires enough information to identify inputs, code, configuration, environment, and intended outputs. Exact equality is appropriate only when the declared computation supports it; otherwise define the accepted comparison before rerunning. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: an artifact integrity manifest
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The content identity evidence does not match.
 Decision: Investigate the transfer or source version before using the received copy.
+Artifact: Artifact A: recorded illustrative digest label=abc; received label=def. Identity check: mismatch. Hold use of the received copy; verify the real digest procedure and source version before retrying. These fictional labels are not example outputs of a specified hash algorithm.
 Action: Team owner — Treat a mismatch as an identity failure requiring investigation Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Recompute the digest using the same documented method on both artifacts.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for an artifact integrity manifest. The manifest records digest abc for artifact A; the received copy computes digest def. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The content identity evidence does not match.
 3. It preserves this task-specific conclusion: Investigate the transfer or source version before using the received copy.
 4. It includes the verification check or explicitly marks it pending: Recompute the digest using the same documented method on both artifacts.

@@ -3,10 +3,10 @@ id: GPP-009
 name: policy-scenario-stress-test
 domain: Public Policy Analysis
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare policy scenario stress test from supplied evidence; use when the request concerns proposed policy design.
 triggers: ["policy scenario stress test", "prepare policy scenario stress test", "review my policy scenario stress test", "help me with policy scenario stress test", "turn proposed policy design into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Policy review question agenda [GPP-010]", "Policy problem definition [GPP-001]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Scenario | Policy pressure | Failure signal | Adaptation
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Scenario | Policy pressure | Failure signal | Adaptation
 Stable staffing | Routine delivery | Service targets still need observation | Monitor baseline
 Staff turnover | Training and handoff pressure | Unassigned cases | Prepare documented handoffs
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Define observable signals that would trigger a design review. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Monitor baseline.
 ```
 
 **Bad output:**

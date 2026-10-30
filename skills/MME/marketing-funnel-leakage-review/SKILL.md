@@ -3,9 +3,9 @@ id: MME-002
 name: marketing-funnel-leakage-review
 domain: Marketing Measurement Decisions
 subdomain: Design
-version: 1.0
-description: Marketing funnel transition review using supplied evidence and explicit acceptance checks; use when preparing a marketing funnel transition review deliverable.
-triggers: ["help me with marketing funnel transition review", "prepare a marketing funnel transition review deliverable", "review our marketing funnel transition review evidence", "create a marketing funnel transition review action plan", "check this marketing funnel transition review decision"]
+version: 1.1
+description: Guide marketing funnel transition review when working from stage definitions, counts, time windows, and population rules.
+triggers: ["marketing funnel transition review", "help with marketing funnel transition review", "work on marketing funnel leakage review", "review my marketing funnel transition review", "apply marketing funnel transition review to these materials"]
 not_for: ["Campaign tracking brief design [MME-003]", "Marketing dashboard decision mapping [MME-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Marketing funnel transition review
 
 ## Purpose
-Produce a usable marketing funnel transition review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this marketing funnel transition review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Interpretation boundary: the present counts cannot locate a cohort leakage rate.
 Every transition comparison uses compatible population and timing definitions.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

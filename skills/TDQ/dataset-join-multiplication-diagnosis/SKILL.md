@@ -3,9 +3,9 @@ id: TDQ-008
 name: dataset-join-multiplication-diagnosis
 domain: Dataset Quality Diagnostics
 subdomain: Reconciliation
-version: 1.0
-description: Produce a join cardinality diagnosis; use when the task is to dataset join multiplication diagnosis.
-triggers: ["dataset join multiplication diagnosis", "help with a join cardinality diagnosis", "review my a join cardinality diagnosis", "prepare a join cardinality diagnosis", "check dataset join multiplication diagnosis evidence"]
+version: 1.1
+description: Create a join cardinality diagnosis from supplied evidence; use when preparing or reviewing join cardinality diagnosis decisions.
+triggers: ["dataset join multiplication diagnosis", "help with a join cardinality diagnosis", "review my join cardinality diagnosis", "prepare a join cardinality diagnosis", "check the evidence for this join cardinality diagnosis"]
 not_for: ["dataset outlier triage [TDQ-009]", "dataset control total reconciliation [TDQ-010]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a join cardinality diagnosis and name the source artifacts used; retain a version or observation date where available.
 2. Declare the expected key relationship before joining
 3. Count occurrences of join keys on each side
-4. ⚠️ Identify keys whose multiplicities expand the result Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Identify keys whose multiplicities expand the result. Do not silently replace missing evidence with an assumed successful outcome.
 5. Recommend aggregation or key correction based on row meaning
 6. Apply the domain check: Report counts with denominators and compare values under explicit normalization rules; never silently drop inconvenient records.
 7. Verify the proposed result with this task-specific check: Compare observed joined counts with per-key multiplicity products. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Quality checks must reflect the intended observation unit and business meaning. A repair can change the estimand or hide a collection defect, so retain the unmodified input and explain consequences. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a join cardinality diagnosis
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Joining all matching rows produces six combinations for k.
 Decision: Resolve whether a many-to-many relationship is intended before using aggregate totals.
+Artifact: Join key k: left multiplicity=2; right multiplicity=3; matching combinations=2×3=6. Whether six rows are correct depends on the intended relationship. Inspect row meanings before aggregating, deduplicating, or changing the key.
 Action: Team owner — Recommend aggregation or key correction based on row meaning Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare observed joined counts with per-key multiplicity products.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a join cardinality diagnosis. The left table has two rows for key k; the right table has three rows for k. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Joining all matching rows produces six combinations for k.
 3. It preserves this task-specific conclusion: Resolve whether a many-to-many relationship is intended before using aggregate totals.
 4. It includes the verification check or explicitly marks it pending: Compare observed joined counts with per-key multiplicity products.

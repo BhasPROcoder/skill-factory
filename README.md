@@ -21,6 +21,12 @@ The instructions are plain Markdown and do not require a particular model or plu
 
 The router shows actual domain coverage. A topic's presence does not imply that every specialization, jurisdiction, or platform feature is covered.
 
+## Generalized workflows
+
+The library also includes general-purpose workflows adapted from the user's former Claude skills collection. They use task inputs and verification steps instead of personal business details, vendor invocation commands, or assumed current prices and rules. The [migration comparison](logs/claude-migration.md) maps source workflows to new skills or existing equivalents so duplicate names do not inflate the repertoire.
+
+All portable instructions live under `skills/` in this repository. Load the selected Markdown file and supply the required inputs in the AI agent you use; actual file editing, browsing, code execution, and connected services depend on that agent's available tools. The instructions do not claim every agent has identical capabilities.
+
 ## Accuracy and limits
 
 Skills teach procedures and judgment. Current laws, agency requirements, fees, deadlines, platform rules, and delivery specifications are inputs to verify with their official source, not hardcoded current facts. Worked scenarios are fictional. Verification placeholders identify unresolved facts and where to check them.
@@ -40,6 +46,8 @@ python tools/sf.py validate --all
 python tools/sf.py quality --all
 python tools/sf.py coverage
 python tools/sf.py overlap
+python tools/sf.py search kaggle submission
+python tools/sf.py search seo
 python -m unittest discover -s tests -p test_sf.py
 ```
 
@@ -51,6 +59,7 @@ python -m unittest discover -s tests -p test_sf.py
 python tools/sf.py index --all
 python tools/sf.py router
 python tools/sf.py export dist/portable-skills
+python tools/sf.py package dist/portable-skills.zip
 python tools/sf.py testpack CTR-001
 ```
 

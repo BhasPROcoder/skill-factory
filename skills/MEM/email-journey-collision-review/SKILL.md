@@ -3,9 +3,9 @@ id: MEM-008
 name: email-journey-collision-review
 domain: Lifecycle Email Planning
 subdomain: Design
-version: 1.0
-description: Email journey collision review using supplied evidence and explicit acceptance checks; use when preparing a email journey collision review deliverable.
-triggers: ["help me with email journey collision review", "prepare a email journey collision review deliverable", "review our email journey collision review evidence", "create a email journey collision review action plan", "check this email journey collision review decision"]
+version: 1.1
+description: Guide email journey collision review when working from active journeys, entry triggers, exclusions, and message priorities.
+triggers: ["email journey collision review", "help with email journey collision review", "work on email journey collision review", "review my email journey collision review", "apply email journey collision review to these materials"]
 not_for: ["Email feedback theme review [MEM-009]", "Email preference center content design [MEM-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Email journey collision review
 
 ## Purpose
-Produce a usable email journey collision review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this email journey collision review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Test case: a purchaser must not receive the still-waiting-to-buy message.
 The same recipient state cannot produce mutually contradictory messages.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MRE-002
 name: research-participant-screening
 domain: Customer and Market Research
 subdomain: Design
-version: 1.0
-description: Research participant screening design using supplied evidence and explicit acceptance checks; use when preparing a research participant screening design deliverable.
-triggers: ["help me with research participant screening design", "prepare a research participant screening design deliverable", "review our research participant screening design evidence", "create a research participant screening design action plan", "check this research participant screening design decision"]
+version: 1.1
+description: Guide research participant screening design when working from target behavior, inclusion criteria, exclusions, and recruitment channels.
+triggers: ["research participant screening design", "help with research participant screening design", "work on research participant screening", "review my research participant screening design", "apply research participant screening design to these materials"]
 not_for: ["Customer interview note synthesis [MRE-003]", "Survey question repair [MRE-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Research participant screening design
 
 ## Purpose
-Produce a usable research participant screening design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this research participant screening design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Decision rule: include only roles matching the research need; self-described exp
 Every inclusion decision is tied to an observable eligibility criterion.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

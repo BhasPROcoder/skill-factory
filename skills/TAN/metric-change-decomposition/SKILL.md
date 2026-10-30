@@ -2,10 +2,10 @@
 id: TAN-005
 name: metric-change-decomposition
 domain: Analytical Reasoning and Metrics
-subdomain: Metric definitions
-version: 1.0
-description: Produce a metric change decomposition; use when the task is to metric change decomposition.
-triggers: ["metric change decomposition", "help with a metric change decomposition", "review my a metric change decomposition", "prepare a metric change decomposition", "check metric change decomposition evidence"]
+subdomain: Diagnostics
+version: 1.1
+description: Create a metric change decomposition from supplied evidence; use when preparing or reviewing metric change decomposition decisions.
+triggers: ["metric change decomposition", "help with a metric change decomposition", "review my metric change decomposition", "prepare a metric change decomposition", "check the evidence for this metric change decomposition"]
 not_for: ["before after comparison caveat [TAN-006]", "analysis segment reversal check [TAN-007]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a metric change decomposition and name the source artifacts used; retain a version or observation date where available.
 2. Write the exact identity linking the reported metric to components
 3. Calculate component values under compatible definitions
-4. ⚠️ Separate mix changes from within-segment changes where identifiable Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate mix changes from within-segment changes where identifiable. Do not silently replace missing evidence with an assumed successful outcome.
 5. Present unexplained residuals rather than forcing attribution
 6. Apply the domain check: State what a calculation can establish and what would require a different design; do not turn association into causal attribution.
 7. Verify the proposed result with this task-specific check: Reconstruct both totals from their components. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A metric is defined by its population, unit, denominator, and time window. Comparisons need compatible definitions before arithmetic is meaningful. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a metric change decomposition
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Revenue moves from 50 to 60 with unchanged average value.
 Decision: Attribute this fixture's increase to order volume under the stated identity.
+Artifact: Identity: revenue=orders×average order value. Before: 10×5=50. After: 12×5=60. Change=10 units, with average order value unchanged. This supplied arithmetic identity does not by itself explain why orders changed.
 Action: Team owner — Present unexplained residuals rather than forcing attribution Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Reconstruct both totals from their components.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a metric change decomposition. Revenue equals orders times average order value; orders move from 10 to 12 while average value stays 5. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Revenue moves from 50 to 60 with unchanged average value.
 3. It preserves this task-specific conclusion: Attribute this fixture's increase to order volume under the stated identity.
 4. It includes the verification check or explicitly marks it pending: Reconstruct both totals from their components.

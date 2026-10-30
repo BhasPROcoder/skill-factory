@@ -3,9 +3,9 @@ id: MRE-010
 name: research-to-opportunity-handoff
 domain: Customer and Market Research
 subdomain: Design
-version: 1.0
-description: Research opportunity handoff using supplied evidence and explicit acceptance checks; use when preparing a research opportunity handoff deliverable.
-triggers: ["help me with research opportunity handoff", "prepare a research opportunity handoff deliverable", "review our research opportunity handoff evidence", "create a research opportunity handoff action plan", "check this research opportunity handoff decision"]
+version: 1.1
+description: Guide research opportunity handoff when working from reviewed findings, unresolved questions, and product team decision context.
+triggers: ["research opportunity handoff", "help with research opportunity handoff", "work on research to opportunity handoff", "review my research opportunity handoff", "apply research opportunity handoff to these materials"]
 not_for: ["Customer interview guide design [MRE-001]", "Research participant screening design [MRE-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Research opportunity handoff
 
 ## Purpose
-Produce a usable research opportunity handoff deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this research opportunity handoff task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Do not present workshop enthusiasm as customer evidence.
 Each research-backed opportunity traces to supplied evidence and preserves uncertainty.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -2,10 +2,10 @@
 id: TKG-007
 name: kaggle-ensemble-eligibility-review
 domain: Kaggle Competition Workflows
-subdomain: Submissions
-version: 1.0
-description: Produce an ensemble candidate review; use when the task is to kaggle ensemble eligibility review.
-triggers: ["kaggle ensemble eligibility review", "help with an ensemble candidate review", "review my an ensemble candidate review", "prepare an ensemble candidate review", "check kaggle ensemble eligibility review evidence"]
+subdomain: Experiments
+version: 1.1
+description: Create an ensemble candidate review from supplied evidence; use when preparing or reviewing ensemble candidate review decisions.
+triggers: ["kaggle ensemble eligibility review", "help with an ensemble candidate review", "review my ensemble candidate review", "prepare an ensemble candidate review", "check the evidence for this ensemble candidate review"]
 not_for: ["kaggle notebook rerun readiness [TKG-008]", "kaggle final submission selection [TKG-009]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of an ensemble candidate review and name the source artifacts used; retain a version or observation date where available.
 2. Confirm all candidate artifacts are allowed under the competition rules
 3. Align predictions and target semantics across candidates
-4. ⚠️ Compare ensemble choices on held-out evidence without fitting to final test labels Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Compare ensemble choices on held-out evidence without fitting to final test labels. Do not silently replace missing evidence with an assumed successful outcome.
 5. Record candidate provenance and the chosen combination rule
 6. Apply the domain check: Keep local validation, public feedback, final selection, and rule compliance as separate evidence; never infer hidden labels or redistribute restricted competition material.
 7. Verify the proposed result with this task-specific check: Verify row identity before recomputing the proposed weighted combination. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Use the specific competition page, rules, data description, evaluation definition, and submission instructions as inputs. Check their current versions; do not assume that limits, external-data permissions, team rules, or notebook requirements match another competition. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -79,7 +81,7 @@ Open items: <missing information or current-source checks; at most three bullets
 
 ## Worked example
 **Input:**
-> Fictional team Cedar Lantern requests an ensemble candidate review. Two eligible models predict the same probability for aligned rows; one file reverses row order. The team asks for an assessment only and supplies these facts as the complete example fixture.
+> Fictional team Cedar Lantern requests an ensemble candidate review. Two eligible models predict probabilities for the same target on the same rows; one file reverses row order. The team asks for an assessment only and supplies these facts as the complete example fixture.
 
 **Output:**
 ```text
@@ -87,6 +89,7 @@ Deliverable: an ensemble candidate review
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The files cannot be blended safely by row position.
 Decision: Align identifiers and evaluate a declared combination on local held-out data.
+Artifact: Identifier-aligned example: x predictions 0.2 and 0.4 → equal-weight mean 0.3; y predictions 0.8 and 0.6 → mean 0.7. This is a proposed combination, not a performance claim. Validate eligibility and held-out results before selecting weights.
 Action: Team owner — Record candidate provenance and the chosen combination rule Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Verify row identity before recomputing the proposed weighted combination.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -105,10 +108,10 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 
 ## Test case
 **Input:**
-> Fictional team Cedar Lantern asks for an ensemble candidate review. Two eligible models predict the same probability for aligned rows; one file reverses row order. Produce the assessment and identify what remains unverified.
+> Fictional team Cedar Lantern asks for an ensemble candidate review. Two eligible models predict probabilities for the same target on the same rows; one file reverses row order. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The files cannot be blended safely by row position.
 3. It preserves this task-specific conclusion: Align identifiers and evaluate a declared combination on local held-out data.
 4. It includes the verification check or explicitly marks it pending: Verify row identity before recomputing the proposed weighted combination.

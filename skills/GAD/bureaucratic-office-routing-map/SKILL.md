@@ -3,10 +3,10 @@ id: GAD-003
 name: bureaucratic-office-routing-map
 domain: Administrative Casework
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare responsible office routing map from supplied evidence; use when the request concerns service outcome sought.
 triggers: ["responsible office routing map", "prepare responsible office routing map", "review my responsible office routing map", "help me with responsible office routing map", "turn service outcome sought into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Official notice action extraction [GAD-004]", "Application rejection error triage [GAD-005]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Candidate office | Responsibility evidence | Confidence | Routing question
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Candidate office | Responsibility evidence | Confidence | Routing question
 General helpline | General enquiry only | Limited | Which office maintains this record?
 Named department | Old leaflet | Unverified | Is this still the responsible office?
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a routing question that can confirm responsibility without sending the full personal file. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Which office maintains this record?.
 ```
 
 **Bad output:**

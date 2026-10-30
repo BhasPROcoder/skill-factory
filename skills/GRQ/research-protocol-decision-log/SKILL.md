@@ -3,10 +3,10 @@ id: GRQ-008
 name: research-protocol-decision-log
 domain: Research Question and Study Design
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare research protocol decision log from supplied evidence; use when the request concerns draft protocol.
 triggers: ["research protocol decision log", "prepare research protocol decision log", "review my research protocol decision log", "help me with research protocol decision log", "turn draft protocol into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Measurement schedule [GRQ-009]", "Research feasibility gate review [GRQ-010]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Decision | Rationale | Timing | Interpretation effect
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -83,9 +85,11 @@ Scope: Prepare research protocol decision log for the fictional case, limited to
 Basis: The fictional scenario above; missing supporting material remains unverified.
 Decision | Rationale | Timing | Interpretation effect
 New category | Unexpected response content | After initial review | Label exploratory change
-Original categories | Protocol definition | Before collection | Retain version history
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+Original categories | Earlier definitions retained | Original timing unverified | Locate dated protocol before claiming prespecification
+
+Artifact: Decision entry: Add an exploratory response category prompted by unexpected content. Preserve the original category definitions and label the addition as made after initial review. Revisit earlier material for possible applicability without pretending the added category was specified before collection. Record who approved the revision and which records were rechecked when those facts are available.
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a versioned change record with impact on interpretation. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Label exploratory change.
 ```
 
 **Bad output:**

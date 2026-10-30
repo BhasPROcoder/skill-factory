@@ -3,10 +3,10 @@ id: GPR-008
 name: routine-experiment-plan
 domain: Personal Work Organization
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare routine experiment plan from supplied evidence; use when the request concerns desired behavior.
 triggers: ["routine experiment plan", "prepare routine experiment plan", "review my routine experiment plan", "help me with routine experiment plan", "turn desired behavior into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Personal information retrieval design [GPR-009]", "Overdue commitment recovery plan [GPR-010]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Routine element | Proposed design | Observation | Adjustment
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Routine element | Proposed design | Observation | Adjustment
 Cue | End of meeting | No gap available | Use next available transition
 Action | Write unresolved decisions | Note created or not | Reduce scope when needed
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Adapt the routine based on what happened rather than a universal rule. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Use next available transition.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: GED-003
 name: worked-example-lesson-sequence
 domain: Lesson and Learning Design
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare worked example lesson sequence from supplied evidence; use when the request concerns target procedure.
 triggers: ["worked example lesson sequence", "prepare worked example lesson sequence", "review my worked example lesson sequence", "help me with worked example lesson sequence", "turn target procedure into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Misconception contrast activity [GED-004]", "Lesson practice alignment review [GED-005]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Sequence stage | Learner action | Support | Check
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,14 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Sequence stage | Learner action | Support | Check
 Annotated example | Explain why sources differ | Decision notes supplied | Learner names comparison basis
 Independent pair | Compare new sources | No completed comparison | Check reasoning rather than copied phrases
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Proposed teaching texts: A says the club needs a larger room because members stood; B says the current room is adequate because it fits the usual attendance.
+Model: compare their meanings of adequate and the attendance evidence they use; neither text alone establishes which attendance is relevant.
+Completion task: supply the missing comparison question: Which attendance pattern should the decision cover?
+Independent task: compare new texts that disagree about an opening time because they describe different users.
+Check: learner names the relevant difference, not just that authors disagree.
+Next action: The requester or assigned reviewer will complete this task-specific check: Compare learner explanations with the decision logic before increasing difficulty. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Learner names comparison basis.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: MME-007
 name: marketing-experiment-readout
 domain: Marketing Measurement Decisions
 subdomain: Design
-version: 1.0
-description: Marketing experiment readout preparation using supplied evidence and explicit acceptance checks; use when preparing a marketing experiment readout preparation deliverable.
-triggers: ["help me with marketing experiment readout preparation", "prepare a marketing experiment readout preparation deliverable", "review our marketing experiment readout preparation evidence", "create a marketing experiment readout preparation action plan", "check this marketing experiment readout preparation decision"]
-not_for: ["Marketing data discrepancy triage [MME-008]", "Marketing cohort retention analysis brief [MME-009]", "Legal or regulated financial conclusions"]
+version: 1.1
+description: Guide marketing experiment readout preparation when working from experiment plan, assignment method, outcomes, exclusions, and stopping history.
+triggers: ["marketing experiment readout preparation", "help with marketing experiment readout preparation", "work on marketing experiment readout", "review my marketing experiment readout preparation", "apply marketing experiment readout preparation to these materials"]
+not_for: ["Marketing data discrepancy triage [MME-008]", "Acquisition campaign retention decision brief [MME-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
 ---
@@ -14,7 +14,7 @@ risk_level: medium
 # Marketing experiment readout preparation
 
 ## Purpose
-Produce a usable marketing experiment readout preparation deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this marketing experiment readout preparation task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Decision: do not declare the original test successful using the substituted outc
 The readout separates prespecified conclusions from post-hoc observations.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

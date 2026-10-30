@@ -3,9 +3,9 @@ id: MSS-010
 name: fiction-outline-pacing-review
 domain: Fiction Story Structure
 subdomain: Design
-version: 1.0
-description: Fiction outline pacing review using supplied evidence and explicit acceptance checks; use when preparing a fiction outline pacing review deliverable.
-triggers: ["help me with fiction outline pacing review", "prepare a fiction outline pacing review deliverable", "review our fiction outline pacing review evidence", "create a fiction outline pacing review action plan", "check this fiction outline pacing review decision"]
+version: 1.1
+description: Guide fiction outline pacing review when working from scene list, scene functions, major turns, and desired reading experience.
+triggers: ["fiction outline pacing review", "help with fiction outline pacing review", "work on fiction outline pacing review", "review my fiction outline pacing review", "apply fiction outline pacing review to these materials"]
 not_for: ["Fiction premise conflict testing [MSS-001]", "Fiction causal outline repair [MSS-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction outline pacing review
 
 ## Purpose
-Produce a usable fiction outline pacing review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction outline pacing review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Combine redundant evidence and use the space for the consequence of distrust. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Combine the repeated unreliability discoveries into one scene with distinct supporting evidence.
 Next scene: Mara must choose whether to act on the suspect record.
 Following consequence: the choice changes her alliance with Ivo.
@@ -113,7 +114,7 @@ The sequence moves from discovery to decision to consequence.
 The revised outline preserves necessary setup while each retained scene advances a distinct function.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

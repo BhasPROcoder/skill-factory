@@ -3,10 +3,10 @@ id: GAS-007
 name: feedback-comment-rewrite
 domain: Learning Assessment
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare actionable feedback rewrite from supplied evidence; use when the request concerns learner work.
 triggers: ["actionable feedback rewrite", "prepare actionable feedback rewrite", "review my actionable feedback rewrite", "help me with actionable feedback rewrite", "turn learner work into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Assessment moderation session [GAS-008]", "Learning portfolio evidence selection [GAS-009]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Original comment | Work evidence | Actionable revision | Success check
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional teacher Jae writes unclear beside an unsupported claim.
+> Fictional scenario: Fictional teacher Jae writes unclear beside an unsupported claim. A second comment says good work beside a comparison that names both sources without explaining why the contrast matters.
 
 **Output:**
 ```text
@@ -84,8 +86,12 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Original comment | Work evidence | Actionable revision | Success check
 Unclear | Claim lacks supporting source | Add evidence and explain its link | Reader can trace support
 Good work | Comparison names both sources | State why contrast matters | Reasoning becomes explicit
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Replacement for unclear: This claim has no supporting source in the passage reviewed. Add relevant evidence, then explain how it supports the claim. I should be able to trace the claim to that evidence.
+Optional comparison feedback, only if the comparison is actually present: You name both sources; now explain why their difference matters to your conclusion.
+Do not present the optional comment as an observed strength unless the learner's work supports it.
+Next action: The requester or assigned reviewer will complete this task-specific check: Prioritize comments that affect the main learning goal. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Reader can trace support.
 ```
 
 **Bad output:**

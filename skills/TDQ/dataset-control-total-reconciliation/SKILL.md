@@ -2,10 +2,10 @@
 id: TDQ-010
 name: dataset-control-total-reconciliation
 domain: Dataset Quality Diagnostics
-subdomain: Missingness
-version: 1.0
-description: Produce a control-total reconciliation; use when the task is to dataset control total reconciliation.
-triggers: ["dataset control total reconciliation", "help with a control-total reconciliation", "review my a control-total reconciliation", "prepare a control-total reconciliation", "check dataset control total reconciliation evidence"]
+subdomain: Reconciliation
+version: 1.1
+description: Create a control-total reconciliation from supplied evidence; use when preparing or reviewing control-total reconciliation decisions.
+triggers: ["dataset control total reconciliation", "help with a control-total reconciliation", "review my control-total reconciliation", "prepare a control-total reconciliation", "check the evidence for this control-total reconciliation"]
 not_for: ["dataset key uniqueness check [TDQ-001]", "dataset missingness pattern review [TDQ-002]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a control-total reconciliation and name the source artifacts used; retain a version or observation date where available.
 2. Align population and period definitions across totals
 3. Recompute totals before and after each documented transformation
-4. ⚠️ Explain differences using explicit inclusion or exclusion records Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Explain differences using explicit inclusion or exclusion records. Do not silently replace missing evidence with an assumed successful outcome.
 5. Return unexplained differences as unresolved defects
 6. Apply the domain check: Report counts with denominators and compare values under explicit normalization rules; never silently drop inconvenient records.
 7. Verify the proposed result with this task-specific check: Recompute source minus exclusions minus output and require an explained residual. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Quality checks must reflect the intended observation unit and business meaning. A repair can change the estimand or hide a collection defect, so retain the unmodified input and explain consequences. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a control-total reconciliation
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The expected output is 85 and the unexplained shortfall is 5.
 Decision: Investigate the residual before approving the transformed dataset.
+Artifact: Source=100 units; documented exclusions=15; expected output=85; actual output=80; unexplained shortfall=5. Reconciliation status: incomplete. Investigate the residual rather than forcing totals to agree or silently altering exclusions.
 Action: Team owner — Return unexplained differences as unresolved defects Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Recompute source minus exclusions minus output and require an explained residual.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a control-total reconciliation. The source total is 100 units; documented exclusions total 15; the output total is 80. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The expected output is 85 and the unexplained shortfall is 5.
 3. It preserves this task-specific conclusion: Investigate the residual before approving the transformed dataset.
 4. It includes the verification check or explicitly marks it pending: Recompute source minus exclusions minus output and require an explained residual.

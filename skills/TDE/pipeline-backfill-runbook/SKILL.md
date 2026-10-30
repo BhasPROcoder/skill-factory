@@ -3,9 +3,9 @@ id: TDE-003
 name: pipeline-backfill-runbook
 domain: Data Pipeline Design
 subdomain: Recovery
-version: 1.0
-description: Produce a backfill execution plan; use when the task is to pipeline backfill runbook.
-triggers: ["pipeline backfill runbook", "help with a backfill execution plan", "review my a backfill execution plan", "prepare a backfill execution plan", "check pipeline backfill runbook evidence"]
+version: 1.1
+description: Create a backfill execution plan from supplied evidence; use when preparing or reviewing backfill execution plan decisions.
+triggers: ["pipeline backfill runbook", "help with a backfill execution plan", "review my backfill execution plan", "prepare a backfill execution plan", "check the evidence for this backfill execution plan"]
 not_for: ["pipeline schema evolution plan [TDE-004]", "pipeline checkpoint recovery review [TDE-005]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a backfill execution plan and name the source artifacts used; retain a version or observation date where available.
 2. Bound the historical interval and affected consumers
 3. Compare append and replacement semantics for the destination
-4. ⚠️ Prepare a dry-run reconciliation and rollback checkpoint Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Prepare a dry-run reconciliation and rollback checkpoint. Do not silently replace missing evidence with an assumed successful outcome.
 5. Sequence the backfill with explicit stop conditions
 6. Apply the domain check: Separate event identity, processing attempt identity, and target state; require an explicit recovery path before recommending destructive backfills.
 7. Verify the proposed result with this task-specific check: Compare partition keys and control totals before and after a rehearsal. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Pipeline correctness includes repeated execution, partial failures, and late changes. Test the state transition that matters to consumers rather than only whether a job returns successfully. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a backfill execution plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: A direct rerun could add duplicate historical rows.
 Decision: Prepare isolated recomputation and reconciliation before authorized replacement.
+Artifact: Affected partitions: January, February. Current sink: append-only replay. Plan: isolated recomputation → compare control totals and keys → authorized replacement or safe merge → verify consumers. Blind append rerun is rejected because it can duplicate historical output.
 Action: Team owner — Sequence the backfill with explicit stop conditions Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare partition keys and control totals before and after a rehearsal.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a backfill execution plan. Partitions January and February need recomputation; the destination currently appends all rows. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: A direct rerun could add duplicate historical rows.
 3. It preserves this task-specific conclusion: Prepare isolated recomputation and reconciliation before authorized replacement.
 4. It includes the verification check or explicitly marks it pending: Compare partition keys and control totals before and after a rehearsal.

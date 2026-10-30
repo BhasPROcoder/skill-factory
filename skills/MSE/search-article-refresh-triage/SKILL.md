@@ -3,9 +3,9 @@ id: MSE-005
 name: search-article-refresh-triage
 domain: Search Content Decisions
 subdomain: Design
-version: 1.0
-description: Search article refresh triage using supplied evidence and explicit acceptance checks; use when preparing a search article refresh triage deliverable.
-triggers: ["help me with search article refresh triage", "prepare a search article refresh triage deliverable", "review our search article refresh triage evidence", "create a search article refresh triage action plan", "check this search article refresh triage decision"]
+version: 1.1
+description: Guide search article refresh triage when working from existing article, dated claims, current business context, and observed issues.
+triggers: ["search article refresh triage", "help with search article refresh triage", "work on search article refresh triage", "review my search article refresh triage", "apply search article refresh triage to these materials"]
 not_for: ["Search content overlap review [MSE-006]", "Search heading outline repair [MSE-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search article refresh triage
 
 ## Purpose
-Produce a usable search article refresh triage deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search article refresh triage task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -88,7 +88,7 @@ If a required input is missing and has no safe default, ask in one message with 
 
 ## Worked example
 **Input:**
-> Fictional company Juniper Works asks for search article refresh triage. Its supplied record A says: The article recommends a product that the supplied catalog marks discontinued. Prepare an internal review only; the review owner is the person responsible for the affected workstream.
+> Fictional company Juniper Works asks for search article refresh triage. Its supplied record A says: The article recommends a product as currently available, but the supplied catalog marks it discontinued and unavailable for purchase. Prepare an internal review only; the review owner is the person responsible for the affected workstream.
 
 **Output:**
 ```text
@@ -99,7 +99,7 @@ The recommendation needs correction before an editorial refresh can be considere
 Internal review for fictional Juniper Works using supplied record A. No live change or external message is included.
 
 ## Findings
-- Evidence: A — The article recommends a product that the supplied catalog marks discontinued.
+- Evidence: A — The article recommends a product as currently available, but the supplied catalog marks it discontinued and unavailable for purchase.
   Assessment: The recommendation needs correction before an editorial refresh can be considered complete.
   Action: Replace the unavailable recommendation with a verified alternative or state that no alternative is confirmed. Owner: affected workstream lead.
 
@@ -113,7 +113,7 @@ Priority: factual correction before optional prose improvement.
 No discontinued item remains presented as currently available.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**
@@ -129,7 +129,7 @@ This fails because it does not address the specific evidence in A, identify a co
 
 ## Test case
 **Input:**
-> Fictional Juniper Works supplies record A: The article recommends a product that the supplied catalog marks discontinued. Produce search article refresh triage and explain what would establish completion without assuming a performance improvement.
+> Fictional Juniper Works supplies record A: The article recommends a product as currently available, but the supplied catalog marks it discontinued and unavailable for purchase. Produce search article refresh triage and explain what would establish completion without assuming a performance improvement.
 
 **Assertions:**
 1. Output uses Decision, Scope, Findings, Artifact, Acceptance check, and Unresolved in that order.

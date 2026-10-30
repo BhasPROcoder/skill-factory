@@ -3,9 +3,9 @@ id: MSA-003
 name: sales-demo-storyboard
 domain: Sales Process Enablement
 subdomain: Design
-version: 1.0
-description: Sales demonstration storyboard design using supplied evidence and explicit acceptance checks; use when preparing a sales demonstration storyboard design deliverable.
-triggers: ["help me with sales demonstration storyboard design", "prepare a sales demonstration storyboard design deliverable", "review our sales demonstration storyboard design evidence", "create a sales demonstration storyboard design action plan", "check this sales demonstration storyboard design decision"]
+version: 1.1
+description: Guide sales demonstration storyboard design when working from buyer workflow, desired outcome, product capabilities, and demo constraints.
+triggers: ["sales demonstration storyboard design", "help with sales demonstration storyboard design", "work on sales demo storyboard", "review my sales demonstration storyboard design", "apply sales demonstration storyboard design to these materials"]
 not_for: ["Sales objection response mapping [MSA-004]", "Sales follow-up draft preparation [MSA-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Sales demonstration storyboard design
 
 ## Purpose
-Produce a usable sales demonstration storyboard design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this sales demonstration storyboard design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Boundary: do not imply automatic scheduling or simulate it as a deployed capabil
 Every demonstrated capability is real or clearly labeled as a concept.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

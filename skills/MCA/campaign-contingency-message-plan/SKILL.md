@@ -3,9 +3,9 @@ id: MCA-010
 name: campaign-contingency-message-plan
 domain: Campaign Planning and Review
 subdomain: Design
-version: 1.0
-description: Campaign contingency message planning using supplied evidence and explicit acceptance checks; use when preparing a campaign contingency message planning deliverable.
-triggers: ["help me with campaign contingency message planning", "prepare a campaign contingency message planning deliverable", "review our campaign contingency message planning evidence", "create a campaign contingency message planning action plan", "check this campaign contingency message planning decision"]
+version: 1.1
+description: Guide campaign contingency message planning when working from credible campaign disruptions, offer obligations, and response ownership.
+triggers: ["campaign contingency message planning", "help with campaign contingency message planning", "work on campaign contingency message plan", "review my campaign contingency message planning", "apply campaign contingency message planning to these materials"]
 not_for: ["Campaign objective briefing [MCA-001]", "Campaign audience message mapping [MCA-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign contingency message planning
 
 ## Purpose
-Produce a usable campaign contingency message planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign contingency message planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,14 +104,15 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Draft a factual holding message and assign an owner to confirm restoration updates. Owner: affected workstream lead.
 
 ## Artifact
-Holding draft: The campaign page is currently unavailable. We are checking the interruption and will update this notice when we have confirmed information.
-Do not add a cause or restoration time that has not been verified.
+Holding draft: The campaign page is currently unavailable. Its restoration time has not yet been confirmed.
+Optional update promise: add only after an owner accepts responsibility for publishing updates.
+Before release: confirm an approved alternative route or leave that next step explicitly pending; do not invent a cause or promise an investigation is underway.
 
 ## Acceptance check
 The message contains only confirmed facts and a usable next step.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

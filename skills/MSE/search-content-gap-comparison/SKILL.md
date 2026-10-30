@@ -3,9 +3,9 @@ id: MSE-004
 name: search-content-gap-comparison
 domain: Search Content Decisions
 subdomain: Design
-version: 1.0
-description: Search content gap comparison using supplied evidence and explicit acceptance checks; use when preparing a search content gap comparison deliverable.
-triggers: ["help me with search content gap comparison", "prepare a search content gap comparison deliverable", "review our search content gap comparison evidence", "create a search content gap comparison action plan", "check this search content gap comparison decision"]
+version: 1.1
+description: Guide search content gap comparison when working from target reader task, own-page text, and relevant comparison pages.
+triggers: ["search content gap comparison", "help with search content gap comparison", "work on search content gap comparison", "review my search content gap comparison", "apply search content gap comparison to these materials"]
 not_for: ["Search article refresh triage [MSE-005]", "Search content overlap review [MSE-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search content gap comparison
 
 ## Purpose
-Produce a usable search content gap comparison deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search content gap comparison task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Evidence request: identify unanswered home-buyer questions in the supplied compa
 Each proposed addition maps to an explicit reader question rather than mere competitor presence.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

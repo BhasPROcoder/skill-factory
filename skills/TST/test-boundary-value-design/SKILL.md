@@ -3,9 +3,9 @@ id: TST-001
 name: test-boundary-value-design
 domain: Software Verification Design
 subdomain: Test selection
-version: 1.0
-description: Produce a boundary test matrix; use when the task is to test boundary value design.
-triggers: ["test boundary value design", "help with a boundary test matrix", "review my a boundary test matrix", "prepare a boundary test matrix", "check test boundary value design evidence"]
+version: 1.1
+description: Create a boundary test matrix from supplied evidence; use when preparing or reviewing boundary test matrix decisions.
+triggers: ["test boundary value design", "help with a boundary test matrix", "review my boundary test matrix", "prepare a boundary test matrix", "check the evidence for this boundary test matrix"]
 not_for: ["test equivalence partition plan [TST-002]", "test state transition matrix [TST-003]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a boundary test matrix and name the source artifacts used; retain a version or observation date where available.
 2. Identify each boundary from the stated contract
 3. Choose values immediately inside and outside where the domain permits
-4. ⚠️ Include exact-boundary cases separately Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Include exact-boundary cases separately. Do not silently replace missing evidence with an assumed successful outcome.
 5. Record the expected outcome without deriving it from implementation code
 6. Apply the domain check: Keep fixtures small enough to inspect, preserve the failure signal, and report what the test does not establish.
 7. Verify the proposed result with this task-specific check: Compare each expected result with the explicitly supplied inclusive rule. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A test should distinguish correct behavior from a plausible defect. Derive expected results from a contract or independent example rather than copying the implementation under test. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a boundary test matrix
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: 17 and 66 are rejected; 18 and 65 are accepted.
 Decision: Use all four boundary fixtures.
+Artifact: Boundary fixtures: 17→reject; 18→accept; 65→accept; 66→reject, under the supplied inclusive integer-age contract. The example values express that fictional contract only; no legal or universal age rule is implied.
 Action: Team owner — Record the expected outcome without deriving it from implementation code Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare each expected result with the explicitly supplied inclusive rule.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a boundary test matrix. The supplied rule accepts integer ages from 18 through 65 inclusive. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: 17 and 66 are rejected; 18 and 65 are accepted.
 3. It preserves this task-specific conclusion: Use all four boundary fixtures.
 4. It includes the verification check or explicitly marks it pending: Compare each expected result with the explicitly supplied inclusive rule.

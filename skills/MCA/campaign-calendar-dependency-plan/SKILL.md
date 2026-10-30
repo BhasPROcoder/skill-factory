@@ -3,9 +3,9 @@ id: MCA-007
 name: campaign-calendar-dependency-plan
 domain: Campaign Planning and Review
 subdomain: Design
-version: 1.0
-description: Campaign calendar dependency planning using supplied evidence and explicit acceptance checks; use when preparing a campaign calendar dependency planning deliverable.
-triggers: ["help me with campaign calendar dependency planning", "prepare a campaign calendar dependency planning deliverable", "review our campaign calendar dependency planning evidence", "create a campaign calendar dependency planning action plan", "check this campaign calendar dependency planning decision"]
+version: 1.1
+description: Guide campaign calendar dependency planning when working from asset list, approvals, channel dates, and production dependencies.
+triggers: ["campaign calendar dependency planning", "help with campaign calendar dependency planning", "work on campaign calendar dependency plan", "review my campaign calendar dependency planning", "apply campaign calendar dependency planning to these materials"]
 not_for: ["Campaign landing message match review [MCA-008]", "Campaign postmortem preparation [MCA-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign calendar dependency planning
 
 ## Purpose
-Produce a usable campaign calendar dependency planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign calendar dependency planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Correction: move the review earlier or revise the release commitment with the ow
 Every release follows its required approved inputs or has a documented exception.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

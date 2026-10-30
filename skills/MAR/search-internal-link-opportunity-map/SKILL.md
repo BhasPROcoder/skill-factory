@@ -3,9 +3,9 @@ id: MAR-002
 name: search-internal-link-opportunity-map
 domain: Search Site Architecture
 subdomain: Design
-version: 1.0
-description: Search internal link opportunity mapping using supplied evidence and explicit acceptance checks; use when preparing a search internal link opportunity mapping deliverable.
-triggers: ["help me with search internal link opportunity mapping", "prepare a search internal link opportunity mapping deliverable", "review our search internal link opportunity mapping evidence", "create a search internal link opportunity mapping action plan", "check this search internal link opportunity mapping decision"]
+version: 1.1
+description: Guide search internal link opportunity mapping when working from source-page content and destination-page purposes.
+triggers: ["search internal link opportunity mapping", "help with search internal link opportunity mapping", "work on search internal link opportunity map", "review my search internal link opportunity mapping", "apply search internal link opportunity mapping to these materials"]
 not_for: ["Search isolated page review [MAR-003]", "Search page template purpose review [MAR-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search internal link opportunity mapping
 
 ## Purpose
-Produce a usable search internal link opportunity mapping deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search internal link opportunity mapping task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -106,14 +106,15 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
 ## Artifact
 Source context: repair article's reference to replacement parts.
 Proposed anchor: replacement parts.
-Destination: verified parts catalog.
+Candidate destination: parts catalog, if it exists and answers the parts question.
+Dependency: confirm that destination and its content before adding the link.
 Reject: company biography, which does not support the reader's next action.
 
 ## Acceptance check
 Each proposed link has a relevant source context and a destination matching its anchor promise.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

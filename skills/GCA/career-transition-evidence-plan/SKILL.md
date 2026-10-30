@@ -3,10 +3,10 @@ id: GCA-010
 name: career-transition-evidence-plan
 domain: Career Development
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare career transition evidence plan from supplied evidence; use when the request concerns current work history.
 triggers: ["career transition evidence plan", "prepare career transition evidence plan", "review my career transition evidence plan", "help me with career transition evidence plan", "turn current work history into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Role requirement evidence map [GCA-001]", "Resume bullet evidence rewrite [GCA-002]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Transfer element | Existing evidence | Target difference | Next demonstration
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +76,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional candidate Lina moves from event coordination toward service operations.
+> Fictional scenario: Fictional candidate Lina moves from event coordination toward service operations. She supplies event schedules and exception notes as evidence of her previous work.
 
 **Output:**
 ```text
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Transfer element | Existing evidence | Target difference | Next demonstration
 Scheduling | Event schedule experience | Ongoing service dependencies | Create recurring handoff plan
 Issue handling | Event exception notes | Repeated-case learning | Analyze recurring causes
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Define a review point based on completed evidence rather than optimism. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Create recurring handoff plan.
 ```
 
 **Bad output:**

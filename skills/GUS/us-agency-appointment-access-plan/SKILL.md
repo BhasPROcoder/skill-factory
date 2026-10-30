@@ -3,10 +3,10 @@ id: GUS-008
 name: us-agency-appointment-access-plan
 domain: US Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare agency appointment access plan from supplied evidence; use when the request concerns official appointment confirmation.
 triggers: ["agency appointment access plan", "prepare agency appointment access plan", "review my agency appointment access plan", "help me with agency appointment access plan", "turn official appointment confirmation into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Public record amendment dependency map [GUS-009]", "Service denial file organization [GUS-010]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Visit need | Current evidence | Confirmation state | Action
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -76,7 +78,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional applicant Blair has an appointment and needs communication support; the agency has not replied to the request.
+> Fictional scenario: Fictional applicant Blair has an appointment and needs communication support; the agency has not replied to the request. The appointment itself has an official confirmation.
 
 **Output:**
 ```text
@@ -85,8 +87,10 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Visit need | Current evidence | Confirmation state | Action
 Appointment | Official confirmation | Confirmed | Retain visit details
 Communication support | Request sent | Pending | Seek agency confirmation
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Draft support follow-up: I have an appointment confirmed by your office and previously requested communication support. Please confirm whether the requested support will be available and whether you need further information from me. I will supply the appointment reference through the appropriate private channel. Appointment confirmation alone does not confirm this separate support request.
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a visit plan with a fallback contact and essential evidence only. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Retain visit details.
 ```
 
 **Bad output:**

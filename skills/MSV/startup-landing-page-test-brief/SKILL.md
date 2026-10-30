@@ -3,9 +3,9 @@ id: MSV-005
 name: startup-landing-page-test-brief
 domain: Startup Customer Validation
 subdomain: Design
-version: 1.0
-description: Startup landing-page test briefing using supplied evidence and explicit acceptance checks; use when preparing a startup landing-page test briefing deliverable.
-triggers: ["help me with startup landing-page test briefing", "prepare a startup landing-page test briefing deliverable", "review our startup landing-page test briefing evidence", "create a startup landing-page test briefing action plan", "check this startup landing-page test briefing decision"]
+version: 1.1
+description: Guide startup landing-page test briefing when working from target audience, offer hypothesis, traffic source, and permitted customer action.
+triggers: ["startup landing-page test briefing", "help with startup landing-page test briefing", "work on startup landing page test brief", "review my startup landing-page test briefing", "apply startup landing-page test briefing to these materials"]
 not_for: ["Startup pilot scope design [MSV-006]", "Startup validation result review [MSV-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup landing-page test briefing
 
 ## Purpose
-Produce a usable startup landing-page test briefing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup landing-page test briefing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Availability boundary: no immediate purchase or delivery is promised.
 The requested action and resulting evidence are described accurately.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

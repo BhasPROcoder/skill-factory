@@ -1,0 +1,162 @@
+[
+  {
+    "source": "acquisition-readiness",
+    "disposition": "new",
+    "targets": [
+      "COP-001"
+    ],
+    "rationale": "Stage transaction records and disclosure authority; valuation multiples and guaranteed transaction outcomes are removed."
+  },
+  {
+    "source": "cash-collection",
+    "disposition": "new",
+    "targets": [
+      "COP-002",
+      "CTR-002"
+    ],
+    "rationale": "Reconcile invoice exceptions and disputed allocation; use existing contract obligation mapping for payment terms."
+  },
+  {
+    "source": "contracts-that-protect",
+    "disposition": "covered",
+    "targets": [
+      "CTR-001",
+      "CTR-002",
+      "CTR-003",
+      "CTR-004",
+      "CTR-005"
+    ],
+    "rationale": "Existing clause, obligation, negotiation and jurisdiction-specific review workflows cover the reusable contract methods."
+  },
+  {
+    "source": "dpdp-and-edtech-compliance",
+    "disposition": "new",
+    "targets": [
+      "COP-003",
+      "CMP-001",
+      "CMP-004",
+      "CMP-005"
+    ],
+    "rationale": "Add purpose and permission propagation across a processing flow; existing compliance and request workflows handle adjacent work."
+  },
+  {
+    "source": "equity-and-esop",
+    "disposition": "new",
+    "targets": [
+      "COP-004"
+    ],
+    "rationale": "Prepare contribution, capitalization and proposed grant questions for qualified review without preset ownership percentages or legal mechanics."
+  },
+  {
+    "source": "first-ten-hires",
+    "disposition": "new",
+    "targets": [
+      "COP-005"
+    ],
+    "rationale": "Define a job-relevant bounded work sample and observable criteria; remove personal talent-pipeline assumptions and arbitrary qualification cutoffs."
+  },
+  {
+    "source": "founder-energy-protocol",
+    "disposition": "covered",
+    "targets": [
+      "GPR-002",
+      "GPR-005",
+      "GPR-007"
+    ],
+    "rationale": "Existing calendar, focus-session and review methods cover workload organization; no unsupported health diagnosis or universal recovery schedule is retained."
+  },
+  {
+    "source": "founder-finance-os",
+    "disposition": "new",
+    "targets": [
+      "COP-006",
+      "COP-008"
+    ],
+    "rationale": "Reconcile entity cash records, transfers and owner-paid items; route tax facts to a separate evidence docket."
+  },
+  {
+    "source": "fundraise-narrative",
+    "disposition": "new",
+    "targets": [
+      "COP-007"
+    ],
+    "rationale": "Link a funding narrative to demonstrated capability, attributed traction and milestone evidence rather than market fashion."
+  },
+  {
+    "source": "government-navigation",
+    "disposition": "covered",
+    "targets": [
+      "GAD-003",
+      "GAD-006",
+      "GAD-008",
+      "CMP-001"
+    ],
+    "rationale": "Existing responsible-office routing, case chronology, conflicting-instruction review and obligation mapping cover the general procedure."
+  },
+  {
+    "source": "gst-tax-hygiene",
+    "disposition": "new",
+    "targets": [
+      "COP-008"
+    ],
+    "rationale": "Organize transaction evidence for jurisdiction-specific tax classification; current rates, sections, deadlines and treatment remain official-source checks."
+  },
+  {
+    "source": "india-entity-ops",
+    "disposition": "new",
+    "targets": [
+      "COP-009",
+      "CMP-001"
+    ],
+    "rationale": "Compare entity requirements for qualified advice; recurring established obligations route to compliance mapping."
+  },
+  {
+    "source": "india-payments-stack",
+    "disposition": "new",
+    "targets": [
+      "COP-010"
+    ],
+    "rationale": "Separate authorization, attempts, settlement and entitlement; verify provider semantics and commercial terms rather than prescribing a vendor or retry schedule."
+  },
+  {
+    "source": "international-expansion",
+    "disposition": "new",
+    "targets": [
+      "COP-011"
+    ],
+    "rationale": "Evaluate a concrete destination customer journey and operating prerequisites without country stereotypes or guaranteed geographic arbitrage."
+  },
+  {
+    "source": "investor-pipeline",
+    "disposition": "new",
+    "targets": [
+      "COP-012"
+    ],
+    "rationale": "Track investor process stages by actual evidence and truthful next steps without invented interest or scarcity."
+  },
+  {
+    "source": "ip-fortress",
+    "disposition": "new",
+    "targets": [
+      "COP-013"
+    ],
+    "rationale": "Trace assets to permissions, agreements and intended uses; leave registration and license interpretations to verified documents and specialist review."
+  },
+  {
+    "source": "non-dilutive-capital",
+    "disposition": "new",
+    "targets": [
+      "COP-014"
+    ],
+    "rationale": "Map a current funding call to eligibility evidence, reimbursement timing and acceptance obligations rather than asserting available free money."
+  },
+  {
+    "source": "network-capital",
+    "disposition": "new",
+    "targets": [
+      "COP-015",
+      "GCO-008"
+    ],
+    "rationale": "Track relationship commitments and actual introduction states; use the existing skill for a single introduction draft."
+  }
+]

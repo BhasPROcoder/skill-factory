@@ -3,9 +3,9 @@ id: MSC-003
 name: fiction-dialogue-subtext-revision
 domain: Fiction Scene Craft
 subdomain: Design
-version: 1.0
-description: Fiction dialogue subtext revision using supplied evidence and explicit acceptance checks; use when preparing a fiction dialogue subtext revision deliverable.
-triggers: ["help me with fiction dialogue subtext revision", "prepare a fiction dialogue subtext revision deliverable", "review our fiction dialogue subtext revision evidence", "create a fiction dialogue subtext revision action plan", "check this fiction dialogue subtext revision decision"]
+version: 1.1
+description: Guide fiction dialogue subtext revision when working from dialogue, character goals, relationship history, and withheld concerns.
+triggers: ["fiction dialogue subtext revision", "help with fiction dialogue subtext revision", "work on fiction dialogue subtext revision", "review my fiction dialogue subtext revision", "apply fiction dialogue subtext revision to these materials"]
 not_for: ["Fiction action blocking repair [MSC-004]", "Fiction sensory detail selection [MSC-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction dialogue subtext revision
 
 ## Purpose
-Produce a usable fiction dialogue subtext revision deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction dialogue subtext revision task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Rewrite the exchange around the visible unopened letter and evasive responses. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Mara put the unopened letter between them.
 "You kept it dry," she said.
 Ivo moved his cup off the table. "It was raining."
@@ -114,7 +115,7 @@ He reached for the envelope. She covered it with her palm.
 The dialogue remains understandable while motives emerge through choices and omissions.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

@@ -2,10 +2,10 @@
 id: TAP-007
 name: api-webhook-consumer-design
 domain: API Contract Engineering
-subdomain: Compatibility
-version: 1.0
-description: Produce a webhook consumer reliability plan; use when the task is to api webhook consumer design.
-triggers: ["api webhook consumer design", "help with a webhook consumer reliability plan", "review my a webhook consumer reliability plan", "prepare a webhook consumer reliability plan", "check api webhook consumer design evidence"]
+subdomain: Reliability
+version: 1.1
+description: Create a webhook consumer reliability plan from supplied evidence; use when preparing or reviewing webhook consumer reliability plan decisions.
+triggers: ["api webhook consumer design", "help with a webhook consumer reliability plan", "review my webhook consumer reliability plan", "prepare a webhook consumer reliability plan", "check the evidence for this webhook consumer reliability plan"]
 not_for: ["api partial update semantics [TAP-008]", "api client timeout allocation [TAP-009]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a webhook consumer reliability plan and name the source artifacts used; retain a version or observation date where available.
 2. Separate receipt acknowledgment from completed business processing
 3. Persist enough event identity to recognize retries
-4. ⚠️ Define behavior for duplicate and out-of-order events Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Distinguish complete snapshots from deltas before defining duplicate and out-of-order behavior. Do not silently replace missing evidence with an assumed successful outcome.
 5. Create recovery paths for processing failures after acknowledgment
 6. Apply the domain check: Use explicit request and response fixtures; distinguish logical operation identity from transport attempts and preserve backward-compatibility assumptions.
 7. Verify the proposed result with this task-specific check: Replay the fixture in both arrival orders and compare the final intended state. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: An API contract includes observable failure behavior and client assumptions as well as the happy path. Verify current framework and protocol details in official documentation before writing integration-specific code. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -58,6 +59,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -82,14 +84,15 @@ Open items: <missing information or current-source checks; at most three bullets
 
 ## Worked example
 **Input:**
-> Fictional team Cedar Lantern requests a webhook consumer reliability plan. An update marked version 3 arrives before version 2; the consumer currently overwrites state on every arrival. The team asks for an assessment only and supplies these facts as the complete example fixture.
+> Fictional team Cedar Lantern requests a webhook consumer reliability plan. Complete state snapshots marked version 3 and version 2 arrive in that order; the consumer currently overwrites state on every arrival. The team asks for an assessment only and supplies these facts as the complete example fixture.
 
 **Output:**
 ```text
 Deliverable: a webhook consumer reliability plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The older event could overwrite newer state.
-Decision: Apply the declared version policy and retain evidence of ignored stale events.
+Decision: For these complete snapshots, retain the newest version and record ignored stale snapshots; do not apply this shortcut to deltas that require every event.
+Artifact: For the supplied complete snapshots: version 3 becomes current; later version 2 is stale and does not overwrite it. Record ignored snapshot identity. For delta events, this policy is insufficient: define ordering/replay or reconciliation so necessary earlier effects are not discarded.
 Action: Team owner — Create recovery paths for processing failures after acknowledgment Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Replay the fixture in both arrival orders and compare the final intended state.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,11 +111,11 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 
 ## Test case
 **Input:**
-> Fictional team Cedar Lantern asks for a webhook consumer reliability plan. An update marked version 3 arrives before version 2; the consumer currently overwrites state on every arrival. Produce the assessment and identify what remains unverified.
+> Fictional team Cedar Lantern asks for a webhook consumer reliability plan. Complete state snapshots marked version 3 and version 2 arrive in that order; the consumer currently overwrites state on every arrival. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The older event could overwrite newer state.
-3. It preserves this task-specific conclusion: Apply the declared version policy and retain evidence of ignored stale events.
+3. It preserves this task-specific conclusion: For these complete snapshots, retain the newest version and record ignored stale snapshots; do not apply this shortcut to deltas that require every event.
 4. It includes the verification check or explicitly marks it pending: Replay the fixture in both arrival orders and compare the final intended state.
 5. It does not claim to have executed a production change or checked material that was not supplied.

@@ -3,9 +3,9 @@ id: TML-001
 name: model-validation-split-selection
 domain: Model Evaluation Design
 subdomain: Validation
-version: 1.0
-description: Produce a validation split design; use when the task is to model validation split selection.
-triggers: ["model validation split selection", "help with a validation split design", "review my a validation split design", "prepare a validation split design", "check model validation split selection evidence"]
+version: 1.1
+description: Create a validation split design from supplied evidence; use when preparing or reviewing validation split design decisions.
+triggers: ["model validation split selection", "help with a validation split design", "review my validation split design", "prepare a validation split design", "check the evidence for this validation split design"]
 not_for: ["model baseline comparison plan [TML-002]", "model confusion cost review [TML-003]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a validation split design and name the source artifacts used; retain a version or observation date where available.
 2. Describe exactly what will be unseen at deployment
 3. Identify repeated entities and temporal dependencies
-4. ⚠️ Choose separation by entity or time when those match deployment Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Choose separation by entity or time when those match deployment. Do not silently replace missing evidence with an assumed successful outcome.
 5. State the generalization question the split can answer
 6. Apply the domain check: Check separation of training, tuning, and final evaluation; connect the chosen metric to the real decision instead of assuming the leaderboard metric is sufficient.
 7. Verify the proposed result with this task-specific check: Check that entity sets do not intersect across training and validation. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A model score is conditional on a dataset, split, metric, and prediction-time information. Protect held-out data from model-selection decisions and retain simple baselines that make improvement interpretable. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a validation split design
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The evaluation should measure performance on unseen devices.
 Decision: Use device-disjoint validation and document time handling separately.
+Artifact: Evaluation target: entirely new devices. Split requirement: keep every device's rows in one split; example training devices d1,d2, validation d3. Time handling: document separately. Row-random separation is not evidence of unseen-device generalization.
 Action: Team owner — State the generalization question the split can answer Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Check that entity sets do not intersect across training and validation.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a validation split design. Several rows belong to each device; the model will serve entirely new devices. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The evaluation should measure performance on unseen devices.
 3. It preserves this task-specific conclusion: Use device-disjoint validation and document time handling separately.
 4. It includes the verification check or explicitly marks it pending: Check that entity sets do not intersect across training and validation.

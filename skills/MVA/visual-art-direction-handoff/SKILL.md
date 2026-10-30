@@ -3,9 +3,9 @@ id: MVA-009
 name: visual-art-direction-handoff
 domain: Visual Composition and Art Direction
 subdomain: Design
-version: 1.0
-description: Visual art-direction handoff preparation using supplied evidence and explicit acceptance checks; use when preparing a visual art-direction handoff preparation deliverable.
-triggers: ["help me with visual art-direction handoff preparation", "prepare a visual art-direction handoff preparation deliverable", "review our visual art-direction handoff preparation evidence", "create a visual art-direction handoff preparation action plan", "check this visual art-direction handoff preparation decision"]
+version: 1.1
+description: Guide visual art-direction handoff preparation when working from approved direction, reference annotations, asset list, and production constraints.
+triggers: ["visual art-direction handoff preparation", "help with visual art-direction handoff preparation", "work on visual art direction handoff", "review my visual art-direction handoff preparation", "apply visual art-direction handoff preparation to these materials"]
 not_for: ["Visual composition iteration review [MVA-010]", "Visual hierarchy critique [MVA-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Visual art-direction handoff preparation
 
 ## Purpose
-Produce a usable visual art-direction handoff preparation deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this visual art-direction handoff preparation task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Specify restrained palette, generous spacing, and product-focused imagery as proposed observable choices. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Proposed direction: restrained palette; generous spacing; product-focused imagery.
 Fixed: required information and truthful product depiction.
 Flexible: exact arrangement within the approved hierarchy.
@@ -113,7 +114,7 @@ Acceptance: evaluate the observable choices rather than the adjective premium al
 The recipient can distinguish required visual decisions from creative discretion.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

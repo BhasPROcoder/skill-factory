@@ -2,10 +2,10 @@
 id: TSC-005
 name: security-logging-sensitive-data-review
 domain: Defensive Security Review
-subdomain: Authorization
-version: 1.0
-description: Produce a sensitive logging review; use when the task is to security logging sensitive data review.
-triggers: ["security logging sensitive data review", "help with a sensitive logging review", "review my a sensitive logging review", "prepare a sensitive logging review", "check security logging sensitive data review evidence"]
+subdomain: Exposure
+version: 1.1
+description: Create a sensitive logging review from supplied evidence; use when preparing or reviewing sensitive logging review decisions.
+triggers: ["security logging sensitive data review", "help with a sensitive logging review", "review my sensitive logging review", "prepare a sensitive logging review", "check the evidence for this sensitive logging review"]
 not_for: ["security trust boundary map [TSC-006]", "security access recertification plan [TSC-007]"]
 requires: []
 risk_level: high
@@ -30,11 +30,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a sensitive logging review and name the source artifacts used; retain a version or observation date where available.
 2. Identify fields logged at each boundary
 3. Map sensitive values to an actual diagnostic need
-4. ⚠️ Propose redaction or removal while preserving useful event identity Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Propose redaction or removal while preserving useful event identity. Do not silently replace missing evidence with an assumed successful outcome.
 5. Test that error paths follow the same redaction rule
 6. Apply the domain check: Use current official vendor advisories and organizational policy when requirements matter; do not claim a vulnerability is exploitable from a scanner label alone.
 7. Verify the proposed result with this task-specific check: Exercise normal and error paths and inspect resulting authorized log fixtures. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Security findings need an asset boundary, evidence of the condition, a plausible impact, and an authorized owner. These skills organize defensive review and do not authorize scanning, exploitation, credential access, or changes outside the stated scope. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -58,6 +59,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -90,6 +92,7 @@ Deliverable: a sensitive logging review
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The raw token is unnecessary for the stated diagnostic task.
 Decision: Retain the request ID and redact token content.
+Artifact: Allowed diagnostic record: request_id=r1. Excluded field: raw token. Redaction rule: apply on normal and error paths. Verification: representative errors remain correlatable without exposing token content; no live secret belongs in the review artifact.
 Action: Team owner — Test that error paths follow the same redaction rule Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Exercise normal and error paths and inspect resulting authorized log fixtures.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -111,7 +114,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a sensitive logging review. An error log contains a full fictional access token while the request ID is sufficient for correlation. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The raw token is unnecessary for the stated diagnostic task.
 3. It preserves this task-specific conclusion: Retain the request ID and redact token content.
 4. It includes the verification check or explicitly marks it pending: Exercise normal and error paths and inspect resulting authorized log fixtures.

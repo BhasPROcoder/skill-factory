@@ -3,9 +3,9 @@ id: MSL-008
 name: local-listing-duplicate-triage
 domain: Local Search Operations
 subdomain: Design
-version: 1.0
-description: Local listing duplicate triage using supplied evidence and explicit acceptance checks; use when preparing a local listing duplicate triage deliverable.
-triggers: ["help me with local listing duplicate triage", "prepare a local listing duplicate triage deliverable", "review our local listing duplicate triage evidence", "create a local listing duplicate triage action plan", "check this local listing duplicate triage decision"]
+version: 1.1
+description: Guide local listing duplicate triage when working from candidate listing records, business identity evidence, and ownership details.
+triggers: ["local listing duplicate triage", "help with local listing duplicate triage", "work on local listing duplicate triage", "review my local listing duplicate triage", "apply local listing duplicate triage to these materials"]
 not_for: ["Local profile change control planning [MSL-009]", "Local customer access information audit [MSL-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Local listing duplicate triage
 
 ## Purpose
-Produce a usable local listing duplicate triage deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this local listing duplicate triage task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Separate check: verify each business's profile eligibility using its actual oper
 The proposed disposition relies on business identity rather than address similarity alone.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: TDS-001
 name: dataset-source-shortlist
 domain: Dataset Intake and Documentation
 subdomain: Discovery
-version: 1.0
-description: Produce a dataset candidate shortlist; use when the task is to dataset source shortlist.
-triggers: ["dataset source shortlist", "help with a dataset candidate shortlist", "review my a dataset candidate shortlist", "prepare a dataset candidate shortlist", "check dataset source shortlist evidence"]
+version: 1.1
+description: Create a dataset candidate shortlist from supplied evidence; use when preparing or reviewing dataset candidate shortlist decisions.
+triggers: ["dataset source shortlist", "help with a dataset candidate shortlist", "review my dataset candidate shortlist", "prepare a dataset candidate shortlist", "check the evidence for this dataset candidate shortlist"]
 not_for: ["dataset provenance chain map [TDS-002]", "dataset license evidence inventory [TDS-003]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a dataset candidate shortlist and name the source artifacts used; retain a version or observation date where available.
 2. Define the observation unit and target population before searching
 3. Compare candidate coverage and granularity against required fields
-4. ⚠️ Separate documented access conditions from inferred reuse permissions Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate documented access conditions from inferred reuse permissions. Do not silently replace missing evidence with an assumed successful outcome.
 5. Rank candidates by unresolved blockers before convenience
 6. Apply the domain check: Separate permission to access from permission to redistribute; retain acquisition and transformation provenance.
 7. Verify the proposed result with this task-specific check: Match each required field and observation unit to a candidate data dictionary. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Dataset suitability is specific to a population, intended prediction or analysis, and collection process. A convenient download is not evidence of representative coverage. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a dataset candidate shortlist
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Birch has the wrong granularity; Elm matches the supplied observation unit.
 Decision: Shortlist Elm conditionally on its documented coverage and permission check.
+Artifact: Candidate Birch: monthly district totals—wrong observation unit. Candidate Elm: permitted daily store totals—matches required granularity. Primary shortlist: Elm, conditional on remaining coverage and access checks. District totals cannot recreate unobserved store-day records.
 Action: Team owner — Rank candidates by unresolved blockers before convenience Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Match each required field and observation unit to a candidate data dictionary.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a dataset candidate shortlist. Candidate Birch contains monthly district totals; candidate Elm contains permitted daily store totals; the question requires daily store totals. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Birch has the wrong granularity; Elm matches the supplied observation unit.
 3. It preserves this task-specific conclusion: Shortlist Elm conditionally on its documented coverage and permission check.
 4. It includes the verification check or explicitly marks it pending: Match each required field and observation unit to a candidate data dictionary.

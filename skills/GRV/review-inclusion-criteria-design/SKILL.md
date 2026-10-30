@@ -3,10 +3,10 @@ id: GRV-002
 name: review-inclusion-criteria-design
 domain: Evidence Review and Synthesis
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare review inclusion criteria from supplied evidence; use when the request concerns review question.
 triggers: ["review inclusion criteria", "prepare review inclusion criteria", "review my review inclusion criteria", "help me with review inclusion criteria", "turn review question into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Abstract screening decision log [GRV-003]", "Study evidence extraction sheet [GRV-004]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Criterion | Operational rule | Borderline case | Resolution
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +76,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional reviewer Sam includes studies of service users but encounters a report about staff perceptions only.
+> Fictional scenario: Fictional reviewer Sam includes studies of service users but encounters a report about staff perceptions only. A separate abstract has unclear outcome coverage and needs full-text review.
 
 **Output:**
 ```text
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Criterion | Operational rule | Borderline case | Resolution
 Population | Users required | Staff-only report | Exclude unless question is revised
 Outcome | User access experience | Abstract unclear | Seek full text
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Test criteria on borderline examples before screening. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Exclude unless question is revised.
 ```
 
 **Bad output:**

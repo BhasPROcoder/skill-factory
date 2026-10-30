@@ -3,9 +3,9 @@ id: MCA-004
 name: campaign-creative-test-matrix
 domain: Campaign Planning and Review
 subdomain: Design
-version: 1.0
-description: Campaign creative test matrix design using supplied evidence and explicit acceptance checks; use when preparing a campaign creative test matrix design deliverable.
-triggers: ["help me with campaign creative test matrix design", "prepare a campaign creative test matrix design deliverable", "review our campaign creative test matrix design evidence", "create a campaign creative test matrix design action plan", "check this campaign creative test matrix design decision"]
+version: 1.1
+description: Guide campaign creative test matrix design when working from message hypotheses, creative variants, measurement plan, and constraints.
+triggers: ["campaign creative test matrix design", "help with campaign creative test matrix design", "work on campaign creative test matrix", "review my campaign creative test matrix design", "apply campaign creative test matrix design to these materials"]
 not_for: ["Campaign offer consistency auditing [MCA-005]", "Campaign launch readiness review [MCA-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign creative test matrix design
 
 ## Purpose
-Produce a usable campaign creative test matrix design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign creative test matrix design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Headline-only alternative: hold audience and offer constant.
 Each comparison states exactly what differs and what conclusion the design permits.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

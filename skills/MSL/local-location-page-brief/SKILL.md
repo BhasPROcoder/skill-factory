@@ -3,9 +3,9 @@ id: MSL-004
 name: local-location-page-brief
 domain: Local Search Operations
 subdomain: Design
-version: 1.0
-description: Local location page briefing using supplied evidence and explicit acceptance checks; use when preparing a local location page briefing deliverable.
-triggers: ["help me with local location page briefing", "prepare a local location page briefing deliverable", "review our local location page briefing evidence", "create a local location page briefing action plan", "check this local location page briefing decision"]
+version: 1.1
+description: Guide local location page briefing when working from location-specific services, access details, contact facts, and authentic supporting material.
+triggers: ["local location page briefing", "help with local location page briefing", "work on local location page brief", "review my local location page briefing", "apply local location page briefing to these materials"]
 not_for: ["Local service-area description planning [MSL-005]", "Local review response drafting [MSL-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Local location page briefing
 
 ## Purpose
-Produce a usable local location page briefing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this local location page briefing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Exclude: invented neighborhood expertise or copied claims about another branch.
 Every location-specific statement is supported by that location's records.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

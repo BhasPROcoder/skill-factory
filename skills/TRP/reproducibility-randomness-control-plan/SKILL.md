@@ -3,9 +3,9 @@ id: TRP-003
 name: reproducibility-randomness-control-plan
 domain: Computational Reproducibility
 subdomain: Reruns
-version: 1.0
-description: Produce a stochastic run comparison plan; use when the task is to reproducibility randomness control plan.
-triggers: ["reproducibility randomness control plan", "help with a stochastic run comparison plan", "review my a stochastic run comparison plan", "prepare a stochastic run comparison plan", "check reproducibility randomness control plan evidence"]
+version: 1.1
+description: Create a stochastic run comparison plan from supplied evidence; use when preparing or reviewing stochastic run comparison plan decisions.
+triggers: ["reproducibility randomness control plan", "help with a stochastic run comparison plan", "review my stochastic run comparison plan", "prepare a stochastic run comparison plan", "check the evidence for this stochastic run comparison plan"]
 not_for: ["reproducibility notebook state audit [TRP-004]", "reproducibility artifact hash plan [TRP-005]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a stochastic run comparison plan and name the source artifacts used; retain a version or observation date where available.
 2. Identify every stochastic component in the workflow
 3. Record seed and execution settings where supported
-4. ⚠️ Separate deterministic expectations from statistical variation Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate deterministic expectations from statistical variation. Do not silently replace missing evidence with an assumed successful outcome.
 5. Choose repeated-run comparisons appropriate to the stated goal
 6. Apply the domain check: Distinguish reproducing a computation from independently validating its scientific or business claim; preserve raw evidence of both successful and failed runs.
 7. Verify the proposed result with this task-specific check: Rerun under controlled settings and compare outputs using the predeclared tolerance or summary. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Reproduction requires enough information to identify inputs, code, configuration, environment, and intended outputs. Exact equality is appropriate only when the declared computation supports it; otherwise define the accepted comparison before rerunning. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a stochastic run comparison plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: A documented seed does not fully describe execution variability.
 Decision: Record scheduling assumptions and define a repeated-run comparison.
+Artifact: Controlled source: recorded sampling seed. Uncontrolled source: worker update ordering. Comparison plan: retain seed and execution settings; repeat runs under the agreed scheduling setup; compare using a predeclared variability criterion. Exact reproducibility remains unestablished.
 Action: Team owner — Choose repeated-run comparisons appropriate to the stated goal Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Rerun under controlled settings and compare outputs using the predeclared tolerance or summary.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a stochastic run comparison plan. Sampling uses a recorded seed but worker scheduling changes the order of updates. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: A documented seed does not fully describe execution variability.
 3. It preserves this task-specific conclusion: Record scheduling assumptions and define a repeated-run comparison.
 4. It includes the verification check or explicitly marks it pending: Rerun under controlled settings and compare outputs using the predeclared tolerance or summary.

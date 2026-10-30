@@ -3,9 +3,9 @@ id: MEM-002
 name: email-segmentation-rule-review
 domain: Lifecycle Email Planning
 subdomain: Design
-version: 1.0
-description: Email segmentation rule review using supplied evidence and explicit acceptance checks; use when preparing a email segmentation rule review deliverable.
-triggers: ["help me with email segmentation rule review", "prepare a email segmentation rule review deliverable", "review our email segmentation rule review evidence", "create a email segmentation rule review action plan", "check this email segmentation rule review decision"]
+version: 1.1
+description: Guide email segmentation rule review when working from segment definitions, available attributes, eligibility rules, and campaign purpose.
+triggers: ["email segmentation rule review", "help with email segmentation rule review", "work on email segmentation rule review", "review my email segmentation rule review", "apply email segmentation rule review to these materials"]
 not_for: ["Email subject and preheader review [MEM-003]", "Email primary-action editing [MEM-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Email segmentation rule review
 
 ## Purpose
-Produce a usable email segmentation rule review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this email segmentation rule review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Missing status: exclude or route for review; never infer eligibility from a blan
 The rule handles missing values and overlaps without silent assumptions.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

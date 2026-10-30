@@ -3,9 +3,9 @@ id: MSL-010
 name: local-customer-access-audit
 domain: Local Search Operations
 subdomain: Design
-version: 1.0
-description: Local customer access information audit using supplied evidence and explicit acceptance checks; use when preparing a local customer access information audit deliverable.
-triggers: ["help me with local customer access information audit", "prepare a local customer access information audit deliverable", "review our local customer access information audit evidence", "create a local customer access information audit action plan", "check this local customer access information audit decision"]
+version: 1.1
+description: Guide local customer access information audit when working from directions, arrival instructions, accessibility statements, and verified site facts.
+triggers: ["local customer access information audit", "help with local customer access information audit", "work on local customer access audit", "review my local customer access information audit", "apply local customer access information audit to these materials"]
 not_for: ["Local business fact sheet preparation [MSL-001]", "Local profile eligibility review planning [MSL-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Local customer access information audit
 
 ## Purpose
-Produce a usable local customer access information audit deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this local customer access information audit task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Check: an unfamiliar visitor can identify that entrance from the final instructi
 A first-time visitor can identify the intended entrance from the corrected information.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: GEX-009
 name: exam-final-review-triage
 domain: Exam Preparation Methods
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare final review triage from supplied evidence; use when the request concerns remaining time.
 triggers: ["final review triage", "prepare final review triage", "review my final review triage", "help me with final review triage", "turn remaining time into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Exam-day logistics checklist [GEX-010]", "Exam syllabus coverage map [GEX-001]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Review target | Evidence | Priority reason | Completion check
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,14 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Review target | Evidence | Priority reason | Completion check
 Condition reading | Recurring error log | Affects several tasks | Correctly annotate new prompts
 Definition recall | Reliable attempts | Lower marginal need | Brief maintenance only
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Priority task: annotate the conditions in fresh exam-style prompts before choosing an answer method.
+Completion evidence: the candidate identifies the condition and uses it correctly in an independent attempt.
+Lower-priority maintenance: brief checks of definitions already recalled reliably.
+Stop or adjust: if condition errors persist, inspect the reasoning; do not replace targeted repair with an entire new resource collection.
+Keep the review within the confirmed exam scope and actual remaining time.
+Next action: The requester or assigned reviewer will complete this task-specific check: Create a stop rule for low-yield repetition using the candidate stated priorities. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Correctly annotate new prompts.
 ```
 
 **Bad output:**

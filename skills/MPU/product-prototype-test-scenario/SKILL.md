@@ -3,9 +3,9 @@ id: MPU-006
 name: product-prototype-test-scenario
 domain: Product Experience Review
 subdomain: Design
-version: 1.0
-description: Product prototype test scenario design using supplied evidence and explicit acceptance checks; use when preparing a product prototype test scenario design deliverable.
-triggers: ["help me with product prototype test scenario design", "prepare a product prototype test scenario design deliverable", "review our product prototype test scenario design evidence", "create a product prototype test scenario design action plan", "check this product prototype test scenario design decision"]
+version: 1.1
+description: Guide product prototype test scenario design when working from prototype scope, research question, target role, and task constraints.
+triggers: ["product prototype test scenario design", "help with product prototype test scenario design", "work on product prototype test scenario", "review my product prototype test scenario design", "apply product prototype test scenario design to these materials"]
 not_for: ["Product feedback deduplication review [MPU-007]", "Product feature request reframing [MPU-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product prototype test scenario design
 
 ## Purpose
-Produce a usable product prototype test scenario design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product prototype test scenario design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Do not name the Export control in the task prompt.
 Participants can attempt the task without receiving the intended solution path.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

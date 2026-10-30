@@ -3,10 +3,10 @@ id: GAS-002
 name: assessment-task-validity-review
 domain: Learning Assessment
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare assessment task validity review from supplied evidence; use when the request concerns intended construct.
 triggers: ["assessment task validity review", "prepare assessment task validity review", "review my assessment task validity review", "help me with assessment task validity review", "turn intended construct into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Multiple-choice item review [GAS-003]", "Short-answer scoring guide [GAS-004]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Task demand | Relation to construct | Risk | Revision
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,13 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Task demand | Relation to construct | Risk | Revision
 Causal explanation | Target demand | Relevant | Retain reasoning question
 Unfamiliar vocabulary | Incidental demand | May obscure reasoning | Clarify unnecessary terms
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Revised task frame: Using the supplied passage, identify the proposed cause, describe the claimed effect, and explain which information supports that relationship. Name an alternative explanation if the passage leaves one open.
+Access revision: explain unfamiliar terms that are incidental to causal reasoning; preserve the causal relationships the learner must analyze.
+Scoring boundary: judge the reasoning demonstrated, while recording any remaining vocabulary barrier.
+The actual source passage is still required; this is a proposed prompt, not a finding about unseen responses.
+Next action: The requester or assigned reviewer will complete this task-specific check: Revise the task and state remaining limits on interpretation. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Retain reasoning question.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MSE-003
 name: search-content-brief-design
 domain: Search Content Decisions
 subdomain: Design
-version: 1.0
-description: Search content brief design using supplied evidence and explicit acceptance checks; use when preparing a search content brief design deliverable.
-triggers: ["help me with search content brief design", "prepare a search content brief design deliverable", "review our search content brief design evidence", "create a search content brief design action plan", "check this search content brief design decision"]
+version: 1.1
+description: Guide search content brief design when working from validated intent, reader questions, existing assets, and product facts.
+triggers: ["search content brief design", "help with search content brief design", "work on search content brief design", "review my search content brief design", "apply search content brief design to these materials"]
 not_for: ["Search content gap comparison [MSE-004]", "Search article refresh triage [MSE-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search content brief design
 
 ## Purpose
-Produce a usable search content brief design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search content brief design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -111,7 +111,7 @@ Durability section: [VERIFY: obtain the product owner's relevant test evidence b
 Every section serves a reader question and every factual claim has supplied support or a verification request.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: GIS-006
 name: in-public-grievance-submission-pack
 domain: India Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare public grievance submission pack from supplied evidence; use when the request concerns service problem chronology.
 triggers: ["public grievance submission pack", "prepare public grievance submission pack", "review my public grievance submission pack", "help me with public grievance submission pack", "turn service problem chronology into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Public information request scope draft [GIS-007]", "Service application status follow-up [GIS-008]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Issue | Supporting record | Requested remedy | Tracking item
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +87,10 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Issue | Supporting record | Requested remedy | Tracking item
 Completion status | Portal summary says complete | Review closure against current evidence | Preserve reference
 Unresolved condition | Applicant photograph | Inspect the reported obstruction | Record dated response
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Draft grievance: My service request is marked complete, but the obstruction shown in my supplied photograph remains. Please review the closure against that evidence and tell me whether an inspection or further applicant action is required. I will supply the private case reference through the official channel. This draft does not establish a filing deadline or the correct receiving office.
+Next action: The requester or assigned reviewer will complete this task-specific check: Assemble a concise complaint with an attachment index and a tracking plan tied to official acknowledgment. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Preserve reference.
 ```
 
 **Bad output:**

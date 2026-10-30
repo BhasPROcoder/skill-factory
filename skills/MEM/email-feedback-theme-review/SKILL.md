@@ -3,9 +3,9 @@ id: MEM-009
 name: email-feedback-theme-review
 domain: Lifecycle Email Planning
 subdomain: Design
-version: 1.0
-description: Email feedback theme review using supplied evidence and explicit acceptance checks; use when preparing a email feedback theme review deliverable.
-triggers: ["help me with email feedback theme review", "prepare a email feedback theme review deliverable", "review our email feedback theme review evidence", "create a email feedback theme review action plan", "check this email feedback theme review decision"]
+version: 1.1
+description: Guide email feedback theme review when working from reply samples, complaint categories, campaign context, and privacy limits.
+triggers: ["email feedback theme review", "help with email feedback theme review", "work on email feedback theme review", "review my email feedback theme review", "apply email feedback theme review to these materials"]
 not_for: ["Email preference center content design [MEM-010]", "Email welcome sequence planning [MEM-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Email feedback theme review
 
 ## Purpose
-Produce a usable email feedback theme review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this email feedback theme review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Secondary review: adjust copy only after the intended audience is correctly defi
 The proposed fix addresses the observed source of confusion.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

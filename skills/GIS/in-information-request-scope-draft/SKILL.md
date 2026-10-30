@@ -3,10 +3,10 @@ id: GIS-007
 name: in-information-request-scope-draft
 domain: India Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare public information request scope draft from supplied evidence; use when the request concerns records sought.
 triggers: ["public information request scope draft", "prepare public information request scope draft", "review my public information request scope draft", "help me with public information request scope draft", "turn records sought into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Service application status follow-up [GIS-008]", "Government appointment preparation [GIS-009]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Record sought | Scope boundary | Likely holder status | Verification
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -76,17 +78,19 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional requester Farah wants records showing how a local facility maintenance decision was made; she does not know the committee name.
+> Fictional scenario: Fictional requester Farah wants records showing how a local facility maintenance decision was made; she does not know the committee name. The request concerns the fictional Maple facility during its autumn maintenance review; the precise dates still need confirmation.
 
 **Output:**
 ```text
 Scope: Prepare public information request scope draft for the fictional case, limited to the supplied facts.
 Basis: The fictional scenario above; missing supporting material remains unverified.
 Record sought | Scope boundary | Likely holder status | Verification
-Decision record | Named facility and supplied period | Office unconfirmed | Ask official directory for record holder
+Decision record | Named facility and review period | Dates and office unconfirmed | Confirm dates and record holder
 Recorded reasons | Existing notes only | Record title unknown | Use descriptive wording
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Proposed record description: Existing meeting records, decision notes, and recorded reasons concerning the autumn maintenance review of the fictional Maple facility. Before sending, replace the seasonal description with confirmed start and end dates and identify the record-holding office. This requests existing recorded material, without asserting that a particular committee or document exists.
+Next action: The requester or assigned reviewer will complete this task-specific check: Draft a neutral request with alternatives for clarifying ambiguous record names. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Confirm dates and record holder.
 ```
 
 **Bad output:**

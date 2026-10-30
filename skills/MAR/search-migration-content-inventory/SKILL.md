@@ -3,9 +3,9 @@ id: MAR-008
 name: search-migration-content-inventory
 domain: Search Site Architecture
 subdomain: Design
-version: 1.0
-description: Search migration content inventory using supplied evidence and explicit acceptance checks; use when preparing a search migration content inventory deliverable.
-triggers: ["help me with search migration content inventory", "prepare a search migration content inventory deliverable", "review our search migration content inventory evidence", "create a search migration content inventory action plan", "check this search migration content inventory decision"]
+version: 1.1
+description: Guide search migration content inventory when working from old and proposed page lists, content ownership, and known dependencies.
+triggers: ["search migration content inventory", "help with search migration content inventory", "work on search migration content inventory", "review my search migration content inventory", "apply search migration content inventory to these materials"]
 not_for: ["Search page address naming governance [MAR-009]", "Search site section launch review [MAR-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search migration content inventory
 
 ## Purpose
-Produce a usable search migration content inventory deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search migration content inventory task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -114,7 +114,7 @@ Do not map to an unrelated page merely to fill the inventory.
 Every old page has a purpose-based disposition or an explicit unresolved owner.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

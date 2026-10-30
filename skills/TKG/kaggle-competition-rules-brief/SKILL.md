@@ -3,9 +3,9 @@ id: TKG-001
 name: kaggle-competition-rules-brief
 domain: Kaggle Competition Workflows
 subdomain: Competition setup
-version: 1.0
-description: Produce a competition rules brief; use when the task is to kaggle competition rules brief.
-triggers: ["kaggle competition rules brief", "help with a competition rules brief", "review my a competition rules brief", "prepare a competition rules brief", "check kaggle competition rules brief evidence"]
+version: 1.1
+description: Create a competition rules brief from supplied evidence; use when preparing or reviewing competition rules brief decisions.
+triggers: ["kaggle competition rules brief", "help with a competition rules brief", "review my competition rules brief", "prepare a competition rules brief", "check the evidence for this competition rules brief"]
 not_for: ["kaggle evaluation metric translation [TKG-002]", "kaggle submission schema check [TKG-003]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a competition rules brief and name the source artifacts used; retain a version or observation date where available.
 2. Extract task-specific restrictions with their source section
 3. Separate data eligibility, collaboration, compute, and submission obligations
-4. ⚠️ Turn unclear clauses into questions for the official organizer channel Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Turn unclear clauses into questions for the official organizer channel. Do not silently replace missing evidence with an assumed successful outcome.
 5. Create an eligibility and compliance checklist before experimentation
 6. Apply the domain check: Keep local validation, public feedback, final selection, and rule compliance as separate evidence; never infer hidden labels or redistribute restricted competition material.
 7. Verify the proposed result with this task-specific check: Compare each intended resource and collaboration step with the current official competition rules. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Use the specific competition page, rules, data description, evaluation definition, and submission instructions as inputs. Check their current versions; do not assume that limits, external-data permissions, team rules, or notebook requirements match another competition. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a competition rules brief
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The proposed outside archive conflicts with the supplied rule.
 Decision: Exclude the archive unless the organizers provide an applicable clarification.
+Artifact: Eligibility row: provided competition data—allowed by supplied fictional rule; outside image archive—not allowed under that rule. Action: exclude outside archive unless an applicable official clarification changes eligibility. Check the actual competition's current rules before using any resource.
 Action: Team owner — Create an eligibility and compliance checklist before experimentation Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare each intended resource and collaboration step with the current official competition rules.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a competition rules brief. The supplied fictional competition rules permit provided data only; the team proposes an outside image archive. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The proposed outside archive conflicts with the supplied rule.
 3. It preserves this task-specific conclusion: Exclude the archive unless the organizers provide an applicable clarification.
 4. It includes the verification check or explicitly marks it pending: Compare each intended resource and collaboration step with the current official competition rules.

@@ -1,0 +1,128 @@
+{
+  "domains": [
+    {
+      "code": "CTG",
+      "name": "Applied AI Workflow Engineering",
+      "macro": "Prompt Engineering & LLM Ops",
+      "scope": "Design bounded AI execution, evidence handling, adaptation, evaluation, and implementation workflows from measured requirements.",
+      "subdomains": [
+        "Execution",
+        "Context",
+        "Evaluation",
+        "Delivery"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "CTG-001",
+      "name": "bounded-ai-orchestration-design",
+      "domain_code": "CTG",
+      "subdomain": "Execution",
+      "description": "Produce bounded ai orchestration design from required outcome; use when this decision must be made from explicit evidence.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CTG-002",
+      "name": "inference-action-cost-accounting",
+      "domain_code": "CTG",
+      "subdomain": "Execution",
+      "description": "Produce inference action cost accounting from billable usage records; use when this decision must be made from explicit evidence.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CTG-003",
+      "name": "software-continuation-state-reconciliation",
+      "domain_code": "CTG",
+      "subdomain": "Delivery",
+      "description": "Produce software continuation state reconciliation from current repository or working files; use when this decision must be made from explicit evidence.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CTG-004",
+      "name": "persistent-memory-provenance-reconciliation",
+      "domain_code": "CTG",
+      "subdomain": "Context",
+      "description": "Produce persistent memory provenance reconciliation from explicitly permitted memory location; use when this decision must be made from explicit evidence.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CTG-005",
+      "name": "bounded-context-retrieval-handoff",
+      "domain_code": "CTG",
+      "subdomain": "Context",
+      "description": "Produce bounded context retrieval and handoff from active objective and constraints; use when this decision must be made from explicit evidence.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CTG-006",
+      "name": "evidence-led-skill-revision",
+      "domain_code": "CTG",
+      "subdomain": "Evaluation",
+      "description": "Produce evidence-led skill revision from existing skill version; use when this decision must be made from explicit evidence.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CTG-007",
+      "name": "model-adaptation-intervention-diagnosis",
+      "domain_code": "CTG",
+      "subdomain": "Evaluation",
+      "description": "Produce model adaptation intervention diagnosis from representative failed tasks; use when this decision must be made from explicit evidence.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CTG-008",
+      "name": "language-model-evaluation-harness",
+      "domain_code": "CTG",
+      "subdomain": "Evaluation",
+      "description": "Produce language model evaluation harness from task distribution and risk slices; use when this decision must be made from explicit evidence.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CTG-009",
+      "name": "local-inference-operating-envelope",
+      "domain_code": "CTG",
+      "subdomain": "Execution",
+      "description": "Produce local inference operating envelope from available hardware and runtime; use when this decision must be made from explicit evidence.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CTG-010",
+      "name": "software-requirement-conflict-elicitation",
+      "domain_code": "CTG",
+      "subdomain": "Delivery",
+      "description": "Produce software requirement conflict elicitation from requested user journey; use when this decision must be made from explicit evidence.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CTG-011",
+      "name": "responsive-component-state-composition",
+      "domain_code": "CTG",
+      "subdomain": "Delivery",
+      "description": "Produce responsive component state composition from component purpose and content hierarchy; use when this decision must be made from explicit evidence.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

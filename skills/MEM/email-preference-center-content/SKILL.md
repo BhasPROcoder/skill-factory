@@ -3,9 +3,9 @@ id: MEM-010
 name: email-preference-center-content
 domain: Lifecycle Email Planning
 subdomain: Design
-version: 1.0
-description: Email preference center content design using supplied evidence and explicit acceptance checks; use when preparing a email preference center content design deliverable.
-triggers: ["help me with email preference center content design", "prepare a email preference center content design deliverable", "review our email preference center content design evidence", "create a email preference center content design action plan", "check this email preference center content design decision"]
+version: 1.1
+description: Guide email preference center content design when working from message categories, actual subscription controls, and verified policy requirements.
+triggers: ["email preference center content design", "help with email preference center content design", "work on email preference center content", "review my email preference center content design", "apply email preference center content design to these materials"]
 not_for: ["Email welcome sequence planning [MEM-001]", "Email segmentation rule review [MEM-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Email preference center content design
 
 ## Purpose
-Produce a usable email preference center content design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this email preference center content design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Release condition: implement and verify the category control before promising it
 Every selectable preference corresponds to a tested operational behavior.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MSS-004
 name: fiction-subplot-integration
 domain: Fiction Story Structure
 subdomain: Design
-version: 1.0
-description: Fiction subplot integration planning using supplied evidence and explicit acceptance checks; use when preparing a fiction subplot integration planning deliverable.
-triggers: ["help me with fiction subplot integration planning", "prepare a fiction subplot integration planning deliverable", "review our fiction subplot integration planning evidence", "create a fiction subplot integration planning action plan", "check this fiction subplot integration planning decision"]
+version: 1.1
+description: Guide fiction subplot integration planning when working from main plot, subplot beats, character relationships, and pacing constraints.
+triggers: ["fiction subplot integration planning", "help with fiction subplot integration planning", "work on fiction subplot integration", "review my fiction subplot integration planning", "apply fiction subplot integration planning to these materials"]
 not_for: ["Fiction reveal setup and payoff planning [MSS-005]", "Fiction stakes escalation mapping [MSS-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction subplot integration planning
 
 ## Purpose
-Produce a usable fiction subplot integration planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction subplot integration planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Make an apprenticeship choice change Ivo's ability or willingness to help at a key moment. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Subplot function: Ivo's apprenticeship forces a choice between loyalty to his teacher and loyalty to Mara.
 Intersection: the teacher controls archive access.
 Consequence: Ivo refuses an order and loses privileged access, changing both the apprenticeship and Mara's quest.
@@ -112,7 +113,7 @@ Consequence: Ivo refuses an order and loses privileged access, changing both the
 The subplot has a clear function and at least one consequential relationship to the main story.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

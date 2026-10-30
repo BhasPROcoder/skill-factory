@@ -3,9 +3,9 @@ id: MAR-007
 name: search-faceted-navigation-review-brief
 domain: Search Site Architecture
 subdomain: Design
-version: 1.0
-description: Search filter navigation review brief using supplied evidence and explicit acceptance checks; use when preparing a search filter navigation review brief deliverable.
-triggers: ["help me with search filter navigation review brief", "prepare a search filter navigation review brief deliverable", "review our search filter navigation review brief evidence", "create a search filter navigation review brief action plan", "check this search filter navigation review brief decision"]
+version: 1.1
+description: Guide search filter navigation review brief when working from filter combinations, discovery goals, and supplied site behavior.
+triggers: ["search filter navigation review brief", "help with search filter navigation review brief", "work on search faceted navigation review brief", "review my search filter navigation review brief", "apply search filter navigation review brief to these materials"]
 not_for: ["Search migration content inventory [MAR-008]", "Search page address naming governance [MAR-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search filter navigation review brief
 
 ## Purpose
-Produce a usable search filter navigation review brief deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search filter navigation review brief task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Technical question: how does the current implementation control discovery of tho
 The brief distinguishes visitor filters from intentional search destinations and flags empty results.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

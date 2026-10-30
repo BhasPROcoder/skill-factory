@@ -11,6 +11,8 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **BST** Business Strategy (5) — Structure strategic choices using explicit objectives, evidence, alternatives, uncertainty, and decision criteria. → `skills/BST/INDEX.md`
 - **BMD** Business Model Design (5) — Clarify customers, value delivery, revenue logic, cost drivers, and experiments using explicit assumptions and supplied business evidence. → `skills/BMD/INDEX.md`
 - **BPL** Business Planning (5) — Translate business priorities into initiatives, capacity decisions, review routines, and contingency actions. → `skills/BPL/INDEX.md`
+- **COP** Venture Operations Preparation (15) — Prepare evidence-based financing, operating, ownership, and relationship decisions without substituting for regulated advice or external execution. → `skills/COP/INDEX.md`
+- **CBG** General Business and Artifact Workflows (15) — Evidence-led workflows for communication, business design, and artifact quality. → `skills/CBG/INDEX.md`
 
 ## Sales & Marketing
 - **MSE** Search Content Decisions (10) — Plan and improve search-oriented content using intent, page purpose, evidence gaps, and editorial constraints. → `skills/MSE/INDEX.md`
@@ -44,15 +46,27 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **TDS** Dataset Intake and Documentation (10) — Assess dataset suitability, provenance, documentation, and release readiness before downstream use. → `skills/TDS/INDEX.md`
 - **TDQ** Dataset Quality Diagnostics (10) — Diagnose concrete dataset integrity failures and define evidence-based repair checks. → `skills/TDQ/INDEX.md`
 
+## Prompt Engineering & LLM Ops
+- **SKR** Reusable Skill Engineering (3) — Select distinct reusable procedures, generalize specialized workflows, and design independent behavioral checks with truthful evidence. → `skills/SKR/INDEX.md`
+- **CTG** Applied AI Workflow Engineering (11) — Design bounded AI execution, evidence handling, adaptation, evaluation, and implementation workflows from measured requirements. → `skills/CTG/INDEX.md`
+
 ## Cybersecurity
 - **TSC** Defensive Security Review (10) — Review authorized system evidence, access boundaries, exposure, and recovery preparation without performing intrusive security actions. → `skills/TSC/INDEX.md`
 
 ## DevOps & Cloud
 - **TDV** Deployment and Operations Planning (10) — Prepare deployments, recovery, capacity checks, and operational handoffs with explicit evidence and rollback boundaries. → `skills/TDV/INDEX.md`
 
+## Education & Teaching
+- **GED** Lesson and Learning Design (10) — Design instruction around observable learning goals, prerequisite knowledge, practice, and evidence of understanding. → `skills/GED/INDEX.md`
+- **GAS** Learning Assessment (10) — Design and interpret learning assessments using explicit criteria, evidence, and fair task conditions. → `skills/GAS/INDEX.md`
+
+## Exam Prep
+- **GEX** Exam Preparation Methods (10) — Plan exam preparation from current exam requirements, performance evidence, and available study capacity. → `skills/GEX/INDEX.md`
+
 ## Creative Writing
 - **MSC** Fiction Scene Craft (10) — Draft and revise individual fictional scenes through viewpoint, action, dialogue, sensory selection, and meaningful changes in character circumstances. → `skills/MSC/INDEX.md`
 - **MSS** Fiction Story Structure (10) — Develop and revise story-level causal sequences, character decisions, reveals, subplots, and endings through concrete beat outlines. → `skills/MSS/INDEX.md`
+- **GPO** Poetry Craft and Revision (10) — Compose and revise poems through concrete imagery, lineation, sound and structural decisions. → `skills/GPO/INDEX.md`
 
 ## Music & Audio Production
 - **TAM** Audio and Music Production Planning (10) — Plan recording, editing, arrangement, review, and delivery decisions from supplied audio evidence and creative constraints. → `skills/TAM/INDEX.md`
@@ -62,8 +76,33 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **MPH** Photography Planning and Critique (10) — Plan and critique photographs through subject intention, framing, light, visual sequence, and shoot logistics without fixed equipment recipes. → `skills/MPH/INDEX.md`
 - **MVA** Visual Composition and Art Direction (10) — Develop and critique visual compositions through hierarchy, grouping, contrast, typography, image relationships, and concrete art-direction briefs. → `skills/MVA/INDEX.md`
 
+## Research Methods & Academia
+- **GRQ** Research Question and Study Design (10) — Define answerable research questions, sampling decisions, measurements, and feasible study protocols. → `skills/GRQ/INDEX.md`
+- **GRV** Evidence Review and Synthesis (10) — Find, screen, extract, and synthesize evidence with transparent scope and claim-level support. → `skills/GRV/INDEX.md`
+
+## Languages & Translation
+- **GLA** Language Transfer and Translation (10) — Preserve meaning, register, terminology and uncertainty across languages and learning contexts. → `skills/GLA/INDEX.md`
+
+## Communication & Negotiation
+- **GCO** Workplace Message Craft (10) — Draft workplace messages that make requests, decisions, constraints and responsibilities explicit. → `skills/GCO/INDEX.md`
+
 ## Operations & Supply Chain
 - **MOP** Startup Operating Workflows (10) — Define lightweight service delivery, support, vendor, and internal handoff workflows for small organizations. → `skills/MOP/INDEX.md`
 
 ## E-commerce
 - **MEC** E-commerce Customer Experience (10) — Review catalog, product, cart, checkout, and post-purchase experiences using verified offer and fulfillment facts. → `skills/MEC/INDEX.md`
+
+## Government & Public Policy
+- **GIS** India Citizen Service Preparation (10) — Prepare India-specific citizen service evidence and questions using current official requirements. → `skills/GIS/INDEX.md`
+- **GUS** US Citizen Service Preparation (10) — Prepare US administrative service packets using jurisdiction-specific official instructions and applicant evidence. → `skills/GUS/INDEX.md`
+- **GAD** Administrative Casework (10) — Organize administrative evidence, submissions, routing, and follow-up without asserting legal entitlement. → `skills/GAD/INDEX.md`
+- **GPP** Public Policy Analysis (10) — Analyze public policy questions, implementation choices, and evidence with explicit uncertainty and affected groups. → `skills/GPP/INDEX.md`
+
+## Personal Productivity
+- **GPR** Personal Work Organization (10) — Organize commitments, tasks, attention, and review routines around realistic capacity and observable completion. → `skills/GPR/INDEX.md`
+
+## Career Development
+- **GCA** Career Development (10) — Translate work evidence and career preferences into applications, interview preparation, and development choices. → `skills/GCA/INDEX.md`
+
+## Reasoning & Critical Thinking
+- **GRE** Reasoning and Decision Clarity (10) — Clarify arguments, alternatives, uncertainty, and decision implications using explicit evidence and counterexamples. → `skills/GRE/INDEX.md`

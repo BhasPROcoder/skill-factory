@@ -3,9 +3,9 @@ id: MAR-003
 name: search-orphan-page-review
 domain: Search Site Architecture
 subdomain: Design
-version: 1.0
-description: Search isolated page review using supplied evidence and explicit acceptance checks; use when preparing a search isolated page review deliverable.
-triggers: ["help me with search isolated page review", "prepare a search isolated page review deliverable", "review our search isolated page review evidence", "create a search isolated page review action plan", "check this search isolated page review decision"]
+version: 1.1
+description: Guide search isolated page review when working from page inventory and supplied internal-link records.
+triggers: ["search isolated page review", "help with search isolated page review", "work on search orphan page review", "review my search isolated page review", "apply search isolated page review to these materials"]
 not_for: ["Search page template purpose review [MAR-004]", "Search breadcrumb planning [MAR-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search isolated page review
 
 ## Purpose
-Produce a usable search isolated page review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search isolated page review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Owner task: confirm an existing route or add a contextually relevant route from 
 Every page intended for discovery has a documented route or a named unresolved evidence gap.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

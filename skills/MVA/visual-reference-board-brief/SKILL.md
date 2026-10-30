@@ -3,9 +3,9 @@ id: MVA-005
 name: visual-reference-board-brief
 domain: Visual Composition and Art Direction
 subdomain: Design
-version: 1.0
-description: Visual reference board briefing using supplied evidence and explicit acceptance checks; use when preparing a visual reference board briefing deliverable.
-triggers: ["help me with visual reference board briefing", "prepare a visual reference board briefing deliverable", "review our visual reference board briefing evidence", "create a visual reference board briefing action plan", "check this visual reference board briefing decision"]
+version: 1.1
+description: Guide visual reference board briefing when working from project purpose, selected references, asset permissions, and desired observable features.
+triggers: ["visual reference board briefing", "help with visual reference board briefing", "work on visual reference board brief", "review my visual reference board briefing", "apply visual reference board briefing to these materials"]
 not_for: ["Visual poster composition planning [MVA-006]", "Visual image and text relationship review [MVA-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Visual reference board briefing
 
 ## Purpose
-Produce a usable visual reference board briefing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this visual reference board briefing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,15 +104,18 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Annotate selected spacing, palette, or image-treatment features and remove unsupported references. Owner: author or creative lead.
 
 ## Artifact
-Reference annotations required: spacing pattern; palette role; image treatment; typographic hierarchy.
-Remove images with no identified contribution.
-Direction statement: combine selected observable features into an original composition rather than imitating an entire reference.
+Proposed creative revision; added details require author approval and continuity review.
+Reference A annotation: [OBSERVED SPACING RELATIONSHIP; inspect the reference].
+Reference B annotation: [OBSERVED PALETTE ROLE; inspect the reference].
+Disposition: both remain unresolved because record A supplies no visible reference details.
+Provisional original direction: use a clear title/body hierarchy and consistent spacing; these are proposed choices to review, not observations from unseen images.
+Remove a reference if inspection cannot identify a useful contribution.
 
 ## Acceptance check
 Each retained reference contributes an identifiable feature to the original direction.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MCA-002
 name: campaign-audience-message-matrix
 domain: Campaign Planning and Review
 subdomain: Design
-version: 1.0
-description: Campaign audience message mapping using supplied evidence and explicit acceptance checks; use when preparing a campaign audience message mapping deliverable.
-triggers: ["help me with campaign audience message mapping", "prepare a campaign audience message mapping deliverable", "review our campaign audience message mapping evidence", "create a campaign audience message mapping action plan", "check this campaign audience message mapping decision"]
+version: 1.1
+description: Guide campaign audience message mapping when working from audience groups, needs, offer facts, and proof assets.
+triggers: ["campaign audience message mapping", "help with campaign audience message mapping", "work on campaign audience message matrix", "review my campaign audience message mapping", "apply campaign audience message mapping to these materials"]
 not_for: ["Campaign channel role planning [MCA-003]", "Campaign creative test matrix design [MCA-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign audience message mapping
 
 ## Purpose
-Produce a usable campaign audience message mapping deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign audience message mapping task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Variant condition: introduce a distinct variant only after a relevant audience d
 Every variant maps to a distinct audience need or context.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

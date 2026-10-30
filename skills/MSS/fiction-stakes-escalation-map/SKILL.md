@@ -3,9 +3,9 @@ id: MSS-006
 name: fiction-stakes-escalation-map
 domain: Fiction Story Structure
 subdomain: Design
-version: 1.0
-description: Fiction stakes escalation mapping using supplied evidence and explicit acceptance checks; use when preparing a fiction stakes escalation mapping deliverable.
-triggers: ["help me with fiction stakes escalation mapping", "prepare a fiction stakes escalation mapping deliverable", "review our fiction stakes escalation mapping evidence", "create a fiction stakes escalation mapping action plan", "check this fiction stakes escalation mapping decision"]
+version: 1.1
+description: Guide fiction stakes escalation mapping when working from protagonist goal, sequence of obstacles, and consequences.
+triggers: ["fiction stakes escalation mapping", "help with fiction stakes escalation mapping", "work on fiction stakes escalation map", "review my fiction stakes escalation mapping", "apply fiction stakes escalation mapping to these materials"]
 not_for: ["Fiction antagonist action planning [MSS-007]", "Fiction timeline continuity review [MSS-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction stakes escalation mapping
 
 ## Purpose
-Produce a usable fiction stakes escalation mapping deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction stakes escalation mapping task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Make one delay cost a trusted ally's cooperation or close an established opportunity. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Early obstacle: locked door delays Mara.
 Consequence: the delay makes her miss an agreed meeting.
 Escalation: Ivo interprets the absence as abandonment and withdraws help.
@@ -113,7 +114,7 @@ New choice: recover his trust or proceed without the access he provides.
 Later beats change available choices or meaningful costs rather than merely repeating resistance.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

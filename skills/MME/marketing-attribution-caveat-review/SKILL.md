@@ -3,9 +3,9 @@ id: MME-006
 name: marketing-attribution-caveat-review
 domain: Marketing Measurement Decisions
 subdomain: Design
-version: 1.0
-description: Marketing attribution interpretation review using supplied evidence and explicit acceptance checks; use when preparing a marketing attribution interpretation review deliverable.
-triggers: ["help me with marketing attribution interpretation review", "prepare a marketing attribution interpretation review deliverable", "review our marketing attribution interpretation review evidence", "create a marketing attribution interpretation review action plan", "check this marketing attribution interpretation review decision"]
+version: 1.1
+description: Guide marketing attribution interpretation review when working from attributed outcome report, attribution settings, and known measurement gaps.
+triggers: ["marketing attribution interpretation review", "help with marketing attribution interpretation review", "work on marketing attribution caveat review", "review my marketing attribution interpretation review", "apply marketing attribution interpretation review to these materials"]
 not_for: ["Marketing experiment readout preparation [MME-007]", "Marketing data discrepancy triage [MME-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Marketing attribution interpretation review
 
 ## Purpose
-Produce a usable marketing attribution interpretation review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this marketing attribution interpretation review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Next question: what evidence could distinguish causal lift from credit reassignm
 The interpretation distinguishes credit assignment from causal impact.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

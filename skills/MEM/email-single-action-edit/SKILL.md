@@ -3,9 +3,9 @@ id: MEM-004
 name: email-single-action-edit
 domain: Lifecycle Email Planning
 subdomain: Design
-version: 1.0
-description: Email primary-action editing using supplied evidence and explicit acceptance checks; use when preparing a email primary-action editing deliverable.
-triggers: ["help me with email primary-action editing", "prepare a email primary-action editing deliverable", "review our email primary-action editing evidence", "create a email primary-action editing action plan", "check this email primary-action editing decision"]
+version: 1.1
+description: Guide email primary-action editing when working from draft message, intended action, destination, and essential supporting facts.
+triggers: ["email primary-action editing", "help with email primary-action editing", "work on email single action edit", "review my email primary-action editing", "apply email primary-action editing to these materials"]
 not_for: ["Email reactivation briefing [MEM-005]", "Transactional email content review [MEM-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Email primary-action editing
 
 ## Purpose
-Produce a usable email primary-action editing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this email primary-action editing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Do not retain a mismatched promise.
 The primary action is clear and the destination matches its promise.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

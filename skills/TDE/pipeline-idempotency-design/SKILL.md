@@ -2,10 +2,10 @@
 id: TDE-001
 name: pipeline-idempotency-design
 domain: Data Pipeline Design
-subdomain: Ingestion
-version: 1.0
-description: Produce an idempotent-write design; use when the task is to pipeline idempotency design.
-triggers: ["pipeline idempotency design", "help with an idempotent-write design", "review my an idempotent-write design", "prepare an idempotent-write design", "check pipeline idempotency design evidence"]
+subdomain: State management
+version: 1.1
+description: Create an idempotent-write design from supplied evidence; use when preparing or reviewing idempotent-write design decisions.
+triggers: ["pipeline idempotency design", "help with an idempotent-write design", "review my idempotent-write design", "prepare an idempotent-write design", "check the evidence for this idempotent-write design"]
 not_for: ["pipeline watermark policy [TDE-002]", "pipeline backfill runbook [TDE-003]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of an idempotent-write design and name the source artifacts used; retain a version or observation date where available.
 2. Define the logical operation independently of an execution attempt
 3. Choose the stable identity used to detect a repeated operation
-4. ⚠️ Specify atomic handling of the deduplication record and target write Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Specify atomic handling of the deduplication record and target write. Do not silently replace missing evidence with an assumed successful outcome.
 5. Design replay tests for duplicate and interrupted attempts
 6. Apply the domain check: Separate event identity, processing attempt identity, and target state; require an explicit recovery path before recommending destructive backfills.
 7. Verify the proposed result with this task-specific check: Replay the same event and check that the intended target effect occurs once. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Pipeline correctness includes repeated execution, partial failures, and late changes. Test the state transition that matters to consumers rather than only whether a job returns successfully. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -59,6 +60,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -91,6 +93,7 @@ Deliverable: an idempotent-write design
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Both deliveries represent one logical operation.
 Decision: Use e1 as the logical identity and test repeated delivery against one stored result.
+Artifact: Logical event: e1. Deliveries: e1,e1. Required target effect: one order record. Deduplication identity: e1, not attempt ID. Real implementation must coordinate identity and target commit atomically or through a verified recovery protocol; the simple set fixture is only sequential illustration.
 Action: Team owner — Design replay tests for duplicate and interrupted attempts Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Replay the same event and check that the intended target effect occurs once.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -112,7 +115,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for an idempotent-write design. Event e1 is delivered twice; its intended effect is to add one order record. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Both deliveries represent one logical operation.
 3. It preserves this task-specific conclusion: Use e1 as the logical identity and test repeated delivery against one stored result.
 4. It includes the verification check or explicitly marks it pending: Replay the same event and check that the intended target effect occurs once.

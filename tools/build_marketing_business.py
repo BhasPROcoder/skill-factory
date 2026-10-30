@@ -34,19 +34,20 @@ def render_tasks(d, data):
         code = d['reg']['code']
         number = 1 + sum(r['domain_code'] == code for r in ROWS)
         sid = f"{code}-{number:03d}"
-        description = f"{title} using supplied evidence and explicit acceptance checks; use when preparing a {title.lower()} deliverable."
+        description = f"Guide {title.lower()} when working from {needed}."
         row = dict(id=sid, name=slug, domain_code=code, subdomain="Design", description=description,
                    risk_level="medium", requires=[], status="planned")
         ROWS.append(row)
-        triggers = [f"help me with {title.lower()}", f"prepare a {title.lower()} deliverable",
-                    f"review our {title.lower()} evidence", f"create a {title.lower()} action plan",
-                    f"check this {title.lower()} decision"]
+        triggers = [title.lower(), f"help with {title.lower()}",
+                    f"work on {slug.replace('-', ' ')}", f"review my {title.lower()}",
+                    f"apply {title.lower()} to these materials"]
         domain_entries = [line.strip().split('|') for line in data.strip().splitlines() if line.strip()]
         neighbor = domain_entries[number % len(domain_entries)]
         other = domain_entries[(number + 1) % len(domain_entries)]
         exclusions = [f"{neighbor[1]} [{code}-{number % len(domain_entries) + 1:03d}]", f"{other[1]} [{code}-{(number + 1) % len(domain_entries) + 1:03d}]", "Legal or regulated financial conclusions"]
+        exclusions = ROUTING_REVIEW.get(sid, exclusions)
         artifact = ARTIFACTS[slug]
-        fm = dict(id=sid, name=slug, domain=d['reg']['name'], subdomain="Design", version="1.0",
+        fm = dict(id=sid, name=slug, domain=d['reg']['name'], subdomain="Design", version="1.1",
                   description=description, triggers=triggers, not_for=exclusions, requires=[], risk_level="medium")
         front = '\n'.join(f"{k}: {json.dumps(v, ensure_ascii=False) if isinstance(v,list) else v}" for k,v in fm.items())
         text = f'''---
@@ -56,7 +57,7 @@ def render_tasks(d, data):
 # {title}
 
 ## Purpose
-Produce a usable {title.lower()} deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this {title.lower()} task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -152,7 +153,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
 {check}
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**
@@ -185,6 +186,8 @@ This fails because it does not address the specific evidence in A, identify a co
             text = text.replace('scope of the', 'scope of the')
             text = text.replace('Everything looks good. Apply standard best practices and expect better performance.', 'It looks good. Add more detail and make it more dramatic.')
             text = text.replace('performance guarantee', 'universal artistic rule')
+            text = text.replace('## Artifact\n' + artifact, '## Artifact\nProposed creative revision; added details require author approval and continuity review.\n' + artifact)
+            text = text.replace('Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.', 'Confirm the proposed additions against the author\'s continuity and creative brief; resolve any source or permission gaps identified above before final use.')
         body = text.split('---',2)[2]
         wc = len(body.split())
         if not 700 <= wc <= 1800:
@@ -201,7 +204,7 @@ search-intent-evidence-map|Search intent evidence mapping|query list and represe
 search-query-page-assignment|Search query to page assignment|query groups and an inventory of existing pages|Describe each page's unique reader outcome before matching queries|Assign a query group to the page whose purpose directly serves that outcome|Flag groups with no suitable destination and pages receiving incompatible needs|one page is assigned incompatible reader outcomes|separate the assignments before proposing new copy|A repair guide and a parts catalog both target a query explicitly asking for replacement prices.|The catalog is the stronger destination for the price-focused group.|Assign the price group to the catalog and preserve repair queries for the guide.|Every assigned group has one primary destination and a documented reason.
 search-content-brief-design|Search content brief design|validated intent, reader questions, existing assets, and product facts|Turn the intended reader outcome into a section sequence with a clear beginning and completion state|For each section specify the question answered and evidence required|Separate essential explanations from optional supporting material and promotional calls to action|a requested claim lacks support|mark the claim as an evidence requirement instead of drafting it as fact|The brief requests a durability claim but the supplied product notes contain no test evidence.|The durability claim is not ready for publication.|Draft the outline and insert an evidence request where the durability claim would appear.|Every section serves a reader question and every factual claim has supplied support or a verification request.
 search-content-gap-comparison|Search content gap comparison|target reader task, own-page text, and relevant comparison pages|Compare coverage by reader questions rather than by keyword count|Identify questions competitors address that matter to the stated task|Classify each gap as necessary, optional, or irrelevant using the page's purpose|a competitor section does not serve the target reader task|exclude it from the proposed additions|Comparison pages include enterprise procurement details while the target article serves home buyers.|Enterprise procurement coverage is outside this article's scope.|Add only missing home-buyer questions and document the enterprise section as excluded.|Each proposed addition maps to an explicit reader question rather than mere competitor presence.
-search-article-refresh-triage|Search article refresh triage|existing article, dated claims, current business context, and observed issues|Inventory claims that depend on time, product availability, or changed instructions|Separate correctness fixes from opportunities to improve structure or explanation|Choose retain, update, merge, or retire for each affected section with a reason|an important claim cannot be verified|remove or qualify the claim until evidence is available|The article recommends a product that the supplied catalog marks discontinued.|The recommendation needs correction before an editorial refresh can be considered complete.|Replace the unavailable recommendation with a verified alternative or state that no alternative is confirmed.|No discontinued item remains presented as currently available.
+search-article-refresh-triage|Search article refresh triage|existing article, dated claims, current business context, and observed issues|Inventory claims that depend on time, product availability, or changed instructions|Separate correctness fixes from opportunities to improve structure or explanation|Choose retain, update, merge, or retire for each affected section with a reason|an important claim cannot be verified|remove or qualify the claim until evidence is available|The article recommends a product as currently available, but the supplied catalog marks it discontinued and unavailable for purchase.|The recommendation needs correction before an editorial refresh can be considered complete.|Replace the unavailable recommendation with a verified alternative or state that no alternative is confirmed.|No discontinued item remains presented as currently available.
 search-content-cannibalization-review|Search content overlap review|page purposes, query associations, and supplied performance observations|Compare whether overlapping pages actually serve the same reader need|Separate intentional alternative formats from pages competing for an indistinguishable purpose|Recommend differentiation, consolidation, or further measurement with explicit dependencies|pages serve different reader stages|preserve their distinct roles rather than merging by keyword overlap alone|A beginner guide and a pricing page share terminology but answer different questions.|Shared terms alone do not justify merging the pages.|Document each page's reader stage and clarify their distinct titles and internal references.|The decision states page purpose and avoids treating lexical overlap as proof of harmful competition.
 search-heading-outline-repair|Search heading outline repair|page text, current headings, and intended reader sequence|Map each heading to the question or action covered beneath it|Reorder sections to respect prerequisite knowledge and task sequence|Replace vague or duplicated headings with descriptions supported by the actual section content|a heading promises information absent from the section|revise the heading or request the missing content|A heading promises installation steps but its section contains only a product summary.|The heading overstates the section's content.|Rename the section as an overview or add verified installation instructions before retaining the original promise.|Each heading accurately describes its section and the sequence supports the reader's task.
 search-faq-evidence-selection|Search question section selection|customer questions, support notes, and existing page answers|Deduplicate questions by underlying need without erasing meaningful differences|Select questions not already answered clearly in the main page flow|Draft concise answers from supplied facts and identify who can resolve missing details|an answer depends on a customer-specific condition|state the condition and route the reader to the appropriate next step|Customers ask whether a product fits all door widths but only one supported range is supplied.|The answer must not imply universal fit.|Answer using the supplied compatibility information and request the missing range verification.|Every answer is supported and no conditional answer is expressed as unconditional.
@@ -447,7 +450,7 @@ search-faq-evidence-selection|Question: Will this product fit every door width?\
 search-content-consolidation-plan|Destination outline: shared guide material → unique troubleshooting decision tree → relevant next steps.\nPreserve: troubleshooting decision tree from the source guide.\nMigration check: confirm the tree appears in the final destination and remains usable.
 search-editorial-claim-audit|Original claim: reliable performance in every environment.\nDisposition: narrow.\nSupported wording: The supplied test covers indoor use.\nExcluded inference: reliability in untested environments.
 search-navigation-task-map|Visitor task: find replacement accessories.\nCurrent label: Internal Services.\nCandidate label: Accessories.\nTest prompt: Where would you look for a replacement accessory?\nAcceptance: the label leads the visitor to the relevant catalog area without department knowledge.
-search-internal-link-opportunity-map|Source context: repair article's reference to replacement parts.\nProposed anchor: replacement parts.\nDestination: verified parts catalog.\nReject: company biography, which does not support the reader's next action.
+search-internal-link-opportunity-map|Source context: repair article's reference to replacement parts.\nProposed anchor: replacement parts.\nCandidate destination: parts catalog, if it exists and answers the parts question.\nDependency: confirm that destination and its content before adding the link.\nReject: company biography, which does not support the reader's next action.
 search-orphan-page-review|Page: public installation guide.\nObserved route: none in supplied link records.\nStatus: provisionally isolated.\nOwner task: confirm an existing route or add a contextually relevant route from the product or support area.
 search-page-template-purpose-review|Section: installation service.\nDisplay condition: the page's verified offer includes installation service.\nAccessory page in record A: hide the section because no service is offered.\nReview: retain product-specific suitability information.
 search-breadcrumb-plan|Preferred route concept: Catalog → Cabin luggage → Travel bag.\nAlternate discovery route: Work accessories category link.\nDependency: confirm these are real navigable categories before implementation; the preferred route reflects primary catalog placement.
@@ -476,7 +479,7 @@ marketing-experiment-readout|Primary analysis: retain the originally specified o
 marketing-data-discrepancy-triage|First hypothesis: different day boundaries.\nTest: re-extract both reports with the same agreed timezone, dates, filters, and definitions.\nThen: compare the remaining discrepancy.\nDo not infer missing events before this reconciliation.
 marketing-cohort-retention-brief|Older cohorts: report the observed return window.\nNewest cohort: mark the not-yet-reached age as not observed.\nComparison rule: compare cohorts only at equally available observation ages.\nDo not replace unavailable observations with zero.
 marketing-report-action-summary|Decision now: defer channel-cut recommendation.\nEvidence task: reconcile tracking definitions.\nDiagnostic task: review lead mix under comparable definitions.\nRevisit trigger: both checks are available and the remaining sales change can be interpreted within those limits.
-customer-interview-guide-design|Opening: Tell me about the last time you completed this workflow.\nProbe: What did you do first?\nProbe: Where did you need a workaround?\nProbe: What happened because of that difficulty?\nAvoid asking whether the untested feature would be helpful.
+customer-interview-guide-design|Opening: Tell me about the last time you completed this workflow.\nProbe: What did you do first?\nProbe: Was any part difficult or did it work as expected?\nConditional probe, only if a difficulty is reported: What did you do, and what happened next?\nAvoid asking whether the untested feature would be helpful.
 research-participant-screening|Eligibility prompt: Describe your role in a recent relevant purchase.\nFollow-up: Which decisions or tasks were you personally responsible for?\nDecision rule: include only roles matching the research need; self-described expertise alone is insufficient.
 customer-interview-note-synthesis|Finding: one participant reported an export issue.\nCoverage: individual signal in the supplied sample.\nOther notes: onboarding concerns.\nNext step: targeted follow-up on export context before treating it as recurring across participants.
 survey-question-repair|Item A: During the stated period, how often did you use the service?\nItem B: How satisfied were you with the service during that period?\nDesign dependency: define the period and response options for the actual audience, including non-use where applicable.
@@ -538,7 +541,7 @@ ecommerce-out-of-stock-experience|Draft: This item is currently unavailable. We 
 ecommerce-catalog-attribute-cleanup|Canonical attributes: item weight; package weight.\nNormalization rule: map only when the source identifies which quantity it measures.\nAmbiguous records: clarification queue.\nDo not merge the two quantities under a single weight label.
 product-task-flow-review|Revised flow concept: create account → select that account → complete the task.\nAlternative: a verified no-account route, if the product supports it.\nBlocked design: selecting a nonexistent account before creation.
 product-empty-state-copy|Error-state draft: We couldn't load the records. Try again using the available retry action.\nEmpty-state wording is reserved for a successful response confirming no records.\nDo not say the account is empty after a failed request.
-product-error-message-review|Draft: We couldn't complete the request because the service is unavailable. Use [VERIFIED RECOVERY ROUTE] to try again or get help.\nDo not blame customer data when the supplied cause is service-side failure.
+product-error-message-review|Draft: We could not complete the request because of a service-side problem. Next step: [VERIFIED RECOVERY ACTION].\nDo not blame customer data when the supplied cause is service-side failure.
 product-form-question-audit|Field: postal address.\nForm purpose: feedback.\nDocumented use: none.\nDisposition: remove the requirement unless the owner establishes a necessary purpose.\nKeep the actual feedback information needed to route the issue.
 product-onboarding-friction-review|Required path: create first project.\nOptional branch: choose visual theme after project creation.\nDefault dependency: use an existing supported default if available.\nDo not block first success on optional visual customization.
 product-prototype-test-scenario|Scenario: You need a report you can share with a colleague. Use this prototype to obtain it.\nObserve: route chosen, assistance requested, and whether a shareable output is reached.\nDo not name the Export control in the task prompt.
@@ -610,8 +613,76 @@ visual-composition-iteration-review|Change reviewed: enlarged sponsor logo.\nBen
     key, value = line.split('|', 1)
     ARTIFACTS[key] = value.replace('\\n', '\n')
 
+ROUTING_REVIEW = {
+    'MME-009': ['Construct generic cohort membership and maturity calculations [TAN-002]', 'Interpret assigned marketing credit rather than campaign retention actions [MME-006]'],
+    'MSV-009': ['Screen a representative research sample rather than select pilot partners [MRE-002]', 'Define the pilot delivery scope after partners have been selected [MSV-006]'],
+    'MOP-008': ['Allocate finite specialist capacity among competing business initiatives [BPL-003]', 'Diagnose observed workflow delays after delivery [MOP-010]'],
+    'MRE-006': ['Clarify the use case behind a particular feature request [MPU-008]', 'Turn established research findings into opportunity handoffs [MRE-010]'],
+    'MPU-008': ['Synthesize an evidence-backed customer problem statement [MRE-006]', 'Review the current task flow rather than reframe a proposed feature [MPU-001]'],
+}
+
+# Independent review corrections: preserve IDs while narrowing overlapping tasks
+# and making example evidence, proposals, and unresolved assumptions explicit.
+RECORD_REVIEW = {
+    'search-faq-evidence-selection': {8: 'Customers ask whether a product fits all door widths; the notes mention a limited supported range but do not provide its numerical bounds.'},
+    'brand-message-hierarchy': {10: 'Replace the unsupported effort claim with wording that acknowledges the verified configuration requirement.'},
+    'photo-background-distraction-review': {10: 'Try a camera position or permitted crop that reduces sign competition while retaining venue cues.'},
+    'marketing-cohort-retention-brief': {
+        1: 'Acquisition campaign retention decision brief',
+        2: 'campaign acquisition cohorts, offer promises, purchase occasions, repeat opportunities, and comparable retention observations',
+        3: 'Map each acquisition campaign to its promised use case and expected repeat-purchase opportunity before comparing return behavior',
+        4: 'Compare campaign cohorts only after accounting for purchase occasion, observation age, eligibility, and offer changes',
+        5: 'Translate the supported difference into an acquisition-message or retention-journey hypothesis rather than automatically cutting the lower-return campaign',
+        6: 'one acquisition offer targets a one-time need while another targets replenishment',
+        7: 'evaluate repeat behavior against each offer use case before ranking campaign quality',
+        8: 'Campaign A attracts one-time event purchases; campaign B attracts replenishment purchases. Both cohorts have complete equal observation windows, but A has fewer repeat purchases.',
+        9: 'The lower repeat count does not by itself establish worse acquisition quality because the offers create different repeat opportunities.',
+        10: 'Separate acquisition-offer fit from retention-journey performance and define an appropriate follow-up question for each cohort.',
+        11: 'The brief links each retention interpretation to campaign promise and repeat opportunity, preserves comparable observation windows, and avoids a raw-return campaign ranking.',
+    },
+    'startup-early-adopter-screen': {
+        2: 'pilot partner candidates, current workarounds, problem urgency, authorized access, and participation capacity',
+        3: 'Distinguish a potential pilot partner from a participant suitable only for a research interview',
+        4: 'Assess current workaround cost, urgency to change, access authority, and capacity to give iterative feedback without inventing numeric cutoffs',
+        5: 'Create candidate dispositions separating pilot-ready, research-only, and prerequisite-blocked participants; record missing perspectives separately',
+        6: 'a candidate has strong problem experience but cannot authorize required pilot access',
+        7: 'keep them eligible for research but hold pilot participation pending an authorized access decision',
+        8: 'A volunteer performs the target workflow and urgently wants a better workaround, but cannot authorize the records access required for the pilot.',
+        9: 'The volunteer can inform research but is not yet a ready pilot partner.',
+        10: 'Record a research-only disposition and request the appropriate access decision before offering pilot participation.',
+        11: 'The screen distinguishes problem evidence from operational pilot readiness and does not treat an interested contact as an access authority.',
+    },
+    'startup-service-capacity-plan': {
+        2: 'recurring service request mix, arrival observations, work-stage effort, rework frequencies, and role availability',
+        3: 'Decompose one recurring service request into preparation, review, handoff, and conditional rework stages using observed or explicitly estimated effort',
+        4: 'Translate the expected request mix into workload for each role in the same planning window, retaining uncertainty in arrivals and rework',
+        5: 'Identify the role whose stage workload limits accepted service volume and define a review trigger when the request mix changes',
+    },
+}
+ARTIFACTS.update({
+    'search-breadcrumb-plan': 'Candidate route for owner review: Catalog → Cabin luggage → Travel bag.\nAlternate discovery route: Work accessories category link.\nUnresolved: which parent is the approved primary catalog placement? Confirm that each segment exists and is navigable before accepting this proposed route.',
+    'brand-voice-operational-guide': 'Rule: prefer direct verbs and clear statements of supported facts.\nBefore: We think you may possibly be able to export the report.\nAfter, only if export capability is verified: Export the report.\nException: retain uncertainty when evidence is incomplete; do not invent the interface location.',
+    'brand-message-hierarchy': 'Unsupported headline: Effortless setup.\nDraft factual message: Customer configuration is required during setup.\nBenefit headline: pending a verified benefit from the offer owner.\nDo not claim setup assistance is included unless that capability is supplied and verified.',
+    'product-empty-state-copy': 'Error-state draft: We could not load the records.\nConditional recovery line, only when retry is supported: Try again.\nEmpty-state wording is reserved for a successful response confirming no records.\nOpen dependency: establish the actual supported recovery action; do not invent a retry control.',
+    'campaign-contingency-message-plan': 'Holding draft: The campaign page is currently unavailable. Its restoration time has not yet been confirmed.\nOptional update promise: add only after an owner accepts responsibility for publishing updates.\nBefore release: confirm an approved alternative route or leave that next step explicitly pending; do not invent a cause or promise an investigation is underway.',
+    'survey-question-repair': 'Proposed item A: During [AGREED PERIOD], on how many occasions did you use the service? Response: nonnegative count, including zero; or I do not know.\nProposed item B, for users during that period: How satisfied were you with the service? Responses: very dissatisfied; dissatisfied; neither satisfied nor dissatisfied; satisfied; very satisfied; unable to judge.\nBranch: nonusers skip satisfaction. Confirm period and audience fit before fielding.',
+    'marketing-cohort-retention-brief': 'Campaign A: one-time event use; lower repeat purchases do not alone show acquisition failure.\nCampaign B: replenishment use; assess whether eligible customers receive a useful replenishment journey.\nShared check: complete equal-age windows and compatible customer identity definitions.\nNext decision: investigate offer fit and appropriate follow-up separately; do not cut A merely because B repeats more.',
+    'startup-early-adopter-screen': 'Candidate evidence: current target-workflow experience, urgent workaround need, no authority for required record access.\nResearch disposition: eligible for problem-learning conversations within consent.\nPilot disposition: prerequisite-blocked.\nUnblocking evidence: authorized access decision and confirmed ability to participate; enthusiasm cannot substitute for either.',
+    'startup-service-capacity-plan': 'Service-unit worksheet: preparation effort + mandatory review effort + handoff effort + conditional rework effort.\nKnown gap: review effort is absent from the current estimate.\nRole workload rule: aggregate each stage over the expected request mix in the same planning window, keeping unknown effort as an open input.\nReadiness: do not accept service-volume commitments until review workload and role availability are supplied; portfolio initiative tradeoffs belong in BPL-003.',
+    'photo-background-distraction-review': 'Keep enough venue detail to establish the musician\'s setting.\nProposed comparison: change viewpoint or framing to reduce the bright sign\'s competition without erasing the venue.\nDo not claim the sign is near the face unless the source image shows that relationship.\nAcceptance remains a visual comparison of actual candidate frames.',
+    'fiction-action-blocking-repair': 'Proposed rewrite assumes the gate key can be introduced consistently: Mara stopped behind the locked gate. She found the key in her coat, opened the gate, and crossed to the shelf. Only then did she take the book.\nContinuity dependency: establish why she has the key, or choose a different supported way through the barrier; do not silently introduce an already-owned key as existing canon.',
+    'fiction-ending-choice-design': 'Proposed ending beats: Mara can restore the catalog only by revealing her own theft → she gives the evidence to Ivo → the route is restored, but her position is lost.\nRequired setup: earlier scenes must establish the theft, the evidence, the restoration mechanism, and the risk to her position.\nThis is a proposed replacement requiring setup review, not a claim that these facts already exist in the supplied story.',
+    'visual-reference-board-brief': 'Reference A annotation: [OBSERVED SPACING RELATIONSHIP; inspect the reference].\nReference B annotation: [OBSERVED PALETTE ROLE; inspect the reference].\nDisposition: both remain unresolved because record A supplies no visible reference details.\nProvisional original direction: use a clear title/body hierarchy and consistent spacing; these are proposed choices to review, not observations from unseen images.\nRemove a reference if inspection cannot identify a useful contribution.',
+})
+
 for task_domain, task_data in PENDING:
-    render_tasks(task_domain, task_data)
+    reviewed_lines = []
+    for task_line in task_data.strip().splitlines():
+        fields = task_line.split('|')
+        for field_index, replacement in RECORD_REVIEW.get(fields[0], {}).items():
+            fields[field_index] = replacement
+        reviewed_lines.append('|'.join(fields))
+    render_tasks(task_domain, '\n'.join(reviewed_lines))
 
 manifest_path = ROOT / 'staging' / 'marketing_business.json'
 manifest_path.parent.mkdir(parents=True, exist_ok=True)

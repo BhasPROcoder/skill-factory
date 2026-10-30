@@ -2,10 +2,10 @@
 id: TDS-003
 name: dataset-license-evidence-inventory
 domain: Dataset Intake and Documentation
-subdomain: Documentation
-version: 1.0
-description: Produce a dataset permission evidence inventory; use when the task is to dataset license evidence inventory.
-triggers: ["dataset license evidence inventory", "help with a dataset permission evidence inventory", "review my a dataset permission evidence inventory", "prepare a dataset permission evidence inventory", "check dataset license evidence inventory evidence"]
+subdomain: Provenance
+version: 1.1
+description: Create a dataset permission evidence inventory from supplied evidence; use when preparing or reviewing dataset permission evidence inventory decisions.
+triggers: ["dataset license evidence inventory", "help with a dataset permission evidence inventory", "review my dataset permission evidence inventory", "prepare a dataset permission evidence inventory", "check the evidence for this dataset permission evidence inventory"]
 not_for: ["dataset data dictionary build [TDS-004]", "dataset population coverage review [TDS-005]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a dataset permission evidence inventory and name the source artifacts used; retain a version or observation date where available.
 2. List intended actions separately for analysis and redistribution
 3. Extract the exact supplied permission evidence for each source
-4. ⚠️ Flag absent or conflicting terms without interpreting silence as permission Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Flag absent or conflicting terms without interpreting silence as permission. Do not silently replace missing evidence with an assumed successful outcome.
 5. Prepare questions for the data owner or qualified legal reviewer
 6. Apply the domain check: Separate permission to access from permission to redistribute; retain acquisition and transformation provenance.
 7. Verify the proposed result with this task-specific check: Confirm the applicable current source terms with the owner and a qualified reviewer when interpretation is needed. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Dataset suitability is specific to a population, intended prediction or analysis, and collection process. A convenient download is not evidence of representative coverage. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a dataset permission evidence inventory
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Internal analysis has supplied evidence; redistribution remains undocumented.
 Decision: Do not describe a public release as cleared.
+Artifact: Intended action matrix: internal analysis—explicitly permitted in supplied notice; redistribution—no supplied term. Redistribution status: unresolved, not assumed permitted. Request authoritative permission evidence or qualified legal review rather than interpreting silence as authorization.
 Action: Team owner — Prepare questions for the data owner or qualified legal reviewer Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Confirm the applicable current source terms with the owner and a qualified reviewer when interpretation is needed.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a dataset permission evidence inventory. Source A explicitly permits internal analysis in the supplied notice; no redistribution term is supplied. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Internal analysis has supplied evidence; redistribution remains undocumented.
 3. It preserves this task-specific conclusion: Do not describe a public release as cleared.
 4. It includes the verification check or explicitly marks it pending: Confirm the applicable current source terms with the owner and a qualified reviewer when interpretation is needed.

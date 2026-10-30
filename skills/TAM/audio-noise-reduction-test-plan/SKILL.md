@@ -2,10 +2,10 @@
 id: TAM-005
 name: audio-noise-reduction-test-plan
 domain: Audio and Music Production Planning
-subdomain: Recording
-version: 1.0
-description: Produce a noise-reduction audition plan; use when the task is to audio noise reduction test plan.
-triggers: ["audio noise reduction test plan", "help with a noise-reduction audition plan", "review my a noise-reduction audition plan", "prepare a noise-reduction audition plan", "check audio noise reduction test plan evidence"]
+subdomain: Editing
+version: 1.1
+description: Create a noise-reduction audition plan from supplied evidence; use when preparing or reviewing noise-reduction audition plan decisions.
+triggers: ["audio noise reduction test plan", "help with a noise-reduction audition plan", "review my noise-reduction audition plan", "prepare a noise-reduction audition plan", "check the evidence for this noise-reduction audition plan"]
 not_for: ["music arrangement density map [TAM-006]", "music transition arrangement plan [TAM-007]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a noise-reduction audition plan and name the source artifacts used; retain a version or observation date where available.
 2. Identify noise-only and signal-rich passages by listening
 3. Create reversible processing variants without overwriting the source
-4. ⚠️ Compare residual noise against newly introduced artifacts Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Compare residual noise against newly introduced artifacts. Do not silently replace missing evidence with an assumed successful outcome.
 5. Select the least intrusive version that serves the intended use
 6. Apply the domain check: Keep source recordings and reversible edits; verify current delivery requirements with the recipient instead of inventing loudness, format, or platform targets.
 7. Verify the proposed result with this task-specific check: Audition level-matched variants against the original on the intended playback context. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Describe sound choices through observable features such as entry timing, instrument density, foreground level, phrase spacing, and audible transitions. If audio is unavailable, offer a listening plan rather than claiming to hear clipping, noise, pitch problems, or balance defects. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a noise-reduction audition plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Variant B introduces a reported speech artifact.
 Decision: Prefer A provisionally and confirm intelligibility in context before finalizing.
+Artifact: Variant A: faint residual noise, no stated wanted-sound damage. Variant B: watery consonants reported. Initial audition preference: A, subject to the intended use. Verification: compare both against the original without treating stronger processing as inherently better.
 Action: Team owner — Select the least intrusive version that serves the intended use Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Audition level-matched variants against the original on the intended playback context.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a noise-reduction audition plan. The supplied listening notes say variant A leaves faint noise while variant B creates watery consonants. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Variant B introduces a reported speech artifact.
 3. It preserves this task-specific conclusion: Prefer A provisionally and confirm intelligibility in context before finalizing.
 4. It includes the verification check or explicitly marks it pending: Audition level-matched variants against the original on the intended playback context.

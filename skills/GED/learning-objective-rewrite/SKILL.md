@@ -3,10 +3,10 @@ id: GED-001
 name: learning-objective-rewrite
 domain: Lesson and Learning Design
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare observable learning objective rewrite from supplied evidence; use when the request concerns existing learning aims.
 triggers: ["observable learning objective rewrite", "prepare observable learning objective rewrite", "review my observable learning objective rewrite", "help me with observable learning objective rewrite", "turn existing learning aims into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Prerequisite knowledge check [GED-002]", "Worked example lesson sequence [GED-003]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Original aim | Observable action | Evidence | Boundary
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,13 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Original aim | Observable action | Evidence | Boundary
 Understand arguments | Identify claim and supporting reason | Annotated short argument | Use supplied text
 Definition quiz | Recall a term | Insufficient for analysis goal | Add an argument task
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Revised objective: Given a short argument, identify its claim and supporting reason, then explain how the reason is intended to support the claim.
+Proposed assessment stimulus: Our club should meet in the larger room because the current room cannot seat everyone.
+Learner prompt: Mark the proposed action, mark its reason, and explain their relationship.
+Evidence criterion: distinguishes the recommendation from the seating reason. A definition alone does not meet the objective.
+Next action: The requester or assigned reviewer will complete this task-specific check: Check whether the planned assessment can actually elicit that evidence. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Use supplied text.
 ```
 
 **Bad output:**

@@ -2,10 +2,10 @@
 id: TRP-004
 name: reproducibility-notebook-state-audit
 domain: Computational Reproducibility
-subdomain: Handoffs
-version: 1.0
-description: Produce a notebook execution-state audit; use when the task is to reproducibility notebook state audit.
-triggers: ["reproducibility notebook state audit", "help with a notebook execution-state audit", "review my a notebook execution-state audit", "prepare a notebook execution-state audit", "check reproducibility notebook state audit evidence"]
+subdomain: Reruns
+version: 1.1
+description: Create a notebook execution-state audit from supplied evidence; use when preparing or reviewing notebook execution-state audit decisions.
+triggers: ["reproducibility notebook state audit", "help with a notebook execution-state audit", "review my notebook execution-state audit", "prepare a notebook execution-state audit", "check the evidence for this notebook execution-state audit"]
 not_for: ["reproducibility artifact hash plan [TRP-005]", "reproducibility configuration capture [TRP-006]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a notebook execution-state audit and name the source artifacts used; retain a version or observation date where available.
 2. Identify cells that depend on variables defined out of order
 3. Remove reliance on hidden interactive state
-4. ⚠️ Execute from a fresh kernel in document order Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Execute from a fresh kernel in document order. Do not silently replace missing evidence with an assumed successful outcome.
 5. Compare regenerated outputs with the stored claims
 6. Apply the domain check: Distinguish reproducing a computation from independently validating its scientific or business claim; preserve raw evidence of both successful and failed runs.
 7. Verify the proposed result with this task-specific check: Restart the runtime and execute all cells from the beginning. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Reproduction requires enough information to identify inputs, code, configuration, environment, and intended outputs. Exact equality is appropriate only when the declared computation supports it; otherwise define the accepted comparison before rerunning. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a notebook execution-state audit
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The notebook depends on missing execution state.
 Decision: Add the defining computation in order or remove the unsupported output.
+Artifact: Missing dependency: total is used before any defining cell. Repair order: input values → define total → display result. Acceptance run: fresh kernel, document order, no manual variable injection. Stored output remains unsupported until rerun.
 Action: Team owner — Compare regenerated outputs with the stored claims Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Restart the runtime and execute all cells from the beginning.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a notebook execution-state audit. A displayed output uses variable total that no preceding cell defines. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The notebook depends on missing execution state.
 3. It preserves this task-specific conclusion: Add the defining computation in order or remove the unsupported output.
 4. It includes the verification check or explicitly marks it pending: Restart the runtime and execute all cells from the beginning.

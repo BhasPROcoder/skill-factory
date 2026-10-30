@@ -3,10 +3,10 @@ id: GUS-006
 name: us-public-records-request-draft
 domain: US Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare public records request draft from supplied evidence; use when the request concerns records description.
 triggers: ["public records request draft", "prepare public records request draft", "review my public records request draft", "help me with public records request draft", "turn records description into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Benefit renewal notice triage [GUS-007]", "Agency appointment access plan [GUS-008]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Record group | Scope | Custody status | Clarification
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +87,10 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Record group | Scope | Custody status | Clarification
 Meeting materials | Named project and period | Local office suspected | Confirm custodian
 Decision record | Existing recorded decision | Title unknown | Describe substance without inventing title
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Draft request body: I request existing meeting materials and recorded decisions concerning the project and period identified in the request header. I do not know the precise document titles. If your office does not hold these records, please identify the appropriate custodian if known. The requester must fill the project and exact period from their records, verify the official route, and resolve any applicable fee instructions before transmission.
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a tracking record that distinguishes acknowledgment, scope clarification and substantive response. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Confirm custodian.
 ```
 
 **Bad output:**

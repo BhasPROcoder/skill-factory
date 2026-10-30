@@ -3,9 +3,9 @@ id: MAR-001
 name: search-navigation-task-map
 domain: Search Site Architecture
 subdomain: Design
-version: 1.0
-description: Search navigation task mapping using supplied evidence and explicit acceptance checks; use when preparing a search navigation task mapping deliverable.
-triggers: ["help me with search navigation task mapping", "prepare a search navigation task mapping deliverable", "review our search navigation task mapping evidence", "create a search navigation task mapping action plan", "check this search navigation task mapping decision"]
+version: 1.1
+description: Guide search navigation task mapping when working from page inventory, navigation labels, and common visitor tasks.
+triggers: ["search navigation task mapping", "help with search navigation task mapping", "work on search navigation task map", "review my search navigation task mapping", "apply search navigation task mapping to these materials"]
 not_for: ["Search internal link opportunity mapping [MAR-002]", "Search isolated page review [MAR-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search navigation task mapping
 
 ## Purpose
-Produce a usable search navigation task mapping deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search navigation task mapping task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -114,7 +114,7 @@ Acceptance: the label leads the visitor to the relevant catalog area without dep
 A reviewer can explain the destination using the label without knowing internal department names.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

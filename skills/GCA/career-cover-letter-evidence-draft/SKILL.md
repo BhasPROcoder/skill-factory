@@ -3,10 +3,10 @@ id: GCA-003
 name: career-cover-letter-evidence-draft
 domain: Career Development
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare cover letter evidence draft from supplied evidence; use when the request concerns job posting.
 triggers: ["cover letter evidence draft", "prepare cover letter evidence draft", "review my cover letter evidence draft", "help me with cover letter evidence draft", "turn job posting into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Interview story evidence bank [GCA-004]", "Interview question practice plan [GCA-005]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Letter part | Evidence basis | Draft text | Review check
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional candidate Noor applies for a coordination role and has organized volunteer handoffs.
+> Fictional scenario: Fictional candidate Noor applies for a coordination role and has organized volunteer handoffs. The candidate confirms a motivation to make shared work clear and personally organized handoff notes showing the next responsibilities.
 
 **Output:**
 ```text
@@ -84,8 +86,10 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Letter part | Evidence basis | Draft text | Review check
 Opening | Role asks for coordination | I am applying for the coordination role because I enjoy making shared work clear. | Confirm genuine motivation
 Evidence paragraph | Volunteer handoff example | In a volunteer project, I organized handoff notes so each person could see the next responsibility. | Keep actual scope
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Draft paragraph: I am applying for the coordination role because I enjoy making shared work clear. In a volunteer project, I organized handoff notes so each person could see the next responsibility. I would welcome the opportunity to discuss how that experience relates to your coordination needs. The candidate must confirm the supplied motivation and ownership wording before using the draft.
+Next action: The requester or assigned reviewer will complete this task-specific check: Draft a short letter with unsupported details left as placeholders. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Confirm genuine motivation.
 ```
 
 **Bad output:**

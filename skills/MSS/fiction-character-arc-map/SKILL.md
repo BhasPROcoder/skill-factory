@@ -3,9 +3,9 @@ id: MSS-003
 name: fiction-character-arc-map
 domain: Fiction Story Structure
 subdomain: Design
-version: 1.0
-description: Fiction character arc mapping using supplied evidence and explicit acceptance checks; use when preparing a fiction character arc mapping deliverable.
-triggers: ["help me with fiction character arc mapping", "prepare a fiction character arc mapping deliverable", "review our fiction character arc mapping evidence", "create a fiction character arc mapping action plan", "check this fiction character arc mapping decision"]
+version: 1.1
+description: Guide fiction character arc mapping when working from character's initial belief, pressure points, choices, and ending behavior.
+triggers: ["fiction character arc mapping", "help with fiction character arc mapping", "work on fiction character arc map", "review my fiction character arc mapping", "apply fiction character arc mapping to these materials"]
 not_for: ["Fiction subplot integration planning [MSS-004]", "Fiction reveal setup and payoff planning [MSS-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction character arc mapping
 
 ## Purpose
-Produce a usable fiction character arc mapping deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction character arc mapping task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Either revise her final choice to share the evidence or frame the ending as refusal to change. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Initial strategy: Mara conceals evidence to avoid depending on others.
 Pressure: concealment leaves Ivo unable to help.
 Final choice: she hands him the decisive letter before knowing whether he will stay.
@@ -113,7 +114,7 @@ Visible change: trust is enacted through relinquished control.
 The arc is visible in contrasting choices rather than only narrative explanation.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: GPP-005
 name: policy-implementation-bottleneck-review
 domain: Public Policy Analysis
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare policy implementation bottleneck review from supplied evidence; use when the request concerns policy delivery process.
 triggers: ["policy implementation bottleneck review", "prepare policy implementation bottleneck review", "review my policy implementation bottleneck review", "help me with policy implementation bottleneck review", "turn policy delivery process into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Policy indicator definition sheet [GPP-006]", "Public consultation response coding [GPP-007]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Stage | Observed symptom | Possible constraint | Diagnostic action
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +76,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional service Birchgate has applications returned repeatedly for unclear attachments.
+> Fictional scenario: Fictional service Birchgate has applications returned repeatedly for unclear attachments. The fictional process log also shows that final processing starts late after attachment rework.
 
 **Output:**
 ```text
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Stage | Observed symptom | Possible constraint | Diagnostic action
 Intake review | Repeated returns | Instruction ambiguity possible | Inspect rejection reasons
 Final processing | Late starts | Upstream rework dependency | Track arrival after corrections
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Propose a small diagnostic change with a measurable observation. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Inspect rejection reasons.
 ```
 
 **Bad output:**

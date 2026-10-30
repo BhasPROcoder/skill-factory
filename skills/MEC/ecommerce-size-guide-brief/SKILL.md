@@ -3,9 +3,9 @@ id: MEC-003
 name: ecommerce-size-guide-brief
 domain: E-commerce Customer Experience
 subdomain: Design
-version: 1.0
-description: Product sizing guide briefing using supplied evidence and explicit acceptance checks; use when preparing a product sizing guide briefing deliverable.
-triggers: ["help me with product sizing guide briefing", "prepare a product sizing guide briefing deliverable", "review our product sizing guide briefing evidence", "create a product sizing guide briefing action plan", "check this product sizing guide briefing decision"]
+version: 1.1
+description: Guide product sizing guide briefing when working from verified measurements, fit definitions, customer questions, and product categories.
+triggers: ["product sizing guide briefing", "help with product sizing guide briefing", "work on ecommerce size guide brief", "review my product sizing guide briefing", "apply product sizing guide briefing to these materials"]
 not_for: ["Cart information transparency review [MEC-004]", "Checkout friction review planning [MEC-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product sizing guide briefing
 
 ## Purpose
-Produce a usable product sizing guide briefing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product sizing guide briefing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Request the actual fit method before drafting a size recommendation.
 Users can identify what is measured and how it relates to the sizing decision.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

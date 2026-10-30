@@ -3,10 +3,10 @@ id: GPR-005
 name: focus-session-design
 domain: Personal Work Organization
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare focus session design from supplied evidence; use when the request concerns specific work task.
 triggers: ["focus session design", "prepare focus session design", "review my focus session design", "help me with focus session design", "turn specific work task into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Waiting-for tracker [GPR-006]", "Weekly review agenda [GPR-007]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Session element | Plan | Completion evidence | Adjustment
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Session element | Plan | Completion evidence | Adjustment
 Preparation | Collect source notes first | Notes accessible | Delay drafting until ready
 Output | Draft problem paragraph | Paragraph exists | Review unresolved facts afterward
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Review what actually interrupted progress before changing the next session. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Delay drafting until ready.
 ```
 
 **Bad output:**

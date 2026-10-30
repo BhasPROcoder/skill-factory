@@ -3,9 +3,9 @@ id: MPH-005
 name: photo-shot-list-sequencing
 domain: Photography Planning and Critique
 subdomain: Design
-version: 1.0
-description: Photographic shot list sequencing using supplied evidence and explicit acceptance checks; use when preparing a photographic shot list sequencing deliverable.
-triggers: ["help me with photographic shot list sequencing", "prepare a photographic shot list sequencing deliverable", "review our photographic shot list sequencing evidence", "create a photographic shot list sequencing action plan", "check this photographic shot list sequencing decision"]
+version: 1.1
+description: Guide photographic shot list sequencing when working from story objective, subjects, location access, and delivery format.
+triggers: ["photographic shot list sequencing", "help with photographic shot list sequencing", "work on photo shot list sequencing", "review my photographic shot list sequencing", "apply photographic shot list sequencing to these materials"]
 not_for: ["Photographic contact sheet selection [MPH-006]", "Portrait session planning [MPH-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Photographic shot list sequencing
 
 ## Purpose
-Produce a usable photographic shot list sequencing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this photographic shot list sequencing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Photograph the demonstration first and schedule static details afterward. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Capture first: workshop demonstration while it occurs.
 Capture next: participant interaction if available.
 Capture later: repeatable object details and room context.
@@ -113,7 +114,7 @@ Coverage check: context, action, and detail each answer a different visual quest
 The shot list covers the story and prioritizes nonrepeatable opportunities.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

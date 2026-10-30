@@ -3,9 +3,9 @@ id: MSA-006
 name: sales-proposal-scope-outline
 domain: Sales Process Enablement
 subdomain: Design
-version: 1.0
-description: Sales proposal scope outlining using supplied evidence and explicit acceptance checks; use when preparing a sales proposal scope outlining deliverable.
-triggers: ["help me with sales proposal scope outlining", "prepare a sales proposal scope outlining deliverable", "review our sales proposal scope outlining evidence", "create a sales proposal scope outlining action plan", "check this sales proposal scope outlining decision"]
+version: 1.1
+description: Guide sales proposal scope outlining when working from buyer requirements, deliverables, exclusions, assumptions, and approval constraints.
+triggers: ["sales proposal scope outlining", "help with sales proposal scope outlining", "work on sales proposal scope outline", "review my sales proposal scope outlining", "apply sales proposal scope outlining to these materials"]
 not_for: ["Sales mutual action plan drafting [MSA-007]", "Sales to delivery handoff preparation [MSA-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Sales proposal scope outlining
 
 ## Purpose
-Produce a usable sales proposal scope outlining deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this sales proposal scope outlining task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Do not imply the current proposal satisfies the migration requirement.
 Every buyer requirement has a supported scope response or an explicit gap.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

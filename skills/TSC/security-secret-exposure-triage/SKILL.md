@@ -3,9 +3,9 @@ id: TSC-003
 name: security-secret-exposure-triage
 domain: Defensive Security Review
 subdomain: Exposure
-version: 1.0
-description: Produce a secret exposure response brief; use when the task is to security secret exposure triage.
-triggers: ["security secret exposure triage", "help with a secret exposure response brief", "review my a secret exposure response brief", "prepare a secret exposure response brief", "check security secret exposure triage evidence"]
+version: 1.1
+description: Create a secret exposure response brief from supplied evidence; use when preparing or reviewing secret exposure response brief decisions.
+triggers: ["security secret exposure triage", "help with a secret exposure response brief", "review my secret exposure response brief", "prepare a secret exposure response brief", "check the evidence for this secret exposure response brief"]
 not_for: ["security dependency advisory triage [TSC-004]", "security logging sensitive data review [TSC-005]"]
 requires: []
 risk_level: high
@@ -30,11 +30,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a secret exposure response brief and name the source artifacts used; retain a version or observation date where available.
 2. Record exposure evidence without copying the secret into reports
 3. Identify the credential owner and potential access scope
-4. ⚠️ Separate containment planning from evidence preservation Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate containment planning from evidence preservation. Do not silently replace missing evidence with an assumed successful outcome.
 5. Follow the authorized revocation and replacement process
 6. Apply the domain check: Use current official vendor advisories and organizational policy when requirements matter; do not claim a vulnerability is exploitable from a scanner label alone.
 7. Verify the proposed result with this task-specific check: Confirm revocation or replacement through the owner and inspect affected access logs within scope. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Security findings need an asset boundary, evidence of the condition, a plausible impact, and an authorized owner. These skills organize defensive review and do not authorize scanning, exploitation, credential access, or changes outside the stated scope. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -58,6 +59,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -90,6 +92,7 @@ Deliverable: a secret exposure response brief
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The token has a plausible exposure path without needing to reproduce its value.
 Decision: Notify the authorized owner through the established incident process and plan revocation.
+Artifact: Exposure record: credential=redacted identifier only; location=public build log; confidentiality=uncertain. Response handoff: credential owner via established incident process; preserve relevant evidence and plan authorized revocation/replacement. Removing the log text is not proof that copying never occurred.
 Action: Team owner — Follow the authorized revocation and replacement process Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Confirm revocation or replacement through the owner and inspect affected access logs within scope.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -111,7 +114,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a secret exposure response brief. A fictional token appears in a public build log; the report includes only its redacted identifier. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The token has a plausible exposure path without needing to reproduce its value.
 3. It preserves this task-specific conclusion: Notify the authorized owner through the established incident process and plan revocation.
 4. It includes the verification check or explicitly marks it pending: Confirm revocation or replacement through the owner and inspect affected access logs within scope.

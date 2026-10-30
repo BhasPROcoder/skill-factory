@@ -3,9 +3,9 @@ id: MEM-007
 name: email-send-readiness-check
 domain: Lifecycle Email Planning
 subdomain: Design
-version: 1.0
-description: Email send readiness review using supplied evidence and explicit acceptance checks; use when preparing a email send readiness review deliverable.
-triggers: ["help me with email send readiness review", "prepare a email send readiness review deliverable", "review our email send readiness review evidence", "create a email send readiness review action plan", "check this email send readiness review decision"]
+version: 1.1
+description: Guide email send readiness review when working from approved copy, audience rules, exclusions, links, and sender details.
+triggers: ["email send readiness review", "help with email send readiness review", "work on email send readiness check", "review my email send readiness review", "apply email send readiness review to these materials"]
 not_for: ["Email journey collision review [MEM-008]", "Email feedback theme review [MEM-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Email send readiness review
 
 ## Purpose
-Produce a usable email send readiness review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this email send readiness review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Send status: pending the remaining audience, link, and approval checks.
 Representative messages render coherently and excluded recipients remain excluded.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

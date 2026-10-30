@@ -3,10 +3,10 @@ id: GAS-008
 name: assessment-moderation-session
 domain: Learning Assessment
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare assessment moderation session from supplied evidence; use when the request concerns rubric.
 triggers: ["assessment moderation session", "prepare assessment moderation session", "review my assessment moderation session", "help me with assessment moderation session", "turn rubric into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Learning portfolio evidence selection [GAS-009]", "Assessment results explanation [GAS-010]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Disagreement | Work evidence | Rubric issue | Resolution
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional reviewers Inez and Pavel disagree about whether an essay explains evidence or only lists it.
+> Fictional scenario: Fictional reviewers Inez and Pavel disagree about whether an essay explains evidence or only lists it. The supplied disputed passage lists evidence but contains no explicit link; the reviewers disagree on whether the link may be inferred.
 
 **Output:**
 ```text
@@ -84,8 +86,14 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Disagreement | Work evidence | Rubric issue | Resolution
 Explanation criterion | Evidence listed without link | Descriptor ambiguous | Define what a link looks like
 Overall judgment | Different criterion readings | Not yet comparable | Rejudge after clarification
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Discussion prompt: Show the words where the essay connects evidence to its conclusion. Is that connection explicit, inferred, or absent?
+Proposed descriptor clarification: listing evidence is different from explaining why it supports a claim.
+Review record: each reviewer records the same cited passage, criterion interpretation, and remaining disagreement.
+Recheck: independently judge another anonymized sample after agreeing the descriptor.
+Do not average away the original disagreement or claim improved agreement before the recheck.
+Next action: The requester or assigned reviewer will complete this task-specific check: Recheck another sample to see whether the clarification improves consistency. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Define what a link looks like.
 ```
 
 **Bad output:**

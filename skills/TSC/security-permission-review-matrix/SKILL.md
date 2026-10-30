@@ -3,9 +3,9 @@ id: TSC-002
 name: security-permission-review-matrix
 domain: Defensive Security Review
 subdomain: Access review
-version: 1.0
-description: Produce a permission review matrix; use when the task is to security permission review matrix.
-triggers: ["security permission review matrix", "help with a permission review matrix", "review my a permission review matrix", "prepare a permission review matrix", "check security permission review matrix evidence"]
+version: 1.1
+description: Create a permission review matrix from supplied evidence; use when preparing or reviewing permission review matrix decisions.
+triggers: ["security permission review matrix", "help with a permission review matrix", "review my permission review matrix", "prepare a permission review matrix", "check the evidence for this permission review matrix"]
 not_for: ["security secret exposure triage [TSC-003]", "security dependency advisory triage [TSC-004]"]
 requires: []
 risk_level: high
@@ -30,11 +30,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a permission review matrix and name the source artifacts used; retain a version or observation date where available.
 2. Map each role to required business actions
 3. Compare required actions with effective grants
-4. ⚠️ Separate inherited permissions from direct grants Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate inherited permissions from direct grants. Do not silently replace missing evidence with an assumed successful outcome.
 5. Prepare least-privilege changes for owner approval
 6. Apply the domain check: Use current official vendor advisories and organizational policy when requirements matter; do not claim a vulnerability is exploitable from a scanner label alone.
 7. Verify the proposed result with this task-specific check: Compare effective role actions with the approved task list. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Security findings need an asset boundary, evidence of the condition, a plausible impact, and an authorized owner. These skills organize defensive review and do not authorize scanning, exploitation, credential access, or changes outside the stated scope. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -58,6 +59,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -90,6 +92,7 @@ Deliverable: a permission review matrix
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Delete permission has no stated reporting purpose.
 Decision: Propose removal for the owner's review after checking dependencies.
+Artifact: Role/action matrix: reporting/read—needed and granted, retain; reporting/delete—granted with no stated need, investigate dependencies and propose removal. Change owner: system permission owner. Current state is not changed by this review; effective grants must be rechecked after any authorized change.
 Action: Team owner — Prepare least-privilege changes for owner approval Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare effective role actions with the approved task list.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -111,7 +114,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a permission review matrix. The reporting role needs read access but also has delete permission. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Delete permission has no stated reporting purpose.
 3. It preserves this task-specific conclusion: Propose removal for the owner's review after checking dependencies.
 4. It includes the verification check or explicitly marks it pending: Compare effective role actions with the approved task list.

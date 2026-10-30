@@ -3,10 +3,10 @@ id: GEX-006
 name: exam-interleaved-practice-selection
 domain: Exam Preparation Methods
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare mixed practice selection from supplied evidence; use when the request concerns related problem types.
 triggers: ["mixed practice selection", "prepare mixed practice selection", "review my mixed practice selection", "help me with mixed practice selection", "turn related problem types into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Exam answer structure practice [GEX-007]", "Exam time allocation rehearsal [GEX-008]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Practice item | Method choice required | Reason to state | Review focus
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,14 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Practice item | Method choice required | Reason to state | Review focus
 Unlabeled mixed item | Choose applicable approach | Name governing condition | Selection reasoning
 Same approach new wording | Recognize structure | Ignore misleading keyword | Transfer of choice
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Selection plan: choose unlabeled items requiring each already learned approach, plus an item with familiar wording but a different governing condition.
+Before each solution, learner writes: The relevant condition is ...; therefore I choose ... .
+Review columns: chosen method; condition cited; execution result; repair needed.
+If the method is unfamiliar, supply an initial example before including it in mixed selection practice.
+Actual subject problems are required; do not invent a method-specific answer key from keywords.
+Next action: The requester or assigned reviewer will complete this task-specific check: Review selection errors separately from execution errors. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Selection reasoning.
 ```
 
 **Bad output:**

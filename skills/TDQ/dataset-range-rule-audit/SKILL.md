@@ -2,10 +2,10 @@
 id: TDQ-004
 name: dataset-range-rule-audit
 domain: Dataset Quality Diagnostics
-subdomain: Reconciliation
-version: 1.0
-description: Produce a range validation report; use when the task is to dataset range rule audit.
-triggers: ["dataset range rule audit", "help with a range validation report", "review my a range validation report", "prepare a range validation report", "check dataset range rule audit evidence"]
+subdomain: Schema
+version: 1.1
+description: Create a range validation report from supplied evidence; use when preparing or reviewing range validation report decisions.
+triggers: ["dataset range rule audit", "help with a range validation report", "review my range validation report", "prepare a range validation report", "check the evidence for this range validation report"]
 not_for: ["dataset date time consistency check [TDQ-005]", "dataset referential integrity review [TDQ-006]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a range validation report and name the source artifacts used; retain a version or observation date where available.
 2. Separate physically or contractually impossible values from merely unusual values
 3. Apply only supplied and applicable bounds
-4. ⚠️ Review rejected records with their original units and context Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Review rejected records with their original units and context. Do not silently replace missing evidence with an assumed successful outcome.
 5. Report violations without automatic deletion
 6. Apply the domain check: Report counts with denominators and compare values under explicit normalization rules; never silently drop inconvenient records.
 7. Verify the proposed result with this task-specific check: Recheck boundary inclusivity and units against the supplied instrument contract. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Quality checks must reflect the intended observation unit and business meaning. A repair can change the estimand or hide a collection defect, so retain the unmodified input and explain consequences. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a range validation report
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Only 11 violates the supplied inclusive range.
 Decision: Quarantine the violating record for review while preserving the original value.
+Artifact: Supplied valid interval: 0 through 10 inclusive. Values: 0→pass; 10→pass; 11→violation. Preserve the original rejected record and unit context. The fixture's contract is the authority for this bound, not a universal rule.
 Action: Team owner — Report violations without automatic deletion Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Recheck boundary inclusivity and units against the supplied instrument contract.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a range validation report. A supplied instrument contract accepts values from 0 through 10 inclusive; records contain 0, 10, and 11. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Only 11 violates the supplied inclusive range.
 3. It preserves this task-specific conclusion: Quarantine the violating record for review while preserving the original value.
 4. It includes the verification check or explicitly marks it pending: Recheck boundary inclusivity and units against the supplied instrument contract.

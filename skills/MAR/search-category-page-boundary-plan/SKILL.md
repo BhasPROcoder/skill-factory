@@ -3,9 +3,9 @@ id: MAR-006
 name: search-category-page-boundary-plan
 domain: Search Site Architecture
 subdomain: Design
-version: 1.0
-description: Search category page boundary planning using supplied evidence and explicit acceptance checks; use when preparing a search category page boundary planning deliverable.
-triggers: ["help me with search category page boundary planning", "prepare a search category page boundary planning deliverable", "review our search category page boundary planning evidence", "create a search category page boundary planning action plan", "check this search category page boundary planning decision"]
+version: 1.1
+description: Guide search category page boundary planning when working from catalog taxonomy, item attributes, and proposed category pages.
+triggers: ["search category page boundary planning", "help with search category page boundary planning", "work on search category page boundary plan", "review my search category page boundary planning", "apply search category page boundary planning to these materials"]
 not_for: ["Search filter navigation review brief [MAR-007]", "Search migration content inventory [MAR-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search category page boundary planning
 
 ## Purpose
-Produce a usable search category page boundary planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search category page boundary planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Split condition: a different verified membership rule and useful reader decision
 Each retained category has a clear membership rule and a distinct browsing purpose.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

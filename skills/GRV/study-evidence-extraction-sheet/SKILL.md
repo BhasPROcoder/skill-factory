@@ -3,10 +3,10 @@ id: GRV-004
 name: study-evidence-extraction-sheet
 domain: Evidence Review and Synthesis
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare study evidence extraction sheet from supplied evidence; use when the request concerns included source texts.
 triggers: ["study evidence extraction sheet", "prepare study evidence extraction sheet", "review my study evidence extraction sheet", "help me with study evidence extraction sheet", "turn included source texts into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Publication version and correction-status check [GRV-005]", "Conflicting findings map [GRV-006]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Extraction field | Source content | Location status | Interpretation note
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Extraction field | Source content | Location status | Interpretation note
 Outcome definition | Not supplied | Needs methods section | Do not assume scale meaning
 Improvement claim | Discussion statement | Results not supplied | Verify supporting observation
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Flag missing or inconsistent information for verification. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Do not assume scale meaning.
 ```
 
 **Bad output:**

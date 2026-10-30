@@ -3,9 +3,9 @@ id: MOP-009
 name: startup-operating-procedure-draft
 domain: Startup Operating Workflows
 subdomain: Design
-version: 1.0
-description: Startup operating procedure drafting using supplied evidence and explicit acceptance checks; use when preparing a startup operating procedure drafting deliverable.
-triggers: ["help me with startup operating procedure drafting", "prepare a startup operating procedure drafting deliverable", "review our startup operating procedure drafting evidence", "create a startup operating procedure drafting action plan", "check this startup operating procedure drafting decision"]
+version: 1.1
+description: Guide startup operating procedure drafting when working from observed workflow, decision points, required artifacts, and exception ownership.
+triggers: ["startup operating procedure drafting", "help with startup operating procedure drafting", "work on startup operating procedure draft", "review my startup operating procedure drafting", "apply startup operating procedure drafting to these materials"]
 not_for: ["Startup workflow retrospective preparation [MOP-010]", "Startup service intake design [MOP-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup operating procedure drafting
 
 ## Purpose
-Produce a usable startup operating procedure drafting deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup operating procedure drafting task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Completion dependency: name the role and condition from the actual workflow befo
 A new responsible team member can identify inputs, decisions, and owners without guessing.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

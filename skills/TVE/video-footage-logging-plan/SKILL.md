@@ -3,9 +3,9 @@ id: TVE-001
 name: video-footage-logging-plan
 domain: Video Editing Decisions
 subdomain: Story structure
-version: 1.0
-description: Produce a footage logging sheet; use when the task is to video footage logging plan.
-triggers: ["video footage logging plan", "help with a footage logging sheet", "review my a footage logging sheet", "prepare a footage logging sheet", "check video footage logging plan evidence"]
+version: 1.1
+description: Create a footage logging sheet from supplied evidence; use when preparing or reviewing footage logging sheet decisions.
+triggers: ["video footage logging plan", "help with a footage logging sheet", "review my footage logging sheet", "prepare a footage logging sheet", "check the evidence for this footage logging sheet"]
 not_for: ["video paper edit outline [TVE-002]", "video interview selects review [TVE-003]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a footage logging sheet and name the source artifacts used; retain a version or observation date where available.
 2. Assign stable identifiers to source clips
 3. Record only observed action, dialogue, framing, and technical issues
-4. ⚠️ Separate usable moments from unverified suggestions Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate usable moments from unverified suggestions. Do not silently replace missing evidence with an assumed successful outcome.
 5. Create retrieval tags tied to the story's actual needs
 6. Apply the domain check: Preserve the source material and distinguish a paper edit from an executed timeline; verify current destination specifications with the recipient.
 7. Verify the proposed result with this task-specific check: View each source clip and replace placeholders only with observed details. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Describe edit choices through visible actions, shot duration relative to an action, framing, cut motivation, caption placement, and sound transitions. Never invent footage contents, dialogue, defects, or timecodes when the media has not been inspected. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a footage logging sheet
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Clip names are available; visual and spoken contents are unverified.
 Decision: Create a log template with both clips marked unreviewed.
+Artifact: Clip log: interview_a — content unreviewed, source filename only; street_b — content unreviewed, source filename only. Required next evidence: playable clips or authorized production notes. No action, dialogue, defect, or timecode is inferred from the names.
 Action: Team owner — Create retrieval tags tied to the story's actual needs Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: View each source clip and replace placeholders only with observed details.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a footage logging sheet. The folder has clips interview_a and street_b but no playable media or production notes are supplied. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Clip names are available; visual and spoken contents are unverified.
 3. It preserves this task-specific conclusion: Create a log template with both clips marked unreviewed.
 4. It includes the verification check or explicitly marks it pending: View each source clip and replace placeholders only with observed details.

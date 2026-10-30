@@ -3,9 +3,9 @@ id: TML-002
 name: model-baseline-comparison-plan
 domain: Model Evaluation Design
 subdomain: Metrics
-version: 1.0
-description: Produce a baseline comparison plan; use when the task is to model baseline comparison plan.
-triggers: ["model baseline comparison plan", "help with a baseline comparison plan", "review my a baseline comparison plan", "prepare a baseline comparison plan", "check model baseline comparison plan evidence"]
+version: 1.1
+description: Create a baseline comparison plan from supplied evidence; use when preparing or reviewing baseline comparison plan decisions.
+triggers: ["model baseline comparison plan", "help with a baseline comparison plan", "review my baseline comparison plan", "prepare a baseline comparison plan", "check the evidence for this baseline comparison plan"]
 not_for: ["model confusion cost review [TML-003]", "model threshold selection plan [TML-004]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a baseline comparison plan and name the source artifacts used; retain a version or observation date where available.
 2. Define a simple baseline requiring no hidden future information
 3. Fit any baseline parameters using training data only
-4. ⚠️ Evaluate baseline and candidate on identical records Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Evaluate baseline and candidate on identical records. Do not silently replace missing evidence with an assumed successful outcome.
 5. Report the improvement alongside operational complexity
 6. Apply the domain check: Check separation of training, tuning, and final evaluation; connect the chosen metric to the real decision instead of assuming the leaderboard metric is sufficient.
 7. Verify the proposed result with this task-specific check: Compute both scores using the same held-out labels and denominator. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A model score is conditional on a dataset, split, metric, and prediction-time information. Protect held-out data from model-selection decisions and retain simple baselines that make improvement interpretable. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a baseline comparison plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The candidate underperforms this baseline on the fixture.
 Decision: Do not claim improvement; inspect errors and confirm the evaluation design.
+Artifact: Candidate accuracy: 8/10=0.8. Baseline accuracy: 9/10=0.9. Difference: candidate minus baseline=-0.1 on this fixture. Conclusion: no demonstrated improvement; inspect errors and evaluation design before adding complexity.
 Action: Team owner — Report the improvement alongside operational complexity Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compute both scores using the same held-out labels and denominator.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a baseline comparison plan. A candidate makes 8 correct predictions out of 10; the supplied constant baseline makes 9 out of 10. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The candidate underperforms this baseline on the fixture.
 3. It preserves this task-specific conclusion: Do not claim improvement; inspect errors and confirm the evaluation design.
 4. It includes the verification check or explicitly marks it pending: Compute both scores using the same held-out labels and denominator.

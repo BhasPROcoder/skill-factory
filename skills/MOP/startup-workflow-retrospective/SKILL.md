@@ -3,9 +3,9 @@ id: MOP-010
 name: startup-workflow-retrospective
 domain: Startup Operating Workflows
 subdomain: Design
-version: 1.0
-description: Startup workflow retrospective preparation using supplied evidence and explicit acceptance checks; use when preparing a startup workflow retrospective preparation deliverable.
-triggers: ["help me with startup workflow retrospective preparation", "prepare a startup workflow retrospective preparation deliverable", "review our startup workflow retrospective preparation evidence", "create a startup workflow retrospective preparation action plan", "check this startup workflow retrospective preparation decision"]
+version: 1.1
+description: Guide startup workflow retrospective preparation when working from recent delivery records, recurring exceptions, cycle delays, and team observations.
+triggers: ["startup workflow retrospective preparation", "help with startup workflow retrospective preparation", "work on startup workflow retrospective", "review my startup workflow retrospective preparation", "apply startup workflow retrospective preparation to these materials"]
 not_for: ["Startup service intake design [MOP-001]", "Startup support triage rule design [MOP-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup workflow retrospective preparation
 
 ## Purpose
-Produce a usable startup workflow retrospective preparation deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup workflow retrospective preparation task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Tool replacement: unsupported as the first remedy by this evidence.
 The proposed change addresses an observed workflow constraint and has a follow-up check.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

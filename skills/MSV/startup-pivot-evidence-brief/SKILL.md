@@ -3,9 +3,9 @@ id: MSV-010
 name: startup-pivot-evidence-brief
 domain: Startup Customer Validation
 subdomain: Design
-version: 1.0
-description: Startup pivot evidence brief preparation using supplied evidence and explicit acceptance checks; use when preparing a startup pivot evidence brief preparation deliverable.
-triggers: ["help me with startup pivot evidence brief preparation", "prepare a startup pivot evidence brief preparation deliverable", "review our startup pivot evidence brief preparation evidence", "create a startup pivot evidence brief preparation action plan", "check this startup pivot evidence brief preparation decision"]
+version: 1.1
+description: Guide startup pivot evidence brief preparation when working from current hypothesis, failed assumptions, alternative direction, and preserved assets.
+triggers: ["startup pivot evidence brief preparation", "help with startup pivot evidence brief preparation", "work on startup pivot evidence brief", "review my startup pivot evidence brief preparation", "apply startup pivot evidence brief preparation to these materials"]
 not_for: ["Startup problem hypothesis design [MSV-001]", "Startup assumption risk ordering [MSV-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup pivot evidence brief preparation
 
 ## Purpose
-Produce a usable startup pivot evidence brief preparation deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup pivot evidence brief preparation task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Next step: identify the challenged assumption and gather evidence relevant to th
 The brief distinguishes evidence against the current approach from evidence for the alternative.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

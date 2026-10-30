@@ -3,9 +3,9 @@ id: MSS-001
 name: fiction-premise-conflict-test
 domain: Fiction Story Structure
 subdomain: Design
-version: 1.0
-description: Fiction premise conflict testing using supplied evidence and explicit acceptance checks; use when preparing a fiction premise conflict testing deliverable.
-triggers: ["help me with fiction premise conflict testing", "prepare a fiction premise conflict testing deliverable", "review our fiction premise conflict testing evidence", "create a fiction premise conflict testing action plan", "check this fiction premise conflict testing decision"]
+version: 1.1
+description: Guide fiction premise conflict testing when working from premise, protagonist goal, opposition, and possible consequence.
+triggers: ["fiction premise conflict testing", "help with fiction premise conflict testing", "work on fiction premise conflict test", "review my fiction premise conflict testing", "apply fiction premise conflict testing to these materials"]
 not_for: ["Fiction causal outline repair [MSS-002]", "Fiction character arc mapping [MSS-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction premise conflict testing
 
 ## Purpose
-Produce a usable fiction premise conflict testing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction premise conflict testing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Build a premise around a keeper trying to recover a stolen catalog before the library loses its route. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Premise: A floating library's keeper must recover its stolen route catalog before the library drifts beyond the settlements that sustain it.
 Beats: catalog vanishes → keeper follows a former apprentice → pursuit costs the last safe mooring → keeper must choose between recovery and rescuing the thief.
 
@@ -111,7 +112,7 @@ Beats: catalog vanishes → keeper follows a former apprentice → pursuit costs
 The outline contains a goal, opposition, and consequences arising from choices.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MSV-008
 name: startup-founder-sales-learning-log
 domain: Startup Customer Validation
 subdomain: Design
-version: 1.0
-description: Startup founder-sales learning log using supplied evidence and explicit acceptance checks; use when preparing a startup founder-sales learning log deliverable.
-triggers: ["help me with startup founder-sales learning log", "prepare a startup founder-sales learning log deliverable", "review our startup founder-sales learning log evidence", "create a startup founder-sales learning log action plan", "check this startup founder-sales learning log decision"]
+version: 1.1
+description: Guide startup founder-sales learning log when working from sales conversations, objections, commitments, and buyer context.
+triggers: ["startup founder-sales learning log", "help with startup founder-sales learning log", "work on startup founder sales learning log", "review my startup founder-sales learning log", "apply startup founder-sales learning log to these materials"]
 not_for: ["Startup early-adopter recruitment screen [MSV-009]", "Startup pivot evidence brief preparation [MSV-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup founder-sales learning log
 
 ## Purpose
-Produce a usable startup founder-sales learning log deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup founder-sales learning log task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Next comparison: test the standard offer without assuming the concession is unne
 The log shows what was actually offered and what the buyer committed to.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

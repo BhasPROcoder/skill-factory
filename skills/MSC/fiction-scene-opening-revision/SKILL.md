@@ -3,9 +3,9 @@ id: MSC-007
 name: fiction-scene-opening-revision
 domain: Fiction Scene Craft
 subdomain: Design
-version: 1.0
-description: Fiction scene opening revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene opening revision deliverable.
-triggers: ["help me with fiction scene opening revision", "prepare a fiction scene opening revision deliverable", "review our fiction scene opening revision evidence", "create a fiction scene opening revision action plan", "check this fiction scene opening revision decision"]
+version: 1.1
+description: Guide fiction scene opening revision when working from scene draft, preceding scene, viewpoint, and first meaningful disturbance.
+triggers: ["fiction scene opening revision", "help with fiction scene opening revision", "work on fiction scene opening revision", "review my fiction scene opening revision", "apply fiction scene opening revision to these materials"]
 not_for: ["Fiction scene ending revision [MSC-008]", "Fiction emotional beat grounding [MSC-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction scene opening revision
 
 ## Purpose
-Produce a usable fiction scene opening revision deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction scene opening revision task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,13 +104,14 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Open with Mara encountering the locked door and retain only necessary orientation. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 The archive door was locked. Mara tried the handle again, gently this time, as though the metal might reconsider. On the other side, someone was dragging a chair toward the entrance.
 
 ## Acceptance check
 The opening establishes viewpoint and situation while introducing new scene information.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

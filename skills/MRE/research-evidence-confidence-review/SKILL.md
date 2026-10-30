@@ -3,9 +3,9 @@ id: MRE-007
 name: research-evidence-confidence-review
 domain: Customer and Market Research
 subdomain: Design
-version: 1.0
-description: Research evidence confidence review using supplied evidence and explicit acceptance checks; use when preparing a research evidence confidence review deliverable.
-triggers: ["help me with research evidence confidence review", "prepare a research evidence confidence review deliverable", "review our research evidence confidence review evidence", "create a research evidence confidence review action plan", "check this research evidence confidence review decision"]
+version: 1.1
+description: Guide research evidence confidence review when working from findings, source material, recruitment notes, and contradictory cases.
+triggers: ["research evidence confidence review", "help with research evidence confidence review", "work on research evidence confidence review", "review my research evidence confidence review", "apply research evidence confidence review to these materials"]
 not_for: ["Customer task observation protocol [MRE-008]", "Market research source triage [MRE-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Research evidence confidence review
 
 ## Purpose
-Produce a usable research evidence confidence review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this research evidence confidence review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Next recruitment question: what happened before they stopped using the service?
 Confidence language reflects evidence coverage rather than the author's conviction.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

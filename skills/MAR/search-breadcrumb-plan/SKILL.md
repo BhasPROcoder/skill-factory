@@ -3,9 +3,9 @@ id: MAR-005
 name: search-breadcrumb-plan
 domain: Search Site Architecture
 subdomain: Design
-version: 1.0
-description: Search breadcrumb planning using supplied evidence and explicit acceptance checks; use when preparing a search breadcrumb planning deliverable.
-triggers: ["help me with search breadcrumb planning", "prepare a search breadcrumb planning deliverable", "review our search breadcrumb planning evidence", "create a search breadcrumb planning action plan", "check this search breadcrumb planning decision"]
+version: 1.1
+description: Guide search breadcrumb planning when working from site hierarchy and representative multi-category pages.
+triggers: ["search breadcrumb planning", "help with search breadcrumb planning", "work on search breadcrumb plan", "review my search breadcrumb planning", "apply search breadcrumb planning to these materials"]
 not_for: ["Search category page boundary planning [MAR-006]", "Search filter navigation review brief [MAR-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search breadcrumb planning
 
 ## Purpose
-Produce a usable search breadcrumb planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search breadcrumb planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,15 +104,15 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Choose the route aligned with the page's primary catalog placement and retain alternate category links elsewhere. Owner: affected workstream lead.
 
 ## Artifact
-Preferred route concept: Catalog → Cabin luggage → Travel bag.
+Candidate route for owner review: Catalog → Cabin luggage → Travel bag.
 Alternate discovery route: Work accessories category link.
-Dependency: confirm these are real navigable categories before implementation; the preferred route reflects primary catalog placement.
+Unresolved: which parent is the approved primary catalog placement? Confirm that each segment exists and is navigable before accepting this proposed route.
 
 ## Acceptance check
 Each breadcrumb segment represents an actual navigable ancestor in the chosen structure.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

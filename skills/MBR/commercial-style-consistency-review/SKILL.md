@@ -3,9 +3,9 @@ id: MBR-008
 name: commercial-style-consistency-review
 domain: Commercial Brand and Editorial
 subdomain: Design
-version: 1.0
-description: Commercial style consistency review using supplied evidence and explicit acceptance checks; use when preparing a commercial style consistency review deliverable.
-triggers: ["help me with commercial style consistency review", "prepare a commercial style consistency review deliverable", "review our commercial style consistency review evidence", "create a commercial style consistency review action plan", "check this commercial style consistency review decision"]
+version: 1.1
+description: Guide commercial style consistency review when working from style rules, draft copy, audience, and approved terminology.
+triggers: ["commercial style consistency review", "help with commercial style consistency review", "work on commercial style consistency review", "review my commercial style consistency review", "apply commercial style consistency review to these materials"]
 not_for: ["Commercial asset reuse inventory [MBR-009]", "Commercial creative review rubric design [MBR-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Commercial style consistency review
 
 ## Purpose
-Produce a usable commercial style consistency review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this commercial style consistency review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -111,7 +111,7 @@ Exception to broad account wording: retain specific terms wherever behavior or r
 Edits improve consistency without changing factual or functional meaning.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

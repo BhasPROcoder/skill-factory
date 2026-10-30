@@ -3,10 +3,10 @@ id: GAS-009
 name: portfolio-evidence-selection
 domain: Learning Assessment
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare learning portfolio evidence selection from supplied evidence; use when the request concerns portfolio purpose.
 triggers: ["learning portfolio evidence selection", "prepare learning portfolio evidence selection", "review my learning portfolio evidence selection", "help me with learning portfolio evidence selection", "turn portfolio purpose into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Assessment results explanation [GAS-010]", "Analytic rubric design [GAS-001]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Criterion | Artifact | Evidence claim | Gap
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,14 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Criterion | Artifact | Evidence claim | Gap
 Individual reasoning | Individual draft | Shows own argument choices | Needs revision evidence
 Presentation polish | Group poster | Contribution unclear | Add role evidence or omit
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Selected evidence: individual draft, annotated to identify the learner's own argument choices.
+Conditional evidence: group poster, only with an account and supporting evidence of the learner's contribution relevant to writing.
+Missing evidence: a revision paired with the earlier individual draft, if development is a portfolio criterion.
+Annotation prompt: What decision did I make here, what evidence shows it, and what does this artifact not establish?
+Do not substitute visual polish for individual writing evidence.
+Next action: The requester or assigned reviewer will complete this task-specific check: Identify criteria still unsupported instead of filling space with unrelated work. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Needs revision evidence.
 ```
 
 **Bad output:**

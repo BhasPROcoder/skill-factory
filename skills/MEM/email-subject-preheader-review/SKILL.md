@@ -3,9 +3,9 @@ id: MEM-003
 name: email-subject-preheader-review
 domain: Lifecycle Email Planning
 subdomain: Design
-version: 1.0
-description: Email subject and preheader review using supplied evidence and explicit acceptance checks; use when preparing a email subject and preheader review deliverable.
-triggers: ["help me with email subject and preheader review", "prepare a email subject and preheader review deliverable", "review our email subject and preheader review evidence", "create a email subject and preheader review action plan", "check this email subject and preheader review decision"]
+version: 1.1
+description: Guide email subject and preheader review when working from message body, subject candidates, preheaders, and audience expectations.
+triggers: ["email subject and preheader review", "help with email subject and preheader review", "work on email subject preheader review", "review my email subject and preheader review", "apply email subject and preheader review to these materials"]
 not_for: ["Email primary-action editing [MEM-004]", "Email reactivation briefing [MEM-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Email subject and preheader review
 
 ## Purpose
-Produce a usable email subject and preheader review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this email subject and preheader review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Reason: no verified expiry was supplied.
 Subject and preheader accurately preview the message without invented pressure.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MVA-004
 name: visual-type-pairing-brief
 domain: Visual Composition and Art Direction
 subdomain: Design
-version: 1.0
-description: Visual typography pairing brief using supplied evidence and explicit acceptance checks; use when preparing a visual typography pairing brief deliverable.
-triggers: ["help me with visual typography pairing brief", "prepare a visual typography pairing brief deliverable", "review our visual typography pairing brief evidence", "create a visual typography pairing brief action plan", "check this visual typography pairing brief decision"]
+version: 1.1
+description: Guide visual typography pairing brief when working from content hierarchy, reading context, available typefaces, and licensing constraints.
+triggers: ["visual typography pairing brief", "help with visual typography pairing brief", "work on visual type pairing brief", "review my visual typography pairing brief", "apply visual typography pairing brief to these materials"]
 not_for: ["Visual reference board briefing [MVA-005]", "Visual poster composition planning [MVA-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Visual typography pairing brief
 
 ## Purpose
-Produce a usable visual typography pairing brief deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this visual typography pairing brief task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Reserve the display face for a short heading and use a readable body treatment. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Display role: short heading only.
 Body role: readable instruction text evaluated at actual card size.
 Supporting role: labels distinct through consistent weight and spacing.
@@ -113,7 +114,7 @@ Do not use the decorative face for dense small instructions without proving read
 The pairing is evaluated using real content at the intended output context.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

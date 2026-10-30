@@ -3,9 +3,9 @@ id: MSA-009
 name: sales-loss-reason-analysis
 domain: Sales Process Enablement
 subdomain: Design
-version: 1.0
-description: Sales loss reason analysis using supplied evidence and explicit acceptance checks; use when preparing a sales loss reason analysis deliverable.
-triggers: ["help me with sales loss reason analysis", "prepare a sales loss reason analysis deliverable", "review our sales loss reason analysis evidence", "create a sales loss reason analysis action plan", "check this sales loss reason analysis decision"]
+version: 1.1
+description: Guide sales loss reason analysis when working from closed opportunity notes, buyer feedback, alternatives, and process history.
+triggers: ["sales loss reason analysis", "help with sales loss reason analysis", "work on sales loss reason analysis", "review my sales loss reason analysis", "apply sales loss reason analysis to these materials"]
 not_for: ["Sales collateral gap review [MSA-010]", "Sales discovery question planning [MSA-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Sales loss reason analysis
 
 ## Purpose
-Produce a usable sales loss reason analysis deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this sales loss reason analysis task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Follow-up: seek actual buyer feedback where appropriate and authorized.
 The analysis separates stated, inferred, and unknown loss reasons.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

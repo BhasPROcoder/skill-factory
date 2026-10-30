@@ -3,9 +3,9 @@ id: MSV-003
 name: startup-customer-commitment-ladder
 domain: Startup Customer Validation
 subdomain: Design
-version: 1.0
-description: Startup customer commitment evidence mapping using supplied evidence and explicit acceptance checks; use when preparing a startup customer commitment evidence mapping deliverable.
-triggers: ["help me with startup customer commitment evidence mapping", "prepare a startup customer commitment evidence mapping deliverable", "review our startup customer commitment evidence mapping evidence", "create a startup customer commitment evidence mapping action plan", "check this startup customer commitment evidence mapping decision"]
+version: 1.1
+description: Guide startup customer commitment evidence mapping when working from customer interactions, requested actions, and observed responses.
+triggers: ["startup customer commitment evidence mapping", "help with startup customer commitment evidence mapping", "work on startup customer commitment ladder", "review my startup customer commitment evidence mapping", "apply startup customer commitment evidence mapping to these materials"]
 not_for: ["Startup concierge test planning [MSV-004]", "Startup landing-page test briefing [MSV-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup customer commitment evidence mapping
 
 ## Purpose
-Produce a usable startup customer commitment evidence mapping deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup customer commitment evidence mapping task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Next test: request a relevant concrete action and record acceptance, refusal, or
 The conclusion names the observed commitment and does not infer an unobserved purchase.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

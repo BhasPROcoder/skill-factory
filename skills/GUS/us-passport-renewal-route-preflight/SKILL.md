@@ -3,10 +3,10 @@ id: GUS-003
 name: us-passport-renewal-route-preflight
 domain: US Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare passport renewal route preflight from supplied evidence; use when the request concerns current passport facts.
 triggers: ["passport renewal route preflight", "prepare passport renewal route preflight", "review my passport renewal route preflight", "help me with passport renewal route preflight", "turn current passport facts into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Social record replacement preparation [GUS-004]", "Local permit intake checklist [GUS-005]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Route criterion | Applicant fact | Assessment status | Verification
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +86,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Route criterion | Applicant fact | Assessment status | Verification
 Renewal route | Applicant requests renewal | Unconfirmed | Check official criteria
 Travel constraint | Travel planned | Timing feasibility unknown | Verify current agency options
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a route decision worksheet that leaves unresolved criteria as questions for the responsible agency. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Check official criteria.
 ```
 
 **Bad output:**

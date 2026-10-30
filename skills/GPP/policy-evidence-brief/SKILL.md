@@ -3,10 +3,10 @@ id: GPP-008
 name: policy-evidence-brief
 domain: Public Policy Analysis
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare policy evidence brief from supplied evidence; use when the request concerns policy question.
 triggers: ["policy evidence brief", "prepare policy evidence brief", "review my policy evidence brief", "help me with policy evidence brief", "turn policy question into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Policy scenario stress test [GPP-009]", "Policy review question agenda [GPP-010]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Evidence item | Relevance | Limitation | Decision implication
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +76,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional analyst Rin reviews a pilot in a small office for a proposed regional rollout.
+> Fictional scenario: Fictional analyst Rin reviews a pilot in a small office for a proposed regional rollout. A pilot report and regional demand records are supplied; the regional records contain no intervention comparison.
 
 **Output:**
 ```text
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Evidence item | Relevance | Limitation | Decision implication
 Pilot report | Similar service task | Different scale | Suggests questions for rollout
 Regional records | Local demand context | No intervention comparison | Informs implementation planning
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Write a brief that states what the evidence supports and what remains a value or implementation choice. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Suggests questions for rollout.
 ```
 
 **Bad output:**

@@ -2,10 +2,10 @@
 id: TAP-009
 name: api-client-timeout-allocation
 domain: API Contract Engineering
-subdomain: Requests
-version: 1.0
-description: Produce a client timeout allocation plan; use when the task is to api client timeout allocation.
-triggers: ["api client timeout allocation", "help with a client timeout allocation plan", "review my a client timeout allocation plan", "prepare a client timeout allocation plan", "check api client timeout allocation evidence"]
+subdomain: Reliability
+version: 1.1
+description: Create a client timeout allocation plan from supplied evidence; use when preparing or reviewing client timeout allocation plan decisions.
+triggers: ["api client timeout allocation", "help with a client timeout allocation plan", "review my client timeout allocation plan", "prepare a client timeout allocation plan", "check the evidence for this client timeout allocation plan"]
 not_for: ["api contract test fixture design [TAP-010]", "api request schema review [TAP-001]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a client timeout allocation plan and name the source artifacts used; retain a version or observation date where available.
 2. Define the deadline from the caller's perspective
 3. Allocate time across connection, processing, and response stages
-4. ⚠️ Account for queued time and retries within the same budget Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Account for queued time and retries within the same budget. Do not silently replace missing evidence with an assumed successful outcome.
 5. Specify cancellation and cleanup behavior
 6. Apply the domain check: Use explicit request and response fixtures; distinguish logical operation identity from transport attempts and preserve backward-compatibility assumptions.
 7. Verify the proposed result with this task-specific check: Recompute remaining time after each completed or timed-out stage. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: An API contract includes observable failure behavior and client assumptions as well as the happy path. Verify current framework and protocol details in official documentation before writing integration-specific code. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a client timeout allocation plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Only 3 seconds remain in the original total budget.
 Decision: Use the remaining budget or stop rather than restarting the full deadline.
+Artifact: End-to-end budget=10 seconds; consumed=7 seconds; remaining=3 seconds. Proposed next attempt may use no more than the remaining budget, including relevant waiting stages, or the caller stops. Do not reset the total deadline on retry.
 Action: Team owner — Specify cancellation and cleanup behavior Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Recompute remaining time after each completed or timed-out stage.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a client timeout allocation plan. The caller permits 10 seconds total; the first attempt uses 7; a second attempt proposes another 10. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Only 3 seconds remain in the original total budget.
 3. It preserves this task-specific conclusion: Use the remaining budget or stop rather than restarting the full deadline.
 4. It includes the verification check or explicitly marks it pending: Recompute remaining time after each completed or timed-out stage.

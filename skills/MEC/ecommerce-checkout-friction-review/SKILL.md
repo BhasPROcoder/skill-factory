@@ -3,9 +3,9 @@ id: MEC-005
 name: ecommerce-checkout-friction-review
 domain: E-commerce Customer Experience
 subdomain: Design
-version: 1.0
-description: Checkout friction review planning using supplied evidence and explicit acceptance checks; use when preparing a checkout friction review planning deliverable.
-triggers: ["help me with checkout friction review planning", "prepare a checkout friction review planning deliverable", "review our checkout friction review planning evidence", "create a checkout friction review planning action plan", "check this checkout friction review planning decision"]
+version: 1.1
+description: Guide checkout friction review planning when working from checkout steps, field purposes, observed issues, and order requirements.
+triggers: ["checkout friction review planning", "help with checkout friction review planning", "work on ecommerce checkout friction review", "review my checkout friction review planning", "apply checkout friction review planning to these materials"]
 not_for: ["Product comparison table design [MEC-006]", "Return process content clarity review [MEC-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Checkout friction review planning
 
 ## Purpose
-Produce a usable checkout friction review planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this checkout friction review planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Acceptance case: a consumer completes checkout without inventing a company name.
 A consumer can complete checkout without inventing irrelevant information.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

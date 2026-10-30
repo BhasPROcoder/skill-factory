@@ -3,10 +3,10 @@ id: GPR-009
 name: personal-information-retrieval-design
 domain: Personal Work Organization
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare personal information retrieval design from supplied evidence; use when the request concerns frequently needed information.
 triggers: ["personal information retrieval design", "prepare personal information retrieval design", "review my personal information retrieval design", "help me with personal information retrieval design", "turn frequently needed information into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Overdue commitment recovery plan [GPR-010]", "Task inbox triage [GPR-001]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Information type | Retrieval question | Organization choice | Test
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Information type | Retrieval question | Organization choice | Test
 Decision note | What was agreed? | Index by project and meeting reference | Find current decision
 Source file | Where is original? | Keep one canonical location | Link from index
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Remove redundant categories that do not help find information. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Find current decision.
 ```
 
 **Bad output:**

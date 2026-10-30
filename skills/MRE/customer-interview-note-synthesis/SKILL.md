@@ -3,9 +3,9 @@ id: MRE-003
 name: customer-interview-note-synthesis
 domain: Customer and Market Research
 subdomain: Design
-version: 1.0
-description: Customer interview note synthesis using supplied evidence and explicit acceptance checks; use when preparing a customer interview note synthesis deliverable.
-triggers: ["help me with customer interview note synthesis", "prepare a customer interview note synthesis deliverable", "review our customer interview note synthesis evidence", "create a customer interview note synthesis action plan", "check this customer interview note synthesis decision"]
+version: 1.1
+description: Guide customer interview note synthesis when working from interview notes, participant context, and research questions.
+triggers: ["customer interview note synthesis", "help with customer interview note synthesis", "work on customer interview note synthesis", "review my customer interview note synthesis", "apply customer interview note synthesis to these materials"]
 not_for: ["Survey question repair [MRE-004]", "Research method selection brief [MRE-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Customer interview note synthesis
 
 ## Purpose
-Produce a usable customer interview note synthesis deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this customer interview note synthesis task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Next step: targeted follow-up on export context before treating it as recurring 
 Each finding states its evidence coverage and preserves contradictory observations.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

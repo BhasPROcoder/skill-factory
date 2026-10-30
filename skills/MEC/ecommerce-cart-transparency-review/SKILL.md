@@ -3,9 +3,9 @@ id: MEC-004
 name: ecommerce-cart-transparency-review
 domain: E-commerce Customer Experience
 subdomain: Design
-version: 1.0
-description: Cart information transparency review using supplied evidence and explicit acceptance checks; use when preparing a cart information transparency review deliverable.
-triggers: ["help me with cart information transparency review", "prepare a cart information transparency review deliverable", "review our cart information transparency review evidence", "create a cart information transparency review action plan", "check this cart information transparency review decision"]
+version: 1.1
+description: Guide cart information transparency review when working from cart display, verified pricing components, shipping rules, and availability.
+triggers: ["cart information transparency review", "help with cart information transparency review", "work on ecommerce cart transparency review", "review my cart information transparency review", "apply cart information transparency review to these materials"]
 not_for: ["Checkout friction review planning [MEC-005]", "Product comparison table design [MEC-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Cart information transparency review
 
 ## Purpose
-Produce a usable cart information transparency review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this cart information transparency review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Do not label the current subtotal a final total.
 The cart distinguishes known amounts from components awaiting customer information.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

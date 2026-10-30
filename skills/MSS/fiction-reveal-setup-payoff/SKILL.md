@@ -3,9 +3,9 @@ id: MSS-005
 name: fiction-reveal-setup-payoff
 domain: Fiction Story Structure
 subdomain: Design
-version: 1.0
-description: Fiction reveal setup and payoff planning using supplied evidence and explicit acceptance checks; use when preparing a fiction reveal setup and payoff planning deliverable.
-triggers: ["help me with fiction reveal setup and payoff planning", "prepare a fiction reveal setup and payoff planning deliverable", "review our fiction reveal setup and payoff planning evidence", "create a fiction reveal setup and payoff planning action plan", "check this fiction reveal setup and payoff planning decision"]
+version: 1.1
+description: Guide fiction reveal setup and payoff planning when working from planned revelation, earlier clues, viewpoint limits, and desired reader response.
+triggers: ["fiction reveal setup and payoff planning", "help with fiction reveal setup and payoff planning", "work on fiction reveal setup payoff", "review my fiction reveal setup and payoff planning", "apply fiction reveal setup and payoff planning to these materials"]
 not_for: ["Fiction stakes escalation mapping [MSS-006]", "Fiction antagonist action planning [MSS-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction reveal setup and payoff planning
 
 ## Purpose
-Produce a usable fiction reveal setup and payoff planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction reveal setup and payoff planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Change what Mara knows or establish a narrative form that permits the omission. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Fair setup option: Mara notices inconsistent handwriting but does not know the forger.
 Clue: Ivo avoids writing in her presence.
 Reveal: a later document links the handwriting to him.
@@ -113,7 +114,7 @@ Boundary: do not silently give Mara knowledge that her close viewpoint conceals.
 Earlier scenes remain coherent when reread with the revelation known.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

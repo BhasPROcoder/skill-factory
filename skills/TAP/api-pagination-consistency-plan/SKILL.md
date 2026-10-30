@@ -2,10 +2,10 @@
 id: TAP-003
 name: api-pagination-consistency-plan
 domain: API Contract Engineering
-subdomain: Compatibility
-version: 1.0
-description: Produce a pagination consistency specification; use when the task is to api pagination consistency plan.
-triggers: ["api pagination consistency plan", "help with a pagination consistency specification", "review my a pagination consistency specification", "prepare a pagination consistency specification", "check api pagination consistency plan evidence"]
+subdomain: Responses
+version: 1.1
+description: Create a pagination consistency specification from supplied evidence; use when preparing or reviewing pagination consistency specification decisions.
+triggers: ["api pagination consistency plan", "help with a pagination consistency specification", "review my pagination consistency specification", "prepare a pagination consistency specification", "check the evidence for this pagination consistency specification"]
 not_for: ["api retry budget design [TAP-004]", "api idempotency key contract [TAP-005]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a pagination consistency specification and name the source artifacts used; retain a version or observation date where available.
 2. Define a deterministic ordering with a unique tie-breaker
 3. Specify what the cursor identifies and whether a snapshot is used
-4. ⚠️ Analyze inserts and updates between page requests Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Analyze inserts and updates between page requests. Do not silently replace missing evidence with an assumed successful outcome.
 5. Document duplicate and omission behavior under mutation
 6. Apply the domain check: Use explicit request and response fixtures; distinguish logical operation identity from transport attempts and preserve backward-compatibility assumptions.
 7. Verify the proposed result with this task-specific check: Traverse a fixture with tied sort values and inspect complete identifier coverage. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: An API contract includes observable failure behavior and client assumptions as well as the happy path. Verify current framework and protocol details in official documentation before writing integration-specific code. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a pagination consistency specification
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The order of tied records is unspecified.
 Decision: Add a stable unique tie-breaker and define mutation semantics.
+Artifact: Ordering proposal: creation time followed by stable unique record ID. Tied fixture order: a before b under the declared ascending ID order. Cursor and mutation/snapshot semantics remain explicit contract decisions; a tie-breaker alone does not solve all insertion or update effects.
 Action: Team owner — Document duplicate and omission behavior under mutation Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Traverse a fixture with tied sort values and inspect complete identifier coverage.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a pagination consistency specification. Records a and b share the same creation time; pagination sorts only by creation time. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The order of tied records is unspecified.
 3. It preserves this task-specific conclusion: Add a stable unique tie-breaker and define mutation semantics.
 4. It includes the verification check or explicitly marks it pending: Traverse a fixture with tied sort values and inspect complete identifier coverage.

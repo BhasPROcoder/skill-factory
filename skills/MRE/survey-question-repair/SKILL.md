@@ -3,9 +3,9 @@ id: MRE-004
 name: survey-question-repair
 domain: Customer and Market Research
 subdomain: Design
-version: 1.0
-description: Survey question repair using supplied evidence and explicit acceptance checks; use when preparing a survey question repair deliverable.
-triggers: ["help me with survey question repair", "prepare a survey question repair deliverable", "review our survey question repair evidence", "create a survey question repair action plan", "check this survey question repair decision"]
+version: 1.1
+description: Guide survey question repair when working from draft questions, answer options, and intended analysis.
+triggers: ["survey question repair", "help with survey question repair", "work on survey question repair", "review my survey question repair", "apply survey question repair to these materials"]
 not_for: ["Research method selection brief [MRE-005]", "Customer problem statement review [MRE-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Survey question repair
 
 ## Purpose
-Produce a usable survey question repair deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this survey question repair task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,15 +104,15 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Create separate usage-frequency and satisfaction questions with suitable response options. Owner: affected workstream lead.
 
 ## Artifact
-Item A: During the stated period, how often did you use the service?
-Item B: How satisfied were you with the service during that period?
-Design dependency: define the period and response options for the actual audience, including non-use where applicable.
+Proposed item A: During [AGREED PERIOD], on how many occasions did you use the service? Response: nonnegative count, including zero; or I do not know.
+Proposed item B, for users during that period: How satisfied were you with the service? Responses: very dissatisfied; dissatisfied; neither satisfied nor dissatisfied; satisfied; very satisfied; unable to judge.
+Branch: nonusers skip satisfaction. Confirm period and audience fit before fielding.
 
 ## Acceptance check
 Each revised item measures one stated construct and offers applicable responses.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

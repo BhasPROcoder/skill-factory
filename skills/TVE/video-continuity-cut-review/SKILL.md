@@ -2,10 +2,10 @@
 id: TVE-004
 name: video-continuity-cut-review
 domain: Video Editing Decisions
-subdomain: Delivery
-version: 1.0
-description: Produce a continuity edit review; use when the task is to video continuity cut review.
-triggers: ["video continuity cut review", "help with a continuity edit review", "review my a continuity edit review", "prepare a continuity edit review", "check video continuity cut review evidence"]
+subdomain: Continuity
+version: 1.1
+description: Create a continuity edit review from supplied evidence; use when preparing or reviewing continuity edit review decisions.
+triggers: ["video continuity cut review", "help with a continuity edit review", "review my continuity edit review", "prepare a continuity edit review", "check the evidence for this continuity edit review"]
 not_for: ["video broll coverage plan [TVE-005]", "video pacing revision plan [TVE-006]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a continuity edit review and name the source artifacts used; retain a version or observation date where available.
 2. Identify the action or attention shift motivating each cut
 3. Compare position and movement across the proposed boundary
-4. ⚠️ Separate intentional discontinuity from accidental confusion Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate intentional discontinuity from accidental confusion. Do not silently replace missing evidence with an assumed successful outcome.
 5. Choose a cut point or bridge shot supported by available footage
 6. Apply the domain check: Preserve the source material and distinguish a paper edit from an executed timeline; verify current destination specifications with the recipient.
 7. Verify the proposed result with this task-specific check: Watch the sequence without production context and check action comprehension. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Describe edit choices through visible actions, shot duration relative to an action, framing, cut motivation, caption placement, and sound transitions. Never invent footage contents, dialogue, defects, or timecodes when the media has not been inspected. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a continuity edit review
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The planned cut may imply a direction change unsupported by the notes.
 Decision: Review the actual shots and choose a clarifying transition or motivated orientation reset.
+Artifact: Boundary observation: left-to-right motion becomes right-to-left without a stated location reset. Options for actual-footage review: motivated orientation reset or available clarifying bridge. Acceptance: an unfamiliar viewer understands whether direction intentionally changes.
 Action: Team owner — Choose a cut point or bridge shot supported by available footage Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Watch the sequence without production context and check action comprehension.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a continuity edit review. The supplied shot notes show a person moving left-to-right before a cut and right-to-left after it without a change of location. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The planned cut may imply a direction change unsupported by the notes.
 3. It preserves this task-specific conclusion: Review the actual shots and choose a clarifying transition or motivated orientation reset.
 4. It includes the verification check or explicitly marks it pending: Watch the sequence without production context and check action comprehension.

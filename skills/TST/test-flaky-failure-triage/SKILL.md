@@ -3,9 +3,9 @@ id: TST-007
 name: test-flaky-failure-triage
 domain: Software Verification Design
 subdomain: Failure diagnosis
-version: 1.0
-description: Produce a flaky test investigation plan; use when the task is to test flaky failure triage.
-triggers: ["test flaky failure triage", "help with a flaky test investigation plan", "review my a flaky test investigation plan", "prepare a flaky test investigation plan", "check test flaky failure triage evidence"]
+version: 1.1
+description: Create a flaky test investigation plan from supplied evidence; use when preparing or reviewing flaky test investigation plan decisions.
+triggers: ["test flaky failure triage", "help with a flaky test investigation plan", "review my flaky test investigation plan", "prepare a flaky test investigation plan", "check the evidence for this flaky test investigation plan"]
 not_for: ["test mock boundary review [TST-008]", "test concurrency interleaving plan [TST-009]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a flaky test investigation plan and name the source artifacts used; retain a version or observation date where available.
 2. Separate reproducible failures from intermittent observations
 3. Compare passing and failing runs for shared state and ordering
-4. ⚠️ Control one suspected source of nondeterminism at a time Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Control one suspected source of nondeterminism at a time. Do not silently replace missing evidence with an assumed successful outcome.
 5. Preserve a reproducible seed or schedule when found
 6. Apply the domain check: Keep fixtures small enough to inspect, preserve the failure signal, and report what the test does not establish.
 7. Verify the proposed result with this task-specific check: Run the implicated test sequence and the isolated test under controlled state. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A test should distinguish correct behavior from a plausible defect. Derive expected results from a contract or independent example rather than copying the implementation under test. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a flaky test investigation plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The failure depends on test order and shared state.
 Decision: Isolate or restore the shared fixture and reproduce both orders.
+Artifact: Failure sequence: test A modifies shared clock; test B then fails; B alone passes. Reproduction plan: both orders with recorded initial state. Correction target: isolate or restore the clock fixture; a later retry pass does not close the cause.
 Action: Team owner — Preserve a reproducible seed or schedule when found Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Run the implicated test sequence and the isolated test under controlled state.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a flaky test investigation plan. The test passes alone but fails after another test modifies a shared clock fixture. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The failure depends on test order and shared state.
 3. It preserves this task-specific conclusion: Isolate or restore the shared fixture and reproduce both orders.
 4. It includes the verification check or explicitly marks it pending: Run the implicated test sequence and the isolated test under controlled state.

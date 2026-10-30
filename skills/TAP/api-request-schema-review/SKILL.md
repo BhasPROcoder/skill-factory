@@ -3,9 +3,9 @@ id: TAP-001
 name: api-request-schema-review
 domain: API Contract Engineering
 subdomain: Requests
-version: 1.0
-description: Produce a request schema review; use when the task is to api request schema review.
-triggers: ["api request schema review", "help with a request schema review", "review my a request schema review", "prepare a request schema review", "check api request schema review evidence"]
+version: 1.1
+description: Create a request schema review from supplied evidence; use when preparing or reviewing request schema review decisions.
+triggers: ["api request schema review", "help with a request schema review", "review my request schema review", "prepare a request schema review", "check the evidence for this request schema review"]
 not_for: ["api error response contract [TAP-002]", "api pagination consistency plan [TAP-003]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a request schema review and name the source artifacts used; retain a version or observation date where available.
 2. Distinguish absent fields from explicit empty or null values
 3. Identify fields whose type alone does not capture valid meaning
-4. ⚠️ Define accepted and rejected boundary fixtures Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Define accepted and rejected boundary fixtures. Do not silently replace missing evidence with an assumed successful outcome.
 5. Return a schema change proposal with compatibility notes
 6. Apply the domain check: Use explicit request and response fixtures; distinguish logical operation identity from transport attempts and preserve backward-compatibility assumptions.
 7. Verify the proposed result with this task-specific check: Test omitted, null, empty-string, and ordinary-value requests separately. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: An API contract includes observable failure behavior and client assumptions as well as the happy path. Verify current framework and protocol details in official documentation before writing integration-specific code. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a request schema review
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The contract assigns different semantics to absence and null.
 Decision: Preserve that distinction in parsing and update logic.
+Artifact: Partial-update contract: nickname omitted → preserve current nickname; nickname=null → clear nickname. Valid fixtures: {} and {"nickname": null}, with intentionally different outcomes. Do not default both cases to the same internal value before interpreting intent.
 Action: Team owner — Return a schema change proposal with compatibility notes Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Test omitted, null, empty-string, and ordinary-value requests separately.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a request schema review. Omitting nickname means keep it; sending nickname as null means clear it. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The contract assigns different semantics to absence and null.
 3. It preserves this task-specific conclusion: Preserve that distinction in parsing and update logic.
 4. It includes the verification check or explicitly marks it pending: Test omitted, null, empty-string, and ordinary-value requests separately.

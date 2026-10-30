@@ -3,9 +3,9 @@ id: MME-004
 name: marketing-dashboard-decision-map
 domain: Marketing Measurement Decisions
 subdomain: Design
-version: 1.0
-description: Marketing dashboard decision mapping using supplied evidence and explicit acceptance checks; use when preparing a marketing dashboard decision mapping deliverable.
-triggers: ["help me with marketing dashboard decision mapping", "prepare a marketing dashboard decision mapping deliverable", "review our marketing dashboard decision mapping evidence", "create a marketing dashboard decision mapping action plan", "check this marketing dashboard decision mapping decision"]
+version: 1.1
+description: Guide marketing dashboard decision mapping when working from current dashboard, stakeholder decisions, and metric definitions.
+triggers: ["marketing dashboard decision mapping", "help with marketing dashboard decision mapping", "work on marketing dashboard decision map", "review my marketing dashboard decision mapping", "apply marketing dashboard decision mapping to these materials"]
 not_for: ["Campaign performance comparison [MME-005]", "Marketing attribution interpretation review [MME-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Marketing dashboard decision mapping
 
 ## Purpose
-Produce a usable marketing dashboard decision mapping deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this marketing dashboard decision mapping task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -114,7 +114,7 @@ Required context: metric definition, relevant comparison, and freshness.
 Each primary chart has a decision, owner, definition, and freshness note.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

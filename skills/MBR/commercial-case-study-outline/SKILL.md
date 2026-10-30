@@ -3,9 +3,9 @@ id: MBR-004
 name: commercial-case-study-outline
 domain: Commercial Brand and Editorial
 subdomain: Design
-version: 1.0
-description: Commercial case study outline design using supplied evidence and explicit acceptance checks; use when preparing a commercial case study outline design deliverable.
-triggers: ["help me with commercial case study outline design", "prepare a commercial case study outline design deliverable", "review our commercial case study outline design evidence", "create a commercial case study outline design action plan", "check this commercial case study outline design decision"]
+version: 1.1
+description: Guide commercial case study outline design when working from customer-approved facts, situation, intervention, outcomes, and permission constraints.
+triggers: ["commercial case study outline design", "help with commercial case study outline design", "work on commercial case study outline", "review my commercial case study outline design", "apply commercial case study outline design to these materials"]
 not_for: ["Commercial editorial calendar planning [MBR-005]", "Commercial content repurposing planning [MBR-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Commercial case study outline design
 
 ## Purpose
-Produce a usable commercial case study outline design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this commercial case study outline design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Identifying details: include only within confirmed permission.
 Quotes and identifying details are approved or explicitly withheld.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

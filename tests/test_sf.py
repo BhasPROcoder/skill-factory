@@ -51,6 +51,27 @@ class RegistrySafety(unittest.TestCase):
         self.assertEqual(code,1)
         self.assertIn('file missing',output)
 
+    def test_migration_rejects_unmapped_source(self):
+        source = self.root / 'source'
+        (source / 'unmapped').mkdir(parents=True)
+        (source / 'unmapped' / 'SKILL.md').write_text('source', encoding='utf-8')
+        mapping = self.root / 'mapping.json'
+        mapping.write_text('[]', encoding='utf-8')
+        code, _ = self.invoke(sf.cmd_migration_check, [str(source), str(mapping)])
+        self.assertIn('unmapped sources', str(code))
+
+    def test_removal_receipt_rejects_changed_target(self):
+        source = self.root / 'removed-source'
+        row = dict(id='ZZ-001', name='fixture-review', domain_code='ZZ', status='validated')
+        Path(sf.REG).write_text(json.dumps(row) + '\n', encoding='utf-8')
+        target = Path(sf.spath(row))
+        target.parent.mkdir(parents=True)
+        target.write_text('changed', encoding='utf-8')
+        receipt = self.root / 'receipt.json'
+        receipt.write_text(json.dumps(dict(source_folder=str(source.resolve()), sources={'old':'hash'}, targets={'ZZ-001':'wrong-digest'})), encoding='utf-8')
+        code, _ = self.invoke(sf.cmd_migration_check, ['--removed', str(source), str(receipt)])
+        self.assertIn('target changed', str(code))
+
     def make_batch(self, duplicate=False):
         domain=dict(code='ZZ',name='Test',macro='Writing & Editing',scope='Test only.',subdomains=['Review'])
         row=dict(id='ZZ-001',name='fixture-review',domain_code='ZZ',subdomain='Review',description='Review fixture.',risk_level='low',requires=[],status='planned')
@@ -76,6 +97,16 @@ class RegistrySafety(unittest.TestCase):
         self.assertEqual(code,0)
         self.assertEqual(before,Path(sf.REG).read_bytes())
         self.assertIn('domains=0 skills=0',output)
+
+    def test_missing_prerequisite_rejects_whole_batch(self):
+        path=self.make_batch()
+        batch=json.loads(path.read_text(encoding='utf-8'))
+        batch['skills'][0]['requires']=['ZZ-099']
+        path.write_text(json.dumps(batch),encoding='utf-8')
+        code,_=self.invoke(sf.cmd_ingest,[str(path)])
+        self.assertNotEqual(code,0)
+        self.assertEqual(Path(sf.DOM).read_text(),'')
+        self.assertEqual(Path(sf.REG).read_text(),'')
 
 
 if __name__ == '__main__':

@@ -1,0 +1,167 @@
+{
+  "domains": [
+    {
+      "code": "COP",
+      "name": "Venture Operations Preparation",
+      "macro": "Business & Strategy",
+      "scope": "Prepare evidence-based financing, operating, ownership, and relationship decisions without substituting for regulated advice or external execution.",
+      "subdomains": [
+        "Transaction preparation",
+        "Operating records",
+        "People and relationships"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "COP-001",
+      "name": "acquisition-diligence-release-plan",
+      "domain_code": "COP",
+      "subdomain": "Transaction preparation",
+      "description": "Prepare a acquisition diligence release plan from supplied evidence when the decision concerns transaction purpose.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-002",
+      "name": "receivables-exception-resolution",
+      "domain_code": "COP",
+      "subdomain": "Operating records",
+      "description": "Prepare a receivables exception resolution from supplied evidence when the decision concerns invoice and delivery evidence.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-003",
+      "name": "consent-purpose-flow-review",
+      "domain_code": "COP",
+      "subdomain": "Operating records",
+      "description": "Prepare a consent and purpose flow review from supplied evidence when the decision concerns data inventory.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-004",
+      "name": "ownership-grant-decision-brief",
+      "domain_code": "COP",
+      "subdomain": "Transaction preparation",
+      "description": "Prepare a ownership grant decision brief from supplied evidence when the decision concerns proposed recipient and contribution.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-005",
+      "name": "role-work-sample-design",
+      "domain_code": "COP",
+      "subdomain": "People and relationships",
+      "description": "Prepare a role work-sample design from supplied evidence when the decision concerns role outcomes.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-006",
+      "name": "venture-cash-record-reconciliation",
+      "domain_code": "COP",
+      "subdomain": "Operating records",
+      "description": "Prepare a venture cash record reconciliation from supplied evidence when the decision concerns account statements.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-007",
+      "name": "fundraising-evidence-narrative",
+      "domain_code": "COP",
+      "subdomain": "Transaction preparation",
+      "description": "Prepare a fundraising evidence narrative from supplied evidence when the decision concerns business problem and customer evidence.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-008",
+      "name": "tax-event-evidence-docket",
+      "domain_code": "COP",
+      "subdomain": "Operating records",
+      "description": "Prepare a tax-event evidence docket from supplied evidence when the decision concerns transaction facts.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-009",
+      "name": "entity-structure-adviser-brief",
+      "domain_code": "COP",
+      "subdomain": "Transaction preparation",
+      "description": "Prepare a entity structure adviser brief from supplied evidence when the decision concerns business activities.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-010",
+      "name": "subscription-payment-state-reconciliation",
+      "domain_code": "COP",
+      "subdomain": "Operating records",
+      "description": "Prepare a subscription payment-state reconciliation from supplied evidence when the decision concerns provider event records.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-011",
+      "name": "cross-border-market-entry-gate",
+      "domain_code": "COP",
+      "subdomain": "Transaction preparation",
+      "description": "Prepare a cross-border market-entry gate from supplied evidence when the decision concerns target customer evidence.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-012",
+      "name": "investor-process-evidence-tracker",
+      "domain_code": "COP",
+      "subdomain": "Transaction preparation",
+      "description": "Prepare a investor process evidence tracker from supplied evidence when the decision concerns funding objective.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-013",
+      "name": "intellectual-property-provenance-register",
+      "domain_code": "COP",
+      "subdomain": "Operating records",
+      "description": "Prepare a intellectual property provenance register from supplied evidence when the decision concerns asset inventory.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-014",
+      "name": "grant-opportunity-fit-and-evidence",
+      "domain_code": "COP",
+      "subdomain": "Transaction preparation",
+      "description": "Prepare a grant opportunity fit and evidence from supplied evidence when the decision concerns applicant facts.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "COP-015",
+      "name": "professional-introduction-consent-plan",
+      "domain_code": "COP",
+      "subdomain": "People and relationships",
+      "description": "Prepare a professional relationship follow-through ledger from supplied evidence when the decision concerns permitted relationship notes.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

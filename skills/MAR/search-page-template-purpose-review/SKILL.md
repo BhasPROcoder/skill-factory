@@ -3,9 +3,9 @@ id: MAR-004
 name: search-page-template-purpose-review
 domain: Search Site Architecture
 subdomain: Design
-version: 1.0
-description: Search page template purpose review using supplied evidence and explicit acceptance checks; use when preparing a search page template purpose review deliverable.
-triggers: ["help me with search page template purpose review", "prepare a search page template purpose review deliverable", "review our search page template purpose review evidence", "create a search page template purpose review action plan", "check this search page template purpose review decision"]
+version: 1.1
+description: Guide search page template purpose review when working from representative pages, template sections, and page-level reader tasks.
+triggers: ["search page template purpose review", "help with search page template purpose review", "work on search page template purpose review", "review my search page template purpose review", "apply search page template purpose review to these materials"]
 not_for: ["Search breadcrumb planning [MAR-005]", "Search category page boundary planning [MAR-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search page template purpose review
 
 ## Purpose
-Produce a usable search page template purpose review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search page template purpose review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Review: retain product-specific suitability information.
 Each template section has an explicit purpose or an applicability condition.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

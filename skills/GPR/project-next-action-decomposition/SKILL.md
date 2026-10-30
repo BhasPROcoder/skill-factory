@@ -3,10 +3,10 @@ id: GPR-003
 name: project-next-action-decomposition
 domain: Personal Work Organization
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare project next-action decomposition from supplied evidence; use when the request concerns desired project outcome.
 triggers: ["project next-action decomposition", "prepare project next-action decomposition", "review my project next-action decomposition", "help me with project next-action decomposition", "turn desired project outcome into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Personal priority tradeoff [GPR-004]", "Focus session design [GPR-005]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Project component | Current obstacle | Next action | Dependency
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Project component | Current obstacle | Next action | Dependency
 Workshop purpose | Undefined | Write intended participant outcome | Before choosing agenda
 Venue planning | Requirements unknown | Wait for purpose and audience | Avoid premature booking
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Create a short sequence with a review after uncertain steps. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Before choosing agenda.
 ```
 
 **Bad output:**

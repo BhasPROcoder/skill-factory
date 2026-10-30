@@ -2,10 +2,10 @@
 id: TFE-004
 name: feature-window-aggregation-design
 domain: Feature and Label Pipelines
-subdomain: Training-serving consistency
-version: 1.0
-description: Produce a historical-window feature specification; use when the task is to feature window aggregation design.
-triggers: ["feature window aggregation design", "help with a historical-window feature specification", "review my a historical-window feature specification", "prepare a historical-window feature specification", "check feature window aggregation design evidence"]
+subdomain: Aggregation
+version: 1.1
+description: Create a historical-window feature specification from supplied evidence; use when preparing or reviewing historical-window feature specification decisions.
+triggers: ["feature window aggregation design", "help with a historical-window feature specification", "review my historical-window feature specification", "prepare a historical-window feature specification", "check the evidence for this historical-window feature specification"]
 not_for: ["feature target encoding leakage check [TFE-005]", "feature identifier shortcut review [TFE-006]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a historical-window feature specification and name the source artifacts used; retain a version or observation date where available.
 2. State whether each window boundary is inclusive
 3. Select only events available by prediction time
-4. ⚠️ Aggregate within the declared entity and window Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Aggregate within the declared entity and window. Do not silently replace missing evidence with an assumed successful outcome.
 5. Test events just before and after every boundary
 6. Apply the domain check: Track where every learned parameter is fitted and when every source field becomes available.
 7. Verify the proposed result with this task-specific check: Check every boundary example against the window predicate. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Training features must represent information available at the intended prediction instant. A transform learned from data belongs inside the training boundary, and production transformations must preserve the same semantics. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a historical-window feature specification
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Only events at 5 and 9 belong to the declared window.
 Decision: Implement the half-open window exactly as specified.
+Artifact: Window rule: 5 ≤ event time < 10. Candidate times: 4,5,9,10,11. Included: 5,9. Excluded: 4,10,11. Preserve the declared half-open boundary and ensure source data were actually available by prediction time.
 Action: Team owner — Test events just before and after every boundary Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Check every boundary example against the window predicate.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a historical-window feature specification. The fixture uses events strictly before time 10 and at or after time 5; times are 4, 5, 9, 10, and 11. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Only events at 5 and 9 belong to the declared window.
 3. It preserves this task-specific conclusion: Implement the half-open window exactly as specified.
 4. It includes the verification check or explicitly marks it pending: Check every boundary example against the window predicate.

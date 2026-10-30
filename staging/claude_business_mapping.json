@@ -1,0 +1,218 @@
+[
+  {
+    "source": "audit-your-meetings",
+    "disposition": "new",
+    "targets": [
+      "CBG-001"
+    ],
+    "rationale": "Observable transcript behavior with explicit limits on timing and intent inference."
+  },
+  {
+    "source": "bharat-gtm",
+    "disposition": "new",
+    "targets": [
+      "CBG-002"
+    ],
+    "rationale": "Regional access and purchasing-role tests replace stereotypes and fixed channels."
+  },
+  {
+    "source": "case-study-forge",
+    "disposition": "covered",
+    "targets": [
+      "MBR-004",
+      "MBR-006"
+    ],
+    "rationale": "Existing evidence-based case outline and repurposing cover the reusable method."
+  },
+  {
+    "source": "cohort-retention-analysis",
+    "disposition": "covered",
+    "targets": [
+      "TAN-002",
+      "MME-009"
+    ],
+    "rationale": "Cohort denominators and campaign interpretation already covered without universal retention targets."
+  },
+  {
+    "source": "community-flywheel",
+    "disposition": "new",
+    "targets": [
+      "CBG-003"
+    ],
+    "rationale": "Member contribution-response loops and moderation capacity add distinct operating decisions."
+  },
+  {
+    "source": "competitor-teardown",
+    "disposition": "covered",
+    "targets": [
+      "BST-003"
+    ],
+    "rationale": "Source-dated like-for-like competitor comparison replaces unverified company autopsies."
+  },
+  {
+    "source": "create-excel-models",
+    "disposition": "new",
+    "targets": [
+      "CBG-004"
+    ],
+    "rationale": "Create or edit a workbook and verify calculations, compatibility and delivery."
+  },
+  {
+    "source": "create-formatted-documents",
+    "disposition": "new",
+    "targets": [
+      "CBG-005"
+    ],
+    "rationale": "Create or edit structural documents, render and repair before delivery."
+  },
+  {
+    "source": "create-presentations",
+    "disposition": "new",
+    "targets": [
+      "CBG-006"
+    ],
+    "rationale": "Build or edit a supported slide narrative and inspect the saved rendered deck."
+  },
+  {
+    "source": "decision-journal",
+    "disposition": "new",
+    "targets": [
+      "CBG-008"
+    ],
+    "rationale": "Preserve predecision reasoning and assess process separately from outcome."
+  },
+  {
+    "source": "delegation-engine",
+    "disposition": "new",
+    "targets": [
+      "CBG-009"
+    ],
+    "rationale": "Delegated authority, dependencies and observable acceptance replace fixed checkpoint percentages."
+  },
+  {
+    "source": "discovery-call-mastery",
+    "disposition": "covered",
+    "targets": [
+      "MSA-001",
+      "MSA-002"
+    ],
+    "rationale": "Neutral discovery and qualification already provide evidence-led call preparation."
+  },
+  {
+    "source": "edit-pdfs",
+    "disposition": "new",
+    "targets": [
+      "CBG-007"
+    ],
+    "rationale": "Create or transform a PDF with preservation criteria and rendered verification."
+  },
+  {
+    "source": "experiment-design",
+    "disposition": "covered",
+    "targets": [
+      "BMD-005",
+      "MME-007"
+    ],
+    "rationale": "Existing experiment planning and readout keep stopping conditions explicit without arbitrary sample thresholds."
+  },
+  {
+    "source": "founder-distribution-engine",
+    "disposition": "covered",
+    "targets": [
+      "MBR-006",
+      "MCA-003",
+      "MCA-007"
+    ],
+    "rationale": "Repurpose supported source material, assign channel roles and schedule dependencies."
+  },
+  {
+    "source": "hard-conversations",
+    "disposition": "covered",
+    "targets": [
+      "GCO-003",
+      "GCO-004",
+      "GCO-005",
+      "GPR-010"
+    ],
+    "rationale": "Scope renegotiation, disagreement, feedback and missed-commitment repair already produce factual drafts."
+  },
+  {
+    "source": "kill-or-double",
+    "disposition": "new",
+    "targets": [
+      "CBG-010"
+    ],
+    "rationale": "Future-value continuation gates and obligation-aware transitions replace score cutoffs."
+  },
+  {
+    "source": "launch-playbook",
+    "disposition": "covered",
+    "targets": [
+      "MCA-006",
+      "MCA-007",
+      "MCA-010"
+    ],
+    "rationale": "Readiness, sequencing and contingencies already cover launch operations without fixed platform timing."
+  },
+  {
+    "source": "market-sizing-fast",
+    "disposition": "new",
+    "targets": [
+      "CBG-011"
+    ],
+    "rationale": "Bottom-up count, overlap and frequency ledger with explicit assumptions and units."
+  },
+  {
+    "source": "metrics-north-star",
+    "disposition": "new",
+    "targets": [
+      "CBG-012"
+    ],
+    "rationale": "Primary metric selection with value hypotheses, gaming checks and guardrails."
+  },
+  {
+    "source": "morning",
+    "disposition": "new",
+    "targets": [
+      "CBG-013"
+    ],
+    "rationale": "Source-grounded attention brief preserves open-state evidence and source coverage."
+  },
+  {
+    "source": "multi-venture-os",
+    "disposition": "merged",
+    "targets": [
+      "CBG-010",
+      "BPL-003",
+      "GPR-002"
+    ],
+    "rationale": "Continuation decisions, business capacity tradeoffs and personal calendar placement replace fixed allocation rules."
+  },
+  {
+    "source": "mvp-scoping-razor",
+    "disposition": "covered",
+    "targets": [
+      "MSV-004",
+      "MSV-005",
+      "MSV-006",
+      "THK-002"
+    ],
+    "rationale": "Concierge and landing tests, bounded pilots and minimum demo scope already cover the useful scoping methods."
+  },
+  {
+    "source": "negotiation-playbook",
+    "disposition": "new",
+    "targets": [
+      "CBG-014"
+    ],
+    "rationale": "Feasible conditional package trades with authority boundaries replace anchoring formulas."
+  },
+  {
+    "source": "offer-design",
+    "disposition": "new",
+    "targets": [
+      "CBG-015"
+    ],
+    "rationale": "Operational scope options, dependencies and proof distinguish offer packaging from copy hierarchy."
+  }
+]

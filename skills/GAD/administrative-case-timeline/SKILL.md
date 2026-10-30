@@ -3,10 +3,10 @@ id: GAD-006
 name: administrative-case-timeline
 domain: Administrative Casework
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare administrative case timeline from supplied evidence; use when the request concerns dated communications.
 triggers: ["administrative case timeline", "prepare administrative case timeline", "review my administrative case timeline", "help me with administrative case timeline", "turn dated communications into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Administrative status tracker [GAD-007]", "Official instruction conflict log [GAD-008]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Event | Supported date status | Source | Unresolved point
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Event | Supported date status | Source | Unresolved point
 Draft prepared | Monday supported | Draft metadata supplied | Does not prove submission
 Receipt issued | Wednesday supported | Agency receipt | Actual sending time unknown
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Produce a timeline and the smallest evidence request needed to resolve each gap. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Does not prove submission.
 ```
 
 **Bad output:**

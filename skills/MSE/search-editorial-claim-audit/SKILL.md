@@ -3,9 +3,9 @@ id: MSE-010
 name: search-editorial-claim-audit
 domain: Search Content Decisions
 subdomain: Design
-version: 1.0
-description: Search editorial claim auditing using supplied evidence and explicit acceptance checks; use when preparing a search editorial claim auditing deliverable.
-triggers: ["help me with search editorial claim auditing", "prepare a search editorial claim auditing deliverable", "review our search editorial claim auditing evidence", "create a search editorial claim auditing action plan", "check this search editorial claim auditing decision"]
+version: 1.1
+description: Guide search editorial claim auditing when working from draft text and the evidence supporting its claims.
+triggers: ["search editorial claim auditing", "help with search editorial claim auditing", "work on search editorial claim audit", "review my search editorial claim auditing", "apply search editorial claim auditing to these materials"]
 not_for: ["Search intent evidence mapping [MSE-001]", "Search query to page assignment [MSE-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search editorial claim auditing
 
 ## Purpose
-Produce a usable search editorial claim auditing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search editorial claim auditing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Excluded inference: reliability in untested environments.
 No retained claim extends beyond the scope of its supporting evidence.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

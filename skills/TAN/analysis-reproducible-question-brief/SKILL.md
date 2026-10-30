@@ -2,10 +2,10 @@
 id: TAN-010
 name: analysis-reproducible-question-brief
 domain: Analytical Reasoning and Metrics
-subdomain: Comparisons
-version: 1.0
-description: Produce an analysis execution brief; use when the task is to analysis reproducible question brief.
-triggers: ["analysis reproducible question brief", "help with an analysis execution brief", "review my an analysis execution brief", "prepare an analysis execution brief", "check analysis reproducible question brief evidence"]
+subdomain: Metric definitions
+version: 1.1
+description: Create an analysis execution brief from supplied evidence; use when preparing or reviewing analysis execution brief decisions.
+triggers: ["analysis reproducible question brief", "help with an analysis execution brief", "review my analysis execution brief", "prepare an analysis execution brief", "check the evidence for this analysis execution brief"]
 not_for: ["metric denominator definition [TAN-001]", "cohort retention table design [TAN-002]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of an analysis execution brief and name the source artifacts used; retain a version or observation date where available.
 2. Translate the question into a measurable comparison
 3. List required fields and joins with observation units
-4. ⚠️ Specify exclusions and uncertainty checks before seeing results Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Specify exclusions and uncertainty checks before seeing results. Do not silently replace missing evidence with an assumed successful outcome.
 5. Define the output needed for the decision owner
 6. Apply the domain check: State what a calculation can establish and what would require a different design; do not turn association into causal attribution.
 7. Verify the proposed result with this task-specific check: Trace each requested output to a field and a decision action. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A metric is defined by its population, unit, denominator, and time window. Comparisons need compatible definitions before arithmetic is meaningful. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: an analysis execution brief
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The decision needs comparable delay summaries by shipping method.
 Decision: Define the shipment population and delay measure before computing the comparison.
+Artifact: Question: do comparable delays differ by shipping method? Required unit: shipment under a declared delay definition. Grouping: shipping method. Output: comparable method-level delays with denominators and exclusions. Action use: review the largest supported comparable delay, not an unadjusted incomparable ranking.
 Action: Team owner — Define the output needed for the decision owner Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Trace each requested output to a field and a decision action.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for an analysis execution brief. The team asks whether delays differ by shipping method and will review the method with the largest comparable delay. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The decision needs comparable delay summaries by shipping method.
 3. It preserves this task-specific conclusion: Define the shipment population and delay measure before computing the comparison.
 4. It includes the verification check or explicitly marks it pending: Trace each requested output to a field and a decision action.

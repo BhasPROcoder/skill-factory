@@ -3,9 +3,9 @@ id: MSE-008
 name: search-faq-evidence-selection
 domain: Search Content Decisions
 subdomain: Design
-version: 1.0
-description: Search question section selection using supplied evidence and explicit acceptance checks; use when preparing a search question section selection deliverable.
-triggers: ["help me with search question section selection", "prepare a search question section selection deliverable", "review our search question section selection evidence", "create a search question section selection action plan", "check this search question section selection decision"]
+version: 1.1
+description: Guide search question section selection when working from customer questions, support notes, and existing page answers.
+triggers: ["search question section selection", "help with search question section selection", "work on search faq evidence selection", "review my search question section selection", "apply search question section selection to these materials"]
 not_for: ["Search content consolidation planning [MSE-009]", "Search editorial claim auditing [MSE-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search question section selection
 
 ## Purpose
-Produce a usable search question section selection deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search question section selection task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -88,7 +88,7 @@ If a required input is missing and has no safe default, ask in one message with 
 
 ## Worked example
 **Input:**
-> Fictional company Juniper Works asks for search question section selection. Its supplied record A says: Customers ask whether a product fits all door widths but only one supported range is supplied. Prepare an internal review only; the review owner is the person responsible for the affected workstream.
+> Fictional company Juniper Works asks for search question section selection. Its supplied record A says: Customers ask whether a product fits all door widths; the notes mention a limited supported range but do not provide its numerical bounds. Prepare an internal review only; the review owner is the person responsible for the affected workstream.
 
 **Output:**
 ```text
@@ -99,7 +99,7 @@ The answer must not imply universal fit.
 Internal review for fictional Juniper Works using supplied record A. No live change or external message is included.
 
 ## Findings
-- Evidence: A — Customers ask whether a product fits all door widths but only one supported range is supplied.
+- Evidence: A — Customers ask whether a product fits all door widths; the notes mention a limited supported range but do not provide its numerical bounds.
   Assessment: The answer must not imply universal fit.
   Action: Answer using the supplied compatibility information and request the missing range verification. Owner: affected workstream lead.
 
@@ -112,7 +112,7 @@ Publication dependency: [VERIFY: insert the supported range from the product spe
 Every answer is supported and no conditional answer is expressed as unconditional.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**
@@ -128,7 +128,7 @@ This fails because it does not address the specific evidence in A, identify a co
 
 ## Test case
 **Input:**
-> Fictional Juniper Works supplies record A: Customers ask whether a product fits all door widths but only one supported range is supplied. Produce search question section selection and explain what would establish completion without assuming a performance improvement.
+> Fictional Juniper Works supplies record A: Customers ask whether a product fits all door widths; the notes mention a limited supported range but do not provide its numerical bounds. Produce search question section selection and explain what would establish completion without assuming a performance improvement.
 
 **Assertions:**
 1. Output uses Decision, Scope, Findings, Artifact, Acceptance check, and Unresolved in that order.

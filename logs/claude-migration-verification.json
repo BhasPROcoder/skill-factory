@@ -1,0 +1,652 @@
+{
+  "source_folder": "C:\\Users\\bhask\\OneDrive\\Desktop\\Code\\Skills\\claude skills",
+  "sources": {
+    "acquisition-readiness": "69d2ab7dcca7ce6e69e461075331116539916222e8049c119a12a5808ed1d278",
+    "agent-orchestration": "d7bb4fe0089103d03e946040a975b47372c628beb227eb4d4aa25e2b460c8ff5",
+    "ai-unit-cost": "ac08ea438266551dd1e5314b68b5a89b1555909bd6bae8b55ddd6e99884e3879",
+    "audit-your-meetings": "9d61f76f0ee5d5a5d2b08eb0e28c4529b127987d41211fd9b82b4f3b63ea354a",
+    "bharat-gtm": "6ffe7736e604d83118fe809b350287cfc6663fcbf92778bfc5fe9a02506fa27c",
+    "build-and-stay-on-track": "40b96156b75f57833ed24cb1b0d7ad2e4166dbff6be3b0c0119a3f2430bb6651",
+    "build-anything-properly": "3be6c2ed7e829be889b606dc5f0f9122d8ea6399633aa873da15c113ffe216cd",
+    "case-study-forge": "f2231c1f890d2771b01e09f361b39cbb57f972931d8a452266b19e9fa9aa1e88",
+    "cash-collection": "bc96b96fa6acbb2511d8bca9cf812145768eb96a95f8dee01f4dab5f4561dcdc",
+    "cohort-retention-analysis": "472bb945ff996c886b0133f8f64e40f13416bb3e927a9bfda77f84ba1c442a3e",
+    "community-flywheel": "0deed4d71728d983e0423044ffd52d714a17d16ce1138facbe1509ecfca9e20f",
+    "competitor-teardown": "e99a5e9be3a7841ff45f928488a80da4c578c5e70844292a66fdbc23e726affa",
+    "consolidate-memory": "8927371d98b98e7a49f3917d747081b96c17da664f88d2199525dcf659285f2c",
+    "context-shrink": "1229fd26310986e7642fad336ae5f8264c3b53b2db0ab75ec9a4b94c7f24837f",
+    "contracts-that-protect": "6cb3c7c617790fba8b1c52e04d17233947eaa728b452ce3f2fb734f9dcc94abb",
+    "create-excel-models": "6d0d5936e2ebf765ed1414f381f4d78fe2b5a6f66a810aa263df070f8f8fcbf2",
+    "create-formatted-documents": "f8539eb62c4be5f58554c716bb4bfea02453b308b21dab35d904cc77c5c340cb",
+    "create-presentations": "08c047642633b4b0b0c1707f0d293b1914f48eb6a6441aa0eb804864a221470d",
+    "data-pipeline-hardening": "9a8dffdbdcb77c2abe77f3347161c8fa6c5a58bf1029b95359012f4acddb2b83",
+    "decision-journal": "27871a51995c27139921097a69228718f939cce58be7a17f0aa56e99d9d9eeb3",
+    "delegation-engine": "51159e59d1ea031ca81447af7e7bf7c38d5a881e30140c67a77e4fa593eece98",
+    "design-interfaces-well": "9f0b05dc11b65970fc8350ec9271912e639863b5889b9d0ec88a4d884b8fa195",
+    "discovery-call-mastery": "8986fd3cd196ca733a40cbb3acba54d24220ad05d8ef0b18ac0bd1ceca8d459f",
+    "dpdp-and-edtech-compliance": "a3c187aaf55dade48c887885142981d88782ff61aab42dec3896320404d6da78",
+    "edit-pdfs": "06431980fdbd12c12271414c4d563c6414ca4250f838022c4328a6049d19a031",
+    "equity-and-esop": "f44b7b3543e8445ee2c47221c7a727471f8da9b982791f9385022d94a207d9e7",
+    "evolve-your-skills": "d7506d4a251008897c9699c3346809ea4041085bbd91c8873b100cb9ec67d52d",
+    "experiment-design": "08c56db0f33479525d2e0d1952118d5529290005853665a846b76a74c9233898",
+    "finetune-vs-rag-vs-prompt": "7c18062e11e80c273435a2dda40e65da706cfff5d1ebd3a4e2fd795202b447aa",
+    "first-ten-hires": "9c903d97715b158d7b34a44c8ce41d8964c19400cf35baa3a21a64b791c069f0",
+    "founder-distribution-engine": "6c715d3e223c7ddbaa46b301be57389d4c9f244c6bb78b0d3e933aad5a09c921",
+    "founder-energy-protocol": "3590baf28cd66179dbba8e2a19ba5df60fe1af7e92b77b21b95acd15a2d8b2dc",
+    "founder-finance-os": "9190b497686137d76e9cc17fddaa0956b9a2bcaed770dd6645eafade85cd645b",
+    "fundraise-narrative": "08cf0ca651084e556fbe37ba70a71a9acaab3bc42f1af0fd2ccebd7116e3a5a5",
+    "government-navigation": "53243036554b5c631d7b3f8199230076b37244e96c861a225cac516ee6b534a1",
+    "gst-tax-hygiene": "b63c2abc91b477dea4d9cadbb6464fd37ed2832bb0b3561105c64d7e280feb5c",
+    "hard-conversations": "dd12b85f2e6f1b0f6a405f49201d648bf58846d9bdabafd4d22a4afea7ba5545",
+    "india-entity-ops": "8e6def226de8d3ea6b338242479f89a9bcd939fbb793721151af29ff11c06bd6",
+    "india-payments-stack": "1d291ddf48ad3b6a4711cecdf02a2d51c8f7698828df9fb6db5da2843a7b4e27",
+    "international-expansion": "da5219c56c5ce246b29ee79a819d7911aa9970aed82041c8e31ecf33af63bc92",
+    "interview-before-building": "0021e898eec7cd70d4f9d623dcaadab16642ba896b10cd88b6c0ab698eff3be6",
+    "investor-pipeline": "fd3f76c846acf93c1479e9049fc397e32168fa26d746371ba66a8f0013857bca",
+    "ip-fortress": "38f9aad56372f1d52725f576dd4b4f292b925b7eac9b1308a3f6c732b41b338d",
+    "keep-context-clean": "8dc7ac27f6cdd2a7c7332971f3d07ae78d6d54968932eb037d11d161b2479fc4",
+    "kill-or-double": "0a708dbe2b28c4316a1935dd0634ad9ea76004e3e56692cd99968174c341b795",
+    "launch-playbook": "1d06a41f3a2cfd129ef22cab40944c32d7100d475234ae63e6b7b533172ee48a",
+    "llm-eval-harness": "dc666d20cb8ce0bb5e8be7110a37c0d08c05d5d1600a4af5a1ba09f8a0891e8c",
+    "local-model-ops": "3e2889451bce090bb60d9e51d29ba05817539db26f8df1152e91f2acabc65123",
+    "market-sizing-fast": "9d8936121be0dbd3558020a4021707931721a9612d274a0798aba61b212f0696",
+    "metrics-north-star": "5659b93652974712bee5f2e341b6a547af5f70b0b60f94c0d61ca26c8cd50359",
+    "morning": "c040225922b92a099fda8c35d6c1a3b8498bcfa11cb9799011ef9053407c57ef",
+    "multi-venture-os": "6742ca5d7522e312647ac635ecbd463fe8b4b98ce0f378dd2553481b632ee23b",
+    "mvp-scoping-razor": "6a06a0998b6446489beea69bc2f76ff2098d37ac4a2f2fdc757904918d9848d8",
+    "negotiation-playbook": "18a2176a339f43ac8d7f29773f83a4603461d6328dd60278c894b90cb6d6dabb",
+    "network-capital": "dca63dcc44cfe21ed821b51c57165a783607e3384a2157e57eb8c4b102bcbeec",
+    "non-dilutive-capital": "95aa18f5ae3d1f1922a4231770fca8c8f40c74ef771bebad8a1e6f50d2a9a637",
+    "offer-design": "3dd995eb1afad4a152cb752a4edb55f8b1546ea23d849a25e80b99d7d71674ab"
+  },
+  "targets": {
+    "CTG-001": "8aecfd0da83c2eca2a1833946aa9128b6ec9a2856480c1cb9ff703a7ccedec08",
+    "CTG-002": "fe5d5312217b015be2cd0cb76faa916c4b9d6e83c7896104be34592ca1df46c1",
+    "CTG-003": "26848f40204351ea4c6e8f5d8384f53b3b0d763ab89bb48b85695d7114f277b4",
+    "CTG-010": "f58aedf04c2c6ac4ddbc2650ae90c0567dd68a92c614bcd60657d91808549a67",
+    "TST-004": "464f7465e864a309c54a9d05fb2bf82e836ba80e0eae746d449da3b689957e50",
+    "CTG-004": "a813af5d3946ccc86d77355d0444c24a354e92aa9c998b3b56b86f147559ccc2",
+    "CTG-005": "a301a3d2173cf9bf06f6f1f938b3ef810396a0e21ed0d1e6e73678b44df45451",
+    "TDE-001": "19a5cb069f776b5c8b03f3669f7573177d60ff404f311de555993c16c02e1040",
+    "TDE-005": "61ba464477a414788085466b5a77fede2265062061aefe84cdf2d5f72003d423",
+    "TDE-006": "19d9092b6554fb83fa8a770ea9619015912a76654d99aaf65c4a2311dd7134bf",
+    "TDE-007": "056aa43858fc1879eff61fab4f3d72f21c9e06bbdd40d0e77e210f5da6f8405f",
+    "TDE-008": "adcccb788834efcecd4a15f8e4d8c392f330c673c33153fb55b7b64f329634ef",
+    "TAP-004": "d054f975f5339c94bfc380b071a805f03507d20e07d85109385d3b3b13ab1b27",
+    "CTG-006": "60e4ac35a7778e609c92012b3670fb24a04d246295d9da79c72074f240c61032",
+    "CTG-007": "097e8c7e5abfe3f75ed081b53f2a463fde31c58e0918c64496adfb2ee44fd7b4",
+    "CTG-008": "5eaa9496f503d1128835e9613aec9ef73224c5a8eace07f25fdba8267af99296",
+    "CTG-009": "165ec93982056b9e4ca645b9a54e4d1a80839f529c2bbe502dc5a712e8a1437e",
+    "CTG-011": "ca4b9916f4e2240f249d2918c1a994642d1012c0facfc8e8a4ac369e1a7d055b",
+    "MPU-002": "1c97b929425ec7d7c230b09e02f1da04b94ab977658fa68dbc04c0333c13194b",
+    "MPU-004": "fc35cbc77ba68a3cc8099fdc6cc297267cef9f29b63850e94280414be4117d91",
+    "MPU-006": "ef92dcf39798ef88777a16f3a66a1f59b5acba0854724c0809faf798938c4e46",
+    "COP-001": "874df073261ad6ee097cb325bdd20883559a5e02b5d4f2e76a50e3d0a00e4764",
+    "COP-002": "41d476c7d847a7dafd3e6010b518ac8a399394e7be17c85aab0730dd27f44305",
+    "CTR-002": "a83217a19a269c3cc0e8cf3468a6b1c6ba3853370a2dc79c009e88ca2348c376",
+    "CTR-001": "261301b53e0e47bda5b5b202c3f88eb690431dcc684cfaf235e4dc4c74bbb300",
+    "CTR-003": "8c40a101764f34954923dda0b181207e1a0a90309d55169e91970e28162429d0",
+    "CTR-004": "74fac5bbb84dcd0438d56218d0ef482495f2d7458699d1f4ed0012db92868653",
+    "CTR-005": "b5a4b7d9d78486f182d2015ddf6de9569bea07862f16aa61328c25f588f6a265",
+    "COP-003": "68c3d6f9a1f4d7c9a1351ce3dce135f8ebb601fafc609be068fc761326607278",
+    "CMP-001": "1cf1c1eb9158d5c89008b52d0991a29ea3f4a7300f7ce068ca533c237a7e61d2",
+    "CMP-004": "9d72ba89353ceca00c011ba7b113d107ebdf2bb49e78ac92f05533544c524912",
+    "CMP-005": "b435d4ec1a4b3fc31e4c4351af68b12ad2ca96f61b13ea21f7f29da5fe8c78b8",
+    "COP-004": "1eb9e404dba2749502044fce3a666a91383c092b1a05596c56009dd3224113b4",
+    "COP-005": "938720f66ed7091cd130b3b4380b6a6f426ed6d70a2f691794cf6b62ede8eb1b",
+    "GPR-002": "5d303f0fcafbf464ff5e1cbaa776f6dd01f4723e6845db54db60f576aa10dd34",
+    "GPR-005": "afe5f6460d0301f80093aba1bfa933eb04571eea387de3d7913e68fccf635d28",
+    "GPR-007": "8c4e5708628abd71f2d097674fdca06e973c7ee1b45ea78c297680d978f7d31d",
+    "COP-006": "9a53028bcb500709c89df602a7d205c7bc6d29d06839bc9e8887e27ce83b214f",
+    "COP-008": "1557029e334ba8ac731c87be68911abce307c6969f479dd118004ddbdcd5765f",
+    "COP-007": "44093a2b2386d88b68b99780c8de47d32fee4d03437662c01ffdde3a1c82670d",
+    "GAD-003": "cdab06b6c4d0a7a0164675c80f8a7ec5b78f12529cda727e1a730c724a86c1fc",
+    "GAD-006": "6c897e89685e56c4f83ac1afdbe286ecb742091fdfa6b1957244926296d57549",
+    "GAD-008": "f88072a3580f65230491dd8fcd8b49a03f0070c8adcc1356d4d4c11bf7cbf423",
+    "COP-009": "014f3c50cef9b9653fd7146c28442cab49d3d4376e746976c67af0b647600491",
+    "COP-010": "ae666277dba62c17d865eca2e376c61e5fd18dacb2055caf87813f8d22db155f",
+    "COP-011": "26e82dc5d370f053a7ecf6ede5ca7a4c9e44e433a741de7d0abd6bb29595f4a9",
+    "COP-012": "0a790708b2fc7c9977a5b9f249e18f5450d1224fd7411aa7359d76f0abdf9561",
+    "COP-013": "b9a22332b123877307a3e7184de6b5ba5e24a7bbf1be2ab26fbafcd75f20a871",
+    "COP-014": "1f7ddf650a6e5920e512f8252170c4e6555e8ca49549feaa617a3fc99602aca1",
+    "COP-015": "0b9242832374957ce03bd814747d2259ad1fcda9cb6b4dbc201469f185e5243b",
+    "GCO-008": "b95f763639eadd5c15f5fcebf55a224684f875bf1dcc08c69a82d3b00cd7c5cc",
+    "CBG-001": "b2b97013f9293e33eb4d7b2b2d33a8a5e26bc9d3acbc6bf7d3d5ef3eb0b60368",
+    "CBG-002": "9c430b2275b4349da38ac1cadeeb8191a0d5b289b9fb36c4d3b23cd4e359feef",
+    "MBR-004": "a81ff532d0c2d39027197ced0c23bbd0bb02bfc507bce43f3e4c80ba7023e34d",
+    "MBR-006": "a73c16afc1c7fb5fe2b3d26262b9a1de6e82c09d04ac0dd4088b81653809de9e",
+    "TAN-002": "75485a041bd8349ea64bcc04abe1848c86d34dfd6b82a6cba8bc0609b4b05b09",
+    "MME-009": "b85eed11b012466db18ae1d74211b4f8ac8c9e1948749079b27795669b7901c7",
+    "CBG-003": "76836ea9e05198b5ab2a2eb19efc9dc87fc4cd1a659fca9bad5fa7411adf6f2b",
+    "BST-003": "80a83d3c12f125fa94df3cef13409ab34717db2aa514abb88f34a6518a5ca4b3",
+    "CBG-004": "df30d427ae078a21abb003927a5e0705d9ffec3915f2fa712f582ad55908e04c",
+    "CBG-005": "903136986e285b0cc6075207e77ed7d13fc20b589d1fc8e7446d5bbee8511a33",
+    "CBG-006": "c080c3fa9e892eed96009929b995dd64a41b8aa5550b55976dff15df0c70a95b",
+    "CBG-008": "a2fa9856ed1c853bae3f5f468b6e66b6c4e1b103c072e8c67935d9916d89c9e9",
+    "CBG-009": "3ee1816a10ed9d2e834b51e5aa6ba0355119eba7b0d3dee03ebd09979af7191b",
+    "MSA-001": "b4f7cbabe923ad3d3717189bdbbbcfe13ab62de37dd1da39f945ecba6caf15a8",
+    "MSA-002": "4ae11744c62db12a39dffc30c09299a9ccc4ddb1af2f1a8eb3c8273a04dd684a",
+    "CBG-007": "9fe7dcf5426c864a2b7a91aedcac25e7ba4804b49905090e8517f1e7cdf0d2e5",
+    "BMD-005": "f2747890539df062f11be2069322d28b91fff082de0914a4967c5f7320ebb034",
+    "MME-007": "da722d8a190e63f2ea8f1e3eaeec6c761a19ab6beb39df939c044a4ecdd8500d",
+    "MCA-003": "61ca9274dda17d86bd62b93541eb47aa3ffbc074fc9bd5451cf37cb3e9dd574a",
+    "MCA-007": "a5b21775dca8d0cffbf866eccd2cfe91d67100deab9c07a3b3df0a7abc1df42b",
+    "GCO-003": "a8477efe47d28dff96f072b19ac29c1a7f53cc0e11d232ea954e29181efde055",
+    "GCO-004": "120638bc9790b17550c7a9d78e05b035eed0df60141dd95912d28ef7d6754bc4",
+    "GCO-005": "f385db83fa0d97e0be983a2d450466e9d8686378924706c9df9ab005783693b0",
+    "GPR-010": "887032f5a1a55890b22a28ebe9b98f3ee10a34da24bd2b97224f88727cf132b1",
+    "CBG-010": "7123be8ec6a8eba26eb608b6ff293afd8c605a3e484b3f8dc7311a24fce25b65",
+    "MCA-006": "049d661c11342859cac7a380423ea9eab2058277e732384ab82789f3bab87099",
+    "MCA-010": "93ae577083e35cb259956e3e74219edfca4910e214363d280f1db7d1e57a25b2",
+    "CBG-011": "dc3236d1aba086ab86fea7dac9464d6f2f4450e19fe1c10c7508c719c5d790cb",
+    "CBG-012": "6bf7e248717d50e002daebfdd728d7722694f45012022c86fdbec4da9e932a3a",
+    "CBG-013": "c2238424308bad1d03240615247d4db75bd0aae1ed0d81808075330814c82e64",
+    "BPL-003": "43ce6df700f50366dcd10e104eb4963430dcf27151556e13f9b577972782d89d",
+    "MSV-004": "041804acf30edb4c21ad2daa27905b8a2a95e6a7fc32e16bc93cc0e2cf76d4f5",
+    "MSV-005": "c1e1123f72707ceb18e278b9131eaf6fb0b95523e74ecc1acfdba74502db12dd",
+    "MSV-006": "8dedff6f219a30175f9a41486cfb4bac313a8e05b69d8a0c0b5414140e4e39be",
+    "THK-002": "4b6f3cacd349003055451ea28e69ade590c2bbc3473ea5aed7bf19526c9a99df",
+    "CBG-014": "ae96880361f7e6ac78efe7759c6bee7a1f851571d399e1023966e8e52bbe6de5",
+    "CBG-015": "0cfb231f91879a3ccba02882408951269ee6d914abb50520d628255b15a27766"
+  },
+  "mappings": [
+    {
+      "source": "agent-orchestration",
+      "disposition": "new",
+      "targets": [
+        "CTG-001"
+      ],
+      "rationale": "Adds state-machine selection, stage contracts, bounded loops, and uncertain-effect routing."
+    },
+    {
+      "source": "ai-unit-cost",
+      "disposition": "new",
+      "targets": [
+        "CTG-002"
+      ],
+      "rationale": "Adds measured expense allocation per completed action, including failed and shared operations."
+    },
+    {
+      "source": "build-and-stay-on-track",
+      "disposition": "new",
+      "targets": [
+        "CTG-003"
+      ],
+      "rationale": "Reconciles a continuation ledger against actual repository and test evidence."
+    },
+    {
+      "source": "build-anything-properly",
+      "disposition": "merged",
+      "targets": [
+        "CTG-003",
+        "CTG-010",
+        "TST-004"
+      ],
+      "rationale": "Generic build wrapper is routed to concrete continuation, requirement, and regression procedures without plugin dependency."
+    },
+    {
+      "source": "consolidate-memory",
+      "disposition": "new",
+      "targets": [
+        "CTG-004"
+      ],
+      "rationale": "Maintains permitted durable memory with provenance, conflict handling, and retained uncertainty."
+    },
+    {
+      "source": "context-shrink",
+      "disposition": "new",
+      "targets": [
+        "CTG-005"
+      ],
+      "rationale": "Bounds evidence retrieval and creates a resumable handoff preserving objective and verification state."
+    },
+    {
+      "source": "data-pipeline-hardening",
+      "disposition": "covered",
+      "targets": [
+        "TDE-001",
+        "TDE-005",
+        "TDE-006",
+        "TDE-007",
+        "TDE-008",
+        "TAP-004"
+      ],
+      "rationale": "Existing focused procedures cover identity, durable recovery, contracts, quarantine, readiness, and retries."
+    },
+    {
+      "source": "evolve-your-skills",
+      "disposition": "new",
+      "targets": [
+        "CTG-006"
+      ],
+      "rationale": "Uses reproduced failures for narrow revisions, regression comparison, and keep-or-revert decisions; distinct from designing a new test suite."
+    },
+    {
+      "source": "finetune-vs-rag-vs-prompt",
+      "disposition": "new",
+      "targets": [
+        "CTG-007"
+      ],
+      "rationale": "Diagnoses knowledge, retrieval, instruction, structure, and capability failures before controlled intervention comparison."
+    },
+    {
+      "source": "keep-context-clean",
+      "disposition": "merged",
+      "targets": [
+        "CTG-005"
+      ],
+      "rationale": "Shares the same bounded retrieval and continuation method as context-shrink; counted once."
+    },
+    {
+      "source": "llm-eval-harness",
+      "disposition": "new",
+      "targets": [
+        "CTG-008"
+      ],
+      "rationale": "Separates deterministic checks, grounded judging, variability, slices, and promotion evidence for model configurations."
+    },
+    {
+      "source": "local-model-ops",
+      "disposition": "new",
+      "targets": [
+        "CTG-009"
+      ],
+      "rationale": "Derives local inference envelope from measured workload shape and quality constraints rather than fixed hardware tables."
+    },
+    {
+      "source": "interview-before-building",
+      "disposition": "new",
+      "targets": [
+        "CTG-010"
+      ],
+      "rationale": "Resolves consequential software requirement conflicts into observable acceptance alternatives."
+    },
+    {
+      "source": "design-interfaces-well",
+      "disposition": "new",
+      "targets": [
+        "CTG-011",
+        "MPU-002",
+        "MPU-004",
+        "MPU-006"
+      ],
+      "rationale": "Adds responsive semantic composition and state verification while reusing adjacent copy, form, and usability procedures."
+    },
+    {
+      "source": "acquisition-readiness",
+      "disposition": "new",
+      "targets": [
+        "COP-001"
+      ],
+      "rationale": "Stage transaction records and disclosure authority; valuation multiples and guaranteed transaction outcomes are removed."
+    },
+    {
+      "source": "cash-collection",
+      "disposition": "new",
+      "targets": [
+        "COP-002",
+        "CTR-002"
+      ],
+      "rationale": "Reconcile invoice exceptions and disputed allocation; use existing contract obligation mapping for payment terms."
+    },
+    {
+      "source": "contracts-that-protect",
+      "disposition": "covered",
+      "targets": [
+        "CTR-001",
+        "CTR-002",
+        "CTR-003",
+        "CTR-004",
+        "CTR-005"
+      ],
+      "rationale": "Existing clause, obligation, negotiation and jurisdiction-specific review workflows cover the reusable contract methods."
+    },
+    {
+      "source": "dpdp-and-edtech-compliance",
+      "disposition": "new",
+      "targets": [
+        "COP-003",
+        "CMP-001",
+        "CMP-004",
+        "CMP-005"
+      ],
+      "rationale": "Add purpose and permission propagation across a processing flow; existing compliance and request workflows handle adjacent work."
+    },
+    {
+      "source": "equity-and-esop",
+      "disposition": "new",
+      "targets": [
+        "COP-004"
+      ],
+      "rationale": "Prepare contribution, capitalization and proposed grant questions for qualified review without preset ownership percentages or legal mechanics."
+    },
+    {
+      "source": "first-ten-hires",
+      "disposition": "new",
+      "targets": [
+        "COP-005"
+      ],
+      "rationale": "Define a job-relevant bounded work sample and observable criteria; remove personal talent-pipeline assumptions and arbitrary qualification cutoffs."
+    },
+    {
+      "source": "founder-energy-protocol",
+      "disposition": "covered",
+      "targets": [
+        "GPR-002",
+        "GPR-005",
+        "GPR-007"
+      ],
+      "rationale": "Existing calendar, focus-session and review methods cover workload organization; no unsupported health diagnosis or universal recovery schedule is retained."
+    },
+    {
+      "source": "founder-finance-os",
+      "disposition": "new",
+      "targets": [
+        "COP-006",
+        "COP-008"
+      ],
+      "rationale": "Reconcile entity cash records, transfers and owner-paid items; route tax facts to a separate evidence docket."
+    },
+    {
+      "source": "fundraise-narrative",
+      "disposition": "new",
+      "targets": [
+        "COP-007"
+      ],
+      "rationale": "Link a funding narrative to demonstrated capability, attributed traction and milestone evidence rather than market fashion."
+    },
+    {
+      "source": "government-navigation",
+      "disposition": "covered",
+      "targets": [
+        "GAD-003",
+        "GAD-006",
+        "GAD-008",
+        "CMP-001"
+      ],
+      "rationale": "Existing responsible-office routing, case chronology, conflicting-instruction review and obligation mapping cover the general procedure."
+    },
+    {
+      "source": "gst-tax-hygiene",
+      "disposition": "new",
+      "targets": [
+        "COP-008"
+      ],
+      "rationale": "Organize transaction evidence for jurisdiction-specific tax classification; current rates, sections, deadlines and treatment remain official-source checks."
+    },
+    {
+      "source": "india-entity-ops",
+      "disposition": "new",
+      "targets": [
+        "COP-009",
+        "CMP-001"
+      ],
+      "rationale": "Compare entity requirements for qualified advice; recurring established obligations route to compliance mapping."
+    },
+    {
+      "source": "india-payments-stack",
+      "disposition": "new",
+      "targets": [
+        "COP-010"
+      ],
+      "rationale": "Separate authorization, attempts, settlement and entitlement; verify provider semantics and commercial terms rather than prescribing a vendor or retry schedule."
+    },
+    {
+      "source": "international-expansion",
+      "disposition": "new",
+      "targets": [
+        "COP-011"
+      ],
+      "rationale": "Evaluate a concrete destination customer journey and operating prerequisites without country stereotypes or guaranteed geographic arbitrage."
+    },
+    {
+      "source": "investor-pipeline",
+      "disposition": "new",
+      "targets": [
+        "COP-012"
+      ],
+      "rationale": "Track investor process stages by actual evidence and truthful next steps without invented interest or scarcity."
+    },
+    {
+      "source": "ip-fortress",
+      "disposition": "new",
+      "targets": [
+        "COP-013"
+      ],
+      "rationale": "Trace assets to permissions, agreements and intended uses; leave registration and license interpretations to verified documents and specialist review."
+    },
+    {
+      "source": "non-dilutive-capital",
+      "disposition": "new",
+      "targets": [
+        "COP-014"
+      ],
+      "rationale": "Map a current funding call to eligibility evidence, reimbursement timing and acceptance obligations rather than asserting available free money."
+    },
+    {
+      "source": "network-capital",
+      "disposition": "new",
+      "targets": [
+        "COP-015",
+        "GCO-008"
+      ],
+      "rationale": "Track relationship commitments and actual introduction states; use the existing skill for a single introduction draft."
+    },
+    {
+      "source": "audit-your-meetings",
+      "disposition": "new",
+      "targets": [
+        "CBG-001"
+      ],
+      "rationale": "Observable transcript behavior with explicit limits on timing and intent inference."
+    },
+    {
+      "source": "bharat-gtm",
+      "disposition": "new",
+      "targets": [
+        "CBG-002"
+      ],
+      "rationale": "Regional access and purchasing-role tests replace stereotypes and fixed channels."
+    },
+    {
+      "source": "case-study-forge",
+      "disposition": "covered",
+      "targets": [
+        "MBR-004",
+        "MBR-006"
+      ],
+      "rationale": "Existing evidence-based case outline and repurposing cover the reusable method."
+    },
+    {
+      "source": "cohort-retention-analysis",
+      "disposition": "covered",
+      "targets": [
+        "TAN-002",
+        "MME-009"
+      ],
+      "rationale": "Cohort denominators and campaign interpretation already covered without universal retention targets."
+    },
+    {
+      "source": "community-flywheel",
+      "disposition": "new",
+      "targets": [
+        "CBG-003"
+      ],
+      "rationale": "Member contribution-response loops and moderation capacity add distinct operating decisions."
+    },
+    {
+      "source": "competitor-teardown",
+      "disposition": "covered",
+      "targets": [
+        "BST-003"
+      ],
+      "rationale": "Source-dated like-for-like competitor comparison replaces unverified company autopsies."
+    },
+    {
+      "source": "create-excel-models",
+      "disposition": "new",
+      "targets": [
+        "CBG-004"
+      ],
+      "rationale": "Create or edit a workbook and verify calculations, compatibility and delivery."
+    },
+    {
+      "source": "create-formatted-documents",
+      "disposition": "new",
+      "targets": [
+        "CBG-005"
+      ],
+      "rationale": "Create or edit structural documents, render and repair before delivery."
+    },
+    {
+      "source": "create-presentations",
+      "disposition": "new",
+      "targets": [
+        "CBG-006"
+      ],
+      "rationale": "Build or edit a supported slide narrative and inspect the saved rendered deck."
+    },
+    {
+      "source": "decision-journal",
+      "disposition": "new",
+      "targets": [
+        "CBG-008"
+      ],
+      "rationale": "Preserve predecision reasoning and assess process separately from outcome."
+    },
+    {
+      "source": "delegation-engine",
+      "disposition": "new",
+      "targets": [
+        "CBG-009"
+      ],
+      "rationale": "Delegated authority, dependencies and observable acceptance replace fixed checkpoint percentages."
+    },
+    {
+      "source": "discovery-call-mastery",
+      "disposition": "covered",
+      "targets": [
+        "MSA-001",
+        "MSA-002"
+      ],
+      "rationale": "Neutral discovery and qualification already provide evidence-led call preparation."
+    },
+    {
+      "source": "edit-pdfs",
+      "disposition": "new",
+      "targets": [
+        "CBG-007"
+      ],
+      "rationale": "Create or transform a PDF with preservation criteria and rendered verification."
+    },
+    {
+      "source": "experiment-design",
+      "disposition": "covered",
+      "targets": [
+        "BMD-005",
+        "MME-007"
+      ],
+      "rationale": "Existing experiment planning and readout keep stopping conditions explicit without arbitrary sample thresholds."
+    },
+    {
+      "source": "founder-distribution-engine",
+      "disposition": "covered",
+      "targets": [
+        "MBR-006",
+        "MCA-003",
+        "MCA-007"
+      ],
+      "rationale": "Repurpose supported source material, assign channel roles and schedule dependencies."
+    },
+    {
+      "source": "hard-conversations",
+      "disposition": "covered",
+      "targets": [
+        "GCO-003",
+        "GCO-004",
+        "GCO-005",
+        "GPR-010"
+      ],
+      "rationale": "Scope renegotiation, disagreement, feedback and missed-commitment repair already produce factual drafts."
+    },
+    {
+      "source": "kill-or-double",
+      "disposition": "new",
+      "targets": [
+        "CBG-010"
+      ],
+      "rationale": "Future-value continuation gates and obligation-aware transitions replace score cutoffs."
+    },
+    {
+      "source": "launch-playbook",
+      "disposition": "covered",
+      "targets": [
+        "MCA-006",
+        "MCA-007",
+        "MCA-010"
+      ],
+      "rationale": "Readiness, sequencing and contingencies already cover launch operations without fixed platform timing."
+    },
+    {
+      "source": "market-sizing-fast",
+      "disposition": "new",
+      "targets": [
+        "CBG-011"
+      ],
+      "rationale": "Bottom-up count, overlap and frequency ledger with explicit assumptions and units."
+    },
+    {
+      "source": "metrics-north-star",
+      "disposition": "new",
+      "targets": [
+        "CBG-012"
+      ],
+      "rationale": "Primary metric selection with value hypotheses, gaming checks and guardrails."
+    },
+    {
+      "source": "morning",
+      "disposition": "new",
+      "targets": [
+        "CBG-013"
+      ],
+      "rationale": "Source-grounded attention brief preserves open-state evidence and source coverage."
+    },
+    {
+      "source": "multi-venture-os",
+      "disposition": "merged",
+      "targets": [
+        "CBG-010",
+        "BPL-003",
+        "GPR-002"
+      ],
+      "rationale": "Continuation decisions, business capacity tradeoffs and personal calendar placement replace fixed allocation rules."
+    },
+    {
+      "source": "mvp-scoping-razor",
+      "disposition": "covered",
+      "targets": [
+        "MSV-004",
+        "MSV-005",
+        "MSV-006",
+        "THK-002"
+      ],
+      "rationale": "Concierge and landing tests, bounded pilots and minimum demo scope already cover the useful scoping methods."
+    },
+    {
+      "source": "negotiation-playbook",
+      "disposition": "new",
+      "targets": [
+        "CBG-014"
+      ],
+      "rationale": "Feasible conditional package trades with authority boundaries replace anchoring formulas."
+    },
+    {
+      "source": "offer-design",
+      "disposition": "new",
+      "targets": [
+        "CBG-015"
+      ],
+      "rationale": "Operational scope options, dependencies and proof distinguish offer packaging from copy hierarchy."
+    }
+  ]
+}

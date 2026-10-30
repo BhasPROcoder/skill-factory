@@ -3,9 +3,9 @@ id: MSC-009
 name: fiction-emotional-beat-grounding
 domain: Fiction Scene Craft
 subdomain: Design
-version: 1.0
-description: Fiction emotional beat grounding using supplied evidence and explicit acceptance checks; use when preparing a fiction emotional beat grounding deliverable.
-triggers: ["help me with fiction emotional beat grounding", "prepare a fiction emotional beat grounding deliverable", "review our fiction emotional beat grounding evidence", "create a fiction emotional beat grounding action plan", "check this fiction emotional beat grounding decision"]
+version: 1.1
+description: Guide fiction emotional beat grounding when working from scene text, character emotion, trigger, and established behavior.
+triggers: ["fiction emotional beat grounding", "help with fiction emotional beat grounding", "work on fiction emotional beat grounding", "review my fiction emotional beat grounding", "apply fiction emotional beat grounding to these materials"]
 not_for: ["Fiction scene compression revision [MSC-010]", "Fiction scene goal and pressure revision [MSC-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction emotional beat grounding
 
 ## Purpose
-Produce a usable fiction emotional beat grounding deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction emotional beat grounding task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,13 +104,14 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Show what in the letter changes relief into alarm. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 The returned letter was warm from Ivo's pocket. Mara laughed once with relief. Then she saw the broken seal. Her fingers tightened until the paper bent, and the laugh left her face.
 
 ## Acceptance check
 The revised reaction has an observable trigger and a coherent emotional progression.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

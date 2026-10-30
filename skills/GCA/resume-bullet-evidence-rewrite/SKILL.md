@@ -3,10 +3,10 @@ id: GCA-002
 name: resume-bullet-evidence-rewrite
 domain: Career Development
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare resume bullet evidence rewrite from supplied evidence; use when the request concerns existing resume bullet.
 triggers: ["resume bullet evidence rewrite", "prepare resume bullet evidence rewrite", "review my resume bullet evidence rewrite", "help me with resume bullet evidence rewrite", "turn existing resume bullet into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Cover letter evidence draft [GCA-003]", "Interview story evidence bank [GCA-004]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Bullet element | Verified fact | Draft wording | Check
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional candidate Asha organized a shared onboarding checklist with teammates and has no measured time-saving result.
+> Fictional scenario: Fictional candidate Asha organized a shared onboarding checklist with teammates and has no measured time-saving result. The candidate confirms that the team used the checklist and that it documented handoff responsibilities; no effect on consistency was measured.
 
 **Output:**
 ```text
@@ -83,9 +85,11 @@ Scope: Prepare resume bullet evidence rewrite for the fictional case, limited to
 Basis: The fictional scenario above; missing supporting material remains unverified.
 Bullet element | Verified fact | Draft wording | Check
 Action | Organized shared checklist | Organized team onboarding steps into a shared checklist. | Confirm ownership wording
-Result | Checklist used by team | Supported consistent handoffs with documented responsibilities. | No invented efficiency metric
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+Result | Checklist used by team | Documented handoff responsibilities in a team-used checklist. | No claim of improved consistency or speed
+
+Artifact: Proposed resume bullet: Organized team onboarding steps into a shared checklist documenting handoff responsibilities. Keep team collaboration visible. Do not add a percentage improvement, faster onboarding, or more consistent delivery without supporting measurements.
+Next action: The requester or assigned reviewer will complete this task-specific check: Write a concise bullet that makes the relevant contribution visible. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Confirm ownership wording.
 ```
 
 **Bad output:**

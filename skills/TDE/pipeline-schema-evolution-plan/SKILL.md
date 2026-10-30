@@ -3,9 +3,9 @@ id: TDE-004
 name: pipeline-schema-evolution-plan
 domain: Data Pipeline Design
 subdomain: Contracts
-version: 1.0
-description: Produce a schema evolution compatibility plan; use when the task is to pipeline schema evolution plan.
-triggers: ["pipeline schema evolution plan", "help with a schema evolution compatibility plan", "review my a schema evolution compatibility plan", "prepare a schema evolution compatibility plan", "check pipeline schema evolution plan evidence"]
+version: 1.1
+description: Create a schema evolution compatibility plan from supplied evidence; use when preparing or reviewing schema evolution compatibility plan decisions.
+triggers: ["pipeline schema evolution plan", "help with a schema evolution compatibility plan", "review my schema evolution compatibility plan", "prepare a schema evolution compatibility plan", "check the evidence for this schema evolution compatibility plan"]
 not_for: ["pipeline checkpoint recovery review [TDE-005]", "pipeline data contract draft [TDE-006]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a schema evolution compatibility plan and name the source artifacts used; retain a version or observation date where available.
 2. Classify additions, removals, type changes, and meaning changes
 3. Map each change to consumer read and write assumptions
-4. ⚠️ Identify a compatibility period or migration sequence Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Identify a compatibility period or migration sequence. Do not silently replace missing evidence with an assumed successful outcome.
 5. Define an observable condition for retiring the old representation
 6. Apply the domain check: Separate event identity, processing attempt identity, and target state; require an explicit recovery path before recommending destructive backfills.
 7. Verify the proposed result with this task-specific check: Validate consumer-required fields against each proposed schema version. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Pipeline correctness includes repeated execution, partial failures, and late changes. Test the state transition that matters to consumers rather than only whether a job returns successfully. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a schema evolution compatibility plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The proposed schema breaks a documented consumer requirement.
 Decision: Keep the field until the consumer migration is verified or introduce an agreed compatibility path.
+Artifact: Consumer Birch requires customer_id. Proposed producer removes customer_id. Compatibility status: blocked. Sequence: migrate and verify consumer or retain an agreed compatibility representation; retire the old field only after the stated consumer acceptance condition.
 Action: Team owner — Define an observable condition for retiring the old representation Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Validate consumer-required fields against each proposed schema version.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a schema evolution compatibility plan. Consumer Birch requires customer_id; the proposed producer schema removes customer_id. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The proposed schema breaks a documented consumer requirement.
 3. It preserves this task-specific conclusion: Keep the field until the consumer migration is verified or introduce an agreed compatibility path.
 4. It includes the verification check or explicitly marks it pending: Validate consumer-required fields against each proposed schema version.

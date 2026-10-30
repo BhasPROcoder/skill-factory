@@ -3,9 +3,9 @@ id: MOP-006
 name: startup-customer-handoff-map
 domain: Startup Operating Workflows
 subdomain: Design
-version: 1.0
-description: Startup customer handoff mapping using supplied evidence and explicit acceptance checks; use when preparing a startup customer handoff mapping deliverable.
-triggers: ["help me with startup customer handoff mapping", "prepare a startup customer handoff mapping deliverable", "review our startup customer handoff mapping evidence", "create a startup customer handoff mapping action plan", "check this startup customer handoff mapping decision"]
+version: 1.1
+description: Guide startup customer handoff mapping when working from customer journey stages, owning roles, transfer artifacts, and common gaps.
+triggers: ["startup customer handoff mapping", "help with startup customer handoff mapping", "work on startup customer handoff map", "review my startup customer handoff mapping", "apply startup customer handoff mapping to these materials"]
 not_for: ["Startup process exception log design [MOP-007]", "Startup service capacity planning [MOP-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup customer handoff mapping
 
 ## Purpose
-Produce a usable startup customer handoff mapping deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup customer handoff mapping task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -114,7 +114,7 @@ Until acceptance: sales owner follows up and retains coordination responsibility
 Every transfer has a sending owner, receiving owner, artifact, and acceptance signal.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

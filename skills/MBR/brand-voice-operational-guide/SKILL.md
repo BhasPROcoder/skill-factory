@@ -3,9 +3,9 @@ id: MBR-001
 name: brand-voice-operational-guide
 domain: Commercial Brand and Editorial
 subdomain: Design
-version: 1.0
-description: Brand voice operational guide design using supplied evidence and explicit acceptance checks; use when preparing a brand voice operational guide design deliverable.
-triggers: ["help me with brand voice operational guide design", "prepare a brand voice operational guide design deliverable", "review our brand voice operational guide design evidence", "create a brand voice operational guide design action plan", "check this brand voice operational guide design decision"]
+version: 1.1
+description: Guide brand voice operational guide design when working from approved copy samples, audience context, and undesirable examples.
+triggers: ["brand voice operational guide design", "help with brand voice operational guide design", "work on brand voice operational guide", "review my brand voice operational guide design", "apply brand voice operational guide design to these materials"]
 not_for: ["Brand message hierarchy design [MBR-002]", "Commercial copy claim substantiation review [MBR-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Brand voice operational guide design
 
 ## Purpose
-Produce a usable brand voice operational guide design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this brand voice operational guide design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -106,14 +106,14 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
 ## Artifact
 Rule: prefer direct verbs and clear statements of supported facts.
 Before: We think you may possibly be able to export the report.
-After, if capability is verified: Export the report from the report view.
-Exception: retain uncertainty when evidence is incomplete.
+After, only if export capability is verified: Export the report.
+Exception: retain uncertainty when evidence is incomplete; do not invent the interface location.
 
 ## Acceptance check
 A reviewer can point to wording that follows or violates each voice rule.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

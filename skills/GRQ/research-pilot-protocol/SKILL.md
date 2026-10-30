@@ -3,10 +3,10 @@ id: GRQ-007
 name: research-pilot-protocol
 domain: Research Question and Study Design
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare research pilot protocol from supplied evidence; use when the request concerns proposed study procedure.
 triggers: ["research pilot protocol", "prepare research pilot protocol", "review my research pilot protocol", "help me with research pilot protocol", "turn proposed study procedure into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Research protocol decision log [GRQ-008]", "Measurement schedule [GRQ-009]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Pilot question | Observation | Revision trigger | Record
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional team Wrenfield pilots a questionnaire to check whether respondents interpret the reference period consistently.
+> Fictional scenario: Fictional team Wrenfield pilots a questionnaire to check whether respondents interpret the reference period consistently. The fictional pilot log records inconsistent interpretations and a skipped routing question that sent a participant down the wrong path.
 
 **Output:**
 ```text
@@ -84,8 +86,10 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Pilot question | Observation | Revision trigger | Record
 Period comprehension | Participant paraphrase | Different periods inferred | Revise wording
 Completion flow | Skipped routing question | Incorrect path followed | Repair instructions
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Pilot repair log: The supplied period-interpretation problem requires a wording retest. The observed skipped routing item requires a separate flow repair: make the condition visible, state the correct next item for each answer, and walk through each branch with a new trial participant. Record branch followed, unexpected stop, and whether assistance was needed. A repaired wording item does not by itself validate recruitment, timing, or the full collection workflow.
+Next action: The requester or assigned reviewer will complete this task-specific check: Document changes and unresolved issues without treating pilot results as definitive findings. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Revise wording.
 ```
 
 **Bad output:**

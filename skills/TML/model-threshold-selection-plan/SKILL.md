@@ -2,10 +2,10 @@
 id: TML-004
 name: model-threshold-selection-plan
 domain: Model Evaluation Design
-subdomain: Deployment comparison
-version: 1.0
-description: Produce a threshold selection worksheet; use when the task is to model threshold selection plan.
-triggers: ["model threshold selection plan", "help with a threshold selection worksheet", "review my a threshold selection worksheet", "prepare a threshold selection worksheet", "check model threshold selection plan evidence"]
+subdomain: Metrics
+version: 1.1
+description: Create a threshold selection worksheet from supplied evidence; use when preparing or reviewing threshold selection worksheet decisions.
+triggers: ["model threshold selection plan", "help with a threshold selection worksheet", "review my threshold selection worksheet", "prepare a threshold selection worksheet", "check the evidence for this threshold selection worksheet"]
 not_for: ["model probability calibration review [TML-005]", "model error slice investigation [TML-006]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a threshold selection worksheet and name the source artifacts used; retain a version or observation date where available.
 2. List candidate thresholds without consulting final test outcomes
 3. Compute action counts and error tradeoffs on validation data
-4. ⚠️ Select using the stated decision criterion Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Select using the stated decision criterion. Do not silently replace missing evidence with an assumed successful outcome.
 5. Freeze the threshold before final evaluation
 6. Apply the domain check: Check separation of training, tuning, and final evaluation; connect the chosen metric to the real decision instead of assuming the leaderboard metric is sufficient.
 7. Verify the proposed result with this task-specific check: Check boundary inclusivity and recompute selected records. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A model score is conditional on a dataset, split, metric, and prediction-time information. Protect held-out data from model-selection decisions and retain simple baselines that make improvement interpretable. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a threshold selection worksheet
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The threshold selects the latter two records for the positive action.
 Decision: Evaluate that threshold's consequences on validation data before freezing it.
+Artifact: Validation scores: 0.2→negative; 0.6→positive; 0.9→positive under threshold ≥0.5. Positive actions=2. Selection still requires the supplied decision criterion and labels; freeze the chosen threshold before final-test evaluation.
 Action: Team owner — Freeze the threshold before final evaluation Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Check boundary inclusivity and recompute selected records.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a threshold selection worksheet. Validation scores are 0.2, 0.6, and 0.9; the proposed threshold is 0.5 using greater-than-or-equal comparison. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The threshold selects the latter two records for the positive action.
 3. It preserves this task-specific conclusion: Evaluate that threshold's consequences on validation data before freezing it.
 4. It includes the verification check or explicitly marks it pending: Check boundary inclusivity and recompute selected records.

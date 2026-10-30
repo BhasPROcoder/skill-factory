@@ -3,9 +3,9 @@ id: MEC-008
 name: ecommerce-postpurchase-message-plan
 domain: E-commerce Customer Experience
 subdomain: Design
-version: 1.0
-description: Post-purchase message planning using supplied evidence and explicit acceptance checks; use when preparing a post-purchase message planning deliverable.
-triggers: ["help me with post-purchase message planning", "prepare a post-purchase message planning deliverable", "review our post-purchase message planning evidence", "create a post-purchase message planning action plan", "check this post-purchase message planning decision"]
+version: 1.1
+description: Guide post-purchase message planning when working from order states, customer concerns, verified fulfillment events, and support routes.
+triggers: ["post-purchase message planning", "help with post-purchase message planning", "work on ecommerce postpurchase message plan", "review my post-purchase message planning", "apply post-purchase message planning to these materials"]
 not_for: ["Out-of-stock experience planning [MEC-009]", "Catalog attribute cleanup planning [MEC-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Post-purchase message planning
 
 ## Purpose
-Produce a usable post-purchase message planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this post-purchase message planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Exception: if shipment status is unknown, say so rather than infer dispatch.
 Each message accurately reflects a confirmed state or clearly labeled estimate.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

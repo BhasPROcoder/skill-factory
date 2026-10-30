@@ -2,10 +2,10 @@
 id: THK-006
 name: hackathon-fallback-demo-plan
 domain: Hackathon Delivery
-subdomain: Team execution
-version: 1.0
-description: Produce a live-demo fallback plan; use when the task is to hackathon fallback demo plan.
-triggers: ["hackathon fallback demo plan", "help with a live-demo fallback plan", "review my a live-demo fallback plan", "prepare a live-demo fallback plan", "check hackathon fallback demo plan evidence"]
+subdomain: Demonstration
+version: 1.1
+description: Create a live-demo fallback plan from supplied evidence; use when preparing or reviewing live-demo fallback plan decisions.
+triggers: ["hackathon fallback demo plan", "help with a live-demo fallback plan", "review my live-demo fallback plan", "prepare a live-demo fallback plan", "check the evidence for this live-demo fallback plan"]
 not_for: ["hackathon judging evidence map [THK-007]", "hackathon submission package check [THK-008]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a live-demo fallback plan and name the source artifacts used; retain a version or observation date where available.
 2. Identify which failures can interrupt the user journey
 3. Prepare a fallback artifact for each critical dependency
-4. ⚠️ Label fallback artifacts and their limitations clearly Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Label fallback artifacts and their limitations clearly. Do not silently replace missing evidence with an assumed successful outcome.
 5. Rehearse switching without claiming the fallback is live
 6. Apply the domain check: Connect each commitment to the available team, schedule, permitted resources, and a fallback demonstration path.
 7. Verify the proposed result with this task-specific check: Check the current official demo rules and rehearse the allowed fallback path. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A hackathon prototype needs a coherent user journey and demonstrable evidence of its central claim. Distinguish simulated components from implemented behavior, and read the current event rules instead of assuming submission or judging conventions. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a live-demo fallback plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: A recording is disallowed while a labeled local fixture is permitted.
 Decision: Prepare a local fixture route and explain its simulated dependency.
+Artifact: Allowed fallback: labeled local fixture route. Disallowed fallback: recorded demonstration under the supplied fictional rule. Spoken cue: “The external service is unavailable, so this path uses a local fixture to show the interface behavior.” Do not call it a live integration.
 Action: Team owner — Rehearse switching without claiming the fallback is live Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Check the current official demo rules and rehearse the allowed fallback path.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a live-demo fallback plan. The fictional event permits local fixtures but not recorded demos; the live API may be unavailable. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: A recording is disallowed while a labeled local fixture is permitted.
 3. It preserves this task-specific conclusion: Prepare a local fixture route and explain its simulated dependency.
 4. It includes the verification check or explicitly marks it pending: Check the current official demo rules and rehearse the allowed fallback path.

@@ -3,9 +3,9 @@ id: TDE-007
 name: pipeline-quarantine-workflow
 domain: Data Pipeline Design
 subdomain: Recovery
-version: 1.0
-description: Produce a rejected-record quarantine workflow; use when the task is to pipeline quarantine workflow.
-triggers: ["pipeline quarantine workflow", "help with a rejected-record quarantine workflow", "review my a rejected-record quarantine workflow", "prepare a rejected-record quarantine workflow", "check pipeline quarantine workflow evidence"]
+version: 1.1
+description: Create a rejected-record quarantine workflow from supplied evidence; use when preparing or reviewing rejected-record quarantine workflow decisions.
+triggers: ["pipeline quarantine workflow", "help with a rejected-record quarantine workflow", "review my rejected-record quarantine workflow", "prepare a rejected-record quarantine workflow", "check the evidence for this rejected-record quarantine workflow"]
 not_for: ["pipeline dependency readiness gate [TDE-008]", "pipeline incremental refresh design [TDE-009]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a rejected-record quarantine workflow and name the source artifacts used; retain a version or observation date where available.
 2. Preserve rejected records with source identity and failure reason
 3. Separate retryable transport failures from content violations
-4. ⚠️ Define who can correct and replay each failure class Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Define who can correct and replay each failure class. Do not silently replace missing evidence with an assumed successful outcome.
 5. Track replay outcomes without losing the original rejection
 6. Apply the domain check: Separate event identity, processing attempt identity, and target state; require an explicit recovery path before recommending destructive backfills.
 7. Verify the proposed result with this task-specific check: Correct a fixture and replay it while preserving the original rejection record. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Pipeline correctness includes repeated execution, partial failures, and late changes. Test the state transition that matters to consumers rather than only whether a job returns successfully. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a rejected-record quarantine workflow
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The defect is unchanged content rather than a transient transport failure.
 Decision: Quarantine the record with its source identity and correction owner.
+Artifact: Quarantine record: source=s1; reason=missing required key; retry class=content correction, not transient transport. Owner: designated producer/correction role. Replay retains s1 and links corrected record to original rejection; repeated unchanged retries do not resolve it.
 Action: Team owner — Track replay outcomes without losing the original rejection Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Correct a fixture and replay it while preserving the original rejection record.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a rejected-record quarantine workflow. A record lacks a required key and has failed the same validation on repeated attempts. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The defect is unchanged content rather than a transient transport failure.
 3. It preserves this task-specific conclusion: Quarantine the record with its source identity and correction owner.
 4. It includes the verification check or explicitly marks it pending: Correct a fixture and replay it while preserving the original rejection record.

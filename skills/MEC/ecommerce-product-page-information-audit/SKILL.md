@@ -3,9 +3,9 @@ id: MEC-001
 name: ecommerce-product-page-information-audit
 domain: E-commerce Customer Experience
 subdomain: Design
-version: 1.0
-description: Product page information auditing using supplied evidence and explicit acceptance checks; use when preparing a product page information auditing deliverable.
-triggers: ["help me with product page information auditing", "prepare a product page information auditing deliverable", "review our product page information auditing evidence", "create a product page information auditing action plan", "check this product page information auditing decision"]
+version: 1.1
+description: Guide product page information auditing when working from product facts, customer questions, variant details, and page content.
+triggers: ["product page information auditing", "help with product page information auditing", "work on ecommerce product page information audit", "review my product page information auditing", "apply product page information auditing to these materials"]
 not_for: ["Product variant selection review [MEC-002]", "Product sizing guide briefing [MEC-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product page information auditing
 
 ## Purpose
-Produce a usable product page information auditing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product page information auditing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Image review: remove any contradictory implication that the stand is part of the
 Customers can distinguish the sold item from illustrative accessories.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MSL-003
 name: local-hours-consistency-review
 domain: Local Search Operations
 subdomain: Design
-version: 1.0
-description: Local opening-hours consistency review using supplied evidence and explicit acceptance checks; use when preparing a local opening-hours consistency review deliverable.
-triggers: ["help me with local opening-hours consistency review", "prepare a local opening-hours consistency review deliverable", "review our local opening-hours consistency review evidence", "create a local opening-hours consistency review action plan", "check this local opening-hours consistency review decision"]
+version: 1.1
+description: Guide local opening-hours consistency review when working from regular hours, exceptions, location records, and staffed-service windows.
+triggers: ["local opening-hours consistency review", "help with local opening-hours consistency review", "work on local hours consistency review", "review my local opening-hours consistency review", "apply local opening-hours consistency review to these materials"]
 not_for: ["Local location page briefing [MSL-004]", "Local service-area description planning [MSL-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Local opening-hours consistency review
 
 ## Purpose
-Produce a usable local opening-hours consistency review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this local opening-hours consistency review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Do not populate times until verified.
 The customer-facing schedule accurately describes when each advertised service is available.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

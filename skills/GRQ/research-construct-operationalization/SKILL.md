@@ -3,10 +3,10 @@ id: GRQ-002
 name: research-construct-operationalization
 domain: Research Question and Study Design
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare construct operationalization map from supplied evidence; use when the request concerns research construct.
 triggers: ["construct operationalization map", "prepare construct operationalization map", "review my construct operationalization map", "help me with construct operationalization map", "turn research construct into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Observational design inference-boundary review [GRQ-003]", "Sampling plan rationale [GRQ-004]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Construct aspect | Indicator | Alternative explanation | Interpretation boundary
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Construct aspect | Indicator | Alternative explanation | Interpretation boundary
 Presence | Attendance record | Required attendance may explain presence | Not full engagement
 Active contribution | Not yet observed | Access barriers may affect visibility | Needs separate measure
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: State which aspects remain unmeasured. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Not full engagement.
 ```
 
 **Bad output:**

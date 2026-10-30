@@ -3,9 +3,9 @@ id: TDV-008
 name: operations-runbook-gap-review
 domain: Deployment and Operations Planning
 subdomain: Service operations
-version: 1.0
-description: Produce an operational runbook gap report; use when the task is to operations runbook gap review.
-triggers: ["operations runbook gap review", "help with an operational runbook gap report", "review my an operational runbook gap report", "prepare an operational runbook gap report", "check operations runbook gap review evidence"]
+version: 1.1
+description: Create an operational runbook gap report from supplied evidence; use when preparing or reviewing operational runbook gap report decisions.
+triggers: ["operations runbook gap review", "help with an operational runbook gap report", "review my operational runbook gap report", "prepare an operational runbook gap report", "check the evidence for this operational runbook gap report"]
 not_for: ["deployment environment parity review [TDV-009]", "operations postincident action review [TDV-010]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of an operational runbook gap report and name the source artifacts used; retain a version or observation date where available.
 2. Walk through the runbook as the intended operator
 3. Identify missing commands, preconditions, and expected observations
-4. ⚠️ Separate diagnostic steps from state-changing steps Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate diagnostic steps from state-changing steps. Do not silently replace missing evidence with an assumed successful outcome.
 5. Add stop and escalation conditions where evidence becomes ambiguous
 6. Apply the domain check: Identify the owner, precondition, stop condition, and recovery action for every proposed live change; verify current provider behavior in official documentation.
 7. Verify the proposed result with this task-specific check: Have an authorized reviewer rehearse the instructions in a nonproduction environment. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Operational readiness depends on the exact artifact, configuration, environment, and observed workload. Rehearse state changes in an isolated environment and distinguish an available backup from a demonstrated recovery. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: an operational runbook gap report
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The action is underspecified.
 Decision: Add the target, authorized owner, expected signal, and escalation path before operational use.
+Artifact: Runbook action draft: authorized [OWNER] restarts [WORKER IDENTIFIER] only after [PRECONDITIONS]; expect [RECOVERY SIGNAL]; stop and escalate on [FAILURE CONDITION]. These unresolved fields block operational use; no command or target is invented.
 Action: Team owner — Add stop and escalation conditions where evidence becomes ambiguous Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Have an authorized reviewer rehearse the instructions in a nonproduction environment.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for an operational runbook gap report. A runbook says 'restart the worker' but names no worker, authority, expected recovery signal, or stop condition. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The action is underspecified.
 3. It preserves this task-specific conclusion: Add the target, authorized owner, expected signal, and escalation path before operational use.
 4. It includes the verification check or explicitly marks it pending: Have an authorized reviewer rehearse the instructions in a nonproduction environment.

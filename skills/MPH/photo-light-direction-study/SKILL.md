@@ -3,9 +3,9 @@ id: MPH-003
 name: photo-light-direction-study
 domain: Photography Planning and Critique
 subdomain: Design
-version: 1.0
-description: Photographic light direction study planning using supplied evidence and explicit acceptance checks; use when preparing a photographic light direction study planning deliverable.
-triggers: ["help me with photographic light direction study planning", "prepare a photographic light direction study planning deliverable", "review our photographic light direction study planning evidence", "create a photographic light direction study planning action plan", "check this photographic light direction study planning decision"]
+version: 1.1
+description: Guide photographic light direction study planning when working from subject, available light, location, and intended surface or mood emphasis.
+triggers: ["photographic light direction study planning", "help with photographic light direction study planning", "work on photo light direction study", "review my photographic light direction study planning", "apply photographic light direction study planning to these materials"]
 not_for: ["Photographic crop comparison review [MPH-004]", "Photographic shot list sequencing [MPH-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Photographic light direction study planning
 
 ## Purpose
-Produce a usable photographic light direction study planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this photographic light direction study planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Test a position that reveals the expression while preserving the desired contrast. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Study A: current subject position; note where the expression is lost.
 Study B: turn or reposition relative to available light until the key expression is visible.
 Compare: expression readability and retained form.
@@ -113,7 +114,7 @@ No universal exposure settings are assumed.
 The chosen version supports the intended expression and shape without relying on a universal setting recipe.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

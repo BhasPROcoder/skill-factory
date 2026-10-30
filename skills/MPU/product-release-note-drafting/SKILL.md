@@ -3,9 +3,9 @@ id: MPU-009
 name: product-release-note-drafting
 domain: Product Experience Review
 subdomain: Design
-version: 1.0
-description: Product release note drafting using supplied evidence and explicit acceptance checks; use when preparing a product release note drafting deliverable.
-triggers: ["help me with product release note drafting", "prepare a product release note drafting deliverable", "review our product release note drafting evidence", "create a product release note drafting action plan", "check this product release note drafting decision"]
+version: 1.1
+description: Guide product release note drafting when working from verified changes, affected users, limitations, and migration actions.
+triggers: ["product release note drafting", "help with product release note drafting", "work on product release note drafting", "review my product release note drafting", "apply product release note drafting to these materials"]
 not_for: ["Product design handoff preparation [MPU-010]", "Product task flow review [MPU-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product release note drafting
 
 ## Purpose
-Produce a usable product release note drafting deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product release note drafting task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Place this action ahead of optional feature promotion.
 Affected users can identify required actions and relevant limitations.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

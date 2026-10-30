@@ -2,10 +2,10 @@
 id: TVE-009
 name: video-version-feedback-reconciliation
 domain: Video Editing Decisions
-subdomain: Story structure
-version: 1.0
-description: Produce a video revision decision log; use when the task is to video version feedback reconciliation.
-triggers: ["video version feedback reconciliation", "help with a video revision decision log", "review my a video revision decision log", "prepare a video revision decision log", "check video version feedback reconciliation evidence"]
+subdomain: Delivery
+version: 1.1
+description: Create a video revision decision log from supplied evidence; use when preparing or reviewing video revision decision log decisions.
+triggers: ["video version feedback reconciliation", "help with a video revision decision log", "review my video revision decision log", "prepare a video revision decision log", "check the evidence for this video revision decision log"]
 not_for: ["video export quality check plan [TVE-010]", "video footage logging plan [TVE-001]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a video revision decision log and name the source artifacts used; retain a version or observation date where available.
 2. Tie each comment to the version it references
 3. Group conflicting requests by the decision they affect
-4. ⚠️ Resolve priorities using the approved brief and accountable owner Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Resolve priorities using the approved brief and accountable owner. Do not silently replace missing evidence with an assumed successful outcome.
 5. Record accepted, deferred, and unresolved changes separately
 6. Apply the domain check: Preserve the source material and distinguish a paper edit from an executed timeline; verify current destination specifications with the recipient.
 7. Verify the proposed result with this task-specific check: Compare the revised timeline with the accepted change list and version references. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Describe edit choices through visible actions, shot duration relative to an action, framing, cut motivation, caption placement, and sound transitions. Never invent footage contents, dialogue, defects, or timecodes when the media has not been inspected. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a video revision decision log
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The requests conflict over whether the answer belongs in the piece.
 Decision: Ask the accountable editor to decide using the brief and document the result.
+Artifact: Decision record: same approved version; request A=retain full answer; request B=remove answer. Status: conflicting, owner decision required. Resolve against the approved brief before editing; record accepted, rejected, and deferred requests separately.
 Action: Team owner — Record accepted, deferred, and unresolved changes separately Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare the revised timeline with the accepted change list and version references.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a video revision decision log. One reviewer requests the full interview answer; another requests removal of that answer; both refer to the same approved version. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The requests conflict over whether the answer belongs in the piece.
 3. It preserves this task-specific conclusion: Ask the accountable editor to decide using the brief and document the result.
 4. It includes the verification check or explicitly marks it pending: Compare the revised timeline with the accepted change list and version references.

@@ -3,10 +3,10 @@ id: MSV-009
 name: startup-early-adopter-screen
 domain: Startup Customer Validation
 subdomain: Design
-version: 1.0
-description: Startup early-adopter recruitment screen using supplied evidence and explicit acceptance checks; use when preparing a startup early-adopter recruitment screen deliverable.
-triggers: ["help me with startup early-adopter recruitment screen", "prepare a startup early-adopter recruitment screen deliverable", "review our startup early-adopter recruitment screen evidence", "create a startup early-adopter recruitment screen action plan", "check this startup early-adopter recruitment screen decision"]
-not_for: ["Startup pivot evidence brief preparation [MSV-010]", "Startup problem hypothesis design [MSV-001]", "Legal or regulated financial conclusions"]
+version: 1.1
+description: Guide startup early-adopter recruitment screen when working from pilot partner candidates, current workarounds, problem urgency, authorized access, and participation capacity.
+triggers: ["startup early-adopter recruitment screen", "help with startup early-adopter recruitment screen", "work on startup early adopter screen", "review my startup early-adopter recruitment screen", "apply startup early-adopter recruitment screen to these materials"]
+not_for: ["Screen a representative research sample rather than select pilot partners [MRE-002]", "Define the pilot delivery scope after partners have been selected [MSV-006]"]
 requires: []
 risk_level: medium
 ---
@@ -14,11 +14,11 @@ risk_level: medium
 # Startup early-adopter recruitment screen
 
 ## Purpose
-Produce a usable startup early-adopter recruitment screen deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup early-adopter recruitment screen task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
-2. **Task evidence** — collect problem context, desired behavior, access channels, and test requirements; this establishes what can actually be assessed. Default: none; request the relevant material if absent instead of substituting industry averages.
+2. **Task evidence** — collect pilot partner candidates, current workarounds, problem urgency, authorized access, and participation capacity; this establishes what can actually be assessed. Default: none; request the relevant material if absent instead of substituting industry averages.
 3. **Business context** — collect target customer, problem hypothesis, proposed offer, available access, and experiment constraints; this prevents recommendations for the wrong operating conditions. Default: preserve the context explicitly present in the evidence and label everything else unknown.
 4. **Constraints** — collect deadline, responsible owner, available effort, exclusions, and approval route; these determine which recommendations are actionable. Default: no assumed budget or delivery commitment.
 5. **Acceptance standard** — ask how the user will recognize an adequate result; use the task-specific acceptance check below as a proposed standard if none is supplied, not as an external benchmark.
@@ -28,9 +28,9 @@ If a required input is missing and has no safe default, ask in one message with 
 ## Procedure
 1. State the requested decision and delimit the evidence set by product, audience, channel, and period wherever those distinctions matter.
 2. Assign a short source label to each supplied item so another reviewer can trace the recommendation without searching an entire conversation.
-3. Define eligibility through recent relevant behavior and ability to participate
-4. Separate curiosity about novelty from an active need matching the hypothesis
-5. Prepare a screen that preserves exclusion reasons and coverage limitations
+3. Distinguish a potential pilot partner from a participant suitable only for a research interview
+4. Assess current workaround cost, urgency to change, access authority, and capacity to give iterative feedback without inventing numeric cutoffs
+5. Create candidate dispositions separating pilot-ready, research-only, and prerequisite-blocked participants; record missing perspectives separately
 6. Apply the domain checks: Separate statements of interest from observed commitments; expose how participants were recruited; define a decision rule before observing results and preserve negative evidence.
 7. ⚠️ Check whether the proposed response assumes a current platform rule, eligibility condition, or externally defined limit. Check the current value in the experiment platform official rules and verified participant consent arrangements; if unavailable, write `[VERIFY: exact requirement and authoritative source to check]` and keep the dependent conclusion provisional.
 8. Turn each supported finding into an action with an owner role, a dependency, and an observable completion check. Order work by whether it blocks the decision, not by how easy it is to describe.
@@ -39,7 +39,7 @@ If a required input is missing and has no safe default, ask in one message with 
 11. Fill the output template, then run every quality checklist item. Recompute any totals, proportions, or differences using the supplied units and denominator; omit calculations that the available evidence cannot support.
 
 ## Decision rules
-- IF a participant is enthusiastic but lacks the relevant problem context THEN exclude them from the primary validation sample BECAUSE the proposed deliverable must respect the decisive evidence rather than hide it in a caveat.
+- IF a candidate has strong problem experience but cannot authorize required pilot access THEN keep them eligible for research but hold pilot participation pending an authorized access decision BECAUSE the proposed deliverable must respect the decisive evidence rather than hide it in a caveat.
 - IF two sources disagree THEN preserve both accounts and identify the exact observation needed to distinguish them BECAUSE averaging conflicting statements can create a fact neither source supports.
 - IF a recommendation depends on an unavailable input THEN mark that dependency and offer a bounded next evidence request BECAUSE an unknown condition must not become an assumed success.
 - IF the user requests implementation or publication THEN separate the review result from the requested external action and confirm the applicable scope BECAUSE preparing a plan alone does not authorize unrelated changes.
@@ -88,31 +88,32 @@ If a required input is missing and has no safe default, ask in one message with 
 
 ## Worked example
 **Input:**
-> Fictional company Juniper Works asks for startup early-adopter recruitment screen. Its supplied record A says: A volunteer likes new tools but has never performed the workflow being tested. Prepare an internal review only; the review owner is the person responsible for the affected workstream.
+> Fictional company Juniper Works asks for startup early-adopter recruitment screen. Its supplied record A says: A volunteer performs the target workflow and urgently wants a better workaround, but cannot authorize the records access required for the pilot. Prepare an internal review only; the review owner is the person responsible for the affected workstream.
 
 **Output:**
 ```text
 ## Decision
-The volunteer does not match the validation context.
+The volunteer can inform research but is not yet a ready pilot partner.
 
 ## Scope
 Internal review for fictional Juniper Works using supplied record A. No live change or external message is included.
 
 ## Findings
-- Evidence: A — A volunteer likes new tools but has never performed the workflow being tested.
-  Assessment: The volunteer does not match the validation context.
-  Action: Recruit participants with recent experience of the target workflow. Owner: affected workstream lead.
+- Evidence: A — A volunteer performs the target workflow and urgently wants a better workaround, but cannot authorize the records access required for the pilot.
+  Assessment: The volunteer can inform research but is not yet a ready pilot partner.
+  Action: Record a research-only disposition and request the appropriate access decision before offering pilot participation. Owner: affected workstream lead.
 
 ## Artifact
-Inclusion criterion: recent experience performing the target workflow.
-Volunteer evidence: enthusiasm for new tools, no relevant workflow experience.
-Disposition: exclude from the primary validation sample; do not confuse curiosity with target-user fit.
+Candidate evidence: current target-workflow experience, urgent workaround need, no authority for required record access.
+Research disposition: eligible for problem-learning conversations within consent.
+Pilot disposition: prerequisite-blocked.
+Unblocking evidence: authorized access decision and confirmed ability to participate; enthusiasm cannot substitute for either.
 
 ## Acceptance check
-Eligibility reflects relevant behavior rather than enthusiasm alone.
+The screen distinguishes problem evidence from operational pilot readiness and does not treat an interested contact as an access authority.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**
@@ -121,18 +122,18 @@ Confirm the assigned owner and any live implementation constraints before execut
 This fails because it does not address the specific evidence in A, identify a concrete response, or explain how the user could verify completion.
 
 ## Edge cases
-- **Decisive condition appears late**: when a participant is enthusiastic but lacks the relevant problem context, revise the recommendation using the first decision rule and preserve a note explaining which new evidence changed it.
+- **Decisive condition appears late**: when a candidate has strong problem experience but cannot authorize required pilot access, revise the recommendation using the first decision rule and preserve a note explaining which new evidence changed it.
 - **Only partial evidence is available**: return findings for the supplied subset, name that subset in Scope, and do not generalize to excluded channels, customers, or periods.
 - **No accountable owner exists**: retain the recommended action as unassigned and request a role assignment; do not invent a person's authority or promise a completion date.
 - **Task turns into a legal determination**: preserve factual questions and route the legal conclusion to a qualified professional with the relevant jurisdiction and source documents.
 
 ## Test case
 **Input:**
-> Fictional Juniper Works supplies record A: A volunteer likes new tools but has never performed the workflow being tested. Produce startup early-adopter recruitment screen and explain what would establish completion without assuming a performance improvement.
+> Fictional Juniper Works supplies record A: A volunteer performs the target workflow and urgently wants a better workaround, but cannot authorize the records access required for the pilot. Produce startup early-adopter recruitment screen and explain what would establish completion without assuming a performance improvement.
 
 **Assertions:**
 1. Output uses Decision, Scope, Findings, Artifact, Acceptance check, and Unresolved in that order.
-2. The recommendation is consistent with this case-specific conclusion: The volunteer does not match the validation context.
-3. The action includes this concrete response: Recruit participants with recent experience of the target workflow.
-4. The acceptance check addresses this observable outcome: Eligibility reflects relevant behavior rather than enthusiasm alone.
+2. The recommendation is consistent with this case-specific conclusion: The volunteer can inform research but is not yet a ready pilot partner.
+3. The action includes this concrete response: Record a research-only disposition and request the appropriate access decision before offering pilot participation.
+4. The acceptance check addresses this observable outcome: The screen distinguishes problem evidence from operational pilot readiness and does not treat an interested contact as an access authority.
 5. No unsupported performance guarantee, current platform limit, or invented source is introduced.

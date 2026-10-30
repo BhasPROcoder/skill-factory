@@ -3,10 +3,10 @@ id: GIS-001
 name: in-passport-evidence-preflight
 domain: India Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare passport evidence preflight from supplied evidence; use when the request concerns passport service category.
 triggers: ["passport evidence preflight", "prepare passport evidence preflight", "review my passport evidence preflight", "help me with passport evidence preflight", "turn passport service category into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Identity record correction map [GIS-002]", "Birth record request preparation [GIS-003]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Requirement | Evidence offered | Preflight status | Resolution
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +86,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Requirement | Evidence offered | Preflight status | Resolution
 Service category | Applicant says renewal | Provisional | Confirm official renewal route
 Address evidence | Older address on proof | Unresolved | Check accepted current-address evidence
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare an applicant review sheet that blocks submission until every mandatory gap has a verified resolution. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Confirm official renewal route.
 ```
 
 **Bad output:**

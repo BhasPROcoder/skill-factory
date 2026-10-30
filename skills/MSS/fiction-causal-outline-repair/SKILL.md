@@ -3,9 +3,9 @@ id: MSS-002
 name: fiction-causal-outline-repair
 domain: Fiction Story Structure
 subdomain: Design
-version: 1.0
-description: Fiction causal outline repair using supplied evidence and explicit acceptance checks; use when preparing a fiction causal outline repair deliverable.
-triggers: ["help me with fiction causal outline repair", "prepare a fiction causal outline repair deliverable", "review our fiction causal outline repair evidence", "create a fiction causal outline repair action plan", "check this fiction causal outline repair decision"]
+version: 1.1
+description: Guide fiction causal outline repair when working from ordered story beats, character motivations, and fixed plot events.
+triggers: ["fiction causal outline repair", "help with fiction causal outline repair", "work on fiction causal outline repair", "review my fiction causal outline repair", "apply fiction causal outline repair to these materials"]
 not_for: ["Fiction character arc mapping [MSS-003]", "Fiction subplot integration planning [MSS-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction causal outline repair
 
 ## Purpose
-Produce a usable fiction causal outline repair deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction causal outline repair task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Connect the key's presence to an earlier action Mara took or require a different earned escape. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Repair outline: Mara earlier persuades Ivo to copy the storeroom key → Ivo hides the copy in their agreed place → Mara reaches that place while escaping → using the key exposes Ivo's involvement.
 The escape now follows a prior choice and creates a consequence.
 
@@ -111,7 +112,7 @@ The escape now follows a prior choice and creates a consequence.
 Major transitions follow established causes and preserve meaningful character agency.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

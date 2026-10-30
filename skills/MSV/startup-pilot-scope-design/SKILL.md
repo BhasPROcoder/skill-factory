@@ -3,9 +3,9 @@ id: MSV-006
 name: startup-pilot-scope-design
 domain: Startup Customer Validation
 subdomain: Design
-version: 1.0
-description: Startup pilot scope design using supplied evidence and explicit acceptance checks; use when preparing a startup pilot scope design deliverable.
-triggers: ["help me with startup pilot scope design", "prepare a startup pilot scope design deliverable", "review our startup pilot scope design evidence", "create a startup pilot scope design action plan", "check this startup pilot scope design decision"]
+version: 1.1
+description: Guide startup pilot scope design when working from customer outcome, pilot resources, success evidence, and operating limits.
+triggers: ["startup pilot scope design", "help with startup pilot scope design", "work on startup pilot scope design", "review my startup pilot scope design", "apply startup pilot scope design to these materials"]
 not_for: ["Startup validation result review [MSV-007]", "Startup founder-sales learning log [MSV-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup pilot scope design
 
 ## Purpose
-Produce a usable startup pilot scope design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup pilot scope design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Owner action: obtain the access decision and record any limits.
 Pilot scope includes dependencies and distinguishes agreed resources from assumptions.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

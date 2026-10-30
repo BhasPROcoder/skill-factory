@@ -2,10 +2,10 @@
 id: TFE-008
 name: label-horizon-censoring-design
 domain: Feature and Label Pipelines
-subdomain: Training-serving consistency
-version: 1.0
-description: Produce a label observation-horizon policy; use when the task is to label horizon censoring design.
-triggers: ["label horizon censoring design", "help with a label observation-horizon policy", "review my a label observation-horizon policy", "prepare a label observation-horizon policy", "check label horizon censoring design evidence"]
+subdomain: Availability
+version: 1.1
+description: Create a label observation-horizon policy from supplied evidence; use when preparing or reviewing label observation-horizon policy decisions.
+triggers: ["label horizon censoring design", "help with a label observation-horizon policy", "review my label observation-horizon policy", "prepare a label observation-horizon policy", "check the evidence for this label observation-horizon policy"]
 not_for: ["feature cross fold cache review [TFE-009]", "feature training serving parity plan [TFE-010]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a label observation-horizon policy and name the source artifacts used; retain a version or observation date where available.
 2. Define the full period during which the target can occur
 3. Determine which rows have complete outcome observation
-4. ⚠️ Separate negative outcomes from incomplete observation Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Preserve confirmed qualifying positives and distinguish observed negatives from incomplete follow-up without an event. Do not silently replace missing evidence with an assumed successful outcome.
 5. Specify exclusion or censoring treatment for incomplete rows
 6. Apply the domain check: Track where every learned parameter is fitted and when every source field becomes available.
 7. Verify the proposed result with this task-specific check: Compare available follow-up with the full target horizon. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Training features must represent information available at the intended prediction instant. A transform learned from data belongs inside the training boundary, and production transformations must preserve the same semantics. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -44,7 +45,7 @@ horizon=7; followup=3; assert followup<horizon
 ```
 
 ## Decision rules
-- IF a row has not completed the outcome window THEN do not label absence as a confirmed negative BECAUSE the event could still occur within the target period.
+- IF a row has no observed qualifying event and has not completed the outcome window THEN do not label absence as a confirmed negative BECAUSE the event could still occur within the target period.
 - IF the task-specific verification cannot run on the supplied evidence THEN return a provisional result and name the missing artifact BECAUSE an unperformed check is not a pass.
 - IF the proposed next action changes data, access, a live service, or a submitted artifact THEN identify the authorized owner and reversible preparation step BECAUSE analysis alone does not establish execution permission.
 - IF an external platform rule, library behavior, or organizational requirement is relevant THEN check the current value in the official documentation or supplied governing policy BECAUSE a remembered value may not match the active environment.
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -72,14 +74,14 @@ Open items: <missing information or current-source checks; at most three bullets
 
 ## Anti-patterns
 - **Title-only answer**: restating the request without producing a label observation-horizon policy. Fix: fill every field of the output template with task evidence or an explicit open item.
-- **Skipped branch**: ignoring the condition that a row has not completed the outcome window. Fix: evaluate that condition before recommending the next action.
+- **Skipped branch**: ignoring the condition that a row has no observed qualifying event and has not completed the outcome window. Fix: evaluate that condition before recommending the next action.
 - **Evidence laundering**: presenting a proposed test as a successful result. Fix: label it pending until an actual observation exists.
 - **Universal threshold**: inventing a cutoff that the user did not supply. Fix: request an acceptance criterion or show the decision as conditional.
 - **Scope creep**: turning a bounded review into an unsolicited production change. Fix: return an actionable handoff with the execution boundary stated.
 
 ## Worked example
 **Input:**
-> Fictional team Cedar Lantern requests a label observation-horizon policy. The target asks about an event within 7 days; one row has only 3 days of follow-up. The team asks for an assessment only and supplies these facts as the complete example fixture.
+> Fictional team Cedar Lantern requests a label observation-horizon policy. The target asks about an event within 7 days; one row has only 3 days of follow-up and no observed qualifying event. The team asks for an assessment only and supplies these facts as the complete example fixture.
 
 **Output:**
 ```text
@@ -87,6 +89,7 @@ Deliverable: a label observation-horizon policy
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The row has incomplete follow-up for the declared target.
 Decision: Mark the label unobserved or apply an explicitly appropriate censored-data method.
+Artifact: Target horizon: 7 days. Follow-up: 3 days with no qualifying event observed. Label: unresolved/incomplete, not confirmed negative. If a qualifying event is already observed within the horizon, preserve that confirmed positive; choose censoring/exclusion according to the analysis design.
 Action: Team owner — Specify exclusion or censoring treatment for incomplete rows Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare available follow-up with the full target horizon.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -101,14 +104,14 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 - **Conflicting artifacts**: identify the conflicting versions, state which decision depends on the conflict, and request the authoritative source before resolving it.
 - **No usable example or record**: deliver only the method and a list of required evidence; do not fabricate a representative result.
 - **Partial completion**: preserve completed observations, mark the remaining checks pending, and avoid describing the whole deliverable as verified.
-- **Unexpected branch condition**: when a row has not completed the outcome window, apply the stated decision rule and document its consequence instead of continuing the default path.
+- **Unexpected branch condition**: when a row has no observed qualifying event and has not completed the outcome window, apply the stated decision rule and document its consequence instead of continuing the default path.
 
 ## Test case
 **Input:**
-> Fictional team Cedar Lantern asks for a label observation-horizon policy. The target asks about an event within 7 days; one row has only 3 days of follow-up. Produce the assessment and identify what remains unverified.
+> Fictional team Cedar Lantern asks for a label observation-horizon policy. The target asks about an event within 7 days; one row has only 3 days of follow-up and no observed qualifying event. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The row has incomplete follow-up for the declared target.
 3. It preserves this task-specific conclusion: Mark the label unobserved or apply an explicitly appropriate censored-data method.
 4. It includes the verification check or explicitly marks it pending: Compare available follow-up with the full target horizon.

@@ -3,9 +3,9 @@ id: MME-005
 name: campaign-performance-comparison
 domain: Marketing Measurement Decisions
 subdomain: Design
-version: 1.0
-description: Campaign performance comparison using supplied evidence and explicit acceptance checks; use when preparing a campaign performance comparison deliverable.
-triggers: ["help me with campaign performance comparison", "prepare a campaign performance comparison deliverable", "review our campaign performance comparison evidence", "create a campaign performance comparison action plan", "check this campaign performance comparison decision"]
+version: 1.1
+description: Guide campaign performance comparison when working from campaign outcomes, audience definitions, periods, and delivery constraints.
+triggers: ["campaign performance comparison", "help with campaign performance comparison", "work on campaign performance comparison", "review my campaign performance comparison", "apply campaign performance comparison to these materials"]
 not_for: ["Marketing attribution interpretation review [MME-006]", "Marketing experiment readout preparation [MME-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign performance comparison
 
 ## Purpose
-Produce a usable campaign performance comparison deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign performance comparison task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Combined ranking: unavailable until a justified common outcome is defined; raw c
 The comparison does not equate unlike outcomes or conceal major contextual differences.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

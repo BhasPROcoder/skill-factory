@@ -2,10 +2,10 @@
 id: TVE-008
 name: video-caption-readability-review
 domain: Video Editing Decisions
-subdomain: Delivery
-version: 1.0
-description: Produce a caption readability review; use when the task is to video caption readability review.
-triggers: ["video caption readability review", "help with a caption readability review", "review my a caption readability review", "prepare a caption readability review", "check video caption readability review evidence"]
+subdomain: Sound and captions
+version: 1.1
+description: Create a caption readability review from supplied evidence; use when preparing or reviewing caption readability review decisions.
+triggers: ["video caption readability review", "help with a caption readability review", "review my caption readability review", "prepare a caption readability review", "check the evidence for this caption readability review"]
 not_for: ["video version feedback reconciliation [TVE-009]", "video export quality check plan [TVE-010]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a caption readability review and name the source artifacts used; retain a version or observation date where available.
 2. Compare captions with the spoken content and required meaningful sounds
 3. Inspect line breaks at linguistic boundaries
-4. ⚠️ Check placement against faces and important visual information Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Check placement against faces and important visual information. Do not silently replace missing evidence with an assumed successful outcome.
 5. Test readability in the intended playback context using current recipient requirements
 6. Apply the domain check: Preserve the source material and distinguish a paper edit from an executed timeline; verify current destination specifications with the recipient.
 7. Verify the proposed result with this task-specific check: Review captions on actual frames at the intended display size. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Describe edit choices through visible actions, shot duration relative to an action, framing, cut motivation, caption placement, and sound transitions. Never invent footage contents, dialogue, defects, or timecodes when the media has not been inspected. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a caption readability review
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Caption placement obscures important action.
 Decision: Move the captions to an available safe region and verify readability in context.
+Artifact: Caption conflict: text covers demonstration hand movement. Revision: move captions to an available region that preserves the action and meets the current recipient requirements. Verification requires actual frames at intended display size; no safe region is invented unseen.
 Action: Team owner — Test readability in the intended playback context using current recipient requirements Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Review captions on actual frames at the intended display size.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a caption readability review. The supplied frame shows captions covering a demonstration's hand movement. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Caption placement obscures important action.
 3. It preserves this task-specific conclusion: Move the captions to an available safe region and verify readability in context.
 4. It includes the verification check or explicitly marks it pending: Review captions on actual frames at the intended display size.

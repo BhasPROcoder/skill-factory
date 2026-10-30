@@ -2,10 +2,10 @@
 id: TDV-003
 name: deployment-configuration-diff-review
 domain: Deployment and Operations Planning
-subdomain: Capacity
-version: 1.0
-description: Produce a deployment configuration impact review; use when the task is to deployment configuration diff review.
-triggers: ["deployment configuration diff review", "help with a deployment configuration impact review", "review my a deployment configuration impact review", "prepare a deployment configuration impact review", "check deployment configuration diff review evidence"]
+subdomain: Deployment
+version: 1.1
+description: Create a deployment configuration impact review from supplied evidence; use when preparing or reviewing deployment configuration impact review decisions.
+triggers: ["deployment configuration diff review", "help with a deployment configuration impact review", "review my deployment configuration impact review", "prepare a deployment configuration impact review", "check the evidence for this deployment configuration impact review"]
 not_for: ["operations backup restore rehearsal [TDV-004]", "operations alert actionability review [TDV-005]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a deployment configuration impact review and name the source artifacts used; retain a version or observation date where available.
 2. Compare effective values rather than only edited lines
 3. Identify changed defaults and environment-specific overrides
-4. ⚠️ Map each change to the component that consumes it Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Map each change to the component that consumes it. Do not silently replace missing evidence with an assumed successful outcome.
 5. Prepare verification and recovery checks for changed behavior
 6. Apply the domain check: Identify the owner, precondition, stop condition, and recovery action for every proposed live change; verify current provider behavior in official documentation.
 7. Verify the proposed result with this task-specific check: Resolve overrides and defaults for each environment and compare effective settings. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Operational readiness depends on the exact artifact, configuration, environment, and observed workload. Rehearse state changes in an isolated environment and distinguish an available backup from a demonstrated recovery. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a deployment configuration impact review
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The effective cache behavior changes.
 Decision: Document and verify the effective value before deployment.
+Artifact: Old effective cache=true. New explicit setting=absent; supplied default=false. Effective change=true → false. Release checklist entry: confirm this behavior is intended, verify it in the target environment, and record the recovery setting.
 Action: Team owner — Prepare verification and recovery checks for changed behavior Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Resolve overrides and defaults for each environment and compare effective settings.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a deployment configuration impact review. The old environment explicitly enables a cache; the new environment omits that setting and the supplied default disables it. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The effective cache behavior changes.
 3. It preserves this task-specific conclusion: Document and verify the effective value before deployment.
 4. It includes the verification check or explicitly marks it pending: Resolve overrides and defaults for each environment and compare effective settings.

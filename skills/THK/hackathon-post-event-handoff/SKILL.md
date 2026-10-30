@@ -2,10 +2,10 @@
 id: THK-010
 name: hackathon-post-event-handoff
 domain: Hackathon Delivery
-subdomain: Team execution
-version: 1.0
-description: Produce a post-event continuation handoff; use when the task is to hackathon post event handoff.
-triggers: ["hackathon post event handoff", "help with a post-event continuation handoff", "review my a post-event continuation handoff", "prepare a post-event continuation handoff", "check hackathon post event handoff evidence"]
+subdomain: Submission
+version: 1.1
+description: Create a post-event continuation handoff from supplied evidence; use when preparing or reviewing post-event continuation handoff decisions.
+triggers: ["hackathon post event handoff", "help with a post-event continuation handoff", "review my post-event continuation handoff", "prepare a post-event continuation handoff", "check the evidence for this post-event continuation handoff"]
 not_for: ["hackathon problem selection [THK-001]", "hackathon minimum demo scope [THK-002]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a post-event continuation handoff and name the source artifacts used; retain a version or observation date where available.
 2. Separate prototype shortcuts from production assumptions
 3. Record how to run the demonstrated build with permitted fixtures
-4. ⚠️ Assign ownership for dependencies and unresolved risks Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Assign ownership for dependencies and unresolved risks. Do not silently replace missing evidence with an assumed successful outcome.
 5. Define the first validation milestone for continued development
 6. Apply the domain check: Connect each commitment to the available team, schedule, permitted resources, and a fallback demonstration path.
 7. Verify the proposed result with this task-specific check: Have a teammate reproduce the demo and exercise one documented failure case. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A hackathon prototype needs a coherent user journey and demonstrable evidence of its central claim. Distinguish simulated components from implemented behavior, and read the current event rules instead of assuming submission or judging conventions. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a post-event continuation handoff
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Input robustness is an acknowledged prototype limitation.
 Decision: Make invalid-input behavior the first continuation milestone.
+Artifact: Known shortcut: accepts team's clean fixture only. Continuation blocker: invalid-input behavior unspecified. First milestone: define and test rejected, malformed, and unsupported inputs without presenting a false successful summary. Production readiness remains unestablished.
 Action: Team owner — Define the first validation milestone for continued development Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Have a teammate reproduce the demo and exercise one documented failure case.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a post-event continuation handoff. The prototype accepts only the team's clean fixture and has no invalid-input handling. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Input robustness is an acknowledged prototype limitation.
 3. It preserves this task-specific conclusion: Make invalid-input behavior the first continuation milestone.
 4. It includes the verification check or explicitly marks it pending: Have a teammate reproduce the demo and exercise one documented failure case.

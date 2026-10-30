@@ -3,9 +3,9 @@ id: TRP-007
 name: reproducibility-result-tolerance-spec
 domain: Computational Reproducibility
 subdomain: Reruns
-version: 1.0
-description: Produce a result comparison specification; use when the task is to reproducibility result tolerance spec.
-triggers: ["reproducibility result tolerance spec", "help with a result comparison specification", "review my a result comparison specification", "prepare a result comparison specification", "check reproducibility result tolerance spec evidence"]
+version: 1.1
+description: Create a result comparison specification from supplied evidence; use when preparing or reviewing result comparison specification decisions.
+triggers: ["reproducibility result tolerance spec", "help with a result comparison specification", "review my result comparison specification", "prepare a result comparison specification", "check the evidence for this result comparison specification"]
 not_for: ["reproducibility data snapshot policy [TRP-008]", "reproducibility experiment diff [TRP-009]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a result comparison specification and name the source artifacts used; retain a version or observation date where available.
 2. Decide which fields require exact equality
 3. Define tolerances only from task requirements or numerical reasoning
-4. ⚠️ Separate semantic differences from formatting differences Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate semantic differences from formatting differences. Do not silently replace missing evidence with an assumed successful outcome.
 5. Record comparison failures with field-level evidence
 6. Apply the domain check: Distinguish reproducing a computation from independently validating its scientific or business claim; preserve raw evidence of both successful and failed runs.
 7. Verify the proposed result with this task-specific check: Apply the predefined comparison to all relevant outputs. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Reproduction requires enough information to identify inputs, code, configuration, environment, and intended outputs. Exact equality is appropriate only when the declared computation supports it; otherwise define the accepted comparison before rerunning. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a result comparison specification
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The absolute difference is approximately 0.03 and exceeds the supplied tolerance.
 Decision: Report a mismatch under the declared criterion.
+Artifact: Comparison rule: absolute difference ≤ supplied tolerance 0.01. Reference=1.00; reproduced=1.03; decimal difference=0.03. Disposition: mismatch. The acceptance tolerance is supplied by the fictional contract, not a universal numerical standard.
 Action: Team owner — Record comparison failures with field-level evidence Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Apply the predefined comparison to all relevant outputs.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a result comparison specification. The supplied contract permits absolute error at most 0.01; reference is 1.00 and reproduced value is 1.03. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The absolute difference is approximately 0.03 and exceeds the supplied tolerance.
 3. It preserves this task-specific conclusion: Report a mismatch under the declared criterion.
 4. It includes the verification check or explicitly marks it pending: Apply the predefined comparison to all relevant outputs.

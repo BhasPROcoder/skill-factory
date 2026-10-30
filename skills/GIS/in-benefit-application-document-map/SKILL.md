@@ -3,10 +3,10 @@ id: GIS-010
 name: in-benefit-application-document-map
 domain: India Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare benefit application document map from supplied evidence; use when the request concerns named scheme and location.
 triggers: ["benefit application document map", "prepare benefit application document map", "review my benefit application document map", "help me with benefit application document map", "turn named scheme and location into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Passport evidence preflight [GIS-001]", "Identity record correction map [GIS-002]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Criterion | Applicant statement | Evidence status | Official question
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +86,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Criterion | Applicant statement | Evidence status | Official question
 Scheme identity | Nickname and old leaflet | Current version unverified | Which official scheme applies?
 Household criterion | Applicant summary | Definition unknown | What current definition governs this application?
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a document collection plan and official questions for any criterion requiring interpretation. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Which official scheme applies?.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MOP-005
 name: startup-vendor-onboarding-checklist
 domain: Startup Operating Workflows
 subdomain: Design
-version: 1.0
-description: Startup vendor onboarding planning using supplied evidence and explicit acceptance checks; use when preparing a startup vendor onboarding planning deliverable.
-triggers: ["help me with startup vendor onboarding planning", "prepare a startup vendor onboarding planning deliverable", "review our startup vendor onboarding planning evidence", "create a startup vendor onboarding planning action plan", "check this startup vendor onboarding planning decision"]
+version: 1.1
+description: Guide startup vendor onboarding planning when working from approved vendor decision, access needs, service owner, and handoff requirements.
+triggers: ["startup vendor onboarding planning", "help with startup vendor onboarding planning", "work on startup vendor onboarding checklist", "review my startup vendor onboarding planning", "apply startup vendor onboarding planning to these materials"]
 not_for: ["Startup customer handoff mapping [MOP-006]", "Startup process exception log design [MOP-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup vendor onboarding planning
 
 ## Purpose
-Produce a usable startup vendor onboarding planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup vendor onboarding planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Setup scope: resources necessary for the approved asset work only.
 Granted access and shared data are justified by the agreed service scope.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

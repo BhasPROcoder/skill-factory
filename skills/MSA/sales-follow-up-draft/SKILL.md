@@ -3,9 +3,9 @@ id: MSA-005
 name: sales-follow-up-draft
 domain: Sales Process Enablement
 subdomain: Design
-version: 1.0
-description: Sales follow-up draft preparation using supplied evidence and explicit acceptance checks; use when preparing a sales follow-up draft preparation deliverable.
-triggers: ["help me with sales follow-up draft preparation", "prepare a sales follow-up draft preparation deliverable", "review our sales follow-up draft preparation evidence", "create a sales follow-up draft preparation action plan", "check this sales follow-up draft preparation decision"]
+version: 1.1
+description: Guide sales follow-up draft preparation when working from meeting notes, agreed next steps, promised materials, and recipients.
+triggers: ["sales follow-up draft preparation", "help with sales follow-up draft preparation", "work on sales follow up draft", "review my sales follow-up draft preparation", "apply sales follow-up draft preparation to these materials"]
 not_for: ["Sales proposal scope outlining [MSA-006]", "Sales mutual action plan drafting [MSA-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Sales follow-up draft preparation
 
 ## Purpose
-Produce a usable sales follow-up draft preparation deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this sales follow-up draft preparation task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -111,7 +111,7 @@ The workshop is proposed, not confirmed.
 The draft distinguishes agreed commitments from proposals and is not sent automatically.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

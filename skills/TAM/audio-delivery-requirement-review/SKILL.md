@@ -2,10 +2,10 @@
 id: TAM-010
 name: audio-delivery-requirement-review
 domain: Audio and Music Production Planning
-subdomain: Arrangement
-version: 1.0
-description: Produce an audio delivery specification sheet; use when the task is to audio delivery requirement review.
-triggers: ["audio delivery requirement review", "help with an audio delivery specification sheet", "review my an audio delivery specification sheet", "prepare an audio delivery specification sheet", "check audio delivery requirement review evidence"]
+subdomain: Delivery
+version: 1.1
+description: Create an audio delivery specification sheet from supplied evidence; use when preparing or reviewing audio delivery specification sheet decisions.
+triggers: ["audio delivery requirement review", "help with an audio delivery specification sheet", "review my audio delivery specification sheet", "prepare an audio delivery specification sheet", "check the evidence for this audio delivery specification sheet"]
 not_for: ["audio recording session plan [TAM-001]", "audio reference listening brief [TAM-002]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of an audio delivery specification sheet and name the source artifacts used; retain a version or observation date where available.
 2. Obtain current format and measurement requirements from the recipient
 3. Separate creative approval from technical compliance
-4. ⚠️ Check the final artifact against the supplied requirements Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Check the final artifact against the supplied requirements. Do not silently replace missing evidence with an assumed successful outcome.
 5. Package labeled versions with unresolved items explicitly noted
 6. Apply the domain check: Keep source recordings and reversible edits; verify current delivery requirements with the recipient instead of inventing loudness, format, or platform targets.
 7. Verify the proposed result with this task-specific check: Measure and inspect the actual export against the recipient's current supplied specification. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Describe sound choices through observable features such as entry timing, instrument density, foreground level, phrase spacing, and audible transitions. If audio is unavailable, offer a listening plan rather than claiming to hear clipping, noise, pitch problems, or balance defects. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: an audio delivery specification sheet
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Creative approval is present; technical delivery requirements are missing.
 Decision: Request the destination specification before final export acceptance.
+Artifact: Creative status: mix approved. Technical fields: file format=unconfirmed; loudness target=unconfirmed; destination=unconfirmed. Delivery acceptance: blocked pending recipient specification and inspection of the actual export. Do not infer a platform standard.
 Action: Team owner — Package labeled versions with unresolved items explicitly noted Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Measure and inspect the actual export against the recipient's current supplied specification.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for an audio delivery specification sheet. The client approves the mix but has not specified the required file format or loudness target. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Creative approval is present; technical delivery requirements are missing.
 3. It preserves this task-specific conclusion: Request the destination specification before final export acceptance.
 4. It includes the verification check or explicitly marks it pending: Measure and inspect the actual export against the recipient's current supplied specification.

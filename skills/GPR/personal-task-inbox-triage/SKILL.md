@@ -3,10 +3,10 @@ id: GPR-001
 name: personal-task-inbox-triage
 domain: Personal Work Organization
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare task inbox triage from supplied evidence; use when the request concerns unsorted tasks and notes.
 triggers: ["task inbox triage", "prepare task inbox triage", "review my task inbox triage", "help me with task inbox triage", "turn unsorted tasks and notes into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Weekly capacity plan [GPR-002]", "Project next-action decomposition [GPR-003]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Inbox item | Type | Next action | Review trigger
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +76,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional user Mila lists taxes, call printer and an article idea without supporting detail.
+> Fictional scenario: Fictional user Mila lists taxes, call printer and an article idea without supporting detail. The printer item refers to an existing order whose current status is unknown.
 
 **Output:**
 ```text
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Inbox item | Type | Next action | Review trigger
 Call printer | Action candidate | Ask about current order status | After response
 Article idea | Undecided idea | Store for project review | At chosen review time
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Place tasks in a reviewable system without inventing deadlines. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: After response.
 ```
 
 **Bad output:**

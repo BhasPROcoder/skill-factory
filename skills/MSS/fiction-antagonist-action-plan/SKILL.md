@@ -3,9 +3,9 @@ id: MSS-007
 name: fiction-antagonist-action-plan
 domain: Fiction Story Structure
 subdomain: Design
-version: 1.0
-description: Fiction antagonist action planning using supplied evidence and explicit acceptance checks; use when preparing a fiction antagonist action planning deliverable.
-triggers: ["help me with fiction antagonist action planning", "prepare a fiction antagonist action planning deliverable", "review our fiction antagonist action planning evidence", "create a fiction antagonist action planning action plan", "check this fiction antagonist action planning decision"]
+version: 1.1
+description: Guide fiction antagonist action planning when working from antagonist goal, resources, limits, and protagonist actions.
+triggers: ["fiction antagonist action planning", "help with fiction antagonist action planning", "work on fiction antagonist action plan", "review my fiction antagonist action planning", "apply fiction antagonist action planning to these materials"]
 not_for: ["Fiction timeline continuity review [MSS-008]", "Fiction ending choice design [MSS-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction antagonist action planning
 
 ## Purpose
-Produce a usable fiction antagonist action planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction antagonist action planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Show how the route becomes known or choose a response based on available information. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Goal: the archivist wants the catalog to remain inaccessible.
 Information route: a messenger reports Mara asking about the old passage.
 Response: the archivist stations a guard there.
@@ -113,7 +114,7 @@ Constraint: other unreported routes remain unknown to the archivist.
 Antagonist actions follow a goal and plausible access to information.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

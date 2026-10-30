@@ -3,9 +3,9 @@ id: MPU-010
 name: product-design-handoff-checklist
 domain: Product Experience Review
 subdomain: Design
-version: 1.0
-description: Product design handoff preparation using supplied evidence and explicit acceptance checks; use when preparing a product design handoff preparation deliverable.
-triggers: ["help me with product design handoff preparation", "prepare a product design handoff preparation deliverable", "review our product design handoff preparation evidence", "create a product design handoff preparation action plan", "check this product design handoff preparation decision"]
+version: 1.1
+description: Guide product design handoff preparation when working from approved flow, component states, content, and implementation questions.
+triggers: ["product design handoff preparation", "help with product design handoff preparation", "work on product design handoff checklist", "review my product design handoff preparation", "apply product design handoff preparation to these materials"]
 not_for: ["Product task flow review [MPU-001]", "Product empty-state content design [MPU-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product design handoff preparation
 
 ## Purpose
-Produce a usable product design handoff preparation deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product design handoff preparation task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Success-only screens do not cover the failed-save path.
 Implementation receives defined behavior for all relevant states or explicit unresolved questions.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MAR-009
 name: search-url-label-governance
 domain: Search Site Architecture
 subdomain: Design
-version: 1.0
-description: Search page address naming governance using supplied evidence and explicit acceptance checks; use when preparing a search page address naming governance deliverable.
-triggers: ["help me with search page address naming governance", "prepare a search page address naming governance deliverable", "review our search page address naming governance evidence", "create a search page address naming governance action plan", "check this search page address naming governance decision"]
+version: 1.1
+description: Guide search page address naming governance when working from proposed page addresses and naming conventions.
+triggers: ["search page address naming governance", "help with search page address naming governance", "work on search url label governance", "review my search page address naming governance", "apply search page address naming governance to these materials"]
 not_for: ["Search site section launch review [MAR-010]", "Search navigation task mapping [MAR-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search page address naming governance
 
 ## Purpose
-Produce a usable search page address naming governance deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search page address naming governance task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Cosmetic consistency alone does not establish a migration need.
 Each proposed address change states a benefit and accounts for existing dependencies.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

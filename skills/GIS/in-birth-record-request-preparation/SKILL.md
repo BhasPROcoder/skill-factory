@@ -3,10 +3,10 @@ id: GIS-003
 name: in-birth-record-request-preparation
 domain: India Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare birth record request preparation from supplied evidence; use when the request concerns place and event details.
 triggers: ["birth record request preparation", "prepare birth record request preparation", "review my birth record request preparation", "help me with birth record request preparation", "turn place and event details into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Driving licence transaction triage [GIS-004]", "Residence certificate evidence plan [GIS-005]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Request element | Known information | Open issue | Next check
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +86,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Request element | Known information | Open issue | Next check
 Transaction | Copy of existing record | Reference unknown | Check official search route
 Locality | Town supplied | Responsible office unverified | Confirm registrar through official directory
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a request packet index and questions for the registrar about any missing reference. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Check official search route.
 ```
 
 **Bad output:**

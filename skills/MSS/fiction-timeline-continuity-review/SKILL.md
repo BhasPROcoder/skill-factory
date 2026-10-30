@@ -3,9 +3,9 @@ id: MSS-008
 name: fiction-timeline-continuity-review
 domain: Fiction Story Structure
 subdomain: Design
-version: 1.0
-description: Fiction timeline continuity review using supplied evidence and explicit acceptance checks; use when preparing a fiction timeline continuity review deliverable.
-triggers: ["help me with fiction timeline continuity review", "prepare a fiction timeline continuity review deliverable", "review our fiction timeline continuity review evidence", "create a fiction timeline continuity review action plan", "check this fiction timeline continuity review decision"]
+version: 1.1
+description: Guide fiction timeline continuity review when working from scene order, elapsed-time references, travel constraints, and character knowledge.
+triggers: ["fiction timeline continuity review", "help with fiction timeline continuity review", "work on fiction timeline continuity review", "review my fiction timeline continuity review", "apply fiction timeline continuity review to these materials"]
 not_for: ["Fiction ending choice design [MSS-009]", "Fiction outline pacing review [MSS-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction timeline continuity review
 
 ## Purpose
-Produce a usable fiction timeline continuity review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction timeline continuity review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Move Ivo's reaction after receipt or introduce a plausible earlier message. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Corrected order: Mara discovers the letter → she sends the message → Ivo receives it → Ivo reacts.
 Alternative: establish a separate earlier communication and identify what it actually reveals.
 No reaction may depend on news not yet available.
@@ -112,7 +113,7 @@ No reaction may depend on news not yet available.
 The repaired timeline aligns events, communication, and character knowledge.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

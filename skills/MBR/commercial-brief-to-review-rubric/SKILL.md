@@ -3,9 +3,9 @@ id: MBR-010
 name: commercial-brief-to-review-rubric
 domain: Commercial Brand and Editorial
 subdomain: Design
-version: 1.0
-description: Commercial creative review rubric design using supplied evidence and explicit acceptance checks; use when preparing a commercial creative review rubric design deliverable.
-triggers: ["help me with commercial creative review rubric design", "prepare a commercial creative review rubric design deliverable", "review our commercial creative review rubric design evidence", "create a commercial creative review rubric design action plan", "check this commercial creative review rubric design decision"]
+version: 1.1
+description: Guide commercial creative review rubric design when working from creative brief, required facts, audience action, and constraints.
+triggers: ["commercial creative review rubric design", "help with commercial creative review rubric design", "work on commercial brief to review rubric", "review my commercial creative review rubric design", "apply commercial creative review rubric design to these materials"]
 not_for: ["Brand voice operational guide design [MBR-001]", "Brand message hierarchy design [MBR-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Commercial creative review rubric design
 
 ## Purpose
-Produce a usable commercial creative review rubric design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this commercial creative review rubric design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Resolution: retain the explanation or obtain an explicit change to the audience 
 Review criteria trace to the brief and distinguish blockers from preferences.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: GUS-001
 name: us-birth-certificate-copy-preflight
 domain: US Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare birth certificate copy preflight from supplied evidence; use when the request concerns event jurisdiction.
 triggers: ["birth certificate copy preflight", "prepare birth certificate copy preflight", "review my birth certificate copy preflight", "help me with birth certificate copy preflight", "turn event jurisdiction into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Driver record address update plan [GUS-002]", "Passport renewal route preflight [GUS-003]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Request component | Provided evidence | Open issue | Next check
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +86,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Request component | Provided evidence | Open issue | Next check
 Record location | State supplied | Office unverified | Confirm official records custodian
 Requester category | Relative stated | Evidence requirements unknown | Check current requester rules
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a submission inventory with fees and delivery options reserved for current official verification. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Confirm official records custodian.
 ```
 
 **Bad output:**

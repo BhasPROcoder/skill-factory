@@ -1,0 +1,124 @@
+[
+  {
+    "source": "agent-orchestration",
+    "disposition": "new",
+    "targets": [
+      "CTG-001"
+    ],
+    "rationale": "Adds state-machine selection, stage contracts, bounded loops, and uncertain-effect routing."
+  },
+  {
+    "source": "ai-unit-cost",
+    "disposition": "new",
+    "targets": [
+      "CTG-002"
+    ],
+    "rationale": "Adds measured expense allocation per completed action, including failed and shared operations."
+  },
+  {
+    "source": "build-and-stay-on-track",
+    "disposition": "new",
+    "targets": [
+      "CTG-003"
+    ],
+    "rationale": "Reconciles a continuation ledger against actual repository and test evidence."
+  },
+  {
+    "source": "build-anything-properly",
+    "disposition": "merged",
+    "targets": [
+      "CTG-003",
+      "CTG-010",
+      "TST-004"
+    ],
+    "rationale": "Generic build wrapper is routed to concrete continuation, requirement, and regression procedures without plugin dependency."
+  },
+  {
+    "source": "consolidate-memory",
+    "disposition": "new",
+    "targets": [
+      "CTG-004"
+    ],
+    "rationale": "Maintains permitted durable memory with provenance, conflict handling, and retained uncertainty."
+  },
+  {
+    "source": "context-shrink",
+    "disposition": "new",
+    "targets": [
+      "CTG-005"
+    ],
+    "rationale": "Bounds evidence retrieval and creates a resumable handoff preserving objective and verification state."
+  },
+  {
+    "source": "data-pipeline-hardening",
+    "disposition": "covered",
+    "targets": [
+      "TDE-001",
+      "TDE-005",
+      "TDE-006",
+      "TDE-007",
+      "TDE-008",
+      "TAP-004"
+    ],
+    "rationale": "Existing focused procedures cover identity, durable recovery, contracts, quarantine, readiness, and retries."
+  },
+  {
+    "source": "evolve-your-skills",
+    "disposition": "new",
+    "targets": [
+      "CTG-006"
+    ],
+    "rationale": "Uses reproduced failures for narrow revisions, regression comparison, and keep-or-revert decisions; distinct from designing a new test suite."
+  },
+  {
+    "source": "finetune-vs-rag-vs-prompt",
+    "disposition": "new",
+    "targets": [
+      "CTG-007"
+    ],
+    "rationale": "Diagnoses knowledge, retrieval, instruction, structure, and capability failures before controlled intervention comparison."
+  },
+  {
+    "source": "keep-context-clean",
+    "disposition": "merged",
+    "targets": [
+      "CTG-005"
+    ],
+    "rationale": "Shares the same bounded retrieval and continuation method as context-shrink; counted once."
+  },
+  {
+    "source": "llm-eval-harness",
+    "disposition": "new",
+    "targets": [
+      "CTG-008"
+    ],
+    "rationale": "Separates deterministic checks, grounded judging, variability, slices, and promotion evidence for model configurations."
+  },
+  {
+    "source": "local-model-ops",
+    "disposition": "new",
+    "targets": [
+      "CTG-009"
+    ],
+    "rationale": "Derives local inference envelope from measured workload shape and quality constraints rather than fixed hardware tables."
+  },
+  {
+    "source": "interview-before-building",
+    "disposition": "new",
+    "targets": [
+      "CTG-010"
+    ],
+    "rationale": "Resolves consequential software requirement conflicts into observable acceptance alternatives."
+  },
+  {
+    "source": "design-interfaces-well",
+    "disposition": "new",
+    "targets": [
+      "CTG-011",
+      "MPU-002",
+      "MPU-004",
+      "MPU-006"
+    ],
+    "rationale": "Adds responsive semantic composition and state verification while reusing adjacent copy, form, and usability procedures."
+  }
+]

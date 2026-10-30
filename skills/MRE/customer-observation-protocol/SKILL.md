@@ -3,9 +3,9 @@ id: MRE-008
 name: customer-observation-protocol
 domain: Customer and Market Research
 subdomain: Design
-version: 1.0
-description: Customer task observation protocol using supplied evidence and explicit acceptance checks; use when preparing a customer task observation protocol deliverable.
-triggers: ["help me with customer task observation protocol", "prepare a customer task observation protocol deliverable", "review our customer task observation protocol evidence", "create a customer task observation protocol action plan", "check this customer task observation protocol decision"]
+version: 1.1
+description: Guide customer task observation protocol when working from target task, environment, participant arrangements, and research decision.
+triggers: ["customer task observation protocol", "help with customer task observation protocol", "work on customer observation protocol", "review my customer task observation protocol", "apply customer task observation protocol to these materials"]
 not_for: ["Market research source triage [MRE-009]", "Research opportunity handoff [MRE-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Customer task observation protocol
 
 ## Purpose
-Produce a usable customer task observation protocol deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this customer task observation protocol task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Log requirement: record the exact intervention separately from the participant's
 The observation log distinguishes participant actions from moderator assistance.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

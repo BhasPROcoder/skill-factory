@@ -3,10 +3,10 @@ id: GIS-005
 name: in-residence-certificate-evidence-plan
 domain: India Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare residence certificate evidence plan from supplied evidence; use when the request concerns certificate purpose and locality.
 triggers: ["residence certificate evidence plan", "prepare residence certificate evidence plan", "review my residence certificate evidence plan", "help me with residence certificate evidence plan", "turn certificate purpose and locality into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Public grievance submission pack [GIS-006]", "Public information request scope draft [GIS-007]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Criterion | Available evidence | Gap | Verification route
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +86,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Criterion | Available evidence | Gap | Verification route
 Certificate identity | College request summary | Exact title unclear | Ask college for accepted certificate wording
 Residence history | Current utility statement | Earlier period unsupported | Check issuing authority evidence rules
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare an evidence plan that separates administrative completeness from the authority decision on eligibility. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Ask college for accepted certificate wording.
 ```
 
 **Bad output:**

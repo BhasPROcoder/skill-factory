@@ -2,10 +2,10 @@
 id: TAN-009
 name: analysis-chart-claim-audit
 domain: Analytical Reasoning and Metrics
-subdomain: Metric definitions
-version: 1.0
-description: Produce a chart-to-claim audit; use when the task is to analysis chart claim audit.
-triggers: ["analysis chart claim audit", "help with a chart-to-claim audit", "review my a chart-to-claim audit", "prepare a chart-to-claim audit", "check analysis chart claim audit evidence"]
+subdomain: Interpretation
+version: 1.1
+description: Create a chart-to-claim audit from supplied evidence; use when preparing or reviewing chart-to-claim audit decisions.
+triggers: ["analysis chart claim audit", "help with a chart-to-claim audit", "review my chart-to-claim audit", "prepare a chart-to-claim audit", "check the evidence for this chart-to-claim audit"]
 not_for: ["analysis reproducible question brief [TAN-010]", "metric denominator definition [TAN-001]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a chart-to-claim audit and name the source artifacts used; retain a version or observation date where available.
 2. Read axis units and transformations before comparing shapes
 3. Recompute the numerical comparison behind the caption
-4. ⚠️ Check omitted categories and truncated time windows Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Check omitted categories and truncated time windows. Do not silently replace missing evidence with an assumed successful outcome.
 5. Rewrite the claim to match what the data supports
 6. Apply the domain check: State what a calculation can establish and what would require a different design; do not turn association into causal attribution.
 7. Verify the proposed result with this task-specific check: Calculate the difference and ratio from the underlying values. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A metric is defined by its population, unit, denominator, and time window. Comparisons need compatible definitions before arithmetic is meaningful. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a chart-to-claim audit
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The values differ by 5 and their ratio is 1.05.
 Decision: Replace the twice-as-large claim with the supported comparison.
+Artifact: Values: 100 and 105. Difference=5; ratio=105/100=1.05. Supported caption: second value is 5% higher. Rejected caption: twice as large. Truncated visual axis does not change the underlying arithmetic.
 Action: Team owner — Rewrite the claim to match what the data supports Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Calculate the difference and ratio from the underlying values.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a chart-to-claim audit. A bar chart starts its axis at 90; values are 100 and 105; the caption says the second is twice as large. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The values differ by 5 and their ratio is 1.05.
 3. It preserves this task-specific conclusion: Replace the twice-as-large claim with the supported comparison.
 4. It includes the verification check or explicitly marks it pending: Calculate the difference and ratio from the underlying values.

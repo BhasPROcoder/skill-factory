@@ -3,10 +3,10 @@ id: GEX-008
 name: exam-time-allocation-rehearsal
 domain: Exam Preparation Methods
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare exam time allocation rehearsal from supplied evidence; use when the request concerns verified exam structure.
 triggers: ["exam time allocation rehearsal", "prepare exam time allocation rehearsal", "review my exam time allocation rehearsal", "help me with exam time allocation rehearsal", "turn verified exam structure into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Final review triage [GEX-009]", "Exam-day logistics checklist [GEX-010]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Task stage | Observed timing issue | Provisional rule | Rehearsal evidence
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional candidate Ivo can revisit questions but spends too long perfecting early responses.
+> Fictional scenario: Fictional candidate Ivo can revisit questions but spends too long perfecting early responses. In the supplied rehearsal log, no time remained for the review pass.
 
 **Output:**
 ```text
@@ -84,8 +86,13 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Task stage | Observed timing issue | Provisional rule | Rehearsal evidence
 First pass | Over-polishing | Move after sufficient draft | Check later-question coverage
 Review pass | No time remains | Reserve review only after coverage | Compare answer quality
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Provisional rehearsal rule: on the first pass, move beyond an answer once it meets the task's essential demands; mark unresolved improvements for a permitted return.
+Coverage gate: attempt the remaining required tasks before using remaining time to polish earlier wording.
+Observation record: move-on decision, later-task coverage, and any loss of necessary reasoning.
+Retain or revise the rule from the next comparable rehearsal. Use official navigation restrictions and actual timing records; no invented minutes per question.
+Next action: The requester or assigned reviewer will complete this task-specific check: Revise allocations using completion and answer-quality evidence. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Check later-question coverage.
 ```
 
 **Bad output:**

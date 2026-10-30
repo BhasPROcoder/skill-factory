@@ -3,9 +3,9 @@ id: TFE-001
 name: feature-availability-time-audit
 domain: Feature and Label Pipelines
 subdomain: Availability
-version: 1.0
-description: Produce a feature availability audit; use when the task is to feature availability time audit.
-triggers: ["feature availability time audit", "help with a feature availability audit", "review my a feature availability audit", "prepare a feature availability audit", "check feature availability time audit evidence"]
+version: 1.1
+description: Create a feature availability audit from supplied evidence; use when preparing or reviewing feature availability audit decisions.
+triggers: ["feature availability time audit", "help with a feature availability audit", "review my feature availability audit", "prepare a feature availability audit", "check the evidence for this feature availability audit"]
 not_for: ["feature training only fit check [TFE-002]", "feature category unknown policy [TFE-003]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a feature availability audit and name the source artifacts used; retain a version or observation date where available.
 2. Define the prediction instant for each row
 3. Record when each source field becomes available to the system
-4. ⚠️ Compare feature availability against prediction time Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Compare feature availability against prediction time. Do not silently replace missing evidence with an assumed successful outcome.
 5. Remove or redesign features that require future information
 6. Apply the domain check: Track where every learned parameter is fitted and when every source field becomes available.
 7. Verify the proposed result with this task-specific check: Compare actual availability times rather than only event timestamps. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Training features must represent information available at the intended prediction instant. A transform learned from data belongs inside the training boundary, and production transformations must preserve the same semantics. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a feature availability audit
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Final delivery status is unavailable at dispatch.
 Decision: Exclude final status from dispatch-time features.
+Artifact: Prediction instant: dispatch. Candidate feature: final delivery status. Availability: after arrival. Disposition: exclude from this dispatch-time setup. A feature usable retrospectively is not necessarily available for the actual decision.
 Action: Team owner — Remove or redesign features that require future information Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare actual availability times rather than only event timestamps.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a feature availability audit. A delivery prediction is made at dispatch; final delivery status is recorded after arrival. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Final delivery status is unavailable at dispatch.
 3. It preserves this task-specific conclusion: Exclude final status from dispatch-time features.
 4. It includes the verification check or explicitly marks it pending: Compare actual availability times rather than only event timestamps.

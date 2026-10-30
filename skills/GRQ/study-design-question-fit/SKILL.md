@@ -3,18 +3,18 @@ id: GRQ-003
 name: study-design-question-fit
 domain: Research Question and Study Design
 subdomain: Analysis
-version: 1.0
-description: Prepare study design question fit from supplied evidence; use when the request concerns research question.
-triggers: ["study design question fit", "prepare study design question fit", "review my study design question fit", "help me with study design question fit", "turn research question into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+version: 1.1
+description: Prepare observational design inference-boundary review from supplied evidence; use when the request concerns research question.
+triggers: ["observational design inference-boundary review", "prepare observational design inference-boundary review", "review my observational design inference-boundary review", "help me with observational design inference-boundary review", "turn research question into an actionable plan"]
+not_for: ["Sampling plan rationale [GRQ-004]", "Repeated-wave interview protocol [GRQ-005]"]
 requires: []
 risk_level: medium
 ---
 
-# Study design question fit
+# Observational design inference-boundary review
 
 ## Purpose
-Produce study design question fit that another person can use without guessing which evidence supports each action. Keep the request bounded to this task and distinguish an observed fact, a working interpretation, and an unresolved question.
+Produce observational design inference-boundary review that another person can use without guessing which evidence supports each action. Keep the request bounded to this task and distinguish an observed fact, a working interpretation, and an unresolved question.
 
 ## Inputs to collect
 1. **Research question** — supply the relevant original material or describe what is unavailable; it determines the scope of the analysis. Default: unknown, never invented.
@@ -26,11 +26,11 @@ If a required input is missing and has no safe default, ask in one message with 
 
 ## Procedure
 1. Restate the requested outcome in one sentence and identify the smallest useful deliverable; do not expand into adjacent advice merely because the input mentions it.
-2. Identify whether the question is descriptive, comparative, explanatory or exploratory.
-3. Specify the evidence needed for the intended inference.
-4. Compare feasible designs against that evidence requirement.
-5. List threats each design leaves unresolved.
-6. Choose a provisional design and state the inference boundary.
+2. State the causal or descriptive claim proposed for the already chosen observational design.
+3. Map when exposure and outcome are measured and which populations are compared.
+4. Identify plausible selection, measurement, timing, and concurrent-change threats grounded in the supplied design.
+5. Specify a feasible design repair or sensitivity check for each consequential threat.
+6. Write the strongest claim the available evidence can support and list stronger claims that remain untested.
 7. ⚠️ Trace every proposed action back to an input or an explicitly stated condition; when support is missing, replace the conclusion with a verification question instead of filling the gap from memory.
 8. Populate the output table with the task-specific findings, retaining disagreements or missing information as visible rows rather than silently dropping them.
 9. Check the completed worked logic against an alternative explanation or a changed input; state what would have to change for the recommended next action to change.
@@ -41,8 +41,8 @@ Distinguish a study design proposal from completed research. Define the unit bei
 
 
 ## Decision rules
-- IF the user asks for causality from an uncontrolled observation THEN limit the claim or strengthen design BECAUSE association alone leaves alternative explanations.
-- IF the purpose is exploratory THEN allow open-ended evidence collection BECAUSE premature fixed categories may exclude relevant findings.
+- IF other changes coincide with exposure THEN retain them as competing explanations BECAUSE timing alone cannot isolate an effect.
+- IF a proposed adjustment lacks measured variables THEN mark it infeasible with current data BECAUSE naming a statistical remedy does not supply its inputs.
 - IF source material conflicts THEN preserve both versions and identify the fact needed to resolve the conflict BECAUSE silently choosing a convenient version hides uncertainty.
 - IF a requested conclusion depends on unavailable evidence THEN give a conditional next step and name the missing evidence BECAUSE an actionable question is preferable to an unsupported answer.
 
@@ -50,8 +50,9 @@ Distinguish a study design proposal from completed research. Define the unit bei
 ```text
 Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
-Design option | Question fit | Unresolved threat | Permitted claim
+Threat | Available evidence | Proposed repair | Claim boundary
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -69,7 +70,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Anti-patterns
 - **Unsupported certainty**: treating a plausible interpretation as an observed fact. Fix: attach the supporting input or mark the statement provisional.
-- **Task-specific shortcut**: calling a temporal sequence proof of causation. Fix: apply the relevant procedural check before selecting a next action.
+- **Task-specific shortcut**: selecting a sophisticated method by name without checking what the observational design measures. Fix: apply the relevant procedural check before selecting a next action.
 - **Missing decision owner**: giving advice that nobody can carry out. Fix: name the role responsible and the artifact that confirms completion.
 - **Unbounded expansion**: solving every adjacent problem mentioned in the inputs. Fix: finish the declared scope and list a separate follow-up only when needed.
 
@@ -79,13 +80,14 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 **Output:**
 ```text
-Scope: Prepare study design question fit for the fictional case, limited to the supplied facts.
+Scope: Prepare observational design inference-boundary review for the fictional case, limited to the supplied facts.
 Basis: The fictional scenario above; missing supporting material remains unverified.
-Design option | Question fit | Unresolved threat | Permitted claim
-Before-after description | Shows timing of change | Other changes uncontrolled | Describe association
-Additional comparison | Could test alternatives | Comparable group unavailable | Treat as design requirement
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+Threat | Available evidence | Proposed repair | Claim boundary
+Concurrent changes | Before-and-after totals only | Seek contemporaneous context and a suitable comparison if available | Describe timing without attributing the change to redesign
+Measurement comparability | Definitions not supplied | Confirm the same attendance definition across periods | Magnitude is provisional until measures align
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Write the strongest claim the available evidence can support and list stronger claims that remain untested. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Describe timing without attributing the change to redesign.
 ```
 
 **Bad output:**

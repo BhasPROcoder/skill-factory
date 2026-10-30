@@ -3,9 +3,9 @@ id: TVE-007
 name: video-sound-picture-transition-plan
 domain: Video Editing Decisions
 subdomain: Sound and captions
-version: 1.0
-description: Produce a sound-picture transition plan; use when the task is to video sound picture transition plan.
-triggers: ["video sound picture transition plan", "help with a sound-picture transition plan", "review my a sound-picture transition plan", "prepare a sound-picture transition plan", "check video sound picture transition plan evidence"]
+version: 1.1
+description: Create a sound-picture transition plan from supplied evidence; use when preparing or reviewing sound-picture transition plan decisions.
+triggers: ["video sound picture transition plan", "help with a sound-picture transition plan", "review my sound-picture transition plan", "prepare a sound-picture transition plan", "check the evidence for this sound-picture transition plan"]
 not_for: ["video caption readability review [TVE-008]", "video version feedback reconciliation [TVE-009]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a sound-picture transition plan and name the source artifacts used; retain a version or observation date where available.
 2. Identify the audio cue that can prepare or carry a visual transition
 3. Check whether overlapping dialogue changes who appears to speak
-4. ⚠️ Use available ambience to support continuity without fabricating events Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Use available ambience to support continuity without fabricating events. Do not silently replace missing evidence with an assumed successful outcome.
 5. Review the transition with and without picture
 6. Apply the domain check: Preserve the source material and distinguish a paper edit from an executed timeline; verify current destination specifications with the recipient.
 7. Verify the proposed result with this task-specific check: Watch and listen for speaker identification across the transition. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Describe edit choices through visible actions, shot duration relative to an action, framing, cut motivation, caption placement, and sound transitions. Never invent footage contents, dialogue, defects, or timecodes when the media has not been inspected. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a sound-picture transition plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The proposed overlap may misattribute the line.
 Decision: Introduce the new speaker clearly or choose a neutral visual bridge.
+Artifact: Risk: next interview's speech over a visibly speaking different person. Repair options: introduce the actual speaker before the line or use a neutral available bridge shot. Check: viewer correctly attributes the line without production knowledge.
 Action: Team owner — Review the transition with and without picture Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Watch and listen for speaker identification across the transition.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a sound-picture transition plan. A line from the next interview begins over a shot of a different person who appears to be speaking. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The proposed overlap may misattribute the line.
 3. It preserves this task-specific conclusion: Introduce the new speaker clearly or choose a neutral visual bridge.
 4. It includes the verification check or explicitly marks it pending: Watch and listen for speaker identification across the transition.

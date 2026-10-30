@@ -2,10 +2,10 @@
 id: TST-009
 name: test-concurrency-interleaving-plan
 domain: Software Verification Design
-subdomain: Test selection
-version: 1.0
-description: Produce a concurrency test plan; use when the task is to test concurrency interleaving plan.
-triggers: ["test concurrency interleaving plan", "help with a concurrency test plan", "review my a concurrency test plan", "prepare a concurrency test plan", "check test concurrency interleaving plan evidence"]
+subdomain: State transitions
+version: 1.1
+description: Create a concurrency test plan from supplied evidence; use when preparing or reviewing concurrency test plan decisions.
+triggers: ["test concurrency interleaving plan", "help with a concurrency test plan", "review my concurrency test plan", "prepare a concurrency test plan", "check the evidence for this concurrency test plan"]
 not_for: ["test failure injection plan [TST-010]", "test boundary value design [TST-001]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a concurrency test plan and name the source artifacts used; retain a version or observation date where available.
 2. Break operations into observable read and write stages
 3. Construct an interleaving that challenges the invariant
-4. ⚠️ Run the scenario with controlled synchronization in isolation Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Run the scenario with controlled synchronization in isolation. Do not silently replace missing evidence with an assumed successful outcome.
 5. Check final state and lost or duplicated effects
 6. Apply the domain check: Keep fixtures small enough to inspect, preserve the failure signal, and report what the test does not establish.
 7. Verify the proposed result with this task-specific check: Force the competing reads before either write and inspect the final value. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A test should distinguish correct behavior from a plausible defect. Derive expected results from a contract or independent example rather than copying the implementation under test. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a concurrency test plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The interleaving yields 1 and loses one increment.
 Decision: Require a synchronization or atomic-update design that preserves both effects.
+Artifact: Interleaving: A reads 0; B reads 0; A writes 1; B writes 1. Observed model final=1; required final=2. Test outcome: lost update demonstrated by the fixture. Rehearse a controlled concurrent implementation test after synchronization or atomic-update design.
 Action: Team owner — Check final state and lost or duplicated effects Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Force the competing reads before either write and inspect the final value.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a concurrency test plan. Two increments both read 0 and each writes 1; the required final value is 2. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The interleaving yields 1 and loses one increment.
 3. It preserves this task-specific conclusion: Require a synchronization or atomic-update design that preserves both effects.
 4. It includes the verification check or explicitly marks it pending: Force the competing reads before either write and inspect the final value.

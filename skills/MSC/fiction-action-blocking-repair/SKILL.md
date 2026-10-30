@@ -3,9 +3,9 @@ id: MSC-004
 name: fiction-action-blocking-repair
 domain: Fiction Scene Craft
 subdomain: Design
-version: 1.0
-description: Fiction action blocking repair using supplied evidence and explicit acceptance checks; use when preparing a fiction action blocking repair deliverable.
-triggers: ["help me with fiction action blocking repair", "prepare a fiction action blocking repair deliverable", "review our fiction action blocking repair evidence", "create a fiction action blocking repair action plan", "check this fiction action blocking repair decision"]
+version: 1.1
+description: Guide fiction action blocking repair when working from action passage, location layout, character positions, and intended outcome.
+triggers: ["fiction action blocking repair", "help with fiction action blocking repair", "work on fiction action blocking repair", "review my fiction action blocking repair", "apply fiction action blocking repair to these materials"]
 not_for: ["Fiction sensory detail selection [MSC-005]", "Fiction exposition integration [MSC-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction action blocking repair
 
 ## Purpose
-Produce a usable fiction action blocking repair deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction action blocking repair task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,13 +104,15 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Add a plausible way to reach the book or change the action to match the barrier. Owner: author or creative lead.
 
 ## Artifact
-The locked gate stopped Mara a pace from the shelf. She slid her scarf through the bars, caught the book's corner, and drew it across the dusty floor. It snagged beneath the gate. Now she had to decide whether to tear the cover.
+Proposed creative revision; added details require author approval and continuity review.
+Proposed rewrite assumes the gate key can be introduced consistently: Mara stopped behind the locked gate. She found the key in her coat, opened the gate, and crossed to the shelf. Only then did she take the book.
+Continuity dependency: establish why she has the key, or choose a different supported way through the barrier; do not silently introduce an already-owned key as existing canon.
 
 ## Acceptance check
 A reader can reconstruct who moved where and how the important object changed hands.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

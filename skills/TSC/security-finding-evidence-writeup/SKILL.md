@@ -2,10 +2,10 @@
 id: TSC-010
 name: security-finding-evidence-writeup
 domain: Defensive Security Review
-subdomain: Access review
-version: 1.0
-description: Produce a defensive finding writeup; use when the task is to security finding evidence writeup.
-triggers: ["security finding evidence writeup", "help with a defensive finding writeup", "review my a defensive finding writeup", "prepare a defensive finding writeup", "check security finding evidence writeup evidence"]
+subdomain: Response preparation
+version: 1.1
+description: Create a defensive finding writeup from supplied evidence; use when preparing or reviewing defensive finding writeup decisions.
+triggers: ["security finding evidence writeup", "help with a defensive finding writeup", "review my defensive finding writeup", "prepare a defensive finding writeup", "check the evidence for this defensive finding writeup"]
 not_for: ["security review scope charter [TSC-001]", "security permission review matrix [TSC-002]"]
 requires: []
 risk_level: high
@@ -30,11 +30,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a defensive finding writeup and name the source artifacts used; retain a version or observation date where available.
 2. State the observed condition with a reproducible evidence reference
 3. Separate demonstrated impact from plausible but untested consequences
-4. ⚠️ Describe a corrective action tied to the condition Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Describe a corrective action tied to the condition. Do not silently replace missing evidence with an assumed successful outcome.
 5. Define a verification step that proves the condition changed
 6. Apply the domain check: Use current official vendor advisories and organizational policy when requirements matter; do not claim a vulnerability is exploitable from a scanner label alone.
 7. Verify the proposed result with this task-specific check: Recheck effective permissions after the authorized change. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Security findings need an asset boundary, evidence of the condition, a plausible impact, and an authorized owner. These skills organize defensive review and do not authorize scanning, exploitation, credential access, or changes outside the stated scope. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -58,6 +59,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -90,6 +92,7 @@ Deliverable: a defensive finding writeup
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Excess deletion permission is observed; actual misuse is not demonstrated.
 Decision: Recommend owner review and removal if unjustified without claiming a breach occurred.
+Artifact: Finding: supplied matrix grants intern role deletion rights. Demonstrated impact: excess grant only; misuse or breach not demonstrated. Remediation proposal: owner validates need and removes unjustified access. Verification: effective rights match approved role actions after authorized correction.
 Action: Team owner — Define a verification step that proves the condition changed Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Recheck effective permissions after the authorized change.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -111,7 +114,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a defensive finding writeup. A supplied access matrix grants an intern role deletion rights; no deletion or exploitation has been performed. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Excess deletion permission is observed; actual misuse is not demonstrated.
 3. It preserves this task-specific conclusion: Recommend owner review and removal if unjustified without claiming a breach occurred.
 4. It includes the verification check or explicitly marks it pending: Recheck effective permissions after the authorized change.

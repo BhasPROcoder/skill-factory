@@ -3,9 +3,9 @@ id: MSA-001
 name: sales-discovery-question-plan
 domain: Sales Process Enablement
 subdomain: Design
-version: 1.0
-description: Sales discovery question planning using supplied evidence and explicit acceptance checks; use when preparing a sales discovery question planning deliverable.
-triggers: ["help me with sales discovery question planning", "prepare a sales discovery question planning deliverable", "review our sales discovery question planning evidence", "create a sales discovery question planning action plan", "check this sales discovery question planning decision"]
+version: 1.1
+description: Guide sales discovery question planning when working from customer context, meeting objective, known needs, and product boundaries.
+triggers: ["sales discovery question planning", "help with sales discovery question planning", "work on sales discovery question plan", "review my sales discovery question planning", "apply sales discovery question planning to these materials"]
 not_for: ["Sales qualification evidence review [MSA-002]", "Sales demonstration storyboard design [MSA-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Sales discovery question planning
 
 ## Purpose
-Produce a usable sales discovery question planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this sales discovery question planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -114,7 +114,7 @@ Do not presume spreadsheets must be replaced.
 Questions permit a no-fit conclusion and surface the buyer's actual constraints.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MSC-001
 name: fiction-scene-goal-pressure
 domain: Fiction Scene Craft
 subdomain: Design
-version: 1.0
-description: Fiction scene goal and pressure revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene goal and pressure revision deliverable.
-triggers: ["help me with fiction scene goal and pressure revision", "prepare a fiction scene goal and pressure revision deliverable", "review our fiction scene goal and pressure revision evidence", "create a fiction scene goal and pressure revision action plan", "check this fiction scene goal and pressure revision decision"]
+version: 1.1
+description: Guide fiction scene goal and pressure revision when working from scene draft, viewpoint character, immediate goal, and obstacle.
+triggers: ["fiction scene goal and pressure revision", "help with fiction scene goal and pressure revision", "work on fiction scene goal pressure", "review my fiction scene goal and pressure revision", "apply fiction scene goal and pressure revision to these materials"]
 not_for: ["Fiction scene viewpoint consistency repair [MSC-002]", "Fiction dialogue subtext revision [MSC-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction scene goal and pressure revision
 
 ## Purpose
-Produce a usable fiction scene goal and pressure revision deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction scene goal and pressure revision task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Revise the beat so Mara risks something concrete to pursue access. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Mara kept her hand on the archive door. Behind the guard, the catalog cart rattled toward the furnace stairs.
 "Then take my badge," she said.
 The guard looked at the badge, then at her. "You won't work here again."
@@ -113,7 +114,7 @@ She set it on his desk.
 The revised scene shows a goal, resistance, and a consequential choice in observable action.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

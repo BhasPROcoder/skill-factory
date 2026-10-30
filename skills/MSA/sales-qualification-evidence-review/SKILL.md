@@ -3,9 +3,9 @@ id: MSA-002
 name: sales-qualification-evidence-review
 domain: Sales Process Enablement
 subdomain: Design
-version: 1.0
-description: Sales qualification evidence review using supplied evidence and explicit acceptance checks; use when preparing a sales qualification evidence review deliverable.
-triggers: ["help me with sales qualification evidence review", "prepare a sales qualification evidence review deliverable", "review our sales qualification evidence review evidence", "create a sales qualification evidence review action plan", "check this sales qualification evidence review decision"]
+version: 1.1
+description: Guide sales qualification evidence review when working from opportunity notes, required fit criteria, and decision-process evidence.
+triggers: ["sales qualification evidence review", "help with sales qualification evidence review", "work on sales qualification evidence review", "review my sales qualification evidence review", "apply sales qualification evidence review to these materials"]
 not_for: ["Sales demonstration storyboard design [MSA-003]", "Sales objection response mapping [MSA-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Sales qualification evidence review
 
 ## Purpose
-Produce a usable sales qualification evidence review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this sales qualification evidence review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Follow-up: What steps and people are involved in deciding whether to proceed?
 Every qualification conclusion has evidence or an explicit unknown status.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -2,10 +2,10 @@
 id: TDQ-006
 name: dataset-referential-integrity-review
 domain: Dataset Quality Diagnostics
-subdomain: Missingness
-version: 1.0
-description: Produce a referential integrity report; use when the task is to dataset referential integrity review.
-triggers: ["dataset referential integrity review", "help with a referential integrity report", "review my a referential integrity report", "prepare a referential integrity report", "check dataset referential integrity review evidence"]
+subdomain: Integrity
+version: 1.1
+description: Create a referential integrity report from supplied evidence; use when preparing or reviewing referential integrity report decisions.
+triggers: ["dataset referential integrity review", "help with a referential integrity report", "review my referential integrity report", "prepare a referential integrity report", "check the evidence for this referential integrity report"]
 not_for: ["dataset unit conversion review [TDQ-007]", "dataset join multiplication diagnosis [TDQ-008]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a referential integrity report and name the source artifacts used; retain a version or observation date where available.
 2. Identify the parent and child relationship
 3. Compare nonmissing child references with the parent key set
-4. ⚠️ Distinguish allowed absent references from orphaned keys Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Distinguish allowed absent references from orphaned keys. Do not silently replace missing evidence with an assumed successful outcome.
 5. Prepare a repair list preserving the original records
 6. Apply the domain check: Report counts with denominators and compare values under explicit normalization rules; never silently drop inconvenient records.
 7. Verify the proposed result with this task-specific check: Recompute the set difference after any parent restoration or reference correction. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Quality checks must reflect the intended observation unit and business meaning. A repair can change the estimand or hide a collection defect, so retain the unmodified input and explain consequences. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a referential integrity report
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Reference p3 has no matching parent.
 Decision: Investigate whether p3 is missing upstream or incorrectly assigned.
+Artifact: Parents: p1,p2. Child references: p1,p3. Resolved: p1. Orphan: p3. Repair list preserves the child record and requests authoritative parent or correction evidence; do not invent parent p3 merely to pass the check.
 Action: Team owner — Prepare a repair list preserving the original records Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Recompute the set difference after any parent restoration or reference correction.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a referential integrity report. Parent IDs are p1 and p2; child references are p1 and p3. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Reference p3 has no matching parent.
 3. It preserves this task-specific conclusion: Investigate whether p3 is missing upstream or incorrectly assigned.
 4. It includes the verification check or explicitly marks it pending: Recompute the set difference after any parent restoration or reference correction.

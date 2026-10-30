@@ -3,9 +3,9 @@ id: MRE-005
 name: research-plan-method-selection
 domain: Customer and Market Research
 subdomain: Design
-version: 1.0
-description: Research method selection brief using supplied evidence and explicit acceptance checks; use when preparing a research method selection brief deliverable.
-triggers: ["help me with research method selection brief", "prepare a research method selection brief deliverable", "review our research method selection brief evidence", "create a research method selection brief action plan", "check this research method selection brief decision"]
+version: 1.1
+description: Guide research method selection brief when working from decision uncertainty, evidence needed, access constraints, and timeline.
+triggers: ["research method selection brief", "help with research method selection brief", "work on research plan method selection", "review my research method selection brief", "apply research method selection brief to these materials"]
 not_for: ["Customer problem statement review [MRE-006]", "Research evidence confidence review [MRE-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Research method selection brief
 
 ## Purpose
-Produce a usable research method selection brief deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this research method selection brief task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Additional requirement: a justified measurement and sampling design for prevalen
 The recommendation matches evidence type to the decision and states unsupported conclusions.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: GEX-005
 name: exam-retrieval-practice-design
 domain: Exam Preparation Methods
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare retrieval practice set from supplied evidence; use when the request concerns target knowledge.
 triggers: ["retrieval practice set", "prepare retrieval practice set", "review my retrieval practice set", "help me with retrieval practice set", "turn target knowledge into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Mixed practice selection [GEX-006]", "Exam answer structure practice [GEX-007]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Prompt type | Knowledge target | Answer criterion | Reattempt
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,13 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Prompt type | Knowledge target | Answer criterion | Reattempt
 Contrast prompt | Claim versus example | Correct distinction plus reason | Use new paragraph
 Free recall | Definition meaning | Essential idea in own words | Change wording
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Proposed card front: In the following text, identify the claim and the example, then explain the difference: The club needs a larger room. Last time, several members stood.
+Back, hidden until response: the proposed need is the claim; the standing episode is an example supporting it. Equivalent wording is acceptable.
+Retest prompt: use a new paragraph without visible labels.
+Record independent recall separately from recognizing the answer after revealing the back.
+Next action: The requester or assigned reviewer will complete this task-specific check: Schedule a later reattempt with changed prompt wording. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Use new paragraph.
 ```
 
 **Bad output:**

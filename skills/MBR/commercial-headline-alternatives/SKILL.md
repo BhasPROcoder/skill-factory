@@ -3,9 +3,9 @@ id: MBR-007
 name: commercial-headline-alternatives
 domain: Commercial Brand and Editorial
 subdomain: Design
-version: 1.0
-description: Commercial headline alternative drafting using supplied evidence and explicit acceptance checks; use when preparing a commercial headline alternative drafting deliverable.
-triggers: ["help me with commercial headline alternative drafting", "prepare a commercial headline alternative drafting deliverable", "review our commercial headline alternative drafting evidence", "create a commercial headline alternative drafting action plan", "check this commercial headline alternative drafting decision"]
+version: 1.1
+description: Guide commercial headline alternative drafting when working from reader need, page promise, verified benefits, and tone constraints.
+triggers: ["commercial headline alternative drafting", "help with commercial headline alternative drafting", "work on commercial headline alternatives", "review my commercial headline alternative drafting", "apply commercial headline alternative drafting to these materials"]
 not_for: ["Commercial style consistency review [MBR-008]", "Commercial asset reuse inventory [MBR-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Commercial headline alternative drafting
 
 ## Purpose
-Produce a usable commercial headline alternative drafting deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this commercial headline alternative drafting task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Fill the category from the actual article before publishing.
 Each headline predicts the delivered content and makes no unsupported completeness claim.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

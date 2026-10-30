@@ -3,9 +3,9 @@ id: MSV-001
 name: startup-problem-hypothesis-card
 domain: Startup Customer Validation
 subdomain: Design
-version: 1.0
-description: Startup problem hypothesis design using supplied evidence and explicit acceptance checks; use when preparing a startup problem hypothesis design deliverable.
-triggers: ["help me with startup problem hypothesis design", "prepare a startup problem hypothesis design deliverable", "review our startup problem hypothesis design evidence", "create a startup problem hypothesis design action plan", "check this startup problem hypothesis design decision"]
+version: 1.1
+description: Guide startup problem hypothesis design when working from target customer, observed problem episodes, and proposed business idea.
+triggers: ["startup problem hypothesis design", "help with startup problem hypothesis design", "work on startup problem hypothesis card", "review my startup problem hypothesis design", "apply startup problem hypothesis design to these materials"]
 not_for: ["Startup assumption risk ordering [MSV-002]", "Startup customer commitment evidence mapping [MSV-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup problem hypothesis design
 
 ## Purpose
-Produce a usable startup problem hypothesis design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup problem hypothesis design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Solution boundary: no app is assumed necessary.
 The hypothesis can be tested without building or naming the proposed app.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

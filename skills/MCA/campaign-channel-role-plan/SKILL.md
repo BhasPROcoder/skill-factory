@@ -3,9 +3,9 @@ id: MCA-003
 name: campaign-channel-role-plan
 domain: Campaign Planning and Review
 subdomain: Design
-version: 1.0
-description: Campaign channel role planning using supplied evidence and explicit acceptance checks; use when preparing a campaign channel role planning deliverable.
-triggers: ["help me with campaign channel role planning", "prepare a campaign channel role planning deliverable", "review our campaign channel role planning evidence", "create a campaign channel role planning action plan", "check this campaign channel role planning decision"]
+version: 1.1
+description: Guide campaign channel role planning when working from customer journey, available channels, audience access, and campaign objective.
+triggers: ["campaign channel role planning", "help with campaign channel role planning", "work on campaign channel role plan", "review my campaign channel role planning", "apply campaign channel role planning to these materials"]
 not_for: ["Campaign creative test matrix design [MCA-004]", "Campaign offer consistency auditing [MCA-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign channel role planning
 
 ## Purpose
-Produce a usable campaign channel role planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign channel role planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Assignment needed: responsible channel owner and usable destination.
 Every journey stage needed by the campaign has an assigned role and destination.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

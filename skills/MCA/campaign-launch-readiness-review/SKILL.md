@@ -3,9 +3,9 @@ id: MCA-006
 name: campaign-launch-readiness-review
 domain: Campaign Planning and Review
 subdomain: Design
-version: 1.0
-description: Campaign launch readiness review using supplied evidence and explicit acceptance checks; use when preparing a campaign launch readiness review deliverable.
-triggers: ["help me with campaign launch readiness review", "prepare a campaign launch readiness review deliverable", "review our campaign launch readiness review evidence", "create a campaign launch readiness review action plan", "check this campaign launch readiness review decision"]
+version: 1.1
+description: Guide campaign launch readiness review when working from approved assets, destinations, tracking plan, owner assignments, and dependencies.
+triggers: ["campaign launch readiness review", "help with campaign launch readiness review", "work on campaign launch readiness review", "review my campaign launch readiness review", "apply campaign launch readiness review to these materials"]
 not_for: ["Campaign calendar dependency planning [MCA-007]", "Campaign landing message match review [MCA-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign launch readiness review
 
 ## Purpose
-Produce a usable campaign launch readiness review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign launch readiness review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Release evidence: a representative booking reaches the intended confirmed comple
 A representative customer journey reaches the intended completed action.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

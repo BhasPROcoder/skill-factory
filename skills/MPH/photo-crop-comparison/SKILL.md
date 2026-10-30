@@ -3,9 +3,9 @@ id: MPH-004
 name: photo-crop-comparison
 domain: Photography Planning and Critique
 subdomain: Design
-version: 1.0
-description: Photographic crop comparison review using supplied evidence and explicit acceptance checks; use when preparing a photographic crop comparison review deliverable.
-triggers: ["help me with photographic crop comparison review", "prepare a photographic crop comparison review deliverable", "review our photographic crop comparison review evidence", "create a photographic crop comparison review action plan", "check this photographic crop comparison review decision"]
+version: 1.1
+description: Guide photographic crop comparison review when working from source image, intended use, focal subject, and required context.
+triggers: ["photographic crop comparison review", "help with photographic crop comparison review", "work on photo crop comparison", "review my photographic crop comparison review", "apply photographic crop comparison review to these materials"]
 not_for: ["Photographic shot list sequencing [MPH-005]", "Photographic contact sheet selection [MPH-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Photographic crop comparison review
 
 ## Purpose
-Produce a usable photographic crop comparison review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this photographic crop comparison review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Retain enough of the cyclist to preserve the intended relationship. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Crop A: hand alone — ambiguous gesture, rejected for this intention.
 Crop B: hand plus enough cyclist context to show assistance — preferred direction.
 Edge check: preserve the relationship without cutting the essential contact point.
@@ -112,7 +113,7 @@ Edge check: preserve the relationship without cutting the essential contact poin
 The selected crop preserves the intended story and handles frame edges deliberately.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

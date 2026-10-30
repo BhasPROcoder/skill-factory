@@ -2,10 +2,10 @@
 id: TFE-003
 name: feature-category-unknown-policy
 domain: Feature and Label Pipelines
-subdomain: Aggregation
-version: 1.0
-description: Produce an unseen-category handling design; use when the task is to feature category unknown policy.
-triggers: ["feature category unknown policy", "help with an unseen-category handling design", "review my an unseen-category handling design", "prepare an unseen-category handling design", "check feature category unknown policy evidence"]
+subdomain: Encoding
+version: 1.1
+description: Create an unseen-category handling design from supplied evidence; use when preparing or reviewing unseen-category handling design decisions.
+triggers: ["feature category unknown policy", "help with an unseen-category handling design", "review my unseen-category handling design", "prepare an unseen-category handling design", "check the evidence for this unseen-category handling design"]
 not_for: ["feature window aggregation design [TFE-004]", "feature target encoding leakage check [TFE-005]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of an unseen-category handling design and name the source artifacts used; retain a version or observation date where available.
 2. Build the vocabulary from training data only
 3. Define explicit treatment of unseen and missing categories
-4. ⚠️ Keep unseen categories distinguishable from known categories Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Keep unseen categories distinguishable from known categories. Do not silently replace missing evidence with an assumed successful outcome.
 5. Test the scoring path without refitting vocabulary
 6. Apply the domain check: Track where every learned parameter is fitted and when every source field becomes available.
 7. Verify the proposed result with this task-specific check: Score an unseen category with the frozen vocabulary and inspect the result. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Training features must represent information available at the intended prediction instant. A transform learned from data belongs inside the training boundary, and production transformations must preserve the same semantics. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: an unseen-category handling design
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Green has no learned category entry.
 Decision: Map green to UNKNOWN under the supplied contract.
+Artifact: Training vocabulary: red→0; blue→1. Supplied unknown policy: UNKNOWN bucket. Scoring green: map to UNKNOWN without refitting. Keep missing and unknown behavior explicitly defined; the example's sentinel is illustrative implementation detail.
 Action: Team owner — Test the scoring path without refitting vocabulary Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Score an unseen category with the frozen vocabulary and inspect the result.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for an unseen-category handling design. Training categories are red and blue; scoring receives green; the contract has an UNKNOWN bucket. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Green has no learned category entry.
 3. It preserves this task-specific conclusion: Map green to UNKNOWN under the supplied contract.
 4. It includes the verification check or explicitly marks it pending: Score an unseen category with the frozen vocabulary and inspect the result.

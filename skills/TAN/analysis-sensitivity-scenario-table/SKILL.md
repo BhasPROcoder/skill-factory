@@ -3,9 +3,9 @@ id: TAN-008
 name: analysis-sensitivity-scenario-table
 domain: Analytical Reasoning and Metrics
 subdomain: Interpretation
-version: 1.0
-description: Produce a sensitivity scenario table; use when the task is to analysis sensitivity scenario table.
-triggers: ["analysis sensitivity scenario table", "help with a sensitivity scenario table", "review my a sensitivity scenario table", "prepare a sensitivity scenario table", "check analysis sensitivity scenario table evidence"]
+version: 1.1
+description: Create a sensitivity scenario table from supplied evidence; use when preparing or reviewing sensitivity scenario table decisions.
+triggers: ["analysis sensitivity scenario table", "help with a sensitivity scenario table", "review my sensitivity scenario table", "prepare a sensitivity scenario table", "check the evidence for this sensitivity scenario table"]
 not_for: ["analysis chart claim audit [TAN-009]", "analysis reproducible question brief [TAN-010]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a sensitivity scenario table and name the source artifacts used; retain a version or observation date where available.
 2. Identify inputs whose uncertainty could change the decision
 3. Vary inputs under explicitly named scenarios
-4. ⚠️ Keep jointly constrained inputs consistent Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Keep jointly constrained inputs consistent. Do not silently replace missing evidence with an assumed successful outcome.
 5. Report where the recommendation changes
 6. Apply the domain check: State what a calculation can establish and what would require a different design; do not turn association into causal attribution.
 7. Verify the proposed result with this task-specific check: Recompute the outcome for every supplied scenario with the same cost assumptions. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A metric is defined by its population, unit, denominator, and time window. Comparisons need compatible definitions before arithmetic is meaningful. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -79,7 +81,7 @@ Open items: <missing information or current-source checks; at most three bullets
 
 ## Worked example
 **Input:**
-> Fictional team Cedar Lantern requests a sensitivity scenario table. A project breaks even at 100 units; user-supplied scenarios are 80, 100, and 120 units. The team asks for an assessment only and supplies these facts as the complete example fixture.
+> Fictional team Cedar Lantern requests a sensitivity scenario table. A user-supplied operational acceptance rule requires at least 100 units; scenarios are 80, 100, and 120 units. The team asks for an assessment only and supplies these facts as the complete example fixture.
 
 **Output:**
 ```text
@@ -87,6 +89,7 @@ Deliverable: a sensitivity scenario table
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The scenarios include below, at, and above break-even cases.
 Decision: Describe the decision as conditional on demand rather than robustly favorable.
+Artifact: Supplied acceptance threshold: at least 100 units. Scenarios: 80→below; 100→meets boundary; 120→above. Recommendation is conditional on the scenario and the user's rule. No real financial break-even claim is made.
 Action: Team owner — Report where the recommendation changes Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Recompute the outcome for every supplied scenario with the same cost assumptions.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -105,10 +108,10 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 
 ## Test case
 **Input:**
-> Fictional team Cedar Lantern asks for a sensitivity scenario table. A project breaks even at 100 units; user-supplied scenarios are 80, 100, and 120 units. Produce the assessment and identify what remains unverified.
+> Fictional team Cedar Lantern asks for a sensitivity scenario table. A user-supplied operational acceptance rule requires at least 100 units; scenarios are 80, 100, and 120 units. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The scenarios include below, at, and above break-even cases.
 3. It preserves this task-specific conclusion: Describe the decision as conditional on demand rather than robustly favorable.
 4. It includes the verification check or explicitly marks it pending: Recompute the outcome for every supplied scenario with the same cost assumptions.

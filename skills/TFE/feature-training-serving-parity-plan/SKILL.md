@@ -2,10 +2,10 @@
 id: TFE-010
 name: feature-training-serving-parity-plan
 domain: Feature and Label Pipelines
-subdomain: Encoding
-version: 1.0
-description: Produce a training-serving parity test plan; use when the task is to feature training serving parity plan.
-triggers: ["feature training serving parity plan", "help with a training-serving parity test plan", "review my a training-serving parity test plan", "prepare a training-serving parity test plan", "check feature training serving parity plan evidence"]
+subdomain: Training-serving consistency
+version: 1.1
+description: Create a training-serving parity test plan from supplied evidence; use when preparing or reviewing training-serving parity test plan decisions.
+triggers: ["feature training serving parity plan", "help with a training-serving parity test plan", "review my training-serving parity test plan", "prepare a training-serving parity test plan", "check the evidence for this training-serving parity test plan"]
 not_for: ["feature availability time audit [TFE-001]", "feature training only fit check [TFE-002]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a training-serving parity test plan and name the source artifacts used; retain a version or observation date where available.
 2. Choose fixtures covering missing, unseen, and boundary values
 3. Run both paths with the same frozen artifacts
-4. ⚠️ Compare named feature values before model inference Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Compare named feature values before model inference. Do not silently replace missing evidence with an assumed successful outcome.
 5. Diagnose divergences by transformation stage
 6. Apply the domain check: Track where every learned parameter is fitted and when every source field becomes available.
 7. Verify the proposed result with this task-specific check: Compare named feature vectors from the same raw fixture. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Training features must represent information available at the intended prediction instant. A transform learned from data belongs inside the training boundary, and production transformations must preserve the same semantics. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a training-serving parity test plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The feature paths diverge before prediction.
 Decision: Resolve the missing-value transformation mismatch before comparing model outputs.
+Artifact: Same fixture: batch quantity=4; serving quantity=0. First divergence: feature transformation before inference. Debug target: missing-value handling and frozen transform identity. Model-output comparison is deferred until named feature values agree under the contract.
 Action: Team owner — Diagnose divergences by transformation stage Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare named feature vectors from the same raw fixture.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a training-serving parity test plan. The batch path emits quantity 4; the serving path emits quantity 0 for the same missing-value fixture. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The feature paths diverge before prediction.
 3. It preserves this task-specific conclusion: Resolve the missing-value transformation mismatch before comparing model outputs.
 4. It includes the verification check or explicitly marks it pending: Compare named feature vectors from the same raw fixture.

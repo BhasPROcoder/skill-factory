@@ -3,9 +3,9 @@ id: MSC-005
 name: fiction-sensory-detail-selection
 domain: Fiction Scene Craft
 subdomain: Design
-version: 1.0
-description: Fiction sensory detail selection using supplied evidence and explicit acceptance checks; use when preparing a fiction sensory detail selection deliverable.
-triggers: ["help me with fiction sensory detail selection", "prepare a fiction sensory detail selection deliverable", "review our fiction sensory detail selection evidence", "create a fiction sensory detail selection action plan", "check this fiction sensory detail selection decision"]
+version: 1.1
+description: Guide fiction sensory detail selection when working from scene purpose, viewpoint character, setting, and current descriptive passage.
+triggers: ["fiction sensory detail selection", "help with fiction sensory detail selection", "work on fiction sensory detail selection", "review my fiction sensory detail selection", "apply fiction sensory detail selection to these materials"]
 not_for: ["Fiction exposition integration [MSC-006]", "Fiction scene opening revision [MSC-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction sensory detail selection
 
 ## Purpose
-Produce a usable fiction sensory detail selection deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction sensory detail selection task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Focus the passage on the sensory evidence relevant to locating the leak without supplying real-world safety instructions. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 The room's sweet chemical smell thickened near the cupboard. Mara stopped admiring the painted ceiling. A faint hiss seemed to move when she turned her head, and the familiar kitchen suddenly felt like a place she should leave.
 This is fictional sensory prose, not a safety procedure.
 
@@ -111,7 +112,7 @@ This is fictional sensory prose, not a safety procedure.
 Selected details reflect the character's immediate attention and support the scene's purpose.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: GPR-002
 name: weekly-capacity-planning
 domain: Personal Work Organization
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare weekly capacity plan from supplied evidence; use when the request concerns fixed commitments.
 triggers: ["weekly capacity plan", "prepare weekly capacity plan", "review my weekly capacity plan", "help me with weekly capacity plan", "turn fixed commitments into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Project next-action decomposition [GPR-003]", "Personal priority tradeoff [GPR-004]"]
 requires: []
 risk_level: low
 ---
@@ -26,11 +26,11 @@ If a required input is missing and has no safe default, ask in one message with 
 
 ## Procedure
 1. Restate the requested outcome in one sentence and identify the smallest useful deliverable; do not expand into adjacent advice merely because the input mentions it.
-2. Block fixed commitments before allocating discretionary work.
-3. Estimate capacity using observed availability rather than total waking hours.
-4. Select the outcomes that fit the remaining capacity.
-5. Reserve explicit room for predictable interruptions or carryover.
-6. Name deferred work and the next review point.
+2. Place fixed commitments on the actual personal calendar before assigning discretionary work.
+3. Identify free blocks and the attention or energy conditions each can realistically support.
+4. Match a bounded task output to a suitable block without overlapping its time.
+5. Leave carryover or interruption space based on the person observed availability.
+6. Remove or renegotiate tasks that have no feasible placement and review the next calendar against actual completion.
 7. ⚠️ Trace every proposed action back to an input or an explicitly stated condition; when support is missing, replace the conclusion with a verification question instead of filling the gap from memory.
 8. Populate the output table with the task-specific findings, retaining disagreements or missing information as visible rows rather than silently dropping them.
 9. Check the completed worked logic against an alternative explanation or a changed input; state what would have to change for the recommended next action to change.
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Commitment | Capacity effect | Planned handling | Tradeoff
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -83,9 +84,10 @@ Scope: Prepare weekly capacity plan for the fictional case, limited to the suppl
 Basis: The fictional scenario above; missing supporting material remains unverified.
 Commitment | Capacity effect | Planned handling | Tradeoff
 Fixed meeting | Consumes drafting block | Keep actual commitment | Move or reduce drafting
-Drafting | Needs uninterrupted work | Use another confirmed block | Defer optional task
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+Drafting | Uninterrupted work requested | Find an actual free block before scheduling | Reduce scope if none exists
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Remove or renegotiate tasks that have no feasible placement and review the next calendar against actual completion. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Move or reduce drafting.
 ```
 
 **Bad output:**

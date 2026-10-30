@@ -3,9 +3,9 @@ id: MSA-004
 name: sales-objection-response-map
 domain: Sales Process Enablement
 subdomain: Design
-version: 1.0
-description: Sales objection response mapping using supplied evidence and explicit acceptance checks; use when preparing a sales objection response mapping deliverable.
-triggers: ["help me with sales objection response mapping", "prepare a sales objection response mapping deliverable", "review our sales objection response mapping evidence", "create a sales objection response mapping action plan", "check this sales objection response mapping decision"]
+version: 1.1
+description: Guide sales objection response mapping when working from buyer objections, exact wording, product facts, and evidence assets.
+triggers: ["sales objection response mapping", "help with sales objection response mapping", "work on sales objection response map", "review my sales objection response mapping", "apply sales objection response mapping to these materials"]
 not_for: ["Sales follow-up draft preparation [MSA-005]", "Sales proposal scope outlining [MSA-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Sales objection response mapping
 
 ## Purpose
-Produce a usable sales objection response mapping deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this sales objection response mapping task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -111,7 +111,7 @@ No workaround is promised.
 The response preserves the buyer's requirement and avoids unsupported capability promises.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

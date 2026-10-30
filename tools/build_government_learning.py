@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DOMAINS = []
 RECORDS = []
+ARTIFACTS = {}
 
 
 def domain(code, name, macro, scope, context, risk="low"):
@@ -39,8 +40,11 @@ def render(r, d, number):
     description = f"Prepare {r['title'].lower()} from supplied evidence; use when the request concerns {r['inputs'][0].lower()}."
     triggers = [r['title'].lower(), f"prepare {r['title'].lower()}", f"review my {r['title'].lower()}",
                 f"help me with {r['title'].lower()}", f"turn {r['inputs'][0].lower()} into an actionable plan"]
-    fm = dict(id=sid, name=r['slug'], domain=d['name'], subdomain="Analysis", version="1.0",
-              description=description, triggers=triggers, not_for=["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"], requires=[], risk_level=d['risk'])
+    siblings = [item for item in RECORDS if item['code'] == r['code']]
+    neighbors = [siblings[number % len(siblings)], siblings[(number + 1) % len(siblings)]]
+    exclusions = [f"{item['title']} [{r['code']}-{siblings.index(item)+1:03d}]" for item in neighbors]
+    fm = dict(id=sid, name=r['slug'], domain=d['name'], subdomain="Analysis", version="1.1",
+              description=description, triggers=triggers, not_for=exclusions, requires=[], risk_level=d['risk'])
     front = "\n".join(f"{k}: {json.dumps(v, ensure_ascii=False) if isinstance(v, list) else v}" for k,v in fm.items())
     cols = " | ".join(r['columns'])
     input_lines = "\n".join(f"{i}. **{value}** — supply the relevant original material or describe what is unavailable; it determines the scope of the analysis. Default: unknown, never invented." for i,value in enumerate(r['inputs'],1))
@@ -48,6 +52,11 @@ def render(r, d, number):
     procedure = "\n".join(f"{i+2}. {step.rstrip('.')} .".replace(" .", ".") for i,step in enumerate(r['steps']))
     branches = "\n".join("- IF " + " THEN ".join(rule.split("=>")[:2]) + " BECAUSE " + rule.split("=>")[2] + "." for rule in r['rules'])
     example_rows = "\n".join(" | ".join(row.split(";")) for row in r['rows'])
+    artifact = ARTIFACTS.get(r['slug'])
+    artifact_template = '\nArtifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>' if artifact else ''
+    artifact_example = '\nArtifact: ' + artifact if artifact else ''
+    next_action = r['steps'][-1].rstrip('.')
+    open_question = r['rows'][0].split(';')[-1]
     safety = ""
     extra_input = ""
     if d['risk'] == "high":
@@ -91,6 +100,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 {cols}
 <one row per finding; each cell one concise sentence>
+{artifact_template}
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -122,8 +132,9 @@ Scope: Prepare {r['title'].lower()} for the fictional case, limited to the suppl
 Basis: The fictional scenario above; missing supporting material remains unverified.
 {cols}
 {example_rows}
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+{artifact_example}
+Next action: The requester or assigned reviewer will complete this task-specific check: {next_action}. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: {open_question}.
 ```
 
 **Bad output:**
@@ -149,7 +160,7 @@ This fails because it suppresses the task-specific distinction visible in the ta
 '''
     wc = len(re.findall(r"\S+", text.split("---",2)[2]))
     assert 700 <= wc <= 1800, (sid,wc)
-    row = dict(id=sid,name=r['slug'],domain_code=r['code'],subdomain="Analysis",description=description,risk_level=d['risk'],requires=[],status="written")
+    row = dict(id=sid,name=r['slug'],domain_code=r['code'],subdomain="Analysis",description=description,risk_level=d['risk'],requires=[],status="planned")
     return text,row
 
 
@@ -307,9 +318,22 @@ def build():
             out.parent.mkdir(parents=True,exist_ok=True)
             out.write_text(text,encoding='utf-8',newline='\n')
             rows.append(row)
-    assert len(rows)==130
+    assert len(rows)==150
     manifest=dict(domains=[{k:v for k,v in d.items() if k not in ('context','risk')} for d in DOMAINS],skills=rows)
     target=ROOT/'staging'/'government_learning.json'
     target.parent.mkdir(exist_ok=True)
     target.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+
+
+if __name__ == '__main__':
+    import government_additions
+    import government_review_repairs
+    from government_artifacts_core import ARTIFACTS as CORE_ARTIFACTS
+    from government_artifacts_education import ARTIFACTS as EDUCATION_ARTIFACTS
+    government_additions.register(domain, add)
+    government_review_repairs.apply(RECORDS)
+    ARTIFACTS.update(CORE_ARTIFACTS)
+    ARTIFACTS.update(EDUCATION_ARTIFACTS)
+    ARTIFACTS.update(getattr(government_additions, 'ARTIFACTS', {}))
+    build()
 

@@ -3,9 +3,9 @@ id: MSL-006
 name: local-review-response-drafting
 domain: Local Search Operations
 subdomain: Design
-version: 1.0
-description: Local review response drafting using supplied evidence and explicit acceptance checks; use when preparing a local review response drafting deliverable.
-triggers: ["help me with local review response drafting", "prepare a local review response drafting deliverable", "review our local review response drafting evidence", "create a local review response drafting action plan", "check this local review response drafting decision"]
+version: 1.1
+description: Guide local review response drafting when working from review text, verified incident facts, privacy constraints, and support route.
+triggers: ["local review response drafting", "help with local review response drafting", "work on local review response drafting", "review my local review response drafting", "apply local review response drafting to these materials"]
 not_for: ["Local review theme analysis [MSL-007]", "Local listing duplicate triage [MSL-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Local review response drafting
 
 ## Purpose
-Produce a usable local review response drafting deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this local review response drafting task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -111,7 +111,7 @@ Before posting: replace the route placeholder; do not add unverified incident de
 The response contains no invented incident facts or unnecessary personal details.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

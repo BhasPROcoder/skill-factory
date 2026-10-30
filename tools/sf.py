@@ -662,7 +662,99 @@ def cmd_sync_metadata(a):
     print(f'synchronized metadata for {changed} skills; identities and statuses unchanged')
 
 
-CMDS = {"status": cmd_status, "macros": cmd_macros, "codes": cmd_codes, "next": cmd_next, "show": cmd_show, "mark": cmd_mark, "remaining": cmd_remaining, "check-registry": cmd_check_registry, "validate": cmd_validate, "index": cmd_index, "router": cmd_router, "testpack": cmd_testpack, "export": cmd_export, "ingest": cmd_ingest, "quality": cmd_quality, "coverage": cmd_coverage, "overlap": cmd_overlap, "package": cmd_package, "sync-metadata": cmd_sync_metadata}
+def cmd_search(a):
+    """Bounded local discovery without dumping the registry."""
+    if not a:
+        sys.exit('usage: sf.py search <task words>')
+    query = ' '.join(a).lower()
+    aliases = {'seo': 'search', 'bureaucracy': 'administrative', 'government': 'administrative', 'datasets': 'dataset', 'hackathons': 'hackathon'}
+    terms = set(re.findall(r'[a-z0-9]+', query))
+    terms |= {aliases[t] for t in list(terms) if t in aliases}
+    domains = {d['code']: d for d in load(DOM)}
+    matches = []
+    for row in load(REG):
+        title = row['name'].replace('-', ' ')
+        context = ' '.join([row['description'], row['subdomain'], domains[row['domain_code']]['name']]).lower()
+        score = sum(3 for term in terms if term in title) + sum(1 for term in terms if term in context)
+        if score:
+            matches.append((score, row))
+    for score, row in sorted(matches, key=lambda item: (-item[0], item[1]['id']))[:10]:
+        print(short(row))
+        print('   path:', os.path.relpath(spath(row), ROOT))
+    print(f'{min(len(matches),10)} shown of {len(matches)} lexical matches; narrow the query for a specific task')
+
+
+CMDS = {"status": cmd_status, "macros": cmd_macros, "codes": cmd_codes, "next": cmd_next, "show": cmd_show, "mark": cmd_mark, "remaining": cmd_remaining, "check-registry": cmd_check_registry, "validate": cmd_validate, "index": cmd_index, "router": cmd_router, "testpack": cmd_testpack, "export": cmd_export, "ingest": cmd_ingest, "quality": cmd_quality, "coverage": cmd_coverage, "overlap": cmd_overlap, "package": cmd_package, "sync-metadata": cmd_sync_metadata, "search": cmd_search}
+
+def cmd_migration_check(a):
+    """Check source coverage and destination integrity without copying source text."""
+    import hashlib
+    from pathlib import Path
+    removed = bool(a and a[0] == '--removed')
+    if removed:
+        a = a[1:]
+    if len(a) < 2:
+        sys.exit('usage: migration-check <source-folder> <mapping.json>... | --removed <source-folder> <receipt.json>')
+    source = Path(a[0]).resolve()
+    reg = {r['id']: r for r in load(REG)}
+    if removed:
+        with open(a[1], encoding='utf-8') as stream:
+            receipt = json.load(stream)
+        if str(source) != receipt['source_folder'] or source.exists():
+            sys.exit('FAIL original folder still exists or receipt identifies another folder')
+        for sid, digest in receipt['targets'].items():
+            if sid not in reg or reg[sid]['status'] not in ('validated', 'audited'):
+                sys.exit(f'FAIL unavailable target {sid}')
+            path = Path(spath(reg[sid]))
+            if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != digest:
+                sys.exit(f'FAIL target changed or missing {sid}')
+        print(f"REMOVAL VERIFIED: original folder absent; {len(receipt['sources'])} source workflows mapped; {len(receipt['targets'])} destination skills intact")
+        return
+    if not source.is_dir():
+        sys.exit('FAIL source folder missing')
+    files = {p.parent.name: p for p in source.glob('*/SKILL.md')}
+    if not files:
+        sys.exit('FAIL no source skills found')
+    mappings, targets = {}, {}
+    for manifest in a[1:]:
+        with open(manifest, encoding='utf-8') as stream:
+            entries = json.load(stream)
+        for entry in entries:
+            name = entry['source']
+            if name in mappings or name not in files:
+                sys.exit(f'FAIL duplicate or unknown source {name}')
+            if entry.get('disposition') not in ('new', 'covered', 'merged') or not entry.get('rationale') or not entry.get('targets'):
+                sys.exit(f'FAIL incomplete mapping {name}')
+            for sid in entry['targets']:
+                if sid not in reg or reg[sid]['status'] not in ('validated', 'audited'):
+                    sys.exit(f'FAIL target not ready {name}: {sid}')
+                path = Path(spath(reg[sid]))
+                if not path.is_file():
+                    sys.exit(f'FAIL missing target file {sid}')
+                errors, _, _ = validate_text(path.read_text(encoding='utf-8'), str(path), reg)
+                if errors:
+                    sys.exit(f'FAIL invalid target {sid}: {errors}')
+                targets[sid] = hashlib.sha256(path.read_bytes()).hexdigest()
+            mappings[name] = entry
+    missing = sorted(set(files) - set(mappings))
+    if missing:
+        sys.exit('FAIL unmapped sources: ' + ', '.join(missing))
+    receipt = dict(source_folder=str(source), sources={name: hashlib.sha256(path.read_bytes()).hexdigest() for name,path in files.items()}, targets=targets, mappings=list(mappings.values()))
+    destination = Path(ROOT) / 'logs' / 'claude-migration-verification.json'
+    destination.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    report = ['# Portable workflow migration', '',
+              'Each source workflow was compared with the library. New procedures fill gaps; covered or merged entries reuse existing destinations. Source-specific names, business details, changing rates, unsupported thresholds, and vendor-only invocation commands were not carried into the portable skills.', '',
+              'This table records the human comparison decisions and verified destination files. Structural validation is not proof of identical behavior or professional certification. Detailed reviews: [technical](claude-comparison-technical.md), [operations](claude-comparison-operations.md), [business](claude-comparison-business.md).', '',
+              '| Source folder | Disposition | Portable destinations | Reason |', '|---|---|---|---|']
+    for name, entry in sorted(mappings.items()):
+        links = ', '.join(f"[{sid}](../skills/{reg[sid]['domain_code']}/{reg[sid]['name']}/SKILL.md)" for sid in entry['targets'])
+        report.append(f"| {name} | {entry['disposition']} | {links} | {entry['rationale'].replace('|', '/')} |")
+    (Path(ROOT) / 'logs' / 'claude-migration.md').write_text('\n'.join(report) + '\n', encoding='utf-8')
+    print(f'MIGRATION PASS: {len(files)} source workflows mapped to {len(targets)} validated destination skills')
+    print('Saved logs/claude-migration-verification.json and logs/claude-migration.md; source content not copied. Semantic equivalence is documented in the review reports.')
+
+
+CMDS['migration-check'] = cmd_migration_check
 
 if __name__ == "__main__":
     if len(sys.argv) < 2 or sys.argv[1] not in CMDS:

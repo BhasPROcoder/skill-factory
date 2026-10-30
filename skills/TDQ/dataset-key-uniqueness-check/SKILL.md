@@ -3,9 +3,9 @@ id: TDQ-001
 name: dataset-key-uniqueness-check
 domain: Dataset Quality Diagnostics
 subdomain: Schema
-version: 1.0
-description: Produce a key uniqueness report; use when the task is to dataset key uniqueness check.
-triggers: ["dataset key uniqueness check", "help with a key uniqueness report", "review my a key uniqueness report", "prepare a key uniqueness report", "check dataset key uniqueness check evidence"]
+version: 1.1
+description: Create a key uniqueness report from supplied evidence; use when preparing or reviewing key uniqueness report decisions.
+triggers: ["dataset key uniqueness check", "help with a key uniqueness report", "review my key uniqueness report", "prepare a key uniqueness report", "check the evidence for this key uniqueness report"]
 not_for: ["dataset missingness pattern review [TDQ-002]", "dataset category normalization map [TDQ-003]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a key uniqueness report and name the source artifacts used; retain a version or observation date where available.
 2. Define what one row represents
 3. Group records by the candidate key
-4. ⚠️ Distinguish repeated observations from accidental duplicates Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Distinguish repeated observations from accidental duplicates. Do not silently replace missing evidence with an assumed successful outcome.
 5. Propose a corrected key or documented deduplication rule
 6. Apply the domain check: Report counts with denominators and compare values under explicit normalization rules; never silently drop inconvenient records.
 7. Verify the proposed result with this task-specific check: Check uniqueness on the declared compound key and preserve all legitimate rows. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Quality checks must reflect the intended observation unit and business meaning. A repair can change the estimand or hide a collection defect, so retain the unmodified input and explain consequences. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a key uniqueness report
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Order ID repeats while the order-plus-line pair is unique.
 Decision: Use the compound key if each row is an order line.
+Artifact: Row meaning: order line item. Candidate key order_id fails for o1 because l1 and l2 are distinct legitimate lines. Proposed key: order_id plus line_item_id, subject to full-data uniqueness verification. Do not delete the second legitimate line as a duplicate.
 Action: Team owner — Propose a corrected key or documented deduplication rule Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Check uniqueness on the declared compound key and preserve all legitimate rows.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a key uniqueness report. Order o1 has line items l1 and l2; order ID alone is proposed as the key. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Order ID repeats while the order-plus-line pair is unique.
 3. It preserves this task-specific conclusion: Use the compound key if each row is an order line.
 4. It includes the verification check or explicitly marks it pending: Check uniqueness on the declared compound key and preserve all legitimate rows.

@@ -3,9 +3,9 @@ id: MOP-004
 name: startup-vendor-comparison-brief
 domain: Startup Operating Workflows
 subdomain: Design
-version: 1.0
-description: Startup vendor comparison briefing using supplied evidence and explicit acceptance checks; use when preparing a startup vendor comparison briefing deliverable.
-triggers: ["help me with startup vendor comparison briefing", "prepare a startup vendor comparison briefing deliverable", "review our startup vendor comparison briefing evidence", "create a startup vendor comparison briefing action plan", "check this startup vendor comparison briefing decision"]
+version: 1.1
+description: Guide startup vendor comparison briefing when working from required capabilities, operating constraints, vendor evidence, and evaluation criteria.
+triggers: ["startup vendor comparison briefing", "help with startup vendor comparison briefing", "work on startup vendor comparison brief", "review my startup vendor comparison briefing", "apply startup vendor comparison briefing to these materials"]
 not_for: ["Startup vendor onboarding planning [MOP-005]", "Startup customer handoff mapping [MOP-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup vendor comparison briefing
 
 ## Purpose
-Produce a usable startup vendor comparison briefing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup vendor comparison briefing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Required proof: representative export or authoritative documentation matching th
 Mandatory requirements have evidence or remain explicitly unmet or unknown.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

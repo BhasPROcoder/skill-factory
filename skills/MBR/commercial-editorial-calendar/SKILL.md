@@ -3,9 +3,9 @@ id: MBR-005
 name: commercial-editorial-calendar
 domain: Commercial Brand and Editorial
 subdomain: Design
-version: 1.0
-description: Commercial editorial calendar planning using supplied evidence and explicit acceptance checks; use when preparing a commercial editorial calendar planning deliverable.
-triggers: ["help me with commercial editorial calendar planning", "prepare a commercial editorial calendar planning deliverable", "review our commercial editorial calendar planning evidence", "create a commercial editorial calendar planning action plan", "check this commercial editorial calendar planning decision"]
+version: 1.1
+description: Guide commercial editorial calendar planning when working from audience questions, campaign commitments, production capacity, and asset dependencies.
+triggers: ["commercial editorial calendar planning", "help with commercial editorial calendar planning", "work on commercial editorial calendar", "review my commercial editorial calendar planning", "apply commercial editorial calendar planning to these materials"]
 not_for: ["Commercial content repurposing planning [MBR-006]", "Commercial headline alternative drafting [MBR-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Commercial editorial calendar planning
 
 ## Purpose
-Produce a usable commercial editorial calendar planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this commercial editorial calendar planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Sequence: prepare draft → obtain customer review → resolve corrections → a
 Each content item has a purpose, owner, dependency, and realistic readiness condition.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

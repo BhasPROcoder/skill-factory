@@ -1,0 +1,167 @@
+{
+  "domains": [
+    {
+      "code": "CBG",
+      "name": "General Business and Artifact Workflows",
+      "macro": "Business & Strategy",
+      "scope": "Evidence-led workflows for communication, business design, and artifact quality.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "CBG-001",
+      "name": "meeting-behavior-evidence-review",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare meeting behavior evidence review from supplied evidence; use when the request concerns consented transcript with speaker labels.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-002",
+      "name": "regional-market-access-fit",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare regional market access fit from supplied evidence; use when the request concerns intended region and audience.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-003",
+      "name": "community-operating-loop-design",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare community operating loop design from supplied evidence; use when the request concerns member purpose.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-004",
+      "name": "workbook-calculation-and-delivery-check",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare workbook creation editing and verification from supplied evidence; use when the request concerns workbook purpose and supplied file.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-005",
+      "name": "document-structure-and-render-review",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare structured document creation and editing from supplied evidence; use when the request concerns document draft and content hierarchy.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-006",
+      "name": "presentation-message-and-render-review",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare presentation creation editing and delivery from supplied evidence; use when the request concerns slide draft and audience decision.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-007",
+      "name": "pdf-transformation-integrity-check",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare pdf creation editing and integrity verification from supplied evidence; use when the request concerns source pdf and requested operation.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-008",
+      "name": "decision-outcome-journal-review",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare decision outcome journal review from supplied evidence; use when the request concerns predecision reasoning record.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-009",
+      "name": "delegation-acceptance-brief",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare delegation acceptance brief from supplied evidence; use when the request concerns authorized task and boundaries.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-010",
+      "name": "initiative-continuation-gate",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare initiative continuation gate from supplied evidence; use when the request concerns initiative evidence and original hypothesis.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-011",
+      "name": "bottom-up-market-sizing-ledger",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare bottom-up market sizing ledger from supplied evidence; use when the request concerns defined customer unit and territory.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-012",
+      "name": "primary-metric-guardrail-design",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare primary metric guardrail design from supplied evidence; use when the request concerns user value hypothesis.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-013",
+      "name": "source-grounded-daily-brief",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare source-grounded daily brief from supplied evidence; use when the request concerns authorized calendar and task sources.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-014",
+      "name": "negotiation-package-trade-design",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare negotiation package trade design from supplied evidence; use when the request concerns negotiation issues and authority limits.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "CBG-015",
+      "name": "offer-scope-proof-packaging",
+      "domain_code": "CBG",
+      "subdomain": "Analysis",
+      "description": "Prepare offer scope and proof packaging from supplied evidence; use when the request concerns intended customer outcome.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

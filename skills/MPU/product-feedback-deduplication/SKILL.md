@@ -3,9 +3,9 @@ id: MPU-007
 name: product-feedback-deduplication
 domain: Product Experience Review
 subdomain: Design
-version: 1.0
-description: Product feedback deduplication review using supplied evidence and explicit acceptance checks; use when preparing a product feedback deduplication review deliverable.
-triggers: ["help me with product feedback deduplication review", "prepare a product feedback deduplication review deliverable", "review our product feedback deduplication review evidence", "create a product feedback deduplication review action plan", "check this product feedback deduplication review decision"]
+version: 1.1
+description: Guide product feedback deduplication review when working from feedback records, user context, timestamps, and issue definitions.
+triggers: ["product feedback deduplication review", "help with product feedback deduplication review", "work on product feedback deduplication", "review my product feedback deduplication review", "apply product feedback deduplication review to these materials"]
 not_for: ["Product feature request reframing [MPU-008]", "Product release note drafting [MPU-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product feedback deduplication review
 
 ## Purpose
-Produce a usable product feedback deduplication review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product feedback deduplication review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Grouping rule: preserve separate actionable causes despite similar wording.
 Grouped records share an actionable underlying issue and retain source traceability.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

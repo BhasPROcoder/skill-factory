@@ -2,10 +2,10 @@
 id: TDS-009
 name: dataset-release-note-draft
 domain: Dataset Intake and Documentation
-subdomain: Discovery
-version: 1.0
-description: Produce dataset release notes; use when the task is to dataset release note draft.
-triggers: ["dataset release note draft", "help with dataset release notes", "review my dataset release notes", "prepare dataset release notes", "check dataset release note draft evidence"]
+subdomain: Release readiness
+version: 1.1
+description: Create dataset release notes from supplied evidence; use when preparing or reviewing dataset release notes decisions.
+triggers: ["dataset release note draft", "help with dataset release notes", "review my dataset release notes", "prepare dataset release notes", "check the evidence for this dataset release notes"]
 not_for: ["dataset acquisition checklist [TDS-010]", "dataset source shortlist [TDS-001]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of dataset release notes and name the source artifacts used; retain a version or observation date where available.
 2. Classify changes as added, removed, changed, or corrected
 3. Identify consumers affected by semantic rather than cosmetic changes
-4. ⚠️ Document known defects and migration actions Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Document known defects and migration actions. Do not silently replace missing evidence with an assumed successful outcome.
 5. Write release notes tied to the exact source versions
 6. Apply the domain check: Separate permission to access from permission to redistribute; retain acquisition and transformation provenance.
 7. Verify the proposed result with this task-specific check: Reconcile each release-note item with a supplied schema or change record. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Dataset suitability is specific to a population, intended prediction or analysis, and collection process. A convenient download is not evidence of representative coverage. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: dataset release notes
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The distance field changes units despite retaining its name.
 Decision: Require an explicit consumer migration check before accepting the new release.
+Artifact: Release note: distance retains its field name but changes from meters in Cedar-A to kilometers in Cedar-B. Consumer action: review unit assumptions and migration before combining versions. Treat as a semantic change; unchanged field spelling does not preserve meaning.
 Action: Team owner — Write release notes tied to the exact source versions Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Reconcile each release-note item with a supplied schema or change record.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for dataset release notes. Release Cedar-A records distance in meters; Cedar-B uses kilometers under the same field name. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The distance field changes units despite retaining its name.
 3. It preserves this task-specific conclusion: Require an explicit consumer migration check before accepting the new release.
 4. It includes the verification check or explicitly marks it pending: Reconcile each release-note item with a supplied schema or change record.

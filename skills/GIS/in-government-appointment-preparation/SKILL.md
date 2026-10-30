@@ -3,10 +3,10 @@ id: GIS-009
 name: in-government-appointment-preparation
 domain: India Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare government appointment preparation from supplied evidence; use when the request concerns appointment confirmation.
 triggers: ["government appointment preparation", "prepare government appointment preparation", "review my government appointment preparation", "help me with government appointment preparation", "turn appointment confirmation into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Benefit application document map [GIS-010]", "Passport evidence preflight [GIS-001]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Visit requirement | Available item | Readiness | Action
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -76,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional applicant Diya has a confirmed appointment but the confirmation names a correction service while she intended a replacement.
+> Fictional scenario: Fictional applicant Diya has a confirmed appointment but the confirmation names a correction service while she intended a replacement. She has prepared copies but has not checked whether originals are required.
 
 **Output:**
 ```text
@@ -85,8 +86,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Visit requirement | Available item | Readiness | Action
 Transaction | Correction in confirmation | Mismatch | Verify booking category
 Evidence pack | Copies prepared | Original requirement unknown | Check official visit instructions
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Create a visit checklist and a post-visit note template for instructions actually received. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Verify booking category.
 ```
 
 **Bad output:**

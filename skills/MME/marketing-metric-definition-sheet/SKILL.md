@@ -3,9 +3,9 @@ id: MME-001
 name: marketing-metric-definition-sheet
 domain: Marketing Measurement Decisions
 subdomain: Design
-version: 1.0
-description: Marketing metric definition design using supplied evidence and explicit acceptance checks; use when preparing a marketing metric definition design deliverable.
-triggers: ["help me with marketing metric definition design", "prepare a marketing metric definition design deliverable", "review our marketing metric definition design evidence", "create a marketing metric definition design action plan", "check this marketing metric definition design decision"]
+version: 1.1
+description: Guide marketing metric definition design when working from business questions, available events, and current report labels.
+triggers: ["marketing metric definition design", "help with marketing metric definition design", "work on marketing metric definition sheet", "review my marketing metric definition design", "apply marketing metric definition design to these materials"]
 not_for: ["Marketing funnel transition review [MME-002]", "Campaign tracking brief design [MME-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Marketing metric definition design
 
 ## Purpose
-Produce a usable marketing metric definition design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this marketing metric definition design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Required fields: numerator event, denominator population, period, exclusions.
 Each rate has a visible numerator, denominator, and eligible population.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

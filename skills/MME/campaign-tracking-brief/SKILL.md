@@ -3,9 +3,9 @@ id: MME-003
 name: campaign-tracking-brief
 domain: Marketing Measurement Decisions
 subdomain: Design
-version: 1.0
-description: Campaign tracking brief design using supplied evidence and explicit acceptance checks; use when preparing a campaign tracking brief design deliverable.
-triggers: ["help me with campaign tracking brief design", "prepare a campaign tracking brief design deliverable", "review our campaign tracking brief design evidence", "create a campaign tracking brief design action plan", "check this campaign tracking brief design decision"]
+version: 1.1
+description: Guide campaign tracking brief design when working from campaign journey, desired actions, and available measurement systems.
+triggers: ["campaign tracking brief design", "help with campaign tracking brief design", "work on campaign tracking brief", "review my campaign tracking brief design", "apply campaign tracking brief design to these materials"]
 not_for: ["Marketing dashboard decision mapping [MME-004]", "Campaign performance comparison [MME-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign tracking brief design
 
 ## Purpose
-Produce a usable campaign tracking brief design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign tracking brief design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Tracking requirement: each retained event must identify the customer action and 
 Every retained event or attribute supports a named question and a verification case.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

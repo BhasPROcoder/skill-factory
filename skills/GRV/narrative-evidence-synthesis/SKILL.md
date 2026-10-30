@@ -3,10 +3,10 @@ id: GRV-009
 name: narrative-evidence-synthesis
 domain: Evidence Review and Synthesis
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare narrative evidence synthesis from supplied evidence; use when the request concerns extracted evidence.
 triggers: ["narrative evidence synthesis", "prepare narrative evidence synthesis", "review my narrative evidence synthesis", "help me with narrative evidence synthesis", "turn extracted evidence into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Evidence review update watchlist [GRV-010]", "Literature search concept map [GRV-001]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Evidence group | Observed pattern | Important difference | Bounded conclusion
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +76,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional reviewer Lila has studies of two distinct service designs with different outcome definitions.
+> Fictional scenario: Fictional reviewer Lila has studies of two distinct service designs with different outcome definitions. Design A is described through qualitative accounts of access; Design B uses completion records.
 
 **Output:**
 ```text
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Evidence group | Observed pattern | Important difference | Bounded conclusion
 Design A | Reported access experiences | Qualitative accounts | Describes user barriers
 Design B | Completion records | Different outcome | Do not combine as one effect
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: End with implications bounded by the included evidence. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Describes user barriers.
 ```
 
 **Bad output:**

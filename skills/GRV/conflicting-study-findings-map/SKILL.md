@@ -3,10 +3,10 @@ id: GRV-006
 name: conflicting-study-findings-map
 domain: Evidence Review and Synthesis
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare conflicting findings map from supplied evidence; use when the request concerns studies with differing conclusions.
 triggers: ["conflicting findings map", "prepare conflicting findings map", "review my conflicting findings map", "help me with conflicting findings map", "turn studies with differing conclusions into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Evidence gap map [GRV-007]", "Claim-source traceability audit [GRV-008]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Difference | Study comparison | Possible explanation | Synthesis implication
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +76,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional reviewer Hana compares one report on satisfaction with another on completion rates.
+> Fictional scenario: Fictional reviewer Hana compares one report on satisfaction with another on completion rates. The reports concern different service offices.
 
 **Output:**
 ```text
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Difference | Study comparison | Possible explanation | Synthesis implication
 Outcome | Satisfaction versus completion | Different constructs | Not direct contradiction
 Setting | Different service offices | Context may matter | Avoid universal conclusion
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Write a synthesis that preserves the remaining disagreement. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Not direct contradiction.
 ```
 
 **Bad output:**

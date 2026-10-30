@@ -3,9 +3,9 @@ id: MSC-008
 name: fiction-scene-ending-turn
 domain: Fiction Scene Craft
 subdomain: Design
-version: 1.0
-description: Fiction scene ending revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene ending revision deliverable.
-triggers: ["help me with fiction scene ending revision", "prepare a fiction scene ending revision deliverable", "review our fiction scene ending revision evidence", "create a fiction scene ending revision action plan", "check this fiction scene ending revision decision"]
+version: 1.1
+description: Guide fiction scene ending revision when working from scene goal, outcome, emotional change, and next-scene dependency.
+triggers: ["fiction scene ending revision", "help with fiction scene ending revision", "work on fiction scene ending turn", "review my fiction scene ending revision", "apply fiction scene ending revision to these materials"]
 not_for: ["Fiction emotional beat grounding [MSC-009]", "Fiction scene compression revision [MSC-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction scene ending revision
 
 ## Purpose
-Produce a usable fiction scene ending revision deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction scene ending revision task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Let the addressed envelope become the final observed change. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Mara lifted the letter from the drawer. The seal was unbroken. She turned it over, expecting the archivist's name.
 Her own stared back at her.
 
@@ -111,7 +112,7 @@ Her own stared back at her.
 The ending produces a discernible shift that creates a relevant next question.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: TRP-001
 name: reproducibility-run-manifest
 domain: Computational Reproducibility
 subdomain: Artifact identity
-version: 1.0
-description: Produce a computational run manifest; use when the task is to reproducibility run manifest.
-triggers: ["reproducibility run manifest", "help with a computational run manifest", "review my a computational run manifest", "prepare a computational run manifest", "check reproducibility run manifest evidence"]
+version: 1.1
+description: Create a computational run manifest from supplied evidence; use when preparing or reviewing computational run manifest decisions.
+triggers: ["reproducibility run manifest", "help with a computational run manifest", "review my computational run manifest", "prepare a computational run manifest", "check the evidence for this computational run manifest"]
 not_for: ["reproducibility clean environment plan [TRP-002]", "reproducibility randomness control plan [TRP-003]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a computational run manifest and name the source artifacts used; retain a version or observation date where available.
 2. Assign the run a stable identifier
 3. Record exact input and code identities
-4. ⚠️ Capture effective configuration rather than only defaults Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Capture effective configuration rather than only defaults. Do not silently replace missing evidence with an assumed successful outcome.
 5. Link every output to the producing run
 6. Apply the domain check: Distinguish reproducing a computation from independently validating its scientific or business claim; preserve raw evidence of both successful and failed runs.
 7. Verify the proposed result with this task-specific check: Trace each output to code, input, and effective configuration identifiers. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Reproduction requires enough information to identify inputs, code, configuration, environment, and intended outputs. Exact equality is appropriate only when the declared computation supports it; otherwise define the accepted comparison before rerunning. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a computational run manifest
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The run cannot identify which data produced r1.
 Decision: Resolve the input version before calling the run reproducible.
+Artifact: Run r1: code=c1; data=UNRESOLVED; effective configuration=not supplied; output=r1. Provenance status: incomplete until the actual data identity is recorded. Do not substitute a guessed latest dataset.
 Action: Team owner — Link every output to the producing run Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Trace each output to code, input, and effective configuration identifiers.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a computational run manifest. Result r1 names code revision c1 but omits the dataset version. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The run cannot identify which data produced r1.
 3. It preserves this task-specific conclusion: Resolve the input version before calling the run reproducible.
 4. It includes the verification check or explicitly marks it pending: Trace each output to code, input, and effective configuration identifiers.

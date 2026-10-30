@@ -3,9 +3,9 @@ id: MEC-006
 name: ecommerce-product-comparison-table
 domain: E-commerce Customer Experience
 subdomain: Design
-version: 1.0
-description: Product comparison table design using supplied evidence and explicit acceptance checks; use when preparing a product comparison table design deliverable.
-triggers: ["help me with product comparison table design", "prepare a product comparison table design deliverable", "review our product comparison table design evidence", "create a product comparison table design action plan", "check this product comparison table design decision"]
+version: 1.1
+description: Guide product comparison table design when working from candidate products, verified attributes, audience needs, and meaningful tradeoffs.
+triggers: ["product comparison table design", "help with product comparison table design", "work on ecommerce product comparison table", "review my product comparison table design", "apply product comparison table design to these materials"]
 not_for: ["Return process content clarity review [MEC-007]", "Post-purchase message planning [MEC-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product comparison table design
 
 ## Purpose
-Produce a usable product comparison table design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product comparison table design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Evidence request: obtain the missing product specification before making a suita
 Every table entry distinguishes known presence, known absence, and missing information.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

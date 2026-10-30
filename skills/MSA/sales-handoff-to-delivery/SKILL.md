@@ -3,9 +3,9 @@ id: MSA-008
 name: sales-handoff-to-delivery
 domain: Sales Process Enablement
 subdomain: Design
-version: 1.0
-description: Sales to delivery handoff preparation using supplied evidence and explicit acceptance checks; use when preparing a sales to delivery handoff preparation deliverable.
-triggers: ["help me with sales to delivery handoff preparation", "prepare a sales to delivery handoff preparation deliverable", "review our sales to delivery handoff preparation evidence", "create a sales to delivery handoff preparation action plan", "check this sales to delivery handoff preparation decision"]
+version: 1.1
+description: Guide sales to delivery handoff preparation when working from signed scope or approved commitments, customer context, and implementation notes.
+triggers: ["sales to delivery handoff preparation", "help with sales to delivery handoff preparation", "work on sales handoff to delivery", "review my sales to delivery handoff preparation", "apply sales to delivery handoff preparation to these materials"]
 not_for: ["Sales loss reason analysis [MSA-009]", "Sales collateral gap review [MSA-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Sales to delivery handoff preparation
 
 ## Purpose
-Produce a usable sales to delivery handoff preparation deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this sales to delivery handoff preparation task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Delivery instruction: do not schedule custom work as approved scope until the co
 Delivery receives a clear record of approved commitments and unresolved mismatches.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

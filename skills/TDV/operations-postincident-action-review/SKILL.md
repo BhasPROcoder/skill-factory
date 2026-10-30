@@ -2,10 +2,10 @@
 id: TDV-010
 name: operations-postincident-action-review
 domain: Deployment and Operations Planning
-subdomain: Recovery
-version: 1.0
-description: Produce a post-incident action plan; use when the task is to operations postincident action review.
-triggers: ["operations postincident action review", "help with a post-incident action plan", "review my a post-incident action plan", "prepare a post-incident action plan", "check operations postincident action review evidence"]
+subdomain: Service operations
+version: 1.1
+description: Create a post-incident action plan from supplied evidence; use when preparing or reviewing post-incident action plan decisions.
+triggers: ["operations postincident action review", "help with a post-incident action plan", "review my post-incident action plan", "prepare a post-incident action plan", "check the evidence for this post-incident action plan"]
 not_for: ["deployment rollback readiness [TDV-001]", "deployment canary evidence plan [TDV-002]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a post-incident action plan and name the source artifacts used; retain a version or observation date where available.
 2. Separate factual causes from hypotheses still requiring investigation
 3. Choose actions that address demonstrated contributing conditions
-4. ⚠️ Define measurable completion evidence for each action Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Define measurable completion evidence for each action. Do not silently replace missing evidence with an assumed successful outcome.
 5. Prioritize by recurrence impact and feasible ownership
 6. Apply the domain check: Identify the owner, precondition, stop condition, and recovery action for every proposed live change; verify current provider behavior in official documentation.
 7. Verify the proposed result with this task-specific check: Exercise the revised gate with a fixture matching the incident condition. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Operational readiness depends on the exact artifact, configuration, environment, and observed workload. Rehearse state changes in an isolated environment and distinguish an available backup from a demonstrated recovery. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a post-incident action plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The proposed action cannot be objectively verified.
 Decision: Define a configuration-review gate and evidence that it handles the demonstrated failure.
+Artifact: Corrective-action proposal: release team establishes a configuration-review gate. Completion evidence: a representative unreviewed change is blocked and an approved change follows the intended path. The action addresses the demonstrated gap; “pay attention” is not a completion criterion.
 Action: Team owner — Prioritize by recurrence impact and feasible ownership Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Exercise the revised gate with a fixture matching the incident condition.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a post-incident action plan. The incident involved an unreviewed configuration change; the proposed action is 'engineers should pay attention'. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The proposed action cannot be objectively verified.
 3. It preserves this task-specific conclusion: Define a configuration-review gate and evidence that it handles the demonstrated failure.
 4. It includes the verification check or explicitly marks it pending: Exercise the revised gate with a fixture matching the incident condition.

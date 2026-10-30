@@ -3,9 +3,9 @@ id: MSV-004
 name: startup-concierge-test-plan
 domain: Startup Customer Validation
 subdomain: Design
-version: 1.0
-description: Startup concierge test planning using supplied evidence and explicit acceptance checks; use when preparing a startup concierge test planning deliverable.
-triggers: ["help me with startup concierge test planning", "prepare a startup concierge test planning deliverable", "review our startup concierge test planning evidence", "create a startup concierge test planning action plan", "check this startup concierge test planning decision"]
+version: 1.1
+description: Guide startup concierge test planning when working from customer problem, manually deliverable service, constraints, and learning objective.
+triggers: ["startup concierge test planning", "help with startup concierge test planning", "work on startup concierge test plan", "review my startup concierge test planning", "apply startup concierge test planning to these materials"]
 not_for: ["Startup landing-page test briefing [MSV-005]", "Startup pilot scope design [MSV-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup concierge test planning
 
 ## Purpose
-Produce a usable startup concierge test planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup concierge test planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Do not imply current automation.
 Participants understand the pilot arrangement and results distinguish value from automation feasibility.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

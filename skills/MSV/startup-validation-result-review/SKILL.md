@@ -3,9 +3,9 @@ id: MSV-007
 name: startup-validation-result-review
 domain: Startup Customer Validation
 subdomain: Design
-version: 1.0
-description: Startup validation result review using supplied evidence and explicit acceptance checks; use when preparing a startup validation result review deliverable.
-triggers: ["help me with startup validation result review", "prepare a startup validation result review deliverable", "review our startup validation result review evidence", "create a startup validation result review action plan", "check this startup validation result review decision"]
+version: 1.1
+description: Guide startup validation result review when working from original hypothesis, test design, observed actions, and deviations.
+triggers: ["startup validation result review", "help with startup validation result review", "work on startup validation result review", "review my startup validation result review", "apply startup validation result review to these materials"]
 not_for: ["Startup founder-sales learning log [MSV-008]", "Startup early-adopter recruitment screen [MSV-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup validation result review
 
 ## Purpose
-Produce a usable startup validation result review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup validation result review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Decision rule: reactions do not substitute for the original booking criterion.
 The review preserves the original hypothesis and success definition.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

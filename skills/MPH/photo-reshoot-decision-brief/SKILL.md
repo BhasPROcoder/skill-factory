@@ -3,9 +3,9 @@ id: MPH-010
 name: photo-reshoot-decision-brief
 domain: Photography Planning and Critique
 subdomain: Design
-version: 1.0
-description: Photographic reshoot decision briefing using supplied evidence and explicit acceptance checks; use when preparing a photographic reshoot decision briefing deliverable.
-triggers: ["help me with photographic reshoot decision briefing", "prepare a photographic reshoot decision briefing deliverable", "review our photographic reshoot decision briefing evidence", "create a photographic reshoot decision briefing action plan", "check this photographic reshoot decision briefing decision"]
+version: 1.1
+description: Guide photographic reshoot decision briefing when working from existing images, delivery requirements, editable issues, and reshoot constraints.
+triggers: ["photographic reshoot decision briefing", "help with photographic reshoot decision briefing", "work on photo reshoot decision brief", "review my photographic reshoot decision briefing", "apply photographic reshoot decision briefing to these materials"]
 not_for: ["Photographic subject intention briefing [MPH-001]", "Photographic background distraction review [MPH-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Photographic reshoot decision briefing
 
 ## Purpose
-Produce a usable photographic reshoot decision briefing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this photographic reshoot decision briefing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Schedule a targeted label photograph with legibility as the acceptance criterion. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Targeted capture: product serial label.
 Required evidence: the full label is present and legible at the intended use size.
 Existing set: retain otherwise usable frames.
@@ -113,7 +114,7 @@ Do not promise recovery of a label absent from every source image.
 The reshoot request names the missing visual evidence and avoids unnecessary full-session repetition.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

@@ -2,10 +2,10 @@
 id: TDE-005
 name: pipeline-checkpoint-recovery-review
 domain: Data Pipeline Design
-subdomain: Ingestion
-version: 1.0
-description: Produce a checkpoint recovery review; use when the task is to pipeline checkpoint recovery review.
-triggers: ["pipeline checkpoint recovery review", "help with a checkpoint recovery review", "review my a checkpoint recovery review", "prepare a checkpoint recovery review", "check pipeline checkpoint recovery review evidence"]
+subdomain: Recovery
+version: 1.1
+description: Create a checkpoint recovery review from supplied evidence; use when preparing or reviewing checkpoint recovery review decisions.
+triggers: ["pipeline checkpoint recovery review", "help with a checkpoint recovery review", "review my checkpoint recovery review", "prepare a checkpoint recovery review", "check the evidence for this checkpoint recovery review"]
 not_for: ["pipeline data contract draft [TDE-006]", "pipeline quarantine workflow [TDE-007]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a checkpoint recovery review and name the source artifacts used; retain a version or observation date where available.
 2. Locate the point at which progress is persisted
 3. Compare checkpoint advancement with durable target commit
-4. ⚠️ Enumerate failures before and after each boundary Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Enumerate failures before and after each boundary. Do not silently replace missing evidence with an assumed successful outcome.
 5. Specify replay behavior that preserves intended target state
 6. Apply the domain check: Separate event identity, processing attempt identity, and target state; require an explicit recovery path before recommending destructive backfills.
 7. Verify the proposed result with this task-specific check: Inject failure between checkpoint and target commit in an isolated test. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Pipeline correctness includes repeated execution, partial failures, and late changes. Test the state transition that matters to consumers rather than only whether a job returns successfully. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a checkpoint recovery review
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Recovery may treat event 8 as completed although its target effect is absent.
 Decision: Require a commit protocol that does not skip the undurable event.
+Artifact: Unsafe boundary: checkpoint=8 while durable target effect reaches only 7. Recovery must not skip event 8. Proposed protocol: durable coordinated commit, or target commit before checkpoint with idempotent replay handling. Rehearse failures on both sides; ordering alone must not create duplicate effects.
 Action: Team owner — Specify replay behavior that preserves intended target state Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Inject failure between checkpoint and target commit in an isolated test.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a checkpoint recovery review. The worker records offset 8 before persisting event 8; it then fails. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Recovery may treat event 8 as completed although its target effect is absent.
 3. It preserves this task-specific conclusion: Require a commit protocol that does not skip the undurable event.
 4. It includes the verification check or explicitly marks it pending: Inject failure between checkpoint and target commit in an isolated test.

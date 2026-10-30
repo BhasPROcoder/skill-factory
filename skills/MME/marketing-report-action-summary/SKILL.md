@@ -3,9 +3,9 @@ id: MME-010
 name: marketing-report-action-summary
 domain: Marketing Measurement Decisions
 subdomain: Design
-version: 1.0
-description: Marketing report action summarization using supplied evidence and explicit acceptance checks; use when preparing a marketing report action summarization deliverable.
-triggers: ["help me with marketing report action summarization", "prepare a marketing report action summarization deliverable", "review our marketing report action summarization evidence", "create a marketing report action summarization action plan", "check this marketing report action summarization decision"]
+version: 1.1
+description: Guide marketing report action summarization when working from reviewed findings, confidence levels, owners, and upcoming decisions.
+triggers: ["marketing report action summarization", "help with marketing report action summarization", "work on marketing report action summary", "review my marketing report action summarization", "apply marketing report action summarization to these materials"]
 not_for: ["Marketing metric definition design [MME-001]", "Marketing funnel transition review [MME-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Marketing report action summarization
 
 ## Purpose
-Produce a usable marketing report action summarization deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this marketing report action summarization task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Revisit trigger: both checks are available and the remaining sales change can be
 Each recommendation is proportionate to the evidence and includes a clear next decision trigger.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

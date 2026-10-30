@@ -3,10 +3,10 @@ id: GAD-008
 name: official-instruction-conflict-log
 domain: Administrative Casework
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare official instruction conflict log from supplied evidence; use when the request concerns conflicting instructions.
 triggers: ["official instruction conflict log", "prepare official instruction conflict log", "review my official instruction conflict log", "help me with official instruction conflict log", "turn conflicting instructions into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Administrative cover note [GAD-009]", "Administrative handoff packet [GAD-010]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Instruction pair | Scope comparison | Conflict status | Clarification needed
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,10 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Instruction pair | Scope comparison | Conflict status | Clarification needed
 Email versus checklist | Same transaction reported | Unresolved | Which instruction governs this case?
 Source currency | Dates not supplied | Unknown | Confirm current instructions
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Draft clarification: For the same transaction, the office email asks for an original while the checklist mentions a copy. Please confirm which requirement applies to my case and identify the current instruction to follow. I can supply both documents; their source dates still need to be located or confirmed. I have not treated either version as superseded without confirmation.
+Next action: The requester or assigned reviewer will complete this task-specific check: Record the clarification and its authority without silently deleting the earlier conflict. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Which instruction governs this case?.
 ```
 
 **Bad output:**

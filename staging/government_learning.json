@@ -1,0 +1,1671 @@
+{
+  "domains": [
+    {
+      "code": "GIS",
+      "name": "India Citizen Service Preparation",
+      "macro": "Government & Public Policy",
+      "scope": "Prepare India-specific citizen service evidence and questions using current official requirements.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GUS",
+      "name": "US Citizen Service Preparation",
+      "macro": "Government & Public Policy",
+      "scope": "Prepare US administrative service packets using jurisdiction-specific official instructions and applicant evidence.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GAD",
+      "name": "Administrative Casework",
+      "macro": "Government & Public Policy",
+      "scope": "Organize administrative evidence, submissions, routing, and follow-up without asserting legal entitlement.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GPP",
+      "name": "Public Policy Analysis",
+      "macro": "Government & Public Policy",
+      "scope": "Analyze public policy questions, implementation choices, and evidence with explicit uncertainty and affected groups.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GED",
+      "name": "Lesson and Learning Design",
+      "macro": "Education & Teaching",
+      "scope": "Design instruction around observable learning goals, prerequisite knowledge, practice, and evidence of understanding.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GAS",
+      "name": "Learning Assessment",
+      "macro": "Education & Teaching",
+      "scope": "Design and interpret learning assessments using explicit criteria, evidence, and fair task conditions.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GEX",
+      "name": "Exam Preparation Methods",
+      "macro": "Exam Prep",
+      "scope": "Plan exam preparation from current exam requirements, performance evidence, and available study capacity.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GRQ",
+      "name": "Research Question and Study Design",
+      "macro": "Research Methods & Academia",
+      "scope": "Define answerable research questions, sampling decisions, measurements, and feasible study protocols.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GRV",
+      "name": "Evidence Review and Synthesis",
+      "macro": "Research Methods & Academia",
+      "scope": "Find, screen, extract, and synthesize evidence with transparent scope and claim-level support.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GCA",
+      "name": "Career Development",
+      "macro": "Career Development",
+      "scope": "Translate work evidence and career preferences into applications, interview preparation, and development choices.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GPR",
+      "name": "Personal Work Organization",
+      "macro": "Personal Productivity",
+      "scope": "Organize commitments, tasks, attention, and review routines around realistic capacity and observable completion.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GRE",
+      "name": "Reasoning and Decision Clarity",
+      "macro": "Reasoning & Critical Thinking",
+      "scope": "Clarify arguments, alternatives, uncertainty, and decision implications using explicit evidence and counterexamples.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GLA",
+      "name": "Language Transfer and Translation",
+      "macro": "Languages & Translation",
+      "scope": "Preserve meaning, register, terminology and uncertainty across languages and learning contexts.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GPO",
+      "name": "Poetry Craft and Revision",
+      "macro": "Creative Writing",
+      "scope": "Compose and revise poems through concrete imagery, lineation, sound and structural decisions.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    },
+    {
+      "code": "GCO",
+      "name": "Workplace Message Craft",
+      "macro": "Communication & Negotiation",
+      "scope": "Draft workplace messages that make requests, decisions, constraints and responsibilities explicit.",
+      "subdomains": [
+        "Preparation",
+        "Analysis",
+        "Review"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "GIS-001",
+      "name": "in-passport-evidence-preflight",
+      "domain_code": "GIS",
+      "subdomain": "Analysis",
+      "description": "Prepare passport evidence preflight from supplied evidence; use when the request concerns passport service category.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GIS-002",
+      "name": "in-identity-record-correction-map",
+      "domain_code": "GIS",
+      "subdomain": "Analysis",
+      "description": "Prepare identity record correction map from supplied evidence; use when the request concerns incorrect identity fields.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GIS-003",
+      "name": "in-birth-record-request-preparation",
+      "domain_code": "GIS",
+      "subdomain": "Analysis",
+      "description": "Prepare birth record request preparation from supplied evidence; use when the request concerns place and event details.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GIS-004",
+      "name": "in-driving-licence-transaction-triage",
+      "domain_code": "GIS",
+      "subdomain": "Analysis",
+      "description": "Prepare driving licence transaction triage from supplied evidence; use when the request concerns desired licence transaction.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GIS-005",
+      "name": "in-residence-certificate-evidence-plan",
+      "domain_code": "GIS",
+      "subdomain": "Analysis",
+      "description": "Prepare residence certificate evidence plan from supplied evidence; use when the request concerns certificate purpose and locality.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GIS-006",
+      "name": "in-public-grievance-submission-pack",
+      "domain_code": "GIS",
+      "subdomain": "Analysis",
+      "description": "Prepare public grievance submission pack from supplied evidence; use when the request concerns service problem chronology.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GIS-007",
+      "name": "in-information-request-scope-draft",
+      "domain_code": "GIS",
+      "subdomain": "Analysis",
+      "description": "Prepare public information request scope draft from supplied evidence; use when the request concerns records sought.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GIS-008",
+      "name": "in-service-application-status-followup",
+      "domain_code": "GIS",
+      "subdomain": "Analysis",
+      "description": "Prepare service application status follow-up from supplied evidence; use when the request concerns application acknowledgment.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GIS-009",
+      "name": "in-government-appointment-preparation",
+      "domain_code": "GIS",
+      "subdomain": "Analysis",
+      "description": "Prepare government appointment preparation from supplied evidence; use when the request concerns appointment confirmation.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GIS-010",
+      "name": "in-benefit-application-document-map",
+      "domain_code": "GIS",
+      "subdomain": "Analysis",
+      "description": "Prepare benefit application document map from supplied evidence; use when the request concerns named scheme and location.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GUS-001",
+      "name": "us-birth-certificate-copy-preflight",
+      "domain_code": "GUS",
+      "subdomain": "Analysis",
+      "description": "Prepare birth certificate copy preflight from supplied evidence; use when the request concerns event jurisdiction.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GUS-002",
+      "name": "us-driver-record-address-update-plan",
+      "domain_code": "GUS",
+      "subdomain": "Analysis",
+      "description": "Prepare driver record address update plan from supplied evidence; use when the request concerns state licensing agency.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GUS-003",
+      "name": "us-passport-renewal-route-preflight",
+      "domain_code": "GUS",
+      "subdomain": "Analysis",
+      "description": "Prepare passport renewal route preflight from supplied evidence; use when the request concerns current passport facts.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GUS-004",
+      "name": "us-social-record-replacement-preparation",
+      "domain_code": "GUS",
+      "subdomain": "Analysis",
+      "description": "Prepare social record replacement preparation from supplied evidence; use when the request concerns record replacement purpose.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GUS-005",
+      "name": "us-local-permit-intake-checklist",
+      "domain_code": "GUS",
+      "subdomain": "Analysis",
+      "description": "Prepare local permit intake checklist from supplied evidence; use when the request concerns proposed project description.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GUS-006",
+      "name": "us-public-records-request-draft",
+      "domain_code": "GUS",
+      "subdomain": "Analysis",
+      "description": "Prepare public records request draft from supplied evidence; use when the request concerns records description.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GUS-007",
+      "name": "us-benefit-renewal-notice-triage",
+      "domain_code": "GUS",
+      "subdomain": "Analysis",
+      "description": "Prepare benefit renewal notice triage from supplied evidence; use when the request concerns full renewal notice.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GUS-008",
+      "name": "us-agency-appointment-access-plan",
+      "domain_code": "GUS",
+      "subdomain": "Analysis",
+      "description": "Prepare agency appointment access plan from supplied evidence; use when the request concerns official appointment confirmation.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GUS-009",
+      "name": "us-record-amendment-dependency-map",
+      "domain_code": "GUS",
+      "subdomain": "Analysis",
+      "description": "Prepare public record amendment dependency map from supplied evidence; use when the request concerns records requiring amendment.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GUS-010",
+      "name": "us-service-denial-file-organization",
+      "domain_code": "GUS",
+      "subdomain": "Analysis",
+      "description": "Prepare service denial file organization from supplied evidence; use when the request concerns complete denial notice.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAD-001",
+      "name": "administrative-form-field-evidence-map",
+      "domain_code": "GAD",
+      "subdomain": "Analysis",
+      "description": "Prepare form field evidence map from supplied evidence; use when the request concerns blank form and instructions.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAD-002",
+      "name": "administrative-attachment-index",
+      "domain_code": "GAD",
+      "subdomain": "Analysis",
+      "description": "Prepare administrative attachment index from supplied evidence; use when the request concerns submission purpose.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAD-003",
+      "name": "bureaucratic-office-routing-map",
+      "domain_code": "GAD",
+      "subdomain": "Analysis",
+      "description": "Prepare responsible office routing map from supplied evidence; use when the request concerns service outcome sought.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAD-004",
+      "name": "official-notice-action-extraction",
+      "domain_code": "GAD",
+      "subdomain": "Analysis",
+      "description": "Prepare official notice action extraction from supplied evidence; use when the request concerns complete notice.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAD-005",
+      "name": "application-rejection-error-triage",
+      "domain_code": "GAD",
+      "subdomain": "Analysis",
+      "description": "Prepare application rejection error triage from supplied evidence; use when the request concerns rejection message.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAD-006",
+      "name": "administrative-case-timeline",
+      "domain_code": "GAD",
+      "subdomain": "Analysis",
+      "description": "Prepare administrative case timeline from supplied evidence; use when the request concerns dated communications.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAD-007",
+      "name": "administrative-status-tracker-design",
+      "domain_code": "GAD",
+      "subdomain": "Analysis",
+      "description": "Prepare administrative status tracker from supplied evidence; use when the request concerns cases to track.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAD-008",
+      "name": "official-instruction-conflict-log",
+      "domain_code": "GAD",
+      "subdomain": "Analysis",
+      "description": "Prepare official instruction conflict log from supplied evidence; use when the request concerns conflicting instructions.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAD-009",
+      "name": "administrative-cover-note-draft",
+      "domain_code": "GAD",
+      "subdomain": "Analysis",
+      "description": "Prepare administrative cover note from supplied evidence; use when the request concerns submission purpose.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAD-010",
+      "name": "administrative-handoff-packet",
+      "domain_code": "GAD",
+      "subdomain": "Analysis",
+      "description": "Prepare administrative handoff packet from supplied evidence; use when the request concerns case summary.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPP-001",
+      "name": "policy-problem-definition",
+      "domain_code": "GPP",
+      "subdomain": "Analysis",
+      "description": "Prepare policy problem definition from supplied evidence; use when the request concerns reported public problem.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPP-002",
+      "name": "policy-option-comparison",
+      "domain_code": "GPP",
+      "subdomain": "Analysis",
+      "description": "Prepare policy option comparison from supplied evidence; use when the request concerns policy objective.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPP-003",
+      "name": "policy-theory-of-change-map",
+      "domain_code": "GPP",
+      "subdomain": "Analysis",
+      "description": "Prepare policy theory of change map from supplied evidence; use when the request concerns proposed intervention.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPP-004",
+      "name": "policy-stakeholder-impact-map",
+      "domain_code": "GPP",
+      "subdomain": "Analysis",
+      "description": "Prepare policy stakeholder impact map from supplied evidence; use when the request concerns proposed policy change.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPP-005",
+      "name": "policy-implementation-bottleneck-review",
+      "domain_code": "GPP",
+      "subdomain": "Analysis",
+      "description": "Prepare policy implementation bottleneck review from supplied evidence; use when the request concerns policy delivery process.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPP-006",
+      "name": "policy-indicator-definition-sheet",
+      "domain_code": "GPP",
+      "subdomain": "Analysis",
+      "description": "Prepare policy indicator definition sheet from supplied evidence; use when the request concerns policy objective.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPP-007",
+      "name": "public-consultation-response-coding",
+      "domain_code": "GPP",
+      "subdomain": "Analysis",
+      "description": "Prepare public consultation response coding from supplied evidence; use when the request concerns consultation submissions.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPP-008",
+      "name": "policy-evidence-brief",
+      "domain_code": "GPP",
+      "subdomain": "Analysis",
+      "description": "Prepare policy evidence brief from supplied evidence; use when the request concerns policy question.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPP-009",
+      "name": "policy-scenario-stress-test",
+      "domain_code": "GPP",
+      "subdomain": "Analysis",
+      "description": "Prepare policy scenario stress test from supplied evidence; use when the request concerns proposed policy design.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPP-010",
+      "name": "policy-review-question-agenda",
+      "domain_code": "GPP",
+      "subdomain": "Analysis",
+      "description": "Prepare policy review question agenda from supplied evidence; use when the request concerns policy review purpose.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GED-001",
+      "name": "learning-objective-rewrite",
+      "domain_code": "GED",
+      "subdomain": "Analysis",
+      "description": "Prepare observable learning objective rewrite from supplied evidence; use when the request concerns existing learning aims.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GED-002",
+      "name": "prerequisite-knowledge-check",
+      "domain_code": "GED",
+      "subdomain": "Analysis",
+      "description": "Prepare prerequisite knowledge check from supplied evidence; use when the request concerns target learning task.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GED-003",
+      "name": "worked-example-lesson-sequence",
+      "domain_code": "GED",
+      "subdomain": "Analysis",
+      "description": "Prepare worked example lesson sequence from supplied evidence; use when the request concerns target procedure.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GED-004",
+      "name": "misconception-contrast-activity",
+      "domain_code": "GED",
+      "subdomain": "Analysis",
+      "description": "Prepare misconception contrast activity from supplied evidence; use when the request concerns target concept.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GED-005",
+      "name": "lesson-practice-alignment-review",
+      "domain_code": "GED",
+      "subdomain": "Analysis",
+      "description": "Prepare lesson practice alignment review from supplied evidence; use when the request concerns learning objectives.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GED-006",
+      "name": "scaffold-fading-plan",
+      "domain_code": "GED",
+      "subdomain": "Analysis",
+      "description": "Prepare scaffold fading plan from supplied evidence; use when the request concerns independent target task.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GED-007",
+      "name": "lesson-question-sequence",
+      "domain_code": "GED",
+      "subdomain": "Analysis",
+      "description": "Prepare lesson question sequence from supplied evidence; use when the request concerns target concept.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GED-008",
+      "name": "accessible-learning-material-review",
+      "domain_code": "GED",
+      "subdomain": "Analysis",
+      "description": "Prepare accessible learning material review from supplied evidence; use when the request concerns learning material.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GED-009",
+      "name": "project-learning-milestone-design",
+      "domain_code": "GED",
+      "subdomain": "Analysis",
+      "description": "Prepare project learning milestone design from supplied evidence; use when the request concerns project outcome.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GED-010",
+      "name": "learning-reflection-prompt-design",
+      "domain_code": "GED",
+      "subdomain": "Analysis",
+      "description": "Prepare learning reflection prompt design from supplied evidence; use when the request concerns completed learner work.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAS-001",
+      "name": "analytic-rubric-design",
+      "domain_code": "GAS",
+      "subdomain": "Analysis",
+      "description": "Prepare analytic rubric design from supplied evidence; use when the request concerns learning performance.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAS-002",
+      "name": "assessment-task-validity-review",
+      "domain_code": "GAS",
+      "subdomain": "Analysis",
+      "description": "Prepare assessment task validity review from supplied evidence; use when the request concerns intended construct.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAS-003",
+      "name": "multiple-choice-item-review",
+      "domain_code": "GAS",
+      "subdomain": "Analysis",
+      "description": "Prepare multiple-choice item review from supplied evidence; use when the request concerns item stem and options.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAS-004",
+      "name": "short-answer-scoring-guide",
+      "domain_code": "GAS",
+      "subdomain": "Analysis",
+      "description": "Prepare short-answer scoring guide from supplied evidence; use when the request concerns short-answer prompt.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAS-005",
+      "name": "formative-exit-ticket-design",
+      "domain_code": "GAS",
+      "subdomain": "Analysis",
+      "description": "Prepare formative exit ticket design from supplied evidence; use when the request concerns lesson objective.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAS-006",
+      "name": "learner-error-pattern-analysis",
+      "domain_code": "GAS",
+      "subdomain": "Analysis",
+      "description": "Prepare learner error pattern analysis from supplied evidence; use when the request concerns learner responses.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAS-007",
+      "name": "feedback-comment-rewrite",
+      "domain_code": "GAS",
+      "subdomain": "Analysis",
+      "description": "Prepare actionable feedback rewrite from supplied evidence; use when the request concerns learner work.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAS-008",
+      "name": "assessment-moderation-session",
+      "domain_code": "GAS",
+      "subdomain": "Analysis",
+      "description": "Prepare assessment moderation session from supplied evidence; use when the request concerns rubric.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAS-009",
+      "name": "portfolio-evidence-selection",
+      "domain_code": "GAS",
+      "subdomain": "Analysis",
+      "description": "Prepare learning portfolio evidence selection from supplied evidence; use when the request concerns portfolio purpose.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GAS-010",
+      "name": "assessment-results-communication",
+      "domain_code": "GAS",
+      "subdomain": "Analysis",
+      "description": "Prepare assessment results explanation from supplied evidence; use when the request concerns results and scoring basis.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GEX-001",
+      "name": "exam-syllabus-coverage-map",
+      "domain_code": "GEX",
+      "subdomain": "Analysis",
+      "description": "Prepare exam syllabus coverage map from supplied evidence; use when the request concerns current official syllabus.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GEX-002",
+      "name": "exam-study-capacity-plan",
+      "domain_code": "GEX",
+      "subdomain": "Analysis",
+      "description": "Prepare mastery-dependent study sequence from supplied evidence; use when the request concerns diagnostic attempts.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GEX-003",
+      "name": "exam-practice-error-log",
+      "domain_code": "GEX",
+      "subdomain": "Analysis",
+      "description": "Prepare exam practice error log from supplied evidence; use when the request concerns attempted questions.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GEX-004",
+      "name": "exam-mock-review",
+      "domain_code": "GEX",
+      "subdomain": "Analysis",
+      "description": "Prepare mock exam review from supplied evidence; use when the request concerns mock paper and responses.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GEX-005",
+      "name": "exam-retrieval-practice-design",
+      "domain_code": "GEX",
+      "subdomain": "Analysis",
+      "description": "Prepare retrieval practice set from supplied evidence; use when the request concerns target knowledge.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GEX-006",
+      "name": "exam-interleaved-practice-selection",
+      "domain_code": "GEX",
+      "subdomain": "Analysis",
+      "description": "Prepare mixed practice selection from supplied evidence; use when the request concerns related problem types.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GEX-007",
+      "name": "exam-answer-structure-practice",
+      "domain_code": "GEX",
+      "subdomain": "Analysis",
+      "description": "Prepare exam answer structure practice from supplied evidence; use when the request concerns question command.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GEX-008",
+      "name": "exam-time-allocation-rehearsal",
+      "domain_code": "GEX",
+      "subdomain": "Analysis",
+      "description": "Prepare exam time allocation rehearsal from supplied evidence; use when the request concerns verified exam structure.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GEX-009",
+      "name": "exam-final-review-triage",
+      "domain_code": "GEX",
+      "subdomain": "Analysis",
+      "description": "Prepare final review triage from supplied evidence; use when the request concerns remaining time.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GEX-010",
+      "name": "exam-day-logistics-checklist",
+      "domain_code": "GEX",
+      "subdomain": "Analysis",
+      "description": "Prepare exam-day logistics checklist from supplied evidence; use when the request concerns official candidate instructions.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRQ-001",
+      "name": "research-question-narrowing",
+      "domain_code": "GRQ",
+      "subdomain": "Analysis",
+      "description": "Prepare research question narrowing from supplied evidence; use when the request concerns broad research interest.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRQ-002",
+      "name": "research-construct-operationalization",
+      "domain_code": "GRQ",
+      "subdomain": "Analysis",
+      "description": "Prepare construct operationalization map from supplied evidence; use when the request concerns research construct.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRQ-003",
+      "name": "study-design-question-fit",
+      "domain_code": "GRQ",
+      "subdomain": "Analysis",
+      "description": "Prepare observational design inference-boundary review from supplied evidence; use when the request concerns research question.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRQ-004",
+      "name": "sampling-plan-rationale",
+      "domain_code": "GRQ",
+      "subdomain": "Analysis",
+      "description": "Prepare sampling plan rationale from supplied evidence; use when the request concerns target population.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRQ-005",
+      "name": "research-interview-guide",
+      "domain_code": "GRQ",
+      "subdomain": "Analysis",
+      "description": "Prepare repeated-wave interview protocol from supplied evidence; use when the request concerns prior-wave interview and participant reference.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRQ-006",
+      "name": "survey-question-wording-review",
+      "domain_code": "GRQ",
+      "subdomain": "Analysis",
+      "description": "Prepare questionnaire cognitive pretest from supplied evidence; use when the request concerns draft item and answer choices.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRQ-007",
+      "name": "research-pilot-protocol",
+      "domain_code": "GRQ",
+      "subdomain": "Analysis",
+      "description": "Prepare research pilot protocol from supplied evidence; use when the request concerns proposed study procedure.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRQ-008",
+      "name": "research-protocol-decision-log",
+      "domain_code": "GRQ",
+      "subdomain": "Analysis",
+      "description": "Prepare research protocol decision log from supplied evidence; use when the request concerns draft protocol.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRQ-009",
+      "name": "research-measurement-schedule",
+      "domain_code": "GRQ",
+      "subdomain": "Analysis",
+      "description": "Prepare measurement schedule from supplied evidence; use when the request concerns study stages.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRQ-010",
+      "name": "research-feasibility-gate-review",
+      "domain_code": "GRQ",
+      "subdomain": "Analysis",
+      "description": "Prepare research feasibility gate review from supplied evidence; use when the request concerns research plan.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRV-001",
+      "name": "literature-search-concept-map",
+      "domain_code": "GRV",
+      "subdomain": "Analysis",
+      "description": "Prepare literature search concept map from supplied evidence; use when the request concerns review question.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRV-002",
+      "name": "review-inclusion-criteria-design",
+      "domain_code": "GRV",
+      "subdomain": "Analysis",
+      "description": "Prepare review inclusion criteria from supplied evidence; use when the request concerns review question.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRV-003",
+      "name": "abstract-screening-decision-log",
+      "domain_code": "GRV",
+      "subdomain": "Analysis",
+      "description": "Prepare abstract screening decision log from supplied evidence; use when the request concerns search results.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRV-004",
+      "name": "study-evidence-extraction-sheet",
+      "domain_code": "GRV",
+      "subdomain": "Analysis",
+      "description": "Prepare study evidence extraction sheet from supplied evidence; use when the request concerns included source texts.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRV-005",
+      "name": "research-source-credibility-review",
+      "domain_code": "GRV",
+      "subdomain": "Analysis",
+      "description": "Prepare publication version and correction-status check from supplied evidence; use when the request concerns publication identity or supplied copy.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRV-006",
+      "name": "conflicting-study-findings-map",
+      "domain_code": "GRV",
+      "subdomain": "Analysis",
+      "description": "Prepare conflicting findings map from supplied evidence; use when the request concerns studies with differing conclusions.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRV-007",
+      "name": "evidence-gap-map",
+      "domain_code": "GRV",
+      "subdomain": "Analysis",
+      "description": "Prepare evidence gap map from supplied evidence; use when the request concerns review scope.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRV-008",
+      "name": "claim-source-traceability-audit",
+      "domain_code": "GRV",
+      "subdomain": "Analysis",
+      "description": "Prepare claim-source traceability audit from supplied evidence; use when the request concerns draft claims.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRV-009",
+      "name": "narrative-evidence-synthesis",
+      "domain_code": "GRV",
+      "subdomain": "Analysis",
+      "description": "Prepare narrative evidence synthesis from supplied evidence; use when the request concerns extracted evidence.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRV-010",
+      "name": "review-update-watchlist",
+      "domain_code": "GRV",
+      "subdomain": "Analysis",
+      "description": "Prepare evidence review update watchlist from supplied evidence; use when the request concerns existing review scope.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCA-001",
+      "name": "career-role-requirement-map",
+      "domain_code": "GCA",
+      "subdomain": "Analysis",
+      "description": "Prepare role requirement evidence map from supplied evidence; use when the request concerns job description.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCA-002",
+      "name": "resume-bullet-evidence-rewrite",
+      "domain_code": "GCA",
+      "subdomain": "Analysis",
+      "description": "Prepare resume bullet evidence rewrite from supplied evidence; use when the request concerns existing resume bullet.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCA-003",
+      "name": "career-cover-letter-evidence-draft",
+      "domain_code": "GCA",
+      "subdomain": "Analysis",
+      "description": "Prepare cover letter evidence draft from supplied evidence; use when the request concerns job posting.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCA-004",
+      "name": "interview-story-evidence-bank",
+      "domain_code": "GCA",
+      "subdomain": "Analysis",
+      "description": "Prepare interview story evidence bank from supplied evidence; use when the request concerns candidate work episodes.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCA-005",
+      "name": "interview-question-practice-plan",
+      "domain_code": "GCA",
+      "subdomain": "Analysis",
+      "description": "Prepare interview question practice plan from supplied evidence; use when the request concerns target role.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCA-006",
+      "name": "career-skill-gap-priority-plan",
+      "domain_code": "GCA",
+      "subdomain": "Analysis",
+      "description": "Prepare career skill gap priority plan from supplied evidence; use when the request concerns target work tasks.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCA-007",
+      "name": "career-portfolio-case-study",
+      "domain_code": "GCA",
+      "subdomain": "Analysis",
+      "description": "Prepare portfolio case study draft from supplied evidence; use when the request concerns completed project.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCA-008",
+      "name": "career-informational-interview-agenda",
+      "domain_code": "GCA",
+      "subdomain": "Analysis",
+      "description": "Prepare informational interview agenda from supplied evidence; use when the request concerns career question.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCA-009",
+      "name": "career-opportunity-comparison",
+      "domain_code": "GCA",
+      "subdomain": "Analysis",
+      "description": "Prepare career opportunity comparison from supplied evidence; use when the request concerns opportunity details.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCA-010",
+      "name": "career-transition-evidence-plan",
+      "domain_code": "GCA",
+      "subdomain": "Analysis",
+      "description": "Prepare career transition evidence plan from supplied evidence; use when the request concerns current work history.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPR-001",
+      "name": "personal-task-inbox-triage",
+      "domain_code": "GPR",
+      "subdomain": "Analysis",
+      "description": "Prepare task inbox triage from supplied evidence; use when the request concerns unsorted tasks and notes.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPR-002",
+      "name": "weekly-capacity-planning",
+      "domain_code": "GPR",
+      "subdomain": "Analysis",
+      "description": "Prepare weekly capacity plan from supplied evidence; use when the request concerns fixed commitments.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPR-003",
+      "name": "project-next-action-decomposition",
+      "domain_code": "GPR",
+      "subdomain": "Analysis",
+      "description": "Prepare project next-action decomposition from supplied evidence; use when the request concerns desired project outcome.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPR-004",
+      "name": "personal-priority-tradeoff",
+      "domain_code": "GPR",
+      "subdomain": "Analysis",
+      "description": "Prepare personal priority tradeoff from supplied evidence; use when the request concerns competing tasks.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPR-005",
+      "name": "focus-session-design",
+      "domain_code": "GPR",
+      "subdomain": "Analysis",
+      "description": "Prepare focus session design from supplied evidence; use when the request concerns specific work task.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPR-006",
+      "name": "personal-waiting-for-tracker",
+      "domain_code": "GPR",
+      "subdomain": "Analysis",
+      "description": "Prepare waiting-for tracker from supplied evidence; use when the request concerns delegated or requested items.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPR-007",
+      "name": "personal-weekly-review",
+      "domain_code": "GPR",
+      "subdomain": "Analysis",
+      "description": "Prepare weekly review agenda from supplied evidence; use when the request concerns current tasks and projects.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPR-008",
+      "name": "routine-experiment-plan",
+      "domain_code": "GPR",
+      "subdomain": "Analysis",
+      "description": "Prepare routine experiment plan from supplied evidence; use when the request concerns desired behavior.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPR-009",
+      "name": "personal-information-retrieval-design",
+      "domain_code": "GPR",
+      "subdomain": "Analysis",
+      "description": "Prepare personal information retrieval design from supplied evidence; use when the request concerns frequently needed information.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPR-010",
+      "name": "overdue-commitment-recovery-plan",
+      "domain_code": "GPR",
+      "subdomain": "Analysis",
+      "description": "Prepare overdue commitment recovery plan from supplied evidence; use when the request concerns missed commitments.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRE-001",
+      "name": "argument-premise-map",
+      "domain_code": "GRE",
+      "subdomain": "Analysis",
+      "description": "Prepare argument premise map from supplied evidence; use when the request concerns argument text.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRE-002",
+      "name": "claim-scope-qualification",
+      "domain_code": "GRE",
+      "subdomain": "Analysis",
+      "description": "Prepare claim scope qualification from supplied evidence; use when the request concerns original claim.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRE-003",
+      "name": "alternative-explanation-test",
+      "domain_code": "GRE",
+      "subdomain": "Analysis",
+      "description": "Prepare alternative explanation test from supplied evidence; use when the request concerns observation.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRE-004",
+      "name": "definition-disambiguation",
+      "domain_code": "GRE",
+      "subdomain": "Analysis",
+      "description": "Prepare definition disambiguation from supplied evidence; use when the request concerns disputed terms.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRE-005",
+      "name": "counterexample-generalization-check",
+      "domain_code": "GRE",
+      "subdomain": "Analysis",
+      "description": "Prepare counterexample generalization check from supplied evidence; use when the request concerns general claim.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRE-006",
+      "name": "analogy-transfer-review",
+      "domain_code": "GRE",
+      "subdomain": "Analysis",
+      "description": "Prepare analogy transfer review from supplied evidence; use when the request concerns proposed analogy.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRE-007",
+      "name": "decision-reversibility-map",
+      "domain_code": "GRE",
+      "subdomain": "Analysis",
+      "description": "Prepare decision reversibility map from supplied evidence; use when the request concerns proposed choice.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRE-008",
+      "name": "uncertainty-to-information-question",
+      "domain_code": "GRE",
+      "subdomain": "Analysis",
+      "description": "Prepare factual question source-routing map from supplied evidence; use when the request concerns pending decision.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRE-009",
+      "name": "evidence-update-ledger",
+      "domain_code": "GRE",
+      "subdomain": "Analysis",
+      "description": "Prepare evidence update ledger from supplied evidence; use when the request concerns prior judgment.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GRE-010",
+      "name": "disagreement-crux-map",
+      "domain_code": "GRE",
+      "subdomain": "Analysis",
+      "description": "Prepare disagreement crux map from supplied evidence; use when the request concerns competing positions.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GLA-001",
+      "name": "translation-brief-preparation",
+      "domain_code": "GLA",
+      "subdomain": "Analysis",
+      "description": "Prepare translation brief preparation from supplied evidence; use when the request concerns source material.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GLA-002",
+      "name": "translation-ambiguity-query-log",
+      "domain_code": "GLA",
+      "subdomain": "Analysis",
+      "description": "Prepare translation ambiguity query log from supplied evidence; use when the request concerns source passage.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GLA-003",
+      "name": "translation-negation-modality-check",
+      "domain_code": "GLA",
+      "subdomain": "Analysis",
+      "description": "Prepare translation negation and modality check from supplied evidence; use when the request concerns source and target drafts.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GLA-004",
+      "name": "translation-terminology-decision-log",
+      "domain_code": "GLA",
+      "subdomain": "Analysis",
+      "description": "Prepare translation terminology decision log from supplied evidence; use when the request concerns recurring source terms.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GLA-005",
+      "name": "translation-register-alignment",
+      "domain_code": "GLA",
+      "subdomain": "Analysis",
+      "description": "Prepare translation register alignment from supplied evidence; use when the request concerns source intention.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GLA-006",
+      "name": "translation-proper-name-number-check",
+      "domain_code": "GLA",
+      "subdomain": "Analysis",
+      "description": "Prepare translation names and quantities check from supplied evidence; use when the request concerns source and target drafts.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GLA-007",
+      "name": "translation-idiom-function-adaptation",
+      "domain_code": "GLA",
+      "subdomain": "Analysis",
+      "description": "Prepare translation idiom function adaptation from supplied evidence; use when the request concerns source idiom in context.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GLA-008",
+      "name": "translation-review-disagreement-resolution",
+      "domain_code": "GLA",
+      "subdomain": "Analysis",
+      "description": "Prepare translation review disagreement resolution from supplied evidence; use when the request concerns competing drafts.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GLA-009",
+      "name": "language-learner-error-feedback",
+      "domain_code": "GLA",
+      "subdomain": "Analysis",
+      "description": "Prepare language learner error feedback from supplied evidence; use when the request concerns learner sentence.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GLA-010",
+      "name": "language-practice-dialogue-scaffold",
+      "domain_code": "GLA",
+      "subdomain": "Analysis",
+      "description": "Prepare language practice dialogue scaffold from supplied evidence; use when the request concerns communicative situation.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPO-001",
+      "name": "poem-image-bank-development",
+      "domain_code": "GPO",
+      "subdomain": "Analysis",
+      "description": "Prepare poem image bank development from supplied evidence; use when the request concerns subject or scene.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPO-002",
+      "name": "poem-line-break-experiment",
+      "domain_code": "GPO",
+      "subdomain": "Analysis",
+      "description": "Prepare poem line break experiment from supplied evidence; use when the request concerns draft passage.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPO-003",
+      "name": "poem-sound-pattern-revision",
+      "domain_code": "GPO",
+      "subdomain": "Analysis",
+      "description": "Prepare poem sound pattern revision from supplied evidence; use when the request concerns poem draft.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPO-004",
+      "name": "poem-metaphor-coherence-review",
+      "domain_code": "GPO",
+      "subdomain": "Analysis",
+      "description": "Prepare poem metaphor coherence review from supplied evidence; use when the request concerns draft metaphor.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPO-005",
+      "name": "poem-stanza-turn-design",
+      "domain_code": "GPO",
+      "subdomain": "Analysis",
+      "description": "Prepare poem stanza turn design from supplied evidence; use when the request concerns draft sequence.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPO-006",
+      "name": "poem-speaker-address-control",
+      "domain_code": "GPO",
+      "subdomain": "Analysis",
+      "description": "Prepare poem speaker and address control from supplied evidence; use when the request concerns draft pronouns.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPO-007",
+      "name": "poem-repetition-variation-plan",
+      "domain_code": "GPO",
+      "subdomain": "Analysis",
+      "description": "Prepare poem repetition and variation plan from supplied evidence; use when the request concerns repeated phrase.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPO-008",
+      "name": "poem-concrete-language-compression",
+      "domain_code": "GPO",
+      "subdomain": "Analysis",
+      "description": "Prepare poem concrete language compression from supplied evidence; use when the request concerns poem draft.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPO-009",
+      "name": "poem-ending-alternatives",
+      "domain_code": "GPO",
+      "subdomain": "Analysis",
+      "description": "Prepare poem ending alternatives from supplied evidence; use when the request concerns draft poem.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GPO-010",
+      "name": "poem-reading-performance-markup",
+      "domain_code": "GPO",
+      "subdomain": "Analysis",
+      "description": "Prepare poem reading performance markup from supplied evidence; use when the request concerns final draft.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCO-001",
+      "name": "workplace-request-specificity-rewrite",
+      "domain_code": "GCO",
+      "subdomain": "Analysis",
+      "description": "Prepare workplace request specificity rewrite from supplied evidence; use when the request concerns draft request.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCO-002",
+      "name": "workplace-decline-with-alternative",
+      "domain_code": "GCO",
+      "subdomain": "Analysis",
+      "description": "Prepare workplace decline with alternative from supplied evidence; use when the request concerns incoming request.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCO-003",
+      "name": "workplace-scope-renegotiation-message",
+      "domain_code": "GCO",
+      "subdomain": "Analysis",
+      "description": "Prepare workplace scope renegotiation message from supplied evidence; use when the request concerns existing commitment.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCO-004",
+      "name": "workplace-disagreement-message",
+      "domain_code": "GCO",
+      "subdomain": "Analysis",
+      "description": "Prepare workplace disagreement message from supplied evidence; use when the request concerns proposed decision.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCO-005",
+      "name": "workplace-feedback-observation-request",
+      "domain_code": "GCO",
+      "subdomain": "Analysis",
+      "description": "Prepare workplace feedback observation request from supplied evidence; use when the request concerns observed behavior.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCO-006",
+      "name": "workplace-status-update-draft",
+      "domain_code": "GCO",
+      "subdomain": "Analysis",
+      "description": "Prepare workplace status update draft from supplied evidence; use when the request concerns completed work.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCO-007",
+      "name": "workplace-decision-record-message",
+      "domain_code": "GCO",
+      "subdomain": "Analysis",
+      "description": "Prepare workplace decision record message from supplied evidence; use when the request concerns meeting notes.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCO-008",
+      "name": "workplace-introduction-request",
+      "domain_code": "GCO",
+      "subdomain": "Analysis",
+      "description": "Prepare workplace introduction request from supplied evidence; use when the request concerns people and relationship.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCO-009",
+      "name": "workplace-clarification-without-blame",
+      "domain_code": "GCO",
+      "subdomain": "Analysis",
+      "description": "Prepare workplace clarification without blame from supplied evidence; use when the request concerns ambiguous instruction.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "GCO-010",
+      "name": "workplace-recipient-action-edit",
+      "domain_code": "GCO",
+      "subdomain": "Analysis",
+      "description": "Prepare workplace recipient action edit from supplied evidence; use when the request concerns long message.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

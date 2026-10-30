@@ -3,9 +3,9 @@ id: MVA-010
 name: visual-composition-iteration-review
 domain: Visual Composition and Art Direction
 subdomain: Design
-version: 1.0
-description: Visual composition iteration review using supplied evidence and explicit acceptance checks; use when preparing a visual composition iteration review deliverable.
-triggers: ["help me with visual composition iteration review", "prepare a visual composition iteration review deliverable", "review our visual composition iteration review evidence", "create a visual composition iteration review action plan", "check this visual composition iteration review decision"]
+version: 1.1
+description: Guide visual composition iteration review when working from previous version, revised version, stated feedback, and original objective.
+triggers: ["visual composition iteration review", "help with visual composition iteration review", "work on visual composition iteration review", "review my visual composition iteration review", "apply visual composition iteration review to these materials"]
 not_for: ["Visual hierarchy critique [MVA-001]", "Visual spacing and grouping review [MVA-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Visual composition iteration review
 
 ## Purpose
-Produce a usable visual composition iteration review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this visual composition iteration review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Reduce or relocate the sponsor mark while preserving a legible acknowledgment. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Change reviewed: enlarged sponsor logo.
 Benefit: sponsor visibility.
 Regression: main title obscured.
@@ -113,7 +114,7 @@ Next iteration: reduce or relocate the sponsor mark while preserving a legible a
 The next iteration resolves feedback without sacrificing the primary communication objective.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

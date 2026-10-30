@@ -3,9 +3,9 @@ id: TKG-003
 name: kaggle-submission-schema-check
 domain: Kaggle Competition Workflows
 subdomain: Submissions
-version: 1.0
-description: Produce a submission schema validation report; use when the task is to kaggle submission schema check.
-triggers: ["kaggle submission schema check", "help with a submission schema validation report", "review my a submission schema validation report", "prepare a submission schema validation report", "check kaggle submission schema check evidence"]
+version: 1.1
+description: Create a submission schema validation report from supplied evidence; use when preparing or reviewing submission schema validation report decisions.
+triggers: ["kaggle submission schema check", "help with a submission schema validation report", "review my submission schema validation report", "prepare a submission schema validation report", "check the evidence for this submission schema validation report"]
 not_for: ["kaggle experiment ledger [TKG-004]", "kaggle leaderboard feedback review [TKG-005]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a submission schema validation report and name the source artifacts used; retain a version or observation date where available.
 2. Derive columns and identifier order from the official sample
 3. Check missing, extra, duplicate, and reordered identifiers
-4. ⚠️ Validate prediction types and any officially specified bounds Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Validate prediction types and any officially specified bounds. Do not silently replace missing evidence with an assumed successful outcome.
 5. Prepare a submission artifact only after schema checks pass
 6. Apply the domain check: Keep local validation, public feedback, final selection, and rule compliance as separate evidence; never infer hidden labels or redistribute restricted competition material.
 7. Verify the proposed result with this task-specific check: Confirm exact identifier sequence and required columns against the official sample. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Use the specific competition page, rules, data description, evaluation definition, and submission instructions as inputs. Check their current versions; do not assume that limits, external-data permissions, team rules, or notebook requirements match another competition. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a submission schema validation report
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Prediction order differs from the sample order.
 Decision: Align predictions using the sample identifiers before writing the file.
+Artifact: Required sample order: id_b, id_a. Prediction mapping: id_a=0.2, id_b=0.8. Ordered rows: id_b→0.8; id_a→0.2. Check missing, duplicate, and extra identifiers before writing; bounds and file schema come from the current competition instructions.
 Action: Team owner — Prepare a submission artifact only after schema checks pass Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Confirm exact identifier sequence and required columns against the official sample.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a submission schema validation report. The sample order is id_b then id_a; predictions are stored by id_a then id_b. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Prediction order differs from the sample order.
 3. It preserves this task-specific conclusion: Align predictions using the sample identifiers before writing the file.
 4. It includes the verification check or explicitly marks it pending: Confirm exact identifier sequence and required columns against the official sample.

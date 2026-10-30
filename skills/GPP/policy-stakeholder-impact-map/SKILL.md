@@ -3,10 +3,10 @@ id: GPP-004
 name: policy-stakeholder-impact-map
 domain: Public Policy Analysis
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare policy stakeholder impact map from supplied evidence; use when the request concerns proposed policy change.
 triggers: ["policy stakeholder impact map", "prepare policy stakeholder impact map", "review my policy stakeholder impact map", "help me with policy stakeholder impact map", "turn proposed policy change into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Policy implementation bottleneck review [GPP-005]", "Policy indicator definition sheet [GPP-006]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Group | Potential change | Evidence status | Consultation question
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Group | Potential change | Evidence status | Consultation question
 Frequent online users | Potential convenience | Feedback available | Which steps remain difficult?
 Residents with access barriers | Potential exclusion | Perspective missing | What alternative access is needed?
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare consultation questions for groups whose experience is missing. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Which steps remain difficult?.
 ```
 
 **Bad output:**

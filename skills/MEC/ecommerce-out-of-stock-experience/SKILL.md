@@ -3,9 +3,9 @@ id: MEC-009
 name: ecommerce-out-of-stock-experience
 domain: E-commerce Customer Experience
 subdomain: Design
-version: 1.0
-description: Out-of-stock experience planning using supplied evidence and explicit acceptance checks; use when preparing a out-of-stock experience planning deliverable.
-triggers: ["help me with out-of-stock experience planning", "prepare a out-of-stock experience planning deliverable", "review our out-of-stock experience planning evidence", "create a out-of-stock experience planning action plan", "check this out-of-stock experience planning decision"]
+version: 1.1
+description: Guide out-of-stock experience planning when working from inventory states, replenishment evidence, alternatives, and notification capabilities.
+triggers: ["out-of-stock experience planning", "help with out-of-stock experience planning", "work on ecommerce out of stock experience", "review my out-of-stock experience planning", "apply out-of-stock experience planning to these materials"]
 not_for: ["Catalog attribute cleanup planning [MEC-010]", "Product page information auditing [MEC-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Out-of-stock experience planning
 
 ## Purpose
-Produce a usable out-of-stock experience planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this out-of-stock experience planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -111,7 +111,7 @@ Optional next step: show only alternatives or notification choices the store can
 The page contains no unsupported availability commitment.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

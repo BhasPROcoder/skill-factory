@@ -3,10 +3,10 @@ id: GEX-001
 name: exam-syllabus-coverage-map
 domain: Exam Preparation Methods
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare exam syllabus coverage map from supplied evidence; use when the request concerns current official syllabus.
 triggers: ["exam syllabus coverage map", "prepare exam syllabus coverage map", "review my exam syllabus coverage map", "help me with exam syllabus coverage map", "turn current official syllabus into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Mastery-dependent study sequence [GEX-002]", "Exam practice error log [GEX-003]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Syllabus task | Resource coverage | Performance evidence | Gap action
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional candidate Mira has notes for a topic but no practice requiring explanation.
+> Fictional scenario: Fictional candidate Mira has notes for a topic but no practice requiring explanation. The candidate also supplies flashcards and successful definition-recall attempts.
 
 **Output:**
 ```text
@@ -84,8 +86,13 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Syllabus task | Resource coverage | Performance evidence | Gap action
 Topic explanation | Notes available | No demonstrated response | Find aligned practice
 Definition recall | Flashcards available | Recall checked | Keep distinct from explanation
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Coverage entry: topic explanation; notes available; no explanation practice supplied; readiness remains undemonstrated.
+Next resource requirement: a task that requires an independently written explanation and a basis for checking its reasoning.
+Separate entry: definition recall, only if actual recall evidence is supplied; do not infer mastery from notes.
+Official-source check: confirm the current syllabus version and the exact task boundary before treating the map as complete.
+Next action: The requester or assigned reviewer will complete this task-specific check: Prioritize unresolved coverage gaps for resource selection. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Find aligned practice.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: GUS-004
 name: us-social-record-replacement-preparation
 domain: US Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare social record replacement preparation from supplied evidence; use when the request concerns record replacement purpose.
 triggers: ["social record replacement preparation", "prepare social record replacement preparation", "review my social record replacement preparation", "help me with social record replacement preparation", "turn record replacement purpose into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Local permit intake checklist [GUS-005]", "Public records request draft [GUS-006]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Task element | Available evidence | Status | Next action
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +86,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Task element | Available evidence | Status | Next action
 Replacement | Missing card reported | Possible correction dependency | Ask agency about combined circumstances
 Identity evidence | Inventory not supplied | Incomplete | Review accepted official categories
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a review checklist and an unresolved-evidence inquiry for the agency. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Ask agency about combined circumstances.
 ```
 
 **Bad output:**

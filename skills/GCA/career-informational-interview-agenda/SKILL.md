@@ -3,10 +3,10 @@ id: GCA-008
 name: career-informational-interview-agenda
 domain: Career Development
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare informational interview agenda from supplied evidence; use when the request concerns career question.
 triggers: ["informational interview agenda", "prepare informational interview agenda", "review my informational interview agenda", "help me with informational interview agenda", "turn career question into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Career opportunity comparison [GCA-009]", "Career transition evidence plan [GCA-010]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Agenda item | Actual question | Purpose | Boundary
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,10 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Agenda item | Actual question | Purpose | Boundary
 Daily work | Which recurring tasks take most of your attention? | Understand reality | Ask about personal experience
 Preparation | What would help someone demonstrate readiness? | Identify useful evidence | No referral presumed
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Conversation opening: I would like to understand day-to-day coordination work. Which recurring tasks take most of your attention? Could you describe a typical handoff and what makes it difficult? What evidence would help someone demonstrate readiness for this work? I am seeking your experience rather than assuming that it describes every organization or requesting a referral.
+Next action: The requester or assigned reviewer will complete this task-specific check: Draft a respectful agenda that does not presume referral or employment. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Ask about personal experience.
 ```
 
 **Bad output:**

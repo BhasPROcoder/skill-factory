@@ -3,9 +3,9 @@ id: MEM-006
 name: email-transactional-content-review
 domain: Lifecycle Email Planning
 subdomain: Design
-version: 1.0
-description: Transactional email content review using supplied evidence and explicit acceptance checks; use when preparing a transactional email content review deliverable.
-triggers: ["help me with transactional email content review", "prepare a transactional email content review deliverable", "review our transactional email content review evidence", "create a transactional email content review action plan", "check this transactional email content review decision"]
+version: 1.1
+description: Guide transactional email content review when working from trigger event, required recipient information, message draft, and support process.
+triggers: ["transactional email content review", "help with transactional email content review", "work on email transactional content review", "review my transactional email content review", "apply transactional email content review to these materials"]
 not_for: ["Email send readiness review [MEM-007]", "Email journey collision review [MEM-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Transactional email content review
 
 ## Purpose
-Produce a usable transactional email content review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this transactional email content review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Optional promotion follows only after the essential transaction information is c
 The recipient can identify the event outcome and necessary action immediately.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: GCA-009
 name: career-opportunity-comparison
 domain: Career Development
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare career opportunity comparison from supplied evidence; use when the request concerns opportunity details.
 triggers: ["career opportunity comparison", "prepare career opportunity comparison", "review my career opportunity comparison", "help me with career opportunity comparison", "turn opportunity details into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Career transition evidence plan [GCA-010]", "Role requirement evidence map [GCA-001]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Criterion | Opportunity evidence | Tradeoff | Question
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Criterion | Opportunity evidence | Tradeoff | Question
 Development | Mentoring confirmed in one role | May suit learning priority | What mentoring involves?
 Flexibility | Unconfirmed promise | Cannot count as settled | What arrangement is actually offered?
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare questions that could change the choice. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: What mentoring involves?.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: THK-007
 name: hackathon-judging-evidence-map
 domain: Hackathon Delivery
 subdomain: Demonstration
-version: 1.0
-description: Produce a judging criterion evidence map; use when the task is to hackathon judging evidence map.
-triggers: ["hackathon judging evidence map", "help with a judging criterion evidence map", "review my a judging criterion evidence map", "prepare a judging criterion evidence map", "check hackathon judging evidence map evidence"]
+version: 1.1
+description: Create a judging criterion evidence map from supplied evidence; use when preparing or reviewing judging criterion evidence map decisions.
+triggers: ["hackathon judging evidence map", "help with a judging criterion evidence map", "review my judging criterion evidence map", "prepare a judging criterion evidence map", "check the evidence for this judging criterion evidence map"]
 not_for: ["hackathon submission package check [THK-008]", "hackathon last hour triage [THK-009]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a judging criterion evidence map and name the source artifacts used; retain a version or observation date where available.
 2. Copy criterion meanings from the supplied current rubric
 3. Map each criterion to observable project evidence
-4. ⚠️ Identify criteria supported only by assertions Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Identify criteria supported only by assertions. Do not silently replace missing evidence with an assumed successful outcome.
 5. Adjust the demo or disclose gaps without inventing results
 6. Apply the domain check: Connect each commitment to the available team, schedule, permitted resources, and a fallback demonstration path.
 7. Verify the proposed result with this task-specific check: Check that every pitch claim has a matching artifact or explicit hypothesis label. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A hackathon prototype needs a coherent user journey and demonstrable evidence of its central claim. Distinguish simulated components from implemented behavior, and read the current event rules instead of assuming submission or judging conventions. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a judging criterion evidence map
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: A working screen is available, but user-testing evidence is absent.
 Decision: Demonstrate the interface and label usability claims as untested.
+Artifact: Rubric criterion: usability evidence. Available evidence: working interface demonstration. Missing evidence: user testing. Pitch boundary: demonstrate the flow and state that usability has not yet been tested with users; do not invent participants or outcomes.
 Action: Team owner — Adjust the demo or disclose gaps without inventing results Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Check that every pitch claim has a matching artifact or explicit hypothesis label.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a judging criterion evidence map. The rubric asks for usability evidence; the team has a working screen but no user testing. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: A working screen is available, but user-testing evidence is absent.
 3. It preserves this task-specific conclusion: Demonstrate the interface and label usability claims as untested.
 4. It includes the verification check or explicitly marks it pending: Check that every pitch claim has a matching artifact or explicit hypothesis label.

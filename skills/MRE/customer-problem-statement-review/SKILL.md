@@ -3,10 +3,10 @@ id: MRE-006
 name: customer-problem-statement-review
 domain: Customer and Market Research
 subdomain: Design
-version: 1.0
-description: Customer problem statement review using supplied evidence and explicit acceptance checks; use when preparing a customer problem statement review deliverable.
-triggers: ["help me with customer problem statement review", "prepare a customer problem statement review deliverable", "review our customer problem statement review evidence", "create a customer problem statement review action plan", "check this customer problem statement review decision"]
-not_for: ["Research evidence confidence review [MRE-007]", "Customer task observation protocol [MRE-008]", "Legal or regulated financial conclusions"]
+version: 1.1
+description: Guide customer problem statement review when working from research observations and proposed problem statements.
+triggers: ["customer problem statement review", "help with customer problem statement review", "work on customer problem statement review", "review my customer problem statement review", "apply customer problem statement review to these materials"]
+not_for: ["Clarify the use case behind a particular feature request [MPU-008]", "Turn established research findings into opportunity handoffs [MRE-010]"]
 requires: []
 risk_level: medium
 ---
@@ -14,7 +14,7 @@ risk_level: medium
 # Customer problem statement review
 
 ## Purpose
-Produce a usable customer problem statement review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this customer problem statement review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Solution boundary: a dashboard is a candidate response, not an established requi
 The statement describes the need without predetermining the solution form.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

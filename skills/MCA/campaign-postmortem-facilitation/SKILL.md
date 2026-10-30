@@ -3,9 +3,9 @@ id: MCA-009
 name: campaign-postmortem-facilitation
 domain: Campaign Planning and Review
 subdomain: Design
-version: 1.0
-description: Campaign postmortem preparation using supplied evidence and explicit acceptance checks; use when preparing a campaign postmortem preparation deliverable.
-triggers: ["help me with campaign postmortem preparation", "prepare a campaign postmortem preparation deliverable", "review our campaign postmortem preparation evidence", "create a campaign postmortem preparation action plan", "check this campaign postmortem preparation decision"]
+version: 1.1
+description: Guide campaign postmortem preparation when working from original plan, actual execution, outcome data, and incident notes.
+triggers: ["campaign postmortem preparation", "help with campaign postmortem preparation", "work on campaign postmortem facilitation", "review my campaign postmortem preparation", "apply campaign postmortem preparation to these materials"]
 not_for: ["Campaign contingency message planning [MCA-010]", "Campaign objective briefing [MCA-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Campaign postmortem preparation
 
 ## Purpose
-Produce a usable campaign postmortem preparation deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this campaign postmortem preparation task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Follow-up: compare evidence capable of distinguishing offer fit from audience fi
 Lessons distinguish observed deviations from unverified causal explanations.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

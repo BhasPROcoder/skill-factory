@@ -3,9 +3,9 @@ id: MEM-001
 name: email-welcome-sequence-plan
 domain: Lifecycle Email Planning
 subdomain: Design
-version: 1.0
-description: Email welcome sequence planning using supplied evidence and explicit acceptance checks; use when preparing a email welcome sequence planning deliverable.
-triggers: ["help me with email welcome sequence planning", "prepare a email welcome sequence planning deliverable", "review our email welcome sequence planning evidence", "create a email welcome sequence planning action plan", "check this email welcome sequence planning decision"]
+version: 1.1
+description: Guide email welcome sequence planning when working from signup promise, recipient state, available content, and desired first success.
+triggers: ["email welcome sequence planning", "help with email welcome sequence planning", "work on email welcome sequence plan", "review my email welcome sequence planning", "apply email welcome sequence planning to these materials"]
 not_for: ["Email segmentation rule review [MEM-002]", "Email subject and preheader review [MEM-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Email welcome sequence planning
 
 ## Purpose
-Produce a usable email welcome sequence planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this email welcome sequence planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ No: send the approved setup guidance only within the authorized messaging rules.
 Each message has a purpose and recipients exit or branch after the relevant action.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

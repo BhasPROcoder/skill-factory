@@ -3,10 +3,10 @@ id: MPU-008
 name: product-feature-request-reframing
 domain: Product Experience Review
 subdomain: Design
-version: 1.0
-description: Product feature request reframing using supplied evidence and explicit acceptance checks; use when preparing a product feature request reframing deliverable.
-triggers: ["help me with product feature request reframing", "prepare a product feature request reframing deliverable", "review our product feature request reframing evidence", "create a product feature request reframing action plan", "check this product feature request reframing decision"]
-not_for: ["Product release note drafting [MPU-009]", "Product design handoff preparation [MPU-010]", "Legal or regulated financial conclusions"]
+version: 1.1
+description: Guide product feature request reframing when working from feature requests, stated user situations, and evidence of unmet needs.
+triggers: ["product feature request reframing", "help with product feature request reframing", "work on product feature request reframing", "review my product feature request reframing", "apply product feature request reframing to these materials"]
+not_for: ["Synthesize an evidence-backed customer problem statement [MRE-006]", "Review the current task flow rather than reframe a proposed feature [MPU-001]"]
 requires: []
 risk_level: medium
 ---
@@ -14,7 +14,7 @@ risk_level: medium
 # Product feature request reframing
 
 ## Purpose
-Produce a usable product feature request reframing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product feature request reframing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Follow-up: Describe the last time you needed this view. What were you trying to 
 The output separates requested solution from evidenced user need.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: MOP-008
 name: startup-service-capacity-plan
 domain: Startup Operating Workflows
 subdomain: Design
-version: 1.0
-description: Startup service capacity planning using supplied evidence and explicit acceptance checks; use when preparing a startup service capacity planning deliverable.
-triggers: ["help me with startup service capacity planning", "prepare a startup service capacity planning deliverable", "review our startup service capacity planning evidence", "create a startup service capacity planning action plan", "check this startup service capacity planning decision"]
-not_for: ["Startup operating procedure drafting [MOP-009]", "Startup workflow retrospective preparation [MOP-010]", "Legal or regulated financial conclusions"]
+version: 1.1
+description: Guide startup service capacity planning when working from recurring service request mix, arrival observations, work-stage effort, rework frequencies, and role availability.
+triggers: ["startup service capacity planning", "help with startup service capacity planning", "work on startup service capacity plan", "review my startup service capacity planning", "apply startup service capacity planning to these materials"]
+not_for: ["Allocate finite specialist capacity among competing business initiatives [BPL-003]", "Diagnose observed workflow delays after delivery [MOP-010]"]
 requires: []
 risk_level: medium
 ---
@@ -14,11 +14,11 @@ risk_level: medium
 # Startup service capacity planning
 
 ## Purpose
-Produce a usable startup service capacity planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup service capacity planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
-2. **Task evidence** — collect request demand, task effort assumptions, available staffing, and commitments; this establishes what can actually be assessed. Default: none; request the relevant material if absent instead of substituting industry averages.
+2. **Task evidence** — collect recurring service request mix, arrival observations, work-stage effort, rework frequencies, and role availability; this establishes what can actually be assessed. Default: none; request the relevant material if absent instead of substituting industry averages.
 3. **Business context** — collect team roles, current workflow, demand patterns, service commitments, and available systems; this prevents recommendations for the wrong operating conditions. Default: preserve the context explicitly present in the evidence and label everything else unknown.
 4. **Constraints** — collect deadline, responsible owner, available effort, exclusions, and approval route; these determine which recommendations are actionable. Default: no assumed budget or delivery commitment.
 5. **Acceptance standard** — ask how the user will recognize an adequate result; use the task-specific acceptance check below as a proposed standard if none is supplied, not as an external benchmark.
@@ -28,9 +28,9 @@ If a required input is missing and has no safe default, ask in one message with 
 ## Procedure
 1. State the requested decision and delimit the evidence set by product, audience, channel, and period wherever those distinctions matter.
 2. Assign a short source label to each supplied item so another reviewer can trace the recommendation without searching an entire conversation.
-3. Define the work unit and distinguish observed effort from estimates
-4. Compare planned work with available capacity using compatible periods and roles
-5. Identify the first constrained role and propose explicit scope, timing, or staffing tradeoffs
+3. Decompose one recurring service request into preparation, review, handoff, and conditional rework stages using observed or explicitly estimated effort
+4. Translate the expected request mix into workload for each role in the same planning window, retaining uncertainty in arrivals and rework
+5. Identify the role whose stage workload limits accepted service volume and define a review trigger when the request mix changes
 6. Apply the domain checks: Separate an agreed service commitment from an aspirational target; expose single-person dependencies; design exception handling alongside the normal path rather than assuming every request is complete.
 7. ⚠️ Check whether the proposed response assumes a current platform rule, eligibility condition, or externally defined limit. Check the current value in the approved operating policy and relevant vendor official service documentation; if unavailable, write `[VERIFY: exact requirement and authoritative source to check]` and keep the dependent conclusion provisional.
 8. Turn each supported finding into an action with an owner role, a dependency, and an observable completion check. Order work by whether it blocks the decision, not by how easy it is to describe.
@@ -104,16 +104,16 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Add review demand before accepting the delivery schedule. Owner: affected workstream lead.
 
 ## Artifact
-Required work categories: preparation and review.
-Current estimate: preparation only.
-Disposition: incomplete capacity estimate.
-Next calculation: include review demand in the same planning period and identify the constrained role before accepting dates.
+Service-unit worksheet: preparation effort + mandatory review effort + handoff effort + conditional rework effort.
+Known gap: review effort is absent from the current estimate.
+Role workload rule: aggregate each stage over the expected request mix in the same planning window, keeping unknown effort as an open input.
+Readiness: do not accept service-volume commitments until review workload and role availability are supplied; portfolio initiative tradeoffs belong in BPL-003.
 
 ## Acceptance check
 The plan includes all required work and makes the limiting resource visible.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MPH-002
 name: photo-background-distraction-review
 domain: Photography Planning and Critique
 subdomain: Design
-version: 1.0
-description: Photographic background distraction review using supplied evidence and explicit acceptance checks; use when preparing a photographic background distraction review deliverable.
-triggers: ["help me with photographic background distraction review", "prepare a photographic background distraction review deliverable", "review our photographic background distraction review evidence", "create a photographic background distraction review action plan", "check this photographic background distraction review decision"]
+version: 1.1
+description: Guide photographic background distraction review when working from image or described frame, subject intention, and permissible editing scope.
+triggers: ["photographic background distraction review", "help with photographic background distraction review", "work on photo background distraction review", "review my photographic background distraction review", "apply photographic background distraction review to these materials"]
 not_for: ["Photographic light direction study planning [MPH-003]", "Photographic crop comparison review [MPH-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Photographic background distraction review
 
 ## Purpose
-Produce a usable photographic background distraction review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this photographic background distraction review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -101,19 +101,20 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
 ## Findings
 - Evidence: A — A bright sign draws attention away from a musician, but the venue context is important.
   Assessment: The sign's competition should be reduced without erasing the venue context.
-  Action: Try a camera position that retains venue cues while moving the sign away from the face. Owner: author or creative lead.
+  Action: Try a camera position or permitted crop that reduces sign competition while retaining venue cues. Owner: author or creative lead.
 
 ## Artifact
-Keep: enough venue detail to establish the musician's setting.
-Change: camera position so the bright sign no longer sits near the face.
-Comparison frame: same subject moment with reduced sign competition.
-Do not erase the venue merely to simplify the image.
+Proposed creative revision; added details require author approval and continuity review.
+Keep enough venue detail to establish the musician's setting.
+Proposed comparison: change viewpoint or framing to reduce the bright sign's competition without erasing the venue.
+Do not claim the sign is near the face unless the source image shows that relationship.
+Acceptance remains a visual comparison of actual candidate frames.
 
 ## Acceptance check
 The subject is clearer and the required setting information remains legible.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**
@@ -134,6 +135,6 @@ This fails because it does not address the specific evidence in A, identify a co
 **Assertions:**
 1. Output uses Decision, Scope, Findings, Artifact, Acceptance check, and Unresolved in that order.
 2. The recommendation is consistent with this case-specific conclusion: The sign's competition should be reduced without erasing the venue context.
-3. The action includes this concrete response: Try a camera position that retains venue cues while moving the sign away from the face.
+3. The action includes this concrete response: Try a camera position or permitted crop that reduces sign competition while retaining venue cues.
 4. The acceptance check addresses this observable outcome: The subject is clearer and the required setting information remains legible.
 5. No unsupported universal artistic rule, current platform limit, or invented source is introduced.

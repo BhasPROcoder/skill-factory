@@ -3,10 +3,10 @@ id: GCA-007
 name: career-portfolio-case-study
 domain: Career Development
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare portfolio case study draft from supplied evidence; use when the request concerns completed project.
 triggers: ["portfolio case study draft", "prepare portfolio case study draft", "review my portfolio case study draft", "help me with portfolio case study draft", "turn completed project into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Informational interview agenda [GCA-008]", "Career opportunity comparison [GCA-009]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Case section | Evidence | Draft statement | Disclosure check
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional candidate Nela redesigned a volunteer intake worksheet but has not measured long-term effects.
+> Fictional scenario: Fictional candidate Nela redesigned a volunteer intake worksheet but has not measured long-term effects. The stated design problem was confusing intake notes.
 
 **Output:**
 ```text
@@ -84,8 +86,10 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Case section | Evidence | Draft statement | Disclosure check
 Problem | Confusing intake notes | The project aimed to make volunteer intake information easier to hand off. | No private records
 Outcome | Revised worksheet produced | I produced a revised worksheet and documented the design choices. | No impact claim
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Case-study draft: The volunteer project had confusing intake notes. I redesigned its intake worksheet to make information easier to hand off. The artifact is the revised worksheet and its documented design choices. Long-term effects were not measured. A shareable case study should use a blank or fictionalized worksheet, not private intake records.
+Next action: The requester or assigned reviewer will complete this task-specific check: Draft a case study that omits confidential details and names remaining limitations. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: No private records.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MOP-003
 name: startup-service-delivery-checklist
 domain: Startup Operating Workflows
 subdomain: Design
-version: 1.0
-description: Startup service delivery checklist design using supplied evidence and explicit acceptance checks; use when preparing a startup service delivery checklist design deliverable.
-triggers: ["help me with startup service delivery checklist design", "prepare a startup service delivery checklist design deliverable", "review our startup service delivery checklist design evidence", "create a startup service delivery checklist design action plan", "check this startup service delivery checklist design decision"]
+version: 1.1
+description: Guide startup service delivery checklist design when working from promised deliverables, workflow, known failure modes, and completion evidence.
+triggers: ["startup service delivery checklist design", "help with startup service delivery checklist design", "work on startup service delivery checklist", "review my startup service delivery checklist design", "apply startup service delivery checklist design to these materials"]
 not_for: ["Startup vendor comparison briefing [MOP-004]", "Startup vendor onboarding planning [MOP-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup service delivery checklist design
 
 ## Purpose
-Produce a usable startup service delivery checklist design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup service delivery checklist design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Failure branch: resolve access or communicate the blocked state through the appr
 The final completion criterion demonstrates the promised customer outcome.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

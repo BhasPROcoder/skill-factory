@@ -3,9 +3,9 @@ id: MSL-007
 name: local-review-theme-analysis
 domain: Local Search Operations
 subdomain: Design
-version: 1.0
-description: Local review theme analysis using supplied evidence and explicit acceptance checks; use when preparing a local review theme analysis deliverable.
-triggers: ["help me with local review theme analysis", "prepare a local review theme analysis deliverable", "review our local review theme analysis evidence", "create a local review theme analysis action plan", "check this local review theme analysis decision"]
+version: 1.1
+description: Guide local review theme analysis when working from review sample, dates, locations, and known sampling limits.
+triggers: ["local review theme analysis", "help with local review theme analysis", "work on local review theme analysis", "review my local review theme analysis", "apply local review theme analysis to these materials"]
 not_for: ["Local listing duplicate triage [MSL-008]", "Local profile change control planning [MSL-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Local review theme analysis
 
 ## Purpose
-Produce a usable local review theme analysis deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this local review theme analysis task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Next evidence: review those instructions and gather follow-up observations at br
 The report names the sample boundary and does not claim an organization-wide pattern.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: GCA-001
 name: career-role-requirement-map
 domain: Career Development
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare role requirement evidence map from supplied evidence; use when the request concerns job description.
 triggers: ["role requirement evidence map", "prepare role requirement evidence map", "review my role requirement evidence map", "help me with role requirement evidence map", "turn job description into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Resume bullet evidence rewrite [GCA-002]", "Cover letter evidence draft [GCA-003]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Requirement | Candidate evidence | Match type | Application action
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Requirement | Candidate evidence | Match type | Application action
 Coordination | Volunteer scheduling example | Transferable | Describe actual responsibility
 Staff management | No supplied example | Gap | Do not claim direct management
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare application priorities without claiming every requirement is satisfied. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Describe actual responsibility.
 ```
 
 **Bad output:**

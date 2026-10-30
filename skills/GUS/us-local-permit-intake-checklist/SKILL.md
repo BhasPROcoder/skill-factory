@@ -3,10 +3,10 @@ id: GUS-005
 name: us-local-permit-intake-checklist
 domain: US Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare local permit intake checklist from supplied evidence; use when the request concerns proposed project description.
 triggers: ["local permit intake checklist", "prepare local permit intake checklist", "review my local permit intake checklist", "help me with local permit intake checklist", "turn proposed project description into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Public records request draft [GUS-006]", "Benefit renewal notice triage [GUS-007]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Project element | Supplied detail | Intake uncertainty | Authority question
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +86,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Project element | Supplied detail | Intake uncertainty | Authority question
 Work scope | Interior alteration | Category unverified | Which intake route covers this scope?
 Supporting plans | Not supplied | Requirements unknown | What current plans are required?
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare focused questions for ambiguous scope or multiple reviewing offices. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Which intake route covers this scope?.
 ```
 
 **Bad output:**

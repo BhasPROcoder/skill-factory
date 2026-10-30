@@ -3,9 +3,9 @@ id: MSA-010
 name: sales-collateral-gap-review
 domain: Sales Process Enablement
 subdomain: Design
-version: 1.0
-description: Sales collateral gap review using supplied evidence and explicit acceptance checks; use when preparing a sales collateral gap review deliverable.
-triggers: ["help me with sales collateral gap review", "prepare a sales collateral gap review deliverable", "review our sales collateral gap review evidence", "create a sales collateral gap review action plan", "check this sales collateral gap review decision"]
+version: 1.1
+description: Guide sales collateral gap review when working from buyer questions, existing assets, sales stages, and approved claims.
+triggers: ["sales collateral gap review", "help with sales collateral gap review", "work on sales collateral gap review", "review my sales collateral gap review", "apply sales collateral gap review to these materials"]
 not_for: ["Sales discovery question planning [MSA-001]", "Sales qualification evidence review [MSA-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Sales collateral gap review
 
 ## Purpose
-Produce a usable sales collateral gap review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this sales collateral gap review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Populate from verified delivery facts.
 Each prioritized gap maps to a buyer question and an intended decision.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

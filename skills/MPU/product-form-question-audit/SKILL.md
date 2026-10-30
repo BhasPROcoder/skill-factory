@@ -3,9 +3,9 @@ id: MPU-004
 name: product-form-question-audit
 domain: Product Experience Review
 subdomain: Design
-version: 1.0
-description: Product form question audit using supplied evidence and explicit acceptance checks; use when preparing a product form question audit deliverable.
-triggers: ["help me with product form question audit", "prepare a product form question audit deliverable", "review our product form question audit evidence", "create a product form question audit action plan", "check this product form question audit decision"]
+version: 1.1
+description: Guide product form question audit when working from field list, data purposes, user context, and validation requirements.
+triggers: ["product form question audit", "help with product form question audit", "work on product form question audit", "review my product form question audit", "apply product form question audit to these materials"]
 not_for: ["Product onboarding friction review [MPU-005]", "Product prototype test scenario design [MPU-006]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product form question audit
 
 ## Purpose
-Produce a usable product form question audit deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product form question audit task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -114,7 +114,7 @@ Keep the actual feedback information needed to route the issue.
 Every retained required field has a purpose and a truthful user response path.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

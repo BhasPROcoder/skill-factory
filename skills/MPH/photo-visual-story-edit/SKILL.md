@@ -3,9 +3,9 @@ id: MPH-009
 name: photo-visual-story-edit
 domain: Photography Planning and Critique
 subdomain: Design
-version: 1.0
-description: Photographic visual story editing using supplied evidence and explicit acceptance checks; use when preparing a photographic visual story editing deliverable.
-triggers: ["help me with photographic visual story editing", "prepare a photographic visual story editing deliverable", "review our photographic visual story editing evidence", "create a photographic visual story editing action plan", "check this photographic visual story editing decision"]
+version: 1.1
+description: Guide photographic visual story editing when working from image set, story question, audience, and presentation format.
+triggers: ["photographic visual story editing", "help with photographic visual story editing", "work on photo visual story edit", "review my photographic visual story editing", "apply photographic visual story editing to these materials"]
 not_for: ["Photographic reshoot decision briefing [MPH-010]", "Photographic subject intention briefing [MPH-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Photographic visual story editing
 
 ## Purpose
-Produce a usable photographic visual story editing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this photographic visual story editing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Separate the images or supply accurate context that prevents the false connection. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Rejected order: unrelated accident followed by celebration without context.
 Repair: separate into distinct sequences or add accurate contextual separation.
 Review question: does adjacency imply a chronology or cause that the source does not support?
@@ -112,7 +113,7 @@ Review question: does adjacency imply a chronology or cause that the source does
 The sequence communicates its intended story without inventing chronology or causation.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

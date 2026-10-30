@@ -3,9 +3,9 @@ id: MEM-005
 name: email-reactivation-brief
 domain: Lifecycle Email Planning
 subdomain: Design
-version: 1.0
-description: Email reactivation briefing using supplied evidence and explicit acceptance checks; use when preparing a email reactivation briefing deliverable.
-triggers: ["help me with email reactivation briefing", "prepare a email reactivation briefing deliverable", "review our email reactivation briefing evidence", "create a email reactivation briefing action plan", "check this email reactivation briefing decision"]
+version: 1.1
+description: Guide email reactivation briefing when working from definition of inactivity, recipient permissions, prior relationship, and available value.
+triggers: ["email reactivation briefing", "help with email reactivation briefing", "work on email reactivation brief", "review my email reactivation briefing", "apply email reactivation briefing to these materials"]
 not_for: ["Transactional email content review [MEM-006]", "Email send readiness review [MEM-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Email reactivation briefing
 
 ## Purpose
-Produce a usable email reactivation briefing deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this email reactivation briefing task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Next step: reconcile customer activity, then apply the agreed inactivity rule an
 The audience definition reflects a verified relationship state and respects exclusions.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

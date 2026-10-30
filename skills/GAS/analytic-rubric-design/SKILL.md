@@ -3,10 +3,10 @@ id: GAS-001
 name: analytic-rubric-design
 domain: Learning Assessment
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare analytic rubric design from supplied evidence; use when the request concerns learning performance.
 triggers: ["analytic rubric design", "prepare analytic rubric design", "review my analytic rubric design", "help me with analytic rubric design", "turn learning performance into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Assessment task validity review [GAS-002]", "Multiple-choice item review [GAS-003]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Criterion | Observable distinction | Sample evidence | Revision
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,15 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Criterion | Observable distinction | Sample evidence | Revision
 Reasoning | Connects claim to evidence | Link present or absent | Keep separate from length
 Detail | Currently duplicates reasoning | No distinct evidence | Redefine or remove
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Proposed criterion: connection between claim and evidence.
+Evidence linked: identifies relevant evidence and explains why it supports the claim.
+Evidence listed: includes relevant evidence but leaves the connection unexplained.
+Claim only: supplies a conclusion without supporting evidence.
+Keep length outside this criterion; additional detail earns no automatic credit.
+Calibration request: apply these descriptors to supplied contrasting samples and revise any ambiguous boundary before use.
+Next action: The requester or assigned reviewer will complete this task-specific check: Revise criteria that overlap or produce unexplained disagreement. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Keep separate from length.
 ```
 
 **Bad output:**

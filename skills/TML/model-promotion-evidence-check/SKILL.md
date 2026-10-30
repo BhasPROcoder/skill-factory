@@ -2,10 +2,10 @@
 id: TML-010
 name: model-promotion-evidence-check
 domain: Model Evaluation Design
-subdomain: Metrics
-version: 1.0
-description: Produce a model promotion evidence checklist; use when the task is to model promotion evidence check.
-triggers: ["model promotion evidence check", "help with a model promotion evidence checklist", "review my a model promotion evidence checklist", "prepare a model promotion evidence checklist", "check model promotion evidence check evidence"]
+subdomain: Deployment comparison
+version: 1.1
+description: Create a model promotion evidence checklist from supplied evidence; use when preparing or reviewing model promotion evidence checklist decisions.
+triggers: ["model promotion evidence check", "help with a model promotion evidence checklist", "review my model promotion evidence checklist", "prepare a model promotion evidence checklist", "check the evidence for this model promotion evidence checklist"]
 not_for: ["model validation split selection [TML-001]", "model baseline comparison plan [TML-002]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a model promotion evidence checklist and name the source artifacts used; retain a version or observation date where available.
 2. Match the candidate artifact to the evaluated version
 3. Check each supplied acceptance condition and its evidence
-4. ⚠️ Separate offline success from operational readiness Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate offline success from operational readiness. Do not silently replace missing evidence with an assumed successful outcome.
 5. Recommend promotion only within the authorized release process
 6. Apply the domain check: Check separation of training, tuning, and final evaluation; connect the chosen metric to the real decision instead of assuming the leaderboard metric is sufficient.
 7. Verify the proposed result with this task-specific check: Compare evaluation provenance with the exact deployment artifact identifier. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A model score is conditional on a dataset, split, metric, and prediction-time information. Protect held-out data from model-selection decisions and retain simple baselines that make improvement interpretable. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a model promotion evidence checklist
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The package lacks a demonstrated link to the evaluation.
 Decision: Hold promotion until artifact identity and relevant checks are reconciled.
+Artifact: Evaluated artifact: A. Proposed package: B with undocumented changes. Promotion status: hold. Required evidence: traceable identity or rebuild plus relevant reevaluation; offline results for A do not automatically certify B.
 Action: Team owner — Recommend promotion only within the authorized release process Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare evaluation provenance with the exact deployment artifact identifier.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a model promotion evidence checklist. Evaluation covers artifact A; the proposed deployment package is artifact B with undocumented changes. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The package lacks a demonstrated link to the evaluation.
 3. It preserves this task-specific conclusion: Hold promotion until artifact identity and relevant checks are reconciled.
 4. It includes the verification check or explicitly marks it pending: Compare evaluation provenance with the exact deployment artifact identifier.

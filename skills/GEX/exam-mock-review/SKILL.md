@@ -3,10 +3,10 @@ id: GEX-004
 name: exam-mock-review
 domain: Exam Preparation Methods
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare mock exam review from supplied evidence; use when the request concerns mock paper and responses.
 triggers: ["mock exam review", "prepare mock exam review", "review my mock exam review", "help me with mock exam review", "turn mock paper and responses into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Retrieval practice set [GEX-005]", "Mixed practice selection [GEX-006]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Pattern | Evidence | Change to test | Next-mock check
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional candidate Tess leaves a long response blank after spending excessive time polishing an earlier answer.
+> Fictional scenario: Fictional candidate Tess leaves a long response blank after spending excessive time polishing an earlier answer. A timing note records repeated revision of the earlier answer.
 
 **Output:**
 ```text
@@ -84,8 +86,14 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Pattern | Evidence | Change to test | Next-mock check
 Incomplete long response | Blank response and timing note | Set a move-on rule | Check coverage next mock
 Early polishing | Repeated revisions | Draft sufficient answer first | Review time use
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Observed sequence: polishing an earlier answer consumed time; a later long response remained blank.
+Next-mock experiment: draft an answer sufficient for the task, then move on under a provisional checkpoint compatible with the exam's actual navigation rules.
+Record: which task was left, why, and whether later work was attempted.
+Review both coverage and answer quality before retaining the change; completion alone is not a quality guarantee.
+No universal timing limit is inferred from this case.
+Next action: The requester or assigned reviewer will complete this task-specific check: Define what evidence will show whether each change helped. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Check coverage next mock.
 ```
 
 **Bad output:**

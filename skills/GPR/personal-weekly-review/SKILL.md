@@ -3,10 +3,10 @@ id: GPR-007
 name: personal-weekly-review
 domain: Personal Work Organization
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare weekly review agenda from supplied evidence; use when the request concerns current tasks and projects.
 triggers: ["weekly review agenda", "prepare weekly review agenda", "review my weekly review agenda", "help me with weekly review agenda", "turn current tasks and projects into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Routine experiment plan [GPR-008]", "Personal information retrieval design [GPR-009]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Review area | Observation | Decision | Next action
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +76,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional user Mira repeatedly carries a vague research task into each week.
+> Fictional scenario: Fictional user Mira repeatedly carries a vague research task into each week. A confirmed appointment will reduce the next available work block.
 
 **Output:**
 ```text
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Review area | Observation | Decision | Next action
 Repeated carryover | Research remains vague | Clarify scope | Write one answerable question
 Upcoming obligation | Known appointment | Reduce available work block | Adjust plan
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Choose changes to priorities and capture reasons. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Write one answerable question.
 ```
 
 **Bad output:**

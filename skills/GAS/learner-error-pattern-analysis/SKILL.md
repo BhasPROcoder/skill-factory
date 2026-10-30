@@ -3,10 +3,10 @@ id: GAS-006
 name: learner-error-pattern-analysis
 domain: Learning Assessment
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare learner error pattern analysis from supplied evidence; use when the request concerns learner responses.
 triggers: ["learner error pattern analysis", "prepare learner error pattern analysis", "review my learner error pattern analysis", "help me with learner error pattern analysis", "turn learner responses into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Actionable feedback rewrite [GAS-007]", "Assessment moderation session [GAS-008]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Error pattern | Possible explanation | Discriminating probe | Response
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,14 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Error pattern | Possible explanation | Discriminating probe | Response
 Reversed labels | Complexity or concept issue | Use comparable simpler text | Check consistency
 Correct simple item | Some distinction available | Increase one demand only | Locate difficulty
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Follow-up probe: label claim and evidence in a short text comparable to the successful item; then try another with only one added demand.
+Record separately: label accuracy, the learner's explanation, and the changed demand.
+If confusion appears even in the simpler case: revisit the claim/evidence distinction.
+If it appears only after added complexity: investigate that demand before inferring general conceptual failure.
+Do not close the diagnosis from the single reversed-label response.
+Next action: The requester or assigned reviewer will complete this task-specific check: Recommend a focused teaching response based on the probe outcome. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Check consistency.
 ```
 
 **Bad output:**

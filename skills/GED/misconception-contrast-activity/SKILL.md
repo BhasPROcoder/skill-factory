@@ -3,10 +3,10 @@ id: GED-004
 name: misconception-contrast-activity
 domain: Lesson and Learning Design
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare misconception contrast activity from supplied evidence; use when the request concerns target concept.
 triggers: ["misconception contrast activity", "prepare misconception contrast activity", "review my misconception contrast activity", "help me with misconception contrast activity", "turn target concept into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Lesson practice alignment review [GED-005]", "Scaffold fading plan [GED-006]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Case | Prediction to elicit | Decisive feature | Follow-up
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,15 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Case | Prediction to elicit | Decisive feature | Follow-up
 Long weak paragraph | Ask whether length proves strength | Unsupported claims | Identify evidence quality
 Short supported paragraph | Ask whether brevity makes it weak | Relevant support | Compare reasoning
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Proposed contrast:
+A: The room is ideal. It is excellent, splendid, wonderful, and clearly the best place for every meeting.
+B: The room fits the stated attendance and has the required seating.
+Before explaining, ask: Which argument has more relevant support, and which exact words make you think so?
+Discussion: A repeats judgments; B supplies relevant conditions, subject to verification.
+Transfer: give a new pair with different lengths. Ask whether length alone settles support quality.
+Next action: The requester or assigned reviewer will complete this task-specific check: Check the revised idea with a new case rather than the original example. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Identify evidence quality.
 ```
 
 **Bad output:**

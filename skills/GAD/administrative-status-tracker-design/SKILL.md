@@ -3,10 +3,10 @@ id: GAD-007
 name: administrative-status-tracker-design
 domain: Administrative Casework
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare administrative status tracker from supplied evidence; use when the request concerns cases to track.
 triggers: ["administrative status tracker", "prepare administrative status tracker", "review my administrative status tracker", "help me with administrative status tracker", "turn cases to track into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Official instruction conflict log [GAD-008]", "Administrative cover note [GAD-009]"]
 requires: []
 risk_level: medium
 ---
@@ -52,6 +52,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Case reference | Evidence-backed state | Next owner action | Recheck trigger
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +85,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Case reference | Evidence-backed state | Next owner action | Recheck trigger
 Case A | Drafted only | Applicant reviews packet | Before submission
 Case B | Receipt confirmed | Assigned helper checks requested follow-up | At verified milestone
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Create follow-up triggers using verified service guidance or labeled personal reminders. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Before submission.
 ```
 
 **Bad output:**

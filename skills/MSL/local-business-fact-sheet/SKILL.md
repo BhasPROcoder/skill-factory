@@ -3,9 +3,9 @@ id: MSL-001
 name: local-business-fact-sheet
 domain: Local Search Operations
 subdomain: Design
-version: 1.0
-description: Local business fact sheet preparation using supplied evidence and explicit acceptance checks; use when preparing a local business fact sheet preparation deliverable.
-triggers: ["help me with local business fact sheet preparation", "prepare a local business fact sheet preparation deliverable", "review our local business fact sheet preparation evidence", "create a local business fact sheet preparation action plan", "check this local business fact sheet preparation decision"]
+version: 1.1
+description: Guide local business fact sheet preparation when working from verified business name, location, contact information, and service details.
+triggers: ["local business fact sheet preparation", "help with local business fact sheet preparation", "work on local business fact sheet", "review my local business fact sheet preparation", "apply local business fact sheet preparation to these materials"]
 not_for: ["Local profile eligibility review planning [MSL-002]", "Local opening-hours consistency review [MSL-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Local business fact sheet preparation
 
 ## Purpose
-Produce a usable local business fact sheet preparation deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this local business fact sheet preparation task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Preserve both supplied values in the internal discrepancy record.
 Every customer-facing field is verified or explicitly unresolved.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

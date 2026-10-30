@@ -3,10 +3,10 @@ id: GPR-010
 name: overdue-commitment-recovery-plan
 domain: Personal Work Organization
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare overdue commitment recovery plan from supplied evidence; use when the request concerns missed commitments.
 triggers: ["overdue commitment recovery plan", "prepare overdue commitment recovery plan", "review my overdue commitment recovery plan", "help me with overdue commitment recovery plan", "turn missed commitments into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Task inbox triage [GPR-001]", "Weekly capacity plan [GPR-002]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Commitment | Current state | Repair proposal | Communication
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,10 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Commitment | Current state | Repair proposal | Communication
 Draft handoff | Incomplete | Offer outline and timing checkpoint | I missed the agreed handoff.
 Next expectation | Full timing uncertain | Confirm after reviewing remaining work | I can share an outline now and update you after that review.
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Draft acknowledgment: I missed the agreed draft handoff. I can share an outline now, but I cannot yet confirm when the complete draft will be ready. I will review the remaining work and propose a checkpoint we can agree on. Would the outline still help, or has the need changed? Do not replace the uncertain estimate with a confident invented deadline.
+Next action: The requester or assigned reviewer will complete this task-specific check: Track the repair without making another unsupported promise. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: I missed the agreed handoff..
 ```
 
 **Bad output:**

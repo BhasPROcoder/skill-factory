@@ -3,10 +3,10 @@ id: GED-009
 name: project-learning-milestone-design
 domain: Lesson and Learning Design
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare project learning milestone design from supplied evidence; use when the request concerns project outcome.
 triggers: ["project learning milestone design", "prepare project learning milestone design", "review my project learning milestone design", "help me with project learning milestone design", "turn project outcome into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Learning reflection prompt design [GED-010]", "Observable learning objective rewrite [GED-001]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Milestone | Artifact | Learning evidence | Feedback decision
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,14 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Milestone | Artifact | Learning evidence | Feedback decision
 Source selection | Annotated source list | Reasons for inclusion | Revise weak sources
 Exhibit draft | Claims linked to sources | Use of evaluated evidence | Check unsupported claims
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Milestone: source selection. Deliverable: an annotated source list with each proposed exhibit claim, the source used, and the reason that source is suitable.
+Feedback gate: revise unsupported selections before building the exhibit text.
+Milestone: exhibit draft. Deliverable: each displayed claim linked to its supporting source.
+Individual evidence: each learner explains one inclusion or exclusion decision in their own words.
+Completion: a reviewer can trace claims and distinguish individual reasoning from group presentation polish.
+Next action: The requester or assigned reviewer will complete this task-specific check: Create a completion criterion for each milestone tied to the learning objective. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Revise weak sources.
 ```
 
 **Bad output:**

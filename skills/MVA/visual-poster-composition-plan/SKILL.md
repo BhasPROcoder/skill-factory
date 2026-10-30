@@ -3,9 +3,9 @@ id: MVA-006
 name: visual-poster-composition-plan
 domain: Visual Composition and Art Direction
 subdomain: Design
-version: 1.0
-description: Visual poster composition planning using supplied evidence and explicit acceptance checks; use when preparing a visual poster composition planning deliverable.
-triggers: ["help me with visual poster composition planning", "prepare a visual poster composition planning deliverable", "review our visual poster composition planning evidence", "create a visual poster composition planning action plan", "check this visual poster composition planning decision"]
+version: 1.1
+description: Guide visual poster composition planning when working from message, audience action, required details, format, and imagery.
+triggers: ["visual poster composition planning", "help with visual poster composition planning", "work on visual poster composition plan", "review my visual poster composition planning", "apply visual poster composition planning to these materials"]
 not_for: ["Visual image and text relationship review [MVA-007]", "Visual layout variation study design [MVA-008]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Visual poster composition planning
 
 ## Purpose
-Produce a usable visual poster composition planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this visual poster composition planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Create a primary title zone, supporting context, and a clear action area. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Top-level zone: event title.
 Supporting zone: essential context and required details.
 Action zone: the viewer's next step.
@@ -113,7 +114,7 @@ Comparison check: title and action remain identifiable before reading the smalle
 A viewer can identify the event and next action before reading secondary details.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

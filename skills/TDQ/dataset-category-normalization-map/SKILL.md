@@ -2,10 +2,10 @@
 id: TDQ-003
 name: dataset-category-normalization-map
 domain: Dataset Quality Diagnostics
-subdomain: Integrity
-version: 1.0
-description: Produce a category normalization map; use when the task is to dataset category normalization map.
-triggers: ["dataset category normalization map", "help with a category normalization map", "review my a category normalization map", "prepare a category normalization map", "check dataset category normalization map evidence"]
+subdomain: Schema
+version: 1.1
+description: Create a category normalization map from supplied evidence; use when preparing or reviewing category normalization map decisions.
+triggers: ["dataset category normalization map", "help with a category normalization map", "review my category normalization map", "prepare a category normalization map", "check the evidence for this category normalization map"]
 not_for: ["dataset range rule audit [TDQ-004]", "dataset date time consistency check [TDQ-005]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a category normalization map and name the source artifacts used; retain a version or observation date where available.
 2. List raw values with frequencies and representative context
 3. Propose normalization only for demonstrated equivalent meanings
-4. ⚠️ Separate unknown categories from spelling variants Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Separate unknown categories from spelling variants. Do not silently replace missing evidence with an assumed successful outcome.
 5. Create a reversible raw-to-canonical mapping
 6. Apply the domain check: Report counts with denominators and compare values under explicit normalization rules; never silently drop inconvenient records.
 7. Verify the proposed result with this task-specific check: Verify each mapped pair has a documented equivalence rationale. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Quality checks must reflect the intended observation unit and business meaning. A repair can change the estimand or hide a collection defect, so retain the unmodified input and explain consequences. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a category normalization map
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Whitespace normalization is supported; collapsing city into region is not.
 Decision: Map the two region spellings together while preserving the city label.
+Artifact: Verified normalization: raw “NY ”→“NY”; raw “NY”→“NY”. Keep “New York City” distinct because its meaning is narrower. Preserve raw values and the producer confirmation; text similarity alone is not semantic equivalence.
 Action: Team owner — Create a reversible raw-to-canonical mapping Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Verify each mapped pair has a documented equivalence rationale.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a category normalization map. The producer confirms 'NY ' and 'NY' mean the same region; 'New York City' has a narrower meaning. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Whitespace normalization is supported; collapsing city into region is not.
 3. It preserves this task-specific conclusion: Map the two region spellings together while preserving the city label.
 4. It includes the verification check or explicitly marks it pending: Verify each mapped pair has a documented equivalence rationale.

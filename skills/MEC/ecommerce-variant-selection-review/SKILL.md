@@ -3,9 +3,9 @@ id: MEC-002
 name: ecommerce-variant-selection-review
 domain: E-commerce Customer Experience
 subdomain: Design
-version: 1.0
-description: Product variant selection review using supplied evidence and explicit acceptance checks; use when preparing a product variant selection review deliverable.
-triggers: ["help me with product variant selection review", "prepare a product variant selection review deliverable", "review our product variant selection review evidence", "create a product variant selection review action plan", "check this product variant selection review decision"]
+version: 1.1
+description: Guide product variant selection review when working from variant attributes, availability states, labels, and selection behavior.
+triggers: ["product variant selection review", "help with product variant selection review", "work on ecommerce variant selection review", "review my product variant selection review", "apply product variant selection review to these materials"]
 not_for: ["Product sizing guide briefing [MEC-003]", "Cart information transparency review [MEC-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product variant selection review
 
 ## Purpose
-Produce a usable product variant selection review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product variant selection review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Recovery: explain that the combination is unavailable and retain the customer's 
 Every selectable purchasable configuration maps to a valid catalog variant.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

@@ -3,10 +3,10 @@ id: GAS-010
 name: assessment-results-communication
 domain: Learning Assessment
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare assessment results explanation from supplied evidence; use when the request concerns results and scoring basis.
 triggers: ["assessment results explanation", "prepare assessment results explanation", "review my assessment results explanation", "help me with assessment results explanation", "turn results and scoring basis into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Analytic rubric design [GAS-001]", "Assessment task validity review [GAS-002]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Finding | Observed evidence | Interpretation limit | Next step
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,12 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Finding | Observed evidence | Interpretation limit | Next step
 Claim identification | Correct labels in supplied work | Limited task sample | Retain and apply in new text
 Evidence explanation | Links missing | Does not imply general inability | Practice explicit reasoning links
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Draft explanation: In this short assessment, Lio identified the claims accurately. The responses did not yet explain how the supporting evidence connects to those claims. This describes the supplied work, not a fixed limit on ability.
+Next practice: choose a new short claim and write a sentence explaining how a specific piece of evidence supports it.
+Review: check the link in the new response before deciding whether further support is needed.
+Next action: The requester or assigned reviewer will complete this task-specific check: Provide a practical next action linked to that need. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Retain and apply in new text.
 ```
 
 **Bad output:**

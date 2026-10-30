@@ -211,7 +211,7 @@
       "name": "search-intent-evidence-map",
       "domain_code": "MSE",
       "subdomain": "Design",
-      "description": "Search intent evidence mapping using supplied evidence and explicit acceptance checks; use when preparing a search intent evidence mapping deliverable.",
+      "description": "Guide search intent evidence mapping when working from query list and representative search-result observations.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -221,7 +221,7 @@
       "name": "search-query-page-assignment",
       "domain_code": "MSE",
       "subdomain": "Design",
-      "description": "Search query to page assignment using supplied evidence and explicit acceptance checks; use when preparing a search query to page assignment deliverable.",
+      "description": "Guide search query to page assignment when working from query groups and an inventory of existing pages.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -231,7 +231,7 @@
       "name": "search-content-brief-design",
       "domain_code": "MSE",
       "subdomain": "Design",
-      "description": "Search content brief design using supplied evidence and explicit acceptance checks; use when preparing a search content brief design deliverable.",
+      "description": "Guide search content brief design when working from validated intent, reader questions, existing assets, and product facts.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -241,7 +241,7 @@
       "name": "search-content-gap-comparison",
       "domain_code": "MSE",
       "subdomain": "Design",
-      "description": "Search content gap comparison using supplied evidence and explicit acceptance checks; use when preparing a search content gap comparison deliverable.",
+      "description": "Guide search content gap comparison when working from target reader task, own-page text, and relevant comparison pages.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -251,7 +251,7 @@
       "name": "search-article-refresh-triage",
       "domain_code": "MSE",
       "subdomain": "Design",
-      "description": "Search article refresh triage using supplied evidence and explicit acceptance checks; use when preparing a search article refresh triage deliverable.",
+      "description": "Guide search article refresh triage when working from existing article, dated claims, current business context, and observed issues.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -261,7 +261,7 @@
       "name": "search-content-cannibalization-review",
       "domain_code": "MSE",
       "subdomain": "Design",
-      "description": "Search content overlap review using supplied evidence and explicit acceptance checks; use when preparing a search content overlap review deliverable.",
+      "description": "Guide search content overlap review when working from page purposes, query associations, and supplied performance observations.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -271,7 +271,7 @@
       "name": "search-heading-outline-repair",
       "domain_code": "MSE",
       "subdomain": "Design",
-      "description": "Search heading outline repair using supplied evidence and explicit acceptance checks; use when preparing a search heading outline repair deliverable.",
+      "description": "Guide search heading outline repair when working from page text, current headings, and intended reader sequence.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -281,7 +281,7 @@
       "name": "search-faq-evidence-selection",
       "domain_code": "MSE",
       "subdomain": "Design",
-      "description": "Search question section selection using supplied evidence and explicit acceptance checks; use when preparing a search question section selection deliverable.",
+      "description": "Guide search question section selection when working from customer questions, support notes, and existing page answers.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -291,7 +291,7 @@
       "name": "search-content-consolidation-plan",
       "domain_code": "MSE",
       "subdomain": "Design",
-      "description": "Search content consolidation planning using supplied evidence and explicit acceptance checks; use when preparing a search content consolidation planning deliverable.",
+      "description": "Guide search content consolidation planning when working from candidate pages, unique content inventory, inbound dependencies, and target page purpose.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -301,7 +301,7 @@
       "name": "search-editorial-claim-audit",
       "domain_code": "MSE",
       "subdomain": "Design",
-      "description": "Search editorial claim auditing using supplied evidence and explicit acceptance checks; use when preparing a search editorial claim auditing deliverable.",
+      "description": "Guide search editorial claim auditing when working from draft text and the evidence supporting its claims.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -311,7 +311,7 @@
       "name": "search-navigation-task-map",
       "domain_code": "MAR",
       "subdomain": "Design",
-      "description": "Search navigation task mapping using supplied evidence and explicit acceptance checks; use when preparing a search navigation task mapping deliverable.",
+      "description": "Guide search navigation task mapping when working from page inventory, navigation labels, and common visitor tasks.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -321,7 +321,7 @@
       "name": "search-internal-link-opportunity-map",
       "domain_code": "MAR",
       "subdomain": "Design",
-      "description": "Search internal link opportunity mapping using supplied evidence and explicit acceptance checks; use when preparing a search internal link opportunity mapping deliverable.",
+      "description": "Guide search internal link opportunity mapping when working from source-page content and destination-page purposes.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -331,7 +331,7 @@
       "name": "search-orphan-page-review",
       "domain_code": "MAR",
       "subdomain": "Design",
-      "description": "Search isolated page review using supplied evidence and explicit acceptance checks; use when preparing a search isolated page review deliverable.",
+      "description": "Guide search isolated page review when working from page inventory and supplied internal-link records.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -341,7 +341,7 @@
       "name": "search-page-template-purpose-review",
       "domain_code": "MAR",
       "subdomain": "Design",
-      "description": "Search page template purpose review using supplied evidence and explicit acceptance checks; use when preparing a search page template purpose review deliverable.",
+      "description": "Guide search page template purpose review when working from representative pages, template sections, and page-level reader tasks.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -351,7 +351,7 @@
       "name": "search-breadcrumb-plan",
       "domain_code": "MAR",
       "subdomain": "Design",
-      "description": "Search breadcrumb planning using supplied evidence and explicit acceptance checks; use when preparing a search breadcrumb planning deliverable.",
+      "description": "Guide search breadcrumb planning when working from site hierarchy and representative multi-category pages.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -361,7 +361,7 @@
       "name": "search-category-page-boundary-plan",
       "domain_code": "MAR",
       "subdomain": "Design",
-      "description": "Search category page boundary planning using supplied evidence and explicit acceptance checks; use when preparing a search category page boundary planning deliverable.",
+      "description": "Guide search category page boundary planning when working from catalog taxonomy, item attributes, and proposed category pages.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -371,7 +371,7 @@
       "name": "search-faceted-navigation-review-brief",
       "domain_code": "MAR",
       "subdomain": "Design",
-      "description": "Search filter navigation review brief using supplied evidence and explicit acceptance checks; use when preparing a search filter navigation review brief deliverable.",
+      "description": "Guide search filter navigation review brief when working from filter combinations, discovery goals, and supplied site behavior.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -381,7 +381,7 @@
       "name": "search-migration-content-inventory",
       "domain_code": "MAR",
       "subdomain": "Design",
-      "description": "Search migration content inventory using supplied evidence and explicit acceptance checks; use when preparing a search migration content inventory deliverable.",
+      "description": "Guide search migration content inventory when working from old and proposed page lists, content ownership, and known dependencies.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -391,7 +391,7 @@
       "name": "search-url-label-governance",
       "domain_code": "MAR",
       "subdomain": "Design",
-      "description": "Search page address naming governance using supplied evidence and explicit acceptance checks; use when preparing a search page address naming governance deliverable.",
+      "description": "Guide search page address naming governance when working from proposed page addresses and naming conventions.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -401,7 +401,7 @@
       "name": "search-site-section-launch-review",
       "domain_code": "MAR",
       "subdomain": "Design",
-      "description": "Search site section launch review using supplied evidence and explicit acceptance checks; use when preparing a search site section launch review deliverable.",
+      "description": "Guide search site section launch review when working from new section inventory, navigation plan, content readiness, and owner sign-offs.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -411,7 +411,7 @@
       "name": "local-business-fact-sheet",
       "domain_code": "MSL",
       "subdomain": "Design",
-      "description": "Local business fact sheet preparation using supplied evidence and explicit acceptance checks; use when preparing a local business fact sheet preparation deliverable.",
+      "description": "Guide local business fact sheet preparation when working from verified business name, location, contact information, and service details.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -421,7 +421,7 @@
       "name": "local-profile-eligibility-checklist",
       "domain_code": "MSL",
       "subdomain": "Design",
-      "description": "Local profile eligibility review planning using supplied evidence and explicit acceptance checks; use when preparing a local profile eligibility review planning deliverable.",
+      "description": "Guide local profile eligibility review planning when working from business model, customer-contact arrangement, locations, and intended platform.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -431,7 +431,7 @@
       "name": "local-hours-consistency-review",
       "domain_code": "MSL",
       "subdomain": "Design",
-      "description": "Local opening-hours consistency review using supplied evidence and explicit acceptance checks; use when preparing a local opening-hours consistency review deliverable.",
+      "description": "Guide local opening-hours consistency review when working from regular hours, exceptions, location records, and staffed-service windows.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -441,7 +441,7 @@
       "name": "local-location-page-brief",
       "domain_code": "MSL",
       "subdomain": "Design",
-      "description": "Local location page briefing using supplied evidence and explicit acceptance checks; use when preparing a local location page briefing deliverable.",
+      "description": "Guide local location page briefing when working from location-specific services, access details, contact facts, and authentic supporting material.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -451,7 +451,7 @@
       "name": "local-service-area-description",
       "domain_code": "MSL",
       "subdomain": "Design",
-      "description": "Local service-area description planning using supplied evidence and explicit acceptance checks; use when preparing a local service-area description planning deliverable.",
+      "description": "Guide local service-area description planning when working from actual service coverage, travel constraints, and customer booking process.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -461,7 +461,7 @@
       "name": "local-review-response-drafting",
       "domain_code": "MSL",
       "subdomain": "Design",
-      "description": "Local review response drafting using supplied evidence and explicit acceptance checks; use when preparing a local review response drafting deliverable.",
+      "description": "Guide local review response drafting when working from review text, verified incident facts, privacy constraints, and support route.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -471,7 +471,7 @@
       "name": "local-review-theme-analysis",
       "domain_code": "MSL",
       "subdomain": "Design",
-      "description": "Local review theme analysis using supplied evidence and explicit acceptance checks; use when preparing a local review theme analysis deliverable.",
+      "description": "Guide local review theme analysis when working from review sample, dates, locations, and known sampling limits.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -481,7 +481,7 @@
       "name": "local-listing-duplicate-triage",
       "domain_code": "MSL",
       "subdomain": "Design",
-      "description": "Local listing duplicate triage using supplied evidence and explicit acceptance checks; use when preparing a local listing duplicate triage deliverable.",
+      "description": "Guide local listing duplicate triage when working from candidate listing records, business identity evidence, and ownership details.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -491,7 +491,7 @@
       "name": "local-profile-change-control",
       "domain_code": "MSL",
       "subdomain": "Design",
-      "description": "Local profile change control planning using supplied evidence and explicit acceptance checks; use when preparing a local profile change control planning deliverable.",
+      "description": "Guide local profile change control planning when working from requested edits, verified source facts, owner permissions, and current profile snapshot.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -501,7 +501,7 @@
       "name": "local-customer-access-audit",
       "domain_code": "MSL",
       "subdomain": "Design",
-      "description": "Local customer access information audit using supplied evidence and explicit acceptance checks; use when preparing a local customer access information audit deliverable.",
+      "description": "Guide local customer access information audit when working from directions, arrival instructions, accessibility statements, and verified site facts.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -511,7 +511,7 @@
       "name": "marketing-metric-definition-sheet",
       "domain_code": "MME",
       "subdomain": "Design",
-      "description": "Marketing metric definition design using supplied evidence and explicit acceptance checks; use when preparing a marketing metric definition design deliverable.",
+      "description": "Guide marketing metric definition design when working from business questions, available events, and current report labels.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -521,7 +521,7 @@
       "name": "marketing-funnel-leakage-review",
       "domain_code": "MME",
       "subdomain": "Design",
-      "description": "Marketing funnel transition review using supplied evidence and explicit acceptance checks; use when preparing a marketing funnel transition review deliverable.",
+      "description": "Guide marketing funnel transition review when working from stage definitions, counts, time windows, and population rules.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -531,7 +531,7 @@
       "name": "campaign-tracking-brief",
       "domain_code": "MME",
       "subdomain": "Design",
-      "description": "Campaign tracking brief design using supplied evidence and explicit acceptance checks; use when preparing a campaign tracking brief design deliverable.",
+      "description": "Guide campaign tracking brief design when working from campaign journey, desired actions, and available measurement systems.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -541,7 +541,7 @@
       "name": "marketing-dashboard-decision-map",
       "domain_code": "MME",
       "subdomain": "Design",
-      "description": "Marketing dashboard decision mapping using supplied evidence and explicit acceptance checks; use when preparing a marketing dashboard decision mapping deliverable.",
+      "description": "Guide marketing dashboard decision mapping when working from current dashboard, stakeholder decisions, and metric definitions.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -551,7 +551,7 @@
       "name": "campaign-performance-comparison",
       "domain_code": "MME",
       "subdomain": "Design",
-      "description": "Campaign performance comparison using supplied evidence and explicit acceptance checks; use when preparing a campaign performance comparison deliverable.",
+      "description": "Guide campaign performance comparison when working from campaign outcomes, audience definitions, periods, and delivery constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -561,7 +561,7 @@
       "name": "marketing-attribution-caveat-review",
       "domain_code": "MME",
       "subdomain": "Design",
-      "description": "Marketing attribution interpretation review using supplied evidence and explicit acceptance checks; use when preparing a marketing attribution interpretation review deliverable.",
+      "description": "Guide marketing attribution interpretation review when working from attributed outcome report, attribution settings, and known measurement gaps.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -571,7 +571,7 @@
       "name": "marketing-experiment-readout",
       "domain_code": "MME",
       "subdomain": "Design",
-      "description": "Marketing experiment readout preparation using supplied evidence and explicit acceptance checks; use when preparing a marketing experiment readout preparation deliverable.",
+      "description": "Guide marketing experiment readout preparation when working from experiment plan, assignment method, outcomes, exclusions, and stopping history.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -581,7 +581,7 @@
       "name": "marketing-data-discrepancy-triage",
       "domain_code": "MME",
       "subdomain": "Design",
-      "description": "Marketing data discrepancy triage using supplied evidence and explicit acceptance checks; use when preparing a marketing data discrepancy triage deliverable.",
+      "description": "Guide marketing data discrepancy triage when working from conflicting reports, definitions, extraction times, and filters.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -591,7 +591,7 @@
       "name": "marketing-cohort-retention-brief",
       "domain_code": "MME",
       "subdomain": "Design",
-      "description": "Marketing cohort retention analysis brief using supplied evidence and explicit acceptance checks; use when preparing a marketing cohort retention analysis brief deliverable.",
+      "description": "Guide acquisition campaign retention decision brief when working from campaign acquisition cohorts, offer promises, purchase occasions, repeat opportunities, and comparable retention observations.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -601,7 +601,7 @@
       "name": "marketing-report-action-summary",
       "domain_code": "MME",
       "subdomain": "Design",
-      "description": "Marketing report action summarization using supplied evidence and explicit acceptance checks; use when preparing a marketing report action summarization deliverable.",
+      "description": "Guide marketing report action summarization when working from reviewed findings, confidence levels, owners, and upcoming decisions.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -611,7 +611,7 @@
       "name": "customer-interview-guide-design",
       "domain_code": "MRE",
       "subdomain": "Design",
-      "description": "Customer interview guide design using supplied evidence and explicit acceptance checks; use when preparing a customer interview guide design deliverable.",
+      "description": "Guide customer interview guide design when working from research decision, participant profile, and unknown assumptions.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -621,7 +621,7 @@
       "name": "research-participant-screening",
       "domain_code": "MRE",
       "subdomain": "Design",
-      "description": "Research participant screening design using supplied evidence and explicit acceptance checks; use when preparing a research participant screening design deliverable.",
+      "description": "Guide research participant screening design when working from target behavior, inclusion criteria, exclusions, and recruitment channels.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -631,7 +631,7 @@
       "name": "customer-interview-note-synthesis",
       "domain_code": "MRE",
       "subdomain": "Design",
-      "description": "Customer interview note synthesis using supplied evidence and explicit acceptance checks; use when preparing a customer interview note synthesis deliverable.",
+      "description": "Guide customer interview note synthesis when working from interview notes, participant context, and research questions.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -641,7 +641,7 @@
       "name": "survey-question-repair",
       "domain_code": "MRE",
       "subdomain": "Design",
-      "description": "Survey question repair using supplied evidence and explicit acceptance checks; use when preparing a survey question repair deliverable.",
+      "description": "Guide survey question repair when working from draft questions, answer options, and intended analysis.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -651,7 +651,7 @@
       "name": "research-plan-method-selection",
       "domain_code": "MRE",
       "subdomain": "Design",
-      "description": "Research method selection brief using supplied evidence and explicit acceptance checks; use when preparing a research method selection brief deliverable.",
+      "description": "Guide research method selection brief when working from decision uncertainty, evidence needed, access constraints, and timeline.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -661,7 +661,7 @@
       "name": "customer-problem-statement-review",
       "domain_code": "MRE",
       "subdomain": "Design",
-      "description": "Customer problem statement review using supplied evidence and explicit acceptance checks; use when preparing a customer problem statement review deliverable.",
+      "description": "Guide customer problem statement review when working from research observations and proposed problem statements.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -671,7 +671,7 @@
       "name": "research-evidence-confidence-review",
       "domain_code": "MRE",
       "subdomain": "Design",
-      "description": "Research evidence confidence review using supplied evidence and explicit acceptance checks; use when preparing a research evidence confidence review deliverable.",
+      "description": "Guide research evidence confidence review when working from findings, source material, recruitment notes, and contradictory cases.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -681,7 +681,7 @@
       "name": "customer-observation-protocol",
       "domain_code": "MRE",
       "subdomain": "Design",
-      "description": "Customer task observation protocol using supplied evidence and explicit acceptance checks; use when preparing a customer task observation protocol deliverable.",
+      "description": "Guide customer task observation protocol when working from target task, environment, participant arrangements, and research decision.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -691,7 +691,7 @@
       "name": "market-research-source-triage",
       "domain_code": "MRE",
       "subdomain": "Design",
-      "description": "Market research source triage using supplied evidence and explicit acceptance checks; use when preparing a market research source triage deliverable.",
+      "description": "Guide market research source triage when working from candidate sources, decision questions, and required market definitions.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -701,7 +701,7 @@
       "name": "research-to-opportunity-handoff",
       "domain_code": "MRE",
       "subdomain": "Design",
-      "description": "Research opportunity handoff using supplied evidence and explicit acceptance checks; use when preparing a research opportunity handoff deliverable.",
+      "description": "Guide research opportunity handoff when working from reviewed findings, unresolved questions, and product team decision context.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -711,7 +711,7 @@
       "name": "campaign-objective-brief",
       "domain_code": "MCA",
       "subdomain": "Design",
-      "description": "Campaign objective briefing using supplied evidence and explicit acceptance checks; use when preparing a campaign objective briefing deliverable.",
+      "description": "Guide campaign objective briefing when working from business objective, audience, offer, and desired customer action.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -721,7 +721,7 @@
       "name": "campaign-audience-message-matrix",
       "domain_code": "MCA",
       "subdomain": "Design",
-      "description": "Campaign audience message mapping using supplied evidence and explicit acceptance checks; use when preparing a campaign audience message mapping deliverable.",
+      "description": "Guide campaign audience message mapping when working from audience groups, needs, offer facts, and proof assets.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -731,7 +731,7 @@
       "name": "campaign-channel-role-plan",
       "domain_code": "MCA",
       "subdomain": "Design",
-      "description": "Campaign channel role planning using supplied evidence and explicit acceptance checks; use when preparing a campaign channel role planning deliverable.",
+      "description": "Guide campaign channel role planning when working from customer journey, available channels, audience access, and campaign objective.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -741,7 +741,7 @@
       "name": "campaign-creative-test-matrix",
       "domain_code": "MCA",
       "subdomain": "Design",
-      "description": "Campaign creative test matrix design using supplied evidence and explicit acceptance checks; use when preparing a campaign creative test matrix design deliverable.",
+      "description": "Guide campaign creative test matrix design when working from message hypotheses, creative variants, measurement plan, and constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -751,7 +751,7 @@
       "name": "campaign-offer-consistency-audit",
       "domain_code": "MCA",
       "subdomain": "Design",
-      "description": "Campaign offer consistency auditing using supplied evidence and explicit acceptance checks; use when preparing a campaign offer consistency auditing deliverable.",
+      "description": "Guide campaign offer consistency auditing when working from ads, landing page, offer terms, and fulfillment facts.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -761,7 +761,7 @@
       "name": "campaign-launch-readiness-review",
       "domain_code": "MCA",
       "subdomain": "Design",
-      "description": "Campaign launch readiness review using supplied evidence and explicit acceptance checks; use when preparing a campaign launch readiness review deliverable.",
+      "description": "Guide campaign launch readiness review when working from approved assets, destinations, tracking plan, owner assignments, and dependencies.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -771,7 +771,7 @@
       "name": "campaign-calendar-dependency-plan",
       "domain_code": "MCA",
       "subdomain": "Design",
-      "description": "Campaign calendar dependency planning using supplied evidence and explicit acceptance checks; use when preparing a campaign calendar dependency planning deliverable.",
+      "description": "Guide campaign calendar dependency planning when working from asset list, approvals, channel dates, and production dependencies.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -781,7 +781,7 @@
       "name": "campaign-landing-message-match",
       "domain_code": "MCA",
       "subdomain": "Design",
-      "description": "Campaign landing message match review using supplied evidence and explicit acceptance checks; use when preparing a campaign landing message match review deliverable.",
+      "description": "Guide campaign landing message match review when working from source creative, landing copy, offer facts, and intended action.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -791,7 +791,7 @@
       "name": "campaign-postmortem-facilitation",
       "domain_code": "MCA",
       "subdomain": "Design",
-      "description": "Campaign postmortem preparation using supplied evidence and explicit acceptance checks; use when preparing a campaign postmortem preparation deliverable.",
+      "description": "Guide campaign postmortem preparation when working from original plan, actual execution, outcome data, and incident notes.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -801,7 +801,7 @@
       "name": "campaign-contingency-message-plan",
       "domain_code": "MCA",
       "subdomain": "Design",
-      "description": "Campaign contingency message planning using supplied evidence and explicit acceptance checks; use when preparing a campaign contingency message planning deliverable.",
+      "description": "Guide campaign contingency message planning when working from credible campaign disruptions, offer obligations, and response ownership.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -811,7 +811,7 @@
       "name": "email-welcome-sequence-plan",
       "domain_code": "MEM",
       "subdomain": "Design",
-      "description": "Email welcome sequence planning using supplied evidence and explicit acceptance checks; use when preparing a email welcome sequence planning deliverable.",
+      "description": "Guide email welcome sequence planning when working from signup promise, recipient state, available content, and desired first success.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -821,7 +821,7 @@
       "name": "email-segmentation-rule-review",
       "domain_code": "MEM",
       "subdomain": "Design",
-      "description": "Email segmentation rule review using supplied evidence and explicit acceptance checks; use when preparing a email segmentation rule review deliverable.",
+      "description": "Guide email segmentation rule review when working from segment definitions, available attributes, eligibility rules, and campaign purpose.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -831,7 +831,7 @@
       "name": "email-subject-preheader-review",
       "domain_code": "MEM",
       "subdomain": "Design",
-      "description": "Email subject and preheader review using supplied evidence and explicit acceptance checks; use when preparing a email subject and preheader review deliverable.",
+      "description": "Guide email subject and preheader review when working from message body, subject candidates, preheaders, and audience expectations.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -841,7 +841,7 @@
       "name": "email-single-action-edit",
       "domain_code": "MEM",
       "subdomain": "Design",
-      "description": "Email primary-action editing using supplied evidence and explicit acceptance checks; use when preparing a email primary-action editing deliverable.",
+      "description": "Guide email primary-action editing when working from draft message, intended action, destination, and essential supporting facts.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -851,7 +851,7 @@
       "name": "email-reactivation-brief",
       "domain_code": "MEM",
       "subdomain": "Design",
-      "description": "Email reactivation briefing using supplied evidence and explicit acceptance checks; use when preparing a email reactivation briefing deliverable.",
+      "description": "Guide email reactivation briefing when working from definition of inactivity, recipient permissions, prior relationship, and available value.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -861,7 +861,7 @@
       "name": "email-transactional-content-review",
       "domain_code": "MEM",
       "subdomain": "Design",
-      "description": "Transactional email content review using supplied evidence and explicit acceptance checks; use when preparing a transactional email content review deliverable.",
+      "description": "Guide transactional email content review when working from trigger event, required recipient information, message draft, and support process.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -871,7 +871,7 @@
       "name": "email-send-readiness-check",
       "domain_code": "MEM",
       "subdomain": "Design",
-      "description": "Email send readiness review using supplied evidence and explicit acceptance checks; use when preparing a email send readiness review deliverable.",
+      "description": "Guide email send readiness review when working from approved copy, audience rules, exclusions, links, and sender details.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -881,7 +881,7 @@
       "name": "email-journey-collision-review",
       "domain_code": "MEM",
       "subdomain": "Design",
-      "description": "Email journey collision review using supplied evidence and explicit acceptance checks; use when preparing a email journey collision review deliverable.",
+      "description": "Guide email journey collision review when working from active journeys, entry triggers, exclusions, and message priorities.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -891,7 +891,7 @@
       "name": "email-feedback-theme-review",
       "domain_code": "MEM",
       "subdomain": "Design",
-      "description": "Email feedback theme review using supplied evidence and explicit acceptance checks; use when preparing a email feedback theme review deliverable.",
+      "description": "Guide email feedback theme review when working from reply samples, complaint categories, campaign context, and privacy limits.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -901,7 +901,7 @@
       "name": "email-preference-center-content",
       "domain_code": "MEM",
       "subdomain": "Design",
-      "description": "Email preference center content design using supplied evidence and explicit acceptance checks; use when preparing a email preference center content design deliverable.",
+      "description": "Guide email preference center content design when working from message categories, actual subscription controls, and verified policy requirements.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -911,7 +911,7 @@
       "name": "brand-voice-operational-guide",
       "domain_code": "MBR",
       "subdomain": "Design",
-      "description": "Brand voice operational guide design using supplied evidence and explicit acceptance checks; use when preparing a brand voice operational guide design deliverable.",
+      "description": "Guide brand voice operational guide design when working from approved copy samples, audience context, and undesirable examples.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -921,7 +921,7 @@
       "name": "brand-message-hierarchy",
       "domain_code": "MBR",
       "subdomain": "Design",
-      "description": "Brand message hierarchy design using supplied evidence and explicit acceptance checks; use when preparing a brand message hierarchy design deliverable.",
+      "description": "Guide brand message hierarchy design when working from audience need, supported benefits, proof assets, and offer facts.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -931,7 +931,7 @@
       "name": "commercial-copy-claim-substantiation",
       "domain_code": "MBR",
       "subdomain": "Design",
-      "description": "Commercial copy claim substantiation review using supplied evidence and explicit acceptance checks; use when preparing a commercial copy claim substantiation review deliverable.",
+      "description": "Guide commercial copy claim substantiation review when working from draft copy, claim evidence, audience, and approved comparison scope.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -941,7 +941,7 @@
       "name": "commercial-case-study-outline",
       "domain_code": "MBR",
       "subdomain": "Design",
-      "description": "Commercial case study outline design using supplied evidence and explicit acceptance checks; use when preparing a commercial case study outline design deliverable.",
+      "description": "Guide commercial case study outline design when working from customer-approved facts, situation, intervention, outcomes, and permission constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -951,7 +951,7 @@
       "name": "commercial-editorial-calendar",
       "domain_code": "MBR",
       "subdomain": "Design",
-      "description": "Commercial editorial calendar planning using supplied evidence and explicit acceptance checks; use when preparing a commercial editorial calendar planning deliverable.",
+      "description": "Guide commercial editorial calendar planning when working from audience questions, campaign commitments, production capacity, and asset dependencies.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -961,7 +961,7 @@
       "name": "commercial-content-repurposing-plan",
       "domain_code": "MBR",
       "subdomain": "Design",
-      "description": "Commercial content repurposing planning using supplied evidence and explicit acceptance checks; use when preparing a commercial content repurposing planning deliverable.",
+      "description": "Guide commercial content repurposing planning when working from source asset, verified claims, target channels, and audience needs.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -971,7 +971,7 @@
       "name": "commercial-headline-alternatives",
       "domain_code": "MBR",
       "subdomain": "Design",
-      "description": "Commercial headline alternative drafting using supplied evidence and explicit acceptance checks; use when preparing a commercial headline alternative drafting deliverable.",
+      "description": "Guide commercial headline alternative drafting when working from reader need, page promise, verified benefits, and tone constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -981,7 +981,7 @@
       "name": "commercial-style-consistency-review",
       "domain_code": "MBR",
       "subdomain": "Design",
-      "description": "Commercial style consistency review using supplied evidence and explicit acceptance checks; use when preparing a commercial style consistency review deliverable.",
+      "description": "Guide commercial style consistency review when working from style rules, draft copy, audience, and approved terminology.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -991,7 +991,7 @@
       "name": "commercial-asset-reuse-inventory",
       "domain_code": "MBR",
       "subdomain": "Design",
-      "description": "Commercial asset reuse inventory using supplied evidence and explicit acceptance checks; use when preparing a commercial asset reuse inventory deliverable.",
+      "description": "Guide commercial asset reuse inventory when working from existing assets, permissions, claim dates, and upcoming needs.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1001,7 +1001,7 @@
       "name": "commercial-brief-to-review-rubric",
       "domain_code": "MBR",
       "subdomain": "Design",
-      "description": "Commercial creative review rubric design using supplied evidence and explicit acceptance checks; use when preparing a commercial creative review rubric design deliverable.",
+      "description": "Guide commercial creative review rubric design when working from creative brief, required facts, audience action, and constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1011,7 +1011,7 @@
       "name": "sales-discovery-question-plan",
       "domain_code": "MSA",
       "subdomain": "Design",
-      "description": "Sales discovery question planning using supplied evidence and explicit acceptance checks; use when preparing a sales discovery question planning deliverable.",
+      "description": "Guide sales discovery question planning when working from customer context, meeting objective, known needs, and product boundaries.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1021,7 +1021,7 @@
       "name": "sales-qualification-evidence-review",
       "domain_code": "MSA",
       "subdomain": "Design",
-      "description": "Sales qualification evidence review using supplied evidence and explicit acceptance checks; use when preparing a sales qualification evidence review deliverable.",
+      "description": "Guide sales qualification evidence review when working from opportunity notes, required fit criteria, and decision-process evidence.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1031,7 +1031,7 @@
       "name": "sales-demo-storyboard",
       "domain_code": "MSA",
       "subdomain": "Design",
-      "description": "Sales demonstration storyboard design using supplied evidence and explicit acceptance checks; use when preparing a sales demonstration storyboard design deliverable.",
+      "description": "Guide sales demonstration storyboard design when working from buyer workflow, desired outcome, product capabilities, and demo constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1041,7 +1041,7 @@
       "name": "sales-objection-response-map",
       "domain_code": "MSA",
       "subdomain": "Design",
-      "description": "Sales objection response mapping using supplied evidence and explicit acceptance checks; use when preparing a sales objection response mapping deliverable.",
+      "description": "Guide sales objection response mapping when working from buyer objections, exact wording, product facts, and evidence assets.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1051,7 +1051,7 @@
       "name": "sales-follow-up-draft",
       "domain_code": "MSA",
       "subdomain": "Design",
-      "description": "Sales follow-up draft preparation using supplied evidence and explicit acceptance checks; use when preparing a sales follow-up draft preparation deliverable.",
+      "description": "Guide sales follow-up draft preparation when working from meeting notes, agreed next steps, promised materials, and recipients.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1061,7 +1061,7 @@
       "name": "sales-proposal-scope-outline",
       "domain_code": "MSA",
       "subdomain": "Design",
-      "description": "Sales proposal scope outlining using supplied evidence and explicit acceptance checks; use when preparing a sales proposal scope outlining deliverable.",
+      "description": "Guide sales proposal scope outlining when working from buyer requirements, deliverables, exclusions, assumptions, and approval constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1071,7 +1071,7 @@
       "name": "sales-mutual-action-plan",
       "domain_code": "MSA",
       "subdomain": "Design",
-      "description": "Sales mutual action plan drafting using supplied evidence and explicit acceptance checks; use when preparing a sales mutual action plan drafting deliverable.",
+      "description": "Guide sales mutual action plan drafting when working from agreed buyer and seller steps, decision milestones, and dependencies.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1081,7 +1081,7 @@
       "name": "sales-handoff-to-delivery",
       "domain_code": "MSA",
       "subdomain": "Design",
-      "description": "Sales to delivery handoff preparation using supplied evidence and explicit acceptance checks; use when preparing a sales to delivery handoff preparation deliverable.",
+      "description": "Guide sales to delivery handoff preparation when working from signed scope or approved commitments, customer context, and implementation notes.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1091,7 +1091,7 @@
       "name": "sales-loss-reason-analysis",
       "domain_code": "MSA",
       "subdomain": "Design",
-      "description": "Sales loss reason analysis using supplied evidence and explicit acceptance checks; use when preparing a sales loss reason analysis deliverable.",
+      "description": "Guide sales loss reason analysis when working from closed opportunity notes, buyer feedback, alternatives, and process history.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1101,7 +1101,7 @@
       "name": "sales-collateral-gap-review",
       "domain_code": "MSA",
       "subdomain": "Design",
-      "description": "Sales collateral gap review using supplied evidence and explicit acceptance checks; use when preparing a sales collateral gap review deliverable.",
+      "description": "Guide sales collateral gap review when working from buyer questions, existing assets, sales stages, and approved claims.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1111,7 +1111,7 @@
       "name": "ecommerce-product-page-information-audit",
       "domain_code": "MEC",
       "subdomain": "Design",
-      "description": "Product page information auditing using supplied evidence and explicit acceptance checks; use when preparing a product page information auditing deliverable.",
+      "description": "Guide product page information auditing when working from product facts, customer questions, variant details, and page content.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1121,7 +1121,7 @@
       "name": "ecommerce-variant-selection-review",
       "domain_code": "MEC",
       "subdomain": "Design",
-      "description": "Product variant selection review using supplied evidence and explicit acceptance checks; use when preparing a product variant selection review deliverable.",
+      "description": "Guide product variant selection review when working from variant attributes, availability states, labels, and selection behavior.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1131,7 +1131,7 @@
       "name": "ecommerce-size-guide-brief",
       "domain_code": "MEC",
       "subdomain": "Design",
-      "description": "Product sizing guide briefing using supplied evidence and explicit acceptance checks; use when preparing a product sizing guide briefing deliverable.",
+      "description": "Guide product sizing guide briefing when working from verified measurements, fit definitions, customer questions, and product categories.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1141,7 +1141,7 @@
       "name": "ecommerce-cart-transparency-review",
       "domain_code": "MEC",
       "subdomain": "Design",
-      "description": "Cart information transparency review using supplied evidence and explicit acceptance checks; use when preparing a cart information transparency review deliverable.",
+      "description": "Guide cart information transparency review when working from cart display, verified pricing components, shipping rules, and availability.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1151,7 +1151,7 @@
       "name": "ecommerce-checkout-friction-review",
       "domain_code": "MEC",
       "subdomain": "Design",
-      "description": "Checkout friction review planning using supplied evidence and explicit acceptance checks; use when preparing a checkout friction review planning deliverable.",
+      "description": "Guide checkout friction review planning when working from checkout steps, field purposes, observed issues, and order requirements.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1161,7 +1161,7 @@
       "name": "ecommerce-product-comparison-table",
       "domain_code": "MEC",
       "subdomain": "Design",
-      "description": "Product comparison table design using supplied evidence and explicit acceptance checks; use when preparing a product comparison table design deliverable.",
+      "description": "Guide product comparison table design when working from candidate products, verified attributes, audience needs, and meaningful tradeoffs.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1171,7 +1171,7 @@
       "name": "ecommerce-return-policy-content-review",
       "domain_code": "MEC",
       "subdomain": "Design",
-      "description": "Return process content clarity review using supplied evidence and explicit acceptance checks; use when preparing a return process content clarity review deliverable.",
+      "description": "Guide return process content clarity review when working from approved return policy, customer-facing wording, and operational process.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1181,7 +1181,7 @@
       "name": "ecommerce-postpurchase-message-plan",
       "domain_code": "MEC",
       "subdomain": "Design",
-      "description": "Post-purchase message planning using supplied evidence and explicit acceptance checks; use when preparing a post-purchase message planning deliverable.",
+      "description": "Guide post-purchase message planning when working from order states, customer concerns, verified fulfillment events, and support routes.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1191,7 +1191,7 @@
       "name": "ecommerce-out-of-stock-experience",
       "domain_code": "MEC",
       "subdomain": "Design",
-      "description": "Out-of-stock experience planning using supplied evidence and explicit acceptance checks; use when preparing a out-of-stock experience planning deliverable.",
+      "description": "Guide out-of-stock experience planning when working from inventory states, replenishment evidence, alternatives, and notification capabilities.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1201,7 +1201,7 @@
       "name": "ecommerce-catalog-attribute-cleanup",
       "domain_code": "MEC",
       "subdomain": "Design",
-      "description": "Catalog attribute cleanup planning using supplied evidence and explicit acceptance checks; use when preparing a catalog attribute cleanup planning deliverable.",
+      "description": "Guide catalog attribute cleanup planning when working from product attribute export, definitions, category rules, and known inconsistencies.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1211,7 +1211,7 @@
       "name": "product-task-flow-review",
       "domain_code": "MPU",
       "subdomain": "Design",
-      "description": "Product task flow review using supplied evidence and explicit acceptance checks; use when preparing a product task flow review deliverable.",
+      "description": "Guide product task flow review when working from target task, user role, flow steps, and known constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1221,7 +1221,7 @@
       "name": "product-empty-state-copy",
       "domain_code": "MPU",
       "subdomain": "Design",
-      "description": "Product empty-state content design using supplied evidence and explicit acceptance checks; use when preparing a product empty-state content design deliverable.",
+      "description": "Guide product empty-state content design when working from empty-state causes, user goals, available actions, and interface constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1231,7 +1231,7 @@
       "name": "product-error-message-review",
       "domain_code": "MPU",
       "subdomain": "Design",
-      "description": "Product error message review using supplied evidence and explicit acceptance checks; use when preparing a product error message review deliverable.",
+      "description": "Guide product error message review when working from error conditions, current messages, recovery actions, and sensitive-data constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1241,7 +1241,7 @@
       "name": "product-form-question-audit",
       "domain_code": "MPU",
       "subdomain": "Design",
-      "description": "Product form question audit using supplied evidence and explicit acceptance checks; use when preparing a product form question audit deliverable.",
+      "description": "Guide product form question audit when working from field list, data purposes, user context, and validation requirements.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1251,7 +1251,7 @@
       "name": "product-onboarding-friction-review",
       "domain_code": "MPU",
       "subdomain": "Design",
-      "description": "Product onboarding friction review using supplied evidence and explicit acceptance checks; use when preparing a product onboarding friction review deliverable.",
+      "description": "Guide product onboarding friction review when working from first-use flow, intended first success, user prerequisites, and observed blockers.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1261,7 +1261,7 @@
       "name": "product-prototype-test-scenario",
       "domain_code": "MPU",
       "subdomain": "Design",
-      "description": "Product prototype test scenario design using supplied evidence and explicit acceptance checks; use when preparing a product prototype test scenario design deliverable.",
+      "description": "Guide product prototype test scenario design when working from prototype scope, research question, target role, and task constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1271,7 +1271,7 @@
       "name": "product-feedback-deduplication",
       "domain_code": "MPU",
       "subdomain": "Design",
-      "description": "Product feedback deduplication review using supplied evidence and explicit acceptance checks; use when preparing a product feedback deduplication review deliverable.",
+      "description": "Guide product feedback deduplication review when working from feedback records, user context, timestamps, and issue definitions.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1281,7 +1281,7 @@
       "name": "product-feature-request-reframing",
       "domain_code": "MPU",
       "subdomain": "Design",
-      "description": "Product feature request reframing using supplied evidence and explicit acceptance checks; use when preparing a product feature request reframing deliverable.",
+      "description": "Guide product feature request reframing when working from feature requests, stated user situations, and evidence of unmet needs.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1291,7 +1291,7 @@
       "name": "product-release-note-drafting",
       "domain_code": "MPU",
       "subdomain": "Design",
-      "description": "Product release note drafting using supplied evidence and explicit acceptance checks; use when preparing a product release note drafting deliverable.",
+      "description": "Guide product release note drafting when working from verified changes, affected users, limitations, and migration actions.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1301,7 +1301,7 @@
       "name": "product-design-handoff-checklist",
       "domain_code": "MPU",
       "subdomain": "Design",
-      "description": "Product design handoff preparation using supplied evidence and explicit acceptance checks; use when preparing a product design handoff preparation deliverable.",
+      "description": "Guide product design handoff preparation when working from approved flow, component states, content, and implementation questions.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1311,7 +1311,7 @@
       "name": "startup-problem-hypothesis-card",
       "domain_code": "MSV",
       "subdomain": "Design",
-      "description": "Startup problem hypothesis design using supplied evidence and explicit acceptance checks; use when preparing a startup problem hypothesis design deliverable.",
+      "description": "Guide startup problem hypothesis design when working from target customer, observed problem episodes, and proposed business idea.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1321,7 +1321,7 @@
       "name": "startup-assumption-risk-order",
       "domain_code": "MSV",
       "subdomain": "Design",
-      "description": "Startup assumption risk ordering using supplied evidence and explicit acceptance checks; use when preparing a startup assumption risk ordering deliverable.",
+      "description": "Guide startup assumption risk ordering when working from venture assumptions, dependency relationships, and current evidence.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1331,7 +1331,7 @@
       "name": "startup-customer-commitment-ladder",
       "domain_code": "MSV",
       "subdomain": "Design",
-      "description": "Startup customer commitment evidence mapping using supplied evidence and explicit acceptance checks; use when preparing a startup customer commitment evidence mapping deliverable.",
+      "description": "Guide startup customer commitment evidence mapping when working from customer interactions, requested actions, and observed responses.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1341,7 +1341,7 @@
       "name": "startup-concierge-test-plan",
       "domain_code": "MSV",
       "subdomain": "Design",
-      "description": "Startup concierge test planning using supplied evidence and explicit acceptance checks; use when preparing a startup concierge test planning deliverable.",
+      "description": "Guide startup concierge test planning when working from customer problem, manually deliverable service, constraints, and learning objective.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1351,7 +1351,7 @@
       "name": "startup-landing-page-test-brief",
       "domain_code": "MSV",
       "subdomain": "Design",
-      "description": "Startup landing-page test briefing using supplied evidence and explicit acceptance checks; use when preparing a startup landing-page test briefing deliverable.",
+      "description": "Guide startup landing-page test briefing when working from target audience, offer hypothesis, traffic source, and permitted customer action.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1361,7 +1361,7 @@
       "name": "startup-pilot-scope-design",
       "domain_code": "MSV",
       "subdomain": "Design",
-      "description": "Startup pilot scope design using supplied evidence and explicit acceptance checks; use when preparing a startup pilot scope design deliverable.",
+      "description": "Guide startup pilot scope design when working from customer outcome, pilot resources, success evidence, and operating limits.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1371,7 +1371,7 @@
       "name": "startup-validation-result-review",
       "domain_code": "MSV",
       "subdomain": "Design",
-      "description": "Startup validation result review using supplied evidence and explicit acceptance checks; use when preparing a startup validation result review deliverable.",
+      "description": "Guide startup validation result review when working from original hypothesis, test design, observed actions, and deviations.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1381,7 +1381,7 @@
       "name": "startup-founder-sales-learning-log",
       "domain_code": "MSV",
       "subdomain": "Design",
-      "description": "Startup founder-sales learning log using supplied evidence and explicit acceptance checks; use when preparing a startup founder-sales learning log deliverable.",
+      "description": "Guide startup founder-sales learning log when working from sales conversations, objections, commitments, and buyer context.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1391,7 +1391,7 @@
       "name": "startup-early-adopter-screen",
       "domain_code": "MSV",
       "subdomain": "Design",
-      "description": "Startup early-adopter recruitment screen using supplied evidence and explicit acceptance checks; use when preparing a startup early-adopter recruitment screen deliverable.",
+      "description": "Guide startup early-adopter recruitment screen when working from pilot partner candidates, current workarounds, problem urgency, authorized access, and participation capacity.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1401,7 +1401,7 @@
       "name": "startup-pivot-evidence-brief",
       "domain_code": "MSV",
       "subdomain": "Design",
-      "description": "Startup pivot evidence brief preparation using supplied evidence and explicit acceptance checks; use when preparing a startup pivot evidence brief preparation deliverable.",
+      "description": "Guide startup pivot evidence brief preparation when working from current hypothesis, failed assumptions, alternative direction, and preserved assets.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1411,7 +1411,7 @@
       "name": "startup-service-intake-form",
       "domain_code": "MOP",
       "subdomain": "Design",
-      "description": "Startup service intake design using supplied evidence and explicit acceptance checks; use when preparing a startup service intake design deliverable.",
+      "description": "Guide startup service intake design when working from request types, required decisions, available data, and service boundaries.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1421,7 +1421,7 @@
       "name": "startup-support-triage-rules",
       "domain_code": "MOP",
       "subdomain": "Design",
-      "description": "Startup support triage rule design using supplied evidence and explicit acceptance checks; use when preparing a startup support triage rule design deliverable.",
+      "description": "Guide startup support triage rule design when working from support categories, customer impact, available owners, and existing commitments.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1431,7 +1431,7 @@
       "name": "startup-service-delivery-checklist",
       "domain_code": "MOP",
       "subdomain": "Design",
-      "description": "Startup service delivery checklist design using supplied evidence and explicit acceptance checks; use when preparing a startup service delivery checklist design deliverable.",
+      "description": "Guide startup service delivery checklist design when working from promised deliverables, workflow, known failure modes, and completion evidence.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1441,7 +1441,7 @@
       "name": "startup-vendor-comparison-brief",
       "domain_code": "MOP",
       "subdomain": "Design",
-      "description": "Startup vendor comparison briefing using supplied evidence and explicit acceptance checks; use when preparing a startup vendor comparison briefing deliverable.",
+      "description": "Guide startup vendor comparison briefing when working from required capabilities, operating constraints, vendor evidence, and evaluation criteria.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1451,7 +1451,7 @@
       "name": "startup-vendor-onboarding-checklist",
       "domain_code": "MOP",
       "subdomain": "Design",
-      "description": "Startup vendor onboarding planning using supplied evidence and explicit acceptance checks; use when preparing a startup vendor onboarding planning deliverable.",
+      "description": "Guide startup vendor onboarding planning when working from approved vendor decision, access needs, service owner, and handoff requirements.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1461,7 +1461,7 @@
       "name": "startup-customer-handoff-map",
       "domain_code": "MOP",
       "subdomain": "Design",
-      "description": "Startup customer handoff mapping using supplied evidence and explicit acceptance checks; use when preparing a startup customer handoff mapping deliverable.",
+      "description": "Guide startup customer handoff mapping when working from customer journey stages, owning roles, transfer artifacts, and common gaps.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1471,7 +1471,7 @@
       "name": "startup-process-exception-log",
       "domain_code": "MOP",
       "subdomain": "Design",
-      "description": "Startup process exception log design using supplied evidence and explicit acceptance checks; use when preparing a startup process exception log design deliverable.",
+      "description": "Guide startup process exception log design when working from normal workflow, known exceptions, impact descriptions, and owner roles.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1481,7 +1481,7 @@
       "name": "startup-service-capacity-plan",
       "domain_code": "MOP",
       "subdomain": "Design",
-      "description": "Startup service capacity planning using supplied evidence and explicit acceptance checks; use when preparing a startup service capacity planning deliverable.",
+      "description": "Guide startup service capacity planning when working from recurring service request mix, arrival observations, work-stage effort, rework frequencies, and role availability.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1491,7 +1491,7 @@
       "name": "startup-operating-procedure-draft",
       "domain_code": "MOP",
       "subdomain": "Design",
-      "description": "Startup operating procedure drafting using supplied evidence and explicit acceptance checks; use when preparing a startup operating procedure drafting deliverable.",
+      "description": "Guide startup operating procedure drafting when working from observed workflow, decision points, required artifacts, and exception ownership.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1501,7 +1501,7 @@
       "name": "startup-workflow-retrospective",
       "domain_code": "MOP",
       "subdomain": "Design",
-      "description": "Startup workflow retrospective preparation using supplied evidence and explicit acceptance checks; use when preparing a startup workflow retrospective preparation deliverable.",
+      "description": "Guide startup workflow retrospective preparation when working from recent delivery records, recurring exceptions, cycle delays, and team observations.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1511,7 +1511,7 @@
       "name": "fiction-scene-goal-pressure",
       "domain_code": "MSC",
       "subdomain": "Design",
-      "description": "Fiction scene goal and pressure revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene goal and pressure revision deliverable.",
+      "description": "Guide fiction scene goal and pressure revision when working from scene draft, viewpoint character, immediate goal, and obstacle.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1521,7 +1521,7 @@
       "name": "fiction-scene-viewpoint-consistency",
       "domain_code": "MSC",
       "subdomain": "Design",
-      "description": "Fiction scene viewpoint consistency repair using supplied evidence and explicit acceptance checks; use when preparing a fiction scene viewpoint consistency repair deliverable.",
+      "description": "Guide fiction scene viewpoint consistency repair when working from scene text, selected viewpoint, and allowed narrative distance.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1531,7 +1531,7 @@
       "name": "fiction-dialogue-subtext-revision",
       "domain_code": "MSC",
       "subdomain": "Design",
-      "description": "Fiction dialogue subtext revision using supplied evidence and explicit acceptance checks; use when preparing a fiction dialogue subtext revision deliverable.",
+      "description": "Guide fiction dialogue subtext revision when working from dialogue, character goals, relationship history, and withheld concerns.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1541,7 +1541,7 @@
       "name": "fiction-action-blocking-repair",
       "domain_code": "MSC",
       "subdomain": "Design",
-      "description": "Fiction action blocking repair using supplied evidence and explicit acceptance checks; use when preparing a fiction action blocking repair deliverable.",
+      "description": "Guide fiction action blocking repair when working from action passage, location layout, character positions, and intended outcome.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1551,7 +1551,7 @@
       "name": "fiction-sensory-detail-selection",
       "domain_code": "MSC",
       "subdomain": "Design",
-      "description": "Fiction sensory detail selection using supplied evidence and explicit acceptance checks; use when preparing a fiction sensory detail selection deliverable.",
+      "description": "Guide fiction sensory detail selection when working from scene purpose, viewpoint character, setting, and current descriptive passage.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1561,7 +1561,7 @@
       "name": "fiction-exposition-in-scene",
       "domain_code": "MSC",
       "subdomain": "Design",
-      "description": "Fiction exposition integration using supplied evidence and explicit acceptance checks; use when preparing a fiction exposition integration deliverable.",
+      "description": "Guide fiction exposition integration when working from scene draft, necessary background facts, and immediate dramatic question.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1571,7 +1571,7 @@
       "name": "fiction-scene-opening-revision",
       "domain_code": "MSC",
       "subdomain": "Design",
-      "description": "Fiction scene opening revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene opening revision deliverable.",
+      "description": "Guide fiction scene opening revision when working from scene draft, preceding scene, viewpoint, and first meaningful disturbance.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1581,7 +1581,7 @@
       "name": "fiction-scene-ending-turn",
       "domain_code": "MSC",
       "subdomain": "Design",
-      "description": "Fiction scene ending revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene ending revision deliverable.",
+      "description": "Guide fiction scene ending revision when working from scene goal, outcome, emotional change, and next-scene dependency.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1591,7 +1591,7 @@
       "name": "fiction-emotional-beat-grounding",
       "domain_code": "MSC",
       "subdomain": "Design",
-      "description": "Fiction emotional beat grounding using supplied evidence and explicit acceptance checks; use when preparing a fiction emotional beat grounding deliverable.",
+      "description": "Guide fiction emotional beat grounding when working from scene text, character emotion, trigger, and established behavior.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1601,7 +1601,7 @@
       "name": "fiction-scene-compression",
       "domain_code": "MSC",
       "subdomain": "Design",
-      "description": "Fiction scene compression revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene compression revision deliverable.",
+      "description": "Guide fiction scene compression revision when working from scene draft, indispensable events, character turn, and target pacing.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1611,7 +1611,7 @@
       "name": "fiction-premise-conflict-test",
       "domain_code": "MSS",
       "subdomain": "Design",
-      "description": "Fiction premise conflict testing using supplied evidence and explicit acceptance checks; use when preparing a fiction premise conflict testing deliverable.",
+      "description": "Guide fiction premise conflict testing when working from premise, protagonist goal, opposition, and possible consequence.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1621,7 +1621,7 @@
       "name": "fiction-causal-outline-repair",
       "domain_code": "MSS",
       "subdomain": "Design",
-      "description": "Fiction causal outline repair using supplied evidence and explicit acceptance checks; use when preparing a fiction causal outline repair deliverable.",
+      "description": "Guide fiction causal outline repair when working from ordered story beats, character motivations, and fixed plot events.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1631,7 +1631,7 @@
       "name": "fiction-character-arc-map",
       "domain_code": "MSS",
       "subdomain": "Design",
-      "description": "Fiction character arc mapping using supplied evidence and explicit acceptance checks; use when preparing a fiction character arc mapping deliverable.",
+      "description": "Guide fiction character arc mapping when working from character's initial belief, pressure points, choices, and ending behavior.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1641,7 +1641,7 @@
       "name": "fiction-subplot-integration",
       "domain_code": "MSS",
       "subdomain": "Design",
-      "description": "Fiction subplot integration planning using supplied evidence and explicit acceptance checks; use when preparing a fiction subplot integration planning deliverable.",
+      "description": "Guide fiction subplot integration planning when working from main plot, subplot beats, character relationships, and pacing constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1651,7 +1651,7 @@
       "name": "fiction-reveal-setup-payoff",
       "domain_code": "MSS",
       "subdomain": "Design",
-      "description": "Fiction reveal setup and payoff planning using supplied evidence and explicit acceptance checks; use when preparing a fiction reveal setup and payoff planning deliverable.",
+      "description": "Guide fiction reveal setup and payoff planning when working from planned revelation, earlier clues, viewpoint limits, and desired reader response.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1661,7 +1661,7 @@
       "name": "fiction-stakes-escalation-map",
       "domain_code": "MSS",
       "subdomain": "Design",
-      "description": "Fiction stakes escalation mapping using supplied evidence and explicit acceptance checks; use when preparing a fiction stakes escalation mapping deliverable.",
+      "description": "Guide fiction stakes escalation mapping when working from protagonist goal, sequence of obstacles, and consequences.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1671,7 +1671,7 @@
       "name": "fiction-antagonist-action-plan",
       "domain_code": "MSS",
       "subdomain": "Design",
-      "description": "Fiction antagonist action planning using supplied evidence and explicit acceptance checks; use when preparing a fiction antagonist action planning deliverable.",
+      "description": "Guide fiction antagonist action planning when working from antagonist goal, resources, limits, and protagonist actions.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1681,7 +1681,7 @@
       "name": "fiction-timeline-continuity-review",
       "domain_code": "MSS",
       "subdomain": "Design",
-      "description": "Fiction timeline continuity review using supplied evidence and explicit acceptance checks; use when preparing a fiction timeline continuity review deliverable.",
+      "description": "Guide fiction timeline continuity review when working from scene order, elapsed-time references, travel constraints, and character knowledge.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1691,7 +1691,7 @@
       "name": "fiction-ending-choice-design",
       "domain_code": "MSS",
       "subdomain": "Design",
-      "description": "Fiction ending choice design using supplied evidence and explicit acceptance checks; use when preparing a fiction ending choice design deliverable.",
+      "description": "Guide fiction ending choice design when working from central conflict, protagonist arc, established options, and intended tone.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1701,7 +1701,7 @@
       "name": "fiction-outline-pacing-review",
       "domain_code": "MSS",
       "subdomain": "Design",
-      "description": "Fiction outline pacing review using supplied evidence and explicit acceptance checks; use when preparing a fiction outline pacing review deliverable.",
+      "description": "Guide fiction outline pacing review when working from scene list, scene functions, major turns, and desired reading experience.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1711,7 +1711,7 @@
       "name": "photo-subject-intention-brief",
       "domain_code": "MPH",
       "subdomain": "Design",
-      "description": "Photographic subject intention briefing using supplied evidence and explicit acceptance checks; use when preparing a photographic subject intention briefing deliverable.",
+      "description": "Guide photographic subject intention briefing when working from subject, intended audience, use, and reference observations.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1721,7 +1721,7 @@
       "name": "photo-background-distraction-review",
       "domain_code": "MPH",
       "subdomain": "Design",
-      "description": "Photographic background distraction review using supplied evidence and explicit acceptance checks; use when preparing a photographic background distraction review deliverable.",
+      "description": "Guide photographic background distraction review when working from image or described frame, subject intention, and permissible editing scope.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1731,7 +1731,7 @@
       "name": "photo-light-direction-study",
       "domain_code": "MPH",
       "subdomain": "Design",
-      "description": "Photographic light direction study planning using supplied evidence and explicit acceptance checks; use when preparing a photographic light direction study planning deliverable.",
+      "description": "Guide photographic light direction study planning when working from subject, available light, location, and intended surface or mood emphasis.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1741,7 +1741,7 @@
       "name": "photo-crop-comparison",
       "domain_code": "MPH",
       "subdomain": "Design",
-      "description": "Photographic crop comparison review using supplied evidence and explicit acceptance checks; use when preparing a photographic crop comparison review deliverable.",
+      "description": "Guide photographic crop comparison review when working from source image, intended use, focal subject, and required context.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1751,7 +1751,7 @@
       "name": "photo-shot-list-sequencing",
       "domain_code": "MPH",
       "subdomain": "Design",
-      "description": "Photographic shot list sequencing using supplied evidence and explicit acceptance checks; use when preparing a photographic shot list sequencing deliverable.",
+      "description": "Guide photographic shot list sequencing when working from story objective, subjects, location access, and delivery format.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1761,7 +1761,7 @@
       "name": "photo-contact-sheet-selection",
       "domain_code": "MPH",
       "subdomain": "Design",
-      "description": "Photographic contact sheet selection using supplied evidence and explicit acceptance checks; use when preparing a photographic contact sheet selection deliverable.",
+      "description": "Guide photographic contact sheet selection when working from candidate images, intended use, selection criteria, and technical constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1771,7 +1771,7 @@
       "name": "photo-portrait-session-plan",
       "domain_code": "MPH",
       "subdomain": "Design",
-      "description": "Portrait session planning using supplied evidence and explicit acceptance checks; use when preparing a portrait session planning deliverable.",
+      "description": "Guide portrait session planning when working from subject preferences, intended portrayal, location, and use permissions.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1781,7 +1781,7 @@
       "name": "photo-product-shot-consistency",
       "domain_code": "MPH",
       "subdomain": "Design",
-      "description": "Product photograph consistency planning using supplied evidence and explicit acceptance checks; use when preparing a product photograph consistency planning deliverable.",
+      "description": "Guide product photograph consistency planning when working from product set, display context, reference frame, and truthful presentation requirements.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1791,7 +1791,7 @@
       "name": "photo-visual-story-edit",
       "domain_code": "MPH",
       "subdomain": "Design",
-      "description": "Photographic visual story editing using supplied evidence and explicit acceptance checks; use when preparing a photographic visual story editing deliverable.",
+      "description": "Guide photographic visual story editing when working from image set, story question, audience, and presentation format.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1801,7 +1801,7 @@
       "name": "photo-reshoot-decision-brief",
       "domain_code": "MPH",
       "subdomain": "Design",
-      "description": "Photographic reshoot decision briefing using supplied evidence and explicit acceptance checks; use when preparing a photographic reshoot decision briefing deliverable.",
+      "description": "Guide photographic reshoot decision briefing when working from existing images, delivery requirements, editable issues, and reshoot constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1811,7 +1811,7 @@
       "name": "visual-hierarchy-critique",
       "domain_code": "MVA",
       "subdomain": "Design",
-      "description": "Visual hierarchy critique using supplied evidence and explicit acceptance checks; use when preparing a visual hierarchy critique deliverable.",
+      "description": "Guide visual hierarchy critique when working from composition, primary message, secondary information, and viewing context.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1821,7 +1821,7 @@
       "name": "visual-spacing-grouping-review",
       "domain_code": "MVA",
       "subdomain": "Design",
-      "description": "Visual spacing and grouping review using supplied evidence and explicit acceptance checks; use when preparing a visual spacing and grouping review deliverable.",
+      "description": "Guide visual spacing and grouping review when working from layout, content groups, reading order, and medium.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1831,7 +1831,7 @@
       "name": "visual-color-role-plan",
       "domain_code": "MVA",
       "subdomain": "Design",
-      "description": "Visual color role planning using supplied evidence and explicit acceptance checks; use when preparing a visual color role planning deliverable.",
+      "description": "Guide visual color role planning when working from palette candidates, content roles, medium, and accessibility requirements.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1841,7 +1841,7 @@
       "name": "visual-type-pairing-brief",
       "domain_code": "MVA",
       "subdomain": "Design",
-      "description": "Visual typography pairing brief using supplied evidence and explicit acceptance checks; use when preparing a visual typography pairing brief deliverable.",
+      "description": "Guide visual typography pairing brief when working from content hierarchy, reading context, available typefaces, and licensing constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1851,7 +1851,7 @@
       "name": "visual-reference-board-brief",
       "domain_code": "MVA",
       "subdomain": "Design",
-      "description": "Visual reference board briefing using supplied evidence and explicit acceptance checks; use when preparing a visual reference board briefing deliverable.",
+      "description": "Guide visual reference board briefing when working from project purpose, selected references, asset permissions, and desired observable features.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1861,7 +1861,7 @@
       "name": "visual-poster-composition-plan",
       "domain_code": "MVA",
       "subdomain": "Design",
-      "description": "Visual poster composition planning using supplied evidence and explicit acceptance checks; use when preparing a visual poster composition planning deliverable.",
+      "description": "Guide visual poster composition planning when working from message, audience action, required details, format, and imagery.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1871,7 +1871,7 @@
       "name": "visual-image-text-relationship",
       "domain_code": "MVA",
       "subdomain": "Design",
-      "description": "Visual image and text relationship review using supplied evidence and explicit acceptance checks; use when preparing a visual image and text relationship review deliverable.",
+      "description": "Guide visual image and text relationship review when working from image, headline, supporting copy, and intended interpretation.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1881,7 +1881,7 @@
       "name": "visual-layout-variation-study",
       "domain_code": "MVA",
       "subdomain": "Design",
-      "description": "Visual layout variation study design using supplied evidence and explicit acceptance checks; use when preparing a visual layout variation study design deliverable.",
+      "description": "Guide visual layout variation study design when working from fixed content, visual objective, medium, and constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1891,7 +1891,7 @@
       "name": "visual-art-direction-handoff",
       "domain_code": "MVA",
       "subdomain": "Design",
-      "description": "Visual art-direction handoff preparation using supplied evidence and explicit acceptance checks; use when preparing a visual art-direction handoff preparation deliverable.",
+      "description": "Guide visual art-direction handoff preparation when working from approved direction, reference annotations, asset list, and production constraints.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"
@@ -1901,7 +1901,7 @@
       "name": "visual-composition-iteration-review",
       "domain_code": "MVA",
       "subdomain": "Design",
-      "description": "Visual composition iteration review using supplied evidence and explicit acceptance checks; use when preparing a visual composition iteration review deliverable.",
+      "description": "Guide visual composition iteration review when working from previous version, revised version, stated feedback, and original objective.",
       "risk_level": "medium",
       "requires": [],
       "status": "planned"

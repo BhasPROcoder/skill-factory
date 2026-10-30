@@ -3,9 +3,9 @@ id: MSS-009
 name: fiction-ending-choice-design
 domain: Fiction Story Structure
 subdomain: Design
-version: 1.0
-description: Fiction ending choice design using supplied evidence and explicit acceptance checks; use when preparing a fiction ending choice design deliverable.
-triggers: ["help me with fiction ending choice design", "prepare a fiction ending choice design deliverable", "review our fiction ending choice design evidence", "create a fiction ending choice design action plan", "check this fiction ending choice design decision"]
+version: 1.1
+description: Guide fiction ending choice design when working from central conflict, protagonist arc, established options, and intended tone.
+triggers: ["fiction ending choice design", "help with fiction ending choice design", "work on fiction ending choice design", "review my fiction ending choice design", "apply fiction ending choice design to these materials"]
 not_for: ["Fiction outline pacing review [MSS-010]", "Fiction premise conflict testing [MSS-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction ending choice design
 
 ## Purpose
-Produce a usable fiction ending choice design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction ending choice design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,14 +104,16 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Resolve the archive conflict through an established choice or seed the capability earlier with limits. Owner: author or creative lead.
 
 ## Artifact
-Ending beats: Mara can restore the catalog only by revealing her own theft → she gives the evidence to Ivo → the route is restored, but her position is lost.
-Resolution uses established evidence and a costly choice, not a newly introduced power.
+Proposed creative revision; added details require author approval and continuity review.
+Proposed ending beats: Mara can restore the catalog only by revealing her own theft → she gives the evidence to Ivo → the route is restored, but her position is lost.
+Required setup: earlier scenes must establish the theft, the evidence, the restoration mechanism, and the risk to her position.
+This is a proposed replacement requiring setup review, not a claim that these facts already exist in the supplied story.
 
 ## Acceptance check
 The ending follows the story's established possibilities and resolves the central dramatic question.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

@@ -3,9 +3,9 @@ id: MSE-002
 name: search-query-page-assignment
 domain: Search Content Decisions
 subdomain: Design
-version: 1.0
-description: Search query to page assignment using supplied evidence and explicit acceptance checks; use when preparing a search query to page assignment deliverable.
-triggers: ["help me with search query to page assignment", "prepare a search query to page assignment deliverable", "review our search query to page assignment evidence", "create a search query to page assignment action plan", "check this search query to page assignment decision"]
+version: 1.1
+description: Guide search query to page assignment when working from query groups and an inventory of existing pages.
+triggers: ["search query to page assignment", "help with search query to page assignment", "work on search query page assignment", "review my search query to page assignment", "apply search query to page assignment to these materials"]
 not_for: ["Search content brief design [MSE-003]", "Search content gap comparison [MSE-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search query to page assignment
 
 ## Purpose
-Produce a usable search query to page assignment deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search query to page assignment task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Boundary: shared terminology does not make these destinations interchangeable.
 Every assigned group has one primary destination and a documented reason.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

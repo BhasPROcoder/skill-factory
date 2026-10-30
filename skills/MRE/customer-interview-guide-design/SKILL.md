@@ -3,9 +3,9 @@ id: MRE-001
 name: customer-interview-guide-design
 domain: Customer and Market Research
 subdomain: Design
-version: 1.0
-description: Customer interview guide design using supplied evidence and explicit acceptance checks; use when preparing a customer interview guide design deliverable.
-triggers: ["help me with customer interview guide design", "prepare a customer interview guide design deliverable", "review our customer interview guide design evidence", "create a customer interview guide design action plan", "check this customer interview guide design decision"]
+version: 1.1
+description: Guide customer interview guide design when working from research decision, participant profile, and unknown assumptions.
+triggers: ["customer interview guide design", "help with customer interview guide design", "work on customer interview guide design", "review my customer interview guide design", "apply customer interview guide design to these materials"]
 not_for: ["Research participant screening design [MRE-002]", "Customer interview note synthesis [MRE-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Customer interview guide design
 
 ## Purpose
-Produce a usable customer interview guide design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this customer interview guide design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -106,15 +106,15 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
 ## Artifact
 Opening: Tell me about the last time you completed this workflow.
 Probe: What did you do first?
-Probe: Where did you need a workaround?
-Probe: What happened because of that difficulty?
+Probe: Was any part difficult or did it work as expected?
+Conditional probe, only if a difficulty is reported: What did you do, and what happened next?
 Avoid asking whether the untested feature would be helpful.
 
 ## Acceptance check
 Questions can be answered with disagreement and ask for observable episodes.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

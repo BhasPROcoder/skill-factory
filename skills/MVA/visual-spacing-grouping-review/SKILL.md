@@ -3,9 +3,9 @@ id: MVA-002
 name: visual-spacing-grouping-review
 domain: Visual Composition and Art Direction
 subdomain: Design
-version: 1.0
-description: Visual spacing and grouping review using supplied evidence and explicit acceptance checks; use when preparing a visual spacing and grouping review deliverable.
-triggers: ["help me with visual spacing and grouping review", "prepare a visual spacing and grouping review deliverable", "review our visual spacing and grouping review evidence", "create a visual spacing and grouping review action plan", "check this visual spacing and grouping review decision"]
+version: 1.1
+description: Guide visual spacing and grouping review when working from layout, content groups, reading order, and medium.
+triggers: ["visual spacing and grouping review", "help with visual spacing and grouping review", "work on visual spacing grouping review", "review my visual spacing and grouping review", "apply visual spacing and grouping review to these materials"]
 not_for: ["Visual color role planning [MVA-003]", "Visual typography pairing brief [MVA-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Visual spacing and grouping review
 
 ## Purpose
-Produce a usable visual spacing and grouping review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this visual spacing and grouping review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Move the price into a clearly bounded group with its own product. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Group: product image, product name, associated price.
 Within-group spacing: visually tighter than separation from the next product.
 Check: no price appears to belong to a neighboring image.
@@ -113,7 +114,7 @@ Use alignment or enclosure if proximity alone remains ambiguous.
 Visual grouping matches the intended content relationships.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

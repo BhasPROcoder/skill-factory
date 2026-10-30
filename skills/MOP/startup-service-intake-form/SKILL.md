@@ -3,9 +3,9 @@ id: MOP-001
 name: startup-service-intake-form
 domain: Startup Operating Workflows
 subdomain: Design
-version: 1.0
-description: Startup service intake design using supplied evidence and explicit acceptance checks; use when preparing a startup service intake design deliverable.
-triggers: ["help me with startup service intake design", "prepare a startup service intake design deliverable", "review our startup service intake design evidence", "create a startup service intake design action plan", "check this startup service intake design decision"]
+version: 1.1
+description: Guide startup service intake design when working from request types, required decisions, available data, and service boundaries.
+triggers: ["startup service intake design", "help with startup service intake design", "work on startup service intake form", "review my startup service intake design", "apply startup service intake design to these materials"]
 not_for: ["Startup support triage rule design [MOP-002]", "Startup service delivery checklist design [MOP-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup service intake design
 
 ## Purpose
-Produce a usable startup service intake design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup service intake design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Remove: full company history for this support task.
 Every required input enables a routing or execution decision.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

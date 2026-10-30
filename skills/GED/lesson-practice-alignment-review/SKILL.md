@@ -3,10 +3,10 @@ id: GED-005
 name: lesson-practice-alignment-review
 domain: Lesson and Learning Design
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare lesson practice alignment review from supplied evidence; use when the request concerns learning objectives.
 triggers: ["lesson practice alignment review", "prepare lesson practice alignment review", "review my lesson practice alignment review", "help me with lesson practice alignment review", "turn learning objectives into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Scaffold fading plan [GED-006]", "Lesson question sequence [GED-007]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Objective | Current practice | Mismatch | Revision
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,13 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Objective | Current practice | Mismatch | Revision
 Critique claims | Definition exercises | No critique practice | Add claim-evidence analysis
 Recall terms | Definition exercises | Aligned but narrower | Retain only needed vocabulary
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Replacement practice: Read: We should extend the opening hours because customers asked for later access. Identify the claim, the support, and one missing fact that could change the decision.
+Proposed response criteria: identifies the opening-hours recommendation; names the reported requests; asks about relevant missing evidence such as actual demand or operating constraints.
+Keep vocabulary recall as preparation, then require individual analysis before the final critique task.
+Do not count listening to the teacher's critique as the learner's own practice.
+Next action: The requester or assigned reviewer will complete this task-specific check: Revise the sequence to fill missing practice without adding unrelated volume. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Add claim-evidence analysis.
 ```
 
 **Bad output:**

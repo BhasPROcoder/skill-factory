@@ -3,9 +3,9 @@ id: MPH-008
 name: photo-product-shot-consistency
 domain: Photography Planning and Critique
 subdomain: Design
-version: 1.0
-description: Product photograph consistency planning using supplied evidence and explicit acceptance checks; use when preparing a product photograph consistency planning deliverable.
-triggers: ["help me with product photograph consistency planning", "prepare a product photograph consistency planning deliverable", "review our product photograph consistency planning evidence", "create a product photograph consistency planning action plan", "check this product photograph consistency planning decision"]
+version: 1.1
+description: Guide product photograph consistency planning when working from product set, display context, reference frame, and truthful presentation requirements.
+triggers: ["product photograph consistency planning", "help with product photograph consistency planning", "work on photo product shot consistency", "review my product photograph consistency planning", "apply product photograph consistency planning to these materials"]
 not_for: ["Photographic visual story editing [MPH-009]", "Photographic reshoot decision briefing [MPH-010]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product photograph consistency planning
 
 ## Purpose
-Produce a usable product photograph consistency planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product photograph consistency planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Create a clean product-only comparison image and label any styled version appropriately. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Comparison image: product alone with consistent framing and a truthful scale relationship.
 Styled image: decorative case may appear only with clear labeling that it is not included.
 Check: package contents remain unambiguous across the set.
@@ -112,7 +113,7 @@ Check: package contents remain unambiguous across the set.
 Viewers can compare products without mistaking props for included items.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

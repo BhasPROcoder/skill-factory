@@ -3,9 +3,9 @@ id: MPU-001
 name: product-task-flow-review
 domain: Product Experience Review
 subdomain: Design
-version: 1.0
-description: Product task flow review using supplied evidence and explicit acceptance checks; use when preparing a product task flow review deliverable.
-triggers: ["help me with product task flow review", "prepare a product task flow review deliverable", "review our product task flow review evidence", "create a product task flow review action plan", "check this product task flow review decision"]
+version: 1.1
+description: Guide product task flow review when working from target task, user role, flow steps, and known constraints.
+triggers: ["product task flow review", "help with product task flow review", "work on product task flow review", "review my product task flow review", "apply product task flow review to these materials"]
 not_for: ["Product empty-state content design [MPU-002]", "Product error message review [MPU-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product task flow review
 
 ## Purpose
-Produce a usable product task flow review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product task flow review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Blocked design: selecting a nonexistent account before creation.
 Every step has its prerequisites available when the user reaches it.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

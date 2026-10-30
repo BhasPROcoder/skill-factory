@@ -2,10 +2,10 @@
 id: TFE-007
 name: feature-scaling-consistency-check
 domain: Feature and Label Pipelines
-subdomain: Aggregation
-version: 1.0
-description: Produce a feature scaling consistency report; use when the task is to feature scaling consistency check.
-triggers: ["feature scaling consistency check", "help with a feature scaling consistency report", "review my a feature scaling consistency report", "prepare a feature scaling consistency report", "check feature scaling consistency check evidence"]
+subdomain: Training-serving consistency
+version: 1.1
+description: Create a feature scaling consistency report from supplied evidence; use when preparing or reviewing feature scaling consistency report decisions.
+triggers: ["feature scaling consistency check", "help with a feature scaling consistency report", "review my feature scaling consistency report", "prepare a feature scaling consistency report", "check the evidence for this feature scaling consistency report"]
 not_for: ["label horizon censoring design [TFE-008]", "feature cross fold cache review [TFE-009]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a feature scaling consistency report and name the source artifacts used; retain a version or observation date where available.
 2. Record the fitted centering and scale values with feature names
 3. Compare training and scoring formulas
-4. ⚠️ Verify order and unit consistency before numerical comparison Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Verify order and unit consistency before numerical comparison. Do not silently replace missing evidence with an assumed successful outcome.
 5. Test a shared fixture through both paths
 6. Apply the domain check: Track where every learned parameter is fitted and when every source field becomes available.
 7. Verify the proposed result with this task-specific check: Run the shared row through training and scoring implementations. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Training features must represent information available at the intended prediction instant. A transform learned from data belongs inside the training boundary, and production transformations must preserve the same semantics. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a feature scaling consistency report
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: Training produces 1 while serving produces 6.
 Decision: Use the same fitted transformation artifact in both paths.
+Artifact: Raw x=12. Training transform (x-10)/2=1. Serving transform x/2=6. Required parity: both use the same fitted centering and scale artifact. Verify feature names, order, and units before attributing prediction differences to the model.
 Action: Team owner — Test a shared fixture through both paths Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Run the shared row through training and scoring implementations.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a feature scaling consistency report. Training scales x as (x-10)/2; serving scales it as x/2; x is 12. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: Training produces 1 while serving produces 6.
 3. It preserves this task-specific conclusion: Use the same fitted transformation artifact in both paths.
 4. It includes the verification check or explicitly marks it pending: Run the shared row through training and scoring implementations.

@@ -3,9 +3,9 @@ id: MPU-005
 name: product-onboarding-friction-review
 domain: Product Experience Review
 subdomain: Design
-version: 1.0
-description: Product onboarding friction review using supplied evidence and explicit acceptance checks; use when preparing a product onboarding friction review deliverable.
-triggers: ["help me with product onboarding friction review", "prepare a product onboarding friction review deliverable", "review our product onboarding friction review evidence", "create a product onboarding friction review action plan", "check this product onboarding friction review decision"]
+version: 1.1
+description: Guide product onboarding friction review when working from first-use flow, intended first success, user prerequisites, and observed blockers.
+triggers: ["product onboarding friction review", "help with product onboarding friction review", "work on product onboarding friction review", "review my product onboarding friction review", "apply product onboarding friction review to these materials"]
 not_for: ["Product prototype test scenario design [MPU-006]", "Product feedback deduplication review [MPU-007]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product onboarding friction review
 
 ## Purpose
-Produce a usable product onboarding friction review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product onboarding friction review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Do not block first success on optional visual customization.
 A new user can reach first success without unnecessary configuration blockers.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

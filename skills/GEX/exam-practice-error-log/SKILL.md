@@ -3,10 +3,10 @@ id: GEX-003
 name: exam-practice-error-log
 domain: Exam Preparation Methods
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare exam practice error log from supplied evidence; use when the request concerns attempted questions.
 triggers: ["exam practice error log", "prepare exam practice error log", "review my exam practice error log", "help me with exam practice error log", "turn attempted questions into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Mock exam review [GEX-004]", "Retrieval practice set [GEX-005]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Error | Evidence of cause | Repair | Retest
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -84,8 +86,14 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Error | Evidence of cause | Repair | Retest
 Method selection | Ignored condition | State applicability test | Try changed-condition item
 Execution | No evidence of arithmetic issue | Do not assign arithmetic drills | Observe next attempt
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Entry: selected a familiar method without checking its applicability condition.
+Repair prompt: Before solving, write the condition that must hold for this method and identify whether the question supplies it.
+Retest: use a new question where the condition changes; require method selection and justification before calculation.
+Closure rule: independent justification and a suitable method on the retest, not copying the earlier solution.
+Arithmetic drills are not assigned without evidence of an execution error.
+Next action: The requester or assigned reviewer will complete this task-specific check: Review whether the error recurs before closing the log entry. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Try changed-condition item.
 ```
 
 **Bad output:**

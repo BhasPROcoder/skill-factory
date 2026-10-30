@@ -2,10 +2,10 @@
 id: TAN-007
 name: analysis-segment-reversal-check
 domain: Analytical Reasoning and Metrics
-subdomain: Diagnostics
-version: 1.0
-description: Produce a segment comparison consistency check; use when the task is to analysis segment reversal check.
-triggers: ["analysis segment reversal check", "help with a segment comparison consistency check", "review my a segment comparison consistency check", "prepare a segment comparison consistency check", "check analysis segment reversal check evidence"]
+subdomain: Comparisons
+version: 1.1
+description: Create a segment comparison consistency check from supplied evidence; use when preparing or reviewing segment comparison consistency check decisions.
+triggers: ["analysis segment reversal check", "help with a segment comparison consistency check", "review my segment comparison consistency check", "prepare a segment comparison consistency check", "check the evidence for this segment comparison consistency check"]
 not_for: ["analysis sensitivity scenario table [TAN-008]", "analysis chart claim audit [TAN-009]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a segment comparison consistency check and name the source artifacts used; retain a version or observation date where available.
 2. Compute the overall comparison with denominators
 3. Compute the same comparison within relevant segments
-4. ⚠️ Inspect whether segment mixture differs between groups Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Inspect whether segment mixture differs between groups. Do not silently replace missing evidence with an assumed successful outcome.
 5. Explain any reversal without selecting a preferred view arbitrarily
 6. Apply the domain check: State what a calculation can establish and what would require a different design; do not turn association into causal attribution.
 7. Verify the proposed result with this task-specific check: Recompute pooled and segment rates from original counts rather than averaging displayed percentages. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A metric is defined by its population, unit, denominator, and time window. Comparisons need compatible definitions before arithmetic is meaningful. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a segment comparison consistency check
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The supplied comparisons reverse under stratification.
 Decision: Investigate segment weighting before declaring a universal winner.
+Artifact: Reported comparisons: overall favors A; each supplied segment favors B; segment weights differ. Report both views and the differing mixture. Without the underlying counts, recomputation and a precise decomposition remain pending; do not invent them.
 Action: Team owner — Explain any reversal without selecting a preferred view arbitrarily Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Recompute pooled and segment rates from original counts rather than averaging displayed percentages.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a segment comparison consistency check. A supplied table reports overall advantage for A but within each named segment advantage for B; segment sizes differ. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The supplied comparisons reverse under stratification.
 3. It preserves this task-specific conclusion: Investigate segment weighting before declaring a universal winner.
 4. It includes the verification check or explicitly marks it pending: Recompute pooled and segment rates from original counts rather than averaging displayed percentages.

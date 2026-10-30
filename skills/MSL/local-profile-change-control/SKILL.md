@@ -3,9 +3,9 @@ id: MSL-009
 name: local-profile-change-control
 domain: Local Search Operations
 subdomain: Design
-version: 1.0
-description: Local profile change control planning using supplied evidence and explicit acceptance checks; use when preparing a local profile change control planning deliverable.
-triggers: ["help me with local profile change control planning", "prepare a local profile change control planning deliverable", "review our local profile change control planning evidence", "create a local profile change control planning action plan", "check this local profile change control planning decision"]
+version: 1.1
+description: Guide local profile change control planning when working from requested edits, verified source facts, owner permissions, and current profile snapshot.
+triggers: ["local profile change control planning", "help with local profile change control planning", "work on local profile change control", "review my local profile change control planning", "apply local profile change control planning to these materials"]
 not_for: ["Local customer access information audit [MSL-010]", "Local business fact sheet preparation [MSL-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Local profile change control planning
 
 ## Purpose
-Produce a usable local profile change control planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this local profile change control planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Release conditions: verify official identity and current platform naming require
 Every approved edit has a source and an observable post-change check.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

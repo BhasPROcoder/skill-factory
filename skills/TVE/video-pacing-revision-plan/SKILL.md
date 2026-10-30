@@ -2,10 +2,10 @@
 id: TVE-006
 name: video-pacing-revision-plan
 domain: Video Editing Decisions
-subdomain: Continuity
-version: 1.0
-description: Produce a pacing revision plan; use when the task is to video pacing revision plan.
-triggers: ["video pacing revision plan", "help with a pacing revision plan", "review my a pacing revision plan", "prepare a pacing revision plan", "check video pacing revision plan evidence"]
+subdomain: Story structure
+version: 1.1
+description: Create a pacing revision plan from supplied evidence; use when preparing or reviewing pacing revision plan decisions.
+triggers: ["video pacing revision plan", "help with a pacing revision plan", "review my pacing revision plan", "prepare a pacing revision plan", "check the evidence for this pacing revision plan"]
 not_for: ["video sound picture transition plan [TVE-007]", "video caption readability review [TVE-008]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a pacing revision plan and name the source artifacts used; retain a version or observation date where available.
 2. Identify where a new idea or action begins and resolves
 3. Distinguish slow comprehension from unnecessary repetition
-4. ⚠️ Adjust holds and cuts according to information processing needs Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Adjust holds and cuts according to information processing needs. Do not silently replace missing evidence with an assumed successful outcome.
 5. Review the revised rhythm without imposing a universal shot length
 6. Apply the domain check: Preserve the source material and distinguish a paper edit from an executed timeline; verify current destination specifications with the recipient.
 7. Verify the proposed result with this task-specific check: Review comprehension of each information-heavy moment rather than only total runtime. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Describe edit choices through visible actions, shot duration relative to an action, framing, cut motivation, caption placement, and sound transitions. Never invent footage contents, dialogue, defects, or timecodes when the media has not been inspected. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a pacing revision plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The reported pacing problem is insufficient reading time.
 Decision: Extend or simplify the card and retest with a representative viewer.
+Artifact: Reported problem: instruction card disappears before its final line is read. Revision options: longer hold or shorter accurately preserved wording. Acceptance observation: representative viewer can read and understand the complete instruction in the intended playback context.
 Action: Team owner — Review the revised rhythm without imposing a universal shot length Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Review comprehension of each information-heavy moment rather than only total runtime.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a pacing revision plan. A supplied review note says the instruction card disappears before the reviewer can read the final line. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The reported pacing problem is insufficient reading time.
 3. It preserves this task-specific conclusion: Extend or simplify the card and retest with a representative viewer.
 4. It includes the verification check or explicitly marks it pending: Review comprehension of each information-heavy moment rather than only total runtime.

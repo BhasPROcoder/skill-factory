@@ -2,10 +2,10 @@
 id: TAM-004
 name: audio-dialogue-edit-plan
 domain: Audio and Music Production Planning
-subdomain: Delivery
-version: 1.0
-description: Produce a dialogue editing plan; use when the task is to audio dialogue edit plan.
-triggers: ["audio dialogue edit plan", "help with a dialogue editing plan", "review my a dialogue editing plan", "prepare a dialogue editing plan", "check audio dialogue edit plan evidence"]
+subdomain: Editing
+version: 1.1
+description: Create a dialogue editing plan from supplied evidence; use when preparing or reviewing dialogue editing plan decisions.
+triggers: ["audio dialogue edit plan", "help with a dialogue editing plan", "review my dialogue editing plan", "prepare a dialogue editing plan", "check the evidence for this dialogue editing plan"]
 not_for: ["audio noise reduction test plan [TAM-005]", "music arrangement density map [TAM-006]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a dialogue editing plan and name the source artifacts used; retain a version or observation date where available.
 2. Identify complete thought units before cutting pauses
 3. Mark repetitions and interruptions that can be removed without changing meaning
-4. ⚠️ Preserve breaths and room continuity where they support natural speech Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Preserve breaths and room continuity where they support natural speech. Do not silently replace missing evidence with an assumed successful outcome.
 5. Review the edited sequence against the original meaning
 6. Apply the domain check: Keep source recordings and reversible edits; verify current delivery requirements with the recipient instead of inventing loudness, format, or platform targets.
 7. Verify the proposed result with this task-specific check: Compare the edited meaning with the original recording or supplied transcript. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Describe sound choices through observable features such as entry timing, instrument density, foreground level, phrase spacing, and audible transitions. If audio is unavailable, offer a listening plan rather than claiming to hear clipping, noise, pitch problems, or balance defects. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a dialogue editing plan
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: The proposed edit changes the certainty of the claim.
 Decision: Keep the qualification while shortening only unrelated repetition.
+Artifact: Retained line: “It may work, but we have not tested it.” Rejected cut: “It may work.” Reason: removing the caveat changes the speaker's qualification. Editing note: preserve enough surrounding context and room continuity for a natural truthful edit.
 Action: Team owner — Review the edited sequence against the original meaning Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Compare the edited meaning with the original recording or supplied transcript.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a dialogue editing plan. The speaker says 'It may work, but we have not tested it'; the proposed cut removes the caveat. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: The proposed edit changes the certainty of the claim.
 3. It preserves this task-specific conclusion: Keep the qualification while shortening only unrelated repetition.
 4. It includes the verification check or explicitly marks it pending: Compare the edited meaning with the original recording or supplied transcript.

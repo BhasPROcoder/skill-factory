@@ -3,9 +3,9 @@ id: MEC-007
 name: ecommerce-return-policy-content-review
 domain: E-commerce Customer Experience
 subdomain: Design
-version: 1.0
-description: Return process content clarity review using supplied evidence and explicit acceptance checks; use when preparing a return process content clarity review deliverable.
-triggers: ["help me with return process content clarity review", "prepare a return process content clarity review deliverable", "review our return process content clarity review evidence", "create a return process content clarity review action plan", "check this return process content clarity review decision"]
+version: 1.1
+description: Guide return process content clarity review when working from approved return policy, customer-facing wording, and operational process.
+triggers: ["return process content clarity review", "help with return process content clarity review", "work on ecommerce return policy content review", "review my return process content clarity review", "apply return process content clarity review to these materials"]
 not_for: ["Post-purchase message planning [MEC-008]", "Out-of-stock experience planning [MEC-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Return process content clarity review
 
 ## Purpose
-Produce a usable return process content clarity review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this return process content clarity review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Reject: All returns are accepted, which changes the policy meaning.
 The customer instructions preserve the approved policy and identify unresolved legal questions.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

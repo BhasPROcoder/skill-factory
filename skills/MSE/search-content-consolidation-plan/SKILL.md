@@ -3,9 +3,9 @@ id: MSE-009
 name: search-content-consolidation-plan
 domain: Search Content Decisions
 subdomain: Design
-version: 1.0
-description: Search content consolidation planning using supplied evidence and explicit acceptance checks; use when preparing a search content consolidation planning deliverable.
-triggers: ["help me with search content consolidation planning", "prepare a search content consolidation planning deliverable", "review our search content consolidation planning evidence", "create a search content consolidation planning action plan", "check this search content consolidation planning decision"]
+version: 1.1
+description: Guide search content consolidation planning when working from candidate pages, unique content inventory, inbound dependencies, and target page purpose.
+triggers: ["search content consolidation planning", "help with search content consolidation planning", "work on search content consolidation plan", "review my search content consolidation planning", "apply search content consolidation planning to these materials"]
 not_for: ["Search editorial claim auditing [MSE-010]", "Search intent evidence mapping [MSE-001]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Search content consolidation planning
 
 ## Purpose
-Produce a usable search content consolidation planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this search content consolidation planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -112,7 +112,7 @@ Migration check: confirm the tree appears in the final destination and remains u
 The destination plan accounts for every unique useful section and all known dependencies.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

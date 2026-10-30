@@ -2,10 +2,10 @@
 id: THK-004
 name: hackathon-risk-first-build-order
 domain: Hackathon Delivery
-subdomain: Submission
-version: 1.0
-description: Produce a risk-first build sequence; use when the task is to hackathon risk first build order.
-triggers: ["hackathon risk first build order", "help with a risk-first build sequence", "review my a risk-first build sequence", "prepare a risk-first build sequence", "check hackathon risk first build order evidence"]
+subdomain: Team execution
+version: 1.1
+description: Create a risk-first build sequence from supplied evidence; use when preparing or reviewing risk-first build sequence decisions.
+triggers: ["hackathon risk first build order", "help with a risk-first build sequence", "review my risk-first build sequence", "prepare a risk-first build sequence", "check the evidence for this risk-first build sequence"]
 not_for: ["hackathon demo script [THK-005]", "hackathon fallback demo plan [THK-006]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a risk-first build sequence and name the source artifacts used; retain a version or observation date where available.
 2. List failures that would make the demo impossible
 3. Test the least-certain critical dependency with a thin experiment
-4. ⚠️ Order remaining work by dependency and evidence value Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Order remaining work by dependency and evidence value. Do not silently replace missing evidence with an assumed successful outcome.
 5. Keep a fallback for any unresolved critical component
 6. Apply the domain check: Connect each commitment to the available team, schedule, permitted resources, and a fallback demonstration path.
 7. Verify the proposed result with this task-specific check: Demonstrate the critical input-to-output path on a representative permitted fixture. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: A hackathon prototype needs a coherent user journey and demonstrable evidence of its central claim. Distinguish simulated components from implemented behavior, and read the current event rules instead of assuming submission or judging conventions. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -51,6 +52,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -83,6 +85,7 @@ Deliverable: a risk-first build sequence
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: File parsing is an untested critical dependency.
 Decision: Run a minimal parser experiment before further visual polish.
+Artifact: Build order: minimal permitted file fixture → parser experiment → processing result → integrated screen → visual polish. Gate: parser demonstrates the core format path. Fallback: identify an allowed simpler fixture path if parsing remains unresolved; do not hide the limitation.
 Action: Team owner — Keep a fallback for any unresolved critical component Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Demonstrate the critical input-to-output path on a representative permitted fixture.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -104,7 +107,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a risk-first build sequence. The prototype depends on parsing a new file format; no team member has tested it, while visual styling is already underway. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: File parsing is an untested critical dependency.
 3. It preserves this task-specific conclusion: Run a minimal parser experiment before further visual polish.
 4. It includes the verification check or explicitly marks it pending: Demonstrate the critical input-to-output path on a representative permitted fixture.

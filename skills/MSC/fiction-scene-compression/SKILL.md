@@ -3,9 +3,9 @@ id: MSC-010
 name: fiction-scene-compression
 domain: Fiction Scene Craft
 subdomain: Design
-version: 1.0
-description: Fiction scene compression revision using supplied evidence and explicit acceptance checks; use when preparing a fiction scene compression revision deliverable.
-triggers: ["help me with fiction scene compression revision", "prepare a fiction scene compression revision deliverable", "review our fiction scene compression revision evidence", "create a fiction scene compression revision action plan", "check this fiction scene compression revision decision"]
+version: 1.1
+description: Guide fiction scene compression revision when working from scene draft, indispensable events, character turn, and target pacing.
+triggers: ["fiction scene compression revision", "help with fiction scene compression revision", "work on fiction scene compression", "review my fiction scene compression revision", "apply fiction scene compression revision to these materials"]
 not_for: ["Fiction scene goal and pressure revision [MSC-001]", "Fiction scene viewpoint consistency repair [MSC-002]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Fiction scene compression revision
 
 ## Purpose
-Produce a usable fiction scene compression revision deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this fiction scene compression revision task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,13 +104,14 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Condense hesitation and retain the causal detail that explains Mara's choice. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Mara reached for the door, then stopped. Leaving would keep her safe, but Ivo was still inside with the ledger she had asked him to steal. She took her hand from the latch and went back.
 
 ## Acceptance check
 The shortened scene preserves its goal, causal chain, and meaningful turn.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

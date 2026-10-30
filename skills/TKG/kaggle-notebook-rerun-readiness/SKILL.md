@@ -2,10 +2,10 @@
 id: TKG-008
 name: kaggle-notebook-rerun-readiness
 domain: Kaggle Competition Workflows
-subdomain: Finalization
-version: 1.0
-description: Produce a notebook rerun readiness checklist; use when the task is to kaggle notebook rerun readiness.
-triggers: ["kaggle notebook rerun readiness", "help with a notebook rerun readiness checklist", "review my a notebook rerun readiness checklist", "prepare a notebook rerun readiness checklist", "check kaggle notebook rerun readiness evidence"]
+subdomain: Submissions
+version: 1.1
+description: Create a notebook rerun readiness checklist from supplied evidence; use when preparing or reviewing notebook rerun readiness checklist decisions.
+triggers: ["kaggle notebook rerun readiness", "help with a notebook rerun readiness checklist", "review my notebook rerun readiness checklist", "prepare a notebook rerun readiness checklist", "check the evidence for this notebook rerun readiness checklist"]
 not_for: ["kaggle final submission selection [TKG-009]", "kaggle post competition solution handoff [TKG-010]"]
 requires: []
 risk_level: medium
@@ -29,11 +29,12 @@ If a required input is missing and has no safe default, ask in one message with 
 1. State the boundary of a notebook rerun readiness checklist and name the source artifacts used; retain a version or observation date where available.
 2. Inspect the current competition's permitted execution environment
 3. Replace hidden local dependencies with declared permitted inputs
-4. ⚠️ Reexecute from a clean state without relying on interactive history Do not silently replace missing evidence with an assumed successful outcome.
+4. ⚠️ Reexecute from a clean state without relying on interactive history. Do not silently replace missing evidence with an assumed successful outcome.
 5. Check expected output paths and artifact identity
 6. Apply the domain check: Keep local validation, public feedback, final selection, and rule compliance as separate evidence; never infer hidden labels or redistribute restricted competition material.
 7. Verify the proposed result with this task-specific check: Reexecute in a clean permitted environment and compare the resulting submission schema. If the check cannot be performed, label it pending and explain what evidence would complete it.
-8. Populate the output template with the decision, its evidence, and the next action; separate instructions to execute from results already observed.
+8. Produce the actual requested artifact: concrete contract fields, matrix rows, comparison values, script lines, or ordered plan steps as appropriate. A recommendation to create the artifact is not the artifact; use the example's concrete deliverable as a structural illustration while replacing its facts with the user's supplied material.
+9. Populate the output template with the artifact, decision, evidence, and next action; separate instructions to execute from results already observed.
 
 Domain context: Use the specific competition page, rules, data description, evaluation definition, and submission instructions as inputs. Check their current versions; do not assume that limits, external-data permissions, team rules, or notebook requirements match another competition. A conclusion only applies to the artifact, population, and conditions actually examined. Preserve enough input identifiers that another practitioner can repeat the review without relying on memory. When there are conflicting records, expose the conflict and select no preferred value without a stated reason.
 
@@ -55,6 +56,7 @@ Deliverable: <name; one line>
 Scope: <artifacts, population, environment; at most two sentences>
 Evidence: <observations with input references; at most six bullets>
 Decision: <supported conclusion or provisional status; at most two sentences>
+Artifact: <the concrete requested deliverable, with actual fields, entries, or draft text; at most 300 words>
 Action: <owner, concrete next step, completion condition; at most three bullets>
 Verification: <performed checks and results, or explicitly pending checks; at most three bullets>
 Open items: <missing information or current-source checks; at most three bullets, or none>
@@ -87,6 +89,7 @@ Deliverable: a notebook rerun readiness checklist
 Scope: Cedar Lantern's supplied fictional fixture; analysis only.
 Evidence: An undeclared dependency prevents a self-contained rerun.
 Decision: Provide an allowed declared artifact or regenerate the features from permitted inputs.
+Artifact: Declared inputs: train.csv, test.csv. Required undeclared input: features.csv. Readiness: blocked. Resolve by a permitted declared artifact or by reproducible generation from allowed inputs; then rerun from a clean state and inspect the required outputs.
 Action: Team owner — Check expected output paths and artifact identity Completion condition: the task-specific verification is recorded.
 Verification: The fixture supports the stated finding; real-environment check remains pending: Reexecute in a clean permitted environment and compare the resulting submission schema.
 Open items: Confirm artifact versions and authorized owner before applying the recommendation outside this fixture.
@@ -108,7 +111,7 @@ This fails because it omits the evidence-dependent branch, substitutes confidenc
 > Fictional team Cedar Lantern asks for a notebook rerun readiness checklist. The notebook reads local features.csv but the declared inputs contain only train.csv and test.csv. Produce the assessment and identify what remains unverified.
 
 **Assertions:**
-1. The response uses all seven output fields in the specified order.
+1. The response uses all eight output fields in the specified order and Artifact contains concrete task output rather than only a recommendation to produce it.
 2. It reflects this fixture-specific finding: An undeclared dependency prevents a self-contained rerun.
 3. It preserves this task-specific conclusion: Provide an allowed declared artifact or regenerate the features from permitted inputs.
 4. It includes the verification check or explicitly marks it pending: Reexecute in a clean permitted environment and compare the resulting submission schema.

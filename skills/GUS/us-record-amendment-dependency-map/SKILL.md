@@ -3,10 +3,10 @@ id: GUS-009
 name: us-record-amendment-dependency-map
 domain: US Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare public record amendment dependency map from supplied evidence; use when the request concerns records requiring amendment.
 triggers: ["public record amendment dependency map", "prepare public record amendment dependency map", "review my public record amendment dependency map", "help me with public record amendment dependency map", "turn records requiring amendment into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Service denial file organization [GUS-010]", "Birth certificate copy preflight [GUS-001]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,7 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Record | Requested amendment | Evidence dependency | Resolution question
 <one row per finding; each cell one concise sentence>
+
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +86,9 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Record | Requested amendment | Evidence dependency | Resolution question
 Record A | Preferred spelling requested | Record B appears required | Ask about alternate evidence
 Record B | Matching spelling requested | Record A appears required | Clarify dependency before filing
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Next action: The requester or assigned reviewer will complete this task-specific check: Prepare a sequence with pause points before downstream records are changed. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Ask about alternate evidence.
 ```
 
 **Bad output:**

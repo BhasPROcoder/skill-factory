@@ -3,9 +3,9 @@ id: MSL-002
 name: local-profile-eligibility-checklist
 domain: Local Search Operations
 subdomain: Design
-version: 1.0
-description: Local profile eligibility review planning using supplied evidence and explicit acceptance checks; use when preparing a local profile eligibility review planning deliverable.
-triggers: ["help me with local profile eligibility review planning", "prepare a local profile eligibility review planning deliverable", "review our local profile eligibility review planning evidence", "create a local profile eligibility review planning action plan", "check this local profile eligibility review planning decision"]
+version: 1.1
+description: Guide local profile eligibility review planning when working from business model, customer-contact arrangement, locations, and intended platform.
+triggers: ["local profile eligibility review planning", "help with local profile eligibility review planning", "work on local profile eligibility checklist", "review my local profile eligibility review planning", "apply local profile eligibility review planning to these materials"]
 not_for: ["Local opening-hours consistency review [MSL-003]", "Local location page briefing [MSL-004]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Local profile eligibility review planning
 
 ## Purpose
-Produce a usable local profile eligibility review planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this local profile eligibility review planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Required evidence: actual customer-contact and staffing facts.
 The conclusion cites verified current guidance or remains explicitly provisional.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

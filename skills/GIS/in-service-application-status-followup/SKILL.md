@@ -3,10 +3,10 @@ id: GIS-008
 name: in-service-application-status-followup
 domain: India Citizen Service Preparation
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare service application status follow-up from supplied evidence; use when the request concerns application acknowledgment.
 triggers: ["service application status follow-up", "prepare service application status follow-up", "review my service application status follow-up", "help me with service application status follow-up", "turn application acknowledgment into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Government appointment preparation [GIS-009]", "Benefit application document map [GIS-010]"]
 requires: []
 risk_level: high
 ---
@@ -53,6 +53,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Status observation | Meaning evidence | Open question | Follow-up action
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -85,8 +87,10 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Status observation | Meaning evidence | Open question | Follow-up action
 Pending verification | Applicant screenshot | What verification is outstanding? | Ask service office
 Acknowledgment | Reference retained privately | Any applicant action required? | Check official case view
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Draft follow-up: My application acknowledgment shows pending verification. Please identify any outstanding verification and tell me whether you need an action or document from me. I can provide the acknowledgment reference in your official case channel. Please confirm the meaning of this status for my application.
+Next action: The requester or assigned reviewer will complete this task-specific check: Set a follow-up trigger based on verified official guidance or a clearly labeled personal reminder. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Ask service office.
 ```
 
 **Bad output:**

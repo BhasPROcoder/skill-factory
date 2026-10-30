@@ -3,9 +3,9 @@ id: MVA-003
 name: visual-color-role-plan
 domain: Visual Composition and Art Direction
 subdomain: Design
-version: 1.0
-description: Visual color role planning using supplied evidence and explicit acceptance checks; use when preparing a visual color role planning deliverable.
-triggers: ["help me with visual color role planning", "prepare a visual color role planning deliverable", "review our visual color role planning evidence", "create a visual color role planning action plan", "check this visual color role planning decision"]
+version: 1.1
+description: Guide visual color role planning when working from palette candidates, content roles, medium, and accessibility requirements.
+triggers: ["visual color role planning", "help with visual color role planning", "work on visual color role plan", "review my visual color role planning", "apply visual color role planning to these materials"]
 not_for: ["Visual typography pairing brief [MVA-004]", "Visual reference board briefing [MVA-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Visual color role planning
 
 ## Purpose
-Produce a usable visual color role planning deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this visual color role planning task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Add explicit labels or shapes alongside the color assignment. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Approved state: color plus the text Approved.
 Pending state: distinct color plus the text Pending.
 Role rule: color reinforces status but does not carry it alone.
@@ -113,7 +114,7 @@ Check the final palette in the intended output medium.
 Critical distinctions remain understandable without relying on color alone.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

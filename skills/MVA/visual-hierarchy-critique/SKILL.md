@@ -3,9 +3,9 @@ id: MVA-001
 name: visual-hierarchy-critique
 domain: Visual Composition and Art Direction
 subdomain: Design
-version: 1.0
-description: Visual hierarchy critique using supplied evidence and explicit acceptance checks; use when preparing a visual hierarchy critique deliverable.
-triggers: ["help me with visual hierarchy critique", "prepare a visual hierarchy critique deliverable", "review our visual hierarchy critique evidence", "create a visual hierarchy critique action plan", "check this visual hierarchy critique decision"]
+version: 1.1
+description: Guide visual hierarchy critique when working from composition, primary message, secondary information, and viewing context.
+triggers: ["visual hierarchy critique", "help with visual hierarchy critique", "work on visual hierarchy critique", "review my visual hierarchy critique", "apply visual hierarchy critique to these materials"]
 not_for: ["Visual spacing and grouping review [MVA-002]", "Visual color role planning [MVA-003]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Visual hierarchy critique
 
 ## Purpose
-Produce a usable visual hierarchy critique deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this visual hierarchy critique task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,6 +104,7 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Reduce the badge emphasis and increase the event name's prominence. Owner: author or creative lead.
 
 ## Artifact
+Proposed creative revision; added details require author approval and continuity review.
 Primary emphasis: event name.
 Secondary emphasis: action and essential event details.
 Supporting emphasis: decorative badge.
@@ -113,7 +114,7 @@ Revision: reduce badge scale or contrast and strengthen title prominence; compar
 The primary message becomes the clearest entry point without losing necessary supporting information.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Confirm the proposed additions against the author's continuity and creative brief; resolve any source or permission gaps identified above before final use.
 ```
 
 **Bad output:**

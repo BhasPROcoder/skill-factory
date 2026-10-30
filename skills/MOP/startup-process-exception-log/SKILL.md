@@ -3,9 +3,9 @@ id: MOP-007
 name: startup-process-exception-log
 domain: Startup Operating Workflows
 subdomain: Design
-version: 1.0
-description: Startup process exception log design using supplied evidence and explicit acceptance checks; use when preparing a startup process exception log design deliverable.
-triggers: ["help me with startup process exception log design", "prepare a startup process exception log design deliverable", "review our startup process exception log design evidence", "create a startup process exception log design action plan", "check this startup process exception log design decision"]
+version: 1.1
+description: Guide startup process exception log design when working from normal workflow, known exceptions, impact descriptions, and owner roles.
+triggers: ["startup process exception log design", "help with startup process exception log design", "work on startup process exception log", "review my startup process exception log design", "apply startup process exception log design to these materials"]
 not_for: ["Startup service capacity planning [MOP-008]", "Startup operating procedure drafting [MOP-009]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Startup process exception log design
 
 ## Purpose
-Produce a usable startup process exception log design deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this startup process exception log design task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -113,7 +113,7 @@ Owner task: repair the approval path; closing individual requests does not close
 The log distinguishes incident handling from resolution of the recurring cause.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

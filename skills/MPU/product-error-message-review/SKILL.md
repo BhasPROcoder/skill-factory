@@ -3,9 +3,9 @@ id: MPU-003
 name: product-error-message-review
 domain: Product Experience Review
 subdomain: Design
-version: 1.0
-description: Product error message review using supplied evidence and explicit acceptance checks; use when preparing a product error message review deliverable.
-triggers: ["help me with product error message review", "prepare a product error message review deliverable", "review our product error message review evidence", "create a product error message review action plan", "check this product error message review decision"]
+version: 1.1
+description: Guide product error message review when working from error conditions, current messages, recovery actions, and sensitive-data constraints.
+triggers: ["product error message review", "help with product error message review", "work on product error message review", "review my product error message review", "apply product error message review to these materials"]
 not_for: ["Product form question audit [MPU-004]", "Product onboarding friction review [MPU-005]", "Legal or regulated financial conclusions"]
 requires: []
 risk_level: medium
@@ -14,7 +14,7 @@ risk_level: medium
 # Product error message review
 
 ## Purpose
-Produce a usable product error message review deliverable from evidence supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
+Complete this product error message review task using material supplied for a specific decision. Preserve the distinction between an observed problem, a proposed response, and a result that still needs to be measured.
 
 ## Inputs to collect
 1. **Decision and audience** — identify who will use this output and what they must decide; default: an internal review draft, with no authority to publish or change live systems.
@@ -104,14 +104,14 @@ Internal review for fictional Juniper Works using supplied record A. No live cha
   Action: Describe the service interruption and provide the verified recovery route. Owner: affected workstream lead.
 
 ## Artifact
-Draft: We couldn't complete the request because the service is unavailable. Use [VERIFIED RECOVERY ROUTE] to try again or get help.
+Draft: We could not complete the request because of a service-side problem. Next step: [VERIFIED RECOVERY ACTION].
 Do not blame customer data when the supplied cause is service-side failure.
 
 ## Acceptance check
 Messages distinguish correctable input problems from service-side failures.
 
 ## Unresolved
-Confirm the assigned owner and any live implementation constraints before execution.
+Resolve the dependencies explicitly identified in the artifact or findings; confirm the assigned owner and applicable implementation constraints before execution.
 ```
 
 **Bad output:**

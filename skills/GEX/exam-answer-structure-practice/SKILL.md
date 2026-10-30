@@ -3,10 +3,10 @@ id: GEX-007
 name: exam-answer-structure-practice
 domain: Exam Preparation Methods
 subdomain: Analysis
-version: 1.0
+version: 1.1
 description: Prepare exam answer structure practice from supplied evidence; use when the request concerns question command.
 triggers: ["exam answer structure practice", "prepare exam answer structure practice", "review my exam answer structure practice", "help me with exam answer structure practice", "turn question command into an actionable plan"]
-not_for: ["Unrelated tasks that need different source material", "Taking external actions or submitting documents without authorization"]
+not_for: ["Exam time allocation rehearsal [GEX-008]", "Final review triage [GEX-009]"]
 requires: []
 risk_level: low
 ---
@@ -52,6 +52,8 @@ Scope: <one sentence defining this task and its boundaries>
 Basis: <up to three supplied inputs; distinguish unknowns>
 Answer part | Question demand | Draft issue | Revision
 <one row per finding; each cell one concise sentence>
+
+Artifact: <the actual draft, prompts, sequence, or other requested deliverable; mark proposals>
 Next action: <one concrete action, its owner or role, and the evidence needed>
 Unresolved: <up to three verification questions, or None>
 ```
@@ -75,7 +77,7 @@ Use at most 12 rows in the first response. If more are necessary, prioritize blo
 
 ## Worked example
 **Input:**
-> Fictional scenario: Fictional candidate Aria is asked to compare two proposals but writes separate descriptions without a comparison basis.
+> Fictional scenario: Fictional candidate Aria is asked to compare two proposals but writes separate descriptions without a comparison basis. The conclusion states a preference without relating it to any shared criterion.
 
 **Output:**
 ```text
@@ -84,8 +86,16 @@ Basis: The fictional scenario above; missing supporting material remains unverif
 Answer part | Question demand | Draft issue | Revision
 Comparison basis | Shared criteria needed | Missing | Choose relevant common criteria
 Conclusion | Judgment from comparison | Unsupported preference | Tie it to stated criteria
-Next action: The requester supplies the unresolved evidence and confirms the proposed next step before implementation.
-Unresolved: Which missing source or observation would change the provisional conclusion?
+
+Artifact: Proposed answer outline:
+Criterion: [common decision-relevant basis supported by the question].
+Proposal A: evidence and implication on that criterion.
+Proposal B: evidence and implication on the same criterion.
+Comparison: the meaningful similarity or difference, with support.
+Conclusion: judgment justified by the comparison and any stated limitations.
+Repeat only for necessary criteria; two unrelated descriptions do not by themselves answer a comparison task.
+Next action: The requester or assigned reviewer will complete this task-specific check: Practice a concise version that fits the verified response constraints. Retain the resulting revision or evidence record; do not describe the proposed action as already completed.
+Unresolved: Resolve or confirm the first row's verification issue: Choose relevant common criteria.
 ```
 
 **Bad output:**
