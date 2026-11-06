@@ -1,0 +1,7 @@
+{
+  "domains": [{"code": "UST", "name": "Interface State Contracts", "macro": "Product & Design", "scope": "Specify evidence-dependent interface states and recovery choices without implying implementation or external verification.", "subdomains": ["Data freshness", "Configuration recovery"]}],
+  "skills": [
+    {"id": "UST-001", "name": "telemetry-freshness-interface-specification", "domain_code": "UST", "subdomain": "Data freshness", "description": "Specify visible freshness states and recovery behavior for monitoring interfaces when delayed or missing observations could be mistaken for live data.", "risk_level": "medium", "requires": [], "status": "planned"},
+    {"id": "UST-002", "name": "configurator-invalid-combination-recovery", "domain_code": "UST", "subdomain": "Configuration recovery", "description": "Design transparent recovery from incompatible product selections when a configurator must preserve user intent while enforcing supplied compatibility rules.", "risk_level": "medium", "requires": [], "status": "planned"}
+  ]
+}

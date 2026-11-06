@@ -30,6 +30,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 
 ## Product & Design
 - **MPU** Product Experience Review (10) — Review product flows, interface content, prototypes, and feedback using user tasks and observable acceptance criteria. → `skills/MPU/INDEX.md`
+- **UST** Interface State Contracts (2) — Specify evidence-dependent interface states and recovery choices without implying implementation or external verification. → `skills/UST/INDEX.md`
 
 ## Software Engineering
 - **TRP** Computational Reproducibility (10) — Make computational artifacts traceable, rerunnable, and comparable without hidden environmental or data dependencies. → `skills/TRP/INDEX.md`
@@ -75,6 +76,8 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **TVE** Video Editing Decisions (10) — Plan and review video structure, continuity, sound-image relationships, accessibility, and delivery from supplied footage and briefs. → `skills/TVE/INDEX.md`
 - **MPH** Photography Planning and Critique (10) — Plan and critique photographs through subject intention, framing, light, visual sequence, and shoot logistics without fixed equipment recipes. → `skills/MPH/INDEX.md`
 - **MVA** Visual Composition and Art Direction (10) — Develop and critique visual compositions through hierarchy, grouping, contrast, typography, image relationships, and concrete art-direction briefs. → `skills/MVA/INDEX.md`
+- **SPD** Spatial Asset Preparation (2) — Prepare controlled spatial asset handoffs and material comparisons with explicit coordinate contracts and observable evidence. → `skills/SPD/INDEX.md`
+- **VEV** Visual Evidence Interpretation (2) — Specify visible distinctions between documented evidence, inferred reconstructions, measurements, and model outputs in visual scenes. → `skills/VEV/INDEX.md`
 
 ## Research Methods & Academia
 - **GRQ** Research Question and Study Design (10) — Define answerable research questions, sampling decisions, measurements, and feasible study protocols. → `skills/GRQ/INDEX.md`

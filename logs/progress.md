@@ -4,3 +4,5 @@
 # Final library and migration
 
 2026-10-31: sf.py reports 544 validated skills in 57 domains; combined quality and registry checks pass. All 57 Claude source workflows mapped to 88 validated destinations; original folder removal verified with destination hashes intact. Router/indexes and 544-skill portable export/ZIP generated with archive integrity PASS. No audited statuses claimed.
+
+2026-10-31: Directory pilot: sf.py ingested 3 domains and 6 skills, validated all 6, and reported combined quality PASS 550 and registry OK 60 domains/550 skills. All 185 numbered directory topics included in the expansion planning inventory; substantive review and bounded text-execution evidence recorded in logs/directory-pilot-review.md. No audited statuses claimed.

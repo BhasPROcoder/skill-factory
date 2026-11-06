@@ -1,0 +1,36 @@
+{
+  "domains": [
+    {
+      "code": "SPD",
+      "name": "Spatial Asset Preparation",
+      "macro": "Visual Arts, Photo & Video",
+      "scope": "Prepare controlled spatial asset handoffs and material comparisons with explicit coordinate contracts and observable evidence.",
+      "subdomains": [
+        "Coordinate handoffs",
+        "Material diagnosis"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "SPD-002",
+      "name": "procedural-material-parameter-isolation",
+      "domain_code": "SPD",
+      "subdomain": "Material diagnosis",
+      "description": "Design a controlled material comparison that isolates a procedural parameter from lighting, geometry, and rendering changes when a material behaves unexpectedly.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "SPD-001",
+      "name": "spatial-coordinate-unit-handoff",
+      "domain_code": "SPD",
+      "subdomain": "Coordinate handoffs",
+      "description": "Prepare a coordinate and unit contract for transferring a spatial asset between tools when scale, orientation, origin, or transform handling may change.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

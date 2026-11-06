@@ -1,0 +1,7 @@
+{
+  "domains": [{"code": "VEV", "name": "Visual Evidence Interpretation", "macro": "Visual Arts, Photo & Video", "scope": "Specify visible distinctions between documented evidence, inferred reconstructions, measurements, and model outputs in visual scenes.", "subdomains": ["Reconstruction interpretation", "Model output interpretation"]}],
+  "skills": [
+    {"id": "VEV-001", "name": "reconstruction-evidence-visual-labeling", "domain_code": "VEV", "subdomain": "Reconstruction interpretation", "description": "Design visible evidence labels for historical or museum reconstructions when documented features, inferred geometry, and illustrative additions share one scene.", "risk_level": "medium", "requires": [], "status": "planned"},
+    {"id": "VEV-002", "name": "simulation-observation-display-separation", "domain_code": "VEV", "subdomain": "Model output interpretation", "description": "Specify how a visualization distinguishes measured observations, model estimates, and hypothetical scenarios when they share a digital-twin or analytical display.", "risk_level": "medium", "requires": [], "status": "planned"}
+  ]
+}
