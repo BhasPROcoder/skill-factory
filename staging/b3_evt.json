@@ -1,0 +1,36 @@
+{
+  "domains": [
+    {
+      "code": "EVT",
+      "name": "Event Show Operations",
+      "macro": "Operations & Supply Chain",
+      "scope": "Prepare caller cue sheets and rehearse alternate presentation delivery and program rejoin decisions.",
+      "subdomains": [
+        "Cue calling",
+        "Playback recovery"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "EVT-001",
+      "name": "show-cue-and-standby-sheet",
+      "domain_code": "EVT",
+      "subdomain": "Cue calling",
+      "description": "Turn an event rundown into a callable sheet that separates standby, release, acknowledgment, and audience-visible completion.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "EVT-002",
+      "name": "alternate-playback-recovery-rehearsal",
+      "domain_code": "EVT",
+      "subdomain": "Playback recovery",
+      "description": "Build a rehearsal script for a failed presentation cue that identifies an approved alternate, the switch decision, and a verified rejoin point.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

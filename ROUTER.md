@@ -94,6 +94,9 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 
 ## Operations & Supply Chain
 - **MOP** Startup Operating Workflows (10) — Define lightweight service delivery, support, vendor, and internal handoff workflows for small organizations. → `skills/MOP/INDEX.md`
+- **BID** Procurement Evidence Decisions (3) — Normalize purchase offers, assess proposed substitutions, and reconcile bid responses against tender revisions using supplied scope and evidence. → `skills/BID/INDEX.md`
+- **EVT** Event Show Operations (2) — Prepare caller cue sheets and rehearse alternate presentation delivery and program rejoin decisions. → `skills/EVT/INDEX.md`
+- **WHS** Warehouse Stock Operations (2) — Reconcile physical stock discrepancies and resolve order-line picking exceptions using count, movement, eligibility and fulfillment evidence. → `skills/WHS/INDEX.md`
 
 ## E-commerce
 - **MEC** E-commerce Customer Experience (10) — Review catalog, product, cart, checkout, and post-purchase experiences using verified offer and fulfillment facts. → `skills/MEC/INDEX.md`

@@ -50,7 +50,7 @@ The pilot produces bounded design and preparation artifacts. It does not claim t
 | 38 | M&A & Investment Banking Presentations | Sales, partnerships, and customer success; Accounting and financial administration | Pending discovery |
 | 39 | Board of Directors & Quarterly Reporting | Sales, partnerships, and customer success; Accounting and financial administration | Pending discovery |
 | 40 | Sales Enablement & Client Proposals | Sales, partnerships, and customer success; Accounting and financial administration | Pending discovery |
-| 41 | Keynote & Conference Visual Storytelling | Sales, partnerships, and customer success; Accounting and financial administration | Pending discovery |
+| 41 | Keynote & Conference Visual Storytelling | Sales, partnerships, and customer success; Accounting and financial administration | EVT-002 |
 | 42 | Internal Change Management Comms | Sales, partnerships, and customer success; Accounting and financial administration | Pending discovery |
 | 43 | Data Storytelling & Infographic Design | Sales, partnerships, and customer success; Accounting and financial administration | Pending discovery |
 | 44 | Executive Summaries & Whitepapers | Sales, partnerships, and customer success; Accounting and financial administration | Pending discovery |
@@ -98,7 +98,7 @@ The pilot produces bounded design and preparation artifacts. It does not claim t
 | 86 | E-Commerce Storefront UI/UX | Product design and accessibility; Logistics, inventory, and fulfillment | Pending discovery |
 | 87 | Packaging & Structural 3D Design | Product design and accessibility; Logistics, inventory, and fulfillment | Pending discovery |
 | 88 | Direct-to-Consumer (DTC) Retail Pitch Decks | Product design and accessibility; Logistics, inventory, and fulfillment | Pending discovery |
-| 89 | Inventory & Supply Chain Dashboards | Product design and accessibility; Logistics, inventory, and fulfillment | Pending discovery |
+| 89 | Inventory & Supply Chain Dashboards | Product design and accessibility; Logistics, inventory, and fulfillment | WHS-001 |
 | 90 | 3D Product Configurators | Product design and accessibility; Logistics, inventory, and fulfillment | UST-002 |
 | 91 | Virtual Showrooms & 3D Merchandising | Product design and accessibility; Logistics, inventory, and fulfillment | Pending discovery |
 | 92 | Loyalty & Gamified Shopping Apps | Product design and accessibility; Logistics, inventory, and fulfillment | Pending discovery |
@@ -181,14 +181,14 @@ The pilot produces bounded design and preparation artifacts. It does not claim t
 | 169 | Last-Mile Delivery & Courier Apps | Logistics, inventory, and fulfillment | Pending discovery |
 | 170 | Automotive Concept Modeling & Shaders | Logistics, inventory, and fulfillment | Pending discovery |
 | 171 | SpaceTech & Satellite Telemetry Interfaces | Logistics, inventory, and fulfillment | Pending discovery |
-| 172 | Warehouse Automation & Picking UI | Logistics, inventory, and fulfillment | Pending discovery |
+| 172 | Warehouse Automation & Picking UI | Logistics, inventory, and fulfillment | WHS-002 |
 | 173 | TravelTech & Itinerary Vibe Coding | Logistics, inventory, and fulfillment | Pending discovery |
 | 174 | Freight & Customs Brokerage Portals | Logistics, inventory, and fulfillment | Pending discovery |
 | 175 | High-Speed Rail & Transit Wayfinding | Logistics, inventory, and fulfillment | Pending discovery |
 | 176 | HRTech Applicant Tracking & Onboarding UI | Workforce, service operations, and daily administration | Pending discovery |
 | 177 | Sports Analytics & Biomechanics 3D Analysis | Workforce, service operations, and daily administration | Pending discovery |
 | 178 | Hospitality & Boutique Hotel Booking Engines | Workforce, service operations, and daily administration | Pending discovery |
-| 179 | Event Management & 3D Venue Seating Maps | Workforce, service operations, and daily administration | Pending discovery |
+| 179 | Event Management & 3D Venue Seating Maps | Workforce, service operations, and daily administration | EVT-001, EVT-002 |
 | 180 | Culinary, Restaurant POS & Kitchen UI | Workforce, service operations, and daily administration | Pending discovery |
 | 181 | FashionTech & 3D Garment Simulation | Workforce, service operations, and daily administration | Pending discovery |
 | 182 | PetTech & Veterinary Management Apps | Workforce, service operations, and daily administration | Pending discovery |

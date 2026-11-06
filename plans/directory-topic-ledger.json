@@ -348,7 +348,9 @@
       "topic": "Keynote & Conference Visual Storytelling",
       "source_group": 4,
       "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
-      "candidate_pilot_ids": [],
+      "candidate_pilot_ids": [
+        "EVT-002"
+      ],
       "coverage_status": "planned; substantive coverage not yet established"
     },
     {
@@ -732,7 +734,9 @@
       "topic": "Inventory & Supply Chain Dashboards",
       "source_group": 8,
       "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
-      "candidate_pilot_ids": [],
+      "candidate_pilot_ids": [
+        "WHS-001"
+      ],
       "coverage_status": "planned; substantive coverage not yet established"
     },
     {
@@ -1402,7 +1406,9 @@
       "topic": "Warehouse Automation & Picking UI",
       "source_group": 15,
       "expansion_tracks": "Logistics, inventory, and fulfillment",
-      "candidate_pilot_ids": [],
+      "candidate_pilot_ids": [
+        "WHS-002"
+      ],
       "coverage_status": "planned; substantive coverage not yet established"
     },
     {
@@ -1458,7 +1464,10 @@
       "topic": "Event Management & 3D Venue Seating Maps",
       "source_group": 16,
       "expansion_tracks": "Workforce, service operations, and daily administration",
-      "candidate_pilot_ids": [],
+      "candidate_pilot_ids": [
+        "EVT-001",
+        "EVT-002"
+      ],
       "coverage_status": "planned; substantive coverage not yet established"
     },
     {

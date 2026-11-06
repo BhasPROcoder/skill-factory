@@ -1,0 +1,36 @@
+{
+  "domains": [
+    {
+      "code": "WHS",
+      "name": "Warehouse Stock Operations",
+      "macro": "Operations & Supply Chain",
+      "scope": "Reconcile physical stock discrepancies and resolve order-line picking exceptions using count, movement, eligibility and fulfillment evidence.",
+      "subdomains": [
+        "Stock count reconciliation",
+        "Order picking exceptions"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "WHS-001",
+      "name": "counted-stock-discrepancy-reconciliation",
+      "domain_code": "WHS",
+      "subdomain": "Stock count reconciliation",
+      "description": "Reconcile an observed warehouse count with a recorded quantity when location, stock identity or movement timing could explain the difference.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "WHS-002",
+      "name": "pick-short-exception-resolution",
+      "domain_code": "WHS",
+      "subdomain": "Order picking exceptions",
+      "description": "Prepare a fulfillment decision for a short pick when confirmed picked quantities, eligible alternatives and order constraints must be reconciled.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

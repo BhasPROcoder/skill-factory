@@ -1,0 +1,37 @@
+{
+  "domains": [
+    {
+      "code": "BID",
+      "name": "Procurement Evidence Decisions",
+      "macro": "Operations & Supply Chain",
+      "scope": "Normalize purchase offers, assess proposed substitutions, and reconcile bid responses against tender revisions using supplied scope and evidence.",
+      "subdomains": [
+        "Bid normalization",
+        "Substitution evidence",
+        "Tender revisions"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "BID-001",
+      "name": "normalize-purchase-bid-scope-and-units",
+      "subdomain": "Bid normalization",
+      "description": "Normalize competing purchase offers against a common demand and scope when quoted pack sizes, exclusions or charge bases differ.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "BID",
+      "status": "planned"
+    },
+    {
+      "id": "BID-002",
+      "name": "supplier-substitution-disposition",
+      "subdomain": "Substitution evidence",
+      "description": "Prepare a traceable disposition for a supplier's proposed replacement when requirements, evidence and approval authority must be reconciled before release.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "BID",
+      "status": "planned"
+    }
+  ]
+}

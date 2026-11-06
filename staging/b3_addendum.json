@@ -1,0 +1,15 @@
+{
+  "domains": [],
+  "skills": [
+    {
+      "id": "BID-003",
+      "name": "tender-addendum-impact-reconciliation",
+      "domain_code": "BID",
+      "subdomain": "Tender revisions",
+      "description": "Trace an issued tender change into affected bid drafts and sign-offs when the response already has a working baseline.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}
