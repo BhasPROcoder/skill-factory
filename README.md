@@ -21,6 +21,8 @@ The instructions are plain Markdown and do not require a particular model or plu
 
 The router shows actual domain coverage. A topic's presence does not imply that every specialization, jurisdiction, or platform feature is covered.
 
+For upcoming work, see the [5,000-skill expansion plan](plans/5000-additional-skills.md) and [directory topic map](plans/directory-integration.md). The map includes proposed topics; use the router to find skills available now.
+
 ## Generalized workflows
 
 The library also includes general-purpose workflows adapted from the user's former Claude skills collection. They use task inputs and verification steps instead of personal business details, vendor invocation commands, or assumed current prices and rules. The [migration comparison](logs/claude-migration.md) maps source workflows to new skills or existing equivalents so duplicate names do not inflate the repertoire.

@@ -31,12 +31,14 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 ## Product & Design
 - **MPU** Product Experience Review (10) — Review product flows, interface content, prototypes, and feedback using user tasks and observable acceptance criteria. → `skills/MPU/INDEX.md`
 - **UST** Interface State Contracts (2) — Specify evidence-dependent interface states and recovery choices without implying implementation or external verification. → `skills/UST/INDEX.md`
+- **IXA** Interaction Adaptation (2) — Design motion alternatives and conversational repairs that preserve task state, user intent, and explicit confirmation boundaries. → `skills/IXA/INDEX.md`
 
 ## Software Engineering
 - **TRP** Computational Reproducibility (10) — Make computational artifacts traceable, rerunnable, and comparable without hidden environmental or data dependencies. → `skills/TRP/INDEX.md`
 - **TAP** API Contract Engineering (10) — Define and test request, response, retry, pagination, and compatibility contracts for application interfaces. → `skills/TAP/INDEX.md`
 - **TST** Software Verification Design (10) — Design focused tests for behavior, boundaries, state transitions, regressions, and reproducible failures. → `skills/TST/INDEX.md`
 - **THK** Hackathon Delivery (10) — Scope, organize, demonstrate, and hand off time-bounded hackathon projects under supplied event requirements. → `skills/THK/INDEX.md`
+- **CLI** Command-Line Interaction Contracts (2) — Specify machine streams, completion evidence, literal operands and argument boundaries for command-line tools. → `skills/CLI/INDEX.md`
 
 ## AI/ML & Data Science
 - **TKG** Kaggle Competition Workflows (10) — Prepare competition experiments, submissions, collaboration records, and reproducible handoffs under verified current competition rules. → `skills/TKG/INDEX.md`
@@ -78,6 +80,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **MVA** Visual Composition and Art Direction (10) — Develop and critique visual compositions through hierarchy, grouping, contrast, typography, image relationships, and concrete art-direction briefs. → `skills/MVA/INDEX.md`
 - **SPD** Spatial Asset Preparation (2) — Prepare controlled spatial asset handoffs and material comparisons with explicit coordinate contracts and observable evidence. → `skills/SPD/INDEX.md`
 - **VEV** Visual Evidence Interpretation (2) — Specify visible distinctions between documented evidence, inferred reconstructions, measurements, and model outputs in visual scenes. → `skills/VEV/INDEX.md`
+- **SDR** Spatial Deformation and Restoration (2) — Design pose-specific deformation inspections and reversible scan cleanup decisions tied to reference evidence. → `skills/SDR/INDEX.md`
 
 ## Research Methods & Academia
 - **GRQ** Research Question and Study Design (10) — Define answerable research questions, sampling decisions, measurements, and feasible study protocols. → `skills/GRQ/INDEX.md`

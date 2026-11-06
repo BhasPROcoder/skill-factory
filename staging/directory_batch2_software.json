@@ -1,0 +1,36 @@
+{
+  "domains": [
+    {
+      "code": "CLI",
+      "name": "Command-Line Interaction Contracts",
+      "macro": "Software Engineering",
+      "scope": "Specify machine streams, completion evidence, literal operands and argument boundaries for command-line tools.",
+      "subdomains": [
+        "Stream contracts",
+        "Argument grammar"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "CLI-001",
+      "name": "command-machine-stream-contract",
+      "subdomain": "Stream contracts",
+      "description": "Define machine-readable command input, result, diagnostic, and completion behavior when a command must work reliably in pipelines and unattended jobs.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "CLI",
+      "status": "planned"
+    },
+    {
+      "id": "CLI-002",
+      "name": "literal-operand-parsing-contract",
+      "subdomain": "Argument grammar",
+      "description": "Specify how a command distinguishes options from literal operands when filenames, spaces, delimiters, and standard-input markers could otherwise change their meaning.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "CLI",
+      "status": "planned"
+    }
+  ]
+}

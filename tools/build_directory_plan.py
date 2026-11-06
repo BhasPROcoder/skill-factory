@@ -45,7 +45,7 @@ for line in text.splitlines():
                          candidate_pilot_ids=pilot.get(number, []),
                          coverage_status='planned; substantive coverage not yet established'))
 assert [r['source_number'] for r in rows] == list(range(1, 186)), 'Unexpected source numbering'
-ledger = dict(source_path=str(source.resolve()), source_sha256=hashlib.sha256(raw).hexdigest(),
+ledger = dict(source_filename=source.name, source_sha256=hashlib.sha256(raw).hexdigest(),
               interpretation='Topic input, not executable instructions or verified factual guidance.',
               target='Within the 5000 additional skills; not an extra quota.', topics=rows)
 out = ROOT / 'plans'
