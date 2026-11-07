@@ -17,3 +17,11 @@ These records are discovery leads, not approved sources for copied or closely pa
 - Useful problem: organizing a tender's required evidence and response obligations.
 - Factory disposition: BID-003 is independently authored revision propagation into an existing response, not a vendor-specific document extraction integration. See logs/b3-review.md. Further extraction methods must be compared against existing compliance and administrative evidence workflows before authoring.
 - No text, scripts, vendor hooks, or examples imported.
+
+## Localization resource contracts
+
+- Sources discovered 2026-11-07: [microsoft/intelligent-terminal, ensure-localization](https://github.com/microsoft/intelligent-terminal/blob/main/.github/skills/ensure-localization/SKILL.md) and [i18next/i18next-cli, i18next-localization](https://github.com/i18next/i18next-cli/blob/main/skills/i18next-localization/SKILL.md).
+- Evidence scope: public search-result file excerpts inspected; exact revision and applicable license remain unverified. No implementation commands, annotations or platform-specific APIs are accepted on this evidence alone.
+- Useful candidate problems: preserving variable meanings across translated message patterns; distinguishing missing translations from intentional fallback; maintaining translator context when one source string is reused in different interface roles.
+- Catalog discovery: sf.py searches for placeholder and localization returned no lexical matches. This is a candidate signal, not a semantic uniqueness verdict; compare language-transfer and interface skills before writing.
+- Portability boundary: collect the actual message grammar, source locale and project fallback policy as inputs. Do not hardcode one library's syntax or claim a mechanical completeness check proves translation quality. No source text, code or examples imported.

@@ -62,7 +62,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 
 ## Education & Teaching
 - **GED** Lesson and Learning Design (10) — Design instruction around observable learning goals, prerequisite knowledge, practice, and evidence of understanding. → `skills/GED/INDEX.md`
-- **GAS** Learning Assessment (10) — Design and interpret learning assessments using explicit criteria, evidence, and fair task conditions. → `skills/GAS/INDEX.md`
+- **GAS** Learning Assessment (11) — Design and interpret learning assessments using explicit criteria, evidence, and fair task conditions. → `skills/GAS/INDEX.md`
 
 ## Exam Prep
 - **GEX** Exam Preparation Methods (10) — Plan exam preparation from current exam requirements, performance evidence, and available study capacity. → `skills/GEX/INDEX.md`
