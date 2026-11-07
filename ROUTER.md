@@ -86,6 +86,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 ## Research Methods & Academia
 - **GRQ** Research Question and Study Design (10) — Define answerable research questions, sampling decisions, measurements, and feasible study protocols. → `skills/GRQ/INDEX.md`
 - **GRV** Evidence Review and Synthesis (10) — Find, screen, extract, and synthesize evidence with transparent scope and claim-level support. → `skills/GRV/INDEX.md`
+- **ARC** Collection Description Operations (3) — Reconcile accession evidence, descriptive hierarchies and image correspondence without inferring ownership or unsupported historical facts. → `skills/ARC/INDEX.md`
 
 ## Languages & Translation
 - **GLA** Language Transfer and Translation (10) — Preserve meaning, register, terminology and uncertainty across languages and learning contexts. → `skills/GLA/INDEX.md`
@@ -98,6 +99,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **BID** Procurement Evidence Decisions (3) — Normalize purchase offers, assess proposed substitutions, and reconcile bid responses against tender revisions using supplied scope and evidence. → `skills/BID/INDEX.md`
 - **EVT** Event Show Operations (2) — Prepare caller cue sheets and rehearse alternate presentation delivery and program rejoin decisions. → `skills/EVT/INDEX.md`
 - **WHS** Warehouse Stock Operations (2) — Reconcile physical stock discrepancies and resolve order-line picking exceptions using count, movement, eligibility and fulfillment evidence. → `skills/WHS/INDEX.md`
+- **SVC** Service Appointment Operations (3) — Reconcile resource occupancy, exclusive waitlist offers and appointment attendance from supplied service policies and event evidence. → `skills/SVC/INDEX.md`
 
 ## E-commerce
 - **MEC** E-commerce Customer Experience (10) — Review catalog, product, cart, checkout, and post-purchase experiences using verified offer and fulfillment facts. → `skills/MEC/INDEX.md`
