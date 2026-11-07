@@ -14,6 +14,10 @@ Workflow for each checkpoint:
 6. Package and commit each reviewed small domain batch or coordinated set. Push to origin/main, verify success and matching local/remote heads. Preserve unready work unstaged.
 7. Immediately select the next useful gaps; continue the active goal. Never mark the 5,000 target complete based on a batch count, filenames, or structural validation alone.
 
-Current working batch: SVC (four service appointment methods), ARC (four collection-description methods), DST (four design-system maintenance methods). Author manifests: staging/b4_svc.json, staging/b4_arc.json, staging/b4_dst.json. Independent reviews: logs/b4-svc-tests.md, logs/b4-arc-tests.md, logs/b4-dst-tests.md. Counts and completion must be read from actual outputs rather than inferred from this queue.
+Last observed checkpoint: sf.py reports 574 validated skills, 30 net additions against the original 544, and 4,970 remaining. Batch four contains three SVC, three ARC, four DST and one SHP skill. The proposed fourth SVC and ARC skills were not created or counted.
+
+Current working batch: RNT (six rental-asset methods), PRT (six print-production handoffs), EXP (six exhibition operations). Author manifests are staging/b5_rnt.json, staging/b5_prt.json and staging/b5_exp.json. Drafts remain outside the accepted count until independent review and serial ingestion. Counts and completion must be read from actual outputs rather than inferred from this queue.
+
+Use `python tools/sf.py expansion` for conservative net accounting against the immutable baseline commit. This checks identity, status and file presence; it does not prove semantic uniqueness or behavioral quality.
 
 Candidate gap queue after this batch: shipping document-to-consignment reconciliation; returns condition/evidence disposition; museum exhibit label revision propagation; event seating sightline evidence review; customer-support attachment redaction handoff; maintenance work-order completion evidence; design asset licensing handoff; course assignment resubmission history; research instrument calibration-record organization. These are candidates, not approved scopes, planned registry entries, or created skills. Compare each against the current catalog before assigning IDs.
