@@ -100,6 +100,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **EVT** Event Show Operations (2) — Prepare caller cue sheets and rehearse alternate presentation delivery and program rejoin decisions. → `skills/EVT/INDEX.md`
 - **WHS** Warehouse Stock Operations (2) — Reconcile physical stock discrepancies and resolve order-line picking exceptions using count, movement, eligibility and fulfillment evidence. → `skills/WHS/INDEX.md`
 - **SVC** Service Appointment Operations (3) — Reconcile resource occupancy, exclusive waitlist offers and appointment attendance from supplied service policies and event evidence. → `skills/SVC/INDEX.md`
+- **SHP** Shipment Record Reconciliation (1) — Reconcile package identities, contents and shipment records without asserting physical handover or carrier acceptance. → `skills/SHP/INDEX.md`
 
 ## E-commerce
 - **MEC** E-commerce Customer Experience (10) — Review catalog, product, cart, checkout, and post-purchase experiences using verified offer and fulfillment facts. → `skills/MEC/INDEX.md`
