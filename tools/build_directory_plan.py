@@ -27,7 +27,8 @@ groups = {
     15: 'Logistics, inventory, and fulfillment',
     16: 'Workforce, service operations, and daily administration',
 }
-pilot = {8: ['CLI-001', 'CLI-002'], 17: ['IXA-001'], 19: ['IXA-002'],
+pilot = {8: ['CLI-001', 'CLI-002'], 15: ['DST-001', 'DST-002', 'DST-003', 'DST-004'],
+         17: ['IXA-001'], 19: ['IXA-002'],
          22: ['IXA-001'], 26: ['SPD-002'], 27: ['SDR-001'],
          28: ['SPD-001'], 31: ['VEV-002'], 35: ['SDR-002'],
          41: ['EVT-002'], 89: ['WHS-001'], 90: ['UST-002'], 119: ['VEV-001'],

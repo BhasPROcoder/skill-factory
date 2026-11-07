@@ -124,7 +124,12 @@
       "topic": "Design Systems & Component Libraries",
       "source_group": 2,
       "expansion_tracks": "Product design and accessibility",
-      "candidate_pilot_ids": [],
+      "candidate_pilot_ids": [
+        "DST-001",
+        "DST-002",
+        "DST-003",
+        "DST-004"
+      ],
       "coverage_status": "planned; substantive coverage not yet established"
     },
     {
