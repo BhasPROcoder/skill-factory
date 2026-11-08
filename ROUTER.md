@@ -51,6 +51,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **TAN** Analytical Reasoning and Metrics (10) — Define and diagnose analytical measures, comparisons, uncertainty, and interpretation using supplied data. → `skills/TAN/INDEX.md`
 - **TDS** Dataset Intake and Documentation (10) — Assess dataset suitability, provenance, documentation, and release readiness before downstream use. → `skills/TDS/INDEX.md`
 - **TDQ** Dataset Quality Diagnostics (10) — Diagnose concrete dataset integrity failures and define evidence-based repair checks. → `skills/TDQ/INDEX.md`
+- **TBX** Table Transformation Contracts (3) — Preserve observation identity through reversible cell reshaping, positional nested expansion and explicit numeric interval membership. → `skills/TBX/INDEX.md`
 
 ## Prompt Engineering & LLM Ops
 - **SKR** Reusable Skill Engineering (3) — Select distinct reusable procedures, generalize specialized workflows, and design independent behavioral checks with truthful evidence. → `skills/SKR/INDEX.md`
