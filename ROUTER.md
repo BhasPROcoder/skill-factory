@@ -82,6 +82,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **SPD** Spatial Asset Preparation (2) — Prepare controlled spatial asset handoffs and material comparisons with explicit coordinate contracts and observable evidence. → `skills/SPD/INDEX.md`
 - **VEV** Visual Evidence Interpretation (2) — Specify visible distinctions between documented evidence, inferred reconstructions, measurements, and model outputs in visual scenes. → `skills/VEV/INDEX.md`
 - **SDR** Spatial Deformation and Restoration (2) — Design pose-specific deformation inspections and reversible scan cleanup decisions tied to reference evidence. → `skills/SDR/INDEX.md`
+- **PRT** Print Production Handoffs (6) — Reconcile print production intent with quantity, proof, separation, boundary, personalization and assembly evidence without prescribing machinery operation. → `skills/PRT/INDEX.md`
 
 ## Research Methods & Academia
 - **GRQ** Research Question and Study Design (10) — Define answerable research questions, sampling decisions, measurements, and feasible study protocols. → `skills/GRQ/INDEX.md`
