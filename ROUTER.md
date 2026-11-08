@@ -33,6 +33,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **UST** Interface State Contracts (2) — Specify evidence-dependent interface states and recovery choices without implying implementation or external verification. → `skills/UST/INDEX.md`
 - **IXA** Interaction Adaptation (2) — Design motion alternatives and conversational repairs that preserve task state, user intent, and explicit confirmation boundaries. → `skills/IXA/INDEX.md`
 - **DST** Design System Maintenance (4) — Trace token dependencies and coordinate component contracts, renames and consumer retirement without assuming runtime or release readiness. → `skills/DST/INDEX.md`
+- **IPR** Interactive Prototype Behavior (3) — Implement and test bounded interaction state models for draft recovery, asynchronous result ownership and transactional edit history. → `skills/IPR/INDEX.md`
 
 ## Software Engineering
 - **TRP** Computational Reproducibility (10) — Make computational artifacts traceable, rerunnable, and comparable without hidden environmental or data dependencies. → `skills/TRP/INDEX.md`

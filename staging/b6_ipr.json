@@ -1,0 +1,47 @@
+{
+  "domains": [
+    {
+      "code": "IPR",
+      "name": "Interactive Prototype Behavior",
+      "macro": "Product & Design",
+      "scope": "Implement and test bounded interaction state models for draft recovery, asynchronous result ownership and transactional edit history.",
+      "subdomains": [
+        "Draft recovery",
+        "Asynchronous results",
+        "Edit history"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "IPR-001",
+      "name": "interrupted-form-draft-restoration",
+      "subdomain": "Draft recovery",
+      "description": "Implement and test a form-draft recovery model when interrupted editing must resume without overwriting newer work or treating a saved draft as a submitted record.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "IPR",
+      "status": "planned"
+    },
+    {
+      "id": "IPR-002",
+      "name": "asynchronous-result-generation-ownership",
+      "subdomain": "Asynchronous results",
+      "description": "Implement and test request-generation ownership when delayed responses must not replace results for a user's newer input.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "IPR",
+      "status": "planned"
+    },
+    {
+      "id": "IPR-003",
+      "name": "transactional-edit-history-branching",
+      "subdomain": "Edit history",
+      "description": "Implement and test undo and redo history when multi-step editing must preserve transaction boundaries and discard abandoned redo branches after a new edit.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "IPR",
+      "status": "planned"
+    }
+  ]
+}
