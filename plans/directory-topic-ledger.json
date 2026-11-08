@@ -219,7 +219,11 @@
       "topic": "Blender Hard-Surface Modeling",
       "source_group": 3,
       "expansion_tracks": "Creative production, media, and localization",
-      "candidate_pilot_ids": [],
+      "candidate_pilot_ids": [
+        "GEO-001",
+        "GEO-002",
+        "GEO-003"
+      ],
       "coverage_status": "planned; substantive coverage not yet established"
     },
     {

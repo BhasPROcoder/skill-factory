@@ -34,7 +34,7 @@ The pilot produces bounded design and preparation artifacts. It does not claim t
 | 22 | Micro-Interactions & Motion UI | Product design and accessibility | IXA-001 |
 | 23 | Conversion Rate Optimization (CRO) Design | Product design and accessibility | Pending discovery |
 | 24 | Spatial UI & Glassmorphism | Product design and accessibility | Pending discovery |
-| 25 | Blender Hard-Surface Modeling | Creative production, media, and localization | Pending discovery |
+| 25 | Blender Hard-Surface Modeling | Creative production, media, and localization | GEO-001, GEO-002, GEO-003 |
 | 26 | Procedural Shaders & Geometry Nodes | Creative production, media, and localization | SPD-002 |
 | 27 | Character Rigging & 3D Animation | Creative production, media, and localization | SDR-001 |
 | 28 | Indie Game Asset Creation | Creative production, media, and localization | SPD-001 |
