@@ -74,6 +74,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 
 ## Music & Audio Production
 - **TAM** Audio and Music Production Planning (10) — Plan recording, editing, arrangement, review, and delivery decisions from supplied audio evidence and creative constraints. → `skills/TAM/INDEX.md`
+- **ATR** Audio Timeline Reconstruction (3) — Construct decoded audio frame edits, loop taper candidates and declared-offset stem arrays with explicit provenance and bounded verification. → `skills/ATR/INDEX.md`
 
 ## Visual Arts, Photo & Video
 - **TVE** Video Editing Decisions (10) — Plan and review video structure, continuity, sound-image relationships, accessibility, and delivery from supplied footage and briefs. → `skills/TVE/INDEX.md`
