@@ -40,6 +40,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **TST** Software Verification Design (10) — Design focused tests for behavior, boundaries, state transitions, regressions, and reproducible failures. → `skills/TST/INDEX.md`
 - **THK** Hackathon Delivery (10) — Scope, organize, demonstrate, and hand off time-bounded hackathon projects under supplied event requirements. → `skills/THK/INDEX.md`
 - **CLI** Command-Line Interaction Contracts (2) — Specify machine streams, completion evidence, literal operands and argument boundaries for command-line tools. → `skills/CLI/INDEX.md`
+- **LRE** Localization Resource Engineering (3) — Validate message parameter contracts, trace configured fallback and reconcile translation review lineage using bounded executable reference models. → `skills/LRE/INDEX.md`
 
 ## AI/ML & Data Science
 - **TKG** Kaggle Competition Workflows (10) — Prepare competition experiments, submissions, collaboration records, and reproducible handoffs under verified current competition rules. → `skills/TKG/INDEX.md`

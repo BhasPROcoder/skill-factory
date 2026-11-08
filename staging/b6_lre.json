@@ -1,0 +1,47 @@
+{
+  "domains": [
+    {
+      "code": "LRE",
+      "name": "Localization Resource Engineering",
+      "macro": "Software Engineering",
+      "scope": "Validate message parameter contracts, trace configured fallback and reconcile translation review lineage using bounded executable reference models.",
+      "subdomains": [
+        "Message parameters",
+        "Resource fallback",
+        "Translation lineage"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "LRE-001",
+      "name": "localized-message-placeholder-contract",
+      "domain_code": "LRE",
+      "subdomain": "Message parameters",
+      "description": "Check localized message parameters against their runtime roles when translated strings can lose, rename or misuse interpolation values.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "LRE-002",
+      "name": "locale-fallback-resolution-trace",
+      "domain_code": "LRE",
+      "subdomain": "Resource fallback",
+      "description": "Trace which locale resource actually supplies a message when fallback order, blank values or unavailable bundles can conceal missing translations.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "LRE-003",
+      "name": "translation-source-revision-coverage",
+      "domain_code": "LRE",
+      "subdomain": "Translation lineage",
+      "description": "Reconcile translated resources with current source keys and reviewed source revisions when renames or meaning changes can leave apparently complete catalogs stale.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}
