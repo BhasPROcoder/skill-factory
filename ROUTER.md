@@ -109,6 +109,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **SVC** Service Appointment Operations (3) — Reconcile resource occupancy, exclusive waitlist offers and appointment attendance from supplied service policies and event evidence. → `skills/SVC/INDEX.md`
 - **SHP** Shipment Record Reconciliation (1) — Reconcile package identities, contents and shipment records without asserting physical handover or carrier acceptance. → `skills/SHP/INDEX.md`
 - **RNT** Rental Asset Operations (6) — Reconcile rental unit allocation, checkout kits, return observations, usage readings, custody follow-up and turnaround handoffs from supplied records without imposing fees or technical acceptance. → `skills/RNT/INDEX.md`
+- **SEQ** Dependency Schedule Computation (3) — Diagnose prerequisite graph cycles, select ready work and compute dependency-only duration baselines with explicit models. → `skills/SEQ/INDEX.md`
 
 ## E-commerce
 - **MEC** E-commerce Customer Experience (10) — Review catalog, product, cart, checkout, and post-purchase experiences using verified offer and fulfillment facts. → `skills/MEC/INDEX.md`
