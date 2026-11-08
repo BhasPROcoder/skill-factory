@@ -25,7 +25,7 @@ The pilot produces bounded design and preparation artifacts. It does not claim t
 | 13 | Mobile App UI/UX | Product design and accessibility | Pending discovery |
 | 14 | Enterprise SaaS Dashboards | Product design and accessibility | Pending discovery |
 | 15 | Design Systems & Component Libraries | Product design and accessibility | DST-001, DST-002, DST-003, DST-004 |
-| 16 | Interactive Wireframing & Prototyping | Product design and accessibility | Pending discovery |
+| 16 | Interactive Wireframing & Prototyping | Product design and accessibility | IPR-001, IPR-002, IPR-003 |
 | 17 | Accessibility (a11y) & Inclusive Design | Product design and accessibility | IXA-001 |
 | 18 | User Research & Persona Modeling | Product design and accessibility | Pending discovery |
 | 19 | Conversational UI & Voice Interfaces | Product design and accessibility | IXA-002 |

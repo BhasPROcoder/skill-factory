@@ -28,6 +28,7 @@ groups = {
     16: 'Workforce, service operations, and daily administration',
 }
 pilot = {8: ['CLI-001', 'CLI-002'], 15: ['DST-001', 'DST-002', 'DST-003', 'DST-004'],
+         16: ['IPR-001', 'IPR-002', 'IPR-003'],
          17: ['IXA-001'], 19: ['IXA-002'],
          22: ['IXA-001'], 26: ['SPD-002'], 27: ['SDR-001'],
          28: ['SPD-001'], 31: ['VEV-002'], 35: ['SDR-002'],

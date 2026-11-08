@@ -137,7 +137,11 @@
       "topic": "Interactive Wireframing & Prototyping",
       "source_group": 2,
       "expansion_tracks": "Product design and accessibility",
-      "candidate_pilot_ids": [],
+      "candidate_pilot_ids": [
+        "IPR-001",
+        "IPR-002",
+        "IPR-003"
+      ],
       "coverage_status": "planned; substantive coverage not yet established"
     },
     {
