@@ -88,6 +88,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **SDR** Spatial Deformation and Restoration (2) — Design pose-specific deformation inspections and reversible scan cleanup decisions tied to reference evidence. → `skills/SDR/INDEX.md`
 - **PRT** Print Production Handoffs (6) — Reconcile print production intent with quantity, proof, separation, boundary, personalization and assembly evidence without prescribing machinery operation. → `skills/PRT/INDEX.md`
 - **EXP** Exhibition Interpretation Operations (6) — Reconcile exhibition interpretation, visitor-facing delivery and loan-return records while separating editorial proposals from observed installation and custody evidence. → `skills/EXP/INDEX.md`
+- **GEO** Mesh Geometry Diagnostics (3) — Diagnose indexed triangle edge orientation, per-corner UV signed area, and explicitly ordered three-dimensional point transforms. → `skills/GEO/INDEX.md`
 
 ## Research Methods & Academia
 - **GRQ** Research Question and Study Design (10) — Define answerable research questions, sampling decisions, measurements, and feasible study protocols. → `skills/GRQ/INDEX.md`
