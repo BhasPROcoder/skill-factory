@@ -1,0 +1,80 @@
+{
+  "domains": [
+    {
+      "code": "RNT",
+      "name": "Rental Asset Operations",
+      "macro": "Operations & Supply Chain",
+      "scope": "Reconcile rental unit allocation, checkout kits, return observations, usage readings, custody follow-up and turnaround handoffs from supplied records without imposing fees or technical acceptance.",
+      "subdomains": [
+        "Checkout kits",
+        "Custody follow-up",
+        "Return observations",
+        "Serial allocation",
+        "Turnaround readiness",
+        "Usage readings"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "RNT-001",
+      "name": "rental-serial-allocation-reconciliation",
+      "subdomain": "Serial allocation",
+      "description": "Reconcile physical rental unit identities with class-level reservations when duplicate serial assignments or substitution constraints obscure fulfillment readiness.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "RNT",
+      "status": "planned"
+    },
+    {
+      "id": "RNT-002",
+      "name": "rental-checkout-accessory-completeness",
+      "subdomain": "Checkout kits",
+      "description": "Reconcile required rental accessories with the actual checkout kit when base-unit presence does not establish complete fulfillment.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "RNT",
+      "status": "planned"
+    },
+    {
+      "id": "RNT-003",
+      "name": "rental-return-condition-evidence-comparison",
+      "subdomain": "Return observations",
+      "description": "Compare checkout and return condition evidence for the same rental asset while separating visible changes from unsupported cause or liability conclusions.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "RNT",
+      "status": "planned"
+    },
+    {
+      "id": "RNT-004",
+      "name": "rental-usage-meter-reading-reconciliation",
+      "subdomain": "Usage readings",
+      "description": "Reconcile rental meter observations into supported usage intervals when units, resets, replacements or transcription conflicts make subtraction unreliable.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "RNT",
+      "status": "planned"
+    },
+    {
+      "id": "RNT-005",
+      "name": "rental-overdue-custody-followup",
+      "subdomain": "Custody follow-up",
+      "description": "Prepare an evidence-based follow-up for an apparently overdue rental when due-date changes, pickup arrangements or unposted returns leave custody uncertain.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "RNT",
+      "status": "planned"
+    },
+    {
+      "id": "RNT-006",
+      "name": "rental-turnaround-readiness-handoff",
+      "subdomain": "Turnaround readiness",
+      "description": "Reconcile rental turnaround task evidence into a release handoff when physical return, completed work and authorization to reallocate are separate states.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "RNT",
+      "status": "planned"
+    }
+  ]
+}
