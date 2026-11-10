@@ -106,7 +106,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **MOP** Startup Operating Workflows (10) — Define lightweight service delivery, support, vendor, and internal handoff workflows for small organizations. → `skills/MOP/INDEX.md`
 - **BID** Procurement Evidence Decisions (3) — Normalize purchase offers, assess proposed substitutions, and reconcile bid responses against tender revisions using supplied scope and evidence. → `skills/BID/INDEX.md`
 - **EVT** Event Show Operations (2) — Prepare caller cue sheets and rehearse alternate presentation delivery and program rejoin decisions. → `skills/EVT/INDEX.md`
-- **WHS** Warehouse Stock Operations (2) — Reconcile physical stock discrepancies and resolve order-line picking exceptions using count, movement, eligibility and fulfillment evidence. → `skills/WHS/INDEX.md`
+- **WHS** Warehouse Stock Operations (3) — Reconcile physical stock discrepancies and resolve order-line picking exceptions using count, movement, eligibility and fulfillment evidence. → `skills/WHS/INDEX.md`
 - **SVC** Service Appointment Operations (3) — Reconcile resource occupancy, exclusive waitlist offers and appointment attendance from supplied service policies and event evidence. → `skills/SVC/INDEX.md`
 - **SHP** Shipment Record Reconciliation (1) — Reconcile package identities, contents and shipment records without asserting physical handover or carrier acceptance. → `skills/SHP/INDEX.md`
 - **RNT** Rental Asset Operations (6) — Reconcile rental unit allocation, checkout kits, return observations, usage readings, custody follow-up and turnaround handoffs from supplied records without imposing fees or technical acceptance. → `skills/RNT/INDEX.md`
