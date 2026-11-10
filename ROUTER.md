@@ -49,7 +49,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **TFE** Feature and Label Pipelines (10) — Design feature transformations and label construction with prediction-time availability and reproducible fitting boundaries. → `skills/TFE/INDEX.md`
 - **TDE** Data Pipeline Design (10) — Specify reliable ingestion, transformation, recovery, and data-contract behavior for bounded pipelines. → `skills/TDE/INDEX.md`
 - **TAN** Analytical Reasoning and Metrics (10) — Define and diagnose analytical measures, comparisons, uncertainty, and interpretation using supplied data. → `skills/TAN/INDEX.md`
-- **TDS** Dataset Intake and Documentation (10) — Assess dataset suitability, provenance, documentation, and release readiness before downstream use. → `skills/TDS/INDEX.md`
+- **TDS** Dataset Intake and Documentation (11) — Assess dataset suitability, provenance, documentation, and release readiness before downstream use. → `skills/TDS/INDEX.md`
 - **TDQ** Dataset Quality Diagnostics (10) — Diagnose concrete dataset integrity failures and define evidence-based repair checks. → `skills/TDQ/INDEX.md`
 - **TBX** Table Transformation Contracts (3) — Preserve observation identity through reversible cell reshaping, positional nested expansion and explicit numeric interval membership. → `skills/TBX/INDEX.md`
 

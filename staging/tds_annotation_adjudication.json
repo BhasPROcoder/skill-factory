@@ -1,0 +1,15 @@
+{
+  "domains": [],
+  "skills": [
+    {
+      "id": "TDS-011",
+      "name": "dataset-annotation-disagreement-adjudication",
+      "domain_code": "TDS",
+      "subdomain": "Adjudication records",
+      "description": "Resolve case-level differences between dataset annotations under an approved label rule; use when independent reviewers disagree and the dataset needs traceable dispositions.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}
