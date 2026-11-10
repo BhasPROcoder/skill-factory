@@ -22,3 +22,4 @@
 2026-11-09: sf.py validated TBX-001..003; quality PASS 3; registry 605; expansion 61/5000. Independent nine fresh table fixtures and embedded snippets executed; portable export/package 605 integrity PASS.
 2026-11-09: sf.py validated GEO-001..003; quality PASS 3; registry 608; expansion 64/5000. Independent nine fresh geometry review groups and embedded snippets executed; portable export/package 608 integrity PASS.
 2026-11-09: sf.py validated SEQ-001..003; quality PASS all611; registry79domains611skills; expansion67/5000 remaining4933. Independent nine scheduling cases and embedded assertions passed; export/package611 integrity PASS.
+2026-11-10: LIR-001..003 repaired and independently checked against task-specific fictional examples (13 field assertions); sf.py validation/quality pass, registry 614, expansion net70. LIR index/router refreshed; portable export/package614 integrity PASS.

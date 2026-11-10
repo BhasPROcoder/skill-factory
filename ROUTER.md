@@ -94,6 +94,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **GRQ** Research Question and Study Design (10) — Define answerable research questions, sampling decisions, measurements, and feasible study protocols. → `skills/GRQ/INDEX.md`
 - **GRV** Evidence Review and Synthesis (10) — Find, screen, extract, and synthesize evidence with transparent scope and claim-level support. → `skills/GRV/INDEX.md`
 - **ARC** Collection Description Operations (3) — Reconcile accession evidence, descriptive hierarchies and image correspondence without inferring ownership or unsupported historical facts. → `skills/ARC/INDEX.md`
+- **LIR** Laboratory Instrument Records (3) — Reconcile laboratory instrument identity, status chronology and affected-record evidence from supplied records without technical fitness determinations. → `skills/LIR/INDEX.md`
 
 ## Languages & Translation
 - **GLA** Language Transfer and Translation (10) — Preserve meaning, register, terminology and uncertainty across languages and learning contexts. → `skills/GLA/INDEX.md`
