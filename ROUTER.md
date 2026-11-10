@@ -15,7 +15,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **CBG** General Business and Artifact Workflows (15) — Evidence-led workflows for communication, business design, and artifact quality. → `skills/CBG/INDEX.md`
 
 ## Sales & Marketing
-- **MSE** Search Content Decisions (10) — Plan and improve search-oriented content using intent, page purpose, evidence gaps, and editorial constraints. → `skills/MSE/INDEX.md`
+- **MSE** Search Content Decisions (11) — Plan and improve search-oriented content using intent, page purpose, evidence gaps, and editorial constraints. → `skills/MSE/INDEX.md`
 - **MAR** Search Site Architecture (10) — Plan search-oriented navigation, page relationships, and site-change reviews using supplied inventories and implementation constraints. → `skills/MAR/INDEX.md`
 - **MSL** Local Search Operations (10) — Prepare accurate local business information, location content, and review-response workflows without assuming platform eligibility or ranking outcomes. → `skills/MSL/INDEX.md`
 - **MME** Marketing Measurement Decisions (10) — Define and interpret marketing measures using explicit denominators, attribution limits, comparison conditions, and decision-linked reporting. → `skills/MME/INDEX.md`
