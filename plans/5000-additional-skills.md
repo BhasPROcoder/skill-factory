@@ -2,6 +2,8 @@
 
 Planning date: 2026-10-31. This document proposes work; it does not register candidates as completed skills.
 
+Execution-order update (2026-11-11): [creation-order.md](creation-order.md) is now the controlling priority queue and remaining allocation plan. Graph engineering is first. Its 4,922 remaining allocation replaces the equal-track allocation below for future work, while preserving the 5,000-addition objective and all coverage/quality requirements.
+
 User-supplied directory integration: [all numbered topics and pilot mapping](directory-integration.md). The directory contains 185 numbered entries despite its 180-domain title. Include all entries within this expansion, starting with a reviewed pilot; do not add a separate 5,000-skill quota or treat topics as automatically unique skills.
 
 ## Objective and baseline

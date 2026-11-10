@@ -1,5 +1,7 @@
 # Continuous expansion execution
 
+Priority override, 2026-11-11: follow [creation-order.md](creation-order.md). Graph engineering is first; compare G01–G04 before authoring. Older working-batch and gap-queue notes below are historical and do not override this order. Last verified count for this priority update: 622 validated, 78 net additions, 4,922 remaining; latest skill push f5edc2c. Preserve unaccepted education/software drafts for later review. Earlier agent turns ended with usage-limit errors; inspect live handles before assuming any author or reviewer is running.
+
 User instruction: continue until all 5,000 net additions are finished and push reviewed small batches throughout. Original baseline: 544; target total: 5,544. The active goal is not complete when a batch ends.
 
 Use observed sf.py status for counts. Maintain uniqueness by comparing the proposed artifact, procedure, and failure decisions against neighboring skills. Domain allocation targets are flexible; never count renamed variants or unrelated changes as additions.
