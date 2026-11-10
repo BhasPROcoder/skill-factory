@@ -1,0 +1,15 @@
+{
+  "domains": [],
+  "skills": [
+    {
+      "id": "MPU-011",
+      "name": "runnable-mvp-slice-implementation",
+      "subdomain": "Product implementation",
+      "description": "Implement one runnable end-to-end product slice from a bounded user outcome when a prototype must become a testable MVP increment.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "MPU",
+      "status": "planned"
+    }
+  ]
+}
