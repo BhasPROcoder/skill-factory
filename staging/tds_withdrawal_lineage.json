@@ -1,0 +1,15 @@
+{
+  "domains": [],
+  "skills": [
+    {
+      "id": "TDS-012",
+      "name": "dataset-withdrawal-lineage-impact-plan",
+      "domain_code": "TDS",
+      "subdomain": "Withdrawal impact and lineage",
+      "description": "Map an already authorized data withdrawal decision across evidence-backed dataset descendants; use when owners need a per-artifact removal, rebuild, retention-review, or verification plan.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}
