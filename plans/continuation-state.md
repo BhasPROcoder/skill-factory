@@ -1,5 +1,7 @@
 # Continuous expansion execution
 
+Checkpoint 2026-11-12: GRF-001 through GRF-003 accepted after independent code and ordinary/missing/edge scenario review. GRF-003 example provenance fields repaired and rechecked. sf.py reports 625 validated, 81 net additions, 4,919 remaining; quality/registry/export/package integrity pass. Graph priority remains controlling. GRF-004 rooted-forest validation and GRF-005 two-clock snapshot reconstruction are being authored and remain unaccepted until independent review. Earlier counts below are historical.
+
 Priority override, 2026-11-11: follow [creation-order.md](creation-order.md). Graph engineering is first; compare G01–G04 before authoring. Older working-batch and gap-queue notes below are historical and do not override this order. Last verified count for this priority update: 622 validated, 78 net additions, 4,922 remaining; latest skill push f5edc2c. Preserve unaccepted education/software drafts for later review. Earlier agent turns ended with usage-limit errors; inspect live handles before assuming any author or reviewer is running.
 
 User instruction: continue until all 5,000 net additions are finished and push reviewed small batches throughout. Original baseline: 544; target total: 5,544. The active goal is not complete when a batch ends.

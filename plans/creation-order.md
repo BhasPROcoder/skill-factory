@@ -4,7 +4,7 @@ Updated 2026-11-11 following the user's instruction to prioritize graph engineer
 
 ## Scope and accounting
 
-Observed sf.py checkpoint: 622 validated entries, including the original 544; 78 net additions, 4,922 still required. Target remains 5,544 total. This document orders future work; its candidate names and allocations are not registered or completed skills. Structural validation does not prove semantic uniqueness or behavioral reliability.
+Observed sf.py checkpoint on 2026-11-12: 625 validated entries, including the original 544; 81 net additions, 4,919 still required. GRF-001 through GRF-003 accepted after independent review. Target remains 5,544 total. Remaining candidate names and allocations are not registered or completed skills. Structural validation does not prove semantic uniqueness or behavioral reliability.
 
 This queue supersedes the equal-track allocation and unordered candidate queue in the earlier expansion plan. Keep its accuracy, independent review, public-source provenance, portability, and acceptance requirements. Preserve coverage of every numbered topic in directory-integration.md and directory-topic-ledger.json within the same expansion.
 
@@ -16,7 +16,7 @@ Allocations are planning budgets for accepted unique additions, not claims that 
 
 | Order | Workstream | Remaining allocation | Internal creation order |
 |---|---|---:|---|
-| 1 | **Graph engineering** | 200 | Representation and identity → integrity → traversal and algorithms → storage/query → knowledge graphs → retrieval/learning → operations and domain applications |
+| 1 | **Graph engineering** | 197 | Representation and identity → integrity → traversal and algorithms → storage/query → knowledge graphs → retrieval/learning → operations and domain applications |
 | 2 | Datasets, data engineering, analytical systems | 600 | Intake/rights → schemas and quality → transformations → temporal/stream processing → analytical contracts → reproducibility |
 | 3 | Software maintenance, architecture, infrastructure, defensive security | 600 | Reproduction/debugging → contracts → migration → verification → deployment/recovery → access/privacy/security review |
 | 4 | Applied ML, AI agents, knowledge workflows, hackathons and competitions | 500 | Evaluation data → baselines → error analysis → retrieval/tools/memory → agent evaluation → integration/submission |
@@ -26,7 +26,7 @@ Allocations are planning budgets for accepted unique additions, not claims that 
 | 8 | Government administration, policy, civic/nonprofit work, accounting administration | 500 | Jurisdiction and authority intake → application/record packets → reconciliation → routing/appeals preparation → reporting and follow-up |
 | 9 | Education, research, laboratories, archives, healthcare administration | 500 | Questions/learning outcomes → instruments/materials → evidence collection → analysis/assessment → records/handoffs → review |
 | 10 | Construction/facilities, agriculture/environment/spatial work, workforce/services/daily administration | 522 | Asset/site/context evidence → work planning → field/service records → exception handling → handover and maintenance |
-| | **Remaining total** | **4,922** | **78 already added + 4,922 remaining = 5,000 additions** |
+| | **Remaining total** | **4,919** | **81 already added + 4,919 remaining = 5,000 additions** |
 
 These groups cover all original 25 planning tracks. Cross-domain candidates have one home and are counted once. Graph applications in later waves must add a new operational procedure, not merely change the dataset or industry.
 
@@ -77,4 +77,4 @@ Existing overlap anchors: SEQ-001 already provides a prerequisite cycle witness;
 8. At each wave boundary, audit all directory topics mapped to the wave. Record supported tasks, gaps and follow-up candidates; a single skill does not establish full topic coverage.
 9. If a wave cannot supply additional unique tasks, record the shortfall and redistribute it to documented uncovered needs. Preserve the overall target and all directory coverage; do not pad counts.
 
-The next execution action is comparison and candidate cards for G01–G04. No new skill is claimed by this planning update.
+G01–G03 are accepted as GRF-001 through GRF-003. Next: finish and independently review G04 (rooted-forest invariants) and G05 (two-clock graph snapshots), then evaluate G06 traversal boundaries. No unreviewed draft counts toward the remaining allocation.

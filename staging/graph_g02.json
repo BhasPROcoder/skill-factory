@@ -1,0 +1,1 @@
+{"domains":[],"skills":[{"id":"GRF-002","name":"graph-entity-merge-impact-review","domain_code":"GRF","subdomain":"Entity identity and merge impact","description":"Review proposed graph entity merges against identity evidence and relationship consequences when duplicate-looking nodes could change graph meaning.","risk_level":"medium","requires":[],"status":"planned"}]}
