@@ -1,5 +1,7 @@
 # Continuous expansion execution
 
+Checkpoint 2026-11-12 (G05): GRF-005 two-clock graph reconstruction accepted after independent fixture and scenario review. sf.py confirms 627 validated, 83 net additions and 4,917 remaining; registry/quality/export/package integrity pass. G04 pushed at 46c2020 with matching remote. G06–G08 are next; unaccepted drafts remain outside published batches.
+
 Checkpoint 2026-11-12 (G04): GRF-004 rooted-forest validation independently reviewed and accepted. sf.py confirms 626 validated, 82 net additions and 4,918 remaining; quality/registry/export/package integrity pass. Prior graph batch is pushed at 162132c with matching remote main. G05 review and G06/G07 authoring are pending; inspect live handles before relying on them. Earlier counts below are historical.
 
 Checkpoint 2026-11-12: GRF-001 through GRF-003 accepted after independent code and ordinary/missing/edge scenario review. GRF-003 example provenance fields repaired and rechecked. sf.py reports 625 validated, 81 net additions, 4,919 remaining; quality/registry/export/package integrity pass. Graph priority remains controlling. GRF-004 rooted-forest validation and GRF-005 two-clock snapshot reconstruction are being authored and remain unaccepted until independent review. Earlier counts below are historical.
