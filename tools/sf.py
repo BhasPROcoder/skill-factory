@@ -595,6 +595,22 @@ def cmd_overlap(a):
     print(f'{len(found)} lexical cross-domain candidates; semantic review required')
 
 
+def cmd_graph_export(a):
+    """Compact per-skill export for graph engineering: fields only, never full SKILL.md bodies."""
+    domains = {d['code']: d for d in load(DOM)}
+    n = 0
+    for row in load(REG):
+        d = domains.get(row['domain_code'], {})
+        print(json.dumps({
+            'id': row['id'], 'name': row['name'], 'domain_code': row['domain_code'],
+            'domain_name': d.get('name'), 'macro': d.get('macro'), 'subdomain': row['subdomain'],
+            'description': row['description'], 'risk_level': row['risk_level'],
+            'requires': row.get('requires', []), 'status': row['status'],
+        }, ensure_ascii=False))
+        n += 1
+    print(f'{n} skill nodes exported; no SKILL.md bodies read', file=sys.stderr)
+
+
 def cmd_package(a):
     """Create a deterministic portable archive from validated source skills."""
     import zipfile
@@ -684,7 +700,7 @@ def cmd_search(a):
     print(f'{min(len(matches),10)} shown of {len(matches)} lexical matches; narrow the query for a specific task')
 
 
-CMDS = {"status": cmd_status, "macros": cmd_macros, "codes": cmd_codes, "next": cmd_next, "show": cmd_show, "mark": cmd_mark, "remaining": cmd_remaining, "check-registry": cmd_check_registry, "validate": cmd_validate, "index": cmd_index, "router": cmd_router, "testpack": cmd_testpack, "export": cmd_export, "ingest": cmd_ingest, "quality": cmd_quality, "coverage": cmd_coverage, "overlap": cmd_overlap, "package": cmd_package, "sync-metadata": cmd_sync_metadata, "search": cmd_search}
+CMDS = {"status": cmd_status, "macros": cmd_macros, "codes": cmd_codes, "next": cmd_next, "show": cmd_show, "mark": cmd_mark, "remaining": cmd_remaining, "check-registry": cmd_check_registry, "validate": cmd_validate, "index": cmd_index, "router": cmd_router, "testpack": cmd_testpack, "export": cmd_export, "ingest": cmd_ingest, "quality": cmd_quality, "coverage": cmd_coverage, "overlap": cmd_overlap, "package": cmd_package, "sync-metadata": cmd_sync_metadata, "search": cmd_search, "graph-export": cmd_graph_export}
 
 def cmd_migration_check(a):
     """Check source coverage and destination integrity without copying source text."""
