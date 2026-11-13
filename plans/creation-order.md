@@ -4,7 +4,7 @@ Updated 2026-11-11 following the user's instruction to prioritize graph engineer
 
 ## Scope and accounting
 
-Observed sf.py checkpoint on 2026-11-13: 630 validated entries, including the original 544; 86 net additions, 4,914 still required. GRF-001 through GRF-008 accepted after independent review. Target remains 5,544 total. Remaining candidate names and allocations are not registered or completed skills. Structural validation does not prove semantic uniqueness or behavioral reliability.
+Observed sf.py checkpoint on 2026-11-13: 633 validated entries, including the original 544; 89 net additions, 4,911 still required. GRF-001 through GRF-011 accepted after independent review. Target remains 5,544 total. Remaining candidate names and allocations are not registered or completed skills. Structural validation does not prove semantic uniqueness or behavioral reliability.
 
 This queue supersedes the equal-track allocation and unordered candidate queue in the earlier expansion plan. Keep its accuracy, independent review, public-source provenance, portability, and acceptance requirements. Preserve coverage of every numbered topic in directory-integration.md and directory-topic-ledger.json within the same expansion.
 
@@ -16,7 +16,7 @@ Allocations are planning budgets for accepted unique additions, not claims that 
 
 | Order | Workstream | Remaining allocation | Internal creation order |
 |---|---|---:|---|
-| 1 | **Graph engineering** | 192 | Representation and identity → integrity → traversal and algorithms → storage/query → knowledge graphs → retrieval/learning → operations and domain applications |
+| 1 | **Graph engineering** | 189 | Representation and identity → integrity → traversal and algorithms → storage/query → knowledge graphs → retrieval/learning → operations and domain applications |
 | 2 | Datasets, data engineering, analytical systems | 600 | Intake/rights → schemas and quality → transformations → temporal/stream processing → analytical contracts → reproducibility |
 | 3 | Software maintenance, architecture, infrastructure, defensive security | 600 | Reproduction/debugging → contracts → migration → verification → deployment/recovery → access/privacy/security review |
 | 4 | Applied ML, AI agents, knowledge workflows, hackathons and competitions | 500 | Evaluation data → baselines → error analysis → retrieval/tools/memory → agent evaluation → integration/submission |
@@ -26,7 +26,7 @@ Allocations are planning budgets for accepted unique additions, not claims that 
 | 8 | Government administration, policy, civic/nonprofit work, accounting administration | 500 | Jurisdiction and authority intake → application/record packets → reconciliation → routing/appeals preparation → reporting and follow-up |
 | 9 | Education, research, laboratories, archives, healthcare administration | 500 | Questions/learning outcomes → instruments/materials → evidence collection → analysis/assessment → records/handoffs → review |
 | 10 | Construction/facilities, agriculture/environment/spatial work, workforce/services/daily administration | 522 | Asset/site/context evidence → work planning → field/service records → exception handling → handover and maintenance |
-| | **Remaining total** | **4,914** | **86 already added + 4,914 remaining = 5,000 additions** |
+| | **Remaining total** | **4,911** | **89 already added + 4,911 remaining = 5,000 additions** |
 
 These groups cover all original 25 planning tracks. Cross-domain candidates have one home and are counted once. Graph applications in later waves must add a new operational procedure, not merely change the dataset or industry.
 
@@ -77,4 +77,4 @@ Existing overlap anchors: SEQ-001 already provides a prerequisite cycle witness;
 8. At each wave boundary, audit all directory topics mapped to the wave. Record supported tasks, gaps and follow-up candidates; a single skill does not establish full topic coverage.
 9. If a wave cannot supply additional unique tasks, record the shortfall and redistribute it to documented uncovered needs. Preserve the overall target and all directory coverage; do not pad counts.
 
-G01–G08 are accepted as GRF-001 through GRF-008. Next: finish and independently review G09 weighted routes, G10 flow certificates and G11 bipartite matching. No unreviewed draft counts toward the remaining allocation.
+G01–G11 are accepted as GRF-001 through GRF-011. Next: finish and independently review G12 ranking sensitivity, G13 community-output comparison and G14 storage schema implementation. No unreviewed draft counts toward the remaining allocation.
