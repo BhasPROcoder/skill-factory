@@ -42,7 +42,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **THK** Hackathon Delivery (10) — Scope, organize, demonstrate, and hand off time-bounded hackathon projects under supplied event requirements. → `skills/THK/INDEX.md`
 - **CLI** Command-Line Interaction Contracts (2) — Specify machine streams, completion evidence, literal operands and argument boundaries for command-line tools. → `skills/CLI/INDEX.md`
 - **LRE** Localization Resource Engineering (3) — Validate message parameter contracts, trace configured fallback and reconcile translation review lineage using bounded executable reference models. → `skills/LRE/INDEX.md`
-- **GRF** Graph Engineering Foundations (14) — Specify and verify graph representations, identity and structural contracts from explicit task evidence. → `skills/GRF/INDEX.md`
+- **GRF** Graph Engineering Foundations (17) — Specify and verify graph representations, identity and structural contracts from explicit task evidence. → `skills/GRF/INDEX.md`
 
 ## AI/ML & Data Science
 - **TKG** Kaggle Competition Workflows (10) — Prepare competition experiments, submissions, collaboration records, and reproducible handoffs under verified current competition rules. → `skills/TKG/INDEX.md`

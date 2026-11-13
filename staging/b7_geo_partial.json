@@ -1,0 +1,12 @@
+[
+  {
+    "id": "GEO-001",
+    "name": "triangle-shared-edge-winding-check",
+    "domain_code": "GEO",
+    "subdomain": "Edge orientation",
+    "description": "Inspect indexed triangle winding across shared edges when adjacent faces may traverse their common edge in the same direction.",
+    "risk_level": "medium",
+    "requires": [],
+    "status": "planned"
+  }
+]
