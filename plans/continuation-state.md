@@ -1,5 +1,7 @@
 # Continuous expansion execution
 
+Checkpoint 2026-11-13: GRF-006/007/008 accepted after independent executable and procedural review. sf.py confirms 630 validated, 86 net additions and 4,914 remaining; registry/quality/export/package integrity pass. Temporal commit 86b4b15 pushed and remote verified after the previous automatic approval usage-limit failure. GRF-009/010/011 authors are assigned weighted routes, flow certificates and bipartite matching; check live handles before relying on progress. Public traversal inspiration has pinned provenance in plans/graph-source-inspiration.md; no external code copied or executed. Preserve older unaccepted TST and b7_geo drafts.
+
 Checkpoint 2026-11-12 (G05): GRF-005 two-clock graph reconstruction accepted after independent fixture and scenario review. sf.py confirms 627 validated, 83 net additions and 4,917 remaining; registry/quality/export/package integrity pass. G04 pushed at 46c2020 with matching remote. G06–G08 are next; unaccepted drafts remain outside published batches.
 
 Checkpoint 2026-11-12 (G04): GRF-004 rooted-forest validation independently reviewed and accepted. sf.py confirms 626 validated, 82 net additions and 4,918 remaining; quality/registry/export/package integrity pass. Prior graph batch is pushed at 162132c with matching remote main. G05 review and G06/G07 authoring are pending; inspect live handles before relying on them. Earlier counts below are historical.
