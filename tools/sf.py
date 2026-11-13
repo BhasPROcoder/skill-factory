@@ -772,6 +772,55 @@ def cmd_migration_check(a):
 
 CMDS['migration-check'] = cmd_migration_check
 
+
+def expansion_counts(baseline, current, present, target):
+    """Conservative structural accounting, not a semantic acceptance verdict."""
+    old = {r['id']: r for r in baseline}
+    old_names = {r['name'] for r in baseline}
+    ready = {r['id']: r for r in current
+             if r.get('status') in ('validated', 'audited') and present(r)}
+    retained = sum(sid in ready and ready[sid]['name'] == r['name']
+                   for sid, r in old.items())
+    new = sum(sid not in old and r['name'] not in old_names
+              for sid, r in ready.items())
+    lost = len(old) - retained
+    net = new - lost
+    return dict(baseline=len(old), retained=retained, new_ready=new,
+                missing_or_changed=lost, net_additions=net,
+                remaining=max(0, target-net), target=target)
+
+
+def cmd_expansion(a):
+    """Count net additions against an immutable repository revision."""
+    import subprocess
+    revision = a[0] if a else '4f028f369338e29b36482cdb2d9fcf7d206cfa02'
+    try:
+        target = int(a[1]) if len(a) > 1 else 5000
+        if target < 1 or len(a) > 2:
+            raise ValueError()
+    except ValueError:
+        sys.exit('FAIL usage: expansion [baseline-commit] [positive-addition-target]')
+    if not re.fullmatch(r'[0-9a-fA-F]{7,40}', revision):
+        sys.exit('FAIL baseline must be a commit hash, not a moving branch')
+    result = subprocess.run(['git', 'show', revision + ':registry/skills.jsonl'],
+                            cwd=ROOT, capture_output=True, text=True, encoding='utf-8')
+    if result.returncode:
+        sys.exit('FAIL cannot read baseline registry from specified commit')
+    try:
+        baseline = [json.loads(line) for line in result.stdout.splitlines() if line.strip()]
+        if not baseline or len({r['id'] for r in baseline}) != len(baseline):
+            raise ValueError()
+        counts = expansion_counts(baseline, load(REG),
+                                  lambda r: os.path.isfile(spath(r)), target)
+    except (KeyError, ValueError):
+        sys.exit('FAIL malformed baseline registry')
+    print('baseline commit: ' + revision)
+    print('  '.join(f'{k}={v}' for k, v in counts.items()))
+    print('Counts require validated/audited status and a present file; independent review and semantic uniqueness still require evidence.')
+
+
+CMDS['expansion'] = cmd_expansion
+
 if __name__ == "__main__":
     if len(sys.argv) < 2 or sys.argv[1] not in CMDS:
         sys.exit("commands: " + " | ".join(CMDS))

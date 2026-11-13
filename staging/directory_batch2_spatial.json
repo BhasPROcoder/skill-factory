@@ -1,0 +1,36 @@
+{
+  "domains": [
+    {
+      "scope": "Design pose-specific deformation inspections and reversible scan cleanup decisions tied to reference evidence.",
+      "subdomains": [
+        "Deformation review",
+        "Scan provenance"
+      ],
+      "code": "SDR",
+      "macro": "Visual Arts, Photo & Video",
+      "name": "Spatial Deformation and Restoration"
+    }
+  ],
+  "skills": [
+    {
+      "requires": [],
+      "subdomain": "Deformation review",
+      "name": "rig-deformation-pose-test-design",
+      "domain_code": "SDR",
+      "description": "Build a pose-based deformation review matrix when a character rig must preserve intended shape and attachments throughout specified movements.",
+      "id": "SDR-001",
+      "status": "planned",
+      "risk_level": "medium"
+    },
+    {
+      "requires": [],
+      "subdomain": "Scan provenance",
+      "name": "scan-cleanup-evidence-preservation",
+      "domain_code": "SDR",
+      "description": "Plan traceable scan cleanup when removing artifacts or filling gaps could erase observed detail or make reconstructed geometry look captured.",
+      "id": "SDR-002",
+      "status": "planned",
+      "risk_level": "medium"
+    }
+  ]
+}

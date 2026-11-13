@@ -15,7 +15,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **CBG** General Business and Artifact Workflows (15) — Evidence-led workflows for communication, business design, and artifact quality. → `skills/CBG/INDEX.md`
 
 ## Sales & Marketing
-- **MSE** Search Content Decisions (10) — Plan and improve search-oriented content using intent, page purpose, evidence gaps, and editorial constraints. → `skills/MSE/INDEX.md`
+- **MSE** Search Content Decisions (11) — Plan and improve search-oriented content using intent, page purpose, evidence gaps, and editorial constraints. → `skills/MSE/INDEX.md`
 - **MAR** Search Site Architecture (10) — Plan search-oriented navigation, page relationships, and site-change reviews using supplied inventories and implementation constraints. → `skills/MAR/INDEX.md`
 - **MSL** Local Search Operations (10) — Prepare accurate local business information, location content, and review-response workflows without assuming platform eligibility or ranking outcomes. → `skills/MSL/INDEX.md`
 - **MME** Marketing Measurement Decisions (10) — Define and interpret marketing measures using explicit denominators, attribution limits, comparison conditions, and decision-linked reporting. → `skills/MME/INDEX.md`
@@ -29,13 +29,20 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **MSV** Startup Customer Validation (10) — Plan customer validation experiments and evidence reviews without treating interest, prototypes, or founder enthusiasm as proven demand. → `skills/MSV/INDEX.md`
 
 ## Product & Design
-- **MPU** Product Experience Review (10) — Review product flows, interface content, prototypes, and feedback using user tasks and observable acceptance criteria. → `skills/MPU/INDEX.md`
+- **MPU** Product Experience Review (11) — Review product flows, interface content, prototypes, and feedback using user tasks and observable acceptance criteria. → `skills/MPU/INDEX.md`
+- **UST** Interface State Contracts (2) — Specify evidence-dependent interface states and recovery choices without implying implementation or external verification. → `skills/UST/INDEX.md`
+- **IXA** Interaction Adaptation (2) — Design motion alternatives and conversational repairs that preserve task state, user intent, and explicit confirmation boundaries. → `skills/IXA/INDEX.md`
+- **DST** Design System Maintenance (4) — Trace token dependencies and coordinate component contracts, renames and consumer retirement without assuming runtime or release readiness. → `skills/DST/INDEX.md`
+- **IPR** Interactive Prototype Behavior (3) — Implement and test bounded interaction state models for draft recovery, asynchronous result ownership and transactional edit history. → `skills/IPR/INDEX.md`
 
 ## Software Engineering
 - **TRP** Computational Reproducibility (10) — Make computational artifacts traceable, rerunnable, and comparable without hidden environmental or data dependencies. → `skills/TRP/INDEX.md`
-- **TAP** API Contract Engineering (10) — Define and test request, response, retry, pagination, and compatibility contracts for application interfaces. → `skills/TAP/INDEX.md`
+- **TAP** API Contract Engineering (11) — Define and test request, response, retry, pagination, and compatibility contracts for application interfaces. → `skills/TAP/INDEX.md`
 - **TST** Software Verification Design (10) — Design focused tests for behavior, boundaries, state transitions, regressions, and reproducible failures. → `skills/TST/INDEX.md`
 - **THK** Hackathon Delivery (10) — Scope, organize, demonstrate, and hand off time-bounded hackathon projects under supplied event requirements. → `skills/THK/INDEX.md`
+- **CLI** Command-Line Interaction Contracts (2) — Specify machine streams, completion evidence, literal operands and argument boundaries for command-line tools. → `skills/CLI/INDEX.md`
+- **LRE** Localization Resource Engineering (3) — Validate message parameter contracts, trace configured fallback and reconcile translation review lineage using bounded executable reference models. → `skills/LRE/INDEX.md`
+- **GRF** Graph Engineering Foundations (17) — Specify and verify graph representations, identity and structural contracts from explicit task evidence. → `skills/GRF/INDEX.md`
 
 ## AI/ML & Data Science
 - **TKG** Kaggle Competition Workflows (10) — Prepare competition experiments, submissions, collaboration records, and reproducible handoffs under verified current competition rules. → `skills/TKG/INDEX.md`
@@ -43,8 +50,9 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 - **TFE** Feature and Label Pipelines (10) — Design feature transformations and label construction with prediction-time availability and reproducible fitting boundaries. → `skills/TFE/INDEX.md`
 - **TDE** Data Pipeline Design (10) — Specify reliable ingestion, transformation, recovery, and data-contract behavior for bounded pipelines. → `skills/TDE/INDEX.md`
 - **TAN** Analytical Reasoning and Metrics (10) — Define and diagnose analytical measures, comparisons, uncertainty, and interpretation using supplied data. → `skills/TAN/INDEX.md`
-- **TDS** Dataset Intake and Documentation (10) — Assess dataset suitability, provenance, documentation, and release readiness before downstream use. → `skills/TDS/INDEX.md`
+- **TDS** Dataset Intake and Documentation (12) — Assess dataset suitability, provenance, documentation, and release readiness before downstream use. → `skills/TDS/INDEX.md`
 - **TDQ** Dataset Quality Diagnostics (10) — Diagnose concrete dataset integrity failures and define evidence-based repair checks. → `skills/TDQ/INDEX.md`
+- **TBX** Table Transformation Contracts (3) — Preserve observation identity through reversible cell reshaping, positional nested expansion and explicit numeric interval membership. → `skills/TBX/INDEX.md`
 
 ## Prompt Engineering & LLM Ops
 - **SKR** Reusable Skill Engineering (3) — Select distinct reusable procedures, generalize specialized workflows, and design independent behavioral checks with truthful evidence. → `skills/SKR/INDEX.md`
@@ -58,7 +66,7 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 
 ## Education & Teaching
 - **GED** Lesson and Learning Design (10) — Design instruction around observable learning goals, prerequisite knowledge, practice, and evidence of understanding. → `skills/GED/INDEX.md`
-- **GAS** Learning Assessment (10) — Design and interpret learning assessments using explicit criteria, evidence, and fair task conditions. → `skills/GAS/INDEX.md`
+- **GAS** Learning Assessment (11) — Design and interpret learning assessments using explicit criteria, evidence, and fair task conditions. → `skills/GAS/INDEX.md`
 
 ## Exam Prep
 - **GEX** Exam Preparation Methods (10) — Plan exam preparation from current exam requirements, performance evidence, and available study capacity. → `skills/GEX/INDEX.md`
@@ -70,15 +78,24 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 
 ## Music & Audio Production
 - **TAM** Audio and Music Production Planning (10) — Plan recording, editing, arrangement, review, and delivery decisions from supplied audio evidence and creative constraints. → `skills/TAM/INDEX.md`
+- **ATR** Audio Timeline Reconstruction (3) — Construct decoded audio frame edits, loop taper candidates and declared-offset stem arrays with explicit provenance and bounded verification. → `skills/ATR/INDEX.md`
 
 ## Visual Arts, Photo & Video
 - **TVE** Video Editing Decisions (10) — Plan and review video structure, continuity, sound-image relationships, accessibility, and delivery from supplied footage and briefs. → `skills/TVE/INDEX.md`
 - **MPH** Photography Planning and Critique (10) — Plan and critique photographs through subject intention, framing, light, visual sequence, and shoot logistics without fixed equipment recipes. → `skills/MPH/INDEX.md`
 - **MVA** Visual Composition and Art Direction (10) — Develop and critique visual compositions through hierarchy, grouping, contrast, typography, image relationships, and concrete art-direction briefs. → `skills/MVA/INDEX.md`
+- **SPD** Spatial Asset Preparation (2) — Prepare controlled spatial asset handoffs and material comparisons with explicit coordinate contracts and observable evidence. → `skills/SPD/INDEX.md`
+- **VEV** Visual Evidence Interpretation (2) — Specify visible distinctions between documented evidence, inferred reconstructions, measurements, and model outputs in visual scenes. → `skills/VEV/INDEX.md`
+- **SDR** Spatial Deformation and Restoration (2) — Design pose-specific deformation inspections and reversible scan cleanup decisions tied to reference evidence. → `skills/SDR/INDEX.md`
+- **PRT** Print Production Handoffs (6) — Reconcile print production intent with quantity, proof, separation, boundary, personalization and assembly evidence without prescribing machinery operation. → `skills/PRT/INDEX.md`
+- **EXP** Exhibition Interpretation Operations (6) — Reconcile exhibition interpretation, visitor-facing delivery and loan-return records while separating editorial proposals from observed installation and custody evidence. → `skills/EXP/INDEX.md`
+- **GEO** Mesh Geometry Diagnostics (3) — Diagnose indexed triangle edge orientation, per-corner UV signed area, and explicitly ordered three-dimensional point transforms. → `skills/GEO/INDEX.md`
 
 ## Research Methods & Academia
 - **GRQ** Research Question and Study Design (10) — Define answerable research questions, sampling decisions, measurements, and feasible study protocols. → `skills/GRQ/INDEX.md`
 - **GRV** Evidence Review and Synthesis (10) — Find, screen, extract, and synthesize evidence with transparent scope and claim-level support. → `skills/GRV/INDEX.md`
+- **ARC** Collection Description Operations (3) — Reconcile accession evidence, descriptive hierarchies and image correspondence without inferring ownership or unsupported historical facts. → `skills/ARC/INDEX.md`
+- **LIR** Laboratory Instrument Records (3) — Reconcile laboratory instrument identity, status chronology and affected-record evidence from supplied records without technical fitness determinations. → `skills/LIR/INDEX.md`
 
 ## Languages & Translation
 - **GLA** Language Transfer and Translation (10) — Preserve meaning, register, terminology and uncertainty across languages and learning contexts. → `skills/GLA/INDEX.md`
@@ -88,6 +105,13 @@ Load this first. Find the macro-area, then the domain, then open that domain's I
 
 ## Operations & Supply Chain
 - **MOP** Startup Operating Workflows (10) — Define lightweight service delivery, support, vendor, and internal handoff workflows for small organizations. → `skills/MOP/INDEX.md`
+- **BID** Procurement Evidence Decisions (4) — Normalize purchase offers, assess proposed substitutions, and reconcile bid responses against tender revisions using supplied scope and evidence. → `skills/BID/INDEX.md`
+- **EVT** Event Show Operations (2) — Prepare caller cue sheets and rehearse alternate presentation delivery and program rejoin decisions. → `skills/EVT/INDEX.md`
+- **WHS** Warehouse Stock Operations (3) — Reconcile physical stock discrepancies and resolve order-line picking exceptions using count, movement, eligibility and fulfillment evidence. → `skills/WHS/INDEX.md`
+- **SVC** Service Appointment Operations (3) — Reconcile resource occupancy, exclusive waitlist offers and appointment attendance from supplied service policies and event evidence. → `skills/SVC/INDEX.md`
+- **SHP** Shipment Record Reconciliation (2) — Reconcile package identities, contents and shipment records without asserting physical handover or carrier acceptance. → `skills/SHP/INDEX.md`
+- **RNT** Rental Asset Operations (6) — Reconcile rental unit allocation, checkout kits, return observations, usage readings, custody follow-up and turnaround handoffs from supplied records without imposing fees or technical acceptance. → `skills/RNT/INDEX.md`
+- **SEQ** Dependency Schedule Computation (3) — Diagnose prerequisite graph cycles, select ready work and compute dependency-only duration baselines with explicit models. → `skills/SEQ/INDEX.md`
 
 ## E-commerce
 - **MEC** E-commerce Customer Experience (10) — Review catalog, product, cart, checkout, and post-purchase experiences using verified offer and fulfillment facts. → `skills/MEC/INDEX.md`

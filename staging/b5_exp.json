@@ -1,0 +1,80 @@
+{
+  "domains": [
+    {
+      "code": "EXP",
+      "name": "Exhibition Interpretation Operations",
+      "macro": "Visual Arts, Photo & Video",
+      "scope": "Reconcile exhibition interpretation, visitor-facing delivery and loan-return records while separating editorial proposals from observed installation and custody evidence.",
+      "subdomains": [
+        "Label revision",
+        "Multilingual panels",
+        "Placement correspondence",
+        "Kiosk interaction continuity",
+        "Route interpretation",
+        "Loan return records"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "EXP-001",
+      "name": "exhibit-label-claim-revision-propagation",
+      "subdomain": "Label revision",
+      "description": "Trace a changed exhibit claim into every affected label and derivative when new source evidence alters published interpretation.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "EXP",
+      "status": "planned"
+    },
+    {
+      "id": "EXP-002",
+      "name": "multilingual-exhibit-panel-parity",
+      "subdomain": "Multilingual panels",
+      "description": "Plan equivalent interpretive content and reading paths across language versions when exhibit panels face unequal text lengths and space constraints.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "EXP",
+      "status": "planned"
+    },
+    {
+      "id": "EXP-003",
+      "name": "exhibit-object-label-placement-reconciliation",
+      "subdomain": "Placement correspondence",
+      "description": "Reconcile exhibit objects, label identities and installed positions when a display move or rehang could attach accurate text to the wrong object.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "EXP",
+      "status": "planned"
+    },
+    {
+      "id": "EXP-004",
+      "name": "exhibit-kiosk-visitor-session-reset-review",
+      "subdomain": "Kiosk interaction continuity",
+      "description": "Specify and inspect visible reset behavior for shared exhibit kiosks when abandoned or completed interactions could leave confusing state for the next visitor.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "EXP",
+      "status": "planned"
+    },
+    {
+      "id": "EXP-005",
+      "name": "exhibit-alternate-route-interpretation-parity",
+      "subdomain": "Route interpretation",
+      "description": "Compare the interpretive sequence available on different exhibit routes when visitors bypass a room, medium or physical feature.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "EXP",
+      "status": "planned"
+    },
+    {
+      "id": "EXP-006",
+      "name": "exhibit-loan-return-evidence-dossier",
+      "subdomain": "Loan return records",
+      "description": "Assemble a loan-return dossier linking exhibited objects, associated components, packing records, condition observations and custody acknowledgments when an exhibition closes.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "EXP",
+      "status": "planned"
+    }
+  ]
+}

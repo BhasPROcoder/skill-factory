@@ -1,0 +1,15 @@
+{
+  "domains": [],
+  "skills": [
+    {
+      "id": "MSE-011",
+      "name": "search-structured-data-page-parity-audit",
+      "domain_code": "MSE",
+      "subdomain": "Structured data validation",
+      "description": "Audit whether a page’s generated structured data is technically valid, supported by visible page facts, and aligned with current search-platform guidance; use before or after publishing structured markup.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

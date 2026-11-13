@@ -1,0 +1,25 @@
+{
+  "domains": [
+    {
+      "code": "SHP",
+      "name": "Shipment Record Reconciliation",
+      "macro": "Operations & Supply Chain",
+      "scope": "Reconcile package identities, contents and shipment records without asserting physical handover or carrier acceptance.",
+      "subdomains": [
+        "Packing records"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "SHP-001",
+      "name": "shipment-package-contents-reconciliation",
+      "domain_code": "SHP",
+      "subdomain": "Packing records",
+      "description": "Reconcile order-line quantities and package assignments when a shipment is split, consolidated or repacked.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

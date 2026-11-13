@@ -1,0 +1,47 @@
+{
+  "domains": [
+    {
+      "code": "ARC",
+      "name": "Collection Description Operations",
+      "macro": "Research Methods & Academia",
+      "scope": "Reconcile accession evidence, descriptive hierarchies and image correspondence without inferring ownership or unsupported historical facts.",
+      "subdomains": [
+        "Accession reconciliation",
+        "Capture correspondence",
+        "Description hierarchy"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "ARC-001",
+      "name": "accession-lot-inventory-reconciliation",
+      "subdomain": "Accession reconciliation",
+      "description": "Reconcile a collection transfer list with received containers and their observed contents when an accession's scope or completeness is uncertain.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "ARC",
+      "status": "planned"
+    },
+    {
+      "id": "ARC-002",
+      "name": "archival-description-hierarchy-design",
+      "subdomain": "Description hierarchy",
+      "description": "Design a collection description hierarchy that preserves provenance and parent scope when organizing supplied groups, folders and items.",
+      "risk_level": "low",
+      "requires": [],
+      "domain_code": "ARC",
+      "status": "planned"
+    },
+    {
+      "id": "ARC-003",
+      "name": "digitization-image-item-correspondence",
+      "subdomain": "Capture correspondence",
+      "description": "Reconcile digitization captures with their physical items, leaves and sides when missing views, retakes or derivative files could distort coverage.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "ARC",
+      "status": "planned"
+    }
+  ]
+}

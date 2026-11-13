@@ -1,0 +1,15 @@
+{
+  "domains": [],
+  "skills": [
+    {
+      "id": "SHP-002",
+      "name": "lot-trace-scope-reconciliation",
+      "domain_code": "SHP",
+      "subdomain": "Lot trace scope",
+      "description": "Trace a specified product lot through supplied inventory, transformation, shipment, and return records to prepare a bounded affected-stock and destination handoff.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

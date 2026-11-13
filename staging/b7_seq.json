@@ -1,0 +1,47 @@
+{
+  "domains": [
+    {
+      "code": "SEQ",
+      "name": "Dependency Schedule Computation",
+      "macro": "Operations & Supply Chain",
+      "scope": "Diagnose prerequisite graph cycles, select ready work and compute dependency-only duration baselines with explicit models.",
+      "subdomains": [
+        "Graph consistency",
+        "Dispatch selection",
+        "Duration propagation"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "SEQ-003",
+      "name": "dependency-critical-path-slack",
+      "subdomain": "Duration propagation",
+      "description": "Compute earliest and latest task times and total slack from supplied durations when a dependency-only completion baseline is needed.",
+      "risk_level": "medium",
+      "domain_code": "SEQ",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "SEQ-001",
+      "name": "prerequisite-cycle-witness",
+      "subdomain": "Graph consistency",
+      "description": "Produce an explicit closed dependency path when a prerequisite graph cannot support a completion order.",
+      "risk_level": "medium",
+      "domain_code": "SEQ",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "SEQ-002",
+      "name": "ready-task-priority-frontier",
+      "subdomain": "Dispatch selection",
+      "description": "Compute a deterministic next-task shortlist from completion evidence and explicit priority when blocked or already-running work must not consume available dispatch slots.",
+      "risk_level": "medium",
+      "domain_code": "SEQ",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

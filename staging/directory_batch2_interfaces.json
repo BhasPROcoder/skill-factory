@@ -1,0 +1,36 @@
+{
+  "domains": [
+    {
+      "code": "IXA",
+      "name": "Interaction Adaptation",
+      "macro": "Product & Design",
+      "scope": "Design motion alternatives and conversational repairs that preserve task state, user intent, and explicit confirmation boundaries.",
+      "subdomains": [
+        "Motion adaptation",
+        "Conversational repair"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "IXA-001",
+      "name": "motion-alternative-state-specification",
+      "domain_code": "IXA",
+      "subdomain": "Motion adaptation",
+      "description": "Specify nonmoving alternatives that preserve interface meaning and task completion when animated transitions must respect user motion preferences.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "IXA-002",
+      "name": "voice-turn-repair-confirmation-design",
+      "domain_code": "IXA",
+      "subdomain": "Conversational repair",
+      "description": "Design bounded voice-dialogue repair and confirmation turns when recognition uncertainty or corrections could change a user's intended action.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

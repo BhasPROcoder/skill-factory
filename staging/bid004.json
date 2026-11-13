@@ -1,0 +1,15 @@
+{
+  "domains": [],
+  "skills": [
+    {
+      "id": "BID-004",
+      "name": "supplier-invoice-three-record-match-review",
+      "domain_code": "BID",
+      "subdomain": "Supplier invoice matching",
+      "description": "Compare a supplier invoice with the authorized purchase order and receipt evidence to prepare a traceable payment exception handoff before approval.",
+      "risk_level": "high",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

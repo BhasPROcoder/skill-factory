@@ -1,0 +1,1 @@
+{"domains":[],"skills":[{"id":"GRF-015","name":"graph-query-plan-equivalence","domain_code":"GRF","subdomain":"Graph query verification","description":"Tune a bounded relationship query using observed query plans while preserving its edge-sequence result multiset, direction and multiplicity contract.","risk_level":"medium","requires":[],"status":"planned"}]}

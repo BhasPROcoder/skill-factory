@@ -1,0 +1,15 @@
+{
+  "domains": [],
+  "skills": [
+    {
+      "id": "WHS-003",
+      "name": "inbound-receipt-variance-disposition",
+      "domain_code": "WHS",
+      "subdomain": "Inbound receipt variance",
+      "description": "Reconcile purchase, dispatch, carrier, and observed delivery evidence when incoming goods differ in identity, quantity, or condition before receipt disposition.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

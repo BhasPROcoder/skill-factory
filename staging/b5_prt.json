@@ -1,0 +1,80 @@
+{
+  "domains": [
+    {
+      "code": "PRT",
+      "name": "Print Production Handoffs",
+      "macro": "Visual Arts, Photo & Video",
+      "scope": "Reconcile print production intent with quantity, proof, separation, boundary, personalization and assembly evidence without prescribing machinery operation.",
+      "subdomains": [
+        "Finishing correspondence",
+        "Page boundary review",
+        "Proof control",
+        "Quantity reconciliation",
+        "Separation evidence",
+        "Variable content correspondence"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "PRT-001",
+      "name": "print-page-section-quantity-reconciliation",
+      "subdomain": "Quantity reconciliation",
+      "description": "Reconcile logical pages, printer-supplied sections and finished-copy quantities when a print order mixes covers, blanks or different editions.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "PRT",
+      "status": "planned"
+    },
+    {
+      "id": "PRT-002",
+      "name": "print-proof-change-disposition",
+      "subdomain": "Proof control",
+      "description": "Reconcile proof corrections against an exact production revision when comments, approvals and replacement files disagree.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "PRT",
+      "status": "planned"
+    },
+    {
+      "id": "PRT-003",
+      "name": "spot-color-separation-evidence-review",
+      "subdomain": "Separation evidence",
+      "description": "Compare intended ink roles with supplied separation evidence when a print file may contain duplicate spot definitions, unexpected process conversion or missing marks.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "PRT",
+      "status": "planned"
+    },
+    {
+      "id": "PRT-004",
+      "name": "trim-bleed-content-boundary-reconciliation",
+      "subdomain": "Page boundary review",
+      "description": "Reconcile trim, bleed and protected-content boundaries against a supplier's job specification when artwork dimensions or edge placement are uncertain.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "PRT",
+      "status": "planned"
+    },
+    {
+      "id": "PRT-005",
+      "name": "variable-print-record-template-correspondence",
+      "subdomain": "Variable content correspondence",
+      "description": "Reconcile supplied data records with personalized print templates and rendered samples when field mapping, conditional content or record coverage may be wrong.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "PRT",
+      "status": "planned"
+    },
+    {
+      "id": "PRT-006",
+      "name": "print-finishing-assembly-handoff",
+      "subdomain": "Finishing correspondence",
+      "description": "Translate approved multi-part print intent into an evidence-based finishing and assembly handoff when part order, orientation or edition matching could be confused.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "PRT",
+      "status": "planned"
+    }
+  ]
+}

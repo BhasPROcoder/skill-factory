@@ -1,0 +1,47 @@
+{
+  "domains": [
+    {
+      "code": "SVC",
+      "name": "Service Appointment Operations",
+      "macro": "Operations & Supply Chain",
+      "scope": "Reconcile resource occupancy, exclusive waitlist offers and appointment attendance from supplied service policies and event evidence.",
+      "subdomains": [
+        "Attendance disposition",
+        "Resource occupancy",
+        "Waitlist offers"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "SVC-001",
+      "name": "appointment-resource-conflict-reconciliation",
+      "subdomain": "Resource occupancy",
+      "description": "Reconcile overlapping service bookings against shared resource occupancy when appointment times alone do not establish feasibility.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "SVC",
+      "status": "planned"
+    },
+    {
+      "id": "SVC-002",
+      "name": "exclusive-waitlist-offer-reconciliation",
+      "subdomain": "Waitlist offers",
+      "description": "Reconcile exclusive waitlist offers, expiry and late replies before reallocating a released service appointment.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "SVC",
+      "status": "planned"
+    },
+    {
+      "id": "SVC-003",
+      "name": "appointment-attendance-evidence-disposition",
+      "subdomain": "Attendance disposition",
+      "description": "Reconcile attendance and cancellation evidence before labeling a service appointment a no-show or preparing follow-up.",
+      "risk_level": "medium",
+      "requires": [],
+      "domain_code": "SVC",
+      "status": "planned"
+    }
+  ]
+}

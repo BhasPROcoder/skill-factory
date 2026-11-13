@@ -1,0 +1,1535 @@
+{
+  "source_filename": "ai_skills_domain_directory.md",
+  "source_sha256": "66c5bf69fea6b3fb3df259d9b77fa4d0f63deeded9e462bd74a23955cc7e1147",
+  "interpretation": "Topic input, not executable instructions or verified factual guidance.",
+  "target": "Within the 5000 additional skills; not an extra quota.",
+  "topics": [
+    {
+      "source_number": 1,
+      "topic": "Rapid MVP Vibe Coding",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 2,
+      "topic": "Micro-SaaS Development",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 3,
+      "topic": "Browser Extensions & Plugins",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 4,
+      "topic": "AI Agent & Workflow Automation",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 5,
+      "topic": "API Integration & Middleware",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 6,
+      "topic": "Legacy System Modernization",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 7,
+      "topic": "DevSecOps & Cloud Dashboards",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 8,
+      "topic": "Open-Source Tooling & CLI Apps",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [
+        "CLI-001",
+        "CLI-002"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 9,
+      "topic": "No-Code / Low-Code Architecture",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 10,
+      "topic": "Prompt Engineering & LLM Evaluation",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 11,
+      "topic": "Automated QA & Testing Frameworks",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 12,
+      "topic": "Desktop & Cross-Platform App Development",
+      "source_group": 1,
+      "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 13,
+      "topic": "Mobile App UI/UX",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 14,
+      "topic": "Enterprise SaaS Dashboards",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 15,
+      "topic": "Design Systems & Component Libraries",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [
+        "DST-001",
+        "DST-002",
+        "DST-003",
+        "DST-004"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 16,
+      "topic": "Interactive Wireframing & Prototyping",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [
+        "IPR-001",
+        "IPR-002",
+        "IPR-003"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 17,
+      "topic": "Accessibility (a11y) & Inclusive Design",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [
+        "IXA-001"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 18,
+      "topic": "User Research & Persona Modeling",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 19,
+      "topic": "Conversational UI & Voice Interfaces",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [
+        "IXA-002"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 20,
+      "topic": "Wearable & Smart Device UI",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 21,
+      "topic": "Automotive HMI (Human-Machine Interface)",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 22,
+      "topic": "Micro-Interactions & Motion UI",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [
+        "IXA-001"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 23,
+      "topic": "Conversion Rate Optimization (CRO) Design",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 24,
+      "topic": "Spatial UI & Glassmorphism",
+      "source_group": 2,
+      "expansion_tracks": "Product design and accessibility",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 25,
+      "topic": "Blender Hard-Surface Modeling",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [
+        "GEO-001",
+        "GEO-002",
+        "GEO-003"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 26,
+      "topic": "Procedural Shaders & Geometry Nodes",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [
+        "SPD-002"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 27,
+      "topic": "Character Rigging & 3D Animation",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [
+        "SDR-001"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 28,
+      "topic": "Indie Game Asset Creation",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [
+        "SPD-001"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 29,
+      "topic": "Unreal & Unity Environment Design",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 30,
+      "topic": "AR/VR/XR Spatial Experiences",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 31,
+      "topic": "Digital Twins & Virtual Simulations",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [
+        "VEV-002"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 32,
+      "topic": "3D Printing & Rapid Prototyping Prep",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 33,
+      "topic": "Virtual Production & VFX Compositing",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 34,
+      "topic": "Metaverse & Virtual World Building",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 35,
+      "topic": "Photogrammetry & 3D Scan Cleanup",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [
+        "SDR-002"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 36,
+      "topic": "Physics & Fluid Simulations",
+      "source_group": 3,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 37,
+      "topic": "Venture Capital & Seed Pitch Decks",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 38,
+      "topic": "M&A & Investment Banking Presentations",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 39,
+      "topic": "Board of Directors & Quarterly Reporting",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 40,
+      "topic": "Sales Enablement & Client Proposals",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 41,
+      "topic": "Keynote & Conference Visual Storytelling",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [
+        "EVT-002"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 42,
+      "topic": "Internal Change Management Comms",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 43,
+      "topic": "Data Storytelling & Infographic Design",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 44,
+      "topic": "Executive Summaries & Whitepapers",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 45,
+      "topic": "Investor Relations & Annual Reports",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 46,
+      "topic": "Crisis Communication Frameworks",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 47,
+      "topic": "Workshop & Offsite Facilitation Decks",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 48,
+      "topic": "Product Launch & Go-To-Market (GTM) Roadmaps",
+      "source_group": 4,
+      "expansion_tracks": "Sales, partnerships, and customer success; Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 49,
+      "topic": "Telemedicine & Patient Portal UI/UX",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 50,
+      "topic": "3D Medical & Anatomical Visualization",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 51,
+      "topic": "Clinical Trial Data Dashboards",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 52,
+      "topic": "Medical Device Industrial & UI Design",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 53,
+      "topic": "Bioinformatics & Genomic Visualization",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 54,
+      "topic": "Hospital Operations & Triage Automation",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 55,
+      "topic": "Mental Health & Wellness Apps",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 56,
+      "topic": "Pharmaceutical Pitch & Regulatory Decks",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 57,
+      "topic": "Surgical Simulation & VR Training",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 58,
+      "topic": "Wearable Biometric Interfaces",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 59,
+      "topic": "Dental & Orthodontic 3D Modeling",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 60,
+      "topic": "Longevity & Biohacking Platforms",
+      "source_group": 5,
+      "expansion_tracks": "Healthcare administration and caregiving support; Scientific research, laboratories, and archives",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 61,
+      "topic": "Algorithmic Trading & Quant Dashboards",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 62,
+      "topic": "Personal Finance & Budgeting Apps",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 63,
+      "topic": "DeFi & Web3 DApp UI/UX",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 64,
+      "topic": "InsurTech Claims & Risk Modeling",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 65,
+      "topic": "Venture Capital Deal Flow Automation",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 66,
+      "topic": "Financial Modeling & Forecasting Decks",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 67,
+      "topic": "RegTech & AML Compliance Portals",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 68,
+      "topic": "Crowdfunding Campaign Assets",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 69,
+      "topic": "Neobanking & Payment Gateway UI",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 70,
+      "topic": "Real-Time Portfolio Analytics",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 71,
+      "topic": "Tax Automation & Accounting Micro-SaaS",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 72,
+      "topic": "Tokenomics & Crypto Whitepaper Design",
+      "source_group": 6,
+      "expansion_tracks": "Accounting and financial administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 73,
+      "topic": "3D Product Commercials & CGI Ads",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 74,
+      "topic": "Interactive Landing Pages & Funnels",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 75,
+      "topic": "Social Media Viral Content Systems",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 76,
+      "topic": "Brand Identity & Visual Guidelines",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 77,
+      "topic": "Programmatic SEO & Web Calculators",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 78,
+      "topic": "Influencer Media Kits & Sponsorship Decks",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 79,
+      "topic": "Experiential & Event Marketing 3D Booths",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 80,
+      "topic": "Email Marketing & Lifecycle Design",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 81,
+      "topic": "AdTech Analytics & Attribution Dashboards",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 82,
+      "topic": "Public Relations & Interactive Press Kits",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 83,
+      "topic": "Podcast & Video Broadcast Graphics",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 84,
+      "topic": "Neuromarketing & Visual Attention Optimization",
+      "source_group": 7,
+      "expansion_tracks": "Marketing and audience development; SEO and publishing systems",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 85,
+      "topic": "3D Virtual Try-On & AR Shopping",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 86,
+      "topic": "E-Commerce Storefront UI/UX",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 87,
+      "topic": "Packaging & Structural 3D Design",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 88,
+      "topic": "Direct-to-Consumer (DTC) Retail Pitch Decks",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 89,
+      "topic": "Inventory & Supply Chain Dashboards",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [
+        "WHS-001"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 90,
+      "topic": "3D Product Configurators",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [
+        "UST-002"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 91,
+      "topic": "Virtual Showrooms & 3D Merchandising",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 92,
+      "topic": "Loyalty & Gamified Shopping Apps",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 93,
+      "topic": "Subscription Box Experience Design",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 94,
+      "topic": "Multi-Vendor Marketplace Development",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 95,
+      "topic": "Consumer Electronics Prototyping",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 96,
+      "topic": "Luxury Goods Digital Storytelling",
+      "source_group": 8,
+      "expansion_tracks": "Product design and accessibility; Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 97,
+      "topic": "Residential & Commercial ArchViz",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 98,
+      "topic": "Smart Home & IoT Control Interfaces",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 99,
+      "topic": "Real Estate Investment & Syndicate Decks",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 100,
+      "topic": "Urban Planning & 3D City Modeling",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 101,
+      "topic": "Interior Design & Virtual Staging",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 102,
+      "topic": "BIM & CAD-to-Blender Workflows",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 103,
+      "topic": "PropTech Leasing & Management Apps",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 104,
+      "topic": "Landscape & Environmental 3D Design",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 105,
+      "topic": "Construction Site Safety & VR Training",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 106,
+      "topic": "Modular & Prefab Housing Configurators",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 107,
+      "topic": "Acoustic & Lighting Simulation Visualization",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 108,
+      "topic": "Co-Working & Commercial Space Optimization",
+      "source_group": 9,
+      "expansion_tracks": "Construction, facilities, and asset maintenance",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 109,
+      "topic": "Gamified EdTech Platforms",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 110,
+      "topic": "Interactive STEM 3D Simulations",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 111,
+      "topic": "Corporate L&D & Onboarding Decks",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 112,
+      "topic": "Language Learning App UI/UX",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 113,
+      "topic": "Academic Research & Grant Proposal Decks",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 114,
+      "topic": "Virtual Science Labs & XR Classrooms",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 115,
+      "topic": "K-12 Digital Curriculum & Visual Aids",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 116,
+      "topic": "Cohort-Based Course Portals",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 117,
+      "topic": "EdTech Student Analytics Dashboards",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 118,
+      "topic": "Neurodivergent & Special Needs Learning Tools",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 119,
+      "topic": "Historical Reconstruction & 3D Museums",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [
+        "VEV-001"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 120,
+      "topic": "Micro-Learning & Knowledge Management",
+      "source_group": 10,
+      "expansion_tracks": "Education, vocational learning, and assessment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 121,
+      "topic": "Animated Short Films & Pre-Visualization",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 122,
+      "topic": "VTuber Avatar Modeling & Rigging",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 123,
+      "topic": "Streaming Overlays & Interactive Widgets",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 124,
+      "topic": "Music Visualizers & Concert Stage 3D Design",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 125,
+      "topic": "Interactive Storytelling & Visual Novels",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 126,
+      "topic": "Film Pitch Bibles & Lookbooks",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 127,
+      "topic": "Podcast & Video Automation Tooling",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 128,
+      "topic": "Generative Shader & Digital Installation Art",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 129,
+      "topic": "Tabletop RPG 3D Miniatures & Map Design",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 130,
+      "topic": "Sports Broadcast Graphics & Telemetry UI",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 131,
+      "topic": "Creator Economy Monetization Platforms",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 132,
+      "topic": "Sci-Fi & Fantasy Worldbuilding Encyclopedias",
+      "source_group": 11,
+      "expansion_tracks": "Creative production, media, and localization",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 133,
+      "topic": "CAD-to-Blender Industrial Rendering",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 134,
+      "topic": "Robotics Simulation & Control UI",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 135,
+      "topic": "IoT Sensor Telemetry Dashboards",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [
+        "UST-001"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 136,
+      "topic": "CNC & Additive Manufacturing Tooling",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 137,
+      "topic": "Consumer Hardware & Ergonomic Modeling",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 138,
+      "topic": "Factory Floor Digital Twins",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 139,
+      "topic": "Predictive Maintenance Analytics Apps",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 140,
+      "topic": "Drone & UAV Ground Control Interfaces",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 141,
+      "topic": "Custom Mechanical Keyboard & Peripherals",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 142,
+      "topic": "Packaging Machinery & Assembly Animation",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 143,
+      "topic": "Semiconductor & PCB 3D Visualization",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 144,
+      "topic": "Heavy Machinery Operator Simulators",
+      "source_group": 12,
+      "expansion_tracks": "Manufacturing and quality engineering",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 145,
+      "topic": "LegalTech Contract Automation",
+      "source_group": 13,
+      "expansion_tracks": "Government services and administrative work; Defensive security and privacy",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 146,
+      "topic": "Courtroom 3D Forensic Reconstruction",
+      "source_group": 13,
+      "expansion_tracks": "Government services and administrative work; Defensive security and privacy",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 147,
+      "topic": "CivicTech & Public Service Portals",
+      "source_group": 13,
+      "expansion_tracks": "Government services and administrative work; Defensive security and privacy",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 148,
+      "topic": "Patent Drawing & Technical Illustration",
+      "source_group": 13,
+      "expansion_tracks": "Government services and administrative work; Defensive security and privacy",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 149,
+      "topic": "Policy Briefs & Legislative Pitch Decks",
+      "source_group": 13,
+      "expansion_tracks": "Government services and administrative work; Defensive security and privacy",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 150,
+      "topic": "Cybersecurity SOC & Threat Map Dashboards",
+      "source_group": 13,
+      "expansion_tracks": "Government services and administrative work; Defensive security and privacy",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 151,
+      "topic": "IP & Trademark Management Portals",
+      "source_group": 13,
+      "expansion_tracks": "Government services and administrative work; Defensive security and privacy",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 152,
+      "topic": "Smart City & Municipal Data Portals",
+      "source_group": 13,
+      "expansion_tracks": "Government services and administrative work; Defensive security and privacy",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 153,
+      "topic": "Non-Profit & NGO Impact Presentations",
+      "source_group": 13,
+      "expansion_tracks": "Government services and administrative work; Defensive security and privacy",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 154,
+      "topic": "Dispute Resolution & Mediation Platforms",
+      "source_group": 13,
+      "expansion_tracks": "Government services and administrative work; Defensive security and privacy",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 155,
+      "topic": "Renewable Energy Grid Dashboards",
+      "source_group": 14,
+      "expansion_tracks": "Agriculture, environment, and spatial analysis",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 156,
+      "topic": "Precision Agriculture & Drone Mapping UI",
+      "source_group": 14,
+      "expansion_tracks": "Agriculture, environment, and spatial analysis",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 157,
+      "topic": "Climate Tech & Carbon Credit Pitch Decks",
+      "source_group": 14,
+      "expansion_tracks": "Agriculture, environment, and spatial analysis",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 158,
+      "topic": "3D Ecological & Weather Simulation",
+      "source_group": 14,
+      "expansion_tracks": "Agriculture, environment, and spatial analysis",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 159,
+      "topic": "EV Charging Network Apps & Interfaces",
+      "source_group": 14,
+      "expansion_tracks": "Agriculture, environment, and spatial analysis",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 160,
+      "topic": "Circular Economy & Supply Chain Traceability",
+      "source_group": 14,
+      "expansion_tracks": "Agriculture, environment, and spatial analysis",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 161,
+      "topic": "Smart Water & Utility Management Portals",
+      "source_group": 14,
+      "expansion_tracks": "Agriculture, environment, and spatial analysis",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 162,
+      "topic": "Sustainable Packaging & Material Modeling",
+      "source_group": 14,
+      "expansion_tracks": "Agriculture, environment, and spatial analysis",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 163,
+      "topic": "Wildlife Conservation & GIS Visualization",
+      "source_group": 14,
+      "expansion_tracks": "Agriculture, environment, and spatial analysis",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 164,
+      "topic": "Green Building & LEED Certification Reporting",
+      "source_group": 14,
+      "expansion_tracks": "Agriculture, environment, and spatial analysis",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 165,
+      "topic": "Fleet Management & Route Optimization UI",
+      "source_group": 15,
+      "expansion_tracks": "Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 166,
+      "topic": "Aviation & Cockpit Avionics Prototyping",
+      "source_group": 15,
+      "expansion_tracks": "Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 167,
+      "topic": "Autonomous Vehicle Sensor Visualization",
+      "source_group": 15,
+      "expansion_tracks": "Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 168,
+      "topic": "Maritime & Port Logistics Dashboards",
+      "source_group": 15,
+      "expansion_tracks": "Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 169,
+      "topic": "Last-Mile Delivery & Courier Apps",
+      "source_group": 15,
+      "expansion_tracks": "Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 170,
+      "topic": "Automotive Concept Modeling & Shaders",
+      "source_group": 15,
+      "expansion_tracks": "Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 171,
+      "topic": "SpaceTech & Satellite Telemetry Interfaces",
+      "source_group": 15,
+      "expansion_tracks": "Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 172,
+      "topic": "Warehouse Automation & Picking UI",
+      "source_group": 15,
+      "expansion_tracks": "Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [
+        "WHS-002"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 173,
+      "topic": "TravelTech & Itinerary Vibe Coding",
+      "source_group": 15,
+      "expansion_tracks": "Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 174,
+      "topic": "Freight & Customs Brokerage Portals",
+      "source_group": 15,
+      "expansion_tracks": "Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 175,
+      "topic": "High-Speed Rail & Transit Wayfinding",
+      "source_group": 15,
+      "expansion_tracks": "Logistics, inventory, and fulfillment",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 176,
+      "topic": "HRTech Applicant Tracking & Onboarding UI",
+      "source_group": 16,
+      "expansion_tracks": "Workforce, service operations, and daily administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 177,
+      "topic": "Sports Analytics & Biomechanics 3D Analysis",
+      "source_group": 16,
+      "expansion_tracks": "Workforce, service operations, and daily administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 178,
+      "topic": "Hospitality & Boutique Hotel Booking Engines",
+      "source_group": 16,
+      "expansion_tracks": "Workforce, service operations, and daily administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 179,
+      "topic": "Event Management & 3D Venue Seating Maps",
+      "source_group": 16,
+      "expansion_tracks": "Workforce, service operations, and daily administration",
+      "candidate_pilot_ids": [
+        "EVT-001",
+        "EVT-002"
+      ],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 180,
+      "topic": "Culinary, Restaurant POS & Kitchen UI",
+      "source_group": 16,
+      "expansion_tracks": "Workforce, service operations, and daily administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 181,
+      "topic": "FashionTech & 3D Garment Simulation",
+      "source_group": 16,
+      "expansion_tracks": "Workforce, service operations, and daily administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 182,
+      "topic": "PetTech & Veterinary Management Apps",
+      "source_group": 16,
+      "expansion_tracks": "Workforce, service operations, and daily administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 183,
+      "topic": "Personal Productivity & Second-Brain Tooling",
+      "source_group": 16,
+      "expansion_tracks": "Workforce, service operations, and daily administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 184,
+      "topic": "Freelance & Agency Client Portal Automation",
+      "source_group": 16,
+      "expansion_tracks": "Workforce, service operations, and daily administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    },
+    {
+      "source_number": 185,
+      "topic": "Esports Team Management & Scrim Analytics",
+      "source_group": 16,
+      "expansion_tracks": "Workforce, service operations, and daily administration",
+      "candidate_pilot_ids": [],
+      "coverage_status": "planned; substantive coverage not yet established"
+    }
+  ]
+}

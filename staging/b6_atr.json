@@ -1,0 +1,47 @@
+{
+  "domains": [
+    {
+      "code": "ATR",
+      "name": "Audio Timeline Reconstruction",
+      "macro": "Music & Audio Production",
+      "scope": "Construct decoded audio frame edits, loop taper candidates and declared-offset stem arrays with explicit provenance and bounded verification.",
+      "subdomains": [
+        "Edit provenance",
+        "Loop boundary editing",
+        "Stem alignment"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "ATR-001",
+      "name": "audio-edit-frame-provenance",
+      "domain_code": "ATR",
+      "subdomain": "Edit provenance",
+      "description": "Build an edited audio sequence with exact source-frame correspondence when cuts or repetitions must remain traceable to original recordings.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "ATR-002",
+      "name": "audio-loop-edge-taper-comparison",
+      "domain_code": "ATR",
+      "subdomain": "Loop boundary editing",
+      "description": "Construct and compare a duration-preserving edge-taper candidate when a loop boundary needs an inspectable edit without treating a sample metric as an audibility verdict.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "ATR-003",
+      "name": "audio-stem-integer-offset-alignment",
+      "domain_code": "ATR",
+      "subdomain": "Stem alignment",
+      "description": "Construct aligned multichannel stem arrays from approved integer frame offsets while making padding, cropped content and reference-marker correspondence explicit.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

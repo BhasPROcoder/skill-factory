@@ -1,0 +1,15 @@
+{
+  "domains": [],
+  "skills": [
+    {
+      "id": "TAP-011",
+      "name": "browser-feature-compatibility-audit",
+      "domain_code": "TAP",
+      "subdomain": "Cross-browser capability parity",
+      "description": "Audit whether a browser extension feature behaves consistently across declared browser targets; use when APIs, permissions, manifest declarations, or packaging differ by target.",
+      "risk_level": "medium",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

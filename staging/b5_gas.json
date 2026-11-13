@@ -1,0 +1,15 @@
+{
+  "domains": [],
+  "skills": [
+    {
+      "id": "GAS-011",
+      "name": "assignment-resubmission-evidence-lineage",
+      "domain_code": "GAS",
+      "subdomain": "Analysis",
+      "description": "Reconcile assignment attempts, criterion evidence and feedback when a resubmission must be reviewed without mixing versions or inventing grading policy.",
+      "risk_level": "low",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}

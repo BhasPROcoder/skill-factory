@@ -1,0 +1,1 @@
+{"domains":[],"skills":[{"id":"GRF-012","name":"restart-walk-rank-sensitivity","domain_code":"GRF","subdomain":"Ranking sensitivity","description":"Compare graph restart-walk rankings across explicit scenarios while separating certified ordering changes from numerical uncertainty and unsupported importance claims.","risk_level":"medium","requires":[],"status":"planned"}]}

@@ -1,0 +1,47 @@
+{
+  "domains": [
+    {
+      "code": "TBX",
+      "name": "Table Transformation Contracts",
+      "macro": "AI/ML & Data Science",
+      "scope": "Preserve observation identity through reversible cell reshaping, positional nested expansion and explicit numeric interval membership.",
+      "subdomains": [
+        "Reshape provenance",
+        "Nested row expansion",
+        "Interval membership"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "TBX-003",
+      "name": "numeric-interval-membership-assignment",
+      "subdomain": "Interval membership",
+      "description": "Assign supplied numeric observations to explicit intervals when endpoint inclusion, gaps or overlapping ranges can make category membership ambiguous.",
+      "risk_level": "medium",
+      "domain_code": "TBX",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TBX-002",
+      "name": "paired-list-positional-expansion",
+      "subdomain": "Nested row expansion",
+      "description": "Expand paired list columns by their shared position when nested table values represent aligned observations rather than independent combinations.",
+      "risk_level": "medium",
+      "domain_code": "TBX",
+      "requires": [],
+      "status": "planned"
+    },
+    {
+      "id": "TBX-001",
+      "name": "reversible-wide-long-cell-mapping",
+      "subdomain": "Reshape provenance",
+      "description": "Construct and reverse a wide-to-long table mapping when every original cell must retain its row identity and explicit column identity.",
+      "risk_level": "medium",
+      "domain_code": "TBX",
+      "requires": [],
+      "status": "planned"
+    }
+  ]
+}
