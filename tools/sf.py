@@ -606,7 +606,7 @@ def cmd_graph_export(a):
             'domain_name': d.get('name'), 'macro': d.get('macro'), 'subdomain': row['subdomain'],
             'description': row['description'], 'risk_level': row['risk_level'],
             'requires': row.get('requires', []), 'status': row['status'],
-        }, ensure_ascii=False))
+        }, ensure_ascii=True))
         n += 1
     print(f'{n} skill nodes exported; no SKILL.md bodies read', file=sys.stderr)
 
