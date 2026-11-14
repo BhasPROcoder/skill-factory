@@ -85,7 +85,15 @@
       "source_group": 1,
       "expansion_tracks": "Software maintenance and architecture; AI agent and knowledge workflows",
       "candidate_pilot_ids": [],
-      "coverage_status": "planned; substantive coverage not yet established"
+      "coverage_status": "partial; bounded retrieval evidence evaluation only",
+      "accepted_workflows": [
+        {
+          "skill_id": "GRF-022",
+          "scope": "Paired graph/passage retrieval evaluation with distinct evidence and answer labels",
+          "review": "logs/graph22-review.md"
+        }
+      ],
+      "remaining_scope": "Prompt construction, broader model evaluation tasks and topic-wide coverage remain to be assessed."
     },
     {
       "source_number": 11,
@@ -1002,7 +1010,25 @@
       "source_group": 10,
       "expansion_tracks": "Education, vocational learning, and assessment",
       "candidate_pilot_ids": [],
-      "coverage_status": "planned; substantive coverage not yet established"
+      "coverage_status": "partial; structured knowledge representation and retrieval only",
+      "accepted_workflows": [
+        {
+          "skill_id": "GRF-018",
+          "scope": "Versioned relation vocabulary and licensed inference",
+          "review": "logs/graph18-review.md"
+        },
+        {
+          "skill_id": "GRF-019",
+          "scope": "Source-span relation candidates pending semantic acceptance",
+          "review": "logs/graph19-review.md"
+        },
+        {
+          "skill_id": "GRF-021",
+          "scope": "Question-specific graph evidence packet selection",
+          "review": "logs/graph21-review.md"
+        }
+      ],
+      "remaining_scope": "Micro-learning design, organizational knowledge stewardship and wider topic coverage remain to be assessed."
     },
     {
       "source_number": 121,

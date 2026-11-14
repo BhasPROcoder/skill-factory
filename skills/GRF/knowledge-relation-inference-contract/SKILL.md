@@ -141,10 +141,10 @@ Decision: <ready for approval / blocked; unresolved meanings, maximum 80 words>
 **Output:**
 ```text
 Release: Juniper draft V1; catalog owner approval recorded for the fixture rules only.
-Terms: contains | enclosing unit | Unit->Unit | peer contact is not containment; inside | inverse role | Unit->Unit; peer | direct peer statement | Unit->Unit | no chained relationship implied.
+Terms: contains | enclosing unit | aliases none | Unit->Unit | peer contact is not containment; inside | inverse enclosure role | aliases none | Unit->Unit | peer contact is not enclosure; peer | direct peer statement | aliases none | Unit->Unit | no chained relationship implied.
 Rules: contains transitive and inverse-inside; inside inverse-contains; peer no extra rules licensed.
 Assertions: r1 A contains B; r2 B contains C; r3 A peer B; r4 B peer C; all typed Unit and accepted.
-Derived evidence: A contains C from r1/r2; B inside A, C inside B, C inside A with inverse witnesses. Four asserted plus four derived triples.
+Derived evidence: A contains C | transitive-contains | r1 A contains B, r2 B contains C; B inside A | inverse-contains | r1 A contains B; C inside B | inverse-contains | r2 B contains C; C inside A | inverse-contains | derived A contains C. Four asserted plus four derived triples.
 Fixture checks: Reference checks eight total triples when executed; A peer C and B peer A are not generated, not declared false.
 Compatibility: Consumers must distinguish contains from peer and preserve direct/derived evidence; external consumers untested.
 Decision: Ready for vocabulary-owner review within fixture scope; no external truth or standard-conformance claim.
