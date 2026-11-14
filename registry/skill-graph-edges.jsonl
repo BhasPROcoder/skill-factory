@@ -1,0 +1,222 @@
+{"from": "THK-001", "to": "THK-002", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real delivery sequence"}
+{"from": "THK-002", "to": "THK-003", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real delivery sequence"}
+{"from": "THK-003", "to": "THK-004", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real delivery sequence"}
+{"from": "THK-004", "to": "THK-005", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real delivery sequence"}
+{"from": "THK-005", "to": "THK-006", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real delivery sequence"}
+{"from": "THK-006", "to": "THK-007", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real delivery sequence"}
+{"from": "THK-007", "to": "THK-008", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real delivery sequence"}
+{"from": "THK-008", "to": "THK-009", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real delivery sequence"}
+{"from": "THK-009", "to": "THK-010", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real delivery sequence"}
+{"from": "TKG-001", "to": "TKG-002", "type": "feeds_into", "confidence": "high", "reason": "competition lifecycle: setup to post-event handoff"}
+{"from": "TKG-002", "to": "TKG-003", "type": "feeds_into", "confidence": "high", "reason": "competition lifecycle: setup to post-event handoff"}
+{"from": "TKG-003", "to": "TKG-004", "type": "feeds_into", "confidence": "high", "reason": "competition lifecycle: setup to post-event handoff"}
+{"from": "TKG-004", "to": "TKG-005", "type": "feeds_into", "confidence": "high", "reason": "competition lifecycle: setup to post-event handoff"}
+{"from": "TKG-005", "to": "TKG-006", "type": "feeds_into", "confidence": "high", "reason": "competition lifecycle: setup to post-event handoff"}
+{"from": "TKG-006", "to": "TKG-007", "type": "feeds_into", "confidence": "high", "reason": "competition lifecycle: setup to post-event handoff"}
+{"from": "TKG-007", "to": "TKG-008", "type": "feeds_into", "confidence": "high", "reason": "competition lifecycle: setup to post-event handoff"}
+{"from": "TKG-008", "to": "TKG-009", "type": "feeds_into", "confidence": "high", "reason": "competition lifecycle: setup to post-event handoff"}
+{"from": "TKG-009", "to": "TKG-010", "type": "feeds_into", "confidence": "high", "reason": "competition lifecycle: setup to post-event handoff"}
+{"from": "GEX-001", "to": "GEX-002", "type": "feeds_into", "confidence": "medium", "reason": "syllabus to exam-day sequence; some steps (003/005/006) can loop rather than run once"}
+{"from": "GEX-002", "to": "GEX-003", "type": "feeds_into", "confidence": "medium", "reason": "syllabus to exam-day sequence; some steps (003/005/006) can loop rather than run once"}
+{"from": "GEX-003", "to": "GEX-004", "type": "feeds_into", "confidence": "medium", "reason": "syllabus to exam-day sequence; some steps (003/005/006) can loop rather than run once"}
+{"from": "GEX-004", "to": "GEX-005", "type": "feeds_into", "confidence": "medium", "reason": "syllabus to exam-day sequence; some steps (003/005/006) can loop rather than run once"}
+{"from": "GEX-005", "to": "GEX-006", "type": "feeds_into", "confidence": "medium", "reason": "syllabus to exam-day sequence; some steps (003/005/006) can loop rather than run once"}
+{"from": "GEX-006", "to": "GEX-007", "type": "feeds_into", "confidence": "medium", "reason": "syllabus to exam-day sequence; some steps (003/005/006) can loop rather than run once"}
+{"from": "GEX-007", "to": "GEX-008", "type": "feeds_into", "confidence": "medium", "reason": "syllabus to exam-day sequence; some steps (003/005/006) can loop rather than run once"}
+{"from": "GEX-008", "to": "GEX-009", "type": "feeds_into", "confidence": "medium", "reason": "syllabus to exam-day sequence; some steps (003/005/006) can loop rather than run once"}
+{"from": "GEX-009", "to": "GEX-010", "type": "feeds_into", "confidence": "medium", "reason": "syllabus to exam-day sequence; some steps (003/005/006) can loop rather than run once"}
+{"from": "GCA-001", "to": "GCA-006", "type": "feeds_into", "confidence": "medium", "reason": "role research -> materials -> interview prep -> compare offers -> plan transition"}
+{"from": "GCA-006", "to": "GCA-002", "type": "feeds_into", "confidence": "medium", "reason": "role research -> materials -> interview prep -> compare offers -> plan transition"}
+{"from": "GCA-002", "to": "GCA-003", "type": "feeds_into", "confidence": "medium", "reason": "role research -> materials -> interview prep -> compare offers -> plan transition"}
+{"from": "GCA-003", "to": "GCA-004", "type": "feeds_into", "confidence": "medium", "reason": "role research -> materials -> interview prep -> compare offers -> plan transition"}
+{"from": "GCA-004", "to": "GCA-005", "type": "feeds_into", "confidence": "medium", "reason": "role research -> materials -> interview prep -> compare offers -> plan transition"}
+{"from": "GCA-005", "to": "GCA-007", "type": "feeds_into", "confidence": "medium", "reason": "role research -> materials -> interview prep -> compare offers -> plan transition"}
+{"from": "GCA-007", "to": "GCA-008", "type": "feeds_into", "confidence": "medium", "reason": "role research -> materials -> interview prep -> compare offers -> plan transition"}
+{"from": "GCA-008", "to": "GCA-009", "type": "feeds_into", "confidence": "medium", "reason": "role research -> materials -> interview prep -> compare offers -> plan transition"}
+{"from": "GCA-009", "to": "GCA-010", "type": "feeds_into", "confidence": "medium", "reason": "role research -> materials -> interview prep -> compare offers -> plan transition"}
+{"from": "GED-001", "to": "GED-002", "type": "feeds_into", "confidence": "medium", "reason": "objective -> prerequisites -> teach -> question -> fade scaffold -> align practice -> accessibility -> milestones -> reflect"}
+{"from": "GED-002", "to": "GED-003", "type": "feeds_into", "confidence": "medium", "reason": "objective -> prerequisites -> teach -> question -> fade scaffold -> align practice -> accessibility -> milestones -> reflect"}
+{"from": "GED-003", "to": "GED-004", "type": "feeds_into", "confidence": "medium", "reason": "objective -> prerequisites -> teach -> question -> fade scaffold -> align practice -> accessibility -> milestones -> reflect"}
+{"from": "GED-004", "to": "GED-007", "type": "feeds_into", "confidence": "medium", "reason": "objective -> prerequisites -> teach -> question -> fade scaffold -> align practice -> accessibility -> milestones -> reflect"}
+{"from": "GED-007", "to": "GED-006", "type": "feeds_into", "confidence": "medium", "reason": "objective -> prerequisites -> teach -> question -> fade scaffold -> align practice -> accessibility -> milestones -> reflect"}
+{"from": "GED-006", "to": "GED-005", "type": "feeds_into", "confidence": "medium", "reason": "objective -> prerequisites -> teach -> question -> fade scaffold -> align practice -> accessibility -> milestones -> reflect"}
+{"from": "GED-005", "to": "GED-008", "type": "feeds_into", "confidence": "medium", "reason": "objective -> prerequisites -> teach -> question -> fade scaffold -> align practice -> accessibility -> milestones -> reflect"}
+{"from": "GED-008", "to": "GED-009", "type": "feeds_into", "confidence": "medium", "reason": "objective -> prerequisites -> teach -> question -> fade scaffold -> align practice -> accessibility -> milestones -> reflect"}
+{"from": "GED-009", "to": "GED-010", "type": "feeds_into", "confidence": "medium", "reason": "objective -> prerequisites -> teach -> question -> fade scaffold -> align practice -> accessibility -> milestones -> reflect"}
+{"from": "GAS-001", "to": "GAS-002", "type": "feeds_into", "confidence": "medium", "reason": "design assessment -> administer -> analyze -> moderate -> report"}
+{"from": "GAS-002", "to": "GAS-003", "type": "feeds_into", "confidence": "medium", "reason": "design assessment -> administer -> analyze -> moderate -> report"}
+{"from": "GAS-003", "to": "GAS-004", "type": "feeds_into", "confidence": "medium", "reason": "design assessment -> administer -> analyze -> moderate -> report"}
+{"from": "GAS-004", "to": "GAS-005", "type": "feeds_into", "confidence": "medium", "reason": "design assessment -> administer -> analyze -> moderate -> report"}
+{"from": "GAS-005", "to": "GAS-006", "type": "feeds_into", "confidence": "medium", "reason": "design assessment -> administer -> analyze -> moderate -> report"}
+{"from": "GAS-006", "to": "GAS-007", "type": "feeds_into", "confidence": "medium", "reason": "design assessment -> administer -> analyze -> moderate -> report"}
+{"from": "GAS-007", "to": "GAS-008", "type": "feeds_into", "confidence": "medium", "reason": "design assessment -> administer -> analyze -> moderate -> report"}
+{"from": "GAS-008", "to": "GAS-009", "type": "feeds_into", "confidence": "medium", "reason": "design assessment -> administer -> analyze -> moderate -> report"}
+{"from": "GAS-009", "to": "GAS-010", "type": "feeds_into", "confidence": "medium", "reason": "design assessment -> administer -> analyze -> moderate -> report"}
+{"from": "GED-005", "to": "GAS-002", "type": "feeds_into", "confidence": "medium", "reason": "lesson-practice alignment feeds assessment task validity review"}
+{"from": "GPR-001", "to": "GPR-003", "type": "feeds_into", "confidence": "medium", "reason": "GTD-style loop: triage -> decompose -> prioritize -> plan capacity -> focus -> track -> review -> experiment"}
+{"from": "GPR-003", "to": "GPR-004", "type": "feeds_into", "confidence": "medium", "reason": "GTD-style loop: triage -> decompose -> prioritize -> plan capacity -> focus -> track -> review -> experiment"}
+{"from": "GPR-004", "to": "GPR-002", "type": "feeds_into", "confidence": "medium", "reason": "GTD-style loop: triage -> decompose -> prioritize -> plan capacity -> focus -> track -> review -> experiment"}
+{"from": "GPR-002", "to": "GPR-005", "type": "feeds_into", "confidence": "medium", "reason": "GTD-style loop: triage -> decompose -> prioritize -> plan capacity -> focus -> track -> review -> experiment"}
+{"from": "GPR-005", "to": "GPR-006", "type": "feeds_into", "confidence": "medium", "reason": "GTD-style loop: triage -> decompose -> prioritize -> plan capacity -> focus -> track -> review -> experiment"}
+{"from": "GPR-006", "to": "GPR-010", "type": "feeds_into", "confidence": "medium", "reason": "GTD-style loop: triage -> decompose -> prioritize -> plan capacity -> focus -> track -> review -> experiment"}
+{"from": "GPR-010", "to": "GPR-007", "type": "feeds_into", "confidence": "medium", "reason": "GTD-style loop: triage -> decompose -> prioritize -> plan capacity -> focus -> track -> review -> experiment"}
+{"from": "GPR-007", "to": "GPR-008", "type": "feeds_into", "confidence": "medium", "reason": "GTD-style loop: triage -> decompose -> prioritize -> plan capacity -> focus -> track -> review -> experiment"}
+{"from": "GPR-008", "to": "GPR-009", "type": "feeds_into", "confidence": "medium", "reason": "GTD-style loop: triage -> decompose -> prioritize -> plan capacity -> focus -> track -> review -> experiment"}
+{"from": "GPO-001", "to": "GPO-002", "type": "feeds_into", "confidence": "medium", "reason": "generate material -> structural revision -> line-level revision -> finalize for the page/voice"}
+{"from": "GPO-002", "to": "GPO-005", "type": "feeds_into", "confidence": "medium", "reason": "generate material -> structural revision -> line-level revision -> finalize for the page/voice"}
+{"from": "GPO-005", "to": "GPO-006", "type": "feeds_into", "confidence": "medium", "reason": "generate material -> structural revision -> line-level revision -> finalize for the page/voice"}
+{"from": "GPO-006", "to": "GPO-003", "type": "feeds_into", "confidence": "medium", "reason": "generate material -> structural revision -> line-level revision -> finalize for the page/voice"}
+{"from": "GPO-003", "to": "GPO-007", "type": "feeds_into", "confidence": "medium", "reason": "generate material -> structural revision -> line-level revision -> finalize for the page/voice"}
+{"from": "GPO-007", "to": "GPO-004", "type": "feeds_into", "confidence": "medium", "reason": "generate material -> structural revision -> line-level revision -> finalize for the page/voice"}
+{"from": "GPO-004", "to": "GPO-008", "type": "feeds_into", "confidence": "medium", "reason": "generate material -> structural revision -> line-level revision -> finalize for the page/voice"}
+{"from": "GPO-008", "to": "GPO-009", "type": "feeds_into", "confidence": "medium", "reason": "generate material -> structural revision -> line-level revision -> finalize for the page/voice"}
+{"from": "GPO-009", "to": "GPO-010", "type": "feeds_into", "confidence": "medium", "reason": "generate material -> structural revision -> line-level revision -> finalize for the page/voice"}
+{"from": "TAM-001", "to": "TAM-002", "type": "feeds_into", "confidence": "medium", "reason": "plan session -> record/edit -> arrange -> mix feedback -> deliver"}
+{"from": "TAM-002", "to": "TAM-003", "type": "feeds_into", "confidence": "medium", "reason": "plan session -> record/edit -> arrange -> mix feedback -> deliver"}
+{"from": "TAM-003", "to": "TAM-004", "type": "feeds_into", "confidence": "medium", "reason": "plan session -> record/edit -> arrange -> mix feedback -> deliver"}
+{"from": "TAM-004", "to": "TAM-005", "type": "feeds_into", "confidence": "medium", "reason": "plan session -> record/edit -> arrange -> mix feedback -> deliver"}
+{"from": "TAM-005", "to": "TAM-006", "type": "feeds_into", "confidence": "medium", "reason": "plan session -> record/edit -> arrange -> mix feedback -> deliver"}
+{"from": "TAM-006", "to": "TAM-007", "type": "feeds_into", "confidence": "medium", "reason": "plan session -> record/edit -> arrange -> mix feedback -> deliver"}
+{"from": "TAM-007", "to": "TAM-008", "type": "feeds_into", "confidence": "medium", "reason": "plan session -> record/edit -> arrange -> mix feedback -> deliver"}
+{"from": "TAM-008", "to": "TAM-009", "type": "feeds_into", "confidence": "medium", "reason": "plan session -> record/edit -> arrange -> mix feedback -> deliver"}
+{"from": "TAM-009", "to": "TAM-010", "type": "feeds_into", "confidence": "medium", "reason": "plan session -> record/edit -> arrange -> mix feedback -> deliver"}
+{"from": "MOP-001", "to": "MOP-002", "type": "feeds_into", "confidence": "medium", "reason": "design intake/triage/delivery -> vendors -> handoffs -> exceptions -> capacity -> procedure -> retrospective"}
+{"from": "MOP-002", "to": "MOP-003", "type": "feeds_into", "confidence": "medium", "reason": "design intake/triage/delivery -> vendors -> handoffs -> exceptions -> capacity -> procedure -> retrospective"}
+{"from": "MOP-003", "to": "MOP-004", "type": "feeds_into", "confidence": "medium", "reason": "design intake/triage/delivery -> vendors -> handoffs -> exceptions -> capacity -> procedure -> retrospective"}
+{"from": "MOP-004", "to": "MOP-005", "type": "feeds_into", "confidence": "medium", "reason": "design intake/triage/delivery -> vendors -> handoffs -> exceptions -> capacity -> procedure -> retrospective"}
+{"from": "MOP-005", "to": "MOP-006", "type": "feeds_into", "confidence": "medium", "reason": "design intake/triage/delivery -> vendors -> handoffs -> exceptions -> capacity -> procedure -> retrospective"}
+{"from": "MOP-006", "to": "MOP-007", "type": "feeds_into", "confidence": "medium", "reason": "design intake/triage/delivery -> vendors -> handoffs -> exceptions -> capacity -> procedure -> retrospective"}
+{"from": "MOP-007", "to": "MOP-008", "type": "feeds_into", "confidence": "medium", "reason": "design intake/triage/delivery -> vendors -> handoffs -> exceptions -> capacity -> procedure -> retrospective"}
+{"from": "MOP-008", "to": "MOP-009", "type": "feeds_into", "confidence": "medium", "reason": "design intake/triage/delivery -> vendors -> handoffs -> exceptions -> capacity -> procedure -> retrospective"}
+{"from": "MOP-009", "to": "MOP-010", "type": "feeds_into", "confidence": "medium", "reason": "design intake/triage/delivery -> vendors -> handoffs -> exceptions -> capacity -> procedure -> retrospective"}
+{"from": "MSV-001", "to": "MSV-002", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real validation loop"}
+{"from": "MSV-002", "to": "MSV-003", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real validation loop"}
+{"from": "MSV-003", "to": "MSV-004", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real validation loop"}
+{"from": "MSV-004", "to": "MSV-005", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real validation loop"}
+{"from": "MSV-005", "to": "MSV-006", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real validation loop"}
+{"from": "MSV-006", "to": "MSV-007", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real validation loop"}
+{"from": "MSV-007", "to": "MSV-008", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real validation loop"}
+{"from": "MSV-008", "to": "MSV-009", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real validation loop"}
+{"from": "MSV-009", "to": "MSV-010", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real validation loop"}
+{"from": "GAD-003", "to": "GAD-001", "type": "feeds_into", "confidence": "medium", "reason": "route -> prepare form+attachments+cover note -> track case -> handle notices/rejections/conflicts -> handoff"}
+{"from": "GAD-001", "to": "GAD-002", "type": "feeds_into", "confidence": "medium", "reason": "route -> prepare form+attachments+cover note -> track case -> handle notices/rejections/conflicts -> handoff"}
+{"from": "GAD-002", "to": "GAD-009", "type": "feeds_into", "confidence": "medium", "reason": "route -> prepare form+attachments+cover note -> track case -> handle notices/rejections/conflicts -> handoff"}
+{"from": "GAD-009", "to": "GAD-006", "type": "feeds_into", "confidence": "medium", "reason": "route -> prepare form+attachments+cover note -> track case -> handle notices/rejections/conflicts -> handoff"}
+{"from": "GAD-006", "to": "GAD-007", "type": "feeds_into", "confidence": "medium", "reason": "route -> prepare form+attachments+cover note -> track case -> handle notices/rejections/conflicts -> handoff"}
+{"from": "GAD-007", "to": "GAD-004", "type": "feeds_into", "confidence": "medium", "reason": "route -> prepare form+attachments+cover note -> track case -> handle notices/rejections/conflicts -> handoff"}
+{"from": "GAD-004", "to": "GAD-005", "type": "feeds_into", "confidence": "medium", "reason": "route -> prepare form+attachments+cover note -> track case -> handle notices/rejections/conflicts -> handoff"}
+{"from": "GAD-005", "to": "GAD-008", "type": "feeds_into", "confidence": "medium", "reason": "route -> prepare form+attachments+cover note -> track case -> handle notices/rejections/conflicts -> handoff"}
+{"from": "GAD-008", "to": "GAD-010", "type": "feeds_into", "confidence": "medium", "reason": "route -> prepare form+attachments+cover note -> track case -> handle notices/rejections/conflicts -> handoff"}
+{"from": "TDV-009", "to": "TDV-003", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered by typical release->incident arc; these are largely independent checklists a team picks from"}
+{"from": "TDV-003", "to": "TDV-002", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered by typical release->incident arc; these are largely independent checklists a team picks from"}
+{"from": "TDV-002", "to": "TDV-001", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered by typical release->incident arc; these are largely independent checklists a team picks from"}
+{"from": "TDV-001", "to": "TDV-006", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered by typical release->incident arc; these are largely independent checklists a team picks from"}
+{"from": "TDV-006", "to": "TDV-005", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered by typical release->incident arc; these are largely independent checklists a team picks from"}
+{"from": "TDV-005", "to": "TDV-007", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered by typical release->incident arc; these are largely independent checklists a team picks from"}
+{"from": "TDV-007", "to": "TDV-008", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered by typical release->incident arc; these are largely independent checklists a team picks from"}
+{"from": "TDV-008", "to": "TDV-010", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered by typical release->incident arc; these are largely independent checklists a team picks from"}
+{"from": "TDV-010", "to": "TDV-004", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered by typical release->incident arc; these are largely independent checklists a team picks from"}
+{"from": "TSC-006", "to": "TSC-001", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered scope->access->exposure->incident-prep->writeup; most pairs are independent checklist items, not a strict pipeline"}
+{"from": "TSC-001", "to": "TSC-002", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered scope->access->exposure->incident-prep->writeup; most pairs are independent checklist items, not a strict pipeline"}
+{"from": "TSC-002", "to": "TSC-007", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered scope->access->exposure->incident-prep->writeup; most pairs are independent checklist items, not a strict pipeline"}
+{"from": "TSC-007", "to": "TSC-003", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered scope->access->exposure->incident-prep->writeup; most pairs are independent checklist items, not a strict pipeline"}
+{"from": "TSC-003", "to": "TSC-004", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered scope->access->exposure->incident-prep->writeup; most pairs are independent checklist items, not a strict pipeline"}
+{"from": "TSC-004", "to": "TSC-005", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered scope->access->exposure->incident-prep->writeup; most pairs are independent checklist items, not a strict pipeline"}
+{"from": "TSC-005", "to": "TSC-009", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered scope->access->exposure->incident-prep->writeup; most pairs are independent checklist items, not a strict pipeline"}
+{"from": "TSC-009", "to": "TSC-008", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered scope->access->exposure->incident-prep->writeup; most pairs are independent checklist items, not a strict pipeline"}
+{"from": "TSC-008", "to": "TSC-010", "type": "feeds_into", "confidence": "low", "reason": "loosely reordered scope->access->exposure->incident-prep->writeup; most pairs are independent checklist items, not a strict pipeline"}
+{"from": "MEC-001", "to": "MEC-002", "type": "feeds_into", "confidence": "low", "reason": "reordered along the actual shopper journey (browse->cart->checkout->post-purchase); items are independently selectable audits, not a hard sequence"}
+{"from": "MEC-002", "to": "MEC-003", "type": "feeds_into", "confidence": "low", "reason": "reordered along the actual shopper journey (browse->cart->checkout->post-purchase); items are independently selectable audits, not a hard sequence"}
+{"from": "MEC-003", "to": "MEC-006", "type": "feeds_into", "confidence": "low", "reason": "reordered along the actual shopper journey (browse->cart->checkout->post-purchase); items are independently selectable audits, not a hard sequence"}
+{"from": "MEC-006", "to": "MEC-004", "type": "feeds_into", "confidence": "low", "reason": "reordered along the actual shopper journey (browse->cart->checkout->post-purchase); items are independently selectable audits, not a hard sequence"}
+{"from": "MEC-004", "to": "MEC-005", "type": "feeds_into", "confidence": "low", "reason": "reordered along the actual shopper journey (browse->cart->checkout->post-purchase); items are independently selectable audits, not a hard sequence"}
+{"from": "MEC-005", "to": "MEC-009", "type": "feeds_into", "confidence": "low", "reason": "reordered along the actual shopper journey (browse->cart->checkout->post-purchase); items are independently selectable audits, not a hard sequence"}
+{"from": "MEC-009", "to": "MEC-008", "type": "feeds_into", "confidence": "low", "reason": "reordered along the actual shopper journey (browse->cart->checkout->post-purchase); items are independently selectable audits, not a hard sequence"}
+{"from": "MEC-008", "to": "MEC-007", "type": "feeds_into", "confidence": "low", "reason": "reordered along the actual shopper journey (browse->cart->checkout->post-purchase); items are independently selectable audits, not a hard sequence"}
+{"from": "MEC-007", "to": "MEC-010", "type": "feeds_into", "confidence": "low", "reason": "reordered along the actual shopper journey (browse->cart->checkout->post-purchase); items are independently selectable audits, not a hard sequence"}
+{"from": "GLA-001", "to": "GLA-002", "type": "feeds_into", "confidence": "medium", "reason": "brief -> resolve ambiguity/terms/register/idiom -> reconcile reviewer disagreement"}
+{"from": "GLA-002", "to": "GLA-003", "type": "feeds_into", "confidence": "medium", "reason": "brief -> resolve ambiguity/terms/register/idiom -> reconcile reviewer disagreement"}
+{"from": "GLA-003", "to": "GLA-004", "type": "feeds_into", "confidence": "medium", "reason": "brief -> resolve ambiguity/terms/register/idiom -> reconcile reviewer disagreement"}
+{"from": "GLA-004", "to": "GLA-005", "type": "feeds_into", "confidence": "medium", "reason": "brief -> resolve ambiguity/terms/register/idiom -> reconcile reviewer disagreement"}
+{"from": "GLA-005", "to": "GLA-006", "type": "feeds_into", "confidence": "medium", "reason": "brief -> resolve ambiguity/terms/register/idiom -> reconcile reviewer disagreement"}
+{"from": "GLA-006", "to": "GLA-007", "type": "feeds_into", "confidence": "medium", "reason": "brief -> resolve ambiguity/terms/register/idiom -> reconcile reviewer disagreement"}
+{"from": "GLA-007", "to": "GLA-008", "type": "feeds_into", "confidence": "medium", "reason": "brief -> resolve ambiguity/terms/register/idiom -> reconcile reviewer disagreement"}
+{"from": "GLA-009", "to": "GED-004", "type": "complements", "confidence": "low", "reason": "language-learner error feedback is a specific case of general misconception-contrast lesson design"}
+{"from": "GLA-010", "to": "GED-003", "type": "complements", "confidence": "low", "reason": "practice-dialogue scaffolding is a specific case of general worked-example lesson sequencing"}
+{"from": "TDS-007", "to": "TDQ-001", "type": "feeds_into", "confidence": "medium", "reason": "released/split dataset is the input to quality checks"}
+{"from": "TDQ-006", "to": "TFE-001", "type": "feeds_into", "confidence": "medium", "reason": "a quality-checked dataset is what feature/label pipelines are built on"}
+{"from": "TFE-010", "to": "TDE-006", "type": "feeds_into", "confidence": "medium", "reason": "training-serving parity plan informs the producer-consumer data contract for productionizing features"}
+{"from": "TDE-010", "to": "TML-001", "type": "feeds_into", "confidence": "medium", "reason": "an observable pipeline is the input a model validation split is drawn from"}
+{"from": "TML-010", "to": "TAN-010", "type": "feeds_into", "confidence": "low", "reason": "model promotion evidence feeds the reproducible analysis-execution brief that reports it"}
+{"from": "TDS-001", "to": "TKG-002", "type": "specializes", "confidence": "medium", "reason": "Kaggle's evaluation-metric translation specializes general dataset/metric intake for a competition context"}
+{"from": "TML-002", "to": "TKG-007", "type": "specializes", "confidence": "medium", "reason": "Kaggle's ensemble-eligibility review specializes general baseline-comparison for a leaderboard context"}
+{"from": "TRP-001", "to": "TML-010", "type": "complements", "confidence": "low", "reason": "a run manifest supports the promotion-evidence checklist with reproducibility evidence"}
+{"from": "TRP-009", "to": "TAN-005", "type": "complements", "confidence": "low", "reason": "an experiment diff report is a direct input to metric-change decomposition"}
+{"from": "SKR-001", "to": "SKR-002", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order: select the gap, then generalize it into a skill"}
+{"from": "SKR-002", "to": "SKR-003", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order: generalize the skill, then design its forward test"}
+{"from": "SKR-003", "to": "CTG-006", "type": "feeds_into", "confidence": "medium", "reason": "forward-test evidence is exactly what evidence-led skill revision consumes"}
+{"from": "CTG-006", "to": "SKR-001", "type": "feeds_into", "confidence": "low", "reason": "a revised skill's remaining gaps re-enter the repertoire-gap-selection step, closing the loop"}
+{"from": "MSS-010", "to": "MSC-001", "type": "feeds_into", "confidence": "medium", "reason": "outline pacing review hands off to the first scene's goal/pressure design"}
+{"from": "MSS-003", "to": "MSC-009", "type": "feeds_into", "confidence": "medium", "reason": "the character-arc map is what an emotional-beat grounding check is measured against"}
+{"from": "MSS-005", "to": "MSC-008", "type": "feeds_into", "confidence": "medium", "reason": "a planned reveal's setup/payoff lands as a specific scene's ending turn"}
+{"from": "MSS-006", "to": "MSC-004", "type": "complements", "confidence": "low", "reason": "a stakes-escalation map and action-blocking repair are both applied at the same tense scenes"}
+{"from": "GRE-001", "to": "GRV-008", "type": "complements", "confidence": "medium", "reason": "an argument premise map is the same move as a claim-source traceability audit, applied to a synthesis draft"}
+{"from": "GRE-003", "to": "GRQ-003", "type": "complements", "confidence": "medium", "reason": "testing alternative explanations is the reasoning half of an observational study-design fit review"}
+{"from": "GRE-009", "to": "GRV-009", "type": "feeds_into", "confidence": "low", "reason": "an evidence-update ledger is what a narrative evidence synthesis should reflect"}
+{"from": "GRE-005", "to": "GRV-006", "type": "complements", "confidence": "low", "reason": "counterexample-generalization checks and conflicting-study-findings maps are the same discipline applied to one claim vs. a literature"}
+{"from": "MSV-007", "to": "BST-005", "type": "feeds_into", "confidence": "medium", "reason": "a validation result review is direct input to a strategy assumption test plan"}
+{"from": "MSV-010", "to": "BMD-004", "type": "feeds_into", "confidence": "medium", "reason": "a pivot evidence brief updates the business-model assumption map"}
+{"from": "MSV-008", "to": "COP-007", "type": "feeds_into", "confidence": "medium", "reason": "founder-sales learning log evidence is raw material for a fundraising evidence narrative"}
+{"from": "BST-003", "to": "COP-007", "type": "complements", "confidence": "low", "reason": "competitor evidence comparison commonly accompanies a fundraising narrative"}
+{"from": "CTR-002", "to": "DSP-001", "type": "feeds_into", "confidence": "low", "reason": "a service agreement's obligation map is the baseline a dispute chronology checks breaches against"}
+{"from": "CTR-003", "to": "CMP-001", "type": "complements", "confidence": "low", "reason": "contract negotiation positions and a compliance obligation map are drafted from the same underlying commitments"}
+{"from": "CMP-004", "to": "CMP-005", "type": "alternative_to", "confidence": "high", "reason": "India vs. US privacy-request workflow: pick by jurisdiction, same underlying task"}
+{"from": "CTR-004", "to": "CTR-005", "type": "alternative_to", "confidence": "high", "reason": "India vs. US service-contract review brief: pick by governing law, same underlying task"}
+{"from": "DSP-004", "to": "DSP-005", "type": "alternative_to", "confidence": "high", "reason": "India vs. US counsel handoff: pick by jurisdiction, same underlying task"}
+{"from": "TAP-010", "to": "TST-001", "type": "feeds_into", "confidence": "medium", "reason": "an API contract fixture set is what boundary-value test design is built against for an API"}
+{"from": "TAP-002", "to": "TST-010", "type": "complements", "confidence": "low", "reason": "an error-response contract and a bounded failure-injection plan target the same failure surface"}
+{"from": "GIS-001", "to": "GUS-003", "type": "alternative_to", "confidence": "high", "reason": "passport service preflight: India vs. US, same underlying task"}
+{"from": "GIS-003", "to": "GUS-001", "type": "alternative_to", "confidence": "high", "reason": "birth record request/copy preflight: India vs. US, same underlying task"}
+{"from": "GIS-007", "to": "GUS-006", "type": "alternative_to", "confidence": "medium", "reason": "public information/records request scoping: India vs. US, same underlying task"}
+{"from": "GAD-003", "to": "GIS-001", "type": "generalizes", "confidence": "medium", "reason": "general office-routing pattern specialized to an India-specific passport service"}
+{"from": "GAD-003", "to": "GUS-003", "type": "generalizes", "confidence": "medium", "reason": "general office-routing pattern specialized to a US-specific passport service"}
+{"from": "GCO-003", "to": "CBG-014", "type": "complements", "confidence": "low", "reason": "a workplace scope-renegotiation message and a negotiation package trade design are drafted together in a vendor/partner renegotiation"}
+{"from": "MPH-005", "to": "MVA-006", "type": "complements", "confidence": "low", "reason": "a photo shoot's shot-list sequencing and a poster's composition plan are both built from the same campaign brief"}
+{"from": "MVA-006", "to": "TVE-005", "type": "complements", "confidence": "low", "reason": "composed visual assets commonly become the b-roll a video edit's coverage plan draws on"}
+{"from": "MPH-005", "to": "TVE-001", "type": "feeds_into", "confidence": "low", "reason": "a photo/video shoot's shot list is the direct input to a footage-logging plan"}
+{"from": "MRE-010", "to": "MSE-003", "type": "feeds_into", "confidence": "medium", "reason": "a research-to-opportunity handoff is the evidence a search content brief is built from"}
+{"from": "MRE-010", "to": "MBR-005", "type": "feeds_into", "confidence": "low", "reason": "research handoff findings also seed the editorial calendar's audience questions"}
+{"from": "MBR-005", "to": "MCA-001", "type": "feeds_into", "confidence": "medium", "reason": "an editorial calendar's commitments inform a campaign's objective brief"}
+{"from": "MCA-001", "to": "MEM-001", "type": "feeds_into", "confidence": "medium", "reason": "a campaign's audience/offer informs a lifecycle email welcome sequence"}
+{"from": "MCA-001", "to": "MSA-001", "type": "feeds_into", "confidence": "medium", "reason": "a campaign's audience/offer informs sales discovery question planning"}
+{"from": "MEM-001", "to": "MME-001", "type": "feeds_into", "confidence": "low", "reason": "a planned email program needs its own metric definitions before launch"}
+{"from": "MSA-001", "to": "MME-001", "type": "complements", "confidence": "low", "reason": "sales enablement and marketing measurement share the same metric-definition groundwork"}
+{"from": "MME-010", "to": "MRE-010", "type": "feeds_into", "confidence": "low", "reason": "a report's action summary becomes the next research handoff's starting evidence, closing the loop"}
+{"from": "MSE-001", "to": "MAR-001", "type": "complements", "confidence": "medium", "reason": "search intent mapping and site navigation task mapping are drafted from the same query/page evidence"}
+{"from": "MAR-001", "to": "MSL-001", "type": "generalizes", "confidence": "medium", "reason": "general site navigation/architecture specialized to a local-business profile and location pages"}
+{"from": "MSE-003", "to": "MSL-004", "type": "generalizes", "confidence": "low", "reason": "general search content brief design specialized to a local-business location page brief"}
+{"from": "MPU-001", "to": "MPU-004", "type": "feeds_into", "confidence": "medium", "reason": "flow audit -> micro-copy fixes -> onboarding -> prototype test -> feedback triage -> release -> handoff"}
+{"from": "MPU-004", "to": "MPU-002", "type": "feeds_into", "confidence": "medium", "reason": "flow audit -> micro-copy fixes -> onboarding -> prototype test -> feedback triage -> release -> handoff"}
+{"from": "MPU-002", "to": "MPU-003", "type": "feeds_into", "confidence": "medium", "reason": "flow audit -> micro-copy fixes -> onboarding -> prototype test -> feedback triage -> release -> handoff"}
+{"from": "MPU-003", "to": "MPU-005", "type": "feeds_into", "confidence": "medium", "reason": "flow audit -> micro-copy fixes -> onboarding -> prototype test -> feedback triage -> release -> handoff"}
+{"from": "MPU-005", "to": "MPU-006", "type": "feeds_into", "confidence": "medium", "reason": "flow audit -> micro-copy fixes -> onboarding -> prototype test -> feedback triage -> release -> handoff"}
+{"from": "MPU-006", "to": "MPU-007", "type": "feeds_into", "confidence": "medium", "reason": "flow audit -> micro-copy fixes -> onboarding -> prototype test -> feedback triage -> release -> handoff"}
+{"from": "MPU-007", "to": "MPU-008", "type": "feeds_into", "confidence": "medium", "reason": "flow audit -> micro-copy fixes -> onboarding -> prototype test -> feedback triage -> release -> handoff"}
+{"from": "MPU-008", "to": "MPU-009", "type": "feeds_into", "confidence": "medium", "reason": "flow audit -> micro-copy fixes -> onboarding -> prototype test -> feedback triage -> release -> handoff"}
+{"from": "MPU-009", "to": "MPU-010", "type": "feeds_into", "confidence": "medium", "reason": "flow audit -> micro-copy fixes -> onboarding -> prototype test -> feedback triage -> release -> handoff"}
+{"from": "GRF-001", "to": "GRF-003", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-003", "to": "GRF-002", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-002", "to": "GRF-004", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-004", "to": "GRF-005", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-005", "to": "GRF-006", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-006", "to": "GRF-007", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-007", "to": "GRF-008", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-008", "to": "GRF-009", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-009", "to": "GRF-010", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-010", "to": "GRF-011", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-011", "to": "GRF-012", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-012", "to": "GRF-013", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-013", "to": "GRF-014", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-014", "to": "GRF-015", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-015", "to": "GRF-016", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
+{"from": "GRF-016", "to": "GRF-017", "type": "feeds_into", "confidence": "high", "reason": "declared subdomain order is the real build sequence: contract, import, validate, analyze, implement, maintain"}
