@@ -1,0 +1,133 @@
+# X posts: GitHub skill/tool leads (owner-supplied, 2026-11-17)
+
+> Raw text as copied by the repo owner from six X posts. Many URLs are truncated by X's own
+> display (ending in `…`) — these are leads to resolve via search, not confirmed URLs. Nothing
+> here has been verified yet. See `prompts/08-skill-harvest-graph-and-readme.md` for the task
+> that verifies, dedupes, and acts on this list.
+
+## Post 1
+
+1. Reverse Engineer Anything (REA): reverse engineer anything with agents, from app behavior down
+   to native binaries. One note: it is not formally banned, but Claude frequently blocks it.
+2. Impeccable, by Paul Bakaus: the design vocabulary for your coding agent. Steer with polish,
+   review with critique, catch AI slop before it ships.
+3. Agent Harness Construction, by ECC: performance optimization for the agent harness. Skills,
+   instincts, memory, security, research-first development.
+4. Hallmark, by Hassan El Mghari: an anti-AI-slop design skill for Claude Code, Cursor and Codex.
+5. Code Review, by Matt Pocock — skills for real engineers, straight from his .agents directory.
+6. Analytics, by Marketingskills — marketing skills for Claude Code and AI agents. CRO,
+   copywriting, SEO, analytics, growth engineering.
+7. Academy Guide, by Anthropic: the public repository for Agent Skills.
+8. Humanizer, by blader removes the signs of AI-generated writing from text.
+9. SEO Agentic: a full SEO system for Claude Code. 26 sub-skills and 19 sub-agents across
+   technical SEO, E-E-A-T, schema and GEO.
+10. Create Video, by OpenMontage — open-source agentic video production.
+
+## Post 2 — "10 skills that kill AI slop"
+
+1. Anti UI Slop — uizze.com
+2. Impeccable — impeccable.style
+3. Taste Skill — github.com/Leonxlnx/taste…
+4. Emil Design Engineering — github.com/emilkowalski/s…
+5. Vercel Web Design Guidelines — github.com/vercel-labs/ag…
+6. Frontend Design (Anthropic) — github.com/anthropics/ski…
+7. Hallmark — github.com/Nutlope/hallma…
+8. Make Interfaces Feel Better — github.com/jakubkrehel/ma…
+9. UI UX Pro Max — github.com/nextlevelbuild…
+10. Stageshow (Benji Taylor) — github.com/benjitaylor/sk…
+
+"Install 2 or 3, not all 10. Bookmark this."
+
+## Post 3 — "10 free repos" (framed around a model code-named Fable 5.2 running 1,000+ subagents)
+
+- claude code action (by anthropics) — github.com/anthropics/cla… — run Claude Code inside your
+  GitHub workflows
+- anthropic sdk python (by anthropics) — github.com/anthropics/ant… — the official Python SDK
+  for the Claude API, build on the model directly
+- herdr (by herdrdev) — github.com/herdrdev/herdr — run and watch several agents at once from
+  one terminal
+- buzz (by block) — github.com/block/buzz — a shared workspace where you and your agents use
+  chat, git and workflows together
+- deer flow (by bytedance) — github.com/bytedance/deer… — ByteDance's agent harness with ready
+  skills, built on LangGraph
+- cline (by cline) — github.com/cline/cline — an autonomous coding agent that works inside your
+  editor
+- aider (by Aider-AI) — github.com/Aider-AI/aider — a terminal pair programmer that maps your
+  whole repo
+- openviking (by volcengine) — github.com/volcengine/Ope… — a context database that gives agents
+  a filesystem style memory
+- graphiti (by getzep) — github.com/getzep/graphiti — a temporal knowledge graph so agents
+  remember what changed and when
+- pi (by earendil-works) — github.com/earendil-works… — a minimal terminal coding harness you
+  extend with skills
+
+## Post 4 — "20 GitHub repos ... Design studio"
+
+01. ui-ux-pro-max — 80 UI styles, palettes and font pairings — github.com/nextlevelbuild…
+02. /canvas-design — Anthropic's skill for posters and art as PNG and PDF — github.com/anthropics/ski…
+03. /pptx — Real slide decks, Anthropic official — github.com/anthropics/ski…
+04. /theme-factory — 10 ready themes for slides, docs and landing pages — github.com/anthropics/ski…
+05. stitch-skills — Google Labs skills that turn a prompt into UI screens — github.com/google-labs-co…
+06. /frontend-design — Anthropic's skill for UI that doesn't look AI-generated — github.com/anthropics/ski…
+07. DESIGN.md — Google's format that describes your visual identity to agents — github.com/google-labs-co…
+08. Astryx — Meta's open-source design system, built for agents — github.com/meta/astryx
+09. shadcn/ui — Components you own as code — github.com/shadcn-ui/ui
+10. Tailwind CSS — Utility-first styling — github.com/tailwindlabs/t…
+11. Magic UI — Animated components to copy and paste — github.com/magicuidesign/…
+12. Magic MCP — Like v0, inside Claude Code — github.com/21st-dev/magic…
+13. Figma Context MCP — Figma layouts straight to your agent — github.com/GLips/Figma-Co…
+14. Penpot — Open-source Figma alternative with an official MCP — github.com/penpot/penpot
+15. Excalidraw — Hand-drawn diagrams and wireframes — github.com/excalidraw/exc…
+16. tldraw — An infinite canvas SDK — github.com/tldraw/tldraw
+17. Lucide — Clean, consistent open-source icons — github.com/lucide-icons/l…
+18. Leonardo — Adobe's palettes built from a contrast ratio — github.com/adobe/leonardo
+19. rembg — Background removal in one line — github.com/danielgatis/re…
+20. agent-browser — The agent opens the page and checks the design itself — github.com/vercel-labs/ag…
+
+"Skill → system → UI → canvas → ship."
+
+## Post 5 — "Microsoft Research made Claude Code 23.6% cheaper ... 6 more repos stop it from
+repeating your old mistakes"
+
+1. TokenEconomizer — learn your repo from past sessions; a fact loads at session start once 3
+   sessions confirm it, contradicted facts get dropped — github.com/microsoft/Toke…
+   (claimed: 18.4%-30.9% lower cost across 5 setups on 277 SWE-Bench tasks, cheaper in all 30 cells)
+2. loom (by ClickHouse) — self-hosted MCP server so what one agent learns the next can find; its
+   Claude Code plugin loads context at start and records each session — github.com/ClickHouse/loom
+3. `npx @globalmpc/nomore` — finds instructions repeated in 2+ sessions and turns them into
+   CLAUDE.md rules that survive compaction — github.com/globalmpc/nomo…
+4. stalemap — catches dependencies that changed after the model's training cutoff; writes a
+   ranked list of changes into CLAUDE.md before the agent starts — github.com/Umair/stalemap
+5. landmines — finds open GitHub issues filed against the exact versions in your lockfile; the
+   agent's edit stops once and gets the workaround from the thread — github.com/devanshranjan1…
+6. Rulebook — shows every CLAUDE.md/AGENTS.md across your projects, flags diverged files, broken
+   @imports and files over 200 lines — github.com/disinfeqt/rule… (needs macOS 14+)
+7. (lean subagents) — subagents that start at ~7.4k tokens instead of 131.1k because they skip
+   CLAUDE.md, the skills list and MCP tools — github.com/mdalexandre/cl…
+
+"All 7 repos are less than 6 weeks old."
+
+## Post 6 — "Claude Code with 20 free upgrades" (#1 has 315K stars)
+
+01. Superpowers — makes Claude plan and test before it builds — github.com/obra/superpowe…
+02. Spec Kit — spec-driven development from GitHub — github.com/github/spec-kit
+03. Context7 — up-to-date docs, no more outdated APIs — github.com/upstash/contex…
+04. Awesome Claude Code — the curated list of everything — github.com/hesreallyhim/a…
+05. Ruflo — agent swarms that work together — github.com/ruvnet/ruflo
+06. Agents — plugins, agents and skills, ready to drop in — github.com/wshobson/agents
+07. Playwright MCP — Claude drives a real browser — github.com/microsoft/play…
+08. GitHub MCP — PRs and issues straight from chat — github.com/github/github-…
+09. Claude Code Router — route to any model — github.com/musistudio/cla…
+10. Claude Code Templates — install agents, commands and hooks in one line — github.com/davila7/claude…
+11. Serena — semantic code search and edits — github.com/oraios/serena
+12. Vibe Kanban — a kanban board for your agents — github.com/BloopAI/vibe-k…
+13. Task Master — turns a PRD into tasks — github.com/eyaltoledano/c…
+14. SuperClaude — commands and expert personas — github.com/SuperClaude-Or…
+15. opcode — a desktop GUI for Claude Code — github.com/winfunc/opcode
+16. ccusage — see exactly where your tokens go — github.com/ccusage/ccusage
+17. Claude Code UI — use it from your phone — github.com/siteboon/claud…
+18. Claude Squad — many agents, one terminal — github.com/smtg-ai/claude…
+19. CCPM — GitHub issues plus git worktrees — github.com/automazeio/ccpm
+20. Hooks Mastery — master Claude Code hooks — github.com/disler/claude-…
+
+"Plan → spec → build → test → review → ship."
