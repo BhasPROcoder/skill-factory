@@ -39,3 +39,17 @@
 2026-11-14: GRF-012/013/014 accepted after independent exact-ranking bound, label-invariant membership and transactional graph-storage tests plus ordinary/missing/edge scenarios. sf.py validation/registry/quality PASS636; export/package636 integrity PASS. Expansion92/5000 remaining4908. Storage reopen does not establish crash durability or production readiness.
 2026-11-14: User changed workflow to LOCAL ONLY; no commits or pushes. GRF-015/016/017 independently reviewed and accepted; sf.py validation/registry/quality PASS639, export/package639 integrity PASS. Expansion95/5000 remaining4905. Query-plan observations do not claim speedup; graph replay and migration fixtures do not establish durable concurrent execution.
 2026-11-14: skill-graph: 639 nodes (544 original + 95 merged from origin/main mid-pass), 222 edges (194 feeds_into, 16 complements, 6 alternative_to, 4 generalizes, 2 specializes), 28 chunks (27 from the original 544 + 1 for merged domain GRF), 310 unchunked, 72 newly-merged skills across 23 domains not yet assessed (flagged for a follow-up pass). Fixed a Windows stdout-encoding bug in the new sf.py graph-export command (ensure_ascii=True) while regenerating the export after the merge.
+
+2026-11-14: G18 embedded example and four adverse code checks passed; sf.py ingest/validate reports 640 validated, expansion96/5000 remaining4904. Registry/quality/export/package PASS640. Independent review pending; these mechanical counts do not establish acceptance of G18. G19 authoring and G20 overlap investigation assigned; local-only work.
+
+2026-11-14: G18 independent review and repaired-example recheck passed; evidence logs/graph18-review.md. sf.py validate PASS. Previously observed640 validated,96 net additions,4904 remaining now supported by G18 review. G19/G20 authoring continues locally.
+
+2026-11-14: GRF-019/020 independent code/scenario reviews passed; sf.py ingest/validate/registry/quality PASS642. Index/router/testpack/export/package refreshed; archive integrity PASS. Expansion98/5000 remaining4902. G21 review and G22 authoring assigned; local only.
+
+2026-11-14: Recovered completed G21 independent review; sf.py validation/registry/export/package PASS643, expansion99/5000 remaining4901. G22 code-tested but review incomplete; no other workers live at recovery.
+
+2026-11-14: G22 completed independent substantive review; sf.py validate/registry/quality PASS644, export/package integrity PASS. Expansion100/5000 remaining4900. G23 recovery author assigned; local only.
+
+2026-11-14: sf.py status644 validated unchanged. G23 independent review assigned; G24 authoring and next-graph overlap discovery active. Directory topics10/120 mapped to narrow reviewed workflows with remaining scope explicit.
+
+2026-11-14: G23 independently reviewed and accepted; sf.py validation/registry/quality/export/package PASS645. Expansion101/5000 remaining4899. G24 independent review and G25 authoring assigned; local only.
