@@ -1,5 +1,10 @@
 # Skill Factory
 
+[![Validate skill registry](https://github.com/BhasPROcoder/skill-factory/actions/workflows/validate.yml/badge.svg)](https://github.com/BhasPROcoder/skill-factory/actions/workflows/validate.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Skills](https://img.shields.io/badge/skills-645-blue)
+![Domains](https://img.shields.io/badge/domains-81-blue)
+
 A local library of portable, task-focused instructions. Each skill contains inputs, an explicit procedure, decision rules, an output template, a fictional worked example, failure cases, and a test request.
 
 ## Use a skill
@@ -204,10 +209,14 @@ python tools/sf.py testpack CTR-001
 
 The export contains one folder per validated or audited skill, with minimal `name` and `description` frontmatter and the full instructions. Generated exports are ignored by Git because they can be rebuilt from the source library. The testpack command creates a request and assertion file; run the request separately and retain actual results before claiming behavioral validation.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the skill-authoring and validation workflow.
+
 ## Maintain the library
 
 Read [AGENTS.md](AGENTS.md) and [SPEC.md](SPEC.md). Query registry records through `sf.py` rather than dumping the registry into a model context. Authoring helpers and their task records remain in `tools/` and `staging/` so examples and methods are reviewable. Helpers may regenerate their owned files; preserve reviewed changes in the authoring source before rerunning them.
 
 `sf.py ingest <manifest.json>` appends a staged taxonomy after checking conflicts. Run ingestion serially, then validate the affected skills. It does not silently replace existing records. The prompts under `prompts/` support smaller maintenance batches; their batch sizes are workflow defaults, not a limit on an explicitly authorized larger task.
 
-No license is selected on the user's behalf. Add your chosen license before inviting reuse under specific terms.
+Licensed under [MIT](LICENSE).
