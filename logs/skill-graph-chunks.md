@@ -3,15 +3,15 @@
 Built per `prompts/07-skill-graph-engineering.md`, originally against the 544 validated skills
 in `skills/` at the time this pass started. Mid-pass, a peer session merged 37 commits from
 `origin/main` into this branch (new graph-theory, event/rental-ops, and other skills from another
-contributor), taking the registry to 639 validated skills across 81 domains. The node export was
-regenerated against the full 639 and one clearly-sequential new domain (GRF, see chunk 28) was
-added to this pass; the other 23 new domains (72 skills — see **Newly merged, not yet covered**
-below) were not, to keep this pass's scope bounded rather than silently expanding it.
+contributor), taking the registry to 639 validated skills, then further merges (GRF-018..023 and
+more) took it to 645. The node export is regenerated fresh each pass against the current
+registry. The 23 domains flagged "not yet covered" in the first pass are now covered below
+(chunks 29-37); see **Newly merged, still not covered** for anything added after this second pass.
 
-Graph data: [`registry/skill-graph-nodes.jsonl`](../registry/skill-graph-nodes.jsonl) (639 nodes,
-current registry) and [`registry/skill-graph-edges.jsonl`](../registry/skill-graph-edges.jsonl)
-(222 edges: 194 `feeds_into`, 16 `complements`, 6 `alternative_to`, 4 `generalizes`,
-2 `specializes`).
+Graph data: [`registry/skill-graph-nodes.jsonl`](../registry/skill-graph-nodes.jsonl) (645 nodes
+at last export) and [`registry/skill-graph-edges.jsonl`](../registry/skill-graph-edges.jsonl)
+(287 edges: 243 `feeds_into`, 31 `complements`, 6 `alternative_to`, 4 `generalizes`,
+3 `specializes`).
 
 ## Method, stated honestly
 
@@ -161,16 +161,60 @@ skills noted as siblings rather than enumerated again.
 
 ---
 
-## Newly merged, not yet covered by this pass
+## 29. Procurement-to-warehouse operations
+**Skills (in order):** BID-004 supplier-invoice-three-record-match-review -> WHS-003 inbound-receipt-variance-disposition -> WHS-001 counted-stock-discrepancy-reconciliation -> SHP-001 shipment-package-contents-reconciliation
+**Why they're linked:** the physical/paper trail of goods moving in: invoice-to-receipt match, inbound variance, stock-count reconciliation, then outbound shipment packing. All under Operations & Supply Chain.
 
-A peer session merged 23 more new domains (72 skills) from `origin/main` after this pass's reading
-was already done: ARC, ATR, BID, CLI, DST, EVT, EXP, GEO, IPR, IXA, LIR, LRE, PRT, RNT, SDR, SEQ,
-SHP, SPD, SVC, TBX, UST, VEV, WHS (see `registry/domains.jsonl` for full names). A couple have an
-obvious likely bridge worth flagging for a follow-up pass rather than guessing now: TBX (table
-reshape/wrangling, AI/ML & Data Science) plausibly complements chunk 17's TDQ domain; CLI
-(command-line interaction contracts, Software Engineering) plausibly complements chunk 23's
-TAP/TST domains. Re-run `prompts/07-skill-graph-engineering.md` scoped to these 23 domains to
-extend the graph properly rather than retrofitting guesses here.
+## 30. Service & rental fulfillment toolkit
+**Skills (in order):** SVC-001 appointment-resource-conflict-reconciliation -> RNT-001 rental-serial-allocation-reconciliation -> RNT-002 rental-checkout-accessory-completeness -> RNT-003 rental-return-condition-evidence-comparison -> RNT-004 rental-usage-meter-reading-reconciliation -> RNT-005 rental-overdue-custody-followup -> RNT-006 rental-turnaround-readiness-handoff -> SVC-002 exclusive-waitlist-offer-reconciliation -> SVC-003 appointment-attendance-evidence-disposition
+**Why they're linked:** book the resource/slot, allocate and check out the physical asset, track its return/usage/custody, then reallocate (waitlist) or close out attendance. SVC and RNT are declared as separate domains but execute one real fulfillment workflow together.
+
+## 31. Dependency scheduling bridges to graph & planning
+**Skills (in order):** SEQ-001 prerequisite-cycle-witness -> SEQ-002 ready-task-priority-frontier -> SEQ-003 dependency-critical-path-slack
+**Why they're linked:** declared subdomain order — detect cycles before computing a dispatch frontier, then propagate durations for slack.
+**Internal choices:** SEQ-001 **complements** chunk 28's GRF-007 (weak-component/cycle diagnosis is the same technique, generic graph vs. a task graph). SEQ-003 **feeds into** BPL-002 (`initiative-dependency-map`, Unchunked) — the quantitative slack a scheduling engine computes is what that business-planning skill needs before committing to an order.
+
+## 32. 3D asset preparation & diagnostics pipeline
+**Skills (in order):** SPD-001 spatial-coordinate-unit-handoff -> GEO-001 triangle-shared-edge-winding-check -> GEO-002 uv-triangle-signed-area-inspection -> GEO-003 pivoted-3d-transform-composition -> SDR-001 rig-deformation-pose-test-design -> SDR-002 scan-cleanup-evidence-preservation
+**Why they're linked:** hand off coordinates/units between tools, diagnose mesh geometry (winding, UV, transforms), then test rig deformation and preserve cleanup evidence. All under Visual Arts, Photo & Video.
+**Internal choices:** SDR-002 **complements** chunk 25's MPH-005 (scan cleanup and a shoot's shot-list both feed the same visual-production asset pipeline).
+
+## 33. Museum & exhibition evidence toolkit
+**Skills:** EXP-003 exhibit-object-label-placement-reconciliation -> EXP-001 exhibit-label-claim-revision-propagation -> EXP-002 multilingual-exhibit-panel-parity -> EXP-005 exhibit-alternate-route-interpretation-parity -> EXP-004 exhibit-kiosk-visitor-session-reset-review -> EXP-006 exhibit-loan-return-evidence-dossier; EXP-001 <-> VEV-001 reconstruction-evidence-visual-labeling; VEV-001 <-> VEV-002 simulation-observation-display-separation
+**Why they're linked:** reconcile object/label placement, propagate claim revisions, check multilingual/route parity, keep kiosk sessions honest, dossier at close — and VEV's reconstruction/simulation labeling is the same curatorial-honesty discipline applied to static and dynamic exhibits.
+
+## 34. Print production handoff pipeline
+**Skills (in order):** PRT-001 print-page-section-quantity-reconciliation -> PRT-002 print-proof-change-disposition -> PRT-003 spot-color-separation-evidence-review -> PRT-004 trim-bleed-content-boundary-reconciliation -> PRT-005 variable-print-record-template-correspondence -> PRT-006 print-finishing-assembly-handoff
+**Why they're linked:** declared subdomain order is the real print-production sequence from quantity reconciliation through finishing handoff.
+**Internal choices:** PRT-004 **complements** chunk 25's MVA-006 (a poster's composition plan and its print trim/bleed reconciliation are two stages of the same asset).
+
+## 35. Product interface contracts toolkit
+**Skills:** DST-001 design-token-alias-cycle-diagnosis -> DST-003 design-token-rename-migration-map -> DST-002 component-variant-compatibility-matrix -> DST-004 component-deprecation-consumer-handoff; IPR-001/002/003 (interactive prototype behavior); IXA-001/002 (interaction adaptation); UST-001/002 (interface state contracts)
+**Why they're linked:** all four domains (Product & Design) are "contract" problems for UI state — token dependencies, prototype behavior, accessibility adaptation, interface-state honesty — grouped as one toolkit rather than four 2-4-skill orphans.
+**Internal choices:** DST-002 **complements** chunk 27's MPU-004; IPR-001 **complements** MPU-005; IXA-001 **complements** MPU-003; UST-001 **complements** chunk 13's TDV-005 (freshness display is the UI-facing twin of an ops alert spec).
+
+## 36. SWE machine/locale contract toolkit
+**Skills (in order):** CLI-001 command-machine-stream-contract -> CLI-002 literal-operand-parsing-contract; LRE-001 localized-message-placeholder-contract -> LRE-002 locale-fallback-resolution-trace -> LRE-003 translation-source-revision-coverage
+**Why they're linked:** both domains (Software Engineering) are machine-contract engineering for text/IO correctness — a CLI's stream/argument contract and a locale catalog's placeholder/fallback/coverage contract are the same discipline for two different interfaces.
+**Internal choices:** CLI-001 **complements** chunk 23's TAP-001 (API request schema review) — same discipline, different interface.
+
+## 37. Evidence chain-of-custody toolkit
+**Skills:** ARC-001/002/003 (collection description operations); LIR-001 calibration-certificate-asset-correspondence -> LIR-002 instrument-use-calibration-timeline -> LIR-003 out-of-tolerance-affected-record-inventory
+**Why they're linked:** archival accession/description work and laboratory-instrument record-keeping are both chain-of-custody-style evidence reconciliation under uncertainty.
+**Internal choices:** ARC-001 **complements** chunk 20's GRV-004 (study-evidence-extraction-sheet); LIR-003 **complements** GRV-007 (evidence-gap-map) — the same move applied to instrument records.
+
+## 38. Graph engineering, extended (bridge note, not a new chunk)
+TBX (table transformation contracts, AI/ML & Data Science) bridges into chunk 17's ML lifecycle
+spine rather than standing alone: TBX-001 (`reversible-wide-long-cell-mapping`) **feeds into**
+TDQ-007 (`dataset-unit-conversion-review`); TBX-003 (`numeric-interval-membership-assignment`)
+**complements** TDQ-004 (`dataset-range-rule-audit`) — both boundary-condition disciplines.
+TBX-002 and the rest of TDQ remain independently selectable.
+
+EVT (event show operations) and ATR (audio timeline reconstruction) are each too small (2-3
+skills, genuinely independent techniques within the domain) for their own chunk: EVT-002
+(`alternate-playback-recovery-rehearsal`) **specializes** chunk 13's TDV-004
+(`operations-backup-restore-rehearsal`) for live A/V instead of IT backups; ATR-001
+(`audio-edit-frame-provenance`) **complements** chunk 9's TAM-004 (`audio-dialogue-edit-plan`).
 
 ---
 
@@ -203,6 +247,18 @@ skill, given the scale (one-domain groupings follow `registry/domains.jsonl`, no
 - **TDE/TDQ/TDS/TFE/TML** (8-9 each) — the five core ML-pipeline domains; one or two bridge skills per domain form chunk 17's spine, the rest are independent stage-specific tasks.
 - **TRP** (10, all) — reproducibility toolkit; TRP-001/009 are noted as branches inside chunk 17 but not core members; the rest are independent reproducibility checklist items.
 - **TST** (8: all but 001,010) — test-design toolkit; two skills bridge to chunk 23, the rest are independent test-design techniques.
+- **ARC** (3, all) — chunk 37 covers the domain's cross-domain bridge (ARC-001); all three members sit in chunk 37 as a grouped-by-domain sub-sequence, nothing left over.
+- **ATR** (3, all) — audio timeline reconstruction; ATR-001 bridges to chunk 9 (see "Graph engineering, extended" note), the other two (loop-taper comparison, stem alignment) are independent audio-forensics techniques, too small/unrelated to each other for their own chunk.
+- **BID** (3: 001,002,003) — procurement toolkit; BID-004 is chunk 29's entry point, the rest (bid normalization, substitution disposition, tender-addendum reconciliation) are independent.
+- **EVT** (2, all) — event show operations; EVT-002 specializes chunk 13's TDV-004 (see "Graph engineering, extended" note); only 2 skills in the domain, below the 3-skill chunk minimum.
+- **SHP** (1: 002) — SHP-001 is chunk 29's last step; SHP-002 (lot-trace scope reconciliation) is independent.
+- **SPD** (1: 002) — SPD-001 is chunk 32's entry point; SPD-002 (procedural-material parameter isolation) is independent.
+- **TBX** (3, all) — table transformation; TBX-001/003 bridge into chunk 17 (see "Graph engineering, extended" note), TBX-002 is independent; only 3 skills total, kept as bridge notes rather than a standalone chunk.
+- **WHS** (1: 002) — WHS-001/003 are chunk 29 members; WHS-002 (pick-short exception resolution) is independent.
+
+**309 skills chunked (251 from chunks 1-28 + 58 new from chunks 29-37), 336 unchunked, 645 total.**
+These counts come from a script diffing the chunk-membership lists against
+`registry/skill-graph-nodes.jsonl` (645 rows), not a hand tally.
 
 **310 skills unchunked, 251 chunked (234 from the original 544 + 17 GRF), 72 newly merged and
 not yet assessed, 639 total.**
