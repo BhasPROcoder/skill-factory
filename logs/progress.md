@@ -80,3 +80,4 @@ G54 independent review and sf.py checks PASS674; expansion130/5000 remaining4870
 G55 independent review and sf.py checks PASS675; expansion131/5000 remaining4869. Export/package integrity PASS. G56/G57 pending; local only.
 G56 independent review and sf.py checks PASS676; expansion132/5000 remaining4868. Export/package integrity PASS. G57 draft and G58 scope pending; local only.
 G57 independent review and sf.py checks PASS677; expansion133/5000 remaining4867. Export/package integrity PASS. G58 repair and G59 scope pending; local only.
+- audit: GRF-058 5/5/5/5/5→5/5/5/5/5; GRF-059 5/5/5/5/4→5/5/5/5/5 (clarified verifier grouping); TST-011 5/5/5/5/5→5/5/5/5/5. Embedded Python examples executed; sf.py validation and quality gates PASS.

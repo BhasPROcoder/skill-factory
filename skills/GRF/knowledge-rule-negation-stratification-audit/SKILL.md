@@ -3,7 +3,7 @@ id: GRF-058
 name: knowledge-rule-negation-stratification-audit
 domain: Graph Engineering Foundations
 subdomain: Rule-program admission
-version: 1.0
+version: 1.1
 description: Check variable binding and signed predicate dependencies before evaluating a bounded neutral knowledge-rule program with negation.
 triggers: ["check knowledge rule stratification", "find a negation dependency cycle", "audit unbound negative variables", "assign rule predicate strata", "review recursive graph rules before execution"]
 not_for: ["choosing relation meanings [GRF-018]", "retracting transitive facts [GRF-048]", "diagnosing value constraints [GRF-020]", "executing a specific rule-engine language"]

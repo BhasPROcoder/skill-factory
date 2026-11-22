@@ -3,7 +3,7 @@ id: GRF-059
 name: optional-graph-edge-row-contract
 domain: Graph Engineering Foundations
 subdomain: Optional graph query semantics
-version: 1.0
+version: 1.1
 description: Verify a neutral optional directed edge-pattern row multiset when parallel relationships, loops and unmatched seeds must keep their intended result meaning.
 triggers: ["check optional graph match rows", "why did unmatched graph nodes disappear", "verify graph optional edge multiplicity", "compare inside versus after optional filters", "preserve parallel edge IDs in optional results"]
 not_for: ["graph query-plan tuning [GRF-015]", "minimum-hop reachability [GRF-006]", "knowledge value constraints [GRF-020]", "generic tabular join diagnosis [TDQ-008]", "claiming a specific query language's null semantics"]
@@ -33,7 +33,7 @@ If a required input is missing and has no safe default, ask in one message, max 
 4. For each seed, select edge records whose endpoint matches the requested direction, whose relation label is allowed and whose optional inside-pattern endpoint predicate passes.
 5. Emit one `(seed, edge ID, other endpoint)` row per selected edge identity. Keep parallel edges separate even when their endpoints and labels match.
 6. If no edge qualifies for that seed, emit exactly one `(seed, unbound, unbound)` row. ⚠️ Do not emit an additional unbound row for a seed that already has a match.
-7. Compare the complete row multiset with an independent grouping by source edge ID. A total row count alone can conceal a dropped seed and duplicated edge row.
+7. Compare the complete row multiset with independent per-seed groups keyed by full row identity, including edge ID. A total row count alone can conceal a dropped seed and duplicated edge row.
 8. When comparing a post-optional predicate, apply the explicitly declared neutral filter to the already produced rows. Under this fixture, an unbound value fails a target/edge condition; record which seed rows disappear.
 9. Confirm that any translation to a real query language implements the selected semantics by testing the same fixture and checking that language's current authoritative documentation. Keep unsupported engine behavior unresolved.
 10. Deliver exact rows, seed coverage, filter-placement differences and limits. Do not call an absent match a false graph fact when source coverage is incomplete.
@@ -111,7 +111,7 @@ assert optional_rows(nodes, edges, nodes, ("link",), "out",
 print("optional edge-ID rows and filter placement checked")
 ```
 
-The second verifier groups by edge ID before adding unbound rows; it compares full multisets. The post-filter example deliberately rejects unbound edge IDs. This is a declared reference rule, not a universal assertion about a query engine's null or undefined semantics.
+The second verifier groups qualifying rows by seed while retaining each edge ID in the complete row key, then adds an unbound row only for an empty group; it compares full multisets. The post-filter example deliberately rejects unbound edge IDs. This is a declared reference rule, not a universal assertion about a query engine's null or undefined semantics.
 
 ## Decision rules
 - IF a seed has two qualifying parallel edges THEN return two rows BECAUSE each edge ID is distinct.
