@@ -52,3 +52,31 @@
 2026-11-14: sf.py status644 validated unchanged. G23 independent review assigned; G24 authoring and next-graph overlap discovery active. Directory topics10/120 mapped to narrow reviewed workflows with remaining scope explicit.
 
 2026-11-14: G23 independently reviewed and accepted; sf.py validation/registry/quality/export/package PASS645. Expansion101/5000 remaining4899. G24 independent review and G25 authoring assigned; local only.
+
+Recovery checkpoint: GRF-024 independent review recovered and accepted; sf.py validate/registry/quality/export/package PASS646. Expansion102/5000 remaining4898. G25 reviewer and G26 author assigned. e0994cc push succeeded previously; further work local only.
+
+Recovery checkpoint: G25 independent review passed; sf.py validation/registry/quality/export/package PASS647, expansion103/5000 remaining4897. G26/G27 authors active at last check; local only.
+
+G26 independent review and sf.py checks PASS648; expansion104/5000 remaining4896. Export/package integrity PASS. Recovered interrupted G27 and scoped G28 assignments after confirming old handles absent.
+
+G27 independent review and sf.py checks PASS649; expansion105/5000 remaining4895. Export/package integrity PASS. G28/G29 authors pending; local only.
+
+G28/G29 independent reviews and sf.py checks PASS651; expansion107/5000 remaining4893. Export/package integrity PASS. G30 prior handle absent; recover from actual files next. Local only.
+
+G30 recovered independent review and sf.py checks PASS652; expansion108/5000 remaining4892. Export/package integrity PASS. G31 author assigned; local only.
+G31 independent review and sf.py checks PASS653; expansion109/5000 remaining4891. Export/package integrity PASS. G32/G33 drafts pending review; local only.
+G32/G33 independent reviews and sf.py checks PASS655; expansion111/5000 remaining4889. Export/package integrity PASS. Rejected duplicate dependency-order G34 proposal; local only.
+G34/G35 independent reviews and sf.py checks PASS657; expansion113/5000 remaining4887. Both repaired before acceptance; export/package integrity PASS. Local only.
+G36/G37 independent reviews and sf.py checks PASS659; expansion115/5000 remaining4885. Export/package integrity PASS. Local only.
+G38/G39 independent reviews and sf.py checks PASS661; expansion117/5000 remaining4883. Export/package integrity PASS. G40 pending; local only.
+G40 independent review and sf.py checks PASS662; expansion118/5000 remaining4882. Export/package integrity PASS. G41 pending; local only.
+G41/G42/G43 independent reviews and sf.py checks PASS665; expansion121/5000 remaining4879. Export/package integrity PASS. Local only.
+G46/G47/G48 independent reviews and sf.py checks PASS668; expansion124/5000 remaining4876. Export/package integrity PASS. Local only.
+G49/G50 independent reviews and sf.py checks PASS670; expansion126/5000 remaining4874. Export/package integrity PASS. G51 pending; local only.
+G51 independent review and sf.py checks PASS671; expansion127/5000 remaining4873. Export/package integrity PASS. G52/G53 pending; local only.
+G52 independent review and sf.py checks PASS672; expansion128/5000 remaining4872. Export/package integrity PASS. G53 review and G54 recovery pending; local only.
+G53 independent review and sf.py checks PASS673; expansion129/5000 remaining4871. Export/package integrity PASS. G54 incomplete-page repair pending; local only.
+G54 independent review and sf.py checks PASS674; expansion130/5000 remaining4870. Export/package integrity PASS. G55 pending; local only.
+G55 independent review and sf.py checks PASS675; expansion131/5000 remaining4869. Export/package integrity PASS. G56/G57 pending; local only.
+G56 independent review and sf.py checks PASS676; expansion132/5000 remaining4868. Export/package integrity PASS. G57 draft and G58 scope pending; local only.
+G57 independent review and sf.py checks PASS677; expansion133/5000 remaining4867. Export/package integrity PASS. G58 repair and G59 scope pending; local only.

@@ -1,0 +1,1 @@
+{"domains": [], "skills": [{"id": "GRF-056", "name": "bounded-graph-walk-cardinality-preflight", "domain_code": "GRF", "subdomain": "Walk result sizing", "description": "Count exact edge-ID walks by length and endpoint before a bounded graph query when result multiplicity may exceed a supplied output budget.", "risk_level": "medium", "requires": [], "status": "planned"}]}

@@ -1,5 +1,51 @@
 # Continuous expansion execution
 
+Checkpoint G57 accepted after independent review logs/graph57-review.md. sf.py registry/quality PASS677, expansion133/5000 remaining4867. Index/router/testpack/export/package refreshed; integrity PASS. G58 final inequality assert-to-explicit-check repair assigned author; reviewer g48_scout awaits retest. G59 scope card ready. Local only.
+
+Checkpoint G56 accepted after independent review logs/graph56-review.md. sf.py registry/quality PASS676, expansion132/5000 remaining4868. Index/router/testpack/export/package refreshed; integrity PASS. G57 author g48_scout running; G58 scope card ready from g34_dependency_order_author. Local only.
+
+Checkpoint G55 accepted after independent review logs/graph55-review.md. sf.py registry/quality PASS675, expansion131/5000 remaining4869. Index/router/testpack/export/package refreshed; integrity PASS. G56 author g34_dependency_order_author and G57 scope g48_scout running at last observation. Local only.
+
+Checkpoint G54 accepted after incomplete-feed and nodes-first-policy repairs and independent review logs/graph54-review.md. sf.py registry/quality PASS674, expansion130/5000 remaining4870. Index/router/testpack/export/package refreshed; integrity PASS. G55 author g48_scout running at last live observation. Local only.
+
+Checkpoint G53 accepted after independent review logs/graph53-review.md. sf.py registry/quality PASS673, expansion129/5000 remaining4871. Index/router/testpack/export/package refreshed; integrity PASS. G54 incomplete-page definitive-missing defect under author repair, reviewer g32_reviewer awaiting retest. G55 scope discovery assigned g48_scout. Local only.
+
+Checkpoint G52 accepted from complete saved independent review logs/graph52-review.md. sf.py registry/quality PASS672, expansion128/5000 remaining4872. Index/router/testpack/export/package refreshed; integrity PASS. G53 independent review reassigned g32_reviewer; G54 saved draft recovery assigned g34_dependency_order_author after prior usage errors. Local only.
+
+Checkpoint G51 accepted after revision-marker repair and independent review in logs/graph51-review.md. sf.py registry/quality PASS671, expansion127/5000 remaining4873. Index/router/testpack/export/package refreshed; integrity PASS. G52/G53 authors running at last live observation. Local only.
+
+Checkpoint G49/G50 accepted after independent reviews in logs/graph49-review.md and graph50-review.md. sf.py registry/quality PASS670, expansion126/5000 remaining4874. Index/router/testpacks/export/package refreshed; integrity PASS. G51 draft pending. Local only.
+
+Checkpoint G46/G47/G48 accepted after independent reviews in logs/graph46-review.md, graph47-review.md and graph48-review.md. sf.py registry/quality PASS668, expansion124/5000 remaining4876. Index/router/testpacks/export/package refreshed; integrity PASS. G44/G45 rejected as duplicates. Local only.
+
+Checkpoint G41/G42/G43 accepted after independent reviews in logs/graph41-review.md, graph42-review.md and graph43-review.md. sf.py registry/quality PASS665, expansion121/5000 remaining4879. Index/router/testpacks/export/package refreshed; integrity PASS. Local only.
+
+Checkpoint G40 accepted after independent review in logs/graph40-review.md. sf.py registry/quality PASS662, expansion118/5000 remaining4882. Index/router/testpack/export/package refreshed; integrity PASS. G41 signed-weight route author assigned. Local only.
+
+Checkpoint G38/G39 accepted after independent review in logs/graph38-review.md and logs/graph39-review.md. sf.py registry/quality PASS661, expansion117/5000 remaining4883. Index/router/testpacks/export/package refreshed; integrity PASS. G40 author running at last live inspection. Local only.
+
+Checkpoint G36/G37 accepted after independent review and G37 shape repair: logs/graph36-review.md and logs/graph37-review.md. sf.py registry/quality PASS659, expansion115/5000 remaining4885. Index/router/testpacks/export/package refreshed; integrity PASS. Local only.
+
+Checkpoint G34/G35 accepted after independent defect repair and re-review in logs/graph34-review.md and logs/graph35-review.md. sf.py registry/quality PASS657, expansion113/5000 remaining4887. Index/router/testpacks/export/package refreshed; integrity PASS. Local only.
+
+Checkpoint G32/G33 accepted: independent reviews in logs/graph32-review.md and logs/graph33-review.md, sf.py registry/quality PASS655, expansion111/5000 remaining4889. Index/router/testpacks/export/package refreshed with integrity PASS. Proposed G34 dependency-order scope rejected as duplicate SEQ-001/003; explore dominator certificate. Local only.
+
+Checkpoint G31 accepted: independent reviewer executed certificate tests and full scenarios in logs/graph31-review.md. sf.py registry/quality PASS653, expansion109/5000 remaining4891. Index/router/testpack/export/package refreshed; archive integrity PASS. G32 and G33 drafts exist but lack completed independent review; no child handles live. Local only.
+
+Pipeline checkpoint: sf.py status652 validated unchanged. G31 author ready and independent g31_reviewer assigned; G32 spanning forest author and G33 edge-once trail author running at last live observation. No pending draft counted. Local only.
+
+Checkpoint G30 accepted: recovered full draft and independently compared G06/G15; executed ordered/revisit/boundary/cycle/empty-acceptance and invalid input checks with full scenarios in logs/graph30-review.md. sf.py validation/registry/quality PASS652, expansion108/5000 remaining4892. Index/router/testpack/export/package refreshed, integrity PASS. G31 bipartition-or-odd-cycle author assigned g31_bipartite_author; no draft counts. Local only.
+
+Checkpoint G28/G29 accepted: independent projection review recovered with full executed accounting/semantic scenarios; coordinating removal-sensitivity review executed counterfactual fixtures and clarified example pending fields. sf.py validation/registry/quality PASS651, expansion107/5000 remaining4893. Index/router/testpacks/export/package refreshed, archive integrity PASS. All child handles absent on current live inventory; inspect G30 actual files and resume missing work before accepting it. Local only.
+
+Checkpoint G27 accepted: independent coordinating review executed symmetry/cutoff/parallel-loop/empty graph/equal-degree nonisomorphism fixtures and full scenarios; logs/graph27-review.md. sf.py validation/registry/quality PASS649, expansion105/5000 remaining4895. Index/router/testpack/export/package refreshed and archive integrity PASS. G28 projection and G29 single-failure connectivity authors running at last live inspection. Local only.
+
+Checkpoint G26 accepted: independent coordinating review executed owner/epoch/payload/missing isolated-node and parallel-edge/duplicate checks and full scenario outputs; logs/graph26-review.md. sf.py validation/registry/quality PASS648, expansion104/5000 remaining4896. Index/router/testpack/export/package refreshed, archive integrity PASS. Old child handles absent on authoritative list; recovered G28 scope plan, assigned g27_resume and g28_author. Work local only.
+
+Recovery checkpoint (G25 accepted): independent recovery reviewer executed candidate construction/inverse collisions/exhaustion/empty/symmetric/invalid policy checks, compared actual graph split and general sampling neighbors, and recorded full scenarios in logs/graph25-review.md. sf.py validation/registry/quality PASS647, expansion103/5000 remaining4897; index/router/testpack/export/package refreshed, archive integrity PASS. G26 recovery author and G27 bounded-isomorphism candidate author running at last observation. Local only.
+
+Recovery checkpoint (G24 accepted): completed independent review recovered from logs/graph24-review.md and inspected; sf.py validation/registry/quality PASS646, expansion102/5000 remaining4898. Index/router/testpack/export/package refreshed and archive integrity PASS. Prior reviewed commit e0994cc successfully pushed after sandbox escalation; recurring publication remains superseded by local-only instruction. G25 recovered draft assigned g25_recovery_review; G26 authoring assigned g26_recovery_author after old handles missing. Verify live state on continuation.
+
 Checkpoint 2026-11-14 (G23 accepted): independent direct/inverse/symmetric exposure and policy checks plus full scenario review passed. sf.py validation/registry/quality PASS645; index/router/testpack/export/package refreshed, integrity PASS. Expansion101/5000 remaining4899. G24 ready, reviewer g23_reviewer assigned; G25 negative-example construction assigned graph_next_discovery. Current discovery rejects broad serialization roundtrip duplication. Local only.
 
 Checkpoint 2026-11-14 active pipeline: sf.py status644 validated. G23 author complete; independent reviewer g23_reviewer assigned. G24 author g24_author and graph-next-discovery investigator running at last live inspection. Verify handles on continuation. Topic ledger10/120 now records narrow reviewed graph workflow coverage and explicit remaining scope; no whole-topic completion claimed. Local only.
@@ -53,3 +99,19 @@ Current working batch: candidate_ops drafts SHP-002 affected-lot distribution tr
 Use `python tools/sf.py expansion` for conservative net accounting against the immutable baseline commit. This checks identity, status and file presence; it does not prove semantic uniqueness or behavioral quality.
 
 Candidate gap queue after this batch: shipping document-to-consignment reconciliation; returns condition/evidence disposition; museum exhibit label revision propagation; event seating sightline evidence review; customer-support attachment redaction handoff; maintenance work-order completion evidence; design asset licensing handoff; course assignment resubmission history; research instrument calibration-record organization. These are candidates, not approved scopes, planned registry entries, or created skills. Compare each against the current catalog before assigning IDs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

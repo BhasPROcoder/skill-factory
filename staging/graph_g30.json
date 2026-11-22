@@ -1,0 +1,1 @@
+{"domains": [], "skills": [{"id": "GRF-030", "name": "relation-sequence-graph-path-search", "domain_code": "GRF", "subdomain": "Stateful relation path matching", "description": "Find endpoint witnesses accepted by a supplied relation-state contract when relationship order determines whether a graph walk qualifies.", "risk_level": "medium", "requires": [], "status": "planned"}]}

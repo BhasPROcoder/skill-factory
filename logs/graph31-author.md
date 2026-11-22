@@ -1,0 +1,7 @@
+# GRF-031 author evidence
+Registry untouched; independent review required.
+Read AGENTS/SPEC and actual selected GRF-011/007/004 Procedure sections. Matching assumes supplied bipartite sides and optimizes assignment; component partitioning finds connectivity; forest validation checks directed parent/root invariants. G31 determines existence of an undirected two-coloring and constructs a positive complete coloring or negative odd-cycle certificate, a distinct decision and artifact.
+
+Executed embedded Python example and verifier: triangle odd-cycle, parallel edges and self-loop certificates passed. Independent author checks covered empty graph, ordinary disconnected link plus isolate, even four-cycle and disconnected parallel pair plus separate triangle; every result passed certificate verification. Body count 1486. Example triangle B,A,C,B uses ab,ca,bc and three edges; code reconstructs that same route. Stable graph parity and explicit Python operations only; no external/current facts, sources or performance claims.
+
+Procedural scenarios: ordinary link A/B plus I returns complete colors and edge-crossing check; missing direction policy blocks projection and requests inventory, interpretation and scope together; disconnected triangle Test case rejects using triangle edge/vertex witness while preserving the nonconflicting parallel pair/isolate. No automatic deletion or business-side inference. These are author checks, not independent acceptance.

@@ -1,0 +1,1 @@
+{"domains": [], "skills": [{"id": "GRF-041", "name": "signed-route-negative-cycle-certificate", "domain_code": "GRF", "subdomain": "Signed route costs", "description": "Certify a minimum directed walk cost with signed integer edges or show a relevant negative cycle when a route may revisit vertices.", "risk_level": "medium", "requires": [], "status": "planned"}]}

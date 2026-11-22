@@ -1,0 +1,1 @@
+{"domains": [], "skills": [{"id": "GRF-058", "name": "knowledge-rule-negation-stratification-audit", "domain_code": "GRF", "subdomain": "Rule-program admission", "description": "Check variable binding and signed predicate dependencies before evaluating a bounded neutral knowledge-rule program with negation.", "risk_level": "medium", "requires": [], "status": "planned"}]}
