@@ -1,0 +1,23 @@
+name: Validate skill registry
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Registry consistency
+        run: python tools/sf.py check-registry
+      - name: Validate all skills against SPEC.md
+        run: python tools/sf.py validate --all
+      - name: Mechanical quality gates
+        run: python tools/sf.py quality --all
+      - name: Unit tests
+        run: python -m unittest discover -s tests -p test_sf.py
