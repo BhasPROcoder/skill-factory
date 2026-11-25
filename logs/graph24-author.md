@@ -1,0 +1,8 @@
+# G24 author evidence
+Author g24_author; independent review pending; registry untouched.
+Read AGENTS/SPEC and ordered queue; compared selected GRF-014 storage implementation, GRF-016 patch replay and TDV-004 restore rehearsal procedures. G24 adds independent target-boundary reconciliation of full identities/properties against query-visible derived views; it neither builds storage nor applies patches nor merely plans restoration.
+Executed embedded Python reference and added boundary mismatch, altered property and missing parallel-edge tests: all passed. Source claims audited: Python 3 standard features; fictional snapshot/log markers and graph quantities; no platform-specific behavior, dates, recovery thresholds or external citations. Properties and marker equality are bounded fixture semantics, not distributed guarantees.
+Ordinary scenario: matching primary graph with stale outgoing view fails query reconciliation and blocks readiness. Missing-input scenario: no target boundary means request target, expected manifest and objective/authority evidence; no success verdict. Edge scenario: matching counts with dangling e7 and cache-only e8 remains blocked; propose isolated repair with retained failure evidence, never fabricate target log marker. Operational timing and loss claims remain unresolved without owner inputs.
+Output template has seven labels, all present in worked example. Independent reviewer must test complete scenario outputs, semantic scope and graph manifest assumptions before acceptance.
+
+Initial frontmatter separator typo repaired; final sf.validate_text errors=[] warnings=[].

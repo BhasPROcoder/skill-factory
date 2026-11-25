@@ -3,7 +3,7 @@ id: TST-011
 name: regression-revision-boundary-isolation
 domain: Software Verification Design
 subdomain: Revision boundary isolation
-version: 1.0
+version: 1.1
 description: Narrow a reproducible regression to an evidenced revision boundary while preserving inconclusive builds and contradictory observations; use when a known working revision precedes a failing revision.
 triggers: ["bisect a regression", "find the first failing revision", "isolate when this behavior changed", "handle unbuildable revisions during regression search", "narrow a regression commit range"]
 not_for: ["minimizing a failing input [TST-004]", "diagnosing intermittent test behavior [TST-007]", "proving a code change is the root cause", "deploying a rollback"]

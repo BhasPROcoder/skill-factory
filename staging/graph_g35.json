@@ -1,0 +1,1 @@
+{"domains": [], "skills": [{"id": "GRF-035", "name": "dag-reachability-reduction-certificate", "domain_code": "GRF", "subdomain": "Directed reachability reduction", "description": "Remove redundant directed edges from a complete acyclic graph snapshot while certifying that every node pair retains its reachability.", "risk_level": "medium", "requires": [], "status": "planned"}]}

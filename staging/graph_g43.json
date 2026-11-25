@@ -1,0 +1,1 @@
+{"domains": [], "skills": [{"id": "GRF-043", "name": "directed-minimum-feedback-edge-certificate", "domain_code": "GRF", "subdomain": "Directed cycle-breaking analysis", "description": "Find and verify a minimum-cardinality set of identified directed edges whose hypothetical removal makes a bounded graph acyclic.", "risk_level": "medium", "requires": [], "status": "planned"}]}
